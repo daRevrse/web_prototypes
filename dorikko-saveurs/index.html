@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dorikko-Saveurs — Deux visions, une maison de viande</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Fraunces:ital,opsz,wght@0,9..144,500..900;1,9..144,500..700&family=Jost:wght@400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#15100b;--cream:#f3e8d6;--ember:#c2511f;--gold:#c89b53;--ox:#7c241b;--bg:#f4ede1}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--ink);color:var(--cream);font-family:'Jost',sans-serif;min-height:100vh;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:99;pointer-events:none;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.intro{text-align:center;padding:54px 24px 40px}
+.intro .logo{height:88px;width:auto;margin:0 auto 4px;display:block}
+.intro h1{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(34px,5.5vw,68px);letter-spacing:-.02em;line-height:1.02;margin:18px 0 16px}
+.intro h1 em{color:var(--ember)}
+.intro p{max-width:60ch;margin:0 auto;color:#b6a489;font-size:17px;line-height:1.7}
+.intro .hint{margin-top:22px;font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:var(--ember)}
+.split{display:grid;grid-template-columns:1fr 1fr;min-height:62vh;gap:0;border-top:1px solid rgba(243,232,214,.12)}
+.choice{position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:54px;min-height:520px;text-decoration:none;transition:.6s}
+.choice .bg{position:absolute;inset:0;background:#0e0a06 center/cover no-repeat;transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+.choice:hover .bg{transform:scale(1.06)}
+.choice.a .bg{background-image:url("https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=1400&q=80")}
+.choice.b .bg{background-image:url("https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1400&q=80")}
+.choice.a .bg::after{content:"";position:absolute;inset:0;background:rgba(14,9,5,.62)}
+.choice.b .bg::after{content:"";position:absolute;inset:0;background:rgba(20,14,8,.5)}
+.choice.b{border-left:1px solid rgba(243,232,214,.12)}
+.choice .c{position:relative;z-index:2;transform:translateY(14px);transition:.6s}
+.choice:hover .c{transform:none}
+.choice .tag{font-size:11px;letter-spacing:.34em;text-transform:uppercase;display:inline-block;padding:7px 14px;margin-bottom:20px}
+.choice.a .tag{background:var(--ember);color:#fff}
+.choice.b .tag{background:#fff;color:var(--ox)}
+.choice .vt{font-size:14px;letter-spacing:.3em;text-transform:uppercase;color:rgba(255,255,255,.7);margin-bottom:8px}
+.choice.a h2{font-family:'Fraunces',serif;font-weight:600;font-size:clamp(34px,4vw,56px);color:#fff;line-height:1}
+.choice.a h2 em{color:var(--ember)}
+.choice.b h2{font-family:'Cinzel',serif;font-weight:600;font-size:clamp(28px,3.4vw,46px);letter-spacing:.08em;color:#fff;line-height:1.1}
+.choice .script{font-family:'Pinyon Script',cursive;font-size:46px;color:var(--gold);line-height:.7;display:block;margin-bottom:2px}
+.choice p{color:rgba(255,255,255,.82);max-width:40ch;margin:18px 0 26px;font-size:15px;line-height:1.65}
+.choice .go{display:inline-flex;align-items:center;gap:12px;font-size:12px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:#fff;border-bottom:1px solid rgba(255,255,255,.5);padding-bottom:6px;transition:.4s}
+.choice:hover .go{gap:20px;border-color:#fff}
+.foot{text-align:center;padding:34px 24px;color:#8c8170;font-size:13px;letter-spacing:.04em;border-top:1px solid rgba(243,232,214,.12)}
+@media(max-width:860px){.split{grid-template-columns:1fr}.choice.b{border-left:none;border-top:1px solid rgba(243,232,214,.12)}.choice{min-height:440px}}
+</style>
+</head>
+<body>
+<div class="intro">
+  <img src="logo-light.png" class="logo" alt="Dorikko Saveurs — Frais, Local, Bio">
+  <h1>Maison de viande,<br><em>deux</em> manières de la <em>raconter.</em></h1>
+  <p>Une nouvelle vision pour Dorikko-Saveurs, restaurant de spécialités de viande &amp; terroir. Deux pages d'accueil, deux atmosphères — pour faire monter l'eau à la bouche dès le premier regard.</p>
+  <div class="hint">Choisissez une expérience</div>
+</div>
+
+<div class="split">
+  <a href="version-a-le-brasier.html" class="choice a">
+    <div class="bg"></div>
+    <div class="c">
+      <span class="tag">Version A</span>
+      <div class="vt">L'immersion</div>
+      <h2>Le <em>Brasier</em></h2>
+      <p>Sombre, intense, appétissant. Une plongée dans la fumée et la braise, où la viande est mise en pleine lumière. Typographie éditoriale, accents cuivre &amp; or.</p>
+      <span class="go">Entrer dans le Brasier →</span>
+    </div>
+  </a>
+
+  <a href="version-b-maison.html" class="choice b">
+    <div class="bg"></div>
+    <div class="c">
+      <span class="tag">Version B</span>
+      <div class="vt">Le raffinement</div>
+      <span class="script">la</span>
+      <h2>MAISON DORIKKO</h2>
+      <p>Claire, élégante, intemporelle. Une expérience magazine autour du terroir, des belles pièces et de l'hospitalité. Serif gravé, touches manuscrites &amp; lie-de-vin.</p>
+      <span class="go">Découvrir la Maison →</span>
+    </div>
+  </a>
+</div>
+
+<div class="foot">Prototype de refonte · Dorikko-Saveurs, Kpalimé (Togo) · Spécialités de viande — Frais. Local. Bio.</div>
+</body>
+</html>

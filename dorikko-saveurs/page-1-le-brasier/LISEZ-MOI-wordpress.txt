@@ -1,0 +1,38 @@
+DORIKKO-SAVEURS — PAGE 1 « LE BRASIER » (version sombre)
+=========================================================
+
+Cette page est 100% autonome :
+  - index.html ............ la page complète (CSS + JS intégrés)
+  - logo-light.png ........ le logo (version claire, pour fond sombre)
+
+Tout le reste (polices Google Fonts, photos) se charge depuis Internet,
+il n'y a donc rien d'autre à installer.
+
+------------------------------------------------------------------
+OPTION A — La plus simple (recommandée pour montrer à l'équipe)
+------------------------------------------------------------------
+1. Mettez le dossier complet (index.html + logo-light.png) en ligne,
+   par ex. via FTP dans :  /public_html/apercu-brasier/
+2. Partagez l'adresse :  https://votre-site.com/apercu-brasier/
+   La page s'affiche en plein écran, sans en-tête/pied WordPress.
+
+------------------------------------------------------------------
+OPTION B — Dans une page WordPress (modèle pleine largeur / vierge)
+------------------------------------------------------------------
+1. WordPress > Pages > Ajouter.
+2. Choisissez un modèle SANS en-tête/pied (« Pleine largeur »,
+   « Canvas » sous Elementor, ou « Blank » selon le thème).
+3. Ajoutez un bloc « HTML personnalisé » et collez le contenu de index.html.
+4. IMPORTANT — le logo : envoyez logo-light.png dans la Médiathèque,
+   copiez son URL, puis dans le code remplacez les 2 occurrences de
+        src="logo-light.png"
+   par l'URL complète, par ex.
+        src="https://votre-site.com/wp-content/uploads/2026/06/logo-light.png"
+
+------------------------------------------------------------------
+Infos affichées (modifiables dans index.html) :
+  Lieu .......... Zomayi, près de Togo Grain · Kpalimé (Togo)
+  Téléphone ..... +228 91 69 84 29
+  E-mail ........ info@dorikko-saveurs.com
+  Horaires ...... Lun–Jeu 11h–22h · Ven–Dim 11h–00h
+  Les plats / prix sont des exemples : à adapter à votre carte réelle.

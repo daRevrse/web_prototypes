@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Dreamers — Former la nouvelle génération</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* ─────────────────────────────────────
+           TOKENS — Palette Bordeaux
+        ───────────────────────────────────── */
+        :root {
+            --wine:       #7D2438;
+            --wine-hover: #631A2B;
+            --wine-mid:   #A23B52;
+            --wine-light: #FAEEF0;
+            --wine-tint:  #FCF6F7;
+            --wine-dark:  #2B0E14;
+            --text-1:     #1F1418;
+            --text-2:     #5A4A50;
+            --text-3:     #A39199;
+            --bg:         #FFFFFF;
+            --bg-off:     #FBF8F8;
+            --border:     #EDE4E6;
+            --radius:     12px;
+            --radius-lg:  18px;
+            --shadow-sm:  0 1px 3px rgba(43,14,20,.07), 0 1px 2px rgba(43,14,20,.04);
+            --shadow-md:  0 4px 16px rgba(43,14,20,.09);
+            --shadow-lg:  0 14px 44px rgba(43,14,20,.13);
+            --font: 'Plus Jakarta Sans', system-ui, sans-serif;
+            --max: 1160px;
+        }
+
+        /* ─────────────────────────────────────
+           RESET
+        ───────────────────────────────────── */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { scroll-behavior: smooth; }
+        body { font-family: var(--font); background: var(--bg); color: var(--text-1); line-height: 1.6; overflow-x: hidden; }
+        a { color: inherit; text-decoration: none; }
+        img { display: block; max-width: 100%; }
+
+        /* Lucide icon defaults */
+        svg.lucide { width: 18px; height: 18px; stroke-width: 2; vertical-align: middle; flex-shrink: 0; }
+
+        /* ─────────────────────────────────────
+           LAYOUT
+        ───────────────────────────────────── */
+        .wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+
+        /* ─────────────────────────────────────
+           NAV
+        ───────────────────────────────────── */
+        #nav {
+            position: sticky;
+            top: 0;
+            z-index: 200;
+            background: rgba(255,255,255,.92);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-bottom: 1px solid var(--border);
+        }
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 66px;
+            gap: 24px;
+        }
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 800;
+            font-size: 1rem;
+            color: var(--text-1);
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .logo-sq {
+            width: 36px; height: 36px;
+            background: var(--wine);
+            border-radius: 9px;
+            display: flex; align-items: center; justify-content: center;
+            color: #fff;
+            flex-shrink: 0;
+        }
+        .logo-sq svg { width: 20px; height: 20px; }
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 4px;
+            flex: 1;
+            justify-content: center;
+        }
+        .nav-links a {
+            display: block;
+            padding: 7px 13px;
+            border-radius: 8px;
+            font-size: .875rem;
+            font-weight: 500;
+            color: var(--text-2);
+            transition: background .15s, color .15s;
+            white-space: nowrap;
+        }
+        .nav-links a:hover,
+        .nav-links a.active { background: var(--wine-light); color: var(--wine); }
+        .nav-cta { display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+
+        /* ─────────────────────────────────────
+           BUTTONS
+        ───────────────────────────────────── */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-family: var(--font);
+            font-weight: 600;
+            font-size: .875rem;
+            cursor: pointer;
+            border: none;
+            transition: background .15s, transform .15s, box-shadow .15s, border-color .15s, color .15s;
+            white-space: nowrap;
+        }
+        .btn svg { width: 16px; height: 16px; }
+        .btn-primary { background: var(--wine); color: #fff; }
+        .btn-primary:hover { background: var(--wine-hover); transform: translateY(-1px); box-shadow: 0 4px 14px rgba(125,36,56,.32); }
+        .btn-lg { padding: 13px 28px; font-size: .95rem; border-radius: 12px; }
+        .btn-ghost { background: transparent; color: var(--text-2); border: 1.5px solid var(--border); }
+        .btn-ghost:hover { border-color: var(--wine); color: var(--wine); background: var(--wine-light); }
+        .btn-white { background: #fff; color: var(--wine); font-weight: 700; }
+        .btn-white:hover { background: var(--wine-light); transform: translateY(-1px); box-shadow: 0 4px 14px rgba(0,0,0,.18); }
+
+        /* ─────────────────────────────────────
+           HERO
+        ───────────────────────────────────── */
+        #hero { padding: 76px 0 72px; position: relative; overflow: hidden; }
+        #hero::before {
+            content: '';
+            position: absolute; inset: 0;
+            background:
+                radial-gradient(ellipse 80% 60% at 60% -10%, rgba(162,59,82,.08) 0%, transparent 70%),
+                radial-gradient(ellipse 50% 40% at 100% 80%, rgba(125,36,56,.05) 0%, transparent 60%);
+            pointer-events: none;
+        }
+        .hero-inner {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 60px;
+            position: relative;
+            z-index: 1;
+        }
+        .hero-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            background: var(--wine-light);
+            color: var(--wine);
+            border-radius: 100px;
+            padding: 6px 14px;
+            font-size: .72rem;
+            font-weight: 700;
+            letter-spacing: .07em;
+            text-transform: uppercase;
+            margin-bottom: 18px;
+        }
+        .hero-eyebrow svg { width: 14px; height: 14px; }
+        .hero-title {
+            font-size: clamp(2.4rem, 4.2vw, 3.6rem);
+            font-weight: 800;
+            line-height: 1.08;
+            letter-spacing: -.025em;
+            color: var(--text-1);
+            margin-bottom: 18px;
+        }
+        .hero-title span { color: var(--wine); }
+        .hero-sub {
+            font-size: 1.05rem;
+            color: var(--text-2);
+            line-height: 1.72;
+            margin-bottom: 36px;
+            max-width: 440px;
+        }
+        .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+        /* Hero photo */
+        .hero-photo {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            aspect-ratio: 4/3.4;
+            background: var(--wine);
+            box-shadow: var(--shadow-lg);
+        }
+        .hero-photo img { width: 100%; height: 100%; object-fit: cover; }
+        .hero-photo::after {
+            content: '';
+            position: absolute; inset: 0;
+            background: linear-gradient(180deg, rgba(43,14,20,0) 40%, rgba(43,14,20,.55) 100%);
+        }
+        .hero-float {
+            position: absolute;
+            left: 18px; right: 18px; bottom: 18px;
+            z-index: 2;
+            background: rgba(255,255,255,.96);
+            backdrop-filter: blur(8px);
+            border-radius: 14px;
+            padding: 16px;
+            box-shadow: var(--shadow-md);
+        }
+        .hero-float-top {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 14px;
+            padding-bottom: 14px;
+            border-bottom: 1px solid var(--border);
+        }
+        .hero-float-icon {
+            width: 38px; height: 38px;
+            border-radius: 10px;
+            background: var(--wine-light);
+            color: var(--wine);
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+        }
+        .hero-float-icon svg { width: 19px; height: 19px; }
+        .hero-float-title { font-weight: 700; font-size: .9rem; line-height: 1.2; }
+        .hero-float-meta { font-size: .76rem; color: var(--text-3); }
+        .hero-float-stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; }
+        .hfs { text-align: center; }
+        .hfs-val { font-size: 1.25rem; font-weight: 800; color: var(--wine); line-height: 1; }
+        .hfs-lbl { font-size: .66rem; color: var(--text-3); font-weight: 500; margin-top: 3px; }
+
+        /* ─────────────────────────────────────
+           SECTIONS SHARED
+        ───────────────────────────────────── */
+        section { padding: 80px 0; }
+        .section-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--wine-light);
+            color: var(--wine);
+            border-radius: 6px;
+            padding: 4px 10px;
+            font-size: .68rem;
+            font-weight: 700;
+            letter-spacing: .08em;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        .section-tag svg { width: 13px; height: 13px; }
+        .section-title {
+            font-size: clamp(1.6rem, 2.6vw, 2.2rem);
+            font-weight: 800;
+            line-height: 1.15;
+            letter-spacing: -.02em;
+            color: var(--text-1);
+            margin-bottom: 12px;
+        }
+        .section-sub { font-size: .95rem; color: var(--text-2); line-height: 1.7; max-width: 520px; }
+        .section-header-row {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+
+        /* ─────────────────────────────────────
+           ABOUT
+        ───────────────────────────────────── */
+        #about { background: var(--bg-off); }
+        .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+        .about-img-wrap {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            aspect-ratio: 4/3;
+            box-shadow: var(--shadow-lg);
+            background: var(--wine);
+        }
+        .about-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
+        .about-img-wrap::after {
+            content: '';
+            position: absolute; inset: 0;
+            background: linear-gradient(160deg, rgba(125,36,56,.15) 0%, rgba(43,14,20,.35) 100%);
+        }
+        .about-badge {
+            position: absolute;
+            bottom: 20px; left: 20px;
+            z-index: 2;
+            background: rgba(255,255,255,.96);
+            border-radius: 12px;
+            padding: 11px 15px;
+            display: flex;
+            align-items: center;
+            gap: 11px;
+            box-shadow: var(--shadow-md);
+        }
+        .about-badge-icon {
+            width: 36px; height: 36px;
+            background: var(--wine-light);
+            border-radius: 9px;
+            display: flex; align-items: center; justify-content: center;
+            color: var(--wine);
+        }
+        .about-badge-icon svg { width: 18px; height: 18px; }
+        .about-badge-val { font-weight: 800; font-size: 1rem; color: var(--text-1); line-height: 1; }
+        .about-badge-lbl { font-size: .68rem; color: var(--text-3); margin-top: 2px; }
+        .about-content .section-sub { max-width: 100%; margin-bottom: 28px; }
+        .about-pills { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 32px; }
+        .pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 7px 13px;
+            background: var(--bg);
+            border: 1.5px solid var(--border);
+            border-radius: 8px;
+            font-size: .78rem;
+            font-weight: 600;
+            color: var(--text-2);
+            transition: border-color .15s, color .15s;
+        }
+        .pill:hover { border-color: var(--wine); color: var(--wine); }
+        .pill svg { width: 14px; height: 14px; color: var(--wine); }
+
+        /* ─────────────────────────────────────
+           EVENTS
+        ───────────────────────────────────── */
+        #events { background: var(--bg); }
+        .events-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+        .event-card {
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            background: var(--bg);
+            box-shadow: var(--shadow-sm);
+            transition: box-shadow .2s, transform .2s, border-color .2s;
+            cursor: pointer;
+        }
+        .event-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-3px); border-color: rgba(125,36,56,.22); }
+        .event-card-top {
+            position: relative;
+            padding: 26px 22px;
+            color: #fff;
+            overflow: hidden;
+            background-color: var(--wine);
+            background-size: cover;
+            background-position: center;
+        }
+        .event-card-top::before {
+            content: '';
+            position: absolute; inset: 0;
+            background: linear-gradient(150deg, rgba(125,36,56,.92) 0%, rgba(99,26,43,.9) 100%);
+        }
+        .event-card-top > * { position: relative; z-index: 1; }
+        .event-date {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            background: rgba(255,255,255,.2);
+            border-radius: 6px;
+            padding: 4px 10px;
+            font-size: .7rem;
+            font-weight: 700;
+            letter-spacing: .04em;
+            margin-bottom: 14px;
+        }
+        .event-date svg { width: 12px; height: 12px; }
+        .event-name { font-size: 1.1rem; font-weight: 700; margin-bottom: 5px; }
+        .event-loc { font-size: .78rem; opacity: .85; display: inline-flex; align-items: center; gap: 5px; }
+        .event-loc svg { width: 13px; height: 13px; }
+        .event-card-body { padding: 18px 20px; }
+        .event-desc { font-size: .83rem; color: var(--text-2); line-height: 1.6; margin-bottom: 14px; }
+        .event-link, .course-cta, .news-link {
+            font-size: .8rem;
+            font-weight: 700;
+            color: var(--wine);
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            transition: gap .15s;
+        }
+        .event-link svg, .course-cta svg, .news-link svg { width: 15px; height: 15px; }
+        .event-card:hover .event-link { gap: 9px; }
+
+        /* ─────────────────────────────────────
+           COURSES
+        ───────────────────────────────────── */
+        #courses { background: var(--bg-off); }
+        .courses-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+        .course-card {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            flex-direction: column;
+            transition: box-shadow .2s, transform .2s, border-color .2s;
+            cursor: pointer;
+        }
+        .course-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-3px); border-color: rgba(125,36,56,.18); }
+        .course-thumb {
+            position: relative;
+            aspect-ratio: 16/9;
+            overflow: hidden;
+            background: var(--wine);
+        }
+        .course-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform .35s ease; }
+        .course-card:hover .course-thumb img { transform: scale(1.05); }
+        .course-thumb::after {
+            content: '';
+            position: absolute; inset: 0;
+            background: linear-gradient(180deg, rgba(43,14,20,.05) 0%, rgba(43,14,20,.35) 100%);
+        }
+        .course-chip {
+            position: absolute;
+            top: 12px; left: 12px;
+            z-index: 2;
+            width: 38px; height: 38px;
+            border-radius: 10px;
+            background: rgba(255,255,255,.95);
+            color: var(--wine);
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: var(--shadow-sm);
+        }
+        .course-chip svg { width: 20px; height: 20px; }
+        .course-body { padding: 20px; flex: 1; display: flex; flex-direction: column; }
+        .course-level {
+            display: inline-block;
+            background: var(--wine-light);
+            color: var(--wine);
+            border-radius: 5px;
+            padding: 3px 9px;
+            font-size: .65rem;
+            font-weight: 700;
+            letter-spacing: .06em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            width: fit-content;
+        }
+        .course-name { font-weight: 700; font-size: .95rem; color: var(--text-1); margin-bottom: 8px; line-height: 1.35; }
+        .course-desc { font-size: .82rem; color: var(--text-2); line-height: 1.6; flex: 1; margin-bottom: 16px; }
+        .course-footer, .news-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 14px;
+            border-top: 1px solid var(--border);
+        }
+        .course-meta {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-size: .74rem;
+            color: var(--text-3);
+            font-weight: 500;
+        }
+        .course-meta svg { width: 14px; height: 14px; }
+        .course-card:hover .course-cta { gap: 9px; }
+
+        /* ─────────────────────────────────────
+           NEWS
+        ───────────────────────────────────── */
+        #news { background: var(--bg); }
+        .news-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; }
+        .news-card {
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            background: var(--bg);
+            display: flex;
+            box-shadow: var(--shadow-sm);
+            transition: box-shadow .2s, transform .2s, border-color .2s;
+            cursor: pointer;
+        }
+        .news-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-3px); border-color: rgba(125,36,56,.18); }
+        .news-thumb {
+            position: relative;
+            flex: 0 0 40%;
+            overflow: hidden;
+            background: var(--wine);
+        }
+        .news-thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform .35s ease; }
+        .news-card:hover .news-thumb img { transform: scale(1.05); }
+        .news-body { padding: 22px; flex: 1; display: flex; flex-direction: column; }
+        .news-cat {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            background: var(--wine-light);
+            color: var(--wine);
+            border-radius: 5px;
+            padding: 3px 9px;
+            font-size: .64rem;
+            font-weight: 700;
+            letter-spacing: .06em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            width: fit-content;
+        }
+        .news-cat svg { width: 12px; height: 12px; }
+        .news-title { font-weight: 700; font-size: .95rem; color: var(--text-1); line-height: 1.4; margin-bottom: 8px; }
+        .news-excerpt { font-size: .82rem; color: var(--text-2); line-height: 1.6; flex: 1; margin-bottom: 16px; }
+        .news-date { font-size: .74rem; color: var(--text-3); font-weight: 500; display: inline-flex; align-items: center; gap: 5px; }
+        .news-date svg { width: 13px; height: 13px; }
+        .news-card:hover .news-link { gap: 9px; }
+        .news-load { text-align: center; margin-top: 36px; }
+
+        /* ─────────────────────────────────────
+           NEWSLETTER
+        ───────────────────────────────────── */
+        #newsletter {
+            padding: 64px 0;
+            background: linear-gradient(135deg, var(--wine) 0%, var(--wine-hover) 100%);
+        }
+        .nl-inner { display: flex; align-items: center; justify-content: space-between; gap: 40px; }
+        .nl-text h2 { font-size: 1.7rem; font-weight: 800; color: #fff; margin-bottom: 6px; letter-spacing: -.02em; }
+        .nl-text p { color: rgba(255,255,255,.78); font-size: .9rem; }
+        .nl-form { display: flex; gap: 10px; flex-shrink: 0; }
+        .nl-input {
+            padding: 11px 18px;
+            border-radius: 10px;
+            border: 1.5px solid rgba(255,255,255,.25);
+            background: rgba(255,255,255,.12);
+            color: #fff;
+            font-family: var(--font);
+            font-size: .875rem;
+            width: 260px;
+            outline: none;
+            transition: border-color .2s, background .2s;
+        }
+        .nl-input::placeholder { color: rgba(255,255,255,.5); }
+        .nl-input:focus { border-color: rgba(255,255,255,.65); background: rgba(255,255,255,.18); }
+
+        /* ─────────────────────────────────────
+           FOOTER
+        ───────────────────────────────────── */
+        footer { background: var(--wine-dark); color: #fff; padding: 64px 0 32px; }
+        .foot-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 48px;
+            padding-bottom: 48px;
+            border-bottom: 1px solid rgba(255,255,255,.1);
+            margin-bottom: 28px;
+        }
+        .foot-brand .nav-logo { color: #fff; margin-bottom: 14px; }
+        .foot-brand .logo-sq { background: var(--wine-mid); }
+        .foot-brand p { font-size: .82rem; color: rgba(255,255,255,.55); line-height: 1.7; margin-bottom: 20px; }
+        .foot-social { display: flex; gap: 10px; }
+        .social-btn {
+            width: 36px; height: 36px;
+            border-radius: 9px;
+            border: 1px solid rgba(255,255,255,.14);
+            display: flex; align-items: center; justify-content: center;
+            color: rgba(255,255,255,.7);
+            transition: border-color .15s, color .15s, background .15s;
+        }
+        .social-btn svg { width: 16px; height: 16px; }
+        .social-btn strong { font-size: .82rem; font-weight: 800; line-height: 1; }
+        .social-btn:hover { border-color: var(--wine-mid); color: #fff; background: var(--wine-mid); }
+        .foot-col h4 { font-size: .8rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: rgba(255,255,255,.45); margin-bottom: 16px; }
+        .foot-links { list-style: none; display: flex; flex-direction: column; gap: 9px; }
+        .foot-links a { font-size: .82rem; color: rgba(255,255,255,.62); transition: color .15s; }
+        .foot-links a:hover { color: #fff; }
+        .foot-cities { display: flex; flex-wrap: wrap; gap: 6px; }
+        .city-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            padding: 4px 9px;
+            background: rgba(255,255,255,.07);
+            border: 1px solid rgba(255,255,255,.1);
+            border-radius: 6px;
+            font-size: .7rem;
+            color: rgba(255,255,255,.6);
+        }
+        .city-tag svg { width: 11px; height: 11px; }
+        .foot-bottom { display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+        .foot-copy { font-size: .78rem; color: rgba(255,255,255,.4); }
+        .foot-legal { display: flex; gap: 20px; }
+        .foot-legal a { font-size: .78rem; color: rgba(255,255,255,.4); transition: color .15s; }
+        .foot-legal a:hover { color: rgba(255,255,255,.75); }
+
+        /* ─────────────────────────────────────
+           RESPONSIVE
+        ───────────────────────────────────── */
+        @media (max-width: 1024px) {
+            .hero-inner { grid-template-columns: 1fr; gap: 48px; }
+            .hero-photo { max-width: 520px; }
+            .about-grid { grid-template-columns: 1fr; gap: 40px; }
+            .events-grid { grid-template-columns: 1fr 1fr; }
+            .courses-grid { grid-template-columns: 1fr 1fr; }
+            .foot-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+        }
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            section { padding: 56px 0; }
+            .hero-title { font-size: 2rem; }
+            .events-grid { grid-template-columns: 1fr; }
+            .courses-grid { grid-template-columns: 1fr; }
+            .news-grid { grid-template-columns: 1fr; }
+            .news-card { flex-direction: column; }
+            .news-thumb { flex: none; aspect-ratio: 16/8; }
+            .nl-inner { flex-direction: column; text-align: center; }
+            .nl-form { flex-direction: column; width: 100%; }
+            .nl-input { width: 100%; }
+            .foot-grid { grid-template-columns: 1fr; gap: 28px; }
+            .foot-bottom { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ════════════ NAV ════════════ -->
+<header id="nav">
+    <div class="wrap">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">
+                <span class="logo-sq"><i data-lucide="sparkles"></i></span>
+                Digital Dreamers
+            </a>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Accueil</a></li>
+                <li><a href="#about">Digital Dreamers</a></li>
+                <li><a href="#events">Évènements</a></li>
+                <li><a href="#courses">Galerie</a></li>
+                <li><a href="#news">Paroles d'experts</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="#courses" class="btn btn-primary">Rejoindre le programme</a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- ════════════ HERO ════════════ -->
+<section id="hero">
+    <div class="wrap">
+        <div class="hero-inner">
+
+            <div class="hero-left">
+                <div class="hero-eyebrow"><i data-lucide="sparkles"></i> Former la nouvelle génération</div>
+                <h1 class="hero-title">DIGITAL<br><span>DREAMERS</span></h1>
+                <p class="hero-sub">
+                    Une académie en ligne qui forme les talents numériques de demain.
+                    Algorithmique, cybersécurité, Python — apprends à ton rythme avec des experts.
+                </p>
+                <div class="hero-actions">
+                    <a href="#courses" class="btn btn-primary btn-lg">Rejoindre le programme <i data-lucide="arrow-right"></i></a>
+                    <a href="#about" class="btn btn-ghost btn-lg">En savoir plus</a>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div class="hero-photo">
+                    <img src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?w=900&q=80"
+                         alt="Jeunes en formation au numérique" loading="lazy">
+                    <div class="hero-float">
+                        <div class="hero-float-top">
+                            <div class="hero-float-icon"><i data-lucide="calendar-days"></i></div>
+                            <div>
+                                <div class="hero-float-title">Prochaine session</div>
+                                <div class="hero-float-meta">Lomé, Togo · 13–24 juil. 2026</div>
+                            </div>
+                        </div>
+                        <div class="hero-float-stats">
+                            <div class="hfs"><div class="hfs-val">500+</div><div class="hfs-lbl">Élèves</div></div>
+                            <div class="hfs"><div class="hfs-val">3</div><div class="hfs-lbl">Formations</div></div>
+                            <div class="hfs"><div class="hfs-val">100%</div><div class="hfs-lbl">En ligne</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ════════════ ABOUT ════════════ -->
+<section id="about">
+    <div class="wrap">
+        <div class="about-grid">
+
+            <div class="about-img-wrap">
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80"
+                     alt="Étudiants en formation Digital Dreamers" loading="lazy">
+                <div class="about-badge">
+                    <div class="about-badge-icon"><i data-lucide="graduation-cap"></i></div>
+                    <div>
+                        <div class="about-badge-val">+500</div>
+                        <div class="about-badge-lbl">élèves formés</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-content">
+                <div class="section-tag"><i data-lucide="info"></i> À propos</div>
+                <h2 class="section-title">C'est quoi<br>Digital Dreamers ?</h2>
+                <p class="section-sub">
+                    Digital Dreamers est un programme d'éducation numérique qui forme la nouvelle
+                    génération à travers des cours pratiques en algorithmique, cybersécurité et
+                    développement. Accessible, concret et encadré par des professionnels.
+                </p>
+                <div class="about-pills">
+                    <div class="pill"><i data-lucide="workflow"></i> Algorithmique</div>
+                    <div class="pill"><i data-lucide="shield-check"></i> Cybersécurité</div>
+                    <div class="pill"><i data-lucide="terminal"></i> Python</div>
+                    <div class="pill"><i data-lucide="globe"></i> 100% en ligne</div>
+                    <div class="pill"><i data-lucide="award"></i> Certifié</div>
+                </div>
+                <a href="#about" class="btn btn-primary">Lire plus <i data-lucide="arrow-right"></i></a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ════════════ EVENTS ════════════ -->
+<section id="events">
+    <div class="wrap">
+        <div class="section-header-row">
+            <div>
+                <div class="section-tag"><i data-lucide="calendar"></i> Agenda</div>
+                <h2 class="section-title">Nos Évènements à venir</h2>
+            </div>
+            <a href="#events" class="btn btn-ghost">Voir plus <i data-lucide="arrow-right"></i></a>
+        </div>
+
+        <div class="events-grid">
+            <div class="event-card">
+                <div class="event-card-top" style="background-image:url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80')">
+                    <div class="event-date"><i data-lucide="calendar"></i> 13 – 24 Juil. 2026</div>
+                    <div class="event-name">Digital Dreamers Lomé</div>
+                    <div class="event-loc"><i data-lucide="map-pin"></i> Lomé, Togo</div>
+                </div>
+                <div class="event-card-body">
+                    <p class="event-desc">Session intensive de formation au numérique pour les jeunes de Lomé. Algorithmique, cybersécurité et Python au programme.</p>
+                    <a href="#" class="event-link">Voir l'événement <i data-lucide="arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-card-top" style="background-image:url('https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=600&q=80')">
+                    <div class="event-date"><i data-lucide="calendar"></i> À confirmer · 2026</div>
+                    <div class="event-name">Digital Dreamers Dakar</div>
+                    <div class="event-loc"><i data-lucide="map-pin"></i> Dakar, Sénégal</div>
+                </div>
+                <div class="event-card-body">
+                    <p class="event-desc">Une nouvelle étape pour Digital Dreamers en Afrique de l'Ouest. Restez connectés pour les dates officielles.</p>
+                    <a href="#" class="event-link">Voir l'événement <i data-lucide="arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-card-top" style="background-image:url('https://images.unsplash.com/photo-1531058020387-3be344556be6?w=600&q=80')">
+                    <div class="event-date"><i data-lucide="calendar"></i> À confirmer · 2026</div>
+                    <div class="event-name">Digital Dreamers Abidjan</div>
+                    <div class="event-loc"><i data-lucide="map-pin"></i> Abidjan, Côte d'Ivoire</div>
+                </div>
+                <div class="event-card-body">
+                    <p class="event-desc">Le programme s'étend. Formation intensive et ateliers pratiques prévus à Abidjan pour 2026.</p>
+                    <a href="#" class="event-link">Voir l'événement <i data-lucide="arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ════════════ COURSES ════════════ -->
+<section id="courses">
+    <div class="wrap">
+        <div class="section-header-row">
+            <div>
+                <div class="section-tag"><i data-lucide="book-open"></i> Formations</div>
+                <h2 class="section-title">Nos cours en ligne</h2>
+            </div>
+            <a href="#courses" class="btn btn-ghost">Voir tous les cours <i data-lucide="arrow-right"></i></a>
+        </div>
+
+        <div class="courses-grid">
+            <div class="course-card">
+                <div class="course-thumb">
+                    <span class="course-chip"><i data-lucide="workflow"></i></span>
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&q=80" alt="Algorithmique" loading="lazy">
+                </div>
+                <div class="course-body">
+                    <div class="course-level">Initiation</div>
+                    <div class="course-name">Initiation à l'Algorithmique</div>
+                    <p class="course-desc">Apprends à résoudre des problèmes logiques, comprendre les structures de données et raisonner comme un développeur dès le départ.</p>
+                    <div class="course-footer">
+                        <div class="course-meta"><i data-lucide="layers"></i> 6 modules</div>
+                        <a href="#" class="course-cta">S'inscrire <i data-lucide="arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-thumb">
+                    <span class="course-chip"><i data-lucide="shield-check"></i></span>
+                    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&q=80" alt="Cybersécurité" loading="lazy">
+                </div>
+                <div class="course-body">
+                    <div class="course-level">Initiation</div>
+                    <div class="course-name">Initiation à la Cybersécurité</div>
+                    <p class="course-desc">Découvre les bases de la sécurité informatique : protection des données, menaces numériques et bonnes pratiques pour sécuriser les systèmes.</p>
+                    <div class="course-footer">
+                        <div class="course-meta"><i data-lucide="layers"></i> 8 modules</div>
+                        <a href="#" class="course-cta">S'inscrire <i data-lucide="arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-thumb">
+                    <span class="course-chip"><i data-lucide="terminal"></i></span>
+                    <img src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=600&q=80" alt="Python" loading="lazy">
+                </div>
+                <div class="course-body">
+                    <div class="course-level">Initiation</div>
+                    <div class="course-name">Initiation au langage Python</div>
+                    <p class="course-desc">Maîtrise les fondamentaux de Python, le langage de programmation le plus polyvalent, et crée tes premiers programmes concrets.</p>
+                    <div class="course-footer">
+                        <div class="course-meta"><i data-lucide="layers"></i> 7 modules</div>
+                        <a href="#" class="course-cta">S'inscrire <i data-lucide="arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ════════════ NEWS ════════════ -->
+<section id="news">
+    <div class="wrap">
+        <div class="section-header-row">
+            <div>
+                <div class="section-tag"><i data-lucide="newspaper"></i> Actualités</div>
+                <h2 class="section-title">Aux dernières nouvelles</h2>
+            </div>
+            <a href="#news" class="btn btn-ghost">Tous les articles <i data-lucide="arrow-right"></i></a>
+        </div>
+
+        <div class="news-grid">
+            <div class="news-card">
+                <div class="news-thumb">
+                    <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=500&q=80" alt="Inscriptions Lomé 2026" loading="lazy">
+                </div>
+                <div class="news-body">
+                    <div class="news-cat"><i data-lucide="megaphone"></i> Évènement</div>
+                    <div class="news-title">Digital Dreamers Lomé 2026 : les inscriptions sont ouvertes !</div>
+                    <p class="news-excerpt">La prochaine édition se tiendra à Lomé du 13 au 24 juillet 2026. Une formation intensive pour les passionnés du numérique au Togo.</p>
+                    <div class="news-footer">
+                        <span class="news-date"><i data-lucide="clock"></i> Mai 2025</span>
+                        <a href="#" class="news-link">Lire l'article <i data-lucide="arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="news-card">
+                <div class="news-thumb">
+                    <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=500&q=80" alt="Expansion Afrique de l'Ouest" loading="lazy">
+                </div>
+                <div class="news-body">
+                    <div class="news-cat"><i data-lucide="globe"></i> Programme</div>
+                    <div class="news-title">Digital Dreamers s'étend en Afrique de l'Ouest</div>
+                    <p class="news-excerpt">Après son succès initial, le programme annonce son expansion dans plusieurs nouvelles villes africaines pour accompagner encore plus de talents.</p>
+                    <div class="news-footer">
+                        <span class="news-date"><i data-lucide="clock"></i> Avril 2025</span>
+                        <a href="#" class="news-link">Lire l'article <i data-lucide="arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="news-load">
+            <a href="#news" class="btn btn-ghost btn-lg">Charger plus d'articles</a>
+        </div>
+    </div>
+</section>
+
+<!-- ════════════ NEWSLETTER ════════════ -->
+<div id="newsletter">
+    <div class="wrap">
+        <div class="nl-inner">
+            <div class="nl-text">
+                <h2>Rejoins la communauté</h2>
+                <p>Reçois les actualités et les prochains événements directement dans ta boîte mail.</p>
+            </div>
+            <div class="nl-form">
+                <input class="nl-input" type="email" placeholder="ton@email.com">
+                <button class="btn btn-white">S'abonner <i data-lucide="send"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ════════════ FOOTER ════════════ -->
+<footer id="contact">
+    <div class="wrap">
+        <div class="foot-grid">
+            <div class="foot-brand">
+                <a href="#" class="nav-logo">
+                    <span class="logo-sq"><i data-lucide="sparkles"></i></span>
+                    Digital Dreamers
+                </a>
+                <p>Une initiative de BostonSolux Academy pour former la nouvelle génération de talents numériques en Afrique et dans le monde.</p>
+                <div class="foot-social">
+                    <a href="#" class="social-btn" title="Facebook" aria-label="Facebook"><strong>f</strong></a>
+                    <a href="#" class="social-btn" title="LinkedIn" aria-label="LinkedIn"><strong>in</strong></a>
+                    <a href="#" class="social-btn" title="YouTube" aria-label="YouTube"><i data-lucide="play"></i></a>
+                </div>
+            </div>
+
+            <div class="foot-col">
+                <h4>Liens utiles</h4>
+                <ul class="foot-links">
+                    <li><a href="#">GroupeSolux</a></li>
+                    <li><a href="#">BostonSolux Academy</a></li>
+                    <li><a href="#">Nos formations</a></li>
+                    <li><a href="#">Évènements</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="foot-col">
+                <h4>Programme</h4>
+                <ul class="foot-links">
+                    <li><a href="#">Algorithmique</a></li>
+                    <li><a href="#">Cybersécurité</a></li>
+                    <li><a href="#">Python</a></li>
+                    <li><a href="#">Galerie</a></li>
+                    <li><a href="#">Paroles d'experts</a></li>
+                </ul>
+            </div>
+
+            <div class="foot-col">
+                <h4>Nos bureaux</h4>
+                <div class="foot-cities">
+                    <span class="city-tag"><i data-lucide="map-pin"></i> Lomé</span>
+                    <span class="city-tag"><i data-lucide="map-pin"></i> Dakar</span>
+                    <span class="city-tag"><i data-lucide="map-pin"></i> Abidjan</span>
+                    <span class="city-tag"><i data-lucide="map-pin"></i> Montréal</span>
+                    <span class="city-tag"><i data-lucide="map-pin"></i> Paris</span>
+                    <span class="city-tag"><i data-lucide="map-pin"></i> Boston</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="foot-bottom">
+            <span class="foot-copy">© 2025 Digital Dreamers · BostonSolux Academy. Tous droits réservés.</span>
+            <div class="foot-legal">
+                <a href="#">Mentions légales</a>
+                <a href="#">Politique de confidentialité</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Render Lucide icons
+    if (window.lucide) lucide.createIcons();
+</script>
+</body>
+</html>
