@@ -2,9 +2,9 @@
   "version": "0.0.1",
   "configurations": [
     {
-      "name": "dorikko",
+      "name": "catalogue",
       "runtimeExecutable": "npx",
-      "runtimeArgs": ["-y", "serve", "-l", "4321", "."],
+      "runtimeArgs": ["-y", "serve", "-l", "4321", ".."],
       "port": 4321
     }
   ]

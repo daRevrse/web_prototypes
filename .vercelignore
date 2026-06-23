@@ -1,0 +1,6 @@
+# Fichiers de travail à ne pas déployer
+.claude
+**/.claude
+dorikko-saveurs/inspo
+dorikko-saveurs/existant
+**/*.jfif

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>web_prototypes — Catalogue de sites</title>
+<meta name="description" content="Catalogue de prototypes de sites web — maquettes et démonstrations.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=IBM+Plex+Mono:wght@400;500&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0c0c0d;--bg-2:#141416;--card:#161618;--line:rgba(255,255,255,.1);--line-2:rgba(255,255,255,.06);
+  --txt:#ededec;--muted:#8b8b8f;--accent:#e8a44c;--accent-2:#d98445;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font-family:'Archivo',sans-serif;-webkit-font-smoothing:antialiased;line-height:1.6;min-height:100vh}
+body::before{content:"";position:fixed;inset:0;z-index:99;pointer-events:none;opacity:.04;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='150' height='150'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+.mono{font-family:'IBM Plex Mono',monospace}
+
+/* Header */
+header{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(12,12,13,.82);backdrop-filter:blur(12px);z-index:50}
+.hd{display:flex;justify-content:space-between;align-items:center;height:70px}
+.hd .lo{font-family:'IBM Plex Mono';font-weight:500;letter-spacing:.02em;font-size:15px}
+.hd .lo b{color:var(--accent)}
+.hd .rt{display:flex;gap:24px;align-items:center;font-family:'IBM Plex Mono';font-size:12.5px;color:var(--muted)}
+.hd .rt a:hover{color:var(--txt)}
+.hd .dot{width:7px;height:7px;border-radius:50%;background:#3ecf8e;display:inline-block;margin-right:7px;vertical-align:middle;box-shadow:0 0 0 3px rgba(62,207,142,.16)}
+@media(max-width:620px){.hd .rt span{display:none}}
+
+/* Hero */
+.hero{padding:96px 0 60px;border-bottom:1px solid var(--line-2)}
+.hero .tag{font-family:'IBM Plex Mono';font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:26px;display:flex;align-items:center;gap:12px}
+.hero .tag::before{content:"";width:30px;height:1px;background:var(--accent)}
+.hero h1{font-family:'Instrument Serif',serif;font-weight:400;font-size:clamp(46px,8vw,104px);line-height:.98;letter-spacing:-.01em}
+.hero h1 em{font-style:italic;color:var(--accent)}
+.hero p{max-width:62ch;margin-top:26px;color:var(--muted);font-size:18px}
+.hero .stats{display:flex;gap:48px;margin-top:44px;flex-wrap:wrap}
+.hero .stats .s{font-family:'IBM Plex Mono';font-size:13px;color:var(--muted)}
+.hero .stats .s b{display:block;font-family:'Instrument Serif';font-style:italic;font-size:34px;color:var(--txt);font-weight:400;line-height:1}
+
+/* Grid */
+.cat{padding:64px 0 110px}
+.cat-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:34px;font-family:'IBM Plex Mono';font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:26px}
+.card{background:var(--card);border:1px solid var(--line);overflow:hidden;transition:.45s cubic-bezier(.2,.7,.2,1);display:flex;flex-direction:column}
+.card:hover{transform:translateY(-6px);border-color:rgba(232,164,76,.5)}
+.thumb{position:relative;aspect-ratio:16/10;overflow:hidden;background:#1c1c1f;border-bottom:1px solid var(--line)}
+.thumb .frame{position:absolute;top:0;left:0;width:1280px;height:800px;border:0;transform-origin:top left;pointer-events:none;background:#fff}
+.thumb .badge{position:absolute;top:14px;left:14px;z-index:3;font-family:'IBM Plex Mono';font-size:11px;letter-spacing:.1em;background:rgba(12,12,13,.78);backdrop-filter:blur(4px);color:var(--txt);padding:7px 11px;border:1px solid var(--line)}
+.thumb .ov{position:absolute;inset:0;z-index:2;background:rgba(12,12,13,0);transition:.45s;display:grid;place-items:center}
+.card:hover .thumb .ov{background:rgba(12,12,13,.34)}
+.thumb .ov span{font-family:'IBM Plex Mono';font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:#fff;border:1px solid rgba(255,255,255,.6);padding:11px 20px;opacity:0;transform:translateY(8px);transition:.45s}
+.card:hover .thumb .ov span{opacity:1;transform:none}
+.meta{padding:26px 26px 28px;display:flex;flex-direction:column;gap:10px;flex:1}
+.meta .ix{font-family:'IBM Plex Mono';font-size:12px;color:var(--accent);letter-spacing:.1em}
+.meta h2{font-family:'Instrument Serif';font-weight:400;font-size:32px;line-height:1.05}
+.meta p{color:var(--muted);font-size:14.5px;margin-top:-2px}
+.meta .row{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:18px;border-top:1px solid var(--line-2);font-family:'IBM Plex Mono';font-size:12px}
+.meta .row .url{color:var(--muted)}
+.meta .row .go{color:var(--accent);display:inline-flex;gap:7px;align-items:center}
+.card:hover .meta .row .go{gap:13px}
+.meta .row .go,.card:hover .meta .row .go{transition:.4s}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+
+footer{border-top:1px solid var(--line);padding:36px 0}
+.ft{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;font-family:'IBM Plex Mono';font-size:12.5px;color:var(--muted)}
+.ft a{color:var(--muted)}.ft a:hover{color:var(--accent)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hd">
+    <div class="lo">web_<b>prototypes</b></div>
+    <div class="rt">
+      <span><span class="dot"></span>3 projets en ligne</span>
+      <a href="https://github.com/daRevrse/web_prototypes" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="tag mono">Catalogue · Maquettes &amp; démonstrations</div>
+    <h1>Un studio de <em>prototypes</em><br>web, en un seul endroit.</h1>
+    <p>Chaque carte ci-dessous est un site complet, hébergé dans son propre dossier. Cliquez pour ouvrir la démonstration en vraie grandeur — idéal pour la présenter à un client ou à l'équipe.</p>
+    <div class="stats">
+      <div class="s">Projets<b>03</b></div>
+      <div class="s">Hébergement<b>Vercel</b></div>
+      <div class="s">Type<b>Statique</b></div>
+    </div>
+  </div>
+</section>
+
+<section class="cat">
+  <div class="wrap">
+    <div class="cat-head">
+      <span>// Sélection</span>
+      <span>Cliquez une carte pour ouvrir</span>
+    </div>
+    <div class="grid">
+
+      <!-- 01 -->
+      <a class="card" href="/dorikko-saveurs/page-1-le-brasier/">
+        <div class="thumb">
+          <span class="badge mono">Restaurant · sombre</span>
+          <iframe class="frame" src="/dorikko-saveurs/page-1-le-brasier/" scrolling="no" loading="lazy" tabindex="-1" title="Aperçu Dorikko Le Brasier"></iframe>
+          <div class="ov"><span>Ouvrir le site</span></div>
+        </div>
+        <div class="meta">
+          <span class="ix mono">01 — Dorikko-Saveurs</span>
+          <h2>Le Brasier</h2>
+          <p>Maison de viande immersive, ambiance feu de bois. Version sombre et appétissante.</p>
+          <div class="row">
+            <span class="url">/dorikko-saveurs/page-1-le-brasier</span>
+            <span class="go">Ouvrir <span>→</span></span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 02 -->
+      <a class="card" href="/dorikko-saveurs/page-2-maison/">
+        <div class="thumb">
+          <span class="badge mono">Restaurant · clair</span>
+          <iframe class="frame" src="/dorikko-saveurs/page-2-maison/" scrolling="no" loading="lazy" tabindex="-1" title="Aperçu Dorikko Maison"></iframe>
+          <div class="ov"><span>Ouvrir le site</span></div>
+        </div>
+        <div class="meta">
+          <span class="ix mono">02 — Dorikko-Saveurs</span>
+          <h2>Maison</h2>
+          <p>Restaurant de viande raffiné, style éditorial &amp; intemporel. Version claire.</p>
+          <div class="row">
+            <span class="url">/dorikko-saveurs/page-2-maison</span>
+            <span class="go">Ouvrir <span>→</span></span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 03 -->
+      <a class="card" href="/digitaldreamers/">
+        <div class="thumb">
+          <span class="badge mono">Éducation · formation</span>
+          <iframe class="frame" src="/digitaldreamers/" scrolling="no" loading="lazy" tabindex="-1" title="Aperçu Digital Dreamers"></iframe>
+          <div class="ov"><span>Ouvrir le site</span></div>
+        </div>
+        <div class="meta">
+          <span class="ix mono">03 — Projet</span>
+          <h2>Digital Dreamers</h2>
+          <p>Plateforme de formation pour la nouvelle génération. Thème clair et dynamique.</p>
+          <div class="row">
+            <span class="url">/digitaldreamers</span>
+            <span class="go">Ouvrir <span>→</span></span>
+          </div>
+        </div>
+      </a>
+
+      <!-- 04 - chooser -->
+      <a class="card" href="/dorikko-saveurs/">
+        <div class="thumb">
+          <span class="badge mono">Comparatif</span>
+          <iframe class="frame" src="/dorikko-saveurs/" scrolling="no" loading="lazy" tabindex="-1" title="Aperçu Dorikko comparatif"></iframe>
+          <div class="ov"><span>Ouvrir le site</span></div>
+        </div>
+        <div class="meta">
+          <span class="ix mono">04 — Dorikko-Saveurs</span>
+          <h2>Les deux côte à côte</h2>
+          <p>Page de comparaison pour choisir entre la version « Brasier » et « Maison ».</p>
+          <div class="row">
+            <span class="url">/dorikko-saveurs</span>
+            <span class="go">Ouvrir <span>→</span></span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap ft">
+    <span>© 2026 web_prototypes — catalogue de maquettes</span>
+    <span><a href="https://github.com/daRevrse/web_prototypes" target="_blank" rel="noopener">github.com/daRevrse/web_prototypes</a></span>
+  </div>
+</footer>
+
+<script>
+// Scale each live iframe preview to fill its card (iframe is 1280×800 = 16:10)
+function fit(){
+  document.querySelectorAll('.thumb').forEach(t=>{
+    const f=t.querySelector('.frame');
+    if(f) f.style.transform='scale('+(t.clientWidth/1280)+')';
+  });
+}
+addEventListener('load',fit); addEventListener('resize',fit); fit();
+if(window.ResizeObserver){const ro=new ResizeObserver(fit);document.querySelectorAll('.thumb').forEach(t=>ro.observe(t));}
+</script>
+</body>
+</html>
