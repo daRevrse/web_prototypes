@@ -1,0 +1,325 @@
+{
+ "version": "0.4",
+ "title": "Dorikko – Le Brasier (Header)",
+ "type": "section",
+ "content": [
+  {
+   "id": "8ef032a",
+   "elType": "section",
+   "settings": {
+    "layout": "boxed",
+    "content_width": {
+     "unit": "px",
+     "size": 1180,
+     "sizes": []
+    },
+    "background_background": "classic",
+    "background_color": "#1C150E",
+    "padding": {
+     "unit": "px",
+     "top": "9",
+     "right": "20",
+     "bottom": "9",
+     "left": "20",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "8cc88c9",
+     "elType": "column",
+     "settings": {
+      "_column_size": 60,
+      "_inline_size": 60,
+      "content_position": "center"
+     },
+     "elements": [
+      {
+       "id": "ca8c086",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>Lun – Jeu 11h–22h · Ven – Dim 11h–00h&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Zomayi, près de Togo Grain · Kpalimé</p>",
+        "text_color": "#B6A489",
+        "align": "left",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 12.5,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "34a001b",
+     "elType": "column",
+     "settings": {
+      "_column_size": 40,
+      "_inline_size": 40,
+      "content_position": "center"
+     },
+     "elements": [
+      {
+       "id": "8924cf3",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>Réservations · <strong style=\"color:#F3E8D6;\">+228 91 69 84 29</strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Frais · Local · Bio</p>",
+        "text_color": "#B6A489",
+        "align": "right",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 12.5,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "9ffc505",
+   "elType": "section",
+   "settings": {
+    "layout": "boxed",
+    "content_width": {
+     "unit": "px",
+     "size": 1180,
+     "sizes": []
+    },
+    "background_background": "classic",
+    "background_color": "#15100B",
+    "padding": {
+     "unit": "px",
+     "top": "14",
+     "right": "20",
+     "bottom": "14",
+     "left": "20",
+     "isLinked": false
+    },
+    "border_border": "solid",
+    "border_width": {
+     "unit": "px",
+     "top": "0",
+     "right": "0",
+     "bottom": "1",
+     "left": "0",
+     "isLinked": false
+    },
+    "border_color": "rgba(243,232,214,0.10)"
+   },
+   "elements": [
+    {
+     "id": "7ec170c",
+     "elType": "column",
+     "settings": {
+      "_column_size": 35,
+      "_inline_size": 35,
+      "content_position": "center"
+     },
+     "elements": [
+      {
+       "id": "80bb324",
+       "elType": "widget",
+       "settings": {
+        "menu": "",
+        "layout": "horizontal",
+        "align_items": "center",
+        "pointer": "underline",
+        "animation_line": "fade",
+        "menu_typography_typography": "custom",
+        "menu_typography_font_family": "Archivo",
+        "menu_typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "menu_typography_font_weight": "600",
+        "menu_typography_text_transform": "uppercase",
+        "menu_typography_letter_spacing": {
+         "unit": "px",
+         "size": 1.5,
+         "sizes": []
+        },
+        "color_menu_item": "#E7D8C0",
+        "color_menu_item_hover": "#E07A2C",
+        "pointer_color_hover": "#C2511F",
+        "color_menu_item_active": "#E07A2C",
+        "pointer_color_active": "#C2511F",
+        "color_dropdown_item": "#E7D8C0",
+        "background_color_dropdown": "#1C150E",
+        "color_dropdown_item_hover": "#ffffff",
+        "background_color_dropdown_hover": "#C2511F",
+        "toggle_color": "#F3E8D6"
+       },
+       "elements": [],
+       "widgetType": "nav-menu"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "a21c5b3",
+     "elType": "column",
+     "settings": {
+      "_column_size": 30,
+      "_inline_size": 30,
+      "content_position": "center"
+     },
+     "elements": [
+      {
+       "id": "ba0ae04",
+       "elType": "widget",
+       "settings": {
+        "image": {
+         "url": "",
+         "id": "",
+         "alt": "Dorikko Saveurs — Frais, Local, Bio",
+         "source": "library"
+        },
+        "align": "center",
+        "width": {
+         "unit": "px",
+         "size": 150,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "image"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "a3f9b73",
+     "elType": "column",
+     "settings": {
+      "_column_size": 35,
+      "_inline_size": 35,
+      "content_position": "center"
+     },
+     "elements": [
+      {
+       "id": "cbfaa91",
+       "elType": "section",
+       "settings": {},
+       "elements": [
+        {
+         "id": "09a73c3",
+         "elType": "column",
+         "settings": {
+          "_column_size": 55,
+          "_inline_size": 55,
+          "content_position": "center"
+         },
+         "elements": [
+          {
+           "id": "f17191e",
+           "elType": "widget",
+           "settings": {
+            "title": "Bienvenue à table",
+            "header_size": "div",
+            "align": "right",
+            "title_color": "#C89B53",
+            "typography_typography": "custom",
+            "typography_font_family": "Fraunces",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 17,
+             "sizes": []
+            },
+            "typography_font_weight": "600",
+            "typography_font_style": "italic"
+           },
+           "elements": [],
+           "widgetType": "heading"
+          }
+         ],
+         "isInner": true
+        },
+        {
+         "id": "3be5264",
+         "elType": "column",
+         "settings": {
+          "_column_size": 45,
+          "_inline_size": 45,
+          "content_position": "center"
+         },
+         "elements": [
+          {
+           "id": "3b015da",
+           "elType": "widget",
+           "settings": {
+            "text": "Réserver",
+            "link": {
+             "url": "#",
+             "is_external": "",
+             "nofollow": ""
+            },
+            "align": "right",
+            "background_color": "#C2511F",
+            "button_text_color": "#ffffff",
+            "button_background_hover_color": "#E07A2C",
+            "typography_typography": "custom",
+            "typography_font_family": "Archivo",
+            "typography_font_weight": "600",
+            "typography_text_transform": "uppercase",
+            "typography_letter_spacing": {
+             "unit": "px",
+             "size": 2,
+             "sizes": []
+            },
+            "typography_font_size": {
+             "unit": "px",
+             "size": 13,
+             "sizes": []
+            },
+            "border_radius": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "0",
+             "left": "0",
+             "isLinked": true
+            },
+            "text_padding": {
+             "unit": "px",
+             "top": "14",
+             "right": "28",
+             "bottom": "14",
+             "left": "28",
+             "isLinked": false
+            }
+           },
+           "elements": [],
+           "widgetType": "button"
+          }
+         ],
+         "isInner": true
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {
+  "background_background": "classic",
+  "background_color": "#15100B"
+ }
+}

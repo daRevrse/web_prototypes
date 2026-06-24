@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Réserver &amp; Contact — Dorikko-Saveurs · Kpalimé</title>
+<meta name="description" content="Réservez votre table chez Dorikko-Saveurs à Kpalimé. Horaires, adresse, téléphone et formulaire de réservation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/brasier.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="tb-left">
+      <span><span class="dot"></span>Lun – Jeu 11h–22h · Ven – Dim 11h–00h</span>
+      <span>Zomayi, près de Togo Grain · Kpalimé</span>
+    </div>
+    <div class="tb-right">
+      <span>Réservations · <b>+228 91 69 84 29</b></span>
+      <span>Frais · Local · Bio</span>
+    </div>
+  </div>
+</div>
+
+<header class="header" id="header">
+  <div class="wrap header-inner">
+    <nav class="nav">
+      <a href="index.html">Accueil</a>
+      <a href="la-maison.html">La Maison</a>
+      <a href="le-menu.html">Le Menu</a>
+      <a href="galerie.html">Galerie</a>
+    </nav>
+    <a href="index.html" class="brand"><img src="logo-light.png" alt="Dorikko Saveurs — Frais, Local, Bio"></a>
+    <div class="header-cta">
+      <span class="phone">Bienvenue à table</span>
+      <a href="contact.html" class="btn btn-primary active">Réserver <span class="ar">→</span></a>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile" id="mobile">
+  <span class="x" id="mx">✕</span>
+  <a href="index.html">Accueil</a>
+  <a href="la-maison.html">La Maison</a>
+  <a href="le-menu.html">Le Menu</a>
+  <a href="galerie.html">Galerie</a>
+  <a href="contact.html">Réserver</a>
+</div>
+
+<!-- BANNER -->
+<section class="pbanner" style="min-height:48vh">
+  <div class="pbanner-bg" style="background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=2000&q=80')"></div>
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">Accueil</a> &nbsp;/&nbsp; <span>Réserver</span></div>
+    <h1>Une place<br>au coin du <em>feu.</em></h1>
+    <p>Réservez votre table en quelques secondes — nous vous rappelons pour confirmer.</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section">
+  <div class="wrap">
+    <div class="contact-grid">
+
+      <!-- Form -->
+      <div class="reveal">
+        <span class="eyebrow">Réservation</span>
+        <h2 style="font-size:clamp(28px,3.6vw,42px);margin:18px 0 28px">Réserver une table</h2>
+        <form class="cform" onsubmit="this.querySelector('.okmsg').style.display='block';return false">
+          <label>Nom complet
+            <input type="text" placeholder="Votre nom" required>
+          </label>
+          <label>Téléphone
+            <input type="tel" placeholder="+228 ..." required>
+          </label>
+          <label>E-mail
+            <input type="email" placeholder="vous@exemple.com">
+          </label>
+          <label>Nombre de personnes
+            <select>
+              <option>1 personne</option><option selected>2 personnes</option>
+              <option>3 personnes</option><option>4 personnes</option>
+              <option>5 personnes</option><option>6 et plus</option>
+            </select>
+          </label>
+          <label>Date
+            <input type="date" required>
+          </label>
+          <label>Heure
+            <input type="time" required>
+          </label>
+          <label class="full">Message (allergies, occasion…)
+            <textarea placeholder="Une demande particulière ?"></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Envoyer ma demande <span class="ar">→</span></button>
+          <p class="okmsg" style="display:none;grid-column:1/-1;color:var(--ember-2);font-family:'Fraunces';font-style:italic;margin-top:6px">Merci ! Votre demande a bien été prise en compte — nous vous rappelons pour confirmer. (Démo)</p>
+        </form>
+      </div>
+
+      <!-- Info -->
+      <div class="reveal">
+        <span class="eyebrow">Nous trouver</span>
+        <h2 style="font-size:clamp(28px,3.6vw,42px);margin:18px 0 24px">Infos &amp; accès</h2>
+        <div class="info-card">
+          <div class="info-row">
+            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            <div><h4>Adresse</h4><p>Zomayi, non loin de Togo Grain<small>Kpalimé, Togo</small></p></div>
+          </div>
+          <div class="info-row">
+            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4h4l2 5-3 2a12 12 0 0 0 5 5l2-3 5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+            <div><h4>Téléphone</h4><p>+228 91 69 84 29<small>Réservations &amp; renseignements</small></p></div>
+          </div>
+          <div class="info-row">
+            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+            <div><h4>E-mail</h4><p>info@dorikko-saveurs.com<small>Réponse sous 24 h</small></p></div>
+          </div>
+          <div class="info-row">
+            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <div><h4>Horaires</h4><p>Lun – Jeu : 11h – 22h<small>Ven – Dim : 11h – minuit · ouvert 7j/7</small></p></div>
+          </div>
+        </div>
+        <div class="map">
+          <iframe title="Carte — Dorikko-Saveurs, Kpalimé" loading="lazy"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=0.6133%2C6.8800%2C0.6533%2C6.9200&amp;layer=mapnik&amp;marker=6.9000%2C0.6333"></iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- HOURS BAND -->
+<section class="band" style="padding:120px 0">
+  <div class="band-bg"></div>
+  <div class="wrap">
+    <span class="eyebrow center" style="color:var(--gold)">Toujours ouvert pour vous</span>
+    <q>Midi et soir, sept jours sur sept. Le feu vous attend.</q>
+    <div class="by">— Dorikko-Saveurs, Kpalimé</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a href="index.html" class="brand footer-logo"><img src="logo-light.png" alt="Dorikko Saveurs"></a>
+        <p class="ftxt">Maison de viande &amp; terroir à Kpalimé. Frais, local, bio — nous cultivons le goût du vrai, de la ferme à la braise.</p>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+          <a href="#" aria-label="Facebook"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M14 9h3V6h-3a4 4 0 0 0-4 4v2H7v3h3v6h3v-6h2.5l.5-3H13v-2a1 1 0 0 1 1-1z"/></svg></a>
+          <a href="#" aria-label="WhatsApp"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15l-1.4 5 5.1-1.3A10 10 0 1 0 12 2zm0 18a8 8 0 0 1-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1 1 12 20z"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Visiter</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="la-maison.html">La maison</a></li>
+          <li><a href="le-menu.html">Le menu</a></li>
+          <li><a href="galerie.html">Galerie</a></li>
+          <li><a href="contact.html">Réserver</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Nous trouver</h4>
+        <ul>
+          <li><a href="contact.html">Zomayi, près de Togo Grain</a></li>
+          <li><a href="contact.html">Kpalimé, Togo</a></li>
+          <li><a href="tel:+22891698429">+228 91 69 84 29</a></li>
+          <li><a href="mailto:info@dorikko-saveurs.com">info@dorikko-saveurs.com</a></li>
+        </ul>
+      </div>
+      <div class="nl">
+        <h4>La lettre du feu</h4>
+        <p>Suggestions du chef, soirées braise et arrivages de la ferme — une fois par mois.</p>
+        <form onsubmit="return false">
+          <input type="email" placeholder="Votre e-mail">
+          <button>→</button>
+        </form>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© 2026 Dorikko-Saveurs. Tous droits réservés.</span>
+      <span>Frais · Local · Bio — Cuisine au feu de bois</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js"></script>
+</body>
+</html>
