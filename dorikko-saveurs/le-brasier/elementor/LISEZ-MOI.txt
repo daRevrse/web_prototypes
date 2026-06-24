@@ -1,0 +1,91 @@
+══════════════════════════════════════════════════════════════════════
+  DORIKKO-SAVEURS · LE BRASIER — Templates Elementor (Pro)
+══════════════════════════════════════════════════════════════════════
+
+FICHIERS
+  header.json ............ En-tête (topbar + Nav Menu + logo + bouton)   → type: section
+  footer.json ............ Pied de page (4 colonnes + barre du bas)        → type: section
+  accueil-body.json ...... Page d'accueil (corps complet)                  → type: page
+  la-maison-body.json .... Page « La Maison »                              → type: page
+  le-menu-body.json ...... Page « Le Menu » (carte complète)               → type: page
+  galerie-body.json ...... Page « Galerie »                                → type: page
+  contact-body.json ...... Page « Réserver / Contact »                     → type: page
+
+Ces fichiers REMPLACENT l'ancien export (page-1-le-brasier/elementor-*.json).
+Ils utilisent les widgets Pro, la responsivité mobile et les animations.
+
+──────────────────────────────────────────────────────────────────────
+WIDGETS PRO UTILISÉS
+  • Form (Pro) ........... Formulaire de réservation/contact (envoi e-mail
+                           configuré vers info@dorikko-saveurs.com)
+  • Price List (Pro) ..... La carte / le menu (titre · prix · description,
+                           séparateur pointillé)
+  • Nav Menu (Pro) ....... Menu du header (responsive, burger auto sur mobile)
+  • Counter .............. Chiffres animés (page La Maison)
+  • Icon Box, Social Icons, Icon List, Image, Heading, Text, Button, HTML
+
+──────────────────────────────────────────────────────────────────────
+IMPORT — pas à pas
+
+1) HEADER  (Theme Builder)
+   Templates → Modèles enregistrés → Importer des modèles → header.json
+   Puis Theme Builder → Header → Ajouter → icône dossier 📁 → Mes modèles →
+   insérer « Le Brasier — Header » → Publier (condition : Tout le site).
+   ⚙ Après import :
+     - Nav Menu : Apparence → Menus, créer le menu (Accueil / La Maison /
+       Le Menu / Galerie) puis le sélectionner dans le widget.
+     - Logo : cliquer le widget Image → choisir logo-light.png (Médiathèque).
+
+2) FOOTER  (Theme Builder)
+   Même méthode : importer footer.json → Theme Builder → Footer → insérer →
+   Publier (Tout le site).
+
+3) LES PAGES  (accueil, la-maison, le-menu, galerie, contact)
+   Pour chaque page :
+   Pages → Ajouter → titre → « Modifier avec Elementor » → icône dossier 📁
+   → Importer → choisir le fichier ...-body.json → Insérer.
+   ⚙ Page Contact : le widget Form envoie un e-mail — vérifie l'adresse dans
+     Contenu → Actions après envoi → Email. La carte est un widget HTML
+     (OpenStreetMap, sans clé API).
+
+──────────────────────────────────────────────────────────────────────
+RESPONSIVITÉ (déjà configurée)
+  • Titres : tailles réduites en tablette et mobile (desktop/tablet/mobile).
+  • Sections : paddings réduits sur mobile.
+  • Colonnes : passage à 50% (tablette) puis 100% (mobile).
+  • Certains éléments décoratifs masqués sur mobile (ex. « Bienvenue à table »).
+  Vérifie le rendu avec l'aperçu responsive d'Elementor (icônes tablette/mobile).
+
+──────────────────────────────────────────────────────────────────────
+ANIMATIONS
+
+  ✓ NATIF (rien à installer) : les apparitions au défilement (fadeInUp) sont
+    posées via Motion Effects d'Elementor (Avancé → Effets de mouvement →
+    Animation d'entrée). Les Counters s'animent au scroll automatiquement.
+    Pour aller plus loin (parallaxe, sticky, mouse-track), Elementor Pro le
+    propose nativement par section/widget.
+
+  ✗ NON NATIF — le BANDEAU DÉFILANT (marquee) sous le hero :
+    Elementor (même Pro) n'a pas de widget « texte défilant ». Je l'ai laissé
+    sous forme de titre fixe (section orange). Pour le rendre défilant :
+
+      → Installe l'extension GRATUITE « Unlimited Elements for Elementor »
+        (Extensions → Ajouter → rechercher « Unlimited Elements »).
+        Elle fournit un widget « Marquee » / « Text Marquee ».
+      Puis : supprime le titre fixe de la section orange et dépose le widget
+      Marquee à la place, avec le texte :
+        Viande maturée · Feu de bois · Terroir & ferme · 100% bio ·
+        Côte de bœuf · Saveurs authentiques
+
+    Alternatives équivalentes (au choix) : « Premium Addons for Elementor »
+    ou « PowerPack Addons » proposent aussi un widget défilant.
+
+──────────────────────────────────────────────────────────────────────
+À PERSONNALISER
+  • Images : URLs Unsplash externes → télécharge-les et ré-héberge-les dans
+    la Médiathèque pour la prod (fiabilité). Pour la Galerie, tu peux ensuite
+    remplacer les widgets Image par le widget « Galerie » (Pro) une fois les
+    photos importées.
+  • Prix en FCFA = exemples → adapte à ta vraie carte.
+  • Polices : Fraunces (titres) + Archivo (texte) — Google Fonts intégrées.
+══════════════════════════════════════════════════════════════════════

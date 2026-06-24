@@ -1,0 +1,718 @@
+{
+ "version": "0.4",
+ "title": "Le Brasier — Contact (Body)",
+ "type": "page",
+ "content": [
+  {
+   "id": "60920b7",
+   "elType": "section",
+   "settings": {
+    "content_width": {
+     "unit": "px",
+     "size": 1180,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "background_background": "classic",
+    "background_image": {
+     "url": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=2000&q=80",
+     "id": "",
+     "source": "url"
+    },
+    "background_position": "center center",
+    "background_size": "cover",
+    "background_overlay_background": "classic",
+    "background_overlay_color": "rgba(14,9,5,0.6)",
+    "padding": {
+     "unit": "px",
+     "top": "150",
+     "right": "20",
+     "bottom": "72",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "110",
+     "right": "18",
+     "bottom": "54",
+     "left": "18",
+     "isLinked": false
+    },
+    "min_height": {
+     "unit": "vh",
+     "size": 48,
+     "sizes": []
+    },
+    "min_height_mobile": {
+     "unit": "vh",
+     "size": 46,
+     "sizes": []
+    },
+    "content_position": "bottom"
+   },
+   "elements": [
+    {
+     "id": "d7fc508",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": 100,
+      "_inline_size_mobile": 100,
+      "_animation": "fadeInUp"
+     },
+     "elements": [
+      {
+       "id": "73b30f6",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p style=\"letter-spacing:.2em;text-transform:uppercase;font-size:12px;color:#b6a489;margin:0\"><a href=\"index.html\" style=\"color:#b6a489\">Accueil</a> &nbsp;/&nbsp; <span style=\"color:#e07a2c\">Réserver</span></p>",
+        "text_color": "#b6a489",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "18",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "e9df344",
+       "elType": "widget",
+       "settings": {
+        "title": "Une place au coin du feu.",
+        "header_size": "h1",
+        "title_color": "#f3e8d6",
+        "typography_typography": "custom",
+        "typography_font_family": "Fraunces",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": [
+          96,
+          60,
+          42
+         ],
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "8b69cc4",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>Réservez votre table en quelques secondes — nous vous rappelons pour confirmer.</p>",
+        "text_color": "#e7d8c0",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 18,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "f3d91b5",
+   "elType": "section",
+   "settings": {
+    "content_width": {
+     "unit": "px",
+     "size": 1180,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "background_background": "classic",
+    "background_color": "#15100b",
+    "padding": {
+     "unit": "px",
+     "top": "120",
+     "right": "20",
+     "bottom": "120",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "72",
+     "right": "18",
+     "bottom": "72",
+     "left": "18",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "1d86506",
+     "elType": "column",
+     "settings": {
+      "_column_size": 52,
+      "_inline_size": 52,
+      "_inline_size_mobile": 100,
+      "_animation": "fadeInUp"
+     },
+     "elements": [
+      {
+       "id": "b3829f2",
+       "elType": "widget",
+       "settings": {
+        "title": "Réservation",
+        "header_size": "span",
+        "title_color": "#e07a2c",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 4,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "18",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "857a233",
+       "elType": "widget",
+       "settings": {
+        "title": "Réserver une table",
+        "header_size": "h2",
+        "title_color": "#f3e8d6",
+        "typography_typography": "custom",
+        "typography_font_family": "Fraunces",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": [
+          42,
+          34,
+          28
+         ],
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "26",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "b5cae93",
+       "elType": "widget",
+       "settings": {
+        "form_name": "Réservation",
+        "form_fields": [
+         {
+          "_id": "6a84375",
+          "field_type": "text",
+          "field_label": "Nom complet",
+          "placeholder": "Votre nom",
+          "width": "50",
+          "required": "true"
+         },
+         {
+          "_id": "8d4cce3",
+          "field_type": "tel",
+          "field_label": "Téléphone",
+          "placeholder": "+228 ...",
+          "width": "50",
+          "required": "true"
+         },
+         {
+          "_id": "e82af2e",
+          "field_type": "email",
+          "field_label": "E-mail",
+          "placeholder": "vous@exemple.com",
+          "width": "100"
+         },
+         {
+          "_id": "33eb805",
+          "field_type": "select",
+          "field_label": "Nombre de personnes",
+          "placeholder": "",
+          "width": "50",
+          "field_options": "1 personne\n2 personnes\n3 personnes\n4 personnes\n5 personnes\n6 et plus"
+         },
+         {
+          "_id": "7dad950",
+          "field_type": "date",
+          "field_label": "Date",
+          "placeholder": "",
+          "width": "25",
+          "required": "true"
+         },
+         {
+          "_id": "55719cb",
+          "field_type": "time",
+          "field_label": "Heure",
+          "placeholder": "",
+          "width": "25",
+          "required": "true"
+         },
+         {
+          "_id": "9a8d6d1",
+          "field_type": "textarea",
+          "field_label": "Message (allergies, occasion…)",
+          "placeholder": "Une demande particulière ?",
+          "width": "100",
+          "rows": 4
+         }
+        ],
+        "button_text": "Envoyer ma demande",
+        "submit_actions": [
+         "email"
+        ],
+        "email_to": "info@dorikko-saveurs.com",
+        "email_subject": "Site Dorikko — nouveau message",
+        "email_content": "[all-fields]",
+        "email_from_name": "Site Dorikko-Saveurs",
+        "email_reply_to": "",
+        "button_width": "100",
+        "button_size": "md",
+        "button_align": "stretch",
+        "label_color": "#b6a489",
+        "label_typography_typography": "custom",
+        "label_typography_font_family": "Archivo",
+        "label_typography_font_size": {
+         "unit": "px",
+         "size": 11,
+         "sizes": []
+        },
+        "label_typography_letter_spacing": {
+         "unit": "px",
+         "size": 1.5,
+         "sizes": []
+        },
+        "label_typography_text_transform": "uppercase",
+        "field_background_color": "#1c150e",
+        "field_text_color": "#f3e8d6",
+        "field_border_color": "rgba(243,232,214,.14)",
+        "field_border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": false
+        },
+        "field_typography_typography": "custom",
+        "field_typography_font_family": "Archivo",
+        "field_typography_font_size": {
+         "unit": "px",
+         "size": 15,
+         "sizes": []
+        },
+        "field_padding": {
+         "unit": "px",
+         "top": "14",
+         "right": "15",
+         "bottom": "14",
+         "left": "15",
+         "isLinked": false
+        },
+        "button_background_color": "#c2511f",
+        "button_text_color": "#ffffff",
+        "button_hover_background_color": "#e07a2c",
+        "button_typography_typography": "custom",
+        "button_typography_font_family": "Archivo",
+        "button_typography_font_weight": "600",
+        "button_typography_text_transform": "uppercase",
+        "button_typography_letter_spacing": {
+         "unit": "px",
+         "size": 2,
+         "sizes": []
+        },
+        "button_typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "button_border_radius": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        },
+        "button_text_padding": {
+         "unit": "px",
+         "top": "17",
+         "right": "30",
+         "bottom": "17",
+         "left": "30",
+         "isLinked": false
+        },
+        "mark_required_color": "#e07a2c",
+        "row_gap": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "form"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "4bce7b8",
+     "elType": "column",
+     "settings": {
+      "_column_size": 48,
+      "_inline_size": 48,
+      "_inline_size_mobile": 100,
+      "_animation": "fadeInUp",
+      "_animation_delay": 120
+     },
+     "elements": [
+      {
+       "id": "feac29a",
+       "elType": "widget",
+       "settings": {
+        "title": "Nous trouver",
+        "header_size": "span",
+        "title_color": "#e07a2c",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 4,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "18",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "84259fa",
+       "elType": "widget",
+       "settings": {
+        "title": "Infos &amp; accès",
+        "header_size": "h2",
+        "title_color": "#f3e8d6",
+        "typography_typography": "custom",
+        "typography_font_family": "Fraunces",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": [
+          42,
+          34,
+          28
+         ],
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "20",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "77806ea",
+       "elType": "widget",
+       "settings": {
+        "editor": "<div style=\"display:flex;gap:18px;padding:24px 0;border-bottom:1px solid rgba(243,232,214,.08)\"><span style=\"color:#e07a2c;font-size:24px;flex:none\">📍</span><div><div style=\"font-family:Archivo;font-weight:600;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#c89b53;margin-bottom:6px\">Adresse</div><div style=\"font-family:Fraunces;color:#e7d8c0;font-size:17px\">Zomayi, non loin de Togo Grain<br><span style=\"font-family:Archivo;font-size:13px;color:#b6a489\">Kpalimé, Togo</span></div></div></div>",
+        "text_color": "#e7d8c0",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "a40f79b",
+       "elType": "widget",
+       "settings": {
+        "editor": "<div style=\"display:flex;gap:18px;padding:24px 0;border-bottom:1px solid rgba(243,232,214,.08)\"><span style=\"color:#e07a2c;font-size:24px;flex:none\">📞</span><div><div style=\"font-family:Archivo;font-weight:600;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#c89b53;margin-bottom:6px\">Téléphone</div><div style=\"font-family:Fraunces;color:#e7d8c0;font-size:17px\">+228 91 69 84 29<br><span style=\"font-family:Archivo;font-size:13px;color:#b6a489\">Réservations &amp; renseignements</span></div></div></div>",
+        "text_color": "#e7d8c0",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "ed924e0",
+       "elType": "widget",
+       "settings": {
+        "editor": "<div style=\"display:flex;gap:18px;padding:24px 0;border-bottom:1px solid rgba(243,232,214,.08)\"><span style=\"color:#e07a2c;font-size:24px;flex:none\">✉️</span><div><div style=\"font-family:Archivo;font-weight:600;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#c89b53;margin-bottom:6px\">E-mail</div><div style=\"font-family:Fraunces;color:#e7d8c0;font-size:17px\">info@dorikko-saveurs.com<br><span style=\"font-family:Archivo;font-size:13px;color:#b6a489\">Réponse sous 24 h</span></div></div></div>",
+        "text_color": "#e7d8c0",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "a57f332",
+       "elType": "widget",
+       "settings": {
+        "editor": "<div style=\"display:flex;gap:18px;padding:24px 0;border-bottom:1px solid rgba(243,232,214,.08)\"><span style=\"color:#e07a2c;font-size:24px;flex:none\">🕐</span><div><div style=\"font-family:Archivo;font-weight:600;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#c89b53;margin-bottom:6px\">Horaires</div><div style=\"font-family:Fraunces;color:#e7d8c0;font-size:17px\">Lun – Jeu : 11h – 22h<br><span style=\"font-family:Archivo;font-size:13px;color:#b6a489\">Ven – Dim : 11h – minuit · 7j/7</span></div></div></div>",
+        "text_color": "#e7d8c0",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "6005185",
+       "elType": "widget",
+       "settings": {
+        "html": "<iframe title=\"Carte Dorikko-Saveurs, Kpalimé\" loading=\"lazy\" src=\"https://www.openstreetmap.org/export/embed.html?bbox=0.6133%2C6.8800%2C0.6533%2C6.9200&amp;layer=mapnik&amp;marker=6.9000%2C0.6333\" style=\"width:100%;height:420px;border:1px solid rgba(243,232,214,.14);filter:invert(.92) hue-rotate(180deg) saturate(.65) brightness(.9)\"></iframe>"
+       },
+       "elements": [],
+       "widgetType": "html"
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "3d491ed",
+   "elType": "section",
+   "settings": {
+    "content_width": {
+     "unit": "px",
+     "size": 1180,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "background_background": "classic",
+    "background_image": {
+     "url": "https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=2000&q=80",
+     "id": "",
+     "source": "url"
+    },
+    "background_position": "center center",
+    "background_size": "cover",
+    "background_overlay_background": "classic",
+    "background_overlay_color": "rgba(14,9,5,0.72)",
+    "padding": {
+     "unit": "px",
+     "top": "120",
+     "right": "20",
+     "bottom": "120",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "80",
+     "right": "18",
+     "bottom": "80",
+     "left": "18",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "e57c546",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": 100,
+      "_inline_size_mobile": 100,
+      "_animation": "fadeInUp"
+     },
+     "elements": [
+      {
+       "id": "04f19ae",
+       "elType": "widget",
+       "settings": {
+        "title": "Toujours ouvert pour vous",
+        "header_size": "span",
+        "title_color": "#c89b53",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "align": "center",
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 4,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "18",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "50c30e5",
+       "elType": "widget",
+       "settings": {
+        "title": "Midi et soir, sept jours sur sept. Le feu vous attend.",
+        "header_size": "div",
+        "title_color": "#f3e8d6",
+        "typography_typography": "custom",
+        "typography_font_family": "Fraunces",
+        "typography_font_weight": "400",
+        "typography_font_size": {
+         "unit": "px",
+         "size": [
+          48,
+          36,
+          26
+         ],
+         "sizes": []
+        },
+        "align": "center",
+        "typography_font_style": "italic",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "20",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "54eb2b3",
+       "elType": "widget",
+       "settings": {
+        "title": "— Dorikko-Saveurs, Kpalimé",
+        "header_size": "div",
+        "title_color": "#c89b53",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "align": "center",
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 3,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase"
+       },
+       "elements": [],
+       "widgetType": "heading"
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {
+  "background_background": "classic",
+  "background_color": "#15100b"
+ }
+}

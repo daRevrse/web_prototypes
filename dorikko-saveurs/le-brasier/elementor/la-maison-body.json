@@ -1,0 +1,2172 @@
+{
+ "version": "0.4",
+ "title": "Le Brasier — La Maison (Body)",
+ "type": "page",
+ "content": [
+  {
+   "id": "930c375",
+   "elType": "section",
+   "settings": {
+    "content_width": {
+     "unit": "px",
+     "size": 1180,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "background_background": "classic",
+    "background_image": {
+     "url": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=2000&q=80",
+     "id": "",
+     "source": "url"
+    },
+    "background_position": "center center",
+    "background_size": "cover",
+    "background_overlay_background": "classic",
+    "background_overlay_color": "rgba(14,9,5,0.6)",
+    "padding": {
+     "unit": "px",
+     "top": "150",
+     "right": "20",
+     "bottom": "72",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "110",
+     "right": "18",
+     "bottom": "54",
+     "left": "18",
+     "isLinked": false
+    },
+    "min_height": {
+     "unit": "vh",
+     "size": 55,
+     "sizes": []
+    },
+    "min_height_mobile": {
+     "unit": "vh",
+     "size": 46,
+     "sizes": []
+    },
+    "content_position": "bottom"
+   },
+   "elements": [
+    {
+     "id": "bbabf2f",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": 100,
+      "_inline_size_mobile": 100,
+      "_animation": "fadeInUp"
+     },
+     "elements": [
+      {
+       "id": "6f627d3",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p style=\"letter-spacing:.2em;text-transform:uppercase;font-size:12px;color:#b6a489;margin:0\"><a href=\"index.html\" style=\"color:#b6a489\">Accueil</a> &nbsp;/&nbsp; <span style=\"color:#e07a2c\">La Maison</span></p>",
+        "text_color": "#b6a489",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "18",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "044cd66",
+       "elType": "widget",
+       "settings": {
+        "title": "Une maison née du terroir.",
+        "header_size": "h1",
+        "title_color": "#f3e8d6",
+        "typography_typography": "custom",
+        "typography_font_family": "Fraunces",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": [
+          96,
+          60,
+          42
+         ],
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "68c3c0b",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>De la ferme à la braise, Dorikko-Saveurs cultive une idée simple : servir une viande honnête, locale et bio, traitée avec le respect qu'elle mérite.</p>",
+        "text_color": "#e7d8c0",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 18,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "bae3c75",
+   "elType": "section",
+   "settings": {
+    "content_width": {
+     "unit": "px",
+     "size": 1180,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "background_background": "classic",
+    "background_color": "#15100b",
+    "padding": {
+     "unit": "px",
+     "top": "120",
+     "right": "20",
+     "bottom": "80",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "72",
+     "right": "18",
+     "bottom": "56",
+     "left": "18",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "0003cc2",
+     "elType": "column",
+     "settings": {
+      "_column_size": 52,
+      "_inline_size": 52,
+      "_inline_size_mobile": 100,
+      "_animation": "fadeInUp"
+     },
+     "elements": [
+      {
+       "id": "2be0bd2",
+       "elType": "widget",
+       "settings": {
+        "image": {
+         "url": "https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=1000&q=80",
+         "id": "",
+         "alt": "Notre cuisine",
+         "source": "url"
+        },
+        "image_size": "full"
+       },
+       "elements": [],
+       "widgetType": "image"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "f533c5b",
+     "elType": "column",
+     "settings": {
+      "_column_size": 48,
+      "_inline_size": 48,
+      "_inline_size_mobile": 100,
+      "content_position": "center",
+      "_animation": "fadeInUp",
+      "_animation_delay": 120
+     },
+     "elements": [
+      {
+       "id": "bd0d7f8",
+       "elType": "widget",
+       "settings": {
+        "title": "Notre histoire",
+        "header_size": "span",
+        "title_color": "#e07a2c",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 4,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "18",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "cf4deb6",
+       "elType": "widget",
+       "settings": {
+        "title": "Tout commence avant l'assiette.",
+        "header_size": "h2",
+        "title_color": "#f3e8d6",
+        "typography_typography": "custom",
+        "typography_font_family": "Fraunces",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": [
+          52,
+          38,
+          30
+         ],
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "22",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "41375b1",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>Dorikko-Saveurs est née d'une conviction : une grande viande ne s'improvise pas. Elle se prépare bien en amont, dans le soin apporté à l'élevage et le respect du rythme des bêtes.</p>",
+        "text_color": "#e7d8c0",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 17,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "16",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "23ac9a5",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>Au cœur de Kpalimé, nous avons voulu un lieu où le feu de bois rencontre le terroir — une table franche et chaleureuse, fidèle à ce que la région a de meilleur.</p>",
+        "text_color": "#e7d8c0",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 17,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "24",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "2f92748",
+       "elType": "widget",
+       "settings": {
+        "title": "Le Chef Dorikko",
+        "header_size": "div",
+        "title_color": "#c89b53",
+        "typography_typography": "custom",
+        "typography_font_family": "Fraunces",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 30,
+         "sizes": []
+        },
+        "typography_font_style": "italic",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "4",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "bfb14b5",
+       "elType": "widget",
+       "settings": {
+        "title": "Fondateur &amp; Maître du feu",
+        "header_size": "div",
+        "title_color": "#b6a489",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_weight": "500",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 2,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase"
+       },
+       "elements": [],
+       "widgetType": "heading"
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "76ca62a",
+   "elType": "section",
+   "settings": {
+    "content_width": {
+     "unit": "px",
+     "size": 1180,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "background_background": "classic",
+    "background_color": "#15100b",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "20",
+     "bottom": "90",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "0",
+     "right": "18",
+     "bottom": "56",
+     "left": "18",
+     "isLinked": false
+    },
+    "border_border": "solid",
+    "border_width": {
+     "unit": "px",
+     "top": "1",
+     "right": "0",
+     "bottom": "1",
+     "left": "0",
+     "isLinked": false
+    },
+    "border_color": "rgba(243,232,214,.14)"
+   },
+   "elements": [
+    {
+     "id": "c5da35b",
+     "elType": "column",
+     "settings": {
+      "_column_size": 25,
+      "_inline_size": 25,
+      "_inline_size_tablet": 50,
+      "_inline_size_mobile": 50,
+      "_animation": "fadeInUp",
+      "_animation_delay": 0
+     },
+     "elements": [
+      {
+       "id": "c1206ff",
+       "elType": "widget",
+       "settings": {
+        "starting_number": 0,
+        "ending_number": 100,
+        "prefix": "",
+        "suffix": "%",
+        "title": "Viande de la ferme",
+        "thousand_separator": "",
+        "number_color": "#e07a2c",
+        "title_color": "#b6a489",
+        "typography_typography": "custom",
+        "typography_font_family": "Fraunces",
+        "typography_font_style": "italic",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 54,
+         "sizes": []
+        },
+        "typography_font_weight": "500",
+        "title_typography_typography": "custom",
+        "title_typography_font_family": "Archivo",
+        "title_typography_font_size": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "title_typography_letter_spacing": {
+         "unit": "px",
+         "size": 2,
+         "sizes": []
+        },
+        "title_typography_text_transform": "uppercase",
+        "_padding": {
+         "unit": "px",
+         "top": "40",
+         "right": "20",
+         "bottom": "40",
+         "left": "20",
+         "isLinked": false
+        },
+        "title_color_title": "#b6a489"
+       },
+       "elements": [],
+       "widgetType": "counter"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "16dcf5c",
+     "elType": "column",
+     "settings": {
+      "_column_size": 25,
+      "_inline_size": 25,
+      "_inline_size_tablet": 50,
+      "_inline_size_mobile": 50,
+      "_animation": "fadeInUp",
+      "_animation_delay": 100
+     },
+     "elements": [
+      {
+       "id": "b20dd7b",
+       "elType": "widget",
+       "settings": {
+        "starting_number": 0,
+        "ending_number": 40,
+        "prefix": "",
+        "suffix": "j",
+        "title": "De maturation",
+        "thousand_separator": "",
+        "number_color": "#e07a2c",
+        "title_color": "#b6a489",
+        "typography_typography": "custom",
+        "typography_font_family": "Fraunces",
+        "typography_font_style": "italic",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 54,
+         "sizes": []
+        },
+        "typography_font_weight": "500",
+        "title_typography_typography": "custom",
+        "title_typography_font_family": "Archivo",
+        "title_typography_font_size": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "title_typography_letter_spacing": {
+         "unit": "px",
+         "size": 2,
+         "sizes": []
+        },
+        "title_typography_text_transform": "uppercase",
+        "_padding": {
+         "unit": "px",
+         "top": "40",
+         "right": "20",
+         "bottom": "40",
+         "left": "20",
+         "isLinked": false
+        },
+        "title_color_title": "#b6a489"
+       },
+       "elements": [],
+       "widgetType": "counter"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "c31eb4e",
+     "elType": "column",
+     "settings": {
+      "_column_size": 25,
+      "_inline_size": 25,
+      "_inline_size_tablet": 50,
+      "_inline_size_mobile": 50,
+      "_animation": "fadeInUp",
+      "_animation_delay": 200
+     },
+     "elements": [
+      {
+       "id": "b2600b1",
+       "elType": "widget",
+       "settings": {
+        "starting_number": 0,
+        "ending_number": 0,
+        "prefix": "",
+        "suffix": "",
+        "title": "Conservateur ajouté",
+        "thousand_separator": "",
+        "number_color": "#e07a2c",
+        "title_color": "#b6a489",
+        "typography_typography": "custom",
+        "typography_font_family": "Fraunces",
+        "typography_font_style": "italic",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 54,
+         "sizes": []
+        },
+        "typography_font_weight": "500",
+        "title_typography_typography": "custom",
+        "title_typography_font_family": "Archivo",
+        "title_typography_font_size": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "title_typography_letter_spacing": {
+         "unit": "px",
+         "size": 2,
+         "sizes": []
+        },
+        "title_typography_text_transform": "uppercase",
+        "_padding": {
+         "unit": "px",
+         "top": "40",
+         "right": "20",
+         "bottom": "40",
+         "left": "20",
+         "isLinked": false
+        },
+        "title_color_title": "#b6a489"
+       },
+       "elements": [],
+       "widgetType": "counter"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "c20e49f",
+     "elType": "column",
+     "settings": {
+      "_column_size": 25,
+      "_inline_size": 25,
+      "_inline_size_tablet": 50,
+      "_inline_size_mobile": 50,
+      "_animation": "fadeInUp",
+      "_animation_delay": 300
+     },
+     "elements": [
+      {
+       "id": "bbc1c7f",
+       "elType": "widget",
+       "settings": {
+        "starting_number": 0,
+        "ending_number": 7,
+        "prefix": "",
+        "suffix": "/7",
+        "title": "Ouvert midi &amp; soir",
+        "thousand_separator": "",
+        "number_color": "#e07a2c",
+        "title_color": "#b6a489",
+        "typography_typography": "custom",
+        "typography_font_family": "Fraunces",
+        "typography_font_style": "italic",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 54,
+         "sizes": []
+        },
+        "typography_font_weight": "500",
+        "title_typography_typography": "custom",
+        "title_typography_font_family": "Archivo",
+        "title_typography_font_size": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "title_typography_letter_spacing": {
+         "unit": "px",
+         "size": 2,
+         "sizes": []
+        },
+        "title_typography_text_transform": "uppercase",
+        "_padding": {
+         "unit": "px",
+         "top": "40",
+         "right": "20",
+         "bottom": "40",
+         "left": "20",
+         "isLinked": false
+        },
+        "title_color_title": "#b6a489"
+       },
+       "elements": [],
+       "widgetType": "counter"
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "61a2db8",
+   "elType": "section",
+   "settings": {
+    "content_width": {
+     "unit": "px",
+     "size": 1180,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "background_background": "classic",
+    "background_color": "#1c150e",
+    "padding": {
+     "unit": "px",
+     "top": "120",
+     "right": "20",
+     "bottom": "120",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "72",
+     "right": "18",
+     "bottom": "72",
+     "left": "18",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "a97a8b5",
+     "elType": "column",
+     "settings": {
+      "_column_size": 50,
+      "_inline_size": 50,
+      "_inline_size_mobile": 100,
+      "content_position": "center",
+      "_animation": "fadeInUp"
+     },
+     "elements": [
+      {
+       "id": "f27c032",
+       "elType": "widget",
+       "settings": {
+        "title": "De la ferme",
+        "header_size": "span",
+        "title_color": "#e07a2c",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 4,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "18",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "5f55b9c",
+       "elType": "widget",
+       "settings": {
+        "title": "Élevé chez nous, en plein air.",
+        "header_size": "h2",
+        "title_color": "#f3e8d6",
+        "typography_typography": "custom",
+        "typography_font_family": "Fraunces",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": [
+          50,
+          38,
+          28
+         ],
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "22",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "700274c",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>Nos bêtes grandissent sur nos terres, en pâturage libre, nourries sans artifice. Cette proximité nous donne une traçabilité totale — nous savons exactement ce que nous servons.</p>",
+        "text_color": "#e7d8c0",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 17,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "16",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "8be9ef5",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>Les légumes, ignames et herbes qui accompagnent nos viandes viennent de cultures bio voisines, récoltées à maturité.</p>",
+        "text_color": "#e7d8c0",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 17,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "20",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "1ad4060",
+       "elType": "widget",
+       "settings": {
+        "icon_list": [
+         {
+          "text": "Pâturage libre &amp; alimentation naturelle",
+          "selected_icon": {
+           "value": "fas fa-angle-right",
+           "library": "fa-solid"
+          },
+          "link": {
+           "url": "#",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "_id": "0ab97c9"
+         },
+         {
+          "text": "Maturation lente sur l'os",
+          "selected_icon": {
+           "value": "fas fa-angle-right",
+           "library": "fa-solid"
+          },
+          "link": {
+           "url": "#",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "_id": "351fa90"
+         },
+         {
+          "text": "Accompagnements bio &amp; locaux",
+          "selected_icon": {
+           "value": "fas fa-angle-right",
+           "library": "fa-solid"
+          },
+          "link": {
+           "url": "#",
+           "is_external": "",
+           "nofollow": ""
+          },
+          "_id": "bb9960c"
+         }
+        ],
+        "icon_color": "#e07a2c",
+        "text_color": "#e7d8c0",
+        "space_between": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "icon_size": {
+         "unit": "px",
+         "size": 11,
+         "sizes": []
+        },
+        "text_indent": {
+         "unit": "px",
+         "size": 8,
+         "sizes": []
+        },
+        "text_typography_typography": "custom",
+        "text_typography_font_family": "Archivo",
+        "text_typography_font_size": {
+         "unit": "px",
+         "size": 15,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "icon-list"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "b88f02a",
+     "elType": "column",
+     "settings": {
+      "_column_size": 50,
+      "_inline_size": 50,
+      "_inline_size_mobile": 100,
+      "_animation": "fadeInUp",
+      "_animation_delay": 120
+     },
+     "elements": [
+      {
+       "id": "071db8e",
+       "elType": "widget",
+       "settings": {
+        "image": {
+         "url": "https://images.unsplash.com/photo-1605000797499-95a51c5269ae?auto=format&fit=crop&w=1000&q=80",
+         "id": "",
+         "alt": "Produits frais",
+         "source": "url"
+        },
+        "image_size": "full"
+       },
+       "elements": [],
+       "widgetType": "image"
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "0f09349",
+   "elType": "section",
+   "settings": {
+    "content_width": {
+     "unit": "px",
+     "size": 1180,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "background_background": "classic",
+    "background_image": {
+     "url": "https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=2000&q=80",
+     "id": "",
+     "source": "url"
+    },
+    "background_position": "center center",
+    "background_size": "cover",
+    "background_overlay_background": "classic",
+    "background_overlay_color": "rgba(14,9,5,0.72)",
+    "padding": {
+     "unit": "px",
+     "top": "150",
+     "right": "20",
+     "bottom": "150",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "96",
+     "right": "18",
+     "bottom": "96",
+     "left": "18",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "bca5789",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": 100,
+      "_inline_size_mobile": 100,
+      "_animation": "fadeInUp"
+     },
+     "elements": [
+      {
+       "id": "0e42f02",
+       "elType": "widget",
+       "settings": {
+        "title": "La philosophie de la maison",
+        "header_size": "span",
+        "title_color": "#c89b53",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "align": "center",
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 4,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "18",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "d9ffc2e",
+       "elType": "widget",
+       "settings": {
+        "title": "Le feu ne pardonne rien. C'est pour ça qu'il révèle tout : la qualité d'une viande honnête.",
+        "header_size": "div",
+        "title_color": "#f3e8d6",
+        "typography_typography": "custom",
+        "typography_font_family": "Fraunces",
+        "typography_font_weight": "400",
+        "typography_font_size": {
+         "unit": "px",
+         "size": [
+          48,
+          36,
+          26
+         ],
+         "sizes": []
+        },
+        "align": "center",
+        "typography_font_style": "italic",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "20",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "a1cc1e3",
+       "elType": "widget",
+       "settings": {
+        "title": "— Le Chef Dorikko",
+        "header_size": "div",
+        "title_color": "#c89b53",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "align": "center",
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 3,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase"
+       },
+       "elements": [],
+       "widgetType": "heading"
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "76116e3",
+   "elType": "section",
+   "settings": {
+    "content_width": {
+     "unit": "px",
+     "size": 1180,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "background_background": "classic",
+    "background_color": "#15100b",
+    "padding": {
+     "unit": "px",
+     "top": "120",
+     "right": "20",
+     "bottom": "80",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "72",
+     "right": "18",
+     "bottom": "56",
+     "left": "18",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "5faf550",
+     "elType": "column",
+     "settings": {
+      "_column_size": 52,
+      "_inline_size": 52,
+      "_inline_size_mobile": 100,
+      "_animation": "fadeInUp"
+     },
+     "elements": [
+      {
+       "id": "89ba433",
+       "elType": "widget",
+       "settings": {
+        "image": {
+         "url": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=1000&q=80",
+         "id": "",
+         "alt": "Le chef",
+         "source": "url"
+        },
+        "image_size": "full"
+       },
+       "elements": [],
+       "widgetType": "image"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "18d3a86",
+     "elType": "column",
+     "settings": {
+      "_column_size": 48,
+      "_inline_size": 48,
+      "_inline_size_mobile": 100,
+      "content_position": "center",
+      "_animation": "fadeInUp",
+      "_animation_delay": 120
+     },
+     "elements": [
+      {
+       "id": "481dbd1",
+       "elType": "widget",
+       "settings": {
+        "title": "Le chef",
+        "header_size": "span",
+        "title_color": "#e07a2c",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 4,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "18",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "26ce803",
+       "elType": "widget",
+       "settings": {
+        "title": "Le gardien de la braise.",
+        "header_size": "h2",
+        "title_color": "#f3e8d6",
+        "typography_typography": "custom",
+        "typography_font_family": "Fraunces",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": [
+          50,
+          38,
+          28
+         ],
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "22",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "6c63b62",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>Derrière chaque pièce, il y a un geste précis et beaucoup de patience. Notre chef travaille la viande à la minute, ajuste sa cuisson à l'œil et à l'oreille, et laisse le bois de chêne faire le reste.</p>",
+        "text_color": "#e7d8c0",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 17,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "16",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "3a95c66",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>Sa cuisine est sans esbroufe : peu d'ingrédients, mais des produits justes.</p>",
+        "text_color": "#e7d8c0",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 17,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "24",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "b0746eb",
+       "elType": "widget",
+       "settings": {
+        "text": "Découvrir sa carte",
+        "link": {
+         "url": "le-menu.html",
+         "is_external": "",
+         "nofollow": ""
+        },
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_weight": "600",
+        "typography_text_transform": "uppercase",
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 2,
+         "sizes": []
+        },
+        "typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        },
+        "text_padding": {
+         "unit": "px",
+         "top": "18",
+         "right": "34",
+         "bottom": "18",
+         "left": "34",
+         "isLinked": false
+        },
+        "button_text_color": "#f3e8d6",
+        "hover_color": "#ffffff",
+        "background_color": "rgba(0,0,0,0)",
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": false
+        },
+        "border_color": "rgba(243,232,214,.25)",
+        "button_background_hover_color": "#c2511f"
+       },
+       "elements": [],
+       "widgetType": "button"
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "fe6d120",
+   "elType": "section",
+   "settings": {
+    "content_width": {
+     "unit": "px",
+     "size": 1180,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "background_background": "classic",
+    "background_color": "#15100b",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "20",
+     "bottom": "50",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "0",
+     "right": "18",
+     "bottom": "36",
+     "left": "18",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "8fe0daf",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": 100,
+      "_inline_size_mobile": 100,
+      "_animation": "fadeInUp"
+     },
+     "elements": [
+      {
+       "id": "1106256",
+       "elType": "widget",
+       "settings": {
+        "title": "Nos engagements",
+        "header_size": "span",
+        "title_color": "#e07a2c",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "align": "center",
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 4,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "18",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "b418448",
+       "elType": "widget",
+       "settings": {
+        "title": "Quatre promesses, tenues chaque jour.",
+        "header_size": "h2",
+        "title_color": "#f3e8d6",
+        "typography_typography": "custom",
+        "typography_font_family": "Fraunces",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": [
+          48,
+          36,
+          28
+         ],
+         "sizes": []
+        },
+        "align": "center",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "2194229",
+   "elType": "section",
+   "settings": {
+    "content_width": {
+     "unit": "px",
+     "size": 1180,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "background_background": "classic",
+    "background_color": "#15100b",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "20",
+     "bottom": "120",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "0",
+     "right": "18",
+     "bottom": "72",
+     "left": "18",
+     "isLinked": false
+    },
+    "border_border": "solid",
+    "border_width": {
+     "unit": "px",
+     "top": "1",
+     "right": "0",
+     "bottom": "1",
+     "left": "0",
+     "isLinked": false
+    },
+    "border_color": "rgba(243,232,214,.14)"
+   },
+   "elements": [
+    {
+     "id": "796fa16",
+     "elType": "column",
+     "settings": {
+      "_column_size": 25,
+      "_inline_size": 25,
+      "_inline_size_tablet": 50,
+      "_inline_size_mobile": 100,
+      "padding": {
+       "unit": "px",
+       "top": "40",
+       "right": "30",
+       "bottom": "40",
+       "left": "30",
+       "isLinked": false
+      },
+      "_animation": "fadeInUp",
+      "_animation_delay": 0
+     },
+     "elements": [
+      {
+       "id": "832aa3c",
+       "elType": "widget",
+       "settings": {
+        "selected_icon": {
+         "value": "fas fa-cow",
+         "library": "fa-solid"
+        },
+        "title_text": "Viande 100% ferme",
+        "description_text": "Élevée chez nous, en pâturage libre, avec une traçabilité totale.",
+        "position": "top",
+        "title_color": "#f3e8d6",
+        "description_color": "#b6a489",
+        "primary_color": "#e07a2c",
+        "icon_space": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "title_typography_typography": "custom",
+        "title_typography_font_family": "Fraunces",
+        "title_typography_font_size": {
+         "unit": "px",
+         "size": 23,
+         "sizes": []
+        },
+        "title_typography_font_weight": "600",
+        "description_typography_typography": "custom",
+        "description_typography_font_family": "Archivo",
+        "description_typography_font_size": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "icon-box"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "5851307",
+     "elType": "column",
+     "settings": {
+      "_column_size": 25,
+      "_inline_size": 25,
+      "_inline_size_tablet": 50,
+      "_inline_size_mobile": 100,
+      "padding": {
+       "unit": "px",
+       "top": "40",
+       "right": "30",
+       "bottom": "40",
+       "left": "30",
+       "isLinked": false
+      },
+      "_animation": "fadeInUp",
+      "_animation_delay": 120
+     },
+     "elements": [
+      {
+       "id": "8f9d218",
+       "elType": "widget",
+       "settings": {
+        "selected_icon": {
+         "value": "fas fa-leaf",
+         "library": "fa-solid"
+        },
+        "title_text": "Produits bio",
+        "description_text": "Légumes et herbes de cultures biologiques voisines, à maturité.",
+        "position": "top",
+        "title_color": "#f3e8d6",
+        "description_color": "#b6a489",
+        "primary_color": "#e07a2c",
+        "icon_space": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "title_typography_typography": "custom",
+        "title_typography_font_family": "Fraunces",
+        "title_typography_font_size": {
+         "unit": "px",
+         "size": 23,
+         "sizes": []
+        },
+        "title_typography_font_weight": "600",
+        "description_typography_typography": "custom",
+        "description_typography_font_family": "Archivo",
+        "description_typography_font_size": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "icon-box"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "1b8753b",
+     "elType": "column",
+     "settings": {
+      "_column_size": 25,
+      "_inline_size": 25,
+      "_inline_size_tablet": 50,
+      "_inline_size_mobile": 100,
+      "padding": {
+       "unit": "px",
+       "top": "40",
+       "right": "30",
+       "bottom": "40",
+       "left": "30",
+       "isLinked": false
+      },
+      "_animation": "fadeInUp",
+      "_animation_delay": 240
+     },
+     "elements": [
+      {
+       "id": "1b8673e",
+       "elType": "widget",
+       "settings": {
+        "selected_icon": {
+         "value": "fas fa-utensils",
+         "library": "fa-solid"
+        },
+        "title_text": "Cuisine locale",
+        "description_text": "Une carte ancrée dans le terroir et les épices de la région.",
+        "position": "top",
+        "title_color": "#f3e8d6",
+        "description_color": "#b6a489",
+        "primary_color": "#e07a2c",
+        "icon_space": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "title_typography_typography": "custom",
+        "title_typography_font_family": "Fraunces",
+        "title_typography_font_size": {
+         "unit": "px",
+         "size": 23,
+         "sizes": []
+        },
+        "title_typography_font_weight": "600",
+        "description_typography_typography": "custom",
+        "description_typography_font_family": "Archivo",
+        "description_typography_font_size": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "icon-box"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "a1a080f",
+     "elType": "column",
+     "settings": {
+      "_column_size": 25,
+      "_inline_size": 25,
+      "_inline_size_tablet": 50,
+      "_inline_size_mobile": 100,
+      "padding": {
+       "unit": "px",
+       "top": "40",
+       "right": "30",
+       "bottom": "40",
+       "left": "30",
+       "isLinked": false
+      },
+      "_animation": "fadeInUp",
+      "_animation_delay": 360
+     },
+     "elements": [
+      {
+       "id": "fa5b891",
+       "elType": "widget",
+       "settings": {
+        "selected_icon": {
+         "value": "fas fa-handshake",
+         "library": "fa-solid"
+        },
+        "title_text": "Hospitalité",
+        "description_text": "Un accueil chaleureux, parce qu'un bon repas se partage.",
+        "position": "top",
+        "title_color": "#f3e8d6",
+        "description_color": "#b6a489",
+        "primary_color": "#e07a2c",
+        "icon_space": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "title_typography_typography": "custom",
+        "title_typography_font_family": "Fraunces",
+        "title_typography_font_size": {
+         "unit": "px",
+         "size": 23,
+         "sizes": []
+        },
+        "title_typography_font_weight": "600",
+        "description_typography_typography": "custom",
+        "description_typography_font_family": "Archivo",
+        "description_typography_font_size": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "icon-box"
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "b5e346b",
+   "elType": "section",
+   "settings": {
+    "content_width": {
+     "unit": "px",
+     "size": 1180,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "background_background": "classic",
+    "background_color": "#1c150e",
+    "padding": {
+     "unit": "px",
+     "top": "56",
+     "right": "20",
+     "bottom": "56",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "40",
+     "right": "18",
+     "bottom": "40",
+     "left": "18",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "f4eec8a",
+     "elType": "column",
+     "settings": {
+      "_column_size": 25,
+      "_inline_size": 25,
+      "_inline_size_tablet": 50,
+      "_inline_size_mobile": 50,
+      "_animation": "fadeInUp",
+      "_animation_delay": 0
+     },
+     "elements": [
+      {
+       "id": "c62943f",
+       "elType": "widget",
+       "settings": {
+        "selected_icon": {
+         "value": "fas fa-certificate",
+         "library": "fa-solid"
+        },
+        "title_text": "IBB",
+        "description_text": "Élevage certifié",
+        "position": "top",
+        "title_color": "#f3e8d6",
+        "description_color": "#b6a489",
+        "primary_color": "#e07a2c",
+        "icon_space": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "title_typography_typography": "custom",
+        "title_typography_font_family": "Fraunces",
+        "title_typography_font_size": {
+         "unit": "px",
+         "size": 23,
+         "sizes": []
+        },
+        "title_typography_font_weight": "600",
+        "description_typography_typography": "custom",
+        "description_typography_font_family": "Archivo",
+        "description_typography_font_size": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "icon-box"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "1a9727a",
+     "elType": "column",
+     "settings": {
+      "_column_size": 25,
+      "_inline_size": 25,
+      "_inline_size_tablet": 50,
+      "_inline_size_mobile": 50,
+      "_animation": "fadeInUp",
+      "_animation_delay": 100
+     },
+     "elements": [
+      {
+       "id": "49bbc86",
+       "elType": "widget",
+       "settings": {
+        "selected_icon": {
+         "value": "fas fa-leaf",
+         "library": "fa-solid"
+        },
+        "title_text": "BIO",
+        "description_text": "Agriculture biologique",
+        "position": "top",
+        "title_color": "#f3e8d6",
+        "description_color": "#b6a489",
+        "primary_color": "#e07a2c",
+        "icon_space": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "title_typography_typography": "custom",
+        "title_typography_font_family": "Fraunces",
+        "title_typography_font_size": {
+         "unit": "px",
+         "size": 23,
+         "sizes": []
+        },
+        "title_typography_font_weight": "600",
+        "description_typography_typography": "custom",
+        "description_typography_font_family": "Archivo",
+        "description_typography_font_size": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "icon-box"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "877ab42",
+     "elType": "column",
+     "settings": {
+      "_column_size": 25,
+      "_inline_size": 25,
+      "_inline_size_tablet": 50,
+      "_inline_size_mobile": 50,
+      "_animation": "fadeInUp",
+      "_animation_delay": 200
+     },
+     "elements": [
+      {
+       "id": "a53dd19",
+       "elType": "widget",
+       "settings": {
+        "selected_icon": {
+         "value": "fas fa-tractor",
+         "library": "fa-solid"
+        },
+        "title_text": "Ferme",
+        "description_text": "Du pré à l'assiette",
+        "position": "top",
+        "title_color": "#f3e8d6",
+        "description_color": "#b6a489",
+        "primary_color": "#e07a2c",
+        "icon_space": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "title_typography_typography": "custom",
+        "title_typography_font_family": "Fraunces",
+        "title_typography_font_size": {
+         "unit": "px",
+         "size": 23,
+         "sizes": []
+        },
+        "title_typography_font_weight": "600",
+        "description_typography_typography": "custom",
+        "description_typography_font_family": "Archivo",
+        "description_typography_font_size": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "icon-box"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "26aeb18",
+     "elType": "column",
+     "settings": {
+      "_column_size": 25,
+      "_inline_size": 25,
+      "_inline_size_tablet": 50,
+      "_inline_size_mobile": 50,
+      "_animation": "fadeInUp",
+      "_animation_delay": 300
+     },
+     "elements": [
+      {
+       "id": "c38d50a",
+       "elType": "widget",
+       "settings": {
+        "selected_icon": {
+         "value": "fas fa-fire",
+         "library": "fa-solid"
+        },
+        "title_text": "Feu de bois",
+        "description_text": "Cuisson traditionnelle",
+        "position": "top",
+        "title_color": "#f3e8d6",
+        "description_color": "#b6a489",
+        "primary_color": "#e07a2c",
+        "icon_space": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "title_typography_typography": "custom",
+        "title_typography_font_family": "Fraunces",
+        "title_typography_font_size": {
+         "unit": "px",
+         "size": 23,
+         "sizes": []
+        },
+        "title_typography_font_weight": "600",
+        "description_typography_typography": "custom",
+        "description_typography_font_family": "Archivo",
+        "description_typography_font_size": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "icon-box"
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "eb2a19c",
+   "elType": "section",
+   "settings": {
+    "content_width": {
+     "unit": "px",
+     "size": 1180,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "background_background": "classic",
+    "background_color": "#c2511f",
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "20",
+     "bottom": "96",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "18",
+     "bottom": "64",
+     "left": "18",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "450b605",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": 100,
+      "_inline_size_mobile": 100,
+      "_animation": "fadeInUp"
+     },
+     "elements": [
+      {
+       "id": "15f1973",
+       "elType": "widget",
+       "settings": {
+        "title": "Une table vous attend",
+        "header_size": "span",
+        "title_color": "#ffffff",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "align": "center",
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 4,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "18",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "814238a",
+       "elType": "widget",
+       "settings": {
+        "title": "Venez vivre l'expérience Dorikko.",
+        "header_size": "h2",
+        "title_color": "#ffffff",
+        "typography_typography": "custom",
+        "typography_font_family": "Fraunces",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": [
+          54,
+          40,
+          30
+         ],
+         "sizes": []
+        },
+        "align": "center",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "14",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "eb17b5f",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>Réservez votre table et laissez la braise faire le reste.</p>",
+        "text_color": "rgba(255,255,255,.86)",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 17,
+         "sizes": []
+        },
+        "align": "center",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "28",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "e6701ec",
+       "elType": "widget",
+       "settings": {
+        "text": "Réserver une table",
+        "link": {
+         "url": "contact.html",
+         "is_external": "",
+         "nofollow": ""
+        },
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_weight": "600",
+        "typography_text_transform": "uppercase",
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 2,
+         "sizes": []
+        },
+        "typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        },
+        "text_padding": {
+         "unit": "px",
+         "top": "18",
+         "right": "34",
+         "bottom": "18",
+         "left": "34",
+         "isLinked": false
+        },
+        "button_text_color": "#ffffff",
+        "hover_color": "#ffffff",
+        "align": "center",
+        "background_color": "#15100b",
+        "button_background_hover_color": "#000000"
+       },
+       "elements": [],
+       "widgetType": "button"
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {
+  "background_background": "classic",
+  "background_color": "#15100b"
+ }
+}

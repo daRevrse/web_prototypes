@@ -1,0 +1,891 @@
+{
+ "version": "0.4",
+ "title": "Le Brasier — Galerie (Body)",
+ "type": "page",
+ "content": [
+  {
+   "id": "6917c8f",
+   "elType": "section",
+   "settings": {
+    "content_width": {
+     "unit": "px",
+     "size": 1180,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "background_background": "classic",
+    "background_image": {
+     "url": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=2000&q=80",
+     "id": "",
+     "source": "url"
+    },
+    "background_position": "center center",
+    "background_size": "cover",
+    "background_overlay_background": "classic",
+    "background_overlay_color": "rgba(14,9,5,0.6)",
+    "padding": {
+     "unit": "px",
+     "top": "150",
+     "right": "20",
+     "bottom": "72",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "110",
+     "right": "18",
+     "bottom": "54",
+     "left": "18",
+     "isLinked": false
+    },
+    "min_height": {
+     "unit": "vh",
+     "size": 55,
+     "sizes": []
+    },
+    "min_height_mobile": {
+     "unit": "vh",
+     "size": 46,
+     "sizes": []
+    },
+    "content_position": "bottom"
+   },
+   "elements": [
+    {
+     "id": "8753f7e",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": 100,
+      "_inline_size_mobile": 100,
+      "_animation": "fadeInUp"
+     },
+     "elements": [
+      {
+       "id": "525f37c",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p style=\"letter-spacing:.2em;text-transform:uppercase;font-size:12px;color:#b6a489;margin:0\"><a href=\"index.html\" style=\"color:#b6a489\">Accueil</a> &nbsp;/&nbsp; <span style=\"color:#e07a2c\">Galerie</span></p>",
+        "text_color": "#b6a489",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "18",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "a7a984a",
+       "elType": "widget",
+       "settings": {
+        "title": "L'instant Dorikko.",
+        "header_size": "h1",
+        "title_color": "#f3e8d6",
+        "typography_typography": "custom",
+        "typography_font_family": "Fraunces",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": [
+          96,
+          60,
+          42
+         ],
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "77733c7",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>Le feu, les plats, la salle et les visages. Quelques images de ce qui vous attend à la maison.</p>",
+        "text_color": "#e7d8c0",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 18,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "d72a92b",
+   "elType": "section",
+   "settings": {
+    "content_width": {
+     "unit": "px",
+     "size": 1180,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "background_background": "classic",
+    "background_color": "#15100b",
+    "padding": {
+     "unit": "px",
+     "top": "110",
+     "right": "20",
+     "bottom": "80",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "72",
+     "right": "18",
+     "bottom": "56",
+     "left": "18",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "ed9005c",
+     "elType": "column",
+     "settings": {
+      "_column_size": 25,
+      "_inline_size": 25,
+      "_inline_size_tablet": 33,
+      "_inline_size_mobile": 50,
+      "_animation": "fadeInUp",
+      "_animation_delay": 0
+     },
+     "elements": [
+      {
+       "id": "88e97cb",
+       "elType": "widget",
+       "settings": {
+        "image": {
+         "url": "https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=700&q=80",
+         "id": "",
+         "alt": "",
+         "source": "url"
+        },
+        "image_size": "full"
+       },
+       "elements": [],
+       "widgetType": "image"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "092ca9c",
+     "elType": "column",
+     "settings": {
+      "_column_size": 25,
+      "_inline_size": 25,
+      "_inline_size_tablet": 33,
+      "_inline_size_mobile": 50,
+      "_animation": "fadeInUp",
+      "_animation_delay": 90
+     },
+     "elements": [
+      {
+       "id": "0586d0a",
+       "elType": "widget",
+       "settings": {
+        "image": {
+         "url": "https://images.unsplash.com/photo-1432139555190-58524dae6a55?auto=format&fit=crop&w=700&q=80",
+         "id": "",
+         "alt": "",
+         "source": "url"
+        },
+        "image_size": "full"
+       },
+       "elements": [],
+       "widgetType": "image"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "96e28b3",
+     "elType": "column",
+     "settings": {
+      "_column_size": 25,
+      "_inline_size": 25,
+      "_inline_size_tablet": 33,
+      "_inline_size_mobile": 50,
+      "_animation": "fadeInUp",
+      "_animation_delay": 180
+     },
+     "elements": [
+      {
+       "id": "b5edb64",
+       "elType": "widget",
+       "settings": {
+        "image": {
+         "url": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=80",
+         "id": "",
+         "alt": "",
+         "source": "url"
+        },
+        "image_size": "full"
+       },
+       "elements": [],
+       "widgetType": "image"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "e76b837",
+     "elType": "column",
+     "settings": {
+      "_column_size": 25,
+      "_inline_size": 25,
+      "_inline_size_tablet": 33,
+      "_inline_size_mobile": 50,
+      "_animation": "fadeInUp",
+      "_animation_delay": 270
+     },
+     "elements": [
+      {
+       "id": "96f133e",
+       "elType": "widget",
+       "settings": {
+        "image": {
+         "url": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=700&q=80",
+         "id": "",
+         "alt": "",
+         "source": "url"
+        },
+        "image_size": "full"
+       },
+       "elements": [],
+       "widgetType": "image"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "d59b455",
+     "elType": "column",
+     "settings": {
+      "_column_size": 25,
+      "_inline_size": 25,
+      "_inline_size_tablet": 33,
+      "_inline_size_mobile": 50,
+      "_animation": "fadeInUp",
+      "_animation_delay": 0
+     },
+     "elements": [
+      {
+       "id": "c7b8827",
+       "elType": "widget",
+       "settings": {
+        "image": {
+         "url": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=700&q=80",
+         "id": "",
+         "alt": "",
+         "source": "url"
+        },
+        "image_size": "full"
+       },
+       "elements": [],
+       "widgetType": "image"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "cbd8227",
+     "elType": "column",
+     "settings": {
+      "_column_size": 25,
+      "_inline_size": 25,
+      "_inline_size_tablet": 33,
+      "_inline_size_mobile": 50,
+      "_animation": "fadeInUp",
+      "_animation_delay": 90
+     },
+     "elements": [
+      {
+       "id": "84ae621",
+       "elType": "widget",
+       "settings": {
+        "image": {
+         "url": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=700&q=80",
+         "id": "",
+         "alt": "",
+         "source": "url"
+        },
+        "image_size": "full"
+       },
+       "elements": [],
+       "widgetType": "image"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "e83abf5",
+     "elType": "column",
+     "settings": {
+      "_column_size": 25,
+      "_inline_size": 25,
+      "_inline_size_tablet": 33,
+      "_inline_size_mobile": 50,
+      "_animation": "fadeInUp",
+      "_animation_delay": 180
+     },
+     "elements": [
+      {
+       "id": "5bc1f74",
+       "elType": "widget",
+       "settings": {
+        "image": {
+         "url": "https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=700&q=80",
+         "id": "",
+         "alt": "",
+         "source": "url"
+        },
+        "image_size": "full"
+       },
+       "elements": [],
+       "widgetType": "image"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "1469033",
+     "elType": "column",
+     "settings": {
+      "_column_size": 25,
+      "_inline_size": 25,
+      "_inline_size_tablet": 33,
+      "_inline_size_mobile": 50,
+      "_animation": "fadeInUp",
+      "_animation_delay": 270
+     },
+     "elements": [
+      {
+       "id": "51b4677",
+       "elType": "widget",
+       "settings": {
+        "image": {
+         "url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=700&q=80",
+         "id": "",
+         "alt": "",
+         "source": "url"
+        },
+        "image_size": "full"
+       },
+       "elements": [],
+       "widgetType": "image"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "f07a9a8",
+     "elType": "column",
+     "settings": {
+      "_column_size": 25,
+      "_inline_size": 25,
+      "_inline_size_tablet": 33,
+      "_inline_size_mobile": 50,
+      "_animation": "fadeInUp",
+      "_animation_delay": 0
+     },
+     "elements": [
+      {
+       "id": "f0af645",
+       "elType": "widget",
+       "settings": {
+        "image": {
+         "url": "https://images.unsplash.com/photo-1529193591184-b1d58069ecdd?auto=format&fit=crop&w=700&q=80",
+         "id": "",
+         "alt": "",
+         "source": "url"
+        },
+        "image_size": "full"
+       },
+       "elements": [],
+       "widgetType": "image"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "39bbc92",
+     "elType": "column",
+     "settings": {
+      "_column_size": 25,
+      "_inline_size": 25,
+      "_inline_size_tablet": 33,
+      "_inline_size_mobile": 50,
+      "_animation": "fadeInUp",
+      "_animation_delay": 90
+     },
+     "elements": [
+      {
+       "id": "451c838",
+       "elType": "widget",
+       "settings": {
+        "image": {
+         "url": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=700&q=80",
+         "id": "",
+         "alt": "",
+         "source": "url"
+        },
+        "image_size": "full"
+       },
+       "elements": [],
+       "widgetType": "image"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "3c09204",
+     "elType": "column",
+     "settings": {
+      "_column_size": 25,
+      "_inline_size": 25,
+      "_inline_size_tablet": 33,
+      "_inline_size_mobile": 50,
+      "_animation": "fadeInUp",
+      "_animation_delay": 180
+     },
+     "elements": [
+      {
+       "id": "f6ccc13",
+       "elType": "widget",
+       "settings": {
+        "image": {
+         "url": "https://images.unsplash.com/photo-1432139509613-5c4255815697?auto=format&fit=crop&w=700&q=80",
+         "id": "",
+         "alt": "",
+         "source": "url"
+        },
+        "image_size": "full"
+       },
+       "elements": [],
+       "widgetType": "image"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "193e78c",
+     "elType": "column",
+     "settings": {
+      "_column_size": 25,
+      "_inline_size": 25,
+      "_inline_size_tablet": 33,
+      "_inline_size_mobile": 50,
+      "_animation": "fadeInUp",
+      "_animation_delay": 270
+     },
+     "elements": [
+      {
+       "id": "6755038",
+       "elType": "widget",
+       "settings": {
+        "image": {
+         "url": "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=700&q=80",
+         "id": "",
+         "alt": "",
+         "source": "url"
+        },
+        "image_size": "full"
+       },
+       "elements": [],
+       "widgetType": "image"
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "ada0e65",
+   "elType": "section",
+   "settings": {
+    "content_width": {
+     "unit": "px",
+     "size": 1180,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "background_background": "classic",
+    "background_color": "#1c150e",
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "20",
+     "bottom": "96",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "18",
+     "bottom": "64",
+     "left": "18",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "ae37993",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": 100,
+      "_inline_size_mobile": 100,
+      "_animation": "fadeInUp"
+     },
+     "elements": [
+      {
+       "id": "557a5d0",
+       "elType": "widget",
+       "settings": {
+        "title": "Sur Instagram",
+        "header_size": "span",
+        "title_color": "#e07a2c",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "align": "center",
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 4,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "18",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "14f5309",
+       "elType": "widget",
+       "settings": {
+        "title": "Suivez le feu au quotidien — @dorikko.saveurs",
+        "header_size": "div",
+        "title_color": "#f3e8d6",
+        "typography_typography": "custom",
+        "typography_font_family": "Fraunces",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": [
+          34,
+          28,
+          22
+         ],
+         "sizes": []
+        },
+        "align": "center",
+        "typography_font_style": "italic",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "22",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "2db2469",
+       "elType": "widget",
+       "settings": {
+        "text": "Nous suivre",
+        "link": {
+         "url": "#",
+         "is_external": "",
+         "nofollow": ""
+        },
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_weight": "600",
+        "typography_text_transform": "uppercase",
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 2,
+         "sizes": []
+        },
+        "typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        },
+        "text_padding": {
+         "unit": "px",
+         "top": "18",
+         "right": "34",
+         "bottom": "18",
+         "left": "34",
+         "isLinked": false
+        },
+        "button_text_color": "#ffffff",
+        "hover_color": "#ffffff",
+        "align": "center",
+        "background_color": "#c2511f",
+        "button_background_hover_color": "#e07a2c"
+       },
+       "elements": [],
+       "widgetType": "button"
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "61a71b9",
+   "elType": "section",
+   "settings": {
+    "content_width": {
+     "unit": "px",
+     "size": 1180,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "background_background": "classic",
+    "background_color": "#c2511f",
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "20",
+     "bottom": "96",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "18",
+     "bottom": "64",
+     "left": "18",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "6818f80",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": 100,
+      "_inline_size_mobile": 100,
+      "_animation": "fadeInUp"
+     },
+     "elements": [
+      {
+       "id": "8c51b05",
+       "elType": "widget",
+       "settings": {
+        "title": "Envie d'y être ?",
+        "header_size": "span",
+        "title_color": "#ffffff",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "align": "center",
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 4,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "18",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "26d9400",
+       "elType": "widget",
+       "settings": {
+        "title": "Réservez votre table.",
+        "header_size": "h2",
+        "title_color": "#ffffff",
+        "typography_typography": "custom",
+        "typography_font_family": "Fraunces",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": [
+          54,
+          40,
+          30
+         ],
+         "sizes": []
+        },
+        "align": "center",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "14",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "6c88040",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>Les images donnent faim — la réalité est encore meilleure.</p>",
+        "text_color": "rgba(255,255,255,.86)",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 17,
+         "sizes": []
+        },
+        "align": "center",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "28",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "ac2aac7",
+       "elType": "widget",
+       "settings": {
+        "text": "Réserver une table",
+        "link": {
+         "url": "contact.html",
+         "is_external": "",
+         "nofollow": ""
+        },
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_weight": "600",
+        "typography_text_transform": "uppercase",
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 2,
+         "sizes": []
+        },
+        "typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        },
+        "text_padding": {
+         "unit": "px",
+         "top": "18",
+         "right": "34",
+         "bottom": "18",
+         "left": "34",
+         "isLinked": false
+        },
+        "button_text_color": "#ffffff",
+        "hover_color": "#ffffff",
+        "align": "center",
+        "background_color": "#15100b",
+        "button_background_hover_color": "#000000"
+       },
+       "elements": [],
+       "widgetType": "button"
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {
+  "background_background": "classic",
+  "background_color": "#15100b"
+ }
+}

@@ -1,0 +1,1478 @@
+{
+ "version": "0.4",
+ "title": "Le Brasier — Le Menu (Body)",
+ "type": "page",
+ "content": [
+  {
+   "id": "6492a86",
+   "elType": "section",
+   "settings": {
+    "content_width": {
+     "unit": "px",
+     "size": 1180,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "background_background": "classic",
+    "background_image": {
+     "url": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=2000&q=80",
+     "id": "",
+     "source": "url"
+    },
+    "background_position": "center center",
+    "background_size": "cover",
+    "background_overlay_background": "classic",
+    "background_overlay_color": "rgba(14,9,5,0.6)",
+    "padding": {
+     "unit": "px",
+     "top": "150",
+     "right": "20",
+     "bottom": "72",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "110",
+     "right": "18",
+     "bottom": "54",
+     "left": "18",
+     "isLinked": false
+    },
+    "min_height": {
+     "unit": "vh",
+     "size": 55,
+     "sizes": []
+    },
+    "min_height_mobile": {
+     "unit": "vh",
+     "size": 46,
+     "sizes": []
+    },
+    "content_position": "bottom"
+   },
+   "elements": [
+    {
+     "id": "47c299d",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": 100,
+      "_inline_size_mobile": 100,
+      "_animation": "fadeInUp"
+     },
+     "elements": [
+      {
+       "id": "93d7431",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p style=\"letter-spacing:.2em;text-transform:uppercase;font-size:12px;color:#b6a489;margin:0\"><a href=\"index.html\" style=\"color:#b6a489\">Accueil</a> &nbsp;/&nbsp; <span style=\"color:#e07a2c\">Le Menu</span></p>",
+        "text_color": "#b6a489",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "18",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "f81eee4",
+       "elType": "widget",
+       "settings": {
+        "title": "La carte du feu.",
+        "header_size": "h1",
+        "title_color": "#f3e8d6",
+        "typography_typography": "custom",
+        "typography_font_family": "Fraunces",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": [
+          96,
+          60,
+          42
+         ],
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "74d0487",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>Une sélection courte et franche, dictée par la ferme et le marché du jour. Les prix sont indiqués en FCFA.</p>",
+        "text_color": "#e7d8c0",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 18,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "7db36a7",
+   "elType": "section",
+   "settings": {
+    "content_width": {
+     "unit": "px",
+     "size": 1180,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "background_background": "classic",
+    "background_color": "#15100b",
+    "padding": {
+     "unit": "px",
+     "top": "120",
+     "right": "20",
+     "bottom": "60",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "72",
+     "right": "18",
+     "bottom": "40",
+     "left": "18",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "244e64f",
+     "elType": "column",
+     "settings": {
+      "_column_size": 50,
+      "_inline_size": 50,
+      "_inline_size_mobile": 100,
+      "_animation": "fadeInUp"
+     },
+     "elements": [
+      {
+       "id": "bfcd29a",
+       "elType": "widget",
+       "settings": {
+        "title": "Pour commencer",
+        "header_size": "h3",
+        "title_color": "#f3e8d6",
+        "typography_typography": "custom",
+        "typography_font_family": "Fraunces",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 28,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "4",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "d04240d",
+       "elType": "widget",
+       "settings": {
+        "title": "Entrées",
+        "header_size": "div",
+        "title_color": "#c89b53",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 11,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 2,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "14",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "ecf9d4b",
+       "elType": "widget",
+       "settings": {
+        "price_list": [
+         {
+          "_id": "623a599",
+          "title": "Carpaccio de bœuf fumé",
+          "price": "4 200",
+          "description_text": "Copeaux de parmesan, huile d'herbes, roquette",
+          "item_image": {
+           "url": "",
+           "id": ""
+          },
+          "link": {
+           "url": "",
+           "is_external": "",
+           "nofollow": ""
+          }
+         },
+         {
+          "_id": "4121f9b",
+          "title": "Brochettes apéritives",
+          "price": "3 500",
+          "description_text": "Émincé mariné aux épices, sauce piment doux",
+          "item_image": {
+           "url": "",
+           "id": ""
+          },
+          "link": {
+           "url": "",
+           "is_external": "",
+           "nofollow": ""
+          }
+         },
+         {
+          "_id": "53bf645",
+          "title": "Velouté du jardin",
+          "price": "2 900",
+          "description_text": "Légumes bio de saison, croûtons au beurre d'ail",
+          "item_image": {
+           "url": "",
+           "id": ""
+          },
+          "link": {
+           "url": "",
+           "is_external": "",
+           "nofollow": ""
+          }
+         },
+         {
+          "_id": "c210b41",
+          "title": "Salade du potager bio",
+          "price": "2 400",
+          "description_text": "Jeunes pousses, tomates anciennes, vinaigrette maison",
+          "item_image": {
+           "url": "",
+           "id": ""
+          },
+          "link": {
+           "url": "",
+           "is_external": "",
+           "nofollow": ""
+          }
+         }
+        ],
+        "separator_style": "dotted",
+        "separator_color": "rgba(243,232,214,.25)",
+        "title_color": "#f3e8d6",
+        "price_color": "#c89b53",
+        "description_color": "#b6a489",
+        "heading_typography_typography": "custom",
+        "heading_typography_font_family": "Fraunces",
+        "heading_typography_font_size": {
+         "unit": "px",
+         "size": 19,
+         "sizes": []
+        },
+        "heading_typography_font_weight": "600",
+        "price_typography_typography": "custom",
+        "price_typography_font_family": "Fraunces",
+        "price_typography_font_style": "italic",
+        "price_typography_font_size": {
+         "unit": "px",
+         "size": 18,
+         "sizes": []
+        },
+        "description_typography_typography": "custom",
+        "description_typography_font_family": "Archivo",
+        "description_typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "item_padding": {
+         "unit": "px",
+         "top": "10",
+         "right": "0",
+         "bottom": "10",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "price-list"
+      },
+      {
+       "id": "1385f5b",
+       "elType": "widget",
+       "settings": {
+        "title": "Les pièces à partager",
+        "header_size": "h3",
+        "title_color": "#f3e8d6",
+        "typography_typography": "custom",
+        "typography_font_family": "Fraunces",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 28,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "4",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "4e7c457",
+       "elType": "widget",
+       "settings": {
+        "title": "Pour 2",
+        "header_size": "div",
+        "title_color": "#c89b53",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 11,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 2,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "14",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "7d24018",
+       "elType": "widget",
+       "settings": {
+        "price_list": [
+         {
+          "_id": "cd12eab",
+          "title": "Côte de bœuf au feu de bois",
+          "price": "18 500",
+          "description_text": "Maturée 40 jours, ~1,2 kg, fleur de sel, beurre maître d'hôtel",
+          "item_image": {
+           "url": "",
+           "id": ""
+          },
+          "link": {
+           "url": "",
+           "is_external": "",
+           "nofollow": ""
+          }
+         },
+         {
+          "_id": "28d396d",
+          "title": "Plateau du braiseur",
+          "price": "21 000",
+          "description_text": "Assortiment de pièces grillées, accompagnements au choix",
+          "item_image": {
+           "url": "",
+           "id": ""
+          },
+          "link": {
+           "url": "",
+           "is_external": "",
+           "nofollow": ""
+          }
+         },
+         {
+          "_id": "3027c49",
+          "title": "Gigot d'agneau confit",
+          "price": "17 200",
+          "description_text": "7 h de cuisson lente, jus au thym, écrasé d'igname",
+          "item_image": {
+           "url": "",
+           "id": ""
+          },
+          "link": {
+           "url": "",
+           "is_external": "",
+           "nofollow": ""
+          }
+         }
+        ],
+        "separator_style": "dotted",
+        "separator_color": "rgba(243,232,214,.25)",
+        "title_color": "#f3e8d6",
+        "price_color": "#c89b53",
+        "description_color": "#b6a489",
+        "heading_typography_typography": "custom",
+        "heading_typography_font_family": "Fraunces",
+        "heading_typography_font_size": {
+         "unit": "px",
+         "size": 19,
+         "sizes": []
+        },
+        "heading_typography_font_weight": "600",
+        "price_typography_typography": "custom",
+        "price_typography_font_family": "Fraunces",
+        "price_typography_font_style": "italic",
+        "price_typography_font_size": {
+         "unit": "px",
+         "size": 18,
+         "sizes": []
+        },
+        "description_typography_typography": "custom",
+        "description_typography_font_family": "Archivo",
+        "description_typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "item_padding": {
+         "unit": "px",
+         "top": "10",
+         "right": "0",
+         "bottom": "10",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "price-list"
+      },
+      {
+       "id": "7c96306",
+       "elType": "widget",
+       "settings": {
+        "title": "Desserts maison",
+        "header_size": "h3",
+        "title_color": "#f3e8d6",
+        "typography_typography": "custom",
+        "typography_font_family": "Fraunces",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 28,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "4",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "ffd4722",
+       "elType": "widget",
+       "settings": {
+        "title": "Douceurs",
+        "header_size": "div",
+        "title_color": "#c89b53",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 11,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 2,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "14",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "f84ac07",
+       "elType": "widget",
+       "settings": {
+        "price_list": [
+         {
+          "_id": "40381ed",
+          "title": "Ananas rôti à la braise",
+          "price": "3 200",
+          "description_text": "Caramel d'épices, glace coco",
+          "item_image": {
+           "url": "",
+           "id": ""
+          },
+          "link": {
+           "url": "",
+           "is_external": "",
+           "nofollow": ""
+          }
+         },
+         {
+          "_id": "3987c59",
+          "title": "Mousse au chocolat noir",
+          "price": "2 800",
+          "description_text": "Éclats de cacao, fleur de sel",
+          "item_image": {
+           "url": "",
+           "id": ""
+          },
+          "link": {
+           "url": "",
+           "is_external": "",
+           "nofollow": ""
+          }
+         },
+         {
+          "_id": "9ff6785",
+          "title": "Tarte du jour",
+          "price": "2 600",
+          "description_text": "Selon l'arrivage du marché",
+          "item_image": {
+           "url": "",
+           "id": ""
+          },
+          "link": {
+           "url": "",
+           "is_external": "",
+           "nofollow": ""
+          }
+         }
+        ],
+        "separator_style": "dotted",
+        "separator_color": "rgba(243,232,214,.25)",
+        "title_color": "#f3e8d6",
+        "price_color": "#c89b53",
+        "description_color": "#b6a489",
+        "heading_typography_typography": "custom",
+        "heading_typography_font_family": "Fraunces",
+        "heading_typography_font_size": {
+         "unit": "px",
+         "size": 19,
+         "sizes": []
+        },
+        "heading_typography_font_weight": "600",
+        "price_typography_typography": "custom",
+        "price_typography_font_family": "Fraunces",
+        "price_typography_font_style": "italic",
+        "price_typography_font_size": {
+         "unit": "px",
+         "size": 18,
+         "sizes": []
+        },
+        "description_typography_typography": "custom",
+        "description_typography_font_family": "Archivo",
+        "description_typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "item_padding": {
+         "unit": "px",
+         "top": "10",
+         "right": "0",
+         "bottom": "10",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "price-list"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "f8d5462",
+     "elType": "column",
+     "settings": {
+      "_column_size": 50,
+      "_inline_size": 50,
+      "_inline_size_mobile": 100,
+      "_animation": "fadeInUp",
+      "_animation_delay": 120
+     },
+     "elements": [
+      {
+       "id": "dc821a2",
+       "elType": "widget",
+       "settings": {
+        "title": "Les viandes à la braise",
+        "header_size": "h3",
+        "title_color": "#f3e8d6",
+        "typography_typography": "custom",
+        "typography_font_family": "Fraunces",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 28,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "4",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "defbb52",
+       "elType": "widget",
+       "settings": {
+        "title": "Plats",
+        "header_size": "div",
+        "title_color": "#c89b53",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 11,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 2,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "14",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "979120d",
+       "elType": "widget",
+       "settings": {
+        "price_list": [
+         {
+          "_id": "8f04c95",
+          "title": "Filet de bœuf maturé",
+          "price": "11 500",
+          "description_text": "300 g, beurre d'épices, frites de patate douce",
+          "item_image": {
+           "url": "",
+           "id": ""
+          },
+          "link": {
+           "url": "",
+           "is_external": "",
+           "nofollow": ""
+          }
+         },
+         {
+          "_id": "44d5193",
+          "title": "Entrecôte du terroir",
+          "price": "9 800",
+          "description_text": "Persillée, gratin d'igname, sauce poivre vert",
+          "item_image": {
+           "url": "",
+           "id": ""
+          },
+          "link": {
+           "url": "",
+           "is_external": "",
+           "nofollow": ""
+          }
+         },
+         {
+          "_id": "3c0f090",
+          "title": "Côte d'agneau du pays",
+          "price": "10 200",
+          "description_text": "Marinade citron-thym, légumes grillés",
+          "item_image": {
+           "url": "",
+           "id": ""
+          },
+          "link": {
+           "url": "",
+           "is_external": "",
+           "nofollow": ""
+          }
+         },
+         {
+          "_id": "fb75c82",
+          "title": "Magret fumé maison",
+          "price": "9 400",
+          "description_text": "Laque de miel local, igname rôtie",
+          "item_image": {
+           "url": "",
+           "id": ""
+          },
+          "link": {
+           "url": "",
+           "is_external": "",
+           "nofollow": ""
+          }
+         },
+         {
+          "_id": "f5718a9",
+          "title": "Travers caramélisés",
+          "price": "8 600",
+          "description_text": "12 h de cuisson lente, sauce braise",
+          "item_image": {
+           "url": "",
+           "id": ""
+          },
+          "link": {
+           "url": "",
+           "is_external": "",
+           "nofollow": ""
+          }
+         },
+         {
+          "_id": "4af3ce2",
+          "title": "Brochettes de la ferme",
+          "price": "6 500",
+          "description_text": "Filet mariné, oignons confits, piment doux",
+          "item_image": {
+           "url": "",
+           "id": ""
+          },
+          "link": {
+           "url": "",
+           "is_external": "",
+           "nofollow": ""
+          }
+         }
+        ],
+        "separator_style": "dotted",
+        "separator_color": "rgba(243,232,214,.25)",
+        "title_color": "#f3e8d6",
+        "price_color": "#c89b53",
+        "description_color": "#b6a489",
+        "heading_typography_typography": "custom",
+        "heading_typography_font_family": "Fraunces",
+        "heading_typography_font_size": {
+         "unit": "px",
+         "size": 19,
+         "sizes": []
+        },
+        "heading_typography_font_weight": "600",
+        "price_typography_typography": "custom",
+        "price_typography_font_family": "Fraunces",
+        "price_typography_font_style": "italic",
+        "price_typography_font_size": {
+         "unit": "px",
+         "size": 18,
+         "sizes": []
+        },
+        "description_typography_typography": "custom",
+        "description_typography_font_family": "Archivo",
+        "description_typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "item_padding": {
+         "unit": "px",
+         "top": "10",
+         "right": "0",
+         "bottom": "10",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "price-list"
+      },
+      {
+       "id": "cf01b7e",
+       "elType": "widget",
+       "settings": {
+        "title": "Pour accompagner",
+        "header_size": "h3",
+        "title_color": "#f3e8d6",
+        "typography_typography": "custom",
+        "typography_font_family": "Fraunces",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 28,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "4",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "a8a1c3f",
+       "elType": "widget",
+       "settings": {
+        "title": "Sides",
+        "header_size": "div",
+        "title_color": "#c89b53",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 11,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 2,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "14",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "4d5802c",
+       "elType": "widget",
+       "settings": {
+        "price_list": [
+         {
+          "_id": "a16dc8e",
+          "title": "Gratin d'igname",
+          "price": "2 800",
+          "description_text": "",
+          "item_image": {
+           "url": "",
+           "id": ""
+          },
+          "link": {
+           "url": "",
+           "is_external": "",
+           "nofollow": ""
+          }
+         },
+         {
+          "_id": "6f30890",
+          "title": "Légumes au feu de bois",
+          "price": "3 100",
+          "description_text": "",
+          "item_image": {
+           "url": "",
+           "id": ""
+          },
+          "link": {
+           "url": "",
+           "is_external": "",
+           "nofollow": ""
+          }
+         },
+         {
+          "_id": "3111e34",
+          "title": "Frites maison &amp; sauces",
+          "price": "2 200",
+          "description_text": "",
+          "item_image": {
+           "url": "",
+           "id": ""
+          },
+          "link": {
+           "url": "",
+           "is_external": "",
+           "nofollow": ""
+          }
+         },
+         {
+          "_id": "d0895f8",
+          "title": "Riz parfumé au beurre",
+          "price": "1 900",
+          "description_text": "",
+          "item_image": {
+           "url": "",
+           "id": ""
+          },
+          "link": {
+           "url": "",
+           "is_external": "",
+           "nofollow": ""
+          }
+         },
+         {
+          "_id": "cc0a91b",
+          "title": "Salade verte du potager",
+          "price": "2 000",
+          "description_text": "",
+          "item_image": {
+           "url": "",
+           "id": ""
+          },
+          "link": {
+           "url": "",
+           "is_external": "",
+           "nofollow": ""
+          }
+         }
+        ],
+        "separator_style": "dotted",
+        "separator_color": "rgba(243,232,214,.25)",
+        "title_color": "#f3e8d6",
+        "price_color": "#c89b53",
+        "description_color": "#b6a489",
+        "heading_typography_typography": "custom",
+        "heading_typography_font_family": "Fraunces",
+        "heading_typography_font_size": {
+         "unit": "px",
+         "size": 19,
+         "sizes": []
+        },
+        "heading_typography_font_weight": "600",
+        "price_typography_typography": "custom",
+        "price_typography_font_family": "Fraunces",
+        "price_typography_font_style": "italic",
+        "price_typography_font_size": {
+         "unit": "px",
+         "size": 18,
+         "sizes": []
+        },
+        "description_typography_typography": "custom",
+        "description_typography_font_family": "Archivo",
+        "description_typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "item_padding": {
+         "unit": "px",
+         "top": "10",
+         "right": "0",
+         "bottom": "10",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "price-list"
+      },
+      {
+       "id": "ff21a64",
+       "elType": "widget",
+       "settings": {
+        "title": "Boissons &amp; vins",
+        "header_size": "h3",
+        "title_color": "#f3e8d6",
+        "typography_typography": "custom",
+        "typography_font_family": "Fraunces",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 28,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "4",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "fd37560",
+       "elType": "widget",
+       "settings": {
+        "title": "Cave",
+        "header_size": "div",
+        "title_color": "#c89b53",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 11,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 2,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "14",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "9dea752",
+       "elType": "widget",
+       "settings": {
+        "price_list": [
+         {
+          "_id": "99f51d5",
+          "title": "Jus pressés maison",
+          "price": "1 800",
+          "description_text": "Gingembre, bissap, ananas",
+          "item_image": {
+           "url": "",
+           "id": ""
+          },
+          "link": {
+           "url": "",
+           "is_external": "",
+           "nofollow": ""
+          }
+         },
+         {
+          "_id": "b4c2b28",
+          "title": "Bière locale pression",
+          "price": "1 500",
+          "description_text": "",
+          "item_image": {
+           "url": "",
+           "id": ""
+          },
+          "link": {
+           "url": "",
+           "is_external": "",
+           "nofollow": ""
+          }
+         },
+         {
+          "_id": "a9dc56a",
+          "title": "Verre de vin rouge",
+          "price": "3 000",
+          "description_text": "Sélection du sommelier",
+          "item_image": {
+           "url": "",
+           "id": ""
+          },
+          "link": {
+           "url": "",
+           "is_external": "",
+           "nofollow": ""
+          }
+         },
+         {
+          "_id": "1aab9f1",
+          "title": "Bouteille (à partir de)",
+          "price": "14 000",
+          "description_text": "Carte des vins en salle",
+          "item_image": {
+           "url": "",
+           "id": ""
+          },
+          "link": {
+           "url": "",
+           "is_external": "",
+           "nofollow": ""
+          }
+         }
+        ],
+        "separator_style": "dotted",
+        "separator_color": "rgba(243,232,214,.25)",
+        "title_color": "#f3e8d6",
+        "price_color": "#c89b53",
+        "description_color": "#b6a489",
+        "heading_typography_typography": "custom",
+        "heading_typography_font_family": "Fraunces",
+        "heading_typography_font_size": {
+         "unit": "px",
+         "size": 19,
+         "sizes": []
+        },
+        "heading_typography_font_weight": "600",
+        "price_typography_typography": "custom",
+        "price_typography_font_family": "Fraunces",
+        "price_typography_font_style": "italic",
+        "price_typography_font_size": {
+         "unit": "px",
+         "size": 18,
+         "sizes": []
+        },
+        "description_typography_typography": "custom",
+        "description_typography_font_family": "Archivo",
+        "description_typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "item_padding": {
+         "unit": "px",
+         "top": "10",
+         "right": "0",
+         "bottom": "10",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "price-list"
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "b0670fe",
+   "elType": "section",
+   "settings": {
+    "content_width": {
+     "unit": "px",
+     "size": 1180,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "background_background": "classic",
+    "background_color": "#15100b",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "20",
+     "bottom": "120",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "0",
+     "right": "18",
+     "bottom": "72",
+     "left": "18",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "4249972",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": 100,
+      "_inline_size_mobile": 100,
+      "_animation": "fadeInUp"
+     },
+     "elements": [
+      {
+       "id": "0809982",
+       "elType": "widget",
+       "settings": {
+        "title": "« La carte évolue avec les saisons et les arrivages de la ferme — demandez la suggestion du chef. »",
+        "header_size": "div",
+        "title_color": "#b6a489",
+        "typography_typography": "custom",
+        "typography_font_family": "Fraunces",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": [
+          21,
+          18,
+          16
+         ],
+         "sizes": []
+        },
+        "align": "center",
+        "typography_font_style": "italic"
+       },
+       "elements": [],
+       "widgetType": "heading"
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "4ee9b79",
+   "elType": "section",
+   "settings": {
+    "content_width": {
+     "unit": "px",
+     "size": 1180,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "background_background": "classic",
+    "background_color": "#c2511f",
+    "padding": {
+     "unit": "px",
+     "top": "96",
+     "right": "20",
+     "bottom": "96",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "64",
+     "right": "18",
+     "bottom": "64",
+     "left": "18",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "543598f",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": 100,
+      "_inline_size_mobile": 100,
+      "_animation": "fadeInUp"
+     },
+     "elements": [
+      {
+       "id": "0c4c474",
+       "elType": "widget",
+       "settings": {
+        "title": "Réservez votre table",
+        "header_size": "span",
+        "title_color": "#ffffff",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "align": "center",
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 4,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "18",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "2e26c0d",
+       "elType": "widget",
+       "settings": {
+        "title": "Le feu est allumé.",
+        "header_size": "h2",
+        "title_color": "#ffffff",
+        "typography_typography": "custom",
+        "typography_font_family": "Fraunces",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": [
+          54,
+          40,
+          30
+         ],
+         "sizes": []
+        },
+        "align": "center",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "14",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "bb59079",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>Réservez dès maintenant et choisissez votre pièce une fois à table.</p>",
+        "text_color": "rgba(255,255,255,.86)",
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 17,
+         "sizes": []
+        },
+        "align": "center",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "28",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "7d4d657",
+       "elType": "widget",
+       "settings": {
+        "text": "Réserver une table",
+        "link": {
+         "url": "contact.html",
+         "is_external": "",
+         "nofollow": ""
+        },
+        "typography_typography": "custom",
+        "typography_font_family": "Archivo",
+        "typography_font_weight": "600",
+        "typography_text_transform": "uppercase",
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 2,
+         "sizes": []
+        },
+        "typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        },
+        "text_padding": {
+         "unit": "px",
+         "top": "18",
+         "right": "34",
+         "bottom": "18",
+         "left": "34",
+         "isLinked": false
+        },
+        "button_text_color": "#ffffff",
+        "hover_color": "#ffffff",
+        "align": "center",
+        "background_color": "#15100b",
+        "button_background_hover_color": "#000000"
+       },
+       "elements": [],
+       "widgetType": "button"
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {
+  "background_background": "classic",
+  "background_color": "#15100b"
+ }
+}
