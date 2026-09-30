@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Pré-inscription · Digital Dreamers</title>
+  <meta name="description" content="Pré-inscrivez votre enfant de 10 à 13 ans à la prochaine édition de Digital Dreamers, le programme numérique gratuit de BostonSolux Academy.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600&family=Rubik:wght@500..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/dd.css">
+</head>
+<body>
+<script src="assets/js/icons.js"></script>
+<a class="skip" href="#main">Aller au contenu</a>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="wordmark" href="index.html" aria-label="Digital Dreamers, accueil"><b>Digital <span>Dreamers</span></b></a>
+    <nav class="nav" aria-label="Navigation principale">
+      <ul>
+        <li><a href="index.html#programme">Le programme</a></li>
+        <li><a href="index.html#editions">Les éditions</a></li>
+        <li><a href="index.html#experts">Paroles d'experts</a></li>
+        <li><a href="index.html#cours">Cours en ligne</a></li>
+        <li><a href="index.html#faq">Questions</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn-red btn-sm header-cta" href="inscription.html" aria-current="page">Pré-inscrire<span class="long">&nbsp;mon enfant</span></a>
+    <button class="menu-btn" type="button" data-drawer-open aria-label="Ouvrir le menu"><svg class="i" aria-hidden="true"><use href="#i-menu"/></svg></button>
+  </div>
+</header>
+
+<main id="main">
+  <div class="container page-head">
+    <nav class="crumbs" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a><svg class="i" aria-hidden="true"><use href="#i-chevron-right"/></svg><span aria-current="page">Pré-inscription</span></nav>
+    <h1>Pré-inscrire mon enfant</h1>
+    <p class="lead">Les dates de la prochaine édition ne sont pas encore annoncées. Remplissez ce formulaire&nbsp;: l'équipe de BostonSolux Academy vous recontactera à l'ouverture des inscriptions.</p>
+  </div>
+
+  <div class="container reg">
+    <div id="reg-body">
+      <form class="form" id="reg-form" novalidate aria-describedby="req-note">
+        <div class="summary-err" id="summary-err" tabindex="-1" role="alert"><strong></strong><ul></ul></div>
+        <p class="hint" id="req-note" style="color: var(--muted); font-size: 15px">Tous les champs sont obligatoires, sauf mention «&nbsp;facultatif&nbsp;».</p>
+
+        <fieldset class="fs">
+          <legend>L'enfant</legend>
+          <div class="grid2">
+            <div class="field">
+              <label for="e-prenom">Prénom</label>
+              <input class="input" id="e-prenom" name="e-prenom" autocomplete="off">
+              <p class="err"><svg class="i" aria-hidden="true"><use href="#i-alert"/></svg><span></span></p>
+            </div>
+            <div class="field">
+              <label for="e-nom">Nom</label>
+              <input class="input" id="e-nom" name="e-nom" autocomplete="off">
+              <p class="err"><svg class="i" aria-hidden="true"><use href="#i-alert"/></svg><span></span></p>
+            </div>
+            <div class="field">
+              <label for="e-naissance">Date de naissance</label>
+              <input class="input" id="e-naissance" name="e-naissance" type="date" min="2008-01-01" max="2020-12-31" aria-describedby="age-help">
+              <p class="help" id="age-help">Le programme accueille les 10–13 ans. L'âge est calculé pour juillet <span data-year>2027</span>, le mois habituel des éditions.</p>
+              <p class="age-note" id="age-note" role="status"><svg class="i" aria-hidden="true"><use href="#i-check-circle"/></svg><span></span></p>
+              <p class="err"><svg class="i" aria-hidden="true"><use href="#i-alert"/></svg><span></span></p>
+            </div>
+            <div class="field">
+              <label for="e-classe">Classe <span class="opt">(facultatif)</span></label>
+              <select class="input" id="e-classe" name="e-classe">
+                <option value="">Choisir</option>
+                <option>CM1</option>
+                <option>CM2</option>
+                <option>6ᵉ</option>
+                <option>5ᵉ</option>
+                <option>4ᵉ</option>
+                <option>3ᵉ</option>
+                <option>Autre</option>
+              </select>
+            </div>
+            <div class="field full">
+              <label for="e-ecole">École <span class="opt">(facultatif)</span></label>
+              <input class="input" id="e-ecole" name="e-ecole" autocomplete="off" placeholder="Nom de l'établissement">
+            </div>
+            <div class="field full" role="radiogroup" aria-labelledby="deja-l">
+              <span class="lbl" id="deja-l">A-t-il déjà participé à Digital Dreamers&nbsp;?</span>
+              <div class="choices">
+                <span class="choice"><input type="radio" name="deja" id="d-non" value="Non" checked><label for="d-non">Non, ce sera la première fois</label></span>
+                <span class="choice"><input type="radio" name="deja" id="d-2024" value="Oui, en 2024"><label for="d-2024">Oui, en 2024</label></span>
+                <span class="choice"><input type="radio" name="deja" id="d-2025" value="Oui, en 2025"><label for="d-2025">Oui, en 2025</label></span>
+                <span class="choice"><input type="radio" name="deja" id="d-2026" value="Oui, en 2026"><label for="d-2026">Oui, en 2026</label></span>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="fs">
+          <legend>Le parent ou tuteur</legend>
+          <div class="grid2">
+            <div class="field full">
+              <label for="p-nom">Nom complet</label>
+              <input class="input" id="p-nom" name="p-nom" autocomplete="name">
+              <p class="err"><svg class="i" aria-hidden="true"><use href="#i-alert"/></svg><span></span></p>
+            </div>
+            <div class="field">
+              <label for="p-tel">Téléphone ou WhatsApp</label>
+              <input class="input" id="p-tel" name="p-tel" type="tel" inputmode="tel" autocomplete="tel" placeholder="+228 90 00 00 00">
+              <p class="err"><svg class="i" aria-hidden="true"><use href="#i-alert"/></svg><span></span></p>
+            </div>
+            <div class="field">
+              <label for="p-email">E-mail <span class="opt">(facultatif)</span></label>
+              <input class="input" id="p-email" name="p-email" type="email" autocomplete="email" placeholder="nom@exemple.com">
+              <p class="err"><svg class="i" aria-hidden="true"><use href="#i-alert"/></svg><span></span></p>
+            </div>
+            <div class="field full">
+              <label for="p-ville">Ville ou quartier <span class="opt">(facultatif)</span></label>
+              <input class="input" id="p-ville" name="p-ville" autocomplete="address-level2" placeholder="Ex. Baguida, Kpogan, Lomé">
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="field consent-wrap">
+          <label class="consent" for="consent"><input type="checkbox" id="consent" name="consent"><span>J'accepte que BostonSolux Academy me recontacte au sujet de cette pré-inscription.</span></label>
+          <p class="err"><svg class="i" aria-hidden="true"><use href="#i-alert"/></svg><span></span></p>
+        </div>
+
+        <div class="submit-row">
+          <button class="btn btn-red" type="submit">Envoyer la pré-inscription <svg class="i" aria-hidden="true"><use href="#i-arrow-right"/></svg></button>
+          <p>Gratuit et sans engagement.</p>
+        </div>
+      </form>
+    </div>
+
+    <aside class="aside" aria-labelledby="know-t">
+      <img src="assets/img/salle-2026-b.jpg" width="1200" height="900" alt="Des enfants travaillent sur ordinateur dans la salle du BostonSolux Training Center." loading="lazy">
+      <div class="aside-card">
+        <h2 id="know-t">Ce qu'il faut savoir</h2>
+        <dl>
+          <div><span class="disc"><svg class="i" aria-hidden="true"><use href="#i-cap"/></svg></span><div><dt>Âge</dt><dd>De 10 à 13 ans</dd></div></div>
+          <div><span class="disc"><svg class="i" aria-hidden="true"><use href="#i-gift"/></svg></span><div><dt>Prix</dt><dd>Gratuit, places limitées</dd></div></div>
+          <div><span class="disc"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg></span><div><dt>Lieu</dt><dd>BostonSolux Training Center, Route Nationale N°2, Kpogan</dd></div></div>
+          <div><span class="disc"><svg class="i" aria-hidden="true"><use href="#i-calendar"/></svg></span><div><dt>Dates</dt><dd>À confirmer. Les éditions 2024, 2025 et 2026 ont eu lieu en juillet.</dd></div></div>
+          <div><span class="disc"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg></span><div><dt>Une question&nbsp;?</dt><dd><a href="tel:+22891061873">+228 91 06 18 73</a><br><a href="mailto:info@bostonsolux.com">info@bostonsolux.com</a></dd></div></div>
+        </dl>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="wordmark wordmark-foot" href="index.html" aria-label="Digital Dreamers, accueil"><b>Digital <span>Dreamers</span></b></a>
+        <div class="social">
+          <a href="https://www.facebook.com/bostonsolux.togo" aria-label="BostonSolux sur Facebook"><svg class="i i-sm" aria-hidden="true"><use href="#i-facebook"/></svg></a>
+          <a href="https://www.linkedin.com/company/bostonsolux-academy/" aria-label="BostonSolux Academy sur LinkedIn"><svg class="i i-sm" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+          <a href="https://www.youtube.com/@BostonSoluxTogo" aria-label="BostonSolux sur YouTube"><svg class="i i-sm" aria-hidden="true"><use href="#i-youtube"/></svg></a>
+        </div>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <ul class="contact">
+          <li><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:+22891061873">+228 91 06 18 73</a></li>
+          <li><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:info@bostonsolux.com">info@bostonsolux.com</a></li>
+          <li><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg><span>BostonSolux Training Center<br>Route Nationale N°2, Kpogan, Togo</span></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Le site</h2>
+        <ul>
+          <li><a href="index.html#programme">Le programme</a></li>
+          <li><a href="index.html#editions">Les éditions</a></li>
+          <li><a href="index.html#cours">Cours en ligne</a></li>
+          <li><a href="inscription.html">Pré-inscription</a></li>
+          <li><a href="https://bostonsoluxacademy.com/">BostonSolux Academy</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Nos bureaux</h2>
+        <p class="offices">Togo · France · États-Unis · Guinée · Guinée équatoriale · Bénin · Tchad</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 BostonSolux Academy</span>
+      <span>Maquette de refonte · contenus issus des sites de BostonSolux Academy</span>
+    </div>
+  </div>
+</footer>
+
+<dialog class="drawer" id="drawer" aria-label="Menu">
+  <div class="drawer-top">
+    <span class="wordmark"><b>Digital <span>Dreamers</span></b></span>
+    <button class="menu-btn" style="display: inline-grid" type="button" data-drawer-close aria-label="Fermer le menu"><svg class="i" aria-hidden="true"><use href="#i-x"/></svg></button>
+  </div>
+  <nav aria-label="Menu mobile">
+    <a href="index.html#programme">Le programme <svg class="i" aria-hidden="true"><use href="#i-chevron-right"/></svg></a>
+    <a href="index.html#editions">Les éditions <svg class="i" aria-hidden="true"><use href="#i-chevron-right"/></svg></a>
+    <a href="index.html#experts">Paroles d'experts <svg class="i" aria-hidden="true"><use href="#i-chevron-right"/></svg></a>
+    <a href="index.html#cours">Cours en ligne <svg class="i" aria-hidden="true"><use href="#i-chevron-right"/></svg></a>
+    <a href="index.html#faq">Questions <svg class="i" aria-hidden="true"><use href="#i-chevron-right"/></svg></a>
+  </nav>
+  <div class="actions">
+    <a class="btn btn-red" href="inscription.html">Pré-inscrire mon enfant</a>
+    <a class="btn btn-line" href="tel:+22891061873"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>+228 91 06 18 73</a>
+  </div>
+</dialog>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>
