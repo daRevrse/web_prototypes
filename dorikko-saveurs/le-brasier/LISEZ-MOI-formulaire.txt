@@ -1,0 +1,45 @@
+FORMULAIRE DE RÉSERVATION — envoi par e-mail (Web3Forms)
+========================================================
+
+Le formulaire envoie les réservations par e-mail SANS serveur, via Web3Forms.
+Il reste UNE chose à faire : coller ta clé gratuite.
+
+1) Obtenir la clé (gratuit, 1 min)
+   - Va sur https://web3forms.com
+   - Entre l'e-mail qui recevra les réservations : info@dorikko-saveurs.com
+   - Tu reçois une « Access Key » par e-mail (ex : a1b2c3d4-....).
+
+2) Coller la clé
+   Remplace VOTRE_CLE_WEB3FORMS par ta clé dans CES DEUX fichiers
+   (champ caché : <input type="hidden" name="access_key" value="...">) :
+     - contact.html   (formulaire complet)
+     - index.html     (réservation rapide de l'accueil)
+
+3) C'est tout.
+   - Les demandes arrivent à info@dorikko-saveurs.com (objet déjà défini).
+   - Un anti-spam (honeypot) est déjà en place.
+   - Offre gratuite : 250 envois/mois.
+
+PAGE DE REMERCIEMENT (déjà en place)
+   - Après un envoi réussi, le visiteur est redirigé vers « merci.html »
+     (page de confirmation stylée). Rien à faire.
+   - Pour changer la destination, ajoute sur le <form> :
+     data-redirect="https://ton-site.com/merci"  (sinon merci.html par défaut).
+
+E-MAIL DE CONFIRMATION AUTOMATIQUE AU CLIENT (auto-réponse)
+   Côté formulaire, tout est prêt : le champ e-mail s'appelle « email »,
+   que Web3Forms utilise pour répondre au client.
+   À activer une fois dans ton compte Web3Forms :
+     - Tableau de bord > ta clé > « Autoresponder / Email Templates »
+     - Active l'auto-réponse et rédige le message, par exemple :
+         Objet : Votre réservation chez Dorikko-Saveurs
+         « Bonjour, merci pour votre demande de réservation. Nous vous
+           rappelons très vite pour confirmer votre table. À très bientôt !
+           — Dorikko-Saveurs, Kpalimé · +228 91 69 84 29 »
+   (La réservation rapide de l'accueil n'a pas de champ e-mail : pas
+    d'auto-réponse pour celle-ci, le rappel se fait par téléphone.)
+
+Notes
+   - Il faut être EN LIGNE (ça appelle api.web3forms.com).
+   - Tant que la clé n'est pas collée, le formulaire affiche « non configuré »
+     au lieu d'envoyer (et ne redirige pas).

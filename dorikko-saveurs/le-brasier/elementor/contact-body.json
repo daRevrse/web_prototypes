@@ -4,7 +4,7 @@
  "type": "page",
  "content": [
   {
-   "id": "60920b7",
+   "id": "8e5acc4",
    "elType": "section",
    "settings": {
     "content_width": {
@@ -53,7 +53,7 @@
    },
    "elements": [
     {
-     "id": "d7fc508",
+     "id": "33cef9b",
      "elType": "column",
      "settings": {
       "_column_size": 100,
@@ -63,13 +63,13 @@
      },
      "elements": [
       {
-       "id": "73b30f6",
+       "id": "02de86a",
        "elType": "widget",
        "settings": {
         "editor": "<p style=\"letter-spacing:.2em;text-transform:uppercase;font-size:12px;color:#b6a489;margin:0\"><a href=\"index.html\" style=\"color:#b6a489\">Accueil</a> &nbsp;/&nbsp; <span style=\"color:#e07a2c\">Réserver</span></p>",
         "text_color": "#b6a489",
         "typography_typography": "custom",
-        "typography_font_family": "Archivo",
+        "typography_font_family": "Fira Sans",
         "typography_font_size": {
          "unit": "px",
          "size": 12,
@@ -88,14 +88,14 @@
        "widgetType": "text-editor"
       },
       {
-       "id": "e9df344",
+       "id": "a370a6c",
        "elType": "widget",
        "settings": {
         "title": "Une place au coin du feu.",
         "header_size": "h1",
         "title_color": "#f3e8d6",
         "typography_typography": "custom",
-        "typography_font_family": "Fraunces",
+        "typography_font_family": "Belgiano Serif",
         "typography_font_weight": "600",
         "typography_font_size": {
          "unit": "px",
@@ -111,13 +111,13 @@
        "widgetType": "heading"
       },
       {
-       "id": "8b69cc4",
+       "id": "5f05652",
        "elType": "widget",
        "settings": {
         "editor": "<p>Réservez votre table en quelques secondes — nous vous rappelons pour confirmer.</p>",
         "text_color": "#e7d8c0",
         "typography_typography": "custom",
-        "typography_font_family": "Archivo",
+        "typography_font_family": "Fira Sans",
         "typography_font_size": {
          "unit": "px",
          "size": 18,
@@ -142,7 +142,7 @@
    "isInner": false
   },
   {
-   "id": "f3d91b5",
+   "id": "7651f02",
    "elType": "section",
    "settings": {
     "content_width": {
@@ -157,39 +157,56 @@
      "unit": "px",
      "top": "120",
      "right": "20",
-     "bottom": "120",
+     "bottom": "60",
      "left": "20",
      "isLinked": false
     },
     "padding_mobile": {
      "unit": "px",
-     "top": "72",
-     "right": "18",
-     "bottom": "72",
-     "left": "18",
+     "top": "0",
+     "right": "0",
+     "bottom": "30",
+     "left": "0",
      "isLinked": false
     }
    },
    "elements": [
     {
-     "id": "1d86506",
+     "id": "fd2d43c",
      "elType": "column",
      "settings": {
-      "_column_size": 52,
-      "_inline_size": 52,
+      "_column_size": 50,
+      "_inline_size": 50,
       "_inline_size_mobile": 100,
-      "_animation": "fadeInUp"
+      "background_background": "classic",
+      "background_color": "#211810",
+      "padding": {
+       "unit": "px",
+       "top": "56",
+       "right": "48",
+       "bottom": "56",
+       "left": "48",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "40",
+       "right": "26",
+       "bottom": "40",
+       "left": "26",
+       "isLinked": false
+      }
      },
      "elements": [
       {
-       "id": "b3829f2",
+       "id": "ec691d0",
        "elType": "widget",
        "settings": {
-        "title": "Réservation",
+        "title": "Nos horaires",
         "header_size": "span",
         "title_color": "#e07a2c",
         "typography_typography": "custom",
-        "typography_font_family": "Archivo",
+        "typography_font_family": "Fira Sans",
         "typography_font_weight": "600",
         "typography_font_size": {
          "unit": "px",
@@ -215,19 +232,155 @@
        "widgetType": "heading"
       },
       {
-       "id": "857a233",
+       "id": "ce61321",
        "elType": "widget",
        "settings": {
-        "title": "Réserver une table",
+        "title": "Heures d'ouverture",
         "header_size": "h2",
         "title_color": "#f3e8d6",
         "typography_typography": "custom",
-        "typography_font_family": "Fraunces",
+        "typography_font_family": "Belgiano Serif",
         "typography_font_weight": "600",
         "typography_font_size": {
          "unit": "px",
          "size": [
-          42,
+          40,
+          32,
+          26
+         ],
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "14",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "f1d9d65",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>Ouvert tous les jours, midi et soir. Réservation conseillée le week-end.</p>",
+        "text_color": "#b6a489",
+        "typography_typography": "custom",
+        "typography_font_family": "Fira Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "20",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "480dbd5",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p style=\"display:flex;justify-content:space-between;border-bottom:1px solid rgba(243,232,214,.08);padding:14px 0;margin:0\"><span style=\"color:#f3e8d6;font-weight:600\">Lundi – Jeudi</span><span style=\"font-family:Fraunces;font-style:italic;color:#c89b53\">11h00 – 22h00</span></p><p style=\"display:flex;justify-content:space-between;border-bottom:1px solid rgba(243,232,214,.08);padding:14px 0;margin:0\"><span style=\"color:#f3e8d6;font-weight:600\">Vendredi</span><span style=\"font-family:Fraunces;font-style:italic;color:#c89b53\">11h00 – 00h00</span></p><p style=\"display:flex;justify-content:space-between;border-bottom:1px solid rgba(243,232,214,.08);padding:14px 0;margin:0\"><span style=\"color:#f3e8d6;font-weight:600\">Samedi</span><span style=\"font-family:Fraunces;font-style:italic;color:#c89b53\">11h00 – 00h00</span></p><p style=\"display:flex;justify-content:space-between;border-bottom:1px solid rgba(243,232,214,.08);padding:14px 0;margin:0\"><span style=\"color:#f3e8d6;font-weight:600\">Dimanche</span><span style=\"font-family:Fraunces;font-style:italic;color:#c89b53\">11h00 – 00h00</span></p>",
+        "text_color": "#e7d8c0",
+        "typography_typography": "custom",
+        "typography_font_family": "Fira Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 15,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "0e7b384",
+     "elType": "column",
+     "settings": {
+      "_column_size": 50,
+      "_inline_size": 50,
+      "_inline_size_mobile": 100,
+      "background_background": "classic",
+      "background_color": "#c2511f",
+      "padding": {
+       "unit": "px",
+       "top": "56",
+       "right": "48",
+       "bottom": "56",
+       "left": "48",
+       "isLinked": false
+      },
+      "padding_mobile": {
+       "unit": "px",
+       "top": "40",
+       "right": "26",
+       "bottom": "40",
+       "left": "26",
+       "isLinked": false
+      }
+     },
+     "elements": [
+      {
+       "id": "05b3f1c",
+       "elType": "widget",
+       "settings": {
+        "title": "Réservation",
+        "header_size": "div",
+        "title_color": "#ffffff",
+        "typography_typography": "custom",
+        "typography_font_family": "Fira Sans",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 4,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "18",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "be53141",
+       "elType": "widget",
+       "settings": {
+        "title": "Réserver une table",
+        "header_size": "h2",
+        "title_color": "#ffffff",
+        "typography_typography": "custom",
+        "typography_font_family": "Belgiano Serif",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": [
+          44,
           34,
           28
          ],
@@ -237,7 +390,7 @@
          "unit": "px",
          "top": "0",
          "right": "0",
-         "bottom": "26",
+         "bottom": "16",
          "left": "0",
          "isLinked": false
         }
@@ -246,13 +399,38 @@
        "widgetType": "heading"
       },
       {
-       "id": "b5cae93",
+       "id": "21c532f",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>Réservez en quelques secondes — nous vous rappelons pour confirmer.</p>",
+        "text_color": "rgba(255,255,255,.86)",
+        "typography_typography": "custom",
+        "typography_font_family": "Fira Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "24",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      },
+      {
+       "id": "4baee8d",
        "elType": "widget",
        "settings": {
         "form_name": "Réservation",
         "form_fields": [
          {
-          "_id": "6a84375",
+          "_id": "407e986",
           "field_type": "text",
           "field_label": "Nom complet",
           "placeholder": "Votre nom",
@@ -260,22 +438,23 @@
           "required": "true"
          },
          {
-          "_id": "8d4cce3",
-          "field_type": "tel",
+          "_id": "dca7db7",
+          "field_type": "text",
           "field_label": "Téléphone",
           "placeholder": "+228 ...",
           "width": "50",
           "required": "true"
          },
          {
-          "_id": "e82af2e",
+          "_id": "619ee74",
           "field_type": "email",
           "field_label": "E-mail",
           "placeholder": "vous@exemple.com",
-          "width": "100"
+          "width": "100",
+          "custom_id": "email"
          },
          {
-          "_id": "33eb805",
+          "_id": "16e5462",
           "field_type": "select",
           "field_label": "Nombre de personnes",
           "placeholder": "",
@@ -283,7 +462,7 @@
           "field_options": "1 personne\n2 personnes\n3 personnes\n4 personnes\n5 personnes\n6 et plus"
          },
          {
-          "_id": "7dad950",
+          "_id": "daae137",
           "field_type": "date",
           "field_label": "Date",
           "placeholder": "",
@@ -291,7 +470,7 @@
           "required": "true"
          },
          {
-          "_id": "55719cb",
+          "_id": "1a60f63",
           "field_type": "time",
           "field_label": "Heure",
           "placeholder": "",
@@ -299,29 +478,35 @@
           "required": "true"
          },
          {
-          "_id": "9a8d6d1",
+          "_id": "76d25eb",
           "field_type": "textarea",
           "field_label": "Message (allergies, occasion…)",
           "placeholder": "Une demande particulière ?",
           "width": "100",
           "rows": 4
+         },
+         {
+          "_id": "5712c27",
+          "field_type": "recaptcha_v3",
+          "field_label": "reCAPTCHA",
+          "custom_id": "recaptcha_v3",
+          "width": "100",
+          "recaptcha_v3_badge": "inline",
+          "recaptcha_v3_threshold": "0.5"
          }
         ],
-        "button_text": "Envoyer ma demande",
-        "submit_actions": [
-         "email"
-        ],
+        "button_text": "Réserver maintenant",
         "email_to": "info@dorikko-saveurs.com",
         "email_subject": "Site Dorikko — nouveau message",
         "email_content": "[all-fields]",
         "email_from_name": "Site Dorikko-Saveurs",
-        "email_reply_to": "",
+        "email_reply_to": "[field id=\"email\"]",
         "button_width": "100",
         "button_size": "md",
         "button_align": "stretch",
         "label_color": "#b6a489",
         "label_typography_typography": "custom",
-        "label_typography_font_family": "Archivo",
+        "label_typography_font_family": "Fira Sans",
         "label_typography_font_size": {
          "unit": "px",
          "size": 11,
@@ -345,7 +530,7 @@
          "isLinked": false
         },
         "field_typography_typography": "custom",
-        "field_typography_font_family": "Archivo",
+        "field_typography_font_family": "Fira Sans",
         "field_typography_font_size": {
          "unit": "px",
          "size": 15,
@@ -363,7 +548,7 @@
         "button_text_color": "#ffffff",
         "button_hover_background_color": "#e07a2c",
         "button_typography_typography": "custom",
-        "button_typography_font_family": "Archivo",
+        "button_typography_font_family": "Fira Sans",
         "button_typography_font_weight": "600",
         "button_typography_text_transform": "uppercase",
         "button_typography_letter_spacing": {
@@ -397,34 +582,77 @@
          "unit": "px",
          "size": 16,
          "sizes": []
-        }
+        },
+        "email_to_2": "[field id=\"email\"]",
+        "email_subject_2": "Votre réservation chez Dorikko-Saveurs",
+        "email_content_2": "Bonjour,\n\nMerci pour votre demande de réservation. Nous vous rappelons très vite pour confirmer votre table.\n\nÀ très bientôt,\nDorikko-Saveurs — Kpalimé\n+228 91 69 84 29",
+        "email_from_name_2": "Dorikko-Saveurs",
+        "email_reply_to_2": "info@dorikko-saveurs.com",
+        "redirect_to": "/merci/",
+        "submit_actions": [
+         "email",
+         "email2",
+         "redirect"
+        ]
        },
        "elements": [],
        "widgetType": "form"
       }
      ],
      "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "aba93e9",
+   "elType": "section",
+   "settings": {
+    "content_width": {
+     "unit": "px",
+     "size": 1180,
+     "sizes": []
     },
+    "layout": "boxed",
+    "background_background": "classic",
+    "background_color": "#15100b",
+    "padding": {
+     "unit": "px",
+     "top": "60",
+     "right": "20",
+     "bottom": "120",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "30",
+     "right": "18",
+     "bottom": "72",
+     "left": "18",
+     "isLinked": false
+    }
+   },
+   "elements": [
     {
-     "id": "4bce7b8",
+     "id": "7806675",
      "elType": "column",
      "settings": {
-      "_column_size": 48,
-      "_inline_size": 48,
+      "_column_size": 45,
+      "_inline_size": 45,
       "_inline_size_mobile": 100,
-      "_animation": "fadeInUp",
-      "_animation_delay": 120
+      "content_position": "center"
      },
      "elements": [
       {
-       "id": "feac29a",
+       "id": "94451a9",
        "elType": "widget",
        "settings": {
         "title": "Nous trouver",
         "header_size": "span",
         "title_color": "#e07a2c",
         "typography_typography": "custom",
-        "typography_font_family": "Archivo",
+        "typography_font_family": "Fira Sans",
         "typography_font_weight": "600",
         "typography_font_size": {
          "unit": "px",
@@ -450,14 +678,14 @@
        "widgetType": "heading"
       },
       {
-       "id": "84259fa",
+       "id": "1a5f5e8",
        "elType": "widget",
        "settings": {
         "title": "Infos &amp; accès",
         "header_size": "h2",
         "title_color": "#f3e8d6",
         "typography_typography": "custom",
-        "typography_font_family": "Fraunces",
+        "typography_font_family": "Belgiano Serif",
         "typography_font_weight": "600",
         "typography_font_size": {
          "unit": "px",
@@ -472,7 +700,7 @@
          "unit": "px",
          "top": "0",
          "right": "0",
-         "bottom": "20",
+         "bottom": "18",
          "left": "0",
          "isLinked": false
         }
@@ -481,13 +709,13 @@
        "widgetType": "heading"
       },
       {
-       "id": "77806ea",
+       "id": "8d42692",
        "elType": "widget",
        "settings": {
-        "editor": "<div style=\"display:flex;gap:18px;padding:24px 0;border-bottom:1px solid rgba(243,232,214,.08)\"><span style=\"color:#e07a2c;font-size:24px;flex:none\">📍</span><div><div style=\"font-family:Archivo;font-weight:600;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#c89b53;margin-bottom:6px\">Adresse</div><div style=\"font-family:Fraunces;color:#e7d8c0;font-size:17px\">Zomayi, non loin de Togo Grain<br><span style=\"font-family:Archivo;font-size:13px;color:#b6a489\">Kpalimé, Togo</span></div></div></div>",
+        "editor": "<div style=\"display:flex;gap:18px;padding:22px 0;border-bottom:1px solid rgba(243,232,214,.08)\"><span style=\"color:#e07a2c;font-size:22px;flex:none\">📍</span><div><div style=\"font-family:Archivo;font-weight:600;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#c89b53;margin-bottom:6px\">Adresse</div><div style=\"font-family:Fraunces;color:#e7d8c0;font-size:17px\">Zomayi, non loin de Togo Grain<br><span style=\"font-family:Archivo;font-size:13px;color:#b6a489\">Kpalimé, Togo</span></div></div></div>",
         "text_color": "#e7d8c0",
         "typography_typography": "custom",
-        "typography_font_family": "Archivo",
+        "typography_font_family": "Fira Sans",
         "typography_font_size": {
          "unit": "px",
          "size": 16,
@@ -498,13 +726,13 @@
        "widgetType": "text-editor"
       },
       {
-       "id": "a40f79b",
+       "id": "38415ab",
        "elType": "widget",
        "settings": {
-        "editor": "<div style=\"display:flex;gap:18px;padding:24px 0;border-bottom:1px solid rgba(243,232,214,.08)\"><span style=\"color:#e07a2c;font-size:24px;flex:none\">📞</span><div><div style=\"font-family:Archivo;font-weight:600;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#c89b53;margin-bottom:6px\">Téléphone</div><div style=\"font-family:Fraunces;color:#e7d8c0;font-size:17px\">+228 91 69 84 29<br><span style=\"font-family:Archivo;font-size:13px;color:#b6a489\">Réservations &amp; renseignements</span></div></div></div>",
+        "editor": "<div style=\"display:flex;gap:18px;padding:22px 0;border-bottom:1px solid rgba(243,232,214,.08)\"><span style=\"color:#e07a2c;font-size:22px;flex:none\">📞</span><div><div style=\"font-family:Archivo;font-weight:600;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#c89b53;margin-bottom:6px\">Téléphone</div><div style=\"font-family:Fraunces;color:#e7d8c0;font-size:17px\">+228 91 69 84 29<br><span style=\"font-family:Archivo;font-size:13px;color:#b6a489\">Réservations &amp; renseignements</span></div></div></div>",
         "text_color": "#e7d8c0",
         "typography_typography": "custom",
-        "typography_font_family": "Archivo",
+        "typography_font_family": "Fira Sans",
         "typography_font_size": {
          "unit": "px",
          "size": 16,
@@ -515,13 +743,13 @@
        "widgetType": "text-editor"
       },
       {
-       "id": "ed924e0",
+       "id": "f999123",
        "elType": "widget",
        "settings": {
-        "editor": "<div style=\"display:flex;gap:18px;padding:24px 0;border-bottom:1px solid rgba(243,232,214,.08)\"><span style=\"color:#e07a2c;font-size:24px;flex:none\">✉️</span><div><div style=\"font-family:Archivo;font-weight:600;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#c89b53;margin-bottom:6px\">E-mail</div><div style=\"font-family:Fraunces;color:#e7d8c0;font-size:17px\">info@dorikko-saveurs.com<br><span style=\"font-family:Archivo;font-size:13px;color:#b6a489\">Réponse sous 24 h</span></div></div></div>",
+        "editor": "<div style=\"display:flex;gap:18px;padding:22px 0;border-bottom:1px solid rgba(243,232,214,.08)\"><span style=\"color:#e07a2c;font-size:22px;flex:none\">✉️</span><div><div style=\"font-family:Archivo;font-weight:600;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#c89b53;margin-bottom:6px\">E-mail</div><div style=\"font-family:Fraunces;color:#e7d8c0;font-size:17px\">info@dorikko-saveurs.com<br><span style=\"font-family:Archivo;font-size:13px;color:#b6a489\">Réponse sous 24 h</span></div></div></div>",
         "text_color": "#e7d8c0",
         "typography_typography": "custom",
-        "typography_font_family": "Archivo",
+        "typography_font_family": "Fira Sans",
         "typography_font_size": {
          "unit": "px",
          "size": 16,
@@ -532,13 +760,13 @@
        "widgetType": "text-editor"
       },
       {
-       "id": "a57f332",
+       "id": "f28af28",
        "elType": "widget",
        "settings": {
-        "editor": "<div style=\"display:flex;gap:18px;padding:24px 0;border-bottom:1px solid rgba(243,232,214,.08)\"><span style=\"color:#e07a2c;font-size:24px;flex:none\">🕐</span><div><div style=\"font-family:Archivo;font-weight:600;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#c89b53;margin-bottom:6px\">Horaires</div><div style=\"font-family:Fraunces;color:#e7d8c0;font-size:17px\">Lun – Jeu : 11h – 22h<br><span style=\"font-family:Archivo;font-size:13px;color:#b6a489\">Ven – Dim : 11h – minuit · 7j/7</span></div></div></div>",
+        "editor": "<div style=\"display:flex;gap:18px;padding:22px 0;border-bottom:1px solid rgba(243,232,214,.08)\"><span style=\"color:#e07a2c;font-size:22px;flex:none\">🕐</span><div><div style=\"font-family:Archivo;font-weight:600;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#c89b53;margin-bottom:6px\">Horaires</div><div style=\"font-family:Fraunces;color:#e7d8c0;font-size:17px\">Lun – Jeu : 11h – 22h<br><span style=\"font-family:Archivo;font-size:13px;color:#b6a489\">Ven – Dim : 11h – minuit · 7j/7</span></div></div></div>",
         "text_color": "#e7d8c0",
         "typography_typography": "custom",
-        "typography_font_family": "Archivo",
+        "typography_font_family": "Fira Sans",
         "typography_font_size": {
          "unit": "px",
          "size": 16,
@@ -547,12 +775,25 @@
        },
        "elements": [],
        "widgetType": "text-editor"
-      },
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "1a3f772",
+     "elType": "column",
+     "settings": {
+      "_column_size": 55,
+      "_inline_size": 55,
+      "_inline_size_mobile": 100,
+      "content_position": "center"
+     },
+     "elements": [
       {
-       "id": "6005185",
+       "id": "6714795",
        "elType": "widget",
        "settings": {
-        "html": "<iframe title=\"Carte Dorikko-Saveurs, Kpalimé\" loading=\"lazy\" src=\"https://www.openstreetmap.org/export/embed.html?bbox=0.6133%2C6.8800%2C0.6533%2C6.9200&amp;layer=mapnik&amp;marker=6.9000%2C0.6333\" style=\"width:100%;height:420px;border:1px solid rgba(243,232,214,.14);filter:invert(.92) hue-rotate(180deg) saturate(.65) brightness(.9)\"></iframe>"
+        "html": "<iframe title=\"Carte Dorikko-Saveurs, Kpalimé\" loading=\"lazy\" allowfullscreen src=\"https://maps.google.com/maps?q=Kpalim%C3%A9%2C%20Togo&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=&amp;output=embed\" style=\"width:100%;height:470px;border:0;display:block\"></iframe>"
        },
        "elements": [],
        "widgetType": "html"
@@ -564,7 +805,7 @@
    "isInner": false
   },
   {
-   "id": "3d491ed",
+   "id": "107fb00",
    "elType": "section",
    "settings": {
     "content_width": {
@@ -602,24 +843,23 @@
    },
    "elements": [
     {
-     "id": "e57c546",
+     "id": "14e0b64",
      "elType": "column",
      "settings": {
       "_column_size": 100,
       "_inline_size": 100,
-      "_inline_size_mobile": 100,
-      "_animation": "fadeInUp"
+      "_inline_size_mobile": 100
      },
      "elements": [
       {
-       "id": "04f19ae",
+       "id": "acb30f2",
        "elType": "widget",
        "settings": {
         "title": "Toujours ouvert pour vous",
         "header_size": "span",
         "title_color": "#c89b53",
         "typography_typography": "custom",
-        "typography_font_family": "Archivo",
+        "typography_font_family": "Fira Sans",
         "typography_font_weight": "600",
         "typography_font_size": {
          "unit": "px",
@@ -646,7 +886,7 @@
        "widgetType": "heading"
       },
       {
-       "id": "50c30e5",
+       "id": "40a6a7c",
        "elType": "widget",
        "settings": {
         "title": "Midi et soir, sept jours sur sept. Le feu vous attend.",
@@ -679,14 +919,14 @@
        "widgetType": "heading"
       },
       {
-       "id": "54eb2b3",
+       "id": "da03342",
        "elType": "widget",
        "settings": {
         "title": "— Dorikko-Saveurs, Kpalimé",
         "header_size": "div",
         "title_color": "#c89b53",
         "typography_typography": "custom",
-        "typography_font_family": "Archivo",
+        "typography_font_family": "Fira Sans",
         "typography_font_weight": "600",
         "typography_font_size": {
          "unit": "px",

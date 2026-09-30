@@ -4,7 +4,7 @@
  "type": "section",
  "content": [
   {
-   "id": "0d1e2ac",
+   "id": "d4b7202",
    "elType": "section",
    "settings": {
     "content_width": {
@@ -34,7 +34,7 @@
    },
    "elements": [
     {
-     "id": "86a273e",
+     "id": "f3e7b71",
      "elType": "column",
      "settings": {
       "_column_size": 60,
@@ -45,13 +45,13 @@
      },
      "elements": [
       {
-       "id": "ee122fa",
+       "id": "818b5a0",
        "elType": "widget",
        "settings": {
         "editor": "<p>Lun – Jeu 11h–22h · Ven – Dim 11h–00h&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Zomayi, près de Togo Grain · Kpalimé</p>",
         "text_color": "#b6a489",
         "typography_typography": "custom",
-        "typography_font_family": "Archivo",
+        "typography_font_family": "Fira Sans",
         "typography_font_size": {
          "unit": "px",
          "size": 12.5,
@@ -65,7 +65,7 @@
      "isInner": false
     },
     {
-     "id": "6c27e5a",
+     "id": "9c33e84",
      "elType": "column",
      "settings": {
       "_column_size": 40,
@@ -75,13 +75,13 @@
      },
      "elements": [
       {
-       "id": "30e8382",
+       "id": "fda8d24",
        "elType": "widget",
        "settings": {
         "editor": "<p>Réservations · <strong style=\"color:#f3e8d6\">+228 91 69 84 29</strong>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Frais · Local · Bio</p>",
         "text_color": "#b6a489",
         "typography_typography": "custom",
-        "typography_font_family": "Archivo",
+        "typography_font_family": "Fira Sans",
         "typography_font_size": {
          "unit": "px",
          "size": 12.5,
@@ -99,7 +99,7 @@
    "isInner": false
   },
   {
-   "id": "3b395c8",
+   "id": "c7144f0",
    "elType": "section",
    "settings": {
     "content_width": {
@@ -139,7 +139,7 @@
    },
    "elements": [
     {
-     "id": "f897da3",
+     "id": "89fe854",
      "elType": "column",
      "settings": {
       "_column_size": 35,
@@ -149,7 +149,7 @@
      },
      "elements": [
       {
-       "id": "e77a2a8",
+       "id": "678ff7c",
        "elType": "widget",
        "settings": {
         "menu": "",
@@ -158,7 +158,7 @@
         "pointer": "underline",
         "animation_line": "fade",
         "menu_typography_typography": "custom",
-        "menu_typography_font_family": "Archivo",
+        "menu_typography_font_family": "Fira Sans",
         "menu_typography_font_size": {
          "unit": "px",
          "size": 13,
@@ -190,7 +190,7 @@
      "isInner": false
     },
     {
-     "id": "12d1012",
+     "id": "abf73a3",
      "elType": "column",
      "settings": {
       "_column_size": 30,
@@ -200,7 +200,7 @@
      },
      "elements": [
       {
-       "id": "689c767",
+       "id": "c66e666",
        "elType": "widget",
        "settings": {
         "image": {
@@ -223,7 +223,7 @@
      "isInner": false
     },
     {
-     "id": "5caf81f",
+     "id": "ea17f12",
      "elType": "column",
      "settings": {
       "_column_size": 35,
@@ -233,14 +233,14 @@
      },
      "elements": [
       {
-       "id": "84c0125",
+       "id": "44c215a",
        "elType": "section",
        "settings": {
         "gap": "default"
        },
        "elements": [
         {
-         "id": "5b3f8ae",
+         "id": "4c95294",
          "elType": "column",
          "settings": {
           "_column_size": 55,
@@ -250,7 +250,7 @@
          },
          "elements": [
           {
-           "id": "85a2f74",
+           "id": "582b7f2",
            "elType": "widget",
            "settings": {
             "title": "Bienvenue à table",
@@ -274,7 +274,7 @@
          "isInner": true
         },
         {
-         "id": "31cdb71",
+         "id": "b198a7e",
          "elType": "column",
          "settings": {
           "_column_size": 45,
@@ -283,7 +283,7 @@
          },
          "elements": [
           {
-           "id": "1b85b4c",
+           "id": "f7b5ffe",
            "elType": "widget",
            "settings": {
             "text": "Réserver",
@@ -293,7 +293,7 @@
              "nofollow": ""
             },
             "typography_typography": "custom",
-            "typography_font_family": "Archivo",
+            "typography_font_family": "Fira Sans",
             "typography_font_weight": "600",
             "typography_text_transform": "uppercase",
             "typography_letter_spacing": {

@@ -1,0 +1,427 @@
+{
+ "version": "0.4",
+ "title": "La Maison — Notre Engagement (Frido & Féli)",
+ "type": "section",
+ "content": [
+  {
+   "id": "5d154fe",
+   "elType": "section",
+   "settings": {
+    "content_width": {
+     "unit": "px",
+     "size": 1180,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "padding": {
+     "unit": "px",
+     "top": "120",
+     "right": "20",
+     "bottom": "120",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "72",
+     "right": "18",
+     "bottom": "72",
+     "left": "18",
+     "isLinked": false
+    },
+    "background_background": "classic",
+    "background_color": "#15100b"
+   },
+   "elements": [
+    {
+     "id": "8009f8a",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": 100,
+      "_inline_size_mobile": 100
+     },
+     "elements": [
+      {
+       "id": "be9d6f4",
+       "elType": "section",
+       "settings": {
+        "gap": "wide",
+        "_margin": {
+         "unit": "px",
+         "top": "50",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "437ef90",
+         "elType": "column",
+         "settings": {
+          "_column_size": 45,
+          "_inline_size": 45,
+          "_inline_size_mobile": 100,
+          "_inline_size_tablet": 100
+         },
+         "elements": [
+          {
+           "id": "195acf9",
+           "elType": "widget",
+           "settings": {
+            "image": {
+             "url": "https://images.unsplash.com/photo-1605000797499-95a51c5269ae?auto=format&fit=crop&w=1000&q=80",
+             "id": "",
+             "alt": "Notre engagement — l'héritage",
+             "source": "url"
+            },
+            "image_size": "full"
+           },
+           "elements": [],
+           "widgetType": "image"
+          }
+         ],
+         "isInner": true
+        },
+        {
+         "id": "b3c93b6",
+         "elType": "column",
+         "settings": {
+          "_column_size": 55,
+          "_inline_size": 55,
+          "_inline_size_mobile": 100,
+          "_inline_size_tablet": 100,
+          "content_position": "center"
+         },
+         "elements": [
+          {
+           "id": "68b2298",
+           "elType": "widget",
+           "settings": {
+            "title": "L'héritage vivant de Frido à Féli",
+            "header_size": "span",
+            "title_color": "#e07a2c",
+            "typography_typography": "custom",
+            "typography_font_family": "Archivo",
+            "typography_font_weight": "600",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 12,
+             "sizes": []
+            },
+            "typography_letter_spacing": {
+             "unit": "px",
+             "size": 4,
+             "sizes": []
+            },
+            "typography_text_transform": "uppercase",
+            "_margin": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "18",
+             "left": "0",
+             "isLinked": false
+            }
+           },
+           "elements": [],
+           "widgetType": "heading"
+          },
+          {
+           "id": "5cd9e02",
+           "elType": "widget",
+           "settings": {
+            "title": "Notre Engagement, l'héritage.",
+            "header_size": "h2",
+            "title_color": "#f3e8d6",
+            "typography_typography": "custom",
+            "typography_font_family": "Fraunces",
+            "typography_font_weight": "600",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 44,
+             "sizes": []
+            },
+            "typography_font_size_tablet": {
+             "unit": "px",
+             "size": 34,
+             "sizes": []
+            },
+            "typography_font_size_mobile": {
+             "unit": "px",
+             "size": 26,
+             "sizes": []
+            },
+            "_margin": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "18",
+             "left": "0",
+             "isLinked": false
+            }
+           },
+           "elements": [],
+           "widgetType": "heading"
+          },
+          {
+           "id": "85278be",
+           "elType": "widget",
+           "settings": {
+            "editor": "<p>Il y a plus de cinquante ans, dans les grands champs d'Agou, deux passionnés travaillaient la terre avec foi et détermination.</p>",
+            "text_color": "#e7d8c0",
+            "typography_typography": "custom",
+            "typography_font_family": "Archivo",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 17,
+             "sizes": []
+            },
+            "_margin": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "18",
+             "left": "0",
+             "isLinked": false
+            }
+           },
+           "elements": [],
+           "widgetType": "text-editor"
+          },
+          {
+           "id": "dd2c222",
+           "elType": "widget",
+           "settings": {
+            "title": "Frido &amp; Felioto",
+            "header_size": "div",
+            "title_color": "#c89b53",
+            "typography_typography": "custom",
+            "typography_font_family": "Fraunces",
+            "typography_font_weight": "600",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 26,
+             "sizes": []
+            },
+            "typography_font_style": "italic",
+            "_margin": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "6",
+             "left": "0",
+             "isLinked": false
+            }
+           },
+           "elements": [],
+           "widgetType": "heading"
+          },
+          {
+           "id": "45df75e",
+           "elType": "widget",
+           "settings": {
+            "editor": "<p>Deux bâtisseurs. Deux passionnés de la terre.</p>",
+            "text_color": "#b6a489",
+            "typography_typography": "custom",
+            "typography_font_family": "Archivo",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 15,
+             "sizes": []
+            },
+            "_margin": {
+             "unit": "px",
+             "top": "0",
+             "right": "0",
+             "bottom": "10",
+             "left": "0",
+             "isLinked": false
+            }
+           },
+           "elements": [],
+           "widgetType": "text-editor"
+          },
+          {
+           "id": "f506d13",
+           "elType": "widget",
+           "settings": {
+            "title": "Ils ne cultivaient pas seulement des récoltes — ils cultivaient une vision.",
+            "header_size": "div",
+            "title_color": "#f3e8d6",
+            "typography_typography": "custom",
+            "typography_font_family": "Fraunces",
+            "typography_font_weight": "400",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 18,
+             "sizes": []
+            },
+            "typography_font_size_mobile": {
+             "unit": "px",
+             "size": 16,
+             "sizes": []
+            },
+            "typography_font_style": "italic"
+           },
+           "elements": [],
+           "widgetType": "heading"
+          }
+         ],
+         "isInner": true
+        }
+       ],
+       "isInner": true
+      },
+      {
+       "id": "a80731a",
+       "elType": "section",
+       "settings": {
+        "gap": "wide",
+        "_margin": {
+         "unit": "px",
+         "top": "50",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [
+        {
+         "id": "bacb1af",
+         "elType": "column",
+         "settings": {
+          "_column_size": 25,
+          "_inline_size": 25,
+          "_inline_size_mobile": 100,
+          "_inline_size_tablet": 50
+         },
+         "elements": [
+          {
+           "id": "e3bf875",
+           "elType": "widget",
+           "settings": {
+            "editor": "<p>Une ferme bio. Authentique. Respectueuse des traditions d'antan. Engagés pour la qualité, avant même que le mot ne devienne tendance. Leur richesse n'était pas dans les machines : elle était dans la patience.</p>",
+            "text_color": "#e7d8c0",
+            "typography_typography": "custom",
+            "typography_font_family": "Archivo",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 14,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "widgetType": "text-editor"
+          }
+         ],
+         "isInner": true
+        },
+        {
+         "id": "69165c8",
+         "elType": "column",
+         "settings": {
+          "_column_size": 25,
+          "_inline_size": 25,
+          "_inline_size_mobile": 100,
+          "_inline_size_tablet": 50
+         },
+         "elements": [
+          {
+           "id": "63e64cf",
+           "elType": "widget",
+           "settings": {
+            "editor": "<p>Dans le respect de la nature. Dans la conviction que ce qui vient de la terre doit nourrir avec vérité. Combien ont grandi avec le goût du foufou d'Agou ? Combien se souviennent de ces grillades aux épices africaines, simples, puissantes, sincères ? Aujourd'hui, Dorikko Saveurs prolonge cette histoire.</p>",
+            "text_color": "#e7d8c0",
+            "typography_typography": "custom",
+            "typography_font_family": "Archivo",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 14,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "widgetType": "text-editor"
+          }
+         ],
+         "isInner": true
+        },
+        {
+         "id": "f123a65",
+         "elType": "column",
+         "settings": {
+          "_column_size": 25,
+          "_inline_size": 25,
+          "_inline_size_mobile": 100,
+          "_inline_size_tablet": 50
+         },
+         "elements": [
+          {
+           "id": "0f91f55",
+           "elType": "widget",
+           "settings": {
+            "editor": "<p>Avec une organisation plus structurée. Une exigence maîtrisée. Une approche professionnelle. Mais avec la même âme. Nos viandes viennent de notre ferme Dorikko. Nos produits sont élevés et cultivés avec rigueur. Notre cuisine respecte la terre et honore le travail des bâtisseurs.</p>",
+            "text_color": "#e7d8c0",
+            "typography_typography": "custom",
+            "typography_font_family": "Archivo",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 14,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "widgetType": "text-editor"
+          }
+         ],
+         "isInner": true
+        },
+        {
+         "id": "ea9495a",
+         "elType": "column",
+         "settings": {
+          "_column_size": 25,
+          "_inline_size": 25,
+          "_inline_size_mobile": 100,
+          "_inline_size_tablet": 50
+         },
+         "elements": [
+          {
+           "id": "c190f3d",
+           "elType": "widget",
+           "settings": {
+            "editor": "<p>Ici, chaque plat raconte une histoire. Celle d'un héritage. Celle d'un engagement. Celle d'une promesse transmise de génération en génération. Chez Dorikko Saveurs, tout était bio. Et tout reste bio, comme l'ont rêvé les bâtisseurs. C'est notre engagement.</p>",
+            "text_color": "#e7d8c0",
+            "typography_typography": "custom",
+            "typography_font_family": "Archivo",
+            "typography_font_size": {
+             "unit": "px",
+             "size": 14,
+             "sizes": []
+            }
+           },
+           "elements": [],
+           "widgetType": "text-editor"
+          }
+         ],
+         "isInner": true
+        }
+       ],
+       "isInner": true
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {
+  "background_background": "classic",
+  "background_color": "#15100b"
+ }
+}

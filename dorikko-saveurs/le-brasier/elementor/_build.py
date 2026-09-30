@@ -21,7 +21,7 @@ INK="#15100b"; INK2="#1c150e"; INK3="#241a11"; PANEL="#211810"
 CREAM="#f3e8d6"; CREAM2="#e7d8c0"; MUTED="#b6a489"
 EMBER="#c2511f"; EMBER2="#e07a2c"; GOLD="#c89b53"
 DARK="#0d0905"
-HF="Fraunces"; BF="Archivo"
+HF="Belgiano Serif"; BF="Fira Sans"; AF="Fraunces"  # titres / corps / accent italique
 
 def T(px,unit="px"): return {"unit":unit,"size":px,"sizes":[]}
 def pad(t,r,b,l): return {"unit":"px","top":str(t),"right":str(r),"bottom":str(b),"left":str(l),"isLinked":False}
@@ -35,8 +35,9 @@ def widget(wt,s): return {"id":uid(),"elType":"widget","settings":s,"elements":[
 def section(s,cols,inner=False): return {"id":uid(),"elType":"section","settings":s,"elements":cols,"isInner":inner}
 
 # ---------- builders de base ----------
-def heading(title,size,color,tag="h2",weight="600",font=HF,align=None,letter=None,
+def heading(title,size,color,tag="h2",weight="600",font=None,align=None,letter=None,
             transform=None,italic=False,mb=None,size_t=None,size_m=None,align_m=None):
+    if font is None: font = AF if italic else HF  # accents italiques -> Fraunces, titres -> Belgiano
     s={"title":title,"header_size":tag,"title_color":color,
        "typography_typography":"custom","typography_font_family":font,"typography_font_weight":weight}
     setresp(s,"typography_font_size",size,size_t,size_m)
@@ -79,11 +80,14 @@ def image(url,alt="",ratio=None):
     return widget("image",s)
 
 def iconbox(icon,lib,title,desc,num=None):
+    # icône ronde (framed) à gauche + texte à droite — structure de l'exemple
     s={"selected_icon":{"value":icon,"library":lib},"title_text":title,"description_text":desc,
-       "position":"top","title_color":CREAM,"description_color":MUTED,"primary_color":EMBER2,
-       "icon_space":{"unit":"px","size":22,"sizes":[]},
+       "position":"left","view":"framed","shape":"circle","primary_color":EMBER2,
+       "icon_size":{"unit":"px","size":26,"sizes":[]},"icon_padding":{"unit":"px","size":20,"sizes":[]},
+       "title_color":CREAM,"description_color":MUTED,
+       "icon_space":{"unit":"px","size":24,"sizes":[]},
        "title_typography_typography":"custom","title_typography_font_family":HF,
-       "title_typography_font_size":T(23),"title_typography_font_weight":"600",
+       "title_typography_font_size":T(24),"title_typography_font_weight":"600",
        "description_typography_typography":"custom","description_typography_font_family":BF,
        "description_typography_font_size":T(14)}
     return widget("icon-box",s)
@@ -124,19 +128,27 @@ def html_widget(html):
     return widget("html",{"html":html})
 
 # ---- Pro : formulaire ----
-def form(title,fields,button_text,email_to="info@dorikko-saveurs.com",subject="Site Dorikko — nouveau message"):
+AUTOREP=("Votre réservation chez Dorikko-Saveurs",
+         "Bonjour,\n\nMerci pour votre demande de réservation. Nous vous rappelons très vite pour confirmer votre table.\n\nÀ très bientôt,\nDorikko-Saveurs — Kpalimé\n+228 91 69 84 29")
+def form(title,fields,button_text,email_to="info@dorikko-saveurs.com",subject="Site Dorikko — nouveau message",
+         recaptcha=True,autoresponse=True,redirect="/merci/"):
     ff=[]
     for f in fields:
         item={"_id":uid()[:7],"field_type":f["type"],"field_label":f["label"],
               "placeholder":f.get("ph",""),"width":f.get("w","100")}
+        if f.get("id"): item["custom_id"]=f["id"]
         if f.get("req"): item["required"]="true"
         if f.get("options"): item["field_options"]="\n".join(f["options"])
         if f["type"]=="textarea": item["rows"]=4
         ff.append(item)
+    if recaptcha:
+        ff.append({"_id":uid()[:7],"field_type":"recaptcha_v3","field_label":"reCAPTCHA",
+                   "custom_id":"recaptcha_v3","width":"100","recaptcha_v3_badge":"inline","recaptcha_v3_threshold":"0.5"})
+    actions=["email"]
     s={"form_name":title,"form_fields":ff,"button_text":button_text,
-       "submit_actions":["email"],"email_to":email_to,"email_subject":subject,
+       "email_to":email_to,"email_subject":subject,
        "email_content":"[all-fields]","email_from_name":"Site Dorikko-Saveurs",
-       "email_reply_to":"","button_width":"100","button_size":"md","button_align":"stretch",
+       "email_reply_to":'[field id="email"]',"button_width":"100","button_size":"md","button_align":"stretch",
        # styles
        "label_color":MUTED,"label_typography_typography":"custom","label_typography_font_family":BF,
        "label_typography_font_size":T(11),"label_typography_letter_spacing":T(1.5),
@@ -149,6 +161,17 @@ def form(title,fields,button_text,email_to="info@dorikko-saveurs.com",subject="S
        "button_typography_text_transform":"uppercase","button_typography_letter_spacing":T(2),
        "button_typography_font_size":T(13),"button_border_radius":{"unit":"px","top":"0","right":"0","bottom":"0","left":"0","isLinked":True},
        "button_text_padding":pad(17,30,17,30),"mark_required_color":EMBER2,"row_gap":{"unit":"px","size":16,"sizes":[]}}
+    if autoresponse:
+        actions.append("email2")
+        s["email_to_2"]='[field id="email"]'
+        s["email_subject_2"]=AUTOREP[0]
+        s["email_content_2"]=AUTOREP[1]
+        s["email_from_name_2"]="Dorikko-Saveurs"
+        s["email_reply_to_2"]=email_to
+    if redirect:
+        actions.append("redirect")
+        s["redirect_to"]=redirect
+    s["submit_actions"]=actions
     return widget("form",s)
 
 # ---- Pro : price list ----
@@ -162,7 +185,7 @@ def price_list(items):
        "title_color":CREAM,"price_color":GOLD,"description_color":MUTED,
        "heading_typography_typography":"custom","heading_typography_font_family":HF,
        "heading_typography_font_size":T(19),"heading_typography_font_weight":"600",
-       "price_typography_typography":"custom","price_typography_font_family":HF,
+       "price_typography_typography":"custom","price_typography_font_family":AF,
        "price_typography_font_style":"italic","price_typography_font_size":T(18),
        "description_typography_typography":"custom","description_typography_font_family":BF,
        "description_typography_font_size":T(13),"item_padding":pad(10,0,10,0)}
@@ -247,8 +270,8 @@ def features_cols():
           ("fas fa-leaf","Produits bio","Légumes et herbes de cultures biologiques voisines, à maturité."),
           ("fas fa-utensils","Cuisine locale","Une carte ancrée dans le terroir et les épices de la région."),
           ("fas fa-handshake","Hospitalité","Un accueil chaleureux, parce qu'un bon repas se partage.")]
-    return [col(25,[iconbox(i,"fa-solid",t,d)],size_t=50,size_m=100,anim="fadeInUp",delay=k*120,
-                padding=(40,30,40,30)) for k,(i,t,d) in enumerate(data)]
+    return [col(50,[iconbox(i,"fa-solid",t,d)],size_t=50,size_m=100,anim="fadeInUp",delay=(k%2)*120,
+                padding=(28,30,28,10)) for k,(i,t,d) in enumerate(data)]
 
 def labels_cols():
     data=[("fas fa-certificate","IBB","Élevage certifié"),("fas fa-leaf","BIO","Agriculture biologique"),
@@ -313,6 +336,23 @@ def page(title,content):
     return {"version":"0.4","title":title,"type":"page","content":content,
             "page_settings":{"background_background":"classic","background_color":INK}}
 
+# ================= PARTENAIRES =================
+def partners_section():
+    plist=[("Ferme Dorikko","Notre élevage"),("Coop. d'Agou","Maraîchage bio"),
+           ("Awooyo","Bière locale"),("Flag","Bière locale"),("Togo Grain","Céréales"),
+           ("Marché de Kpalimé","Produits frais"),("Label BIO","Agriculture bio"),("IBB","Élevage certifié")]
+    def pcard(n,t):
+        return icol(25,[heading(n,22,CREAM,tag="div",align="center",mb=6),
+            heading(t,10,MUTED,tag="div",weight="600",font=BF,letter=2,transform="uppercase",align="center")],
+            bgc=INK2,padding=(34,18,34,18),size_m=50,
+            extra={"border_border":"solid","border_width":pad(1,1,1,1),"border_color":"rgba(243,232,214,.08)",
+                   "border_radius":{"unit":"px","top":"16","right":"16","bottom":"16","left":"16","isLinked":True}})
+    cards=inner([pcard(n,t) for n,t in plist],extra={"gap":"default","_margin":pad(50,0,0,0)})
+    body=col(100,[EYE("Ils nous accompagnent",EMBER2,align="center"),
+        heading("Nos partenaires",(54,40,30),CREAM,align="center",mb=22),
+        button("Devenir partenaire","contact.html",align="center"),cards],anim="fadeInUp")
+    return sec([body],bg=INK,padding=(120,20,120,20),padding_m=(72,18,72,18))
+
 # ================= ACCUEIL =================
 def accueil():
     c=[]
@@ -371,14 +411,15 @@ def accueil():
                   col(40,[textw("Une sélection courte et changeante, dictée par la ferme et le marché du jour.",MUTED,16)],size_m=100,anim="fadeInUp",delay=120)],
                  bg=INK2,padding=(120,20,40,20),padding_m=(72,18,30,18)))
     left=col(60,[
-        heading("Les viandes à la braise",15,EMBER2,tag="div",italic=True,mb=8),
-        price_list([("Filet de bœuf maturé","11 500","300 g, beurre d'épices, frites de patate douce"),
-                    ("Côte d'agneau du pays","10 200","Marinade citron-thym, légumes grillés"),
-                    ("Magret fumé maison","9 400","Laque de miel local, igname rôtie"),
-                    ("Travers caramélisés","8 600","12 h de cuisson lente, sauce braise")]),
-        heading("Pour accompagner",15,EMBER2,tag="div",italic=True,mb=8),
-        price_list([("Gratin d'igname","2 800",""),("Salade du potager bio","2 400",""),
-                    ("Légumes au feu de bois","3 100",""),("Frites maison &amp; sauces","2 200","")]),
+        heading("Apéritifs",15,EMBER2,tag="div",italic=True,mb=8),
+        price_list([("Choukoya de chèvre","3 000","Chèvre grillée aux épices africaines, servie chaude."),
+                    ("Brochettes de viande grillée","2 500","Bœuf, mouton ou poulet, marinés aux épices locales."),
+                    ("Assortiment d'allocos","1 800","Banane plantain frite, sauce piment et viande séchée.")]),
+        heading("Plats principaux",15,EMBER2,tag="div",italic=True,mb=8),
+        price_list([("Fufu + Sauce graine","3 500","Avec morceaux de bœuf ou de mouton."),
+                    ("Riz gras togolais à la viande","3 000","Riz parfumé, sauce tomate riche, viande assaisonnée."),
+                    ("Poulet bicyclette braisé","4 500","Braisé au feu de bois, frites de manioc ou plantain."),
+                    ("Gboma dessi","3 200","Feuilles de gboma mijotées, viande, riz ou pâte de maïs.")]),
     ],size_m=100,anim="fadeInUp")
     aside=col(40,[image("https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80","Viande à la braise"),
         textw('« Le menu change avec les saisons et les arrivages de la ferme. Demandez la suggestion du chef. »',MUTED,13,mb=0)],
@@ -397,7 +438,8 @@ def accueil():
         textw("Réservez en quelques secondes — nous vous rappelons pour confirmer.","rgba(255,255,255,.86)",16,mb=24),
         form("Réservation rapide",[
             {"type":"text","label":"Nom","ph":"Votre nom","w":"50","req":True},
-            {"type":"tel","label":"Téléphone","ph":"Téléphone","w":"50","req":True},
+            {"type":"text","label":"Téléphone","ph":"Téléphone","w":"50","req":True},
+            {"type":"email","label":"E-mail","ph":"vous@exemple.com","w":"100","id":"email"},
             {"type":"date","label":"Date","w":"50","req":True},
             {"type":"select","label":"Personnes","w":"50","options":["2 personnes","3 personnes","4 personnes","5 et plus"]},
         ],"Réserver maintenant")],bgc=EMBER,padding=(56,48,56,48),padding_m=(40,26,40,26),size_m=100,anim="fadeInUp",delay=120)
@@ -407,9 +449,8 @@ def accueil():
         heading("La meilleure côte de bœuf que j'aie mangée. On sent le travail de la ferme jusque dans l'assiette — et l'accueil est à la hauteur.",(40,32,24),CREAM,tag="div",italic=True,weight="400",align="center",mb=24),
         heading("Awa K. — Cliente fidèle",12,MUTED,tag="div",weight="600",font=BF,letter=3,transform="uppercase",align="center")],anim="fadeInUp")],
         bg=INK2,padding=(120,20,120,20),padding_m=(72,18,72,18)))
-    # LABELS
-    c.append(sec(labels_cols(),bg=INK,padding=(56,20,56,20),padding_m=(40,18,40,18),
-             extra={"border_border":"solid","border_width":pad(1,0,1,0),"border_color":"rgba(243,232,214,.08)"}))
+    # PARTENAIRES (remplace l'ancienne bande de labels)
+    c.append(partners_section())
     # GALLERY preview
     c.append(sec([col(60,[EYE("En images"),heading("L'instant Dorikko.",(56,40,32),CREAM,mb=0)],size_m=100,anim="fadeInUp"),
                   col(40,[textw('Suivez le feu, les plats et l\'ambiance sur Instagram <strong style="color:#e07a2c">@dorikko.saveurs</strong>',MUTED,16)],size_m=100,anim="fadeInUp",delay=120)],
@@ -423,6 +464,10 @@ def accueil():
     c.append(sec([col(16,[image(g)],size_t=33,size_m=50,anim="fadeInUp",delay=(k%3)*100) for k,g in enumerate(gal)],
                  bg=INK,padding=(0,20,50,20),padding_m=(0,18,40,18)))
     c.append(sec([col(100,[button("Voir la galerie","galerie.html",ghost=True,align="center")],anim="fadeInUp")],bg=INK,padding=(0,20,120,20),padding_m=(0,18,72,18)))
+    accueil.blocks=[("01-hero",c[0:1]),("02-bandeau",c[1:2]),("03-signatures",c[2:5]),
+        ("04-histoire",c[5:6]),("05-atouts",c[6:7]),("06-citation",c[7:8]),
+        ("07-menu",c[8:10]),("08-reservation",c[10:11]),("09-temoignage",c[11:12]),
+        ("10-partenaires",c[12:13]),("11-galerie",c[13:16])]
     return page("Le Brasier — Accueil (Body)",c)
 
 # ================= LA MAISON =================
@@ -492,37 +537,26 @@ def le_menu():
                 heading(sub,11,GOLD,tag="div",weight="600",font=BF,letter=2,transform="uppercase",mb=14),
                 price_list(items)]
     left=col(50,
-        catblock("Pour commencer","Entrées",[
-            ("Carpaccio de bœuf fumé","4 200","Copeaux de parmesan, huile d'herbes, roquette"),
-            ("Brochettes apéritives","3 500","Émincé mariné aux épices, sauce piment doux"),
-            ("Velouté du jardin","2 900","Légumes bio de saison, croûtons au beurre d'ail"),
-            ("Salade du potager bio","2 400","Jeunes pousses, tomates anciennes, vinaigrette maison")])
-        +catblock("Les pièces à partager","Pour 2",[
-            ("Côte de bœuf au feu de bois","18 500","Maturée 40 jours, ~1,2 kg, fleur de sel, beurre maître d'hôtel"),
-            ("Plateau du braiseur","21 000","Assortiment de pièces grillées, accompagnements au choix"),
-            ("Gigot d'agneau confit","17 200","7 h de cuisson lente, jus au thym, écrasé d'igname")])
-        +catblock("Desserts maison","Douceurs",[
-            ("Ananas rôti à la braise","3 200","Caramel d'épices, glace coco"),
-            ("Mousse au chocolat noir","2 800","Éclats de cacao, fleur de sel"),
-            ("Tarte du jour","2 600","Selon l'arrivage du marché")]),
+        catblock("Apéritifs","Pour commencer",[
+            ("Choukoya de chèvre","3 000","Morceaux de chèvre grillés et assaisonnés aux épices africaines, servis chauds."),
+            ("Brochettes de viande grillée","2 500","Bœuf, mouton ou poulet, marinés aux épices locales."),
+            ("Boulettes de viande épicées","2 000","Façon locale, avec oignons et piment."),
+            ("Assortiment d'allocos","1 800","Banane plantain frite, sauce piment et viande séchée en topping.")])
+        +catblock("Desserts","Douceurs",[
+            ("Kanélo","1 200","Beignets sucrés de plantain mûr, croustillants dehors et moelleux dedans."),
+            ("Dègué au croustillons de mil","1 500","Couscous de mil mélangé à du yaourt sucré, parfumé à la vanille."),
+            ("Tartine de pain sucré au miel de Kpalimé","1 500","Pain doux local accompagné de miel artisanal de la région.")]),
         size_m=100,anim="fadeInUp")
     right=col(50,
-        catblock("Les viandes à la braise","Plats",[
-            ("Filet de bœuf maturé","11 500","300 g, beurre d'épices, frites de patate douce"),
-            ("Entrecôte du terroir","9 800","Persillée, gratin d'igname, sauce poivre vert"),
-            ("Côte d'agneau du pays","10 200","Marinade citron-thym, légumes grillés"),
-            ("Magret fumé maison","9 400","Laque de miel local, igname rôtie"),
-            ("Travers caramélisés","8 600","12 h de cuisson lente, sauce braise"),
-            ("Brochettes de la ferme","6 500","Filet mariné, oignons confits, piment doux")])
-        +catblock("Pour accompagner","Sides",[
-            ("Gratin d'igname","2 800",""),("Légumes au feu de bois","3 100",""),
-            ("Frites maison &amp; sauces","2 200",""),("Riz parfumé au beurre","1 900",""),
-            ("Salade verte du potager","2 000","")])
-        +catblock("Boissons &amp; vins","Cave",[
-            ("Jus pressés maison","1 800","Gingembre, bissap, ananas"),
-            ("Bière locale pression","1 500",""),
-            ("Verre de vin rouge","3 000","Sélection du sommelier"),
-            ("Bouteille (à partir de)","14 000","Carte des vins en salle")]),
+        catblock("Plats principaux","Le cœur de la carte",[
+            ("Fufu + Sauce graine","3 500","Fufu accompagné d'une sauce graine et de morceaux de bœuf ou de mouton."),
+            ("Riz gras togolais à la viande","3 000","Riz parfumé cuit dans une sauce tomate riche, morceaux de viande assaisonnée."),
+            ("Poulet bicyclette braisé","4 500","Mariné aux épices, braisé au feu de bois, frites de manioc ou banane plantain."),
+            ("Gboma dessi","3 200","Feuilles de gboma mijotées, sauce tomate et épices, viande, riz ou pâte de maïs.")])
+        +catblock("Boissons","À partager",[
+            ("Boissons fraîches","800","Sodas, bières locales (Flag, Awooyo), vins."),
+            ("Jus de bissap / hibiscus","1 000","Préparé maison, sucré et rafraîchissant."),
+            ("Boissons locales","1 500","Sodabi, vin de palme, eau-de-vie parfumée au gingembre ou aux épices.")]),
         size_m=100,anim="fadeInUp",delay=120)
     c.append(sec([left,right],bg=INK,padding=(120,20,60,20),padding_m=(72,18,40,18)))
     c.append(sec([col(100,[heading("« La carte évolue avec les saisons et les arrivages de la ferme — demandez la suggestion du chef. »",
@@ -562,37 +596,47 @@ def contact():
     c.append(banner('<a href="index.html" style="color:#b6a489">Accueil</a> &nbsp;/&nbsp; <span style="color:#e07a2c">Réserver</span>',
                     "Une place au coin du feu.","Réservez votre table en quelques secondes — nous vous rappelons pour confirmer.",
                     "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=2000&q=80",min_h=48))
-    # form column
-    formcol=col(52,[EYE("Réservation"),heading("Réserver une table",(42,34,28),CREAM,mb=26),
+    # 1) Horaires + Réservation
+    hours_html="".join(
+        '<p style="display:flex;justify-content:space-between;border-bottom:1px solid rgba(243,232,214,.08);padding:14px 0;margin:0">'
+        '<span style="color:#f3e8d6;font-weight:600">{d}</span><span style="font-family:Fraunces;font-style:italic;color:#c89b53">{t}</span></p>'.format(d=d,t=t)
+        for d,t in [("Lundi – Jeudi","11h00 – 22h00"),("Vendredi","11h00 – 00h00"),("Samedi","11h00 – 00h00"),("Dimanche","11h00 – 00h00")])
+    hours=col(50,[EYE("Nos horaires"),heading("Heures d'ouverture",(40,32,26),CREAM,mb=14),
+        textw("Ouvert tous les jours, midi et soir. Réservation conseillée le week-end.",MUTED,16,mb=20),
+        textw(hours_html,CREAM2,15)],bgc=PANEL,padding=(56,48,56,48),padding_m=(40,26,40,26),size_m=100)
+    resa=col(50,[heading("Réservation",12,"#ffffff",tag="div",weight="600",font=BF,letter=4,transform="uppercase",mb=18),
+        heading("Réserver une table",(44,34,28),"#ffffff",mb=16),
+        textw("Réservez en quelques secondes — nous vous rappelons pour confirmer.","rgba(255,255,255,.86)",16,mb=24),
         form("Réservation",[
             {"type":"text","label":"Nom complet","ph":"Votre nom","w":"50","req":True},
-            {"type":"tel","label":"Téléphone","ph":"+228 ...","w":"50","req":True},
-            {"type":"email","label":"E-mail","ph":"vous@exemple.com","w":"100"},
+            {"type":"text","label":"Téléphone","ph":"+228 ...","w":"50","req":True},
+            {"type":"email","label":"E-mail","ph":"vous@exemple.com","w":"100","id":"email"},
             {"type":"select","label":"Nombre de personnes","w":"50","options":["1 personne","2 personnes","3 personnes","4 personnes","5 personnes","6 et plus"]},
             {"type":"date","label":"Date","w":"25","req":True},
             {"type":"time","label":"Heure","w":"25","req":True},
             {"type":"textarea","label":"Message (allergies, occasion…)","ph":"Une demande particulière ?","w":"100"},
-        ],"Envoyer ma demande")],size_m=100,anim="fadeInUp")
-    # info column
+        ],"Réserver maintenant")],bgc=EMBER,padding=(56,48,56,48),padding_m=(40,26,40,26),size_m=100)
+    c.append(sec([hours,resa],bg=INK,padding=(120,20,60,20),padding_m=(0,0,30,0)))
+    # 2) Infos & accès + Google Map
     def info(icon,h,p,small):
-        html=(f'<div style="display:flex;gap:18px;padding:24px 0;border-bottom:1px solid rgba(243,232,214,.08)">'
-              f'<span style="color:#e07a2c;font-size:24px;flex:none">{icon}</span><div>'
+        html=(f'<div style="display:flex;gap:18px;padding:22px 0;border-bottom:1px solid rgba(243,232,214,.08)">'
+              f'<span style="color:#e07a2c;font-size:22px;flex:none">{icon}</span><div>'
               f'<div style="font-family:Archivo;font-weight:600;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:#c89b53;margin-bottom:6px">{h}</div>'
               f'<div style="font-family:Fraunces;color:#e7d8c0;font-size:17px">{p}<br><span style="font-family:Archivo;font-size:13px;color:#b6a489">{small}</span></div></div></div>')
         return textw(html,CREAM2,16)
-    osm=('<iframe title="Carte Dorikko-Saveurs, Kpalimé" loading="lazy" '
-         'src="https://www.openstreetmap.org/export/embed.html?bbox=0.6133%2C6.8800%2C0.6533%2C6.9200&amp;layer=mapnik&amp;marker=6.9000%2C0.6333" '
-         'style="width:100%;height:420px;border:1px solid rgba(243,232,214,.14);filter:invert(.92) hue-rotate(180deg) saturate(.65) brightness(.9)"></iframe>')
-    infocol=col(48,[EYE("Nous trouver"),heading("Infos &amp; accès",(42,34,28),CREAM,mb=20),
+    gmap=('<iframe title="Carte Dorikko-Saveurs, Kpalimé" loading="lazy" allowfullscreen '
+          'src="https://maps.google.com/maps?q=Kpalim%C3%A9%2C%20Togo&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=&amp;output=embed" '
+          'style="width:100%;height:470px;border:0;display:block"></iframe>')
+    infocol=col(45,[EYE("Nous trouver"),heading("Infos &amp; accès",(42,34,28),CREAM,mb=18),
         info("📍","Adresse","Zomayi, non loin de Togo Grain","Kpalimé, Togo"),
         info("📞","Téléphone","+228 91 69 84 29","Réservations &amp; renseignements"),
         info("✉️","E-mail","info@dorikko-saveurs.com","Réponse sous 24 h"),
-        info("🕐","Horaires","Lun – Jeu : 11h – 22h","Ven – Dim : 11h – minuit · 7j/7"),
-        html_widget(osm)],size_m=100,anim="fadeInUp",delay=120)
-    c.append(sec([formcol,infocol],bg=INK,padding=(120,20,120,20),padding_m=(72,18,72,18)))
+        info("🕐","Horaires","Lun – Jeu : 11h – 22h","Ven – Dim : 11h – minuit · 7j/7")],valign="center",size_m=100)
+    mapcol=col(55,[html_widget(gmap)],valign="center",size_m=100)
+    c.append(sec([infocol,mapcol],bg=INK,padding=(60,20,120,20),padding_m=(30,18,72,18)))
     c.append(sec([col(100,[EYE("Toujours ouvert pour vous",GOLD,align="center"),
         heading("Midi et soir, sept jours sur sept. Le feu vous attend.",(48,36,26),CREAM,tag="div",italic=True,weight="400",align="center",mb=20),
-        heading("— Dorikko-Saveurs, Kpalimé",12,GOLD,tag="div",weight="600",font=BF,letter=3,transform="uppercase",align="center")],anim="fadeInUp")],
+        heading("— Dorikko-Saveurs, Kpalimé",12,GOLD,tag="div",weight="600",font=BF,letter=3,transform="uppercase",align="center")])],
         bg_image="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=2000&q=80",
         overlay="rgba(14,9,5,0.72)",padding=(120,20,120,20),padding_m=(80,18,80,18)))
     return page("Le Brasier — Contact (Body)",c)
@@ -617,4 +661,18 @@ for fn,tpl in outputs.items():
         json.dump(tpl,f,ensure_ascii=False,indent=1)
     acc=[0,set()]; count(tpl["content"],acc)
     print(f"{fn:22s} type={tpl['type']:8s} elems={acc[0]:4d} widgets={sorted(acc[1])}")
+
+# --- Accueil : un fichier JSON par section, dans un dossier dédié ---
+import os
+SECDIR="accueil-sections"
+os.makedirs(SECDIR,exist_ok=True)
+accueil()  # recalcule accueil.blocks avec des IDs neufs (pas de collision avec accueil-body.json)
+print(f"--- {SECDIR}/ (section par section) ---")
+for slug,secs in accueil.blocks:
+    tpl={"version":"0.4","title":f"Accueil — {slug}","type":"section","content":secs,
+         "page_settings":{"background_background":"classic","background_color":INK}}
+    with open(os.path.join(SECDIR,slug+".json"),"w",encoding="utf-8") as f:
+        json.dump(tpl,f,ensure_ascii=False,indent=1)
+    acc=[0,set()]; count(secs,acc)
+    print(f"  {slug+'.json':26s} elems={acc[0]:3d} widgets={sorted(acc[1])}")
 print("OK")

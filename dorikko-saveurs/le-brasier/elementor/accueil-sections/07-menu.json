@@ -1,0 +1,505 @@
+{
+ "version": "0.4",
+ "title": "Accueil — 07-menu",
+ "type": "section",
+ "content": [
+  {
+   "id": "d042b03",
+   "elType": "section",
+   "settings": {
+    "content_width": {
+     "unit": "px",
+     "size": 1180,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "background_background": "classic",
+    "background_color": "#1c150e",
+    "padding": {
+     "unit": "px",
+     "top": "120",
+     "right": "20",
+     "bottom": "40",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "72",
+     "right": "18",
+     "bottom": "30",
+     "left": "18",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "153c9c1",
+     "elType": "column",
+     "settings": {
+      "_column_size": 60,
+      "_inline_size": 60,
+      "_inline_size_mobile": 100,
+      "_animation": "fadeInUp"
+     },
+     "elements": [
+      {
+       "id": "8392ca1",
+       "elType": "widget",
+       "settings": {
+        "title": "La carte",
+        "header_size": "span",
+        "title_color": "#e07a2c",
+        "typography_typography": "custom",
+        "typography_font_family": "Fira Sans",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 4,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "18",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "6e03c44",
+       "elType": "widget",
+       "settings": {
+        "title": "Le menu du feu.",
+        "header_size": "h2",
+        "title_color": "#f3e8d6",
+        "typography_typography": "custom",
+        "typography_font_family": "Belgiano Serif",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": [
+          56,
+          40,
+          32
+         ],
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "0e5a8ee",
+     "elType": "column",
+     "settings": {
+      "_column_size": 40,
+      "_inline_size": 40,
+      "_inline_size_mobile": 100,
+      "_animation": "fadeInUp",
+      "_animation_delay": 120
+     },
+     "elements": [
+      {
+       "id": "eba27d6",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>Une sélection courte et changeante, dictée par la ferme et le marché du jour.</p>",
+        "text_color": "#b6a489",
+        "typography_typography": "custom",
+        "typography_font_family": "Fira Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "166173a",
+   "elType": "section",
+   "settings": {
+    "content_width": {
+     "unit": "px",
+     "size": 1180,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "background_background": "classic",
+    "background_color": "#1c150e",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "20",
+     "bottom": "120",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "0",
+     "right": "18",
+     "bottom": "72",
+     "left": "18",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "d2f64c5",
+     "elType": "column",
+     "settings": {
+      "_column_size": 60,
+      "_inline_size": 60,
+      "_inline_size_mobile": 100,
+      "_animation": "fadeInUp"
+     },
+     "elements": [
+      {
+       "id": "0399091",
+       "elType": "widget",
+       "settings": {
+        "title": "Apéritifs",
+        "header_size": "div",
+        "title_color": "#e07a2c",
+        "typography_typography": "custom",
+        "typography_font_family": "Fraunces",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 15,
+         "sizes": []
+        },
+        "typography_font_style": "italic",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "8",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "b586d9e",
+       "elType": "widget",
+       "settings": {
+        "price_list": [
+         {
+          "_id": "edca2d4",
+          "title": "Choukoya de chèvre",
+          "price": "3 000",
+          "description_text": "Chèvre grillée aux épices africaines, servie chaude.",
+          "item_image": {
+           "url": "",
+           "id": ""
+          },
+          "link": {
+           "url": "",
+           "is_external": "",
+           "nofollow": ""
+          }
+         },
+         {
+          "_id": "3f5baff",
+          "title": "Brochettes de viande grillée",
+          "price": "2 500",
+          "description_text": "Bœuf, mouton ou poulet, marinés aux épices locales.",
+          "item_image": {
+           "url": "",
+           "id": ""
+          },
+          "link": {
+           "url": "",
+           "is_external": "",
+           "nofollow": ""
+          }
+         },
+         {
+          "_id": "eaf8043",
+          "title": "Assortiment d'allocos",
+          "price": "1 800",
+          "description_text": "Banane plantain frite, sauce piment et viande séchée.",
+          "item_image": {
+           "url": "",
+           "id": ""
+          },
+          "link": {
+           "url": "",
+           "is_external": "",
+           "nofollow": ""
+          }
+         }
+        ],
+        "separator_style": "dotted",
+        "separator_color": "rgba(243,232,214,.25)",
+        "title_color": "#f3e8d6",
+        "price_color": "#c89b53",
+        "description_color": "#b6a489",
+        "heading_typography_typography": "custom",
+        "heading_typography_font_family": "Belgiano Serif",
+        "heading_typography_font_size": {
+         "unit": "px",
+         "size": 19,
+         "sizes": []
+        },
+        "heading_typography_font_weight": "600",
+        "price_typography_typography": "custom",
+        "price_typography_font_family": "Fraunces",
+        "price_typography_font_style": "italic",
+        "price_typography_font_size": {
+         "unit": "px",
+         "size": 18,
+         "sizes": []
+        },
+        "description_typography_typography": "custom",
+        "description_typography_font_family": "Fira Sans",
+        "description_typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "item_padding": {
+         "unit": "px",
+         "top": "10",
+         "right": "0",
+         "bottom": "10",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "price-list"
+      },
+      {
+       "id": "b8cfddc",
+       "elType": "widget",
+       "settings": {
+        "title": "Plats principaux",
+        "header_size": "div",
+        "title_color": "#e07a2c",
+        "typography_typography": "custom",
+        "typography_font_family": "Fraunces",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 15,
+         "sizes": []
+        },
+        "typography_font_style": "italic",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "8",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "762a519",
+       "elType": "widget",
+       "settings": {
+        "price_list": [
+         {
+          "_id": "1eed4a0",
+          "title": "Fufu + Sauce graine",
+          "price": "3 500",
+          "description_text": "Avec morceaux de bœuf ou de mouton.",
+          "item_image": {
+           "url": "",
+           "id": ""
+          },
+          "link": {
+           "url": "",
+           "is_external": "",
+           "nofollow": ""
+          }
+         },
+         {
+          "_id": "d7e8c1e",
+          "title": "Riz gras togolais à la viande",
+          "price": "3 000",
+          "description_text": "Riz parfumé, sauce tomate riche, viande assaisonnée.",
+          "item_image": {
+           "url": "",
+           "id": ""
+          },
+          "link": {
+           "url": "",
+           "is_external": "",
+           "nofollow": ""
+          }
+         },
+         {
+          "_id": "7c7c244",
+          "title": "Poulet bicyclette braisé",
+          "price": "4 500",
+          "description_text": "Braisé au feu de bois, frites de manioc ou plantain.",
+          "item_image": {
+           "url": "",
+           "id": ""
+          },
+          "link": {
+           "url": "",
+           "is_external": "",
+           "nofollow": ""
+          }
+         },
+         {
+          "_id": "56baf5f",
+          "title": "Gboma dessi",
+          "price": "3 200",
+          "description_text": "Feuilles de gboma mijotées, viande, riz ou pâte de maïs.",
+          "item_image": {
+           "url": "",
+           "id": ""
+          },
+          "link": {
+           "url": "",
+           "is_external": "",
+           "nofollow": ""
+          }
+         }
+        ],
+        "separator_style": "dotted",
+        "separator_color": "rgba(243,232,214,.25)",
+        "title_color": "#f3e8d6",
+        "price_color": "#c89b53",
+        "description_color": "#b6a489",
+        "heading_typography_typography": "custom",
+        "heading_typography_font_family": "Belgiano Serif",
+        "heading_typography_font_size": {
+         "unit": "px",
+         "size": 19,
+         "sizes": []
+        },
+        "heading_typography_font_weight": "600",
+        "price_typography_typography": "custom",
+        "price_typography_font_family": "Fraunces",
+        "price_typography_font_style": "italic",
+        "price_typography_font_size": {
+         "unit": "px",
+         "size": 18,
+         "sizes": []
+        },
+        "description_typography_typography": "custom",
+        "description_typography_font_family": "Fira Sans",
+        "description_typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "item_padding": {
+         "unit": "px",
+         "top": "10",
+         "right": "0",
+         "bottom": "10",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "price-list"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "f511010",
+     "elType": "column",
+     "settings": {
+      "_column_size": 40,
+      "_inline_size": 40,
+      "_inline_size_mobile": 100,
+      "_animation": "fadeInUp",
+      "_animation_delay": 120
+     },
+     "elements": [
+      {
+       "id": "308ff7d",
+       "elType": "widget",
+       "settings": {
+        "image": {
+         "url": "https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=800&q=80",
+         "id": "",
+         "alt": "Viande à la braise",
+         "source": "url"
+        },
+        "image_size": "full"
+       },
+       "elements": [],
+       "widgetType": "image"
+      },
+      {
+       "id": "fa7c584",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>« Le menu change avec les saisons et les arrivages de la ferme. Demandez la suggestion du chef. »</p>",
+        "text_color": "#b6a489",
+        "typography_typography": "custom",
+        "typography_font_family": "Fira Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {
+  "background_background": "classic",
+  "background_color": "#15100b"
+ }
+}

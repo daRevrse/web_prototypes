@@ -1,0 +1,21 @@
+POLICE BELGIANO SERIF — à déposer ici
+=====================================
+
+Belgiano Serif n'est PAS sur Google Fonts : il faut fournir le fichier.
+
+1) Récupère la police (format web de préférence) et dépose ICI :
+   assets/fonts/belgiano-serif.woff2   (idéal)
+   assets/fonts/belgiano-serif.woff    (repli)
+   assets/fonts/belgiano-serif.ttf     (repli)
+
+   Le @font-face dans brasier.css les charge déjà sous le nom
+   « Belgiano Serif ». Dès que le fichier est là, les titres l'utilisent.
+   Tant qu'il manque, les titres s'affichent en Fraunces (repli) — rien n'est cassé.
+
+   ⚠️ Convertir un .ttf/.otf en .woff2 : https://transfonter.org (gratuit).
+
+2) POUR WORDPRESS / ELEMENTOR (Pro) :
+   Elementor > Réglages du site > Polices personnalisées > Ajouter.
+   - Nom de la famille : « Belgiano Serif » (exactement)
+   - Téléverse le .woff2/.woff (poids 400, normal)
+   Les widgets qui demandent « Belgiano Serif » l'utiliseront alors.
