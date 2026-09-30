@@ -1,0 +1,320 @@
+{
+ "v0001": [
+  {
+   "file": "01.jpg",
+   "w": 1040,
+   "h": 780,
+   "orient": "l",
+   "src": "IMG-20240912-WA0007.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "w": 1040,
+   "h": 780,
+   "orient": "l",
+   "src": "IMG-20240912-WA0008.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "w": 1600,
+   "h": 1200,
+   "orient": "l",
+   "src": "IMG-20240912-WA0009.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "w": 1000,
+   "h": 750,
+   "orient": "l",
+   "src": "IMG-20240912-WA0011.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "w": 1000,
+   "h": 750,
+   "orient": "l",
+   "src": "IMG-20240912-WA0012.jpg"
+  },
+  {
+   "file": "06.jpg",
+   "w": 1000,
+   "h": 750,
+   "orient": "l",
+   "src": "IMG-20240912-WA0014.jpg"
+  },
+  {
+   "file": "07.jpg",
+   "w": 1040,
+   "h": 780,
+   "orient": "l",
+   "src": "WhatsApp-Image-2024-12-16-at-15.54.34.jpeg"
+  },
+  {
+   "file": "08.jpg",
+   "w": 1040,
+   "h": 780,
+   "orient": "l",
+   "src": "WhatsApp-Image-2024-12-16-at-15.54.35.jpeg"
+  },
+  {
+   "file": "09.jpg",
+   "w": 1040,
+   "h": 780,
+   "orient": "l",
+   "src": "WhatsApp-Image-2024-12-16-at-08.32.15.jpeg"
+  },
+  {
+   "file": "10.jpg",
+   "w": 1040,
+   "h": 780,
+   "orient": "l",
+   "src": "WhatsApp-Image-2024-12-16-at-08.31.58.jpeg"
+  },
+  {
+   "file": "11.jpg",
+   "w": 1040,
+   "h": 780,
+   "orient": "l",
+   "src": "WhatsApp-Image-2024-12-16-at-15.54.38-1.jpeg"
+  },
+  {
+   "file": "12.jpg",
+   "w": 1040,
+   "h": 780,
+   "orient": "l",
+   "src": "WhatsApp-Image-2024-12-16-at-08.32.01.jpeg"
+  },
+  {
+   "file": "13.jpg",
+   "w": 1040,
+   "h": 780,
+   "orient": "l",
+   "src": "WhatsApp-Image-2024-12-16-at-08.32.01-1.jpeg"
+  },
+  {
+   "file": "14.jpg",
+   "w": 1040,
+   "h": 780,
+   "orient": "l",
+   "src": "WhatsApp-Image-2024-12-16-at-08.32.19.jpeg"
+  },
+  {
+   "file": "15.jpg",
+   "w": 1040,
+   "h": 780,
+   "orient": "l",
+   "src": "WhatsApp-Image-2024-12-16-at-08.32.04-1.jpeg"
+  },
+  {
+   "file": "16.jpg",
+   "w": 1040,
+   "h": 780,
+   "orient": "l",
+   "src": "WhatsApp-Image-2024-12-16-at-15.54.39.jpeg"
+  }
+ ],
+ "v0003": [
+  {
+   "file": "01.jpg",
+   "w": 1080,
+   "h": 607,
+   "orient": "l",
+   "src": "WhatsApp-Image-2024-12-14-at-21.33.05-2.jpeg"
+  },
+  {
+   "file": "02.jpg",
+   "w": 1080,
+   "h": 607,
+   "orient": "l",
+   "src": "WhatsApp-Image-2024-12-14-at-21.33.06-2.jpeg"
+  },
+  {
+   "file": "03.jpg",
+   "w": 1080,
+   "h": 607,
+   "orient": "l",
+   "src": "WhatsApp-Image-2024-12-14-at-21.33.06.jpeg"
+  },
+  {
+   "file": "04.jpg",
+   "w": 1600,
+   "h": 1200,
+   "orient": "l",
+   "src": "WhatsApp-Image-2024-09-10-at-16.26.06.jpeg"
+  },
+  {
+   "file": "05.jpg",
+   "w": 1080,
+   "h": 607,
+   "orient": "l",
+   "src": "WhatsApp-Image-2024-12-14-at-21.33.05-1.jpeg"
+  },
+  {
+   "file": "06.jpg",
+   "w": 1080,
+   "h": 607,
+   "orient": "l",
+   "src": "WhatsApp-Image-2024-12-14-at-21.33.01-2.jpeg"
+  },
+  {
+   "file": "07.jpg",
+   "w": 1080,
+   "h": 607,
+   "orient": "l",
+   "src": "WhatsApp-Image-2024-12-14-at-21.33.01-3.jpeg"
+  },
+  {
+   "file": "08.jpg",
+   "w": 1080,
+   "h": 607,
+   "orient": "l",
+   "src": "WhatsApp-Image-2024-12-14-at-21.33.01-1.jpeg"
+  },
+  {
+   "file": "09.jpg",
+   "w": 1080,
+   "h": 607,
+   "orient": "l",
+   "src": "WhatsApp-Image-2024-12-14-at-21.33.04-2.jpeg"
+  },
+  {
+   "file": "10.jpg",
+   "w": 1080,
+   "h": 607,
+   "orient": "l",
+   "src": "WhatsApp-Image-2024-12-14-at-21.33.04-1.jpeg"
+  },
+  {
+   "file": "11.jpg",
+   "w": 1080,
+   "h": 607,
+   "orient": "l",
+   "src": "WhatsApp-Image-2024-12-14-at-21.33.03-1.jpeg"
+  },
+  {
+   "file": "12.jpg",
+   "w": 1080,
+   "h": 607,
+   "orient": "l",
+   "src": "WhatsApp-Image-2024-12-14-at-21.33.03.jpeg"
+  },
+  {
+   "file": "13.jpg",
+   "w": 607,
+   "h": 1080,
+   "orient": "p",
+   "src": "WhatsApp-Image-2024-12-14-at-21.33.02.jpeg"
+  },
+  {
+   "file": "14.jpg",
+   "w": 1080,
+   "h": 607,
+   "orient": "l",
+   "src": "WhatsApp-Image-2024-12-14-at-21.33.04.jpeg"
+  }
+ ],
+ "v0004": [
+  {
+   "file": "01.jpg",
+   "w": 1199,
+   "h": 800,
+   "orient": "l",
+   "src": "villa.jpg"
+  }
+ ],
+ "v0005": [
+  {
+   "file": "01.jpg",
+   "w": 1080,
+   "h": 607,
+   "orient": "l",
+   "src": "IMG-20241203-WA0006.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "w": 1080,
+   "h": 607,
+   "orient": "l",
+   "src": "IMG-20241203-WA0002.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "w": 1080,
+   "h": 607,
+   "orient": "l",
+   "src": "IMG-20241203-WA0005.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "w": 1080,
+   "h": 607,
+   "orient": "l",
+   "src": "IMG-20241203-WA0003.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "w": 1080,
+   "h": 607,
+   "orient": "l",
+   "src": "IMG-20241203-WA0001.jpg"
+  },
+  {
+   "file": "06.jpg",
+   "w": 1080,
+   "h": 607,
+   "orient": "l",
+   "src": "IMG-20241203-WA0004.jpg"
+  }
+ ],
+ "v0006": [
+  {
+   "file": "01.jpg",
+   "w": 960,
+   "h": 1280,
+   "orient": "p",
+   "src": "IMG-20250219-WA0005.jpg"
+  },
+  {
+   "file": "02.jpg",
+   "w": 960,
+   "h": 1280,
+   "orient": "p",
+   "src": "IMG-20250219-WA0006.jpg"
+  },
+  {
+   "file": "03.jpg",
+   "w": 960,
+   "h": 1280,
+   "orient": "p",
+   "src": "IMG-20250219-WA0007.jpg"
+  },
+  {
+   "file": "04.jpg",
+   "w": 960,
+   "h": 1280,
+   "orient": "p",
+   "src": "IMG-20250219-WA0012.jpg"
+  },
+  {
+   "file": "05.jpg",
+   "w": 960,
+   "h": 1280,
+   "orient": "p",
+   "src": "IMG-20250219-WA0013.jpg"
+  },
+  {
+   "file": "06.jpg",
+   "w": 960,
+   "h": 1280,
+   "orient": "p",
+   "src": "IMG-20250219-WA0014.jpg"
+  },
+  {
+   "file": "07.jpg",
+   "w": 960,
+   "h": 1280,
+   "orient": "p",
+   "src": "IMG-20250219-WA0010.jpg"
+  }
+ ]
+}

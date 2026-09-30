@@ -1,0 +1,30 @@
+ACCUEIL — UN FICHIER PAR SECTION (type: section)
+=================================================
+Importe-les dans l'ordre (01 → 11) via Elementor > Modèles enregistrés >
+Importer, puis dépose chaque section sur ta page d'accueil (icône dossier 📁
+> Mes modèles). Tu peux n'en importer que certaines, ou tout réordonner.
+
+  01-hero ............ Bannière d'accueil + 2 boutons
+  02-bandeau ......... Bandeau orange (texte ; voir note marquee)
+  03-signatures ...... Titre + 3 plats + bouton « Voir la carte »
+  04-histoire ........ Photo chef + texte « De la ferme à la braise »
+  05-atouts .......... 4 atouts (icône ronde à gauche + texte) — Icon Box Pro
+  06-citation ........ Bande citation (image de fond)
+  07-menu ............ Titre + Price List (Apéritifs / Plats) + photo
+  08-reservation ..... Horaires + Formulaire Pro (réservation)
+  09-temoignage ...... Avis client
+  10-partenaires ..... « Nos partenaires » + bouton + 8 cartes
+  11-galerie ......... Titre + 6 images + bouton
+
+Alternative : « ../accueil-body.json » = toutes ces sections en un seul import.
+
+------------------------------------------------------------------
+POLICE BELGIANO SERIF (titres)
+  Les titres demandent la famille « Belgiano Serif ». Pour qu'Elementor
+  l'affiche : Réglages du site > Polices personnalisées > Ajouter
+  « Belgiano Serif » (téléverse le .woff2). Sinon, mets une police de repli
+  serif (ex. Fraunces) dans Réglages du site. Le corps reste « Fira Sans ».
+
+NOTE MARQUEE (02-bandeau)
+  Le bandeau défilant n'est pas un widget natif : texte fixe par défaut.
+  Pour le faire défiler, installe « Unlimited Elements » (widget Marquee).

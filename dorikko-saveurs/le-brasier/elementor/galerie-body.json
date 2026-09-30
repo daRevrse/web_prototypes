@@ -4,7 +4,7 @@
  "type": "page",
  "content": [
   {
-   "id": "6917c8f",
+   "id": "070f801",
    "elType": "section",
    "settings": {
     "content_width": {
@@ -53,7 +53,7 @@
    },
    "elements": [
     {
-     "id": "8753f7e",
+     "id": "1b9c010",
      "elType": "column",
      "settings": {
       "_column_size": 100,
@@ -63,13 +63,13 @@
      },
      "elements": [
       {
-       "id": "525f37c",
+       "id": "ba2ffa7",
        "elType": "widget",
        "settings": {
         "editor": "<p style=\"letter-spacing:.2em;text-transform:uppercase;font-size:12px;color:#b6a489;margin:0\"><a href=\"index.html\" style=\"color:#b6a489\">Accueil</a> &nbsp;/&nbsp; <span style=\"color:#e07a2c\">Galerie</span></p>",
         "text_color": "#b6a489",
         "typography_typography": "custom",
-        "typography_font_family": "Archivo",
+        "typography_font_family": "Fira Sans",
         "typography_font_size": {
          "unit": "px",
          "size": 12,
@@ -88,14 +88,14 @@
        "widgetType": "text-editor"
       },
       {
-       "id": "a7a984a",
+       "id": "f88e52d",
        "elType": "widget",
        "settings": {
         "title": "L'instant Dorikko.",
         "header_size": "h1",
         "title_color": "#f3e8d6",
         "typography_typography": "custom",
-        "typography_font_family": "Fraunces",
+        "typography_font_family": "Belgiano Serif",
         "typography_font_weight": "600",
         "typography_font_size": {
          "unit": "px",
@@ -111,13 +111,13 @@
        "widgetType": "heading"
       },
       {
-       "id": "77733c7",
+       "id": "a858467",
        "elType": "widget",
        "settings": {
         "editor": "<p>Le feu, les plats, la salle et les visages. Quelques images de ce qui vous attend à la maison.</p>",
         "text_color": "#e7d8c0",
         "typography_typography": "custom",
-        "typography_font_family": "Archivo",
+        "typography_font_family": "Fira Sans",
         "typography_font_size": {
          "unit": "px",
          "size": 18,
@@ -142,7 +142,7 @@
    "isInner": false
   },
   {
-   "id": "d72a92b",
+   "id": "850306d",
    "elType": "section",
    "settings": {
     "content_width": {
@@ -172,7 +172,7 @@
    },
    "elements": [
     {
-     "id": "ed9005c",
+     "id": "e9d6042",
      "elType": "column",
      "settings": {
       "_column_size": 25,
@@ -184,7 +184,7 @@
      },
      "elements": [
       {
-       "id": "88e97cb",
+       "id": "4b07629",
        "elType": "widget",
        "settings": {
         "image": {
@@ -202,7 +202,7 @@
      "isInner": false
     },
     {
-     "id": "092ca9c",
+     "id": "3a20c0d",
      "elType": "column",
      "settings": {
       "_column_size": 25,
@@ -214,7 +214,7 @@
      },
      "elements": [
       {
-       "id": "0586d0a",
+       "id": "8ba99b0",
        "elType": "widget",
        "settings": {
         "image": {
@@ -232,7 +232,7 @@
      "isInner": false
     },
     {
-     "id": "96e28b3",
+     "id": "5c3e664",
      "elType": "column",
      "settings": {
       "_column_size": 25,
@@ -244,7 +244,7 @@
      },
      "elements": [
       {
-       "id": "b5edb64",
+       "id": "a94d97f",
        "elType": "widget",
        "settings": {
         "image": {
@@ -262,7 +262,7 @@
      "isInner": false
     },
     {
-     "id": "e76b837",
+     "id": "82dd69b",
      "elType": "column",
      "settings": {
       "_column_size": 25,
@@ -274,7 +274,7 @@
      },
      "elements": [
       {
-       "id": "96f133e",
+       "id": "1e7149e",
        "elType": "widget",
        "settings": {
         "image": {
@@ -292,7 +292,7 @@
      "isInner": false
     },
     {
-     "id": "d59b455",
+     "id": "e346403",
      "elType": "column",
      "settings": {
       "_column_size": 25,
@@ -304,7 +304,7 @@
      },
      "elements": [
       {
-       "id": "c7b8827",
+       "id": "99e3e76",
        "elType": "widget",
        "settings": {
         "image": {
@@ -322,7 +322,7 @@
      "isInner": false
     },
     {
-     "id": "cbd8227",
+     "id": "e1b97d2",
      "elType": "column",
      "settings": {
       "_column_size": 25,
@@ -334,7 +334,7 @@
      },
      "elements": [
       {
-       "id": "84ae621",
+       "id": "68a123e",
        "elType": "widget",
        "settings": {
         "image": {
@@ -352,7 +352,7 @@
      "isInner": false
     },
     {
-     "id": "e83abf5",
+     "id": "178388a",
      "elType": "column",
      "settings": {
       "_column_size": 25,
@@ -364,7 +364,7 @@
      },
      "elements": [
       {
-       "id": "5bc1f74",
+       "id": "9d74974",
        "elType": "widget",
        "settings": {
         "image": {
@@ -382,7 +382,7 @@
      "isInner": false
     },
     {
-     "id": "1469033",
+     "id": "4e4bf0b",
      "elType": "column",
      "settings": {
       "_column_size": 25,
@@ -394,7 +394,7 @@
      },
      "elements": [
       {
-       "id": "51b4677",
+       "id": "1cae5d7",
        "elType": "widget",
        "settings": {
         "image": {
@@ -412,7 +412,7 @@
      "isInner": false
     },
     {
-     "id": "f07a9a8",
+     "id": "3d74727",
      "elType": "column",
      "settings": {
       "_column_size": 25,
@@ -424,7 +424,7 @@
      },
      "elements": [
       {
-       "id": "f0af645",
+       "id": "c8cf71c",
        "elType": "widget",
        "settings": {
         "image": {
@@ -442,7 +442,7 @@
      "isInner": false
     },
     {
-     "id": "39bbc92",
+     "id": "cb1db78",
      "elType": "column",
      "settings": {
       "_column_size": 25,
@@ -454,7 +454,7 @@
      },
      "elements": [
       {
-       "id": "451c838",
+       "id": "1b29325",
        "elType": "widget",
        "settings": {
         "image": {
@@ -472,7 +472,7 @@
      "isInner": false
     },
     {
-     "id": "3c09204",
+     "id": "9d82de7",
      "elType": "column",
      "settings": {
       "_column_size": 25,
@@ -484,7 +484,7 @@
      },
      "elements": [
       {
-       "id": "f6ccc13",
+       "id": "cdae45b",
        "elType": "widget",
        "settings": {
         "image": {
@@ -502,7 +502,7 @@
      "isInner": false
     },
     {
-     "id": "193e78c",
+     "id": "d616218",
      "elType": "column",
      "settings": {
       "_column_size": 25,
@@ -514,7 +514,7 @@
      },
      "elements": [
       {
-       "id": "6755038",
+       "id": "cdcf64e",
        "elType": "widget",
        "settings": {
         "image": {
@@ -535,7 +535,7 @@
    "isInner": false
   },
   {
-   "id": "ada0e65",
+   "id": "d5d03e5",
    "elType": "section",
    "settings": {
     "content_width": {
@@ -565,7 +565,7 @@
    },
    "elements": [
     {
-     "id": "ae37993",
+     "id": "8498df7",
      "elType": "column",
      "settings": {
       "_column_size": 100,
@@ -575,14 +575,14 @@
      },
      "elements": [
       {
-       "id": "557a5d0",
+       "id": "25ffe02",
        "elType": "widget",
        "settings": {
         "title": "Sur Instagram",
         "header_size": "span",
         "title_color": "#e07a2c",
         "typography_typography": "custom",
-        "typography_font_family": "Archivo",
+        "typography_font_family": "Fira Sans",
         "typography_font_weight": "600",
         "typography_font_size": {
          "unit": "px",
@@ -609,7 +609,7 @@
        "widgetType": "heading"
       },
       {
-       "id": "14f5309",
+       "id": "18ee5a6",
        "elType": "widget",
        "settings": {
         "title": "Suivez le feu au quotidien — @dorikko.saveurs",
@@ -642,7 +642,7 @@
        "widgetType": "heading"
       },
       {
-       "id": "2db2469",
+       "id": "812e7ea",
        "elType": "widget",
        "settings": {
         "text": "Nous suivre",
@@ -652,7 +652,7 @@
          "nofollow": ""
         },
         "typography_typography": "custom",
-        "typography_font_family": "Archivo",
+        "typography_font_family": "Fira Sans",
         "typography_font_weight": "600",
         "typography_text_transform": "uppercase",
         "typography_letter_spacing": {
@@ -697,7 +697,7 @@
    "isInner": false
   },
   {
-   "id": "61a71b9",
+   "id": "fbfbf9e",
    "elType": "section",
    "settings": {
     "content_width": {
@@ -727,7 +727,7 @@
    },
    "elements": [
     {
-     "id": "6818f80",
+     "id": "eec5c67",
      "elType": "column",
      "settings": {
       "_column_size": 100,
@@ -737,14 +737,14 @@
      },
      "elements": [
       {
-       "id": "8c51b05",
+       "id": "c53ce27",
        "elType": "widget",
        "settings": {
         "title": "Envie d'y être ?",
         "header_size": "span",
         "title_color": "#ffffff",
         "typography_typography": "custom",
-        "typography_font_family": "Archivo",
+        "typography_font_family": "Fira Sans",
         "typography_font_weight": "600",
         "typography_font_size": {
          "unit": "px",
@@ -771,14 +771,14 @@
        "widgetType": "heading"
       },
       {
-       "id": "26d9400",
+       "id": "fbe0a5b",
        "elType": "widget",
        "settings": {
         "title": "Réservez votre table.",
         "header_size": "h2",
         "title_color": "#ffffff",
         "typography_typography": "custom",
-        "typography_font_family": "Fraunces",
+        "typography_font_family": "Belgiano Serif",
         "typography_font_weight": "600",
         "typography_font_size": {
          "unit": "px",
@@ -803,13 +803,13 @@
        "widgetType": "heading"
       },
       {
-       "id": "6c88040",
+       "id": "6ee3409",
        "elType": "widget",
        "settings": {
         "editor": "<p>Les images donnent faim — la réalité est encore meilleure.</p>",
         "text_color": "rgba(255,255,255,.86)",
         "typography_typography": "custom",
-        "typography_font_family": "Archivo",
+        "typography_font_family": "Fira Sans",
         "typography_font_size": {
          "unit": "px",
          "size": 17,
@@ -829,7 +829,7 @@
        "widgetType": "text-editor"
       },
       {
-       "id": "ac2aac7",
+       "id": "a248a21",
        "elType": "widget",
        "settings": {
         "text": "Réserver une table",
@@ -839,7 +839,7 @@
          "nofollow": ""
         },
         "typography_typography": "custom",
-        "typography_font_family": "Archivo",
+        "typography_font_family": "Fira Sans",
         "typography_font_weight": "600",
         "typography_text_transform": "uppercase",
         "typography_letter_spacing": {

@@ -1,0 +1,346 @@
+{
+ "version": "0.4",
+ "title": "Accueil — 05-atouts",
+ "type": "section",
+ "content": [
+  {
+   "id": "8e94826",
+   "elType": "section",
+   "settings": {
+    "content_width": {
+     "unit": "px",
+     "size": 1180,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "background_background": "classic",
+    "background_color": "#15100b",
+    "padding": {
+     "unit": "px",
+     "top": "90",
+     "right": "20",
+     "bottom": "90",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "56",
+     "right": "18",
+     "bottom": "56",
+     "left": "18",
+     "isLinked": false
+    },
+    "border_border": "solid",
+    "border_width": {
+     "unit": "px",
+     "top": "1",
+     "right": "0",
+     "bottom": "1",
+     "left": "0",
+     "isLinked": false
+    },
+    "border_color": "rgba(243,232,214,.14)"
+   },
+   "elements": [
+    {
+     "id": "c588cf2",
+     "elType": "column",
+     "settings": {
+      "_column_size": 50,
+      "_inline_size": 50,
+      "_inline_size_tablet": 50,
+      "_inline_size_mobile": 100,
+      "padding": {
+       "unit": "px",
+       "top": "28",
+       "right": "30",
+       "bottom": "28",
+       "left": "10",
+       "isLinked": false
+      },
+      "_animation": "fadeInUp",
+      "_animation_delay": 0
+     },
+     "elements": [
+      {
+       "id": "57b227c",
+       "elType": "widget",
+       "settings": {
+        "selected_icon": {
+         "value": "fas fa-cow",
+         "library": "fa-solid"
+        },
+        "title_text": "Viande 100% ferme",
+        "description_text": "Élevée chez nous, en pâturage libre, avec une traçabilité totale.",
+        "position": "left",
+        "view": "framed",
+        "shape": "circle",
+        "primary_color": "#e07a2c",
+        "icon_size": {
+         "unit": "px",
+         "size": 26,
+         "sizes": []
+        },
+        "icon_padding": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "title_color": "#f3e8d6",
+        "description_color": "#b6a489",
+        "icon_space": {
+         "unit": "px",
+         "size": 24,
+         "sizes": []
+        },
+        "title_typography_typography": "custom",
+        "title_typography_font_family": "Belgiano Serif",
+        "title_typography_font_size": {
+         "unit": "px",
+         "size": 24,
+         "sizes": []
+        },
+        "title_typography_font_weight": "600",
+        "description_typography_typography": "custom",
+        "description_typography_font_family": "Fira Sans",
+        "description_typography_font_size": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "icon-box"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "7e65f60",
+     "elType": "column",
+     "settings": {
+      "_column_size": 50,
+      "_inline_size": 50,
+      "_inline_size_tablet": 50,
+      "_inline_size_mobile": 100,
+      "padding": {
+       "unit": "px",
+       "top": "28",
+       "right": "30",
+       "bottom": "28",
+       "left": "10",
+       "isLinked": false
+      },
+      "_animation": "fadeInUp",
+      "_animation_delay": 120
+     },
+     "elements": [
+      {
+       "id": "2f30611",
+       "elType": "widget",
+       "settings": {
+        "selected_icon": {
+         "value": "fas fa-leaf",
+         "library": "fa-solid"
+        },
+        "title_text": "Produits bio",
+        "description_text": "Légumes et herbes de cultures biologiques voisines, à maturité.",
+        "position": "left",
+        "view": "framed",
+        "shape": "circle",
+        "primary_color": "#e07a2c",
+        "icon_size": {
+         "unit": "px",
+         "size": 26,
+         "sizes": []
+        },
+        "icon_padding": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "title_color": "#f3e8d6",
+        "description_color": "#b6a489",
+        "icon_space": {
+         "unit": "px",
+         "size": 24,
+         "sizes": []
+        },
+        "title_typography_typography": "custom",
+        "title_typography_font_family": "Belgiano Serif",
+        "title_typography_font_size": {
+         "unit": "px",
+         "size": 24,
+         "sizes": []
+        },
+        "title_typography_font_weight": "600",
+        "description_typography_typography": "custom",
+        "description_typography_font_family": "Fira Sans",
+        "description_typography_font_size": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "icon-box"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "1b436dd",
+     "elType": "column",
+     "settings": {
+      "_column_size": 50,
+      "_inline_size": 50,
+      "_inline_size_tablet": 50,
+      "_inline_size_mobile": 100,
+      "padding": {
+       "unit": "px",
+       "top": "28",
+       "right": "30",
+       "bottom": "28",
+       "left": "10",
+       "isLinked": false
+      },
+      "_animation": "fadeInUp",
+      "_animation_delay": 0
+     },
+     "elements": [
+      {
+       "id": "4d87fb6",
+       "elType": "widget",
+       "settings": {
+        "selected_icon": {
+         "value": "fas fa-utensils",
+         "library": "fa-solid"
+        },
+        "title_text": "Cuisine locale",
+        "description_text": "Une carte ancrée dans le terroir et les épices de la région.",
+        "position": "left",
+        "view": "framed",
+        "shape": "circle",
+        "primary_color": "#e07a2c",
+        "icon_size": {
+         "unit": "px",
+         "size": 26,
+         "sizes": []
+        },
+        "icon_padding": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "title_color": "#f3e8d6",
+        "description_color": "#b6a489",
+        "icon_space": {
+         "unit": "px",
+         "size": 24,
+         "sizes": []
+        },
+        "title_typography_typography": "custom",
+        "title_typography_font_family": "Belgiano Serif",
+        "title_typography_font_size": {
+         "unit": "px",
+         "size": 24,
+         "sizes": []
+        },
+        "title_typography_font_weight": "600",
+        "description_typography_typography": "custom",
+        "description_typography_font_family": "Fira Sans",
+        "description_typography_font_size": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "icon-box"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "704d279",
+     "elType": "column",
+     "settings": {
+      "_column_size": 50,
+      "_inline_size": 50,
+      "_inline_size_tablet": 50,
+      "_inline_size_mobile": 100,
+      "padding": {
+       "unit": "px",
+       "top": "28",
+       "right": "30",
+       "bottom": "28",
+       "left": "10",
+       "isLinked": false
+      },
+      "_animation": "fadeInUp",
+      "_animation_delay": 120
+     },
+     "elements": [
+      {
+       "id": "97dd439",
+       "elType": "widget",
+       "settings": {
+        "selected_icon": {
+         "value": "fas fa-handshake",
+         "library": "fa-solid"
+        },
+        "title_text": "Hospitalité",
+        "description_text": "Un accueil chaleureux, parce qu'un bon repas se partage.",
+        "position": "left",
+        "view": "framed",
+        "shape": "circle",
+        "primary_color": "#e07a2c",
+        "icon_size": {
+         "unit": "px",
+         "size": 26,
+         "sizes": []
+        },
+        "icon_padding": {
+         "unit": "px",
+         "size": 20,
+         "sizes": []
+        },
+        "title_color": "#f3e8d6",
+        "description_color": "#b6a489",
+        "icon_space": {
+         "unit": "px",
+         "size": 24,
+         "sizes": []
+        },
+        "title_typography_typography": "custom",
+        "title_typography_font_family": "Belgiano Serif",
+        "title_typography_font_size": {
+         "unit": "px",
+         "size": 24,
+         "sizes": []
+        },
+        "title_typography_font_weight": "600",
+        "description_typography_typography": "custom",
+        "description_typography_font_family": "Fira Sans",
+        "description_typography_font_size": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "icon-box"
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {
+  "background_background": "classic",
+  "background_color": "#15100b"
+ }
+}

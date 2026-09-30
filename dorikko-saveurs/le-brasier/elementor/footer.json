@@ -4,7 +4,7 @@
  "type": "section",
  "content": [
   {
-   "id": "0cc9623",
+   "id": "8c3e3a3",
    "elType": "section",
    "settings": {
     "content_width": {
@@ -34,7 +34,7 @@
    },
    "elements": [
     {
-     "id": "9a2626c",
+     "id": "b291f30",
      "elType": "column",
      "settings": {
       "_column_size": 34,
@@ -45,14 +45,14 @@
      },
      "elements": [
       {
-       "id": "23efb7b",
+       "id": "2a8d141",
        "elType": "widget",
        "settings": {
         "title": "DORIKKO SAVEURS",
         "header_size": "div",
         "title_color": "#f3e8d6",
         "typography_typography": "custom",
-        "typography_font_family": "Fraunces",
+        "typography_font_family": "Belgiano Serif",
         "typography_font_weight": "600",
         "typography_font_size": {
          "unit": "px",
@@ -77,14 +77,14 @@
        "widgetType": "heading"
       },
       {
-       "id": "951ed0e",
+       "id": "e311677",
        "elType": "widget",
        "settings": {
         "title": "Frais · Local · Bio",
         "header_size": "div",
         "title_color": "#e07a2c",
         "typography_typography": "custom",
-        "typography_font_family": "Fraunces",
+        "typography_font_family": "Belgiano Serif",
         "typography_font_weight": "600",
         "typography_font_size": {
          "unit": "px",
@@ -105,13 +105,13 @@
        "widgetType": "heading"
       },
       {
-       "id": "9ffad80",
+       "id": "71281b5",
        "elType": "widget",
        "settings": {
         "editor": "<p>Maison de viande &amp; terroir à Kpalimé. Frais, local, bio — nous cultivons le goût du vrai, de la ferme à la braise.</p>",
         "text_color": "#b6a489",
         "typography_typography": "custom",
-        "typography_font_family": "Archivo",
+        "typography_font_family": "Fira Sans",
         "typography_font_size": {
          "unit": "px",
          "size": 14,
@@ -130,7 +130,7 @@
        "widgetType": "text-editor"
       },
       {
-       "id": "90f63c1",
+       "id": "91243c1",
        "elType": "widget",
        "settings": {
         "social_icon_list": [
@@ -142,7 +142,7 @@
           "link": {
            "url": "#"
           },
-          "_id": "b7d4bab"
+          "_id": "8f4942f"
          },
          {
           "social_icon": {
@@ -152,7 +152,7 @@
           "link": {
            "url": "#"
           },
-          "_id": "2b48b35"
+          "_id": "9e5f7db"
          },
          {
           "social_icon": {
@@ -162,7 +162,7 @@
           "link": {
            "url": "#"
           },
-          "_id": "8c994ee"
+          "_id": "10e24ce"
          }
         ],
         "shape": "square",
@@ -197,7 +197,7 @@
      "isInner": false
     },
     {
-     "id": "093faa8",
+     "id": "1fb949c",
      "elType": "column",
      "settings": {
       "_column_size": 20,
@@ -207,14 +207,14 @@
      },
      "elements": [
       {
-       "id": "4016626",
+       "id": "56c88d7",
        "elType": "widget",
        "settings": {
         "title": "Visiter",
         "header_size": "div",
         "title_color": "#c89b53",
         "typography_typography": "custom",
-        "typography_font_family": "Archivo",
+        "typography_font_family": "Fira Sans",
         "typography_font_weight": "600",
         "typography_font_size": {
          "unit": "px",
@@ -240,7 +240,7 @@
        "widgetType": "heading"
       },
       {
-       "id": "76d0def",
+       "id": "c0042ed",
        "elType": "widget",
        "settings": {
         "icon_list": [
@@ -255,7 +255,7 @@
            "is_external": "",
            "nofollow": ""
           },
-          "_id": "4c91bae"
+          "_id": "83179c6"
          },
          {
           "text": "La maison",
@@ -268,7 +268,7 @@
            "is_external": "",
            "nofollow": ""
           },
-          "_id": "03b27cd"
+          "_id": "efc9906"
          },
          {
           "text": "Le menu",
@@ -281,7 +281,7 @@
            "is_external": "",
            "nofollow": ""
           },
-          "_id": "49b20fe"
+          "_id": "47435e2"
          },
          {
           "text": "Galerie",
@@ -294,7 +294,7 @@
            "is_external": "",
            "nofollow": ""
           },
-          "_id": "75e61b4"
+          "_id": "cbf9a59"
          },
          {
           "text": "Réserver",
@@ -307,7 +307,7 @@
            "is_external": "",
            "nofollow": ""
           },
-          "_id": "eb4530b"
+          "_id": "6b392cd"
          }
         ],
         "icon_color": "#e07a2c",
@@ -328,7 +328,7 @@
          "sizes": []
         },
         "text_typography_typography": "custom",
-        "text_typography_font_family": "Archivo",
+        "text_typography_font_family": "Fira Sans",
         "text_typography_font_size": {
          "unit": "px",
          "size": 15,
@@ -342,7 +342,7 @@
      "isInner": false
     },
     {
-     "id": "1d9f1c9",
+     "id": "8539fe6",
      "elType": "column",
      "settings": {
       "_column_size": 22,
@@ -352,14 +352,14 @@
      },
      "elements": [
       {
-       "id": "b77a4b6",
+       "id": "5efd5fc",
        "elType": "widget",
        "settings": {
         "title": "Nous trouver",
         "header_size": "div",
         "title_color": "#c89b53",
         "typography_typography": "custom",
-        "typography_font_family": "Archivo",
+        "typography_font_family": "Fira Sans",
         "typography_font_weight": "600",
         "typography_font_size": {
          "unit": "px",
@@ -385,7 +385,7 @@
        "widgetType": "heading"
       },
       {
-       "id": "138f4f3",
+       "id": "b4a1071",
        "elType": "widget",
        "settings": {
         "icon_list": [
@@ -400,7 +400,7 @@
            "is_external": "",
            "nofollow": ""
           },
-          "_id": "5158861"
+          "_id": "b08b9da"
          },
          {
           "text": "Kpalimé, Togo",
@@ -413,7 +413,7 @@
            "is_external": "",
            "nofollow": ""
           },
-          "_id": "1fa0778"
+          "_id": "7179edb"
          },
          {
           "text": "+228 91 69 84 29",
@@ -426,7 +426,7 @@
            "is_external": "",
            "nofollow": ""
           },
-          "_id": "7dbc6e2"
+          "_id": "ea51719"
          },
          {
           "text": "info@dorikko-saveurs.com",
@@ -439,7 +439,7 @@
            "is_external": "",
            "nofollow": ""
           },
-          "_id": "7f5b333"
+          "_id": "64ff300"
          }
         ],
         "icon_color": "#e07a2c",
@@ -460,7 +460,7 @@
          "sizes": []
         },
         "text_typography_typography": "custom",
-        "text_typography_font_family": "Archivo",
+        "text_typography_font_family": "Fira Sans",
         "text_typography_font_size": {
          "unit": "px",
          "size": 15,
@@ -474,7 +474,7 @@
      "isInner": false
     },
     {
-     "id": "4280708",
+     "id": "e0d1b86",
      "elType": "column",
      "settings": {
       "_column_size": 24,
@@ -484,14 +484,14 @@
      },
      "elements": [
       {
-       "id": "d8c639b",
+       "id": "ad4300d",
        "elType": "widget",
        "settings": {
         "title": "La lettre du feu",
         "header_size": "div",
         "title_color": "#c89b53",
         "typography_typography": "custom",
-        "typography_font_family": "Archivo",
+        "typography_font_family": "Fira Sans",
         "typography_font_weight": "600",
         "typography_font_size": {
          "unit": "px",
@@ -517,13 +517,13 @@
        "widgetType": "heading"
       },
       {
-       "id": "c6d318e",
+       "id": "a22a593",
        "elType": "widget",
        "settings": {
         "editor": "<p>Suggestions du chef, soirées braise et arrivages de la ferme — une fois par mois.</p>",
         "text_color": "#b6a489",
         "typography_typography": "custom",
-        "typography_font_family": "Archivo",
+        "typography_font_family": "Fira Sans",
         "typography_font_size": {
          "unit": "px",
          "size": 14,
@@ -542,35 +542,41 @@
        "widgetType": "text-editor"
       },
       {
-       "id": "a094e9b",
+       "id": "2bf3d25",
        "elType": "widget",
        "settings": {
         "form_name": "Newsletter",
         "form_fields": [
          {
-          "_id": "e824c49",
+          "_id": "ef5fc09",
           "field_type": "email",
           "field_label": "E-mail",
           "placeholder": "Votre e-mail",
           "width": "100",
           "required": "true"
+         },
+         {
+          "_id": "da738ae",
+          "field_type": "recaptcha_v3",
+          "field_label": "reCAPTCHA",
+          "custom_id": "recaptcha_v3",
+          "width": "100",
+          "recaptcha_v3_badge": "inline",
+          "recaptcha_v3_threshold": "0.5"
          }
         ],
         "button_text": "S'abonner",
-        "submit_actions": [
-         "email"
-        ],
         "email_to": "info@dorikko-saveurs.com",
         "email_subject": "Newsletter — inscription",
         "email_content": "[all-fields]",
         "email_from_name": "Site Dorikko-Saveurs",
-        "email_reply_to": "",
+        "email_reply_to": "[field id=\"email\"]",
         "button_width": "100",
         "button_size": "md",
         "button_align": "stretch",
         "label_color": "#b6a489",
         "label_typography_typography": "custom",
-        "label_typography_font_family": "Archivo",
+        "label_typography_font_family": "Fira Sans",
         "label_typography_font_size": {
          "unit": "px",
          "size": 11,
@@ -594,7 +600,7 @@
          "isLinked": false
         },
         "field_typography_typography": "custom",
-        "field_typography_font_family": "Archivo",
+        "field_typography_font_family": "Fira Sans",
         "field_typography_font_size": {
          "unit": "px",
          "size": 15,
@@ -612,7 +618,7 @@
         "button_text_color": "#ffffff",
         "button_hover_background_color": "#e07a2c",
         "button_typography_typography": "custom",
-        "button_typography_font_family": "Archivo",
+        "button_typography_font_family": "Fira Sans",
         "button_typography_font_weight": "600",
         "button_typography_text_transform": "uppercase",
         "button_typography_letter_spacing": {
@@ -646,7 +652,18 @@
          "unit": "px",
          "size": 16,
          "sizes": []
-        }
+        },
+        "email_to_2": "[field id=\"email\"]",
+        "email_subject_2": "Votre réservation chez Dorikko-Saveurs",
+        "email_content_2": "Bonjour,\n\nMerci pour votre demande de réservation. Nous vous rappelons très vite pour confirmer votre table.\n\nÀ très bientôt,\nDorikko-Saveurs — Kpalimé\n+228 91 69 84 29",
+        "email_from_name_2": "Dorikko-Saveurs",
+        "email_reply_to_2": "info@dorikko-saveurs.com",
+        "redirect_to": "/merci/",
+        "submit_actions": [
+         "email",
+         "email2",
+         "redirect"
+        ]
        },
        "elements": [],
        "widgetType": "form"
@@ -658,7 +675,7 @@
    "isInner": false
   },
   {
-   "id": "e6be101",
+   "id": "73fbd20",
    "elType": "section",
    "settings": {
     "content_width": {
@@ -698,7 +715,7 @@
    },
    "elements": [
     {
-     "id": "41f5f14",
+     "id": "bbbee03",
      "elType": "column",
      "settings": {
       "_column_size": 60,
@@ -707,13 +724,13 @@
      },
      "elements": [
       {
-       "id": "058a69d",
+       "id": "ed83d7d",
        "elType": "widget",
        "settings": {
         "editor": "<p>© 2026 Dorikko-Saveurs. Tous droits réservés.</p>",
         "text_color": "#b6a489",
         "typography_typography": "custom",
-        "typography_font_family": "Archivo",
+        "typography_font_family": "Fira Sans",
         "typography_font_size": {
          "unit": "px",
          "size": 13,
@@ -727,7 +744,7 @@
      "isInner": false
     },
     {
-     "id": "dc56de2",
+     "id": "01fb328",
      "elType": "column",
      "settings": {
       "_column_size": 40,
@@ -736,13 +753,13 @@
      },
      "elements": [
       {
-       "id": "2711775",
+       "id": "bd9d001",
        "elType": "widget",
        "settings": {
         "editor": "<p>Frais · Local · Bio — Cuisine au feu de bois</p>",
         "text_color": "#b6a489",
         "typography_typography": "custom",
-        "typography_font_family": "Archivo",
+        "typography_font_family": "Fira Sans",
         "typography_font_size": {
          "unit": "px",
          "size": 13,

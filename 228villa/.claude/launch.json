@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "228villa",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "5228", "--bind", "127.0.0.1"],
+      "port": 5228
+    },
+    {
+      "name": "catalogue",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "5300", "--bind", "127.0.0.1", "--directory", ".."],
+      "port": 5300
+    }
+  ]
+}

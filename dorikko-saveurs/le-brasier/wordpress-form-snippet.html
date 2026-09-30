@@ -1,0 +1,81 @@
+<!-- ============================================================
+     DORIKKO · Formulaire de réservation — AUTONOME
+     À coller tel quel dans un widget « HTML » (Elementor/WordPress).
+     Aucun fichier externe requis (pas de brasier.css ni site.js).
+     AVANT DE PUBLIER :
+       1) Remplace VOTRE_CLE_WEB3FORMS par ta clé Web3Forms.
+       2) (option) page de remerciement : mets l'URL dans data-redirect=""
+          ex : data-redirect="https://dorikko-saveurs.com/merci/"
+     ============================================================ -->
+<div class="dko-resa">
+  <span class="dko-eyebrow">Réservation</span>
+  <h3 class="dko-title">Réserver une table</h3>
+  <form class="dko-form" data-redirect="">
+    <input type="hidden" name="access_key" value="VOTRE_CLE_WEB3FORMS">
+    <input type="hidden" name="subject" value="Nouvelle réservation — Dorikko-Saveurs">
+    <input type="hidden" name="from_name" value="Site Dorikko-Saveurs">
+    <input type="checkbox" name="botcheck" class="dko-hp" tabindex="-1" autocomplete="off">
+    <input type="text" name="Nom" placeholder="Nom complet" required>
+    <input type="tel" name="Téléphone" placeholder="Téléphone" required>
+    <input type="email" name="email" placeholder="E-mail">
+    <input type="date" name="Date" required>
+    <select name="Personnes" aria-label="Nombre de personnes">
+      <option>2 personnes</option><option>3 personnes</option><option>4 personnes</option>
+      <option>5 personnes</option><option>6 et plus</option>
+    </select>
+    <textarea name="Message" placeholder="Message (allergies, occasion…)" rows="3"></textarea>
+    <button type="submit">Envoyer ma demande</button>
+    <p class="dko-status" role="status"></p>
+  </form>
+</div>
+
+<style>
+.dko-resa{box-sizing:border-box;max-width:700px;margin:0 auto;background:#1c150e;border:1px solid rgba(243,232,214,.14);padding:42px;color:#f3e8d6;font-family:Arial,Helvetica,sans-serif}
+.dko-resa *{box-sizing:border-box}
+.dko-resa .dko-eyebrow{display:block;font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:#e07a2c;margin-bottom:12px}
+.dko-resa .dko-title{font-family:Georgia,'Times New Roman',serif;font-weight:600;font-size:30px;line-height:1.1;margin:0 0 26px;color:#f3e8d6}
+.dko-resa form{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:0}
+.dko-resa input,.dko-resa select,.dko-resa textarea{width:100%;background:#15100b;border:1px solid rgba(243,232,214,.16);color:#f3e8d6;padding:14px 15px;font-size:15px;font-family:inherit;border-radius:0}
+.dko-resa input::placeholder,.dko-resa textarea::placeholder{color:#b6a489}
+.dko-resa input:focus,.dko-resa select:focus,.dko-resa textarea:focus{outline:none;border-color:#c2511f}
+.dko-resa input[type=email],.dko-resa textarea,.dko-resa button,.dko-resa .dko-status{grid-column:1/-1}
+.dko-resa textarea{resize:vertical;min-height:92px}
+.dko-resa .dko-hp{position:absolute!important;left:-9999px;width:1px;height:1px;opacity:0}
+.dko-resa button{background:#c2511f;color:#fff;border:none;padding:16px;font-size:13px;letter-spacing:.18em;text-transform:uppercase;font-weight:bold;cursor:pointer;transition:.3s}
+.dko-resa button:hover{background:#e07a2c}
+.dko-resa button[disabled]{opacity:.6;cursor:default}
+.dko-resa .dko-status{display:none;font-size:14px;line-height:1.5;margin:8px 0 0;color:#fff}
+.dko-resa .dko-status.ok{font-weight:bold}
+.dko-resa .dko-status.err{color:#ffd9c2}
+@media(max-width:560px){.dko-resa{padding:26px}.dko-resa form{grid-template-columns:1fr}}
+</style>
+
+<script>
+(function(){
+  document.querySelectorAll('.dko-resa form').forEach(function(f){
+    if(f.dataset.bound){return;} f.dataset.bound='1';
+    f.addEventListener('submit',function(e){
+      e.preventDefault();
+      var status=f.querySelector('.dko-status'), btn=f.querySelector('[type=submit]');
+      var key=(f.querySelector('[name=access_key]')||{}).value||'';
+      status.style.display='block';
+      if(key.indexOf('VOTRE_CLE')===0){status.className='dko-status err';status.textContent='⚠ Collez votre clé Web3Forms dans le champ access_key.';return;}
+      status.className='dko-status';status.textContent='Envoi en cours…';btn.disabled=true;
+      fetch('https://api.web3forms.com/submit',{
+        method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},
+        body:JSON.stringify(Object.fromEntries(new FormData(f).entries()))
+      }).then(function(r){return r.json();}).then(function(j){
+        if(j.success){
+          var rd=f.getAttribute('data-redirect');
+          if(rd){window.location.href=rd;}
+          else{status.className='dko-status ok';status.textContent='✓ Merci ! Votre demande a bien été envoyée — nous vous rappelons pour confirmer.';f.reset();}
+        } else {
+          status.className='dko-status err';status.textContent='⚠ Envoi impossible. Réessayez ou appelez le +228 91 69 84 29.';
+        }
+      }).catch(function(){
+        status.className='dko-status err';status.textContent='⚠ Connexion impossible. Réessayez ou appelez le +228 91 69 84 29.';
+      }).finally(function(){btn.disabled=false;});
+    });
+  });
+})();
+</script>

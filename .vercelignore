@@ -1,6 +1,21 @@
 # Fichiers de travail à ne pas déployer
 .claude
 **/.claude
+**/.impeccable
+**/.vercel
+**/*.md
+**/*.zip
+**/*.jfif
+**/*.sqlite3
 dorikko-saveurs/inspo
 dorikko-saveurs/existant
-**/*.jfif
+
+# Projets non publiés
+fabrice
+taskmanager
+
+# Sources et captures non utilisées par les pages
+228villa/screencapture-*.png
+dofbabi/branding
+dofbabi/models
+dreamafrica/screenshots

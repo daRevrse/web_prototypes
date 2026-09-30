@@ -1,0 +1,10 @@
+# Liens locaux vers des projets Vercel séparés
+.vercel
+**/.vercel
+
+# Captures de revue et journaux Impeccable (régénérables)
+**/.impeccable/review/
+**/.impeccable/questions/
+
+# Archives
+*.zip

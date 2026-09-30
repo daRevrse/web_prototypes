@@ -1,0 +1,725 @@
+{
+ "version": "0.4",
+ "title": "Accueil — 03-signatures",
+ "type": "section",
+ "content": [
+  {
+   "id": "973906e",
+   "elType": "section",
+   "settings": {
+    "content_width": {
+     "unit": "px",
+     "size": 1180,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "background_background": "classic",
+    "background_color": "#15100b",
+    "padding": {
+     "unit": "px",
+     "top": "120",
+     "right": "20",
+     "bottom": "40",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "72",
+     "right": "18",
+     "bottom": "30",
+     "left": "18",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "40f937b",
+     "elType": "column",
+     "settings": {
+      "_column_size": 60,
+      "_inline_size": 60,
+      "_inline_size_mobile": 100,
+      "_animation": "fadeInUp"
+     },
+     "elements": [
+      {
+       "id": "6efa761",
+       "elType": "widget",
+       "settings": {
+        "title": "Les signatures de la maison",
+        "header_size": "span",
+        "title_color": "#e07a2c",
+        "typography_typography": "custom",
+        "typography_font_family": "Fira Sans",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 12,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 4,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "18",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "cf73c29",
+       "elType": "widget",
+       "settings": {
+        "title": "Des pièces qui donnent faim.",
+        "header_size": "h2",
+        "title_color": "#f3e8d6",
+        "typography_typography": "custom",
+        "typography_font_family": "Belgiano Serif",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": [
+          56,
+          40,
+          32
+         ],
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "af48c6c",
+     "elType": "column",
+     "settings": {
+      "_column_size": 40,
+      "_inline_size": 40,
+      "_inline_size_mobile": 100,
+      "_animation": "fadeInUp",
+      "_animation_delay": 120
+     },
+     "elements": [
+      {
+       "id": "46cab77",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>Chaque viande est sélectionnée à la ferme, maturée avec patience puis saisie minute. Voici les incontournables de Dorikko.</p>",
+        "text_color": "#b6a489",
+        "typography_typography": "custom",
+        "typography_font_family": "Fira Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 16,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "74e9d18",
+   "elType": "section",
+   "settings": {
+    "content_width": {
+     "unit": "px",
+     "size": 1180,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "background_background": "classic",
+    "background_color": "#15100b",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "20",
+     "bottom": "80",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "0",
+     "right": "18",
+     "bottom": "56",
+     "left": "18",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "d2bd7a5",
+     "elType": "column",
+     "settings": {
+      "_column_size": 33,
+      "_inline_size": 33,
+      "_inline_size_tablet": 50,
+      "_inline_size_mobile": 100,
+      "background_background": "classic",
+      "background_color": "#1c150e",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "28",
+       "left": "0",
+       "isLinked": false
+      },
+      "_animation": "fadeInUp",
+      "_animation_delay": 0
+     },
+     "elements": [
+      {
+       "id": "63ebb0f",
+       "elType": "widget",
+       "settings": {
+        "image": {
+         "url": "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80",
+         "id": "",
+         "alt": "Côte de bœuf au feu de bois",
+         "source": "url"
+        },
+        "image_size": "full"
+       },
+       "elements": [],
+       "widgetType": "image"
+      },
+      {
+       "id": "76ab2d5",
+       "elType": "widget",
+       "settings": {
+        "title": "Maturée 40 jours · à partager",
+        "header_size": "div",
+        "title_color": "#c89b53",
+        "typography_typography": "custom",
+        "typography_font_family": "Fira Sans",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 11,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 2,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "8",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "93a9e95",
+       "elType": "widget",
+       "settings": {
+        "title": "Côte de bœuf au feu de bois",
+        "header_size": "h3",
+        "title_color": "#f3e8d6",
+        "typography_typography": "custom",
+        "typography_font_family": "Belgiano Serif",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 25,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "6",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "0ca59eb",
+       "elType": "widget",
+       "settings": {
+        "title": "18 500 FCFA",
+        "header_size": "div",
+        "title_color": "#e07a2c",
+        "typography_typography": "custom",
+        "typography_font_family": "Fraunces",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_style": "italic",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "10",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "eab8ad3",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>Pièce d'1,2 kg pour deux, saisie sur braise de chêne, fleur de sel, beurre maître d'hôtel.</p>",
+        "text_color": "#b6a489",
+        "typography_typography": "custom",
+        "typography_font_family": "Fira Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "a492ee8",
+     "elType": "column",
+     "settings": {
+      "_column_size": 33,
+      "_inline_size": 33,
+      "_inline_size_tablet": 50,
+      "_inline_size_mobile": 100,
+      "background_background": "classic",
+      "background_color": "#1c150e",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "28",
+       "left": "0",
+       "isLinked": false
+      },
+      "_animation": "fadeInUp",
+      "_animation_delay": 120
+     },
+     "elements": [
+      {
+       "id": "22b8074",
+       "elType": "widget",
+       "settings": {
+        "image": {
+         "url": "https://images.unsplash.com/photo-1432139555190-58524dae6a55?auto=format&fit=crop&w=900&q=80",
+         "id": "",
+         "alt": "Entrecôte du terroir",
+         "source": "url"
+        },
+        "image_size": "full"
+       },
+       "elements": [],
+       "widgetType": "image"
+      },
+      {
+       "id": "3f85633",
+       "elType": "widget",
+       "settings": {
+        "title": "Race locale · grillée minute",
+        "header_size": "div",
+        "title_color": "#c89b53",
+        "typography_typography": "custom",
+        "typography_font_family": "Fira Sans",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 11,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 2,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "8",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "1b70651",
+       "elType": "widget",
+       "settings": {
+        "title": "Entrecôte du terroir",
+        "header_size": "h3",
+        "title_color": "#f3e8d6",
+        "typography_typography": "custom",
+        "typography_font_family": "Belgiano Serif",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 25,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "6",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "8faddba",
+       "elType": "widget",
+       "settings": {
+        "title": "9 800 FCFA",
+        "header_size": "div",
+        "title_color": "#e07a2c",
+        "typography_typography": "custom",
+        "typography_font_family": "Fraunces",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_style": "italic",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "10",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "0c5c5fb",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>Persillée et fondante, gratin d'igname et sauce poivre vert maison.</p>",
+        "text_color": "#b6a489",
+        "typography_typography": "custom",
+        "typography_font_family": "Fira Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      }
+     ],
+     "isInner": false
+    },
+    {
+     "id": "5ca03d3",
+     "elType": "column",
+     "settings": {
+      "_column_size": 33,
+      "_inline_size": 33,
+      "_inline_size_tablet": 50,
+      "_inline_size_mobile": 100,
+      "background_background": "classic",
+      "background_color": "#1c150e",
+      "padding": {
+       "unit": "px",
+       "top": "0",
+       "right": "0",
+       "bottom": "28",
+       "left": "0",
+       "isLinked": false
+      },
+      "_animation": "fadeInUp",
+      "_animation_delay": 240
+     },
+     "elements": [
+      {
+       "id": "9f35b8f",
+       "elType": "widget",
+       "settings": {
+        "image": {
+         "url": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=900&q=80",
+         "id": "",
+         "alt": "Brochettes de la ferme",
+         "source": "url"
+        },
+        "image_size": "full"
+       },
+       "elements": [],
+       "widgetType": "image"
+      },
+      {
+       "id": "518a754",
+       "elType": "widget",
+       "settings": {
+        "title": "Spécialité Dorikko",
+        "header_size": "div",
+        "title_color": "#c89b53",
+        "typography_typography": "custom",
+        "typography_font_family": "Fira Sans",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 11,
+         "sizes": []
+        },
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 2,
+         "sizes": []
+        },
+        "typography_text_transform": "uppercase",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "8",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "5e78a79",
+       "elType": "widget",
+       "settings": {
+        "title": "Brochettes de la ferme",
+        "header_size": "h3",
+        "title_color": "#f3e8d6",
+        "typography_typography": "custom",
+        "typography_font_family": "Belgiano Serif",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 25,
+         "sizes": []
+        },
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "6",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "ddf5f1d",
+       "elType": "widget",
+       "settings": {
+        "title": "6 500 FCFA",
+        "header_size": "div",
+        "title_color": "#e07a2c",
+        "typography_typography": "custom",
+        "typography_font_family": "Fraunces",
+        "typography_font_weight": "600",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 22,
+         "sizes": []
+        },
+        "typography_font_style": "italic",
+        "_margin": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "10",
+         "left": "0",
+         "isLinked": false
+        }
+       },
+       "elements": [],
+       "widgetType": "heading"
+      },
+      {
+       "id": "46be711",
+       "elType": "widget",
+       "settings": {
+        "editor": "<p>Filet mariné aux épices du marché, grillé à la braise, oignons confits.</p>",
+        "text_color": "#b6a489",
+        "typography_typography": "custom",
+        "typography_font_family": "Fira Sans",
+        "typography_font_size": {
+         "unit": "px",
+         "size": 14,
+         "sizes": []
+        }
+       },
+       "elements": [],
+       "widgetType": "text-editor"
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  },
+  {
+   "id": "d30915e",
+   "elType": "section",
+   "settings": {
+    "content_width": {
+     "unit": "px",
+     "size": 1180,
+     "sizes": []
+    },
+    "layout": "boxed",
+    "background_background": "classic",
+    "background_color": "#15100b",
+    "padding": {
+     "unit": "px",
+     "top": "0",
+     "right": "20",
+     "bottom": "120",
+     "left": "20",
+     "isLinked": false
+    },
+    "padding_mobile": {
+     "unit": "px",
+     "top": "0",
+     "right": "18",
+     "bottom": "72",
+     "left": "18",
+     "isLinked": false
+    }
+   },
+   "elements": [
+    {
+     "id": "b9dd256",
+     "elType": "column",
+     "settings": {
+      "_column_size": 100,
+      "_inline_size": 100,
+      "_inline_size_mobile": 100,
+      "_animation": "fadeInUp"
+     },
+     "elements": [
+      {
+       "id": "2a21e3b",
+       "elType": "widget",
+       "settings": {
+        "text": "Voir toute la carte",
+        "link": {
+         "url": "le-menu.html",
+         "is_external": "",
+         "nofollow": ""
+        },
+        "typography_typography": "custom",
+        "typography_font_family": "Fira Sans",
+        "typography_font_weight": "600",
+        "typography_text_transform": "uppercase",
+        "typography_letter_spacing": {
+         "unit": "px",
+         "size": 2,
+         "sizes": []
+        },
+        "typography_font_size": {
+         "unit": "px",
+         "size": 13,
+         "sizes": []
+        },
+        "border_radius": {
+         "unit": "px",
+         "top": "0",
+         "right": "0",
+         "bottom": "0",
+         "left": "0",
+         "isLinked": true
+        },
+        "text_padding": {
+         "unit": "px",
+         "top": "18",
+         "right": "34",
+         "bottom": "18",
+         "left": "34",
+         "isLinked": false
+        },
+        "button_text_color": "#f3e8d6",
+        "hover_color": "#ffffff",
+        "align": "center",
+        "background_color": "rgba(0,0,0,0)",
+        "border_border": "solid",
+        "border_width": {
+         "unit": "px",
+         "top": "1",
+         "right": "1",
+         "bottom": "1",
+         "left": "1",
+         "isLinked": false
+        },
+        "border_color": "rgba(243,232,214,.25)",
+        "button_background_hover_color": "#c2511f"
+       },
+       "elements": [],
+       "widgetType": "button"
+      }
+     ],
+     "isInner": false
+    }
+   ],
+   "isInner": false
+  }
+ ],
+ "page_settings": {
+  "background_background": "classic",
+  "background_color": "#15100b"
+ }
+}

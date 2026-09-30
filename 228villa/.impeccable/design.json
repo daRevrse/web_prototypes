@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-30T14:00:00Z",
+  "title": "Design System: 228 Villa",
+  "extensions": {
+    "colorMeta": {
+      "green": { "role": "primary", "displayName": "Agent Green", "canonical": "#0b7a44", "tonalRamp": ["#063d23", "#075c33", "#08693a", "#0b7a44", "#3f9a6b", "#8cc4a3", "#d2e9da", "#eaf4ee"] },
+      "green-hover": { "role": "primary", "displayName": "Green Hover", "canonical": "#08693a" },
+      "green-press": { "role": "primary", "displayName": "Green Press", "canonical": "#075c33" },
+      "green-50": { "role": "primary", "displayName": "Green Mist", "canonical": "#eaf4ee" },
+      "green-100": { "role": "primary", "displayName": "Green Wash", "canonical": "#d2e9da" },
+      "heart": { "role": "tertiary", "displayName": "Favourite Red", "canonical": "#e0364f", "tonalRamp": ["#5a1520", "#8a2030", "#b42a3f", "#e0364f", "#e86a7c", "#f09ea9", "#f7cfd5", "#fcebed"] },
+      "danger": { "role": "tertiary", "displayName": "Error Red", "canonical": "#b42318", "tonalRamp": ["#4a0e0a", "#6e1510", "#921c14", "#b42318", "#d0584f", "#e39089", "#f2c6c2", "#fbe9e7"] },
+      "ink": { "role": "neutral", "displayName": "Deep Ink", "canonical": "#14181f", "tonalRamp": ["#14181f", "#3a4049", "#5f6670", "#8b919a", "#b4b9bf", "#d3d6d2", "#e3e5e2", "#f4f5f3"] },
+      "ink-2": { "role": "neutral", "displayName": "Graphite", "canonical": "#3a4049" },
+      "muted": { "role": "neutral", "displayName": "Slate Muted", "canonical": "#5f6670" },
+      "faint": { "role": "neutral", "displayName": "Faint Grey", "canonical": "#8b919a" },
+      "line": { "role": "neutral", "displayName": "Hairline", "canonical": "#e3e5e2" },
+      "line-2": { "role": "neutral", "displayName": "Hairline Strong", "canonical": "#d3d6d2" },
+      "band": { "role": "neutral", "displayName": "Soft Band", "canonical": "#f4f5f3" },
+      "band-2": { "role": "neutral", "displayName": "Band Deep", "canonical": "#eceeeb" },
+      "white": { "role": "neutral", "displayName": "Paper White", "canonical": "#ffffff" },
+      "night": { "role": "neutral", "displayName": "Night", "canonical": "#14181f", "tonalRamp": ["#0e1116", "#14181f", "#1d222a", "#323843", "#4a515d", "#8f96a0", "#aab0b9", "#dfe3e8"] },
+      "night-2": { "role": "neutral", "displayName": "Night Raised", "canonical": "#1d222a" },
+      "night-line": { "role": "neutral", "displayName": "Night Hairline", "canonical": "#323843" },
+      "night-muted": { "role": "neutral", "displayName": "Night Muted", "canonical": "#aab0b9" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Home hero headline only. Narrow screens: clamp(2.35rem, 1.3rem + 5.2vw, 3rem)." },
+      "headline": { "displayName": "Headline", "purpose": "Home section heads." },
+      "title": { "displayName": "Title", "purpose": "Fiche section heads, panels, row-card titles, dialog heads (680 to 720, 1.1 to 1.45rem)." },
+      "card-title": { "displayName": "Card Title", "purpose": "Listing card titles." },
+      "price": { "displayName": "Price", "purpose": "Listing card prices; tabular numerals, unit at 450 in muted. Larger prices run at 780, 1.45 to 1.75rem." },
+      "lead": { "displayName": "Lead", "purpose": "One subline under a headline, 36 to 44ch, Graphite." },
+      "body": { "displayName": "Body", "purpose": "Running text; long descriptions at 16.5px / 1.65, max 68ch." },
+      "label": { "displayName": "Label", "purpose": "Field and block labels, sentence case, no tracking." }
+    },
+    "shadows": [
+      { "name": "shadow-chip", "value": "0 1px 2px rgb(20 24 31 / 0.08), 0 4px 14px -4px rgb(20 24 31 / 0.18)", "purpose": "Chips and badges on photos, carousel arrows, icon tiles." },
+      { "name": "shadow-panel", "value": "0 1px 3px rgb(20 24 31 / 0.08), 0 14px 36px -10px rgb(20 24 31 / 0.2)", "purpose": "Hero search panel and sticky booking card (written as a literal, not a custom property)." },
+      { "name": "shadow-float", "value": "0 1px 2px rgb(20 24 31 / 0.05), 0 12px 32px -8px rgb(20 24 31 / 0.16)", "purpose": "Declared root token, currently unused in the build; reserved for mid-level floating surfaces." },
+      { "name": "shadow-pop", "value": "0 2px 6px rgb(20 24 31 / 0.06), 0 22px 48px -12px rgb(20 24 31 / 0.28)", "purpose": "Floating cards over photos, compare tray, comparison sheet, toast." },
+      { "name": "focus-halo", "value": "0 0 0 3px rgb(11 122 68 / 0.18)", "purpose": "Input focus halo alongside a green border." }
+    ],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(0.23, 1, 0.32, 1)", "purpose": "Default curve for press, reveal, hover lifts, dialogs." },
+      { "name": "ease-in-out", "value": "cubic-bezier(0.77, 0, 0.175, 1)", "purpose": "Defined for on-screen movement." },
+      { "name": "ease-drawer", "value": "cubic-bezier(0.32, 0.72, 0, 1)", "purpose": "Compare tray slide-up (280ms)." },
+      { "name": "press", "value": "transform: scale(0.97) over 160ms ease-out", "purpose": "Every button and chip on :active (icon buttons 0.94, heart 0.9)." },
+      { "name": "state", "value": "160ms ease", "purpose": "Colour, border and background transitions." },
+      { "name": "count-swap", "value": "blur(2px) + opacity 0.4 to clear, 220ms ease-out", "purpose": "Live result count changes on the search button and list title." },
+      { "name": "hero-reveal", "value": "clip-path inset top-down 900ms ease-out, 80ms stagger; image settles from scale 1.08 over 1400ms; chips rise at 620ms+", "purpose": "The single authored load moment on the home hero." },
+      { "name": "photo-hover", "value": "scale(1.03) over 700ms ease-out", "purpose": "Collage and news thumbnails on hover." },
+      { "name": "reduced-motion", "value": "durations to 1ms; hero keeps a 240ms fade", "purpose": "prefers-reduced-motion keeps opacity only." }
+    ],
+    "breakpoints": [
+      { "name": "mobile", "value": "760px" },
+      { "name": "tablet", "value": "1024px" },
+      { "name": "laptop", "value": "1180px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one green action per context: search submit, plan a visit, form submits.",
+      "html": "<button class=\"ds-btn ds-btn-primary\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"7.5\"/><path d=\"m20.5 20.5-4.2-4.2\"/></svg>Voir les 5 villas</button>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 0 22px; border: 1px solid transparent; border-radius: 999px; font-family: Figtree, ui-sans-serif, system-ui, sans-serif; font-size: 16px; font-weight: 650; line-height: 1; cursor: pointer; transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1), background-color 160ms ease, border-color 160ms ease; } .ds-btn:active { transform: scale(0.97); } .ds-btn:focus-visible { outline: 2px solid #0b7a44; outline-offset: 2px; } .ds-btn-primary { background: #0b7a44; color: #ffffff; } .ds-btn-primary:hover { background: #08693a; } .ds-btn-primary:active { background: #075c33; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Outlined companion action (compare, call, secondary contact).",
+      "html": "<button class=\"ds-btn-secondary\">Comparer</button>",
+      "css": ".ds-btn-secondary { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 0 22px; border: 1px solid #d3d6d2; border-radius: 999px; background: #ffffff; color: #14181f; font-family: Figtree, ui-sans-serif, system-ui, sans-serif; font-size: 16px; font-weight: 650; line-height: 1; cursor: pointer; transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1), border-color 160ms ease; } .ds-btn-secondary:hover { border-color: #14181f; } .ds-btn-secondary:active { transform: scale(0.97); } .ds-btn-secondary:focus-visible { outline: 2px solid #0b7a44; outline-offset: 2px; }"
+    },
+    {
+      "name": "Soft Button (WhatsApp)",
+      "kind": "button",
+      "refersTo": "button-soft",
+      "description": "Green-tinted pill for the always-reachable agent channel.",
+      "html": "<a class=\"ds-btn-soft\" href=\"#\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7.9 20A9 9 0 1 0 4 16.1L2 22Z\"/><path d=\"M8.5 10.5h.01\"/><path d=\"M12 10.5h.01\"/><path d=\"M15.5 10.5h.01\"/></svg>WhatsApp</a>",
+      "css": ".ds-btn-soft { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 18px; border-radius: 999px; background: #eaf4ee; color: #0b7a44; font-family: Figtree, ui-sans-serif, system-ui, sans-serif; font-size: 15px; font-weight: 650; text-decoration: none; transition: background-color 160ms ease, transform 160ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-btn-soft:hover { background: #d2e9da; } .ds-btn-soft:active { transform: scale(0.97); } .ds-btn-soft:focus-visible { outline: 2px solid #0b7a44; outline-offset: 2px; }"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Form field for visit requests, owner submissions and newsletter.",
+      "html": "<label class=\"ds-field\"><span class=\"ds-field-label\">Votre nom</span><input class=\"ds-input\" placeholder=\"Prénom et nom\"></label>",
+      "css": ".ds-field { display: grid; gap: 6px; font-family: Figtree, ui-sans-serif, system-ui, sans-serif; } .ds-field-label { font-size: 14px; font-weight: 650; color: #14181f; } .ds-input { width: 100%; min-height: 50px; padding: 12px 14px; border: 1px solid #d3d6d2; border-radius: 12px; background: #ffffff; font: inherit; font-size: 16px; color: #14181f; transition: border-color 160ms ease, box-shadow 160ms ease; } .ds-input::placeholder { color: #6b7179; } .ds-input:hover { border-color: #8b919a; } .ds-input:focus { outline: none; border-color: #0b7a44; box-shadow: 0 0 0 3px rgb(11 122 68 / 0.18); }"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "refersTo": "nav",
+      "description": "Pill links in Graphite that fill with the soft band on hover and when current.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\" aria-current=\"page\">Trouver une villa</a><a href=\"#\">Proposer mon bien</a><a href=\"#\">Actualités</a><a href=\"#\">Contact</a></nav>",
+      "css": ".ds-nav { display: flex; gap: 4px; font-family: Figtree, ui-sans-serif, system-ui, sans-serif; } .ds-nav a { padding: 10px 14px; border-radius: 999px; font-size: 15.5px; font-weight: 550; color: #3a4049; text-decoration: none; transition: background-color 160ms ease, color 160ms ease; } .ds-nav a:hover, .ds-nav a[aria-current=\"page\"] { background: #f4f5f3; color: #14181f; } .ds-nav a:focus-visible { outline: 2px solid #0b7a44; outline-offset: 2px; }"
+    },
+    {
+      "name": "Filter Chip",
+      "kind": "chip",
+      "refersTo": "chip-filter",
+      "description": "Toggle filter on the list page; active = ink border on band with a check.",
+      "html": "<div class=\"ds-chips\"><button class=\"ds-chip\" aria-pressed=\"false\">Meublée</button><button class=\"ds-chip\" aria-pressed=\"true\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M20 6 9 17l-5-5\"/></svg>Gardiennage</button></div>",
+      "css": ".ds-chips { display: flex; gap: 8px; } .ds-chip { display: inline-flex; align-items: center; gap: 6px; min-height: 42px; padding: 0 16px; border-radius: 999px; border: 1px solid #d3d6d2; background: #ffffff; color: #14181f; font-family: Figtree, ui-sans-serif, system-ui, sans-serif; font-size: 15px; font-weight: 550; cursor: pointer; transition: border-color 160ms ease, background-color 160ms ease, transform 160ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-chip:hover { border-color: #14181f; } .ds-chip:active { transform: scale(0.97); } .ds-chip[aria-pressed=\"true\"] { border-color: #14181f; background: #f4f5f3; font-weight: 650; } .ds-chip:focus-visible { outline: 2px solid #0b7a44; outline-offset: 2px; }"
+    },
+    {
+      "name": "Listing Card",
+      "kind": "card",
+      "refersTo": "listing-photo",
+      "description": "Containerless card: 4:3 photo at 14px with badge and heart, facts and tabular price below.",
+      "html": "<article class=\"ds-card\"><div class=\"ds-media\"><span class=\"ds-badge\">Meublée</span></div><div class=\"ds-card-body\"><div class=\"ds-card-top\"><h3 class=\"ds-card-title\">Villa à Agodeke</h3><span class=\"ds-ref\">Villa-0001</span></div><p class=\"ds-meta\">Agodeke, Route Nationale N°2</p><p class=\"ds-meta\">4 chambres · 3 salles de bain</p><p class=\"ds-price\">1 050 000 F <span>/ mois</span></p></div></article>",
+      "css": ".ds-card { display: grid; max-width: 360px; font-family: Figtree, ui-sans-serif, system-ui, sans-serif; color: #14181f; } .ds-media { position: relative; aspect-ratio: 4 / 3; border-radius: 14px; background: linear-gradient(135deg, #eceeeb, #d3d6d2); overflow: hidden; } .ds-badge { position: absolute; top: 12px; left: 12px; padding: 6px 11px; border-radius: 999px; background: #ffffff; font-size: 13px; font-weight: 700; line-height: 1; box-shadow: 0 1px 2px rgb(20 24 31 / 0.08), 0 4px 14px -4px rgb(20 24 31 / 0.18); } .ds-card-body { display: grid; gap: 3px; padding-top: 14px; } .ds-card-top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; } .ds-card-title { margin: 0; font-size: 17px; font-weight: 680; letter-spacing: -0.01em; line-height: 1.3; } .ds-ref { font-size: 13px; color: #5f6670; } .ds-meta { margin: 0; font-size: 15px; color: #5f6670; } .ds-price { margin: 6px 0 0; font-size: 17px; font-weight: 750; letter-spacing: -0.01em; font-variant-numeric: tabular-nums; } .ds-price span { font-weight: 450; color: #5f6670; }"
+    },
+    {
+      "name": "Visit Composer Slots",
+      "kind": "custom",
+      "refersTo": "visit-composer",
+      "description": "Signature day and slot pickers; selected state fills solid ink.",
+      "html": "<div class=\"ds-days\"><button class=\"ds-day\"><small>lun.</small><strong>6</strong><em>oct.</em></button><button class=\"ds-day\" aria-pressed=\"true\"><small>mar.</small><strong>7</strong><em>oct.</em></button></div><div class=\"ds-slots\"><button class=\"ds-slot\">10:00</button><button class=\"ds-slot\" aria-pressed=\"true\">11:00</button><button class=\"ds-slot\">12:00</button><button class=\"ds-slot\">14:00</button></div>",
+      "css": ".ds-days { display: flex; gap: 8px; margin-bottom: 12px; font-family: Figtree, ui-sans-serif, system-ui, sans-serif; } .ds-day, .ds-slot { display: grid; place-items: center; border: 1px solid #d3d6d2; background: #ffffff; color: #14181f; font-family: Figtree, ui-sans-serif, system-ui, sans-serif; cursor: pointer; transition: border-color 160ms ease, background-color 160ms ease, color 160ms ease, transform 160ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-day { width: 62px; padding: 9px 0 10px; border-radius: 14px; } .ds-day small { font-size: 12.5px; font-weight: 600; color: #5f6670; } .ds-day strong { font-size: 19px; font-weight: 750; line-height: 1.15; font-variant-numeric: tabular-nums; } .ds-day em { font-style: normal; font-size: 12px; color: #5f6670; } .ds-slots { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; max-width: 340px; } .ds-slot { min-height: 40px; border-radius: 10px; font-size: 14.5px; font-weight: 600; font-variant-numeric: tabular-nums; } .ds-day:hover, .ds-slot:hover { border-color: #14181f; } .ds-day:active, .ds-slot:active { transform: scale(0.96); } .ds-day[aria-pressed=\"true\"], .ds-slot[aria-pressed=\"true\"] { background: #14181f; border-color: #14181f; color: #ffffff; } .ds-day[aria-pressed=\"true\"] small, .ds-day[aria-pressed=\"true\"] em { color: rgb(255 255 255 / 0.72); } .ds-day:focus-visible, .ds-slot:focus-visible { outline: 2px solid #0b7a44; outline-offset: 2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Straight Listing",
+    "overview": "228 Villa plays the category standard for property rental with no novelty identity: a white ground, deep ink type, real phone photographs of the houses, and one green that only ever means \"act here\" or \"this is live\". The references are Airbnb and Plum Guide for photo-first listings and an obvious booking path, SeLoger and Rightmove for filters up front and plain, comparable numbers. Everything is in French, light theme only.\n\nDensity is moderate and task-first. The house is the proof, so photographs lead every card and page, and facts (monthly price in F CFA, bedrooms, bathrooms, furnishing, utilities) sit directly under them in one sans family with tabular numerals. Surfaces are flat and separated by 1px hairlines or the soft neutral band; shadow is reserved for things that genuinely float above the page.\n\nMotion is quiet and physical: a single ease-out curve, 160ms press feedback at scale 0.97, and one authored load moment (the hero collage revealing top-down by clip-path). Reduced motion keeps only opacity.",
+    "keyCharacteristics": [
+      "White ground, ink text, a single action green; no second brand colour.",
+      "Figtree alone, weights 400 to 780, tabular numerals on every price and count.",
+      "Photos at a gentle 14px radius; controls are pills; containers at 20px.",
+      "Flat by default: hairlines and the neutral band carry structure, shadows only on floating surfaces.",
+      "Authored line icons at 1.75 stroke, inline SVG sprite.",
+      "One dark band (owners) as the only inverted surface on light pages."
+    ],
+    "rules": [
+      { "name": "The One Green Rule", "body": "Green marks an action or a live state, never decoration, section fills, or headings. If it isn't clickable, focused, selected, or confirming something, it isn't green.", "section": "colors" },
+      { "name": "The Neutral Ground Rule", "body": "Structure comes from white, the soft band, and hairlines. No tinted section backgrounds beyond `band` and the single night band.", "section": "colors" },
+      { "name": "The Tabular Rule", "body": "Every price, count, date, slot and reference uses tabular numerals so figures line up across cards and the comparison table.", "section": "typography" },
+      { "name": "The Sentence Case Rule", "body": "Labels are sentence case at normal tracking; no uppercase tracked micro-labels.", "section": "typography" },
+      { "name": "The Only-What-Floats Rule", "body": "A shadow means the surface sits above the page. Inline cards, panels and sections never get one; on mobile the booking card itself drops its shadow for a hairline once it stops floating.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do lead every listing and page with a real photograph at 14px radius before any copy.",
+      "Do keep green for actions, focus and live states; everything else is ink, grey, white or band.",
+      "Do set prices, counts and slots in tabular numerals, the unit (\"/ mois\") in muted at 450.",
+      "Do separate content with 1px hairlines (`line`) and the soft band instead of shadows.",
+      "Do gate hover effects behind `(hover: hover) and (pointer: fine)` and give every pressable a 0.97 press scale on the ease-out curve.",
+      "Do use the inline line-icon sprite at 1.75 stroke, 16 / 20 / 24px."
+    ],
+    "donts": [
+      "Don't introduce a second typeface or a serif display; Figtree carries every role.",
+      "Don't put shadows on inline cards, grids or sections; only floating surfaces get one.",
+      "Don't use green as a background for sections, headings or decorative fills.",
+      "Don't add uppercase tracked labels above headings; headings stand alone.",
+      "Don't add dark themes or tinted section bands beyond `band` and the single night band."
+    ]
+  }
+}

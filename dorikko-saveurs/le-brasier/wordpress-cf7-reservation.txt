@@ -1,0 +1,99 @@
+╔══════════════════════════════════════════════════════════════════╗
+║  DORIKKO · Formulaire de réservation pour CONTACT FORM 7 (gratuit) ║
+╚══════════════════════════════════════════════════════════════════╝
+
+Plugin : « Contact Form 7 » (gratuit). Installe-le, puis :
+Contact → Ajouter → onglet « Formulaire » : colle le bloc [1].
+Onglet « E-mail » : recopie [2] (mail au resto) + active « E-mail (2) » et recopie [3] (auto-réponse client).
+reCAPTCHA v3 : Contact → Intégration → reCAPTCHA → colle tes clés (v3). Rien à mettre dans le formulaire (invisible).
+Affiche le formulaire avec son shortcode [contact-form-7 id="..."] (ou widget shortcode Elementor).
+Le style : colle le bloc [4] dans Apparence → Personnaliser → CSS additionnel (ou Elementor → Réglages du site → CSS perso).
+
+
+────────────────────────────────────────────────────────────────────
+[1] ONGLET « FORMULAIRE »
+────────────────────────────────────────────────────────────────────
+<div class="dko-cf7">
+<p class="dko-row2">
+  <label>Nom complet
+    [text* nom placeholder "Votre nom"]</label>
+  <label>Téléphone
+    [tel* telephone placeholder "Téléphone"]</label>
+</p>
+<label>E-mail
+  [email* email placeholder "vous@exemple.com"]</label>
+<p class="dko-row2">
+  <label>Date
+    [date date]</label>
+  <label>Nombre de personnes
+    [select personnes "2 personnes" "3 personnes" "4 personnes" "5 personnes" "6 et plus"]</label>
+</p>
+<label>Message (allergies, occasion…)
+  [textarea message placeholder "Une demande particulière ?"]</label>
+[submit "Envoyer ma demande"]
+</div>
+
+
+────────────────────────────────────────────────────────────────────
+[2] ONGLET « E-MAIL » — message reçu par le restaurant
+────────────────────────────────────────────────────────────────────
+Pour (To) :        info@dorikko-saveurs.com
+De (From) :        Dorikko-Saveurs <wordpress@dorikko-saveurs.com>
+Objet (Subject) :  Nouvelle réservation — [nom]
+En-têtes additionnels (Additional headers) :
+                   Reply-To: [email]
+Corps du message (Message body) :
+Nouvelle demande de réservation :
+
+Nom : [nom]
+Téléphone : [telephone]
+E-mail : [email]
+Date : [date]
+Personnes : [personnes]
+Message : [message]
+
+
+────────────────────────────────────────────────────────────────────
+[3] « E-MAIL (2) » — auto-réponse envoyée au client (coche « Utiliser l'e-mail (2) »)
+────────────────────────────────────────────────────────────────────
+Pour (To) :        [email]
+De (From) :        Dorikko-Saveurs <info@dorikko-saveurs.com>
+Objet (Subject) :  Votre réservation chez Dorikko-Saveurs
+Corps du message :
+Bonjour [nom],
+
+Merci pour votre demande de réservation pour le [date] ([personnes]).
+Nous vous rappelons très vite au numéro indiqué pour confirmer votre table.
+
+À très bientôt,
+Dorikko-Saveurs — Kpalimé
++228 91 69 84 29
+
+
+────────────────────────────────────────────────────────────────────
+[4] CSS — style « braise » (CSS additionnel / CSS perso Elementor)
+────────────────────────────────────────────────────────────────────
+.dko-cf7{max-width:700px;margin:0 auto;background:#1c150e;border:1px solid rgba(243,232,214,.14);
+  padding:42px;color:#f3e8d6;font-family:Arial,Helvetica,sans-serif}
+.dko-cf7 label{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+  color:#b6a489;margin-bottom:16px}
+.dko-cf7 .dko-row2{display:flex;gap:14px;margin:0}
+.dko-cf7 .dko-row2 label{flex:1}
+.dko-cf7 .wpcf7-form-control-wrap{display:block;margin-top:8px}
+.dko-cf7 input,.dko-cf7 select,.dko-cf7 textarea{width:100%;background:#15100b;
+  border:1px solid rgba(243,232,214,.16);color:#f3e8d6;padding:14px 15px;font-size:15px;
+  font-family:inherit;border-radius:0;box-sizing:border-box}
+.dko-cf7 textarea{min-height:96px;resize:vertical}
+.dko-cf7 input::placeholder,.dko-cf7 textarea::placeholder{color:#b6a489}
+.dko-cf7 input:focus,.dko-cf7 select:focus,.dko-cf7 textarea:focus{outline:none;border-color:#c2511f}
+.dko-cf7 .wpcf7-submit{width:100%;margin-top:8px;background:#c2511f;color:#fff;border:none;
+  padding:16px;font-size:13px;letter-spacing:.18em;text-transform:uppercase;font-weight:bold;
+  cursor:pointer;transition:.3s;font-family:inherit}
+.dko-cf7 .wpcf7-submit:hover{background:#e07a2c}
+.dko-cf7 select option{color:#15100b}
+.wpcf7 .wpcf7-response-output{border-color:rgba(243,232,214,.3)!important;color:#f3e8d6;
+  margin:18px 0 0;font-size:14px}
+@media(max-width:560px){.dko-cf7{padding:26px}.dko-cf7 .dko-row2{flex-direction:column;gap:0}}
+
+Astuce : pour rediriger vers une page « merci » après envoi, ajoute le plugin
+« Redirection for Contact Form 7 » (gratuit), ou garde le message de succès par défaut.
