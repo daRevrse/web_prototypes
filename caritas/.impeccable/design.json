@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-30T16:10:00Z",
+  "title": "Design System: Caritas Africa",
+  "extensions": {
+    "colorMeta": {
+      "caritas-red": { "role": "primary", "displayName": "Caritas Red", "canonical": "#7c0800", "tonalRamp": ["#2e0300", "#540500", "#650600", "#7c0800", "#a8453c", "#d4938b", "#efd6d2", "#f8eeec"] },
+      "caritas-red-hover": { "role": "primary", "displayName": "Caritas Red Hover", "canonical": "#650600" },
+      "caritas-red-press": { "role": "primary", "displayName": "Caritas Red Press", "canonical": "#540500" },
+      "red-wash": { "role": "primary", "displayName": "Red Wash", "canonical": "#f8eeec" },
+      "red-tint": { "role": "primary", "displayName": "Red Tint", "canonical": "#efd6d2" },
+      "red-on-night": { "role": "primary", "displayName": "Red on Night", "canonical": "#f0a59b" },
+      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "#17181a", "tonalRamp": ["#17181a", "#212226", "#3a3c40", "#5d6066", "#8b8e93", "#cfcdc8", "#e3e2de", "#f3f2ef"] },
+      "ink-soft": { "role": "neutral", "displayName": "Ink Soft", "canonical": "#3a3c40" },
+      "muted": { "role": "neutral", "displayName": "Muted", "canonical": "#5d6066" },
+      "faint": { "role": "neutral", "displayName": "Faint", "canonical": "#8b8e93" },
+      "line": { "role": "neutral", "displayName": "Line", "canonical": "#e3e2de" },
+      "line-strong": { "role": "neutral", "displayName": "Line Strong", "canonical": "#cfcdc8" },
+      "stone": { "role": "neutral", "displayName": "Stone", "canonical": "#f3f2ef", "tonalRamp": ["#5c5a55", "#7d7a74", "#9d9a93", "#bab7b0", "#cfcdc8", "#e3e2de", "#e9e7e2", "#f3f2ef"] },
+      "stone-deep": { "role": "neutral", "displayName": "Stone Deep", "canonical": "#e9e7e2" },
+      "white": { "role": "neutral", "displayName": "White", "canonical": "#ffffff" },
+      "night": { "role": "neutral", "displayName": "Night", "canonical": "#17181a" },
+      "night-raised": { "role": "neutral", "displayName": "Night Raised", "canonical": "#212226" },
+      "night-line": { "role": "neutral", "displayName": "Night Line", "canonical": "#35373c" },
+      "night-muted": { "role": "neutral", "displayName": "Night Muted", "canonical": "#a9abb0" },
+      "night-text": { "role": "neutral", "displayName": "Night Text", "canonical": "#e4e5e7" },
+      "error": { "role": "error", "displayName": "Error", "canonical": "#b42318" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Home hero tagline only; 2.2rem at 480px and below." },
+      "page-title": { "displayName": "Page Title", "purpose": "Inner-page h1 in the stone title band." },
+      "headline": { "displayName": "Headline", "purpose": "Section heads." },
+      "title": { "displayName": "Title", "purpose": "Sub-heads, list heads, zone and value names, publication titles." },
+      "lead": { "displayName": "Lead", "purpose": "One sentence under a display or page title, Ink Soft." },
+      "body": { "displayName": "Body", "purpose": "Running text; 18px in reading sections, 16.5px under 720px." },
+      "quote": { "displayName": "Quote", "purpose": "Source Serif 4 italic for mission, vision and institutional quotes." },
+      "citation": { "displayName": "Citation", "purpose": "Uppercase red scripture reference under a quote; never a label above a heading." },
+      "label": { "displayName": "Label", "purpose": "dt labels, metadata, footnotes; tabular lining figures for numbers." }
+    },
+    "shadows": [
+      { "name": "pop", "value": "0 2px 4px rgb(23 24 26 / 0.06), 0 18px 40px -12px rgb(23 24 26 / 0.28)", "purpose": "Overlays only: nav dropdown and toast." },
+      { "name": "cover", "value": "0 1px 2px rgb(23 24 26 / 0.08), 0 20px 40px -20px rgb(23 24 26 / 0.35)", "purpose": "Featured publication cover, a printed object on the page." },
+      { "name": "focus-halo", "value": "0 0 0 3px rgb(124 8 0 / 0.16)", "purpose": "Input focus, with the border turning Caritas Red." }
+    ],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(0.23, 1, 0.32, 1)", "purpose": "Default curve for every transition and entrance." },
+      { "name": "ease-in-out", "value": "cubic-bezier(0.77, 0, 0.175, 1)", "purpose": "Declared in tokens; not currently used by the build." },
+      { "name": "press", "value": "transform scale(0.97) 160ms ease-out", "purpose": "Button press (icon buttons 0.94, file links 0.96)." },
+      { "name": "nav-underline", "value": "scaleX 220ms ease-out from left", "purpose": "Red 3px marker under nav links." },
+      { "name": "dropdown", "value": "opacity + translateY(-4px) scale(0.98) 180ms ease-out", "purpose": "Menu opens from its trigger." },
+      { "name": "slide-rule", "value": "transform 240ms ease-out", "purpose": "Explorer tab rule and segmented filter thumb." },
+      { "name": "drawer", "value": "translateX 280ms ease-out", "purpose": "Mobile navigation drawer." },
+      { "name": "hero-wipe", "value": "clip-path inset from right, 1000ms ease-out", "purpose": "The single load moment, hero photograph." },
+      { "name": "rise", "value": "opacity + translateY(12px) 380ms ease-out, 40ms stagger", "purpose": "Library tiles entering after a filter change." },
+      { "name": "reduced-motion", "value": "durations 1ms; hero fades 240ms", "purpose": "prefers-reduced-motion keeps opacity only." }
+    ],
+    "breakpoints": [
+      { "name": "container", "value": "1280px" },
+      { "name": "lg", "value": "1200px" },
+      { "name": "md", "value": "1040px" },
+      { "name": "sm", "value": "720px" },
+      { "name": "xs", "value": "480px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Caritas Red action: donate, subscribe.",
+      "html": "<a class=\"ds-btn ds-btn-red\" href=\"#\">Faire un don</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 50px; padding: 0 24px; border: 1.5px solid transparent; border-radius: 2px; font-family: 'Libre Franklin', system-ui, sans-serif; font-size: 15.5px; font-weight: 680; line-height: 1; text-decoration: none; transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1), background-color 160ms ease, color 160ms ease; } .ds-btn-red { background: #7c0800; color: #ffffff; } .ds-btn-red:hover { background: #650600; } .ds-btn-red:active { background: #540500; transform: scale(0.97); } .ds-btn:focus-visible { outline: 2px solid #7c0800; outline-offset: 3px; }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Ink-outlined companion to the primary action.",
+      "html": "<a class=\"ds-btn-line\" href=\"#\">Découvrir notre réseau</a>",
+      "css": ".ds-btn-line { display: inline-flex; align-items: center; justify-content: center; min-height: 50px; padding: 0 24px; border: 1.5px solid #17181a; border-radius: 2px; background: #ffffff; color: #17181a; font-family: 'Libre Franklin', system-ui, sans-serif; font-size: 15.5px; font-weight: 680; line-height: 1; text-decoration: none; transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1), background-color 160ms ease, color 160ms ease; } .ds-btn-line:hover { background: #17181a; color: #ffffff; } .ds-btn-line:active { transform: scale(0.97); } .ds-btn-line:focus-visible { outline: 2px solid #7c0800; outline-offset: 3px; }"
+    },
+    {
+      "name": "Ink Button",
+      "kind": "button",
+      "refersTo": "button-ink",
+      "description": "Solid ink action, used for reporting abuse.",
+      "html": "<a class=\"ds-btn-ink\" href=\"#\">Signaler un abus</a>",
+      "css": ".ds-btn-ink { display: inline-flex; align-items: center; justify-content: center; min-height: 50px; padding: 0 24px; border: 1.5px solid transparent; border-radius: 2px; background: #17181a; color: #ffffff; font-family: 'Libre Franklin', system-ui, sans-serif; font-size: 15.5px; font-weight: 680; line-height: 1; text-decoration: none; transition: transform 160ms cubic-bezier(0.23, 1, 0.32, 1), background-color 160ms ease; } .ds-btn-ink:hover { background: #2a2c30; } .ds-btn-ink:active { transform: scale(0.97); } .ds-btn-ink:focus-visible { outline: 2px solid #7c0800; outline-offset: 3px; }"
+    },
+    {
+      "name": "More Link",
+      "kind": "custom",
+      "refersTo": "more",
+      "description": "Underlined text link with trailing arrow; turns red on hover.",
+      "html": "<a class=\"ds-more\" href=\"#\">Toute la bibliothèque <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></a>",
+      "css": ".ds-more { display: inline-flex; align-items: center; gap: 8px; font-family: 'Libre Franklin', system-ui, sans-serif; font-weight: 680; font-size: 15.5px; color: #17181a; text-decoration: underline; text-decoration-color: #cfcdc8; text-decoration-thickness: 1.5px; text-underline-offset: 6px; transition: text-decoration-color 160ms ease, color 160ms ease; } .ds-more svg { transition: transform 200ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-more:hover { color: #7c0800; text-decoration-color: #7c0800; } .ds-more:hover svg { transform: translateX(3px); } .ds-more:focus-visible { outline: 2px solid #7c0800; outline-offset: 3px; }"
+    },
+    {
+      "name": "File Link",
+      "kind": "chip",
+      "refersTo": "file-link",
+      "description": "Per-language PDF download chip.",
+      "html": "<a class=\"ds-file\" href=\"#\"><svg width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z\"/><path d=\"M14 2v4a2 2 0 0 0 2 2h4\"/><path d=\"M12 18v-6\"/><path d=\"m9 15 3 3 3-3\"/></svg>PDF FR</a>",
+      "css": ".ds-file { display: inline-flex; align-items: center; gap: 6px; min-height: 34px; padding: 0 11px; border: 1px solid #cfcdc8; border-radius: 2px; background: #ffffff; color: #17181a; font-family: 'Libre Franklin', system-ui, sans-serif; font-size: 13.5px; font-weight: 650; text-decoration: none; transition: border-color 160ms ease, color 160ms ease, transform 160ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-file svg { color: #7c0800; } .ds-file:hover { border-color: #7c0800; color: #7c0800; } .ds-file:active { transform: scale(0.96); } .ds-file:focus-visible { outline: 2px solid #7c0800; outline-offset: 3px; }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Squared field with red focus border and halo.",
+      "html": "<input class=\"ds-input\" type=\"email\" placeholder=\"Votre adresse e-mail\">",
+      "css": ".ds-input { width: 100%; min-height: 50px; padding: 12px 14px; border: 1.5px solid #cfcdc8; border-radius: 2px; background: #ffffff; color: #17181a; font-family: 'Libre Franklin', system-ui, sans-serif; font-size: 16px; transition: border-color 160ms ease, box-shadow 160ms ease; } .ds-input::placeholder { color: #6a6d72; } .ds-input:hover { border-color: #17181a; } .ds-input:focus, .ds-input:focus-visible { outline: none; border-color: #7c0800; box-shadow: 0 0 0 3px rgb(124 8 0 / 0.16); }"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Header links with a red 3px marker scaling in from the left.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\" aria-current=\"page\">Qui sommes-nous</a><a href=\"#\">Notre réseau</a><a href=\"#\">Ressources</a><a href=\"#\">Actualités</a></nav>",
+      "css": ".ds-nav { display: flex; gap: 2px; height: 84px; align-items: stretch; background: #ffffff; border-bottom: 1px solid #e3e2de; font-family: 'Libre Franklin', system-ui, sans-serif; } .ds-nav a { position: relative; display: inline-flex; align-items: center; padding: 0 14px; font-size: 15.5px; font-weight: 600; color: #17181a; text-decoration: none; } .ds-nav a::after { content: ''; position: absolute; left: 14px; right: 14px; bottom: -1px; height: 3px; background: #7c0800; transform: scaleX(0); transform-origin: left; transition: transform 220ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-nav a:hover::after, .ds-nav a[aria-current='page']::after { transform: scaleX(1); } .ds-nav a:focus-visible { outline: 2px solid #7c0800; outline-offset: -3px; }"
+    },
+    {
+      "name": "Zone Tabs",
+      "kind": "custom",
+      "refersTo": "network-explorer",
+      "description": "Signature: ecclesial zone tabs with a red rule under the selected tab.",
+      "html": "<div class=\"ds-tabs\" role=\"tablist\"><button role=\"tab\" aria-selected=\"true\"><strong>AMECEA</strong><span>Afrique de l'Est</span></button><button role=\"tab\" aria-selected=\"false\"><strong>IMBISA</strong><span>Afrique australe</span></button><button role=\"tab\" aria-selected=\"false\"><strong>ACEAC</strong><span>Afrique centrale</span></button></div>",
+      "css": ".ds-tabs { display: flex; border-bottom: 1px solid #cfcdc8; font-family: 'Libre Franklin', system-ui, sans-serif; } .ds-tabs button { flex: 1 1 0; display: grid; gap: 2px; justify-items: start; padding: 14px 18px 16px; border: 0; background: none; text-align: left; color: #5d6066; cursor: pointer; margin-bottom: -1px; border-bottom: 3px solid transparent; transition: color 160ms ease, background-color 160ms ease; } .ds-tabs strong { font-size: 16px; font-weight: 760; letter-spacing: 0.01em; } .ds-tabs span { font-size: 13px; line-height: 1.35; } .ds-tabs button[aria-selected='true'] { color: #17181a; border-bottom-color: #7c0800; } .ds-tabs button:hover { color: #17181a; background: #f3f2ef; } .ds-tabs button:focus-visible { outline: 2px solid #7c0800; outline-offset: -3px; }"
+    },
+    {
+      "name": "Ruled Data Group",
+      "kind": "card",
+      "refersTo": "ruled-ledger",
+      "description": "The non-card container: 3px ink rule over dt/dd cells split by hairlines.",
+      "html": "<dl class=\"ds-ledger\"><div><dt>Président</dt><dd>Mgr Pierre Cibambo Ntakobajira</dd></div><div><dt>Vice-président</dt><dd>M. Santos Gotine</dd></div><div><dt>Trésorier</dt><dd>M. Philippe Yaovi Ahouanye</dd></div></dl>",
+      "css": ".ds-ledger { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 0; border-top: 3px solid #17181a; font-family: 'Libre Franklin', system-ui, sans-serif; color: #17181a; } .ds-ledger div { padding: 20px 20px 22px 0; border-bottom: 1px solid #e3e2de; } .ds-ledger div + div { padding-left: 20px; border-left: 1px solid #e3e2de; } .ds-ledger dt { font-size: 13.5px; color: #5d6066; } .ds-ledger dd { margin: 3px 0 0; font-weight: 720; font-size: 1.08rem; line-height: 1.35; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Public Record",
+    "overview": "Caritas Africa is presented the way the confederation's best members present themselves: as an accountable institution that keeps its papers in order. White paper, near-black ink, and a single Caritas red taken from the logo. Documentary photography carries the humanity; the type and the rules carry the credibility. Nothing is ornamental, nothing is costumed as religious décor; faith appears as scripture set plainly in a serif, cited like any other source.\n\nThe system is the NGO category standard, deliberately. Density is that of a well-edited annual report: generous section spacing, tight heavy headings, long readable measures, and information laid out in ruled lists and definition grids rather than in cards. Depth is almost entirely absent; structure comes from hairlines, a heavier 3px rule over lists and data groups, and tonal bands (stone, night, red). The page is framed by dark ink at top (utility bar) and bottom (footer), and donation and safeguarding stay reachable on every page.\n\nLight theme only. Copy is French and must tolerate the longer strings of the EN and PT publications.",
+    "keyCharacteristics": [
+      "White ground, ink text, one red for brand, primary action and state.",
+      "Libre Franklin for all structure at 680 to 800 weight with negative tracking; Source Serif 4 reserved for scripture, statutes and institutional quotes.",
+      "Near-square geometry: 2px corners on controls, photographs never rounded.",
+      "Hairlines and 3px rules instead of cards and shadows.",
+      "Documentary photographs, always credited on a dark caption tab.",
+      "Authored line icons at 1.75 stroke, never glyphs or emoji."
+    ],
+    "rules": [
+      { "name": "The One Red Rule", "body": "Caritas Red is the only chromatic color in the interface. It marks brand, the primary action, and \"you are here\"; if an element is red it is either clickable, current, or the logo's voice. No second accent, no gradients.", "section": "colors" },
+      { "name": "The Band Rule", "body": "Surfaces change by whole-width bands (white, stone, night, red), never by floating tinted boxes. The red band is reserved for the donation appeal.", "section": "colors" },
+      { "name": "The Serif Is Scripture Rule", "body": "Source Serif 4 appears only for scripture, the statutes, institutional quotes and publication subtitles. Headings, UI and data are always Franklin.", "section": "typography" },
+      { "name": "The Heavy-and-Tight Rule", "body": "Headings run 700 to 800 with negative tracking (-0.01em to -0.035em) and `text-wrap: balance`. Light or wide-tracked headings break the voice.", "section": "typography" },
+      { "name": "The Ruled Ledger Rule", "body": "Lists and data are laid out as ruled rows (1px Line between items, 3px Ink over the group), not as cards.", "section": "layout" },
+      { "name": "The Overlays-Only Rule", "body": "A shadow means \"this sits above the page\": menus, toasts, a printed cover. Sections, panels, list items and cards stay flat.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do keep Caritas Red for brand, primary action, and current-state markers, on white or as the one full-width donation band.",
+      "Do set headings in Libre Franklin 700 to 800 with negative tracking, and reserve Source Serif 4 for scripture, statutes and institutional quotes.",
+      "Do build lists and data as ruled rows: 1px Line between rows, a 3px Ink rule over the group, vertical hairlines between grid cells.",
+      "Do use 2px corners on every control and leave photographs square.",
+      "Do credit every photograph on its dark caption tab.",
+      "Do use the ease-out curve (cubic-bezier(0.23, 1, 0.32, 1)), 160ms presses at 0.97, and reduce motion to opacity when the user asks.",
+      "Do keep \"Faire un don\" and \"Signaler un abus\" reachable from every page's header or utility bar."
+    ],
+    "donts": [
+      "Don't introduce a second accent color, gradients, or tints of red as decorative fills.",
+      "Don't put content in shadowed cards; shadows are for overlays and the printed cover only.",
+      "Don't round photographs or use pill-shaped buttons.",
+      "Don't use religious ornament (crosses, halos, stained-glass textures) as decoration; the logo is the only emblem.",
+      "Don't use emoji or text glyphs as icons; use the 1.75-stroke line set.",
+      "Don't place small uppercase labels above headings; uppercase red is for the scripture citation beneath a quote."
+    ]
+  }
+}
