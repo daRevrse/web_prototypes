@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr" data-sky="night">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bar & Restaurant — Ibiza Bliss Resort</title>
+<meta name="description" content="Bar &amp; restaurant d’Ibiza Bliss Resort à Kpogan : produits frais et locaux, cocktails maison, tous les jours dès 17h.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#120E12">
+<link rel="icon" href="assets/logo-ibr.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/ibr.css">
+<link rel="stylesheet" href="assets/galerie.css">
+<link rel="stylesheet" href="assets/residence.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body class="res-page">
+
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="site-header" id="top">
+  <div class="site-header__inner wrap">
+    <a class="brand" href="index.html" aria-label="Ibiza Bliss Resort, accueil">
+      <img src="assets/logo-ibr.png" alt="" width="56" height="41">
+      <span class="brand__name">Ibiza Bliss<small>Resort · Kpogan</small></span>
+    </a>
+
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="restaurant.html" aria-current="page">Restaurant</a>
+      <a href="soirees.html">Soirées</a>
+      <a href="index.html#mariages">Événements</a>
+      <a href="index.html#residences">Résidences</a>
+      <a href="galerie.html">Galerie</a>
+    </nav>
+
+    <div class="site-header__actions">
+      <a class="btn btn--sm" href="reserver.html">Réserver</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="menu" id="menu" hidden>
+  <div class="menu__inner wrap">
+    <nav aria-label="Menu">
+      <ol class="menu__list">
+        <li><a href="restaurant.html" aria-current="page">Restaurant</a></li>
+        <li><a href="soirees.html">Soirées</a></li>
+        <li><a href="index.html#mariages">Événements</a></li>
+        <li><a href="index.html#residences">Résidences</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+      </ol>
+    </nav>
+    <div class="menu__foot">
+      <a class="btn" href="reserver.html">Réserver</a>
+      <p><a href="tel:+22896699191">96 69 91 91</a> · <a href="tel:+22870819191">70 81 91 91</a><br><a href="mailto:info@ibizablissresort.com">info@ibizablissresort.com</a></p>
+    </div>
+  </div>
+</div>
+
+<main class="res wrap" id="contenu">
+  <div class="res__head">
+    <div>
+      <h1 class="res__title">Bar &amp; Restaurant</h1>
+      <p class="res__lede">Saveurs et convivialité, tous les jours dès 17h.</p>
+      <p class="live-status" id="resto-live"><span class="live__dot" aria-hidden="true"></span><span>Tous les jours de 17h à 23h, minuit le week-end</span></p>
+    </div>
+    <div class="res__actions">
+      <a class="btn btn--terra" href="reserver.html?type=restaurant">Réserver une table <span class="arrow" aria-hidden="true"></span></a>
+      <a class="btn btn--line" href="#carte">Voir la carte</a>
+    </div>
+  </div>
+  <div class="res__hero">
+    <figure style="--pos:50% 55%"><img src="assets/img/restaurant/resto-09.jpg" alt="Le bar : étagères, bouteilles et écran" width="1600" height="1067" fetchpriority="high"></figure>
+    <figure style="--pos:50% 50%"><img src="assets/img/restaurant/resto-12.jpg" alt="Poulets grillés sur la braise" width="1337" height="891" loading="lazy"></figure>
+    <figure style="--pos:50% 55%"><img src="assets/img/restaurant/resto-06.jpg" alt="Cocktail rouge au comptoir" width="1600" height="2400" loading="lazy"></figure>
+  </div>
+  <div class="res__grid">
+    <div class="res__body">
+      <p class="res__intro">Une cuisine où authenticité, saveurs et convivialité se rencontrent&nbsp;: un repas entre amis, un dîner à deux ou un moment en famille.</p>
+      <p>Nos chefs mettent à l’honneur des produits frais, de saison et locaux, pour une cuisine généreuse et raffinée, entre traditions et touches contemporaines.</p>
+      <p>Amateur de viandes savoureuses, de poissons délicats ou de plats végétariens&nbsp;: la carte saura combler toutes vos envies. Côté bar, cocktails maison, jus frais et bières locales.</p>
+    </div>
+    <aside class="res__aside" aria-label="Horaires et réservation">
+      <h2>Horaires</h2>
+      <dl class="facts2">
+        <div><dt>Lundi – vendredi</dt><dd>17h – 23h</dd></div>
+        <div><dt>Samedi, dimanche</dt><dd>17h – minuit</dd></div>
+      </dl>
+      <a class="btn btn--terra" href="reserver.html?type=restaurant">Réserver une table <span class="arrow" aria-hidden="true"></span></a>
+      <a class="btn btn--outline" href="https://ibizablissresort.com/pdf" download>Télécharger la carte</a>
+    </aside>
+  </div>
+  <section class="res__section" id="carte" aria-labelledby="carte-title">
+    <h2 class="res__h2" id="carte-title">La carte</h2>
+    <div class="gal__filters carte__tabs" role="tablist" aria-label="Rubriques de la carte">
+      <button type="button" class="gal-filter" role="tab" id="tab-entrees" aria-controls="carte-entrees" aria-selected="true">Entrées</button>
+      <button type="button" class="gal-filter" role="tab" id="tab-plats" aria-controls="carte-plats" aria-selected="false" tabindex="-1">Plats de résistance</button>
+      <button type="button" class="gal-filter" role="tab" id="tab-desserts" aria-controls="carte-desserts" aria-selected="false" tabindex="-1">Desserts</button>
+      <button type="button" class="gal-filter" role="tab" id="tab-boissons" aria-controls="carte-boissons" aria-selected="false" tabindex="-1">Boissons</button>
+    </div>
+    <div class="carte__panel" role="tabpanel" id="carte-entrees" aria-labelledby="tab-entrees">
+      <ul class="dishes">
+        <li><h3>Salade Ibiza</h3><p>Laitue, concombre, oignon, olives noires, carotte, œuf, poulet</p></li>
+        <li><h3>Salade poulet grillé avocat</h3><p>Tomate, laitue, poulet grillé, persil</p></li>
+        <li><h3>Salade impériale au poulet</h3><p>Poulet grillé, sauce César maison, laitue, croûtons, parmesan râpé</p></li>
+        <li><h3>Salade italienne</h3><p>Concombre, oignon, carotte, pâtes, haricots, petits pois, maïs doux, sauce mayonnaise</p></li>
+      </ul>
+    </div>
+    <div class="carte__panel" role="tabpanel" id="carte-plats" aria-labelledby="tab-plats" hidden>
+      <ul class="dishes">
+        <li><h3>Volaille</h3><p>Poulet, poulet grillé, frites</p></li>
+        <li><h3>Viande</h3><p>Steak au poivre ou grillé, porc grillé ou frit, mouton</p></li>
+        <li><h3>Plats locaux</h3><p>Gboma, djekoumé poulet ou mouton</p></li>
+        <li><h3>Fruits de mer</h3><p>Brochettes de crevettes, poisson du jour</p></li>
+        <li><h3>Accompagnements</h3><p>Frites, légumes sautés, pommes sautées, aloco, riz, ignames</p></li>
+      </ul>
+    </div>
+    <div class="carte__panel" role="tabpanel" id="carte-desserts" aria-labelledby="tab-desserts" hidden>
+      <ul class="dishes">
+        <li><h3>Crêpe</h3><p>Fromage, jambon</p></li>
+        <li><h3>Gâteau flan</h3><p>Lait, œufs</p></li>
+      </ul>
+    </div>
+    <div class="carte__panel" role="tabpanel" id="carte-boissons" aria-labelledby="tab-boissons" hidden>
+      <ul class="dishes">
+        <li><h3>Mojito</h3><p>Rhum blanc, citron vert, menthe, sucre de canne, eau gazeuse</p></li>
+        <li><h3>Tequila sunrise</h3><p>Tequila, jus d’orange, sirop de grenadine</p></li>
+        <li><h3>Bora-bora</h3><p>Fruit de la passion, jus d’ananas, jus de citron, grenadine</p></li>
+        <li><h3>Ibiza Bliss</h3><p>Sucre de canne, ananas, orange, gingembre</p></li>
+        <li><h3>Piña colada</h3><p>Rhum blanc ou ambré, jus d’ananas, lait de coco</p></li>
+        <li><h3>Lemon martini</h3><p>Vodka, jus de citron, zeste de citron</p></li>
+        <li><h3>Virgin mojito</h3><p>Citron vert, menthe, sucre, eau gazeuse ou limonade</p></li>
+        <li><h3>Jus frais</h3><p>Ananas, orange, mangue</p></li>
+        <li><h3>Jus mixte</h3><p>Ananas, orange, pastèque</p></li>
+        <li><h3>Bières locales</h3><p>Eku, Guinness, Awoyo</p></li>
+        <li><h3>Bières importées</h3><p>Heineken, Desperados, Modelo, Corona, Budweiser, Stella Artois</p></li>
+        <li><h3>Bière pression</h3><p>Monaco, Tango, Valse</p></li>
+        <li><h3>Shots</h3><p>Tequila, vodka, Campari, Dotedji, R&amp;R, Grant’s, Bacardi, Jim Beam, Hennessy, Glenfiddich, Jack Daniel’s, J&amp;B, Black Label, Martini</p></li>
+      </ul>
+    </div>
+  </section>
+  <section class="res__section" aria-labelledby="photos-title">
+    <h2 class="res__h2" id="photos-title">En cuisine et au bar</h2>
+  <ul class="gal__grid" id="photos">
+      <li class="gal__item"><button type="button" class="gal__btn" data-full="assets/img/restaurant/resto-01.jpg" data-cat-label="Bar &amp; Restaurant"><img src="assets/img/restaurant/min/resto-01.jpg" alt="Assiettes servies sur un plateau : salades, légumes et frites" width="720" height="333" loading="lazy" decoding="async"></button></li>
+      <li class="gal__item"><button type="button" class="gal__btn" data-full="assets/img/restaurant/resto-02.jpg" data-cat-label="Bar &amp; Restaurant"><img src="assets/img/restaurant/min/resto-02.jpg" alt="Frites en cornet et tomates sautées" width="720" height="724" loading="lazy" decoding="async"></button></li>
+      <li class="gal__item"><button type="button" class="gal__btn" data-full="assets/img/restaurant/resto-03.jpg" data-cat-label="Bar &amp; Restaurant"><img src="assets/img/restaurant/min/resto-03.jpg" alt="Salade composée servie en terrasse" width="720" height="1558" loading="lazy" decoding="async"></button></li>
+      <li class="gal__item"><button type="button" class="gal__btn" data-full="assets/img/restaurant/resto-04.jpg" data-cat-label="Bar &amp; Restaurant"><img src="assets/img/restaurant/min/resto-04.jpg" alt="Assiette de légumes et de poivrons" width="720" height="1558" loading="lazy" decoding="async"></button></li>
+      <li class="gal__item"><button type="button" class="gal__btn" data-full="assets/img/restaurant/resto-05.jpg" data-cat-label="Bar &amp; Restaurant"><img src="assets/img/restaurant/min/resto-05.jpg" alt="Salade composée : œufs, tomates, olives" width="720" height="480" loading="lazy" decoding="async"></button></li>
+      <li class="gal__item"><button type="button" class="gal__btn" data-full="assets/img/restaurant/resto-06.jpg" data-cat-label="Bar &amp; Restaurant"><img src="assets/img/restaurant/min/resto-06.jpg" alt="Cocktail rouge au comptoir" width="720" height="1080" loading="lazy" decoding="async"></button></li>
+      <li class="gal__item"><button type="button" class="gal__btn" data-full="assets/img/restaurant/resto-07.jpg" data-cat-label="Bar &amp; Restaurant"><img src="assets/img/restaurant/min/resto-07.jpg" alt="Cocktail crémeux au comptoir" width="720" height="1080" loading="lazy" decoding="async"></button></li>
+      <li class="gal__item"><button type="button" class="gal__btn" data-full="assets/img/restaurant/resto-08.jpg" data-cat-label="Bar &amp; Restaurant"><img src="assets/img/restaurant/min/resto-08.jpg" alt="Bouteille de whisky sur le comptoir" width="720" height="480" loading="lazy" decoding="async"></button></li>
+      <li class="gal__item"><button type="button" class="gal__btn" data-full="assets/img/restaurant/resto-09.jpg" data-cat-label="Bar &amp; Restaurant"><img src="assets/img/restaurant/min/resto-09.jpg" alt="Le bar : étagères, bouteilles et écran" width="720" height="480" loading="lazy" decoding="async"></button></li>
+      <li class="gal__item"><button type="button" class="gal__btn" data-full="assets/img/restaurant/resto-10.jpg" data-cat-label="Bar &amp; Restaurant"><img src="assets/img/restaurant/min/resto-10.jpg" alt="L’équipe en cuisine" width="720" height="480" loading="lazy" decoding="async"></button></li>
+      <li class="gal__item"><button type="button" class="gal__btn" data-full="assets/img/restaurant/resto-11.jpg" data-cat-label="Bar &amp; Restaurant"><img src="assets/img/restaurant/min/resto-11.jpg" alt="Un chef en cuisine" width="720" height="480" loading="lazy" decoding="async"></button></li>
+      <li class="gal__item"><button type="button" class="gal__btn" data-full="assets/img/restaurant/resto-12.jpg" data-cat-label="Bar &amp; Restaurant"><img src="assets/img/restaurant/min/resto-12.jpg" alt="Poulets grillés sur la braise" width="720" height="480" loading="lazy" decoding="async"></button></li>
+      <li class="gal__item"><button type="button" class="gal__btn" data-full="assets/img/restaurant/resto-13.jpg" data-cat-label="Bar &amp; Restaurant"><img src="assets/img/restaurant/min/resto-13.jpg" alt="Cuisiniers aux fourneaux" width="720" height="480" loading="lazy" decoding="async"></button></li>
+  </ul>
+  </section>
+</main>
+<dialog class="lb" id="lb" aria-label="Photo agrandie">
+  <div class="lb__bar">
+    <p class="lb__count" id="lb-count"></p>
+    <button type="button" class="round lb__close" id="lb-close" aria-label="Fermer"><span class="ico ico--close" aria-hidden="true"></span></button>
+  </div>
+  <figure class="lb__fig" id="lb-fig">
+    <img id="lb-img" alt="">
+    <figcaption class="lb__cap"><span id="lb-cat"></span><span id="lb-alt"></span></figcaption>
+  </figure>
+  <button type="button" class="round lb__nav lb__nav--prev" id="lb-prev" aria-label="Photo précédente"><span class="arrow arrow--back" aria-hidden="true"></span></button>
+  <button type="button" class="round lb__nav lb__nav--next" id="lb-next" aria-label="Photo suivante"><span class="arrow" aria-hidden="true"></span></button>
+</dialog>
+
+<footer class="footer" data-sky="night">
+  <div class="kente" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <img src="assets/logo-ibr-full.png" alt="IBR — Inspiré pour l'Ultime" width="140" height="120" loading="lazy">
+        <p>Une escapade au bord de l’eau&nbsp;: détendez-vous avec style et laissez les sons de la nature vous ressourcer.</p>
+      </div>
+      <nav class="footer__col" aria-label="Pied de page : le resort">
+        <p class="footer__h">Le resort</p>
+        <a href="index.html#chill">Chill &amp; Relax</a>
+        <a href="restaurant.html">Bar &amp; Restaurant</a>
+        <a href="index.html#parc">Parc enfants</a>
+        <a href="index.html#residences">Résidences</a>
+      </nav>
+      <nav class="footer__col" aria-label="Pied de page : événements">
+        <p class="footer__h">Événements</p>
+        <a href="index.html#mariages">Mariages</a>
+        <a href="index.html#conferences">Conférences</a>
+        <a href="soirees.html">Soirées &amp; activités</a>
+        <a href="galerie.html">Galerie</a>
+      </nav>
+      <div class="footer__col">
+        <p class="footer__h">Contact</p>
+        <a href="tel:+22896699191">96 69 91 91</a>
+        <a href="tel:+22870819191">70 81 91 91</a>
+        <a href="mailto:info@ibizablissresort.com">info@ibizablissresort.com</a>
+        <div class="socials">
+          <a href="https://www.instagram.com/ibiza_bliss_resort.tg" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" class="fill"/></svg></a>
+          <a href="https://www.facebook.com/share/1EyBB3HT8B/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg></a>
+          <a href="https://www.tiktok.com/@ibiza.bliss.resort" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5M14 3c.5 2.5 2.5 4.5 5 4.8"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 IBR Togo · Ibiza Bliss Resort</p>
+      <a href="#top">Retour en haut <span class="arrow arrow--up" aria-hidden="true"></span></a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/galerie.js" defer></script>
+<script src="assets/pages.js" defer></script>
+</body>
+</html>

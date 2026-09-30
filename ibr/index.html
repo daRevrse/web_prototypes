@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="fr" data-sky="dawn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ibiza Bliss Resort — Plage, table &amp; fêtes à Kpogan</title>
+<meta name="description" content="Ibiza Bliss Resort, Kpogan (Togo) : chill &amp; relax sur la plage, bar &amp; restaurant, mariages, conférences en plein air, parc enfants et résidences.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#F3EBDD">
+<link rel="icon" href="assets/logo-ibr.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/img/hero-allee.jpg">
+<link rel="stylesheet" href="assets/ibr.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<!-- ============ EN-TÊTE ============ -->
+<header class="site-header" id="top">
+  <div class="site-header__inner wrap">
+    <a class="brand" href="#top" aria-label="Ibiza Bliss Resort, accueil">
+      <img src="assets/logo-ibr.png" alt="" width="56" height="41">
+      <span class="brand__name">Ibiza Bliss<small>Resort · Kpogan</small></span>
+    </a>
+
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="restaurant.html">Restaurant</a>
+      <a href="soirees.html">Soirées</a>
+      <a href="#mariages">Événements</a>
+      <a href="#residences">Résidences</a>
+      <a href="galerie.html">Galerie</a>
+    </nav>
+
+    <div class="site-header__actions">
+      <a class="btn btn--sm" href="reserver.html">Réserver</a>
+      <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Ouvrir le menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Menu plein écran (mobile) -->
+<div class="menu" id="menu" hidden>
+  <div class="menu__inner wrap">
+    <nav aria-label="Menu">
+      <ol class="menu__list">
+        <li><a href="restaurant.html">Restaurant</a></li>
+        <li><a href="soirees.html">Soirées</a></li>
+        <li><a href="#mariages">Événements</a></li>
+        <li><a href="#residences">Résidences</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+      </ol>
+    </nav>
+    <div class="menu__foot">
+      <a class="btn" href="reserver.html">Réserver</a>
+      <p><a href="tel:+22896699191">96 69 91 91</a> · <a href="tel:+22870819191">70 81 91 91</a><br><a href="mailto:info@ibizablissresort.com">info@ibizablissresort.com</a></p>
+    </div>
+  </div>
+</div>
+
+<main id="contenu">
+
+<!-- ============ HERO ============ -->
+<section class="hero" data-sky="dawn" aria-labelledby="hero-title">
+  <div class="hero__media" id="slider" aria-roledescription="carrousel" aria-label="Photos du resort">
+    <figure class="hero__slide is-active" aria-roledescription="diapositive" aria-label="1 sur 4" data-caption="L’allée vers l’océan" style="--pos:50% 62%">
+      <img src="assets/img/hero-allee.jpg" alt="Allée pavée bordée de paillotes et de palmiers, qui descend vers l’océan" width="1920" height="1200" fetchpriority="high">
+    </figure>
+    <figure class="hero__slide" aria-roledescription="diapositive" aria-label="2 sur 4" aria-hidden="true" data-caption="Transats et parasols, sur le sable" style="--pos:50% 75%">
+      <img src="assets/img/hero-plage.jpg" alt="Transats en bois et parasols colorés sur le sable" width="2400" height="1101" loading="lazy" decoding="async">
+    </figure>
+    <figure class="hero__slide" aria-roledescription="diapositive" aria-label="3 sur 4" aria-hidden="true" data-caption="L’espace réception, en plein air" style="--pos:50% 68%">
+      <img src="assets/img/hero-reception.jpg" alt="Tables rondes et chaises blanches dressées sur le sable, entre des allées pavées" width="2000" height="1333" loading="lazy" decoding="async">
+    </figure>
+    <figure class="hero__slide" aria-roledescription="diapositive" aria-label="4 sur 4" aria-hidden="true" data-caption="L’entrée du resort" style="--pos:42% 40%">
+      <img src="assets/img/hero-entree.jpg" alt="Portique de pierre et de bois à l’enseigne Ibiza Bliss Resort" width="2800" height="952" loading="lazy" decoding="async">
+    </figure>
+  </div>
+  <div class="hero__veil" aria-hidden="true"></div>
+
+  <div class="hero__content wrap">
+    <h1 class="hero__title" id="hero-title">
+      <span class="line"><span>L’esprit d’Ibiza,</span></span>
+      <span class="line"><span>les pieds dans le sable</span></span>
+      <span class="line"><span>de Kpogan.</span></span>
+    </h1>
+    <div class="hero__foot">
+      <div class="slider-ctrl" role="group" aria-label="Diaporama">
+        <p class="sr-only" id="slide-cap" aria-live="off">L’allée vers l’océan</p>
+        <div class="slider-ctrl__row">
+          <div class="slider-dots">
+            <button type="button" class="slider-dot" data-go="0" aria-label="Photo 1 : L’allée vers l’océan" aria-current="true"><span></span></button>
+            <button type="button" class="slider-dot" data-go="1" aria-label="Photo 2 : Transats et parasols, sur le sable"><span></span></button>
+            <button type="button" class="slider-dot" data-go="2" aria-label="Photo 3 : L’espace réception, en plein air"><span></span></button>
+            <button type="button" class="slider-dot" data-go="3" aria-label="Photo 4 : L’entrée du resort"><span></span></button>
+          </div>
+          <button type="button" class="round round--sm" data-slide="-1" aria-label="Photo précédente"><span class="arrow arrow--back" aria-hidden="true"></span></button>
+          <button type="button" class="round round--sm" data-slide="1" aria-label="Photo suivante"><span class="arrow" aria-hidden="true"></span></button>
+          <button type="button" class="round round--sm" id="slider-pause" aria-label="Mettre le diaporama en pause"><span class="ico ico--pause" aria-hidden="true"></span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <form class="quickbook wrap" id="quickbook" action="reserver.html" method="get" aria-label="Réservation rapide">
+    <div class="quickbook__inner">
+      <label class="qb-field">
+        <span>Je réserve pour</span>
+        <select name="type">
+          <option value="chill">Une journée Chill &amp; Relax</option>
+          <option value="restaurant">Une table au restaurant</option>
+          <option value="conference">Un séminaire</option>
+          <option value="evenement">Un mariage, un événement</option>
+          <option value="residence">Un séjour en résidence</option>
+          <option value="activite">Une soirée, une activité</option>
+        </select>
+      </label>
+      <label class="qb-field">
+        <span>Date</span>
+        <input type="date" name="date">
+      </label>
+      <label class="qb-field qb-field--sm">
+        <span>Personnes</span>
+        <input type="number" name="personnes" min="1" max="500" value="2" inputmode="numeric">
+      </label>
+      <button class="btn btn--terra" type="submit">Continuer <span class="arrow" aria-hidden="true"></span></button>
+    </div>
+  </form>
+</section>
+
+<!-- ============ MANIFESTE ============ -->
+<section class="intro" data-sky="dawn" aria-labelledby="intro-title">
+  <div class="wrap intro__grid">
+    <div class="intro__text">
+      <h2 class="intro__title reveal" id="intro-title">Un sanctuaire tropical qui a pris à Ibiza son élégance et son goût de la fête. Et au Togo, sa chaleur.</h2>
+      <div class="intro__body reveal">
+        <p>Au cœur de Kpogan, face à l’océan, chaque espace a été pensé pour éveiller les sens&nbsp;: la plage pour ralentir, la table pour partager, les jardins pour célébrer, les résidences pour prolonger. Notre équipe vous accueille du matin jusqu’à tard dans la nuit.</p>
+        <p class="slogan">Inspiré pour l’Ultime.</p>
+      </div>
+      <a class="call reveal" href="tel:+22896699191">
+        <span class="call__label">Réservations</span>
+        <span class="call__num">96 69 91 91 <i>/</i> 70 81 91 91</span>
+      </a>
+    </div>
+
+    <div class="intro__media">
+      <figure class="ph ph--a reveal-img">
+        <img src="assets/img/entree-ibiza.jpg" alt="Portique « IBIZA » à l'entrée de la plage, entre deux palissades de bambou" width="1100" height="1367" loading="lazy">
+        <figcaption>L’entrée, face à la mer</figcaption>
+      </figure>
+      <figure class="ph ph--b reveal-img">
+        <img src="assets/img/tipi.jpg" alt="Tipi en bambou sur une allée de bois menant à la plage" width="900" height="1200" loading="lazy">
+        <figcaption>Le tipi de bambou</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="kente" aria-hidden="true"></div>
+</section>
+
+<!-- ============ UNE JOURNÉE ============ -->
+<section class="day" id="journee" aria-labelledby="day-title">
+  <header class="day__head wrap" data-sky="dawn">
+    <h2 class="day__title reveal" id="day-title">Une journée à Ibiza Bliss</h2>
+    <p class="day__intro reveal">Chaque espace a son heure. Suivez le soleil.</p>
+  </header>
+
+  <div class="day__grid wrap">
+    <!-- Cadran solaire (sticky) -->
+    <aside class="dial" aria-hidden="true">
+      <div class="dial__sticky">
+        <svg class="dial__svg" viewBox="0 0 220 124">
+          <path class="dial__arc" d="M14,110 A96,96 0 0 1 206,110"/>
+          <line class="dial__horizon" x1="0" y1="110" x2="220" y2="110"/>
+          <g class="dial__ticks"></g>
+          <g class="dial__sun" transform="translate(28,98)">
+            <circle class="dial__halo" r="16"/>
+            <circle class="dial__core" r="9"/>
+            <path class="dial__moon" d="M4,-9 A10,10 0 1 0 4,9 A7.5,7.5 0 1 1 4,-9 Z"/>
+          </g>
+        </svg>
+        <p class="dial__label" id="dial-label">Le matin</p>
+        <ol class="dial__index">
+          <li data-for="conferences"><a href="#conferences" tabindex="-1">Conférences</a></li>
+          <li data-for="chill"><a href="#chill" tabindex="-1">Chill &amp; Relax</a></li>
+          <li data-for="parc"><a href="#parc" tabindex="-1">Parc enfants</a></li>
+          <li data-for="restaurant"><a href="#restaurant" tabindex="-1">Bar &amp; Restaurant</a></li>
+          <li data-for="mariages"><a href="#mariages" tabindex="-1">Mariages</a></li>
+          <li data-for="soirees"><a href="#soirees" tabindex="-1">Soirées</a></li>
+        </ol>
+      </div>
+    </aside>
+
+    <div class="moments">
+
+      <!-- 01 Conférences -->
+      <article class="moment" id="conferences" data-sky="dawn" data-sun="0.1" data-label="Le matin">
+        <h3 class="moment__title reveal">Conférences au grand air</h3>
+        <p class="moment__when reveal">Le matin</p>
+        <p class="moment__text reveal">Des espaces en plein air pour les réunions de travail, les séminaires et les conférences en petits groupes, dans la fraîcheur et la sérénité de la plage. Nos forfaits événements, à tarifs compétitifs, se réservent en quelques clics.</p>
+        <ul class="chips reveal" aria-label="Espaces disponibles">
+          <li>Podium</li><li>Grand bungalow</li><li>Petits bungalows</li><li>Grand espace d’accueil</li><li>Espaces aérés sous tente</li>
+        </ul>
+        <a class="link-arrow reveal" href="reserver.html?type=conference">Préparer mon séminaire <span class="arrow" aria-hidden="true"></span></a>
+        <div class="collage collage--conf">
+          <figure class="reveal-img"><img src="assets/img/conference.jpg" alt="Longue table dressée sous une tente blanche, chaises en bois, gazon" width="1400" height="933" loading="lazy"></figure>
+          <figure class="reveal-img"><img src="assets/img/conference-bleu.jpg" alt="Salle de séminaire en U, nappes bleues et bouteilles d'eau, sous voilages" width="1020" height="768" loading="lazy"></figure>
+        </div>
+      </article>
+
+      <!-- 02 Chill & Relax -->
+      <article class="moment" id="chill" data-sky="noon" data-sun="0.34" data-label="En journée">
+        <h3 class="moment__title reveal">Chill &amp; Relax, face aux vagues</h3>
+        <p class="moment__when reveal">En journée</p>
+        <p class="moment__text reveal">Chaises longues, parasols et service de boissons&nbsp;: une parenthèse de tranquillité au bord de l’océan. Pour les plus actifs, promenades les pieds dans l’eau et activités nautiques (kayak, jet-ski, plongée).</p>
+        <a class="link-arrow reveal" href="reserver.html?type=chill">Réserver ma journée <span class="arrow" aria-hidden="true"></span></a>
+        <div class="collage collage--chill">
+          <figure class="reveal-img"><img src="assets/img/plage-parasols.jpg" alt="Transats en bois et parasols colorés sur le sable" width="1800" height="826" loading="lazy"></figure>
+          <figure class="reveal-img"><img src="assets/img/paillote-salon.jpg" alt="Salon de paillote : banquettes, murs de bambou et voilage blanc" width="1400" height="933" loading="lazy"></figure>
+        </div>
+      </article>
+
+      <!-- 03 Parc enfants -->
+      <article class="moment" id="parc" data-sky="afternoon" data-sun="0.55" data-label="L’après-midi">
+        <h3 class="moment__title reveal">Le parc des enfants</h3>
+        <p class="moment__when reveal">L’après-midi</p>
+        <p class="moment__text reveal">Espaces de jeux, sentiers ombragés, points d’eau et coins pique-nique&nbsp;: les enfants se dépensent, les parents respirent. Un environnement sécurisé, propre et accessible à tous.</p>
+        <div class="collage collage--parc">
+          <figure class="reveal-img"><img src="assets/img/parc-jeux.jpg" alt="Aire de jeux colorée avec toboggan, sur le sable" width="1400" height="933" loading="lazy"></figure>
+          <figure class="reveal-img"><img src="assets/img/parc-enfant.jpg" alt="Un enfant sur un cheval à ressort jaune" width="1200" height="800" loading="lazy"></figure>
+          <figure class="reveal-img"><img src="assets/img/parc-trampoline.jpg" alt="Trampoline avec filet de sécurité" width="1200" height="798" loading="lazy"></figure>
+        </div>
+      </article>
+
+      <!-- 04 Bar & Restaurant -->
+      <article class="moment" id="restaurant" data-sky="golden" data-sun="0.74" data-label="Dès 17h">
+        <h3 class="moment__title reveal">Bar &amp; Restaurant</h3>
+        <p class="moment__when reveal">Dès 17h</p>
+        <p class="moment__text reveal">Produits frais, de saison et locaux. Viandes savoureuses, poissons délicats, plats végétariens&nbsp;: une cuisine généreuse qui oscille entre spécialités d’ici et saveurs d’ailleurs, pour un déjeuner entre amis, un dîner à deux ou une tablée en famille.</p>
+
+        <div class="resto">
+          <div class="ticket reveal">
+            <div class="ticket__top">
+              <p class="ticket__head">Horaires</p>
+              <p class="ticket__row"><span>Tous les jours</span><strong>17h–23h</strong></p>
+              <p class="ticket__row"><span>Le week-end</span><strong>jusqu’à minuit</strong></p>
+              <p class="ticket__status" id="resto-status"><span class="live__dot" aria-hidden="true"></span><span class="ticket__status-text">&nbsp;</span></p>
+            </div>
+            <div class="ticket__bottom">
+              <p class="ticket__head">À la carte</p>
+              <p class="ticket__menu">Entrées&nbsp;· Plats de résistance&nbsp;· Desserts&nbsp;· Boissons</p>
+              <a class="btn btn--ink btn--block" href="reserver.html?type=restaurant">Réserver une table <span class="arrow" aria-hidden="true"></span></a>
+              <a class="ticket__link" href="restaurant.html">Découvrir le restaurant</a>
+            </div>
+          </div>
+          <div class="collage collage--resto">
+            <figure class="reveal-img"><img src="assets/img/grillades.jpg" alt="Brochettes de viande grillées sur le feu" width="1300" height="866" loading="lazy"></figure>
+            <figure class="reveal-img"><img src="assets/img/cocktail.jpg" alt="Un cocktail rouge servi au bar" width="1300" height="866" loading="lazy"></figure>
+            <figure class="reveal-img"><img src="assets/img/bar.jpg" alt="Le bar en bois de la plage, tabourets hauts et pots orange" width="1400" height="933" loading="lazy"></figure>
+          </div>
+        </div>
+      </article>
+
+      <!-- 05 Mariages -->
+      <article class="moment" id="mariages" data-sky="sunset" data-sun="0.93" data-label="Au coucher du soleil">
+        <h3 class="moment__title reveal">Mariages &amp; événements</h3>
+        <p class="moment__when reveal">Au coucher du soleil</p>
+        <p class="moment__text reveal">Les pieds dans le sable ou au cœur d’un jardin tropical, de la cérémonie à la réception. Mariage intime ou grande fête, notre équipe s’occupe de tout&nbsp;:</p>
+        <ul class="chips reveal" aria-label="Services inclus">
+          <li>Décoration</li><li>Restauration</li><li>Hébergement des invités</li><li>Animation</li><li>Coordination complète</li>
+        </ul>
+        <a class="link-arrow reveal" href="reserver.html?type=evenement">Organiser mon événement <span class="arrow" aria-hidden="true"></span></a>
+        <div class="collage collage--wed">
+          <figure class="reveal-img"><img src="assets/img/mariage-kente.jpg" alt="Décor de mariage : panneau de bois, tissu kente, plantes et vannerie" width="1400" height="933" loading="lazy"></figure>
+          <figure class="reveal-img"><img src="assets/img/mariage-calebasse.jpg" alt="Table de réception, calebasse et nappe en tissu kente" width="1200" height="800" loading="lazy"></figure>
+          <figure class="reveal-img"><img src="assets/img/mariage-autel.jpg" alt="Autel de cérémonie sur gazon, face à la plage" width="1400" height="933" loading="lazy"></figure>
+        </div>
+      </article>
+
+      <!-- 06 Soirées -->
+      <article class="moment moment--night" id="soirees" data-sky="night" data-sun="1" data-label="La nuit">
+        <h3 class="moment__title reveal">Soirées &amp; activités</h3>
+        <p class="moment__when reveal">La nuit</p>
+        <p class="moment__text reveal">Concerts live, spectacles de feu, cinéma en plein air… quand le soleil se couche, la plage change de visage. Les prochaines dates sont dans l’agenda.</p>
+        <a class="link-arrow reveal" href="soirees.html#agenda">Voir l’agenda <span class="arrow" aria-hidden="true"></span></a>
+      </article>
+    </div>
+  </div>
+
+  <!-- Le feu : pleine largeur -->
+  <div class="fire" data-sky="night">
+    <figure class="fire__main reveal-img">
+      <img src="assets/img/feu-souffle.jpg" alt="Cracheur de feu en tenue traditionnelle, face au public attablé sous les lumières du soir" width="1766" height="1177" loading="lazy">
+    </figure>
+    <div class="fire__side wrap">
+      <figure class="reveal-img"><img src="assets/img/concert.jpg" alt="Groupe de musique live sous un chapiteau, face à la mer" width="1300" height="867" loading="lazy"><figcaption>Concerts live</figcaption></figure>
+      <figure class="reveal-img"><img src="assets/img/cinema.jpg" alt="Cinéma en plein air : écran, guirlandes lumineuses, spectateurs allongés sur des coussins" width="1300" height="867" loading="lazy"><figcaption>Cinéma sous les étoiles</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RÉSIDENCES ============ -->
+<section class="stay" id="residences" data-sky="night" aria-labelledby="stay-title">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="section-title reveal" id="stay-title">Rester dormir</h2>
+      <p class="section-lede reveal">Trois adresses pour ne pas avoir à partir quand la fête commence.</p>
+      <a class="link-arrow reveal stay__cta" href="reserver.html?type=residence">Réserver un séjour <span class="arrow" aria-hidden="true"></span></a>
+    </div>
+    <div class="stay__grid">
+      <a class="room reveal" href="villa-washington.html">
+        <figure><img src="assets/img/villa-washington.jpg" alt="Façade de la Villa Washington" width="1080" height="810" loading="lazy"></figure>
+        <h3>Villa Washington <span class="arrow" aria-hidden="true"></span></h3>
+        <p>Confort et proximité, à 7 minutes du resort.</p>
+      </a>
+      <a class="room reveal" href="residence-ibiza.html">
+        <figure><img src="assets/img/residence-ibiza.jpg" alt="Façade de la Résidence Ibiza" width="1024" height="609" loading="lazy"></figure>
+        <h3>Résidence Ibiza <span class="arrow" aria-hidden="true"></span></h3>
+        <p>Au bord de la nationale N2, à 3 minutes à pied du complexe.</p>
+      </a>
+      <a class="room reveal" href="chateau-ibiza.html">
+        <figure><img src="assets/img/chateau-ibiza.jpg" alt="Le Château Ibiza et son rooftop" width="1080" height="810" loading="lazy"></figure>
+        <h3>Château Ibiza <span class="arrow" aria-hidden="true"></span></h3>
+        <p>Discothèque, lounge et chambres avec rooftop, au cœur du complexe.</p>
+        <span class="tag">Ouverture prochaine</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TÉMOIGNAGE ============ -->
+<section class="quote" data-sky="night" aria-label="Témoignage">
+  <div class="wrap">
+    <blockquote class="reveal">
+      <p>« Un service exceptionnel du début à la fin&nbsp;! L’équipe est professionnelle, l’accueil chaleureux et les prestations de grande qualité. »</p>
+      <footer>Emily Brown, invitée</footer>
+    </blockquote>
+  </div>
+</section>
+
+<!-- ============ GALERIE ============ -->
+<section class="gallery" id="galerie" data-sky="night" aria-labelledby="gal-title">
+  <div class="wrap gallery__head">
+    <div>
+      <h2 class="section-title reveal" id="gal-title">Ça se passe ici</h2>
+    </div>
+    <div class="gallery__ctrl">
+      <a class="link-arrow" href="galerie.html">Toute la galerie <span class="arrow" aria-hidden="true"></span></a>
+      <button class="round" type="button" data-dir="-1" aria-label="Photos précédentes"><span class="arrow arrow--back" aria-hidden="true"></span></button>
+      <button class="round" type="button" data-dir="1" aria-label="Photos suivantes"><span class="arrow" aria-hidden="true"></span></button>
+    </div>
+  </div>
+  <div class="strip" tabindex="0" aria-label="Photos du resort, défilement horizontal">
+    <figure class="strip__item strip__item--tall"><img src="assets/img/soiree-arrivee.jpg" alt="Des invitées souriantes arrivent à une soirée" width="1200" height="799" loading="lazy"></figure>
+    <figure class="strip__item"><img src="assets/img/danseurs.jpg" alt="Danseurs en tenue traditionnelle sur scène" width="1200" height="799" loading="lazy"></figure>
+    <figure class="strip__item strip__item--portrait"><img src="assets/img/invite.jpg" alt="Un invité en chemise orange, lunettes de soleil" width="900" height="1350" loading="lazy"></figure>
+    <figure class="strip__item"><img src="assets/img/feu.jpg" alt="Spectacle de feu sur scène : une gerbe de flammes au-dessus des danseurs" width="1800" height="1200" loading="lazy"></figure>
+    <figure class="strip__item strip__item--tall"><img src="assets/img/soiree-buffet.jpg" alt="Invités au buffet" width="1200" height="799" loading="lazy"></figure>
+    <figure class="strip__item"><img src="assets/img/soiree-table.jpg" alt="Un invité attablé lors d'une réception" width="1200" height="800" loading="lazy"></figure>
+    <figure class="strip__item strip__item--portrait"><img src="assets/img/entree-ibiza.jpg" alt="Le portique IBIZA face à l'océan" width="1100" height="1367" loading="lazy"></figure>
+  </div>
+</section>
+
+<!-- ============ RÉSERVATION ============ -->
+<section class="book" id="reserver" data-sky="night" aria-labelledby="book-title">
+  <div class="wrap book__grid">
+    <div class="book__info">
+      <h2 class="section-title reveal" id="book-title">On vous garde une place.</h2>
+      <p class="section-lede reveal">Choisissez ce que vous voulez vivre&nbsp;: la demande s’adapte, puis l’équipe vous recontacte pour confirmer.</p>
+      <dl class="facts reveal">
+        <div><dt>Téléphone</dt><dd><a href="tel:+22896699191">96 69 91 91</a> · <a href="tel:+22870819191">70 81 91 91</a></dd></div>
+        <div><dt>E-mail</dt><dd><a href="mailto:info@ibizablissresort.com">info@ibizablissresort.com</a></dd></div>
+        <div><dt>Accès</dt><dd>Kpogan, à 30 min du marché ou du centre&#8209;ville<br><a class="link-arrow" href="https://www.google.com/maps/search/?api=1&amp;query=6.17977,1.38573" target="_blank" rel="noopener">Itinéraire <span class="arrow" aria-hidden="true"></span></a></dd></div>
+        <div><dt>Restaurant</dt><dd>17h–23h, jusqu’à minuit le week-end</dd></div>
+      </dl>
+    </div>
+
+    <div class="entries reveal">
+      <div class="kente" aria-hidden="true"></div>
+      <ul aria-label="Que souhaitez-vous réserver ?">
+        <li><a class="entry" href="reserver.html?type=chill"><img src="assets/img/thumbs/plage-parasols.jpg" alt="" width="480" height="360" loading="lazy"><span class="entry__txt"><strong>Une journée Chill &amp; Relax</strong><small>Transats, parasols, service de boissons</small></span><span class="entry__go" aria-hidden="true"><span class="arrow"></span></span></a></li>
+        <li><a class="entry" href="reserver.html?type=restaurant"><img src="assets/img/thumbs/grillades.jpg" alt="" width="480" height="360" loading="lazy"><span class="entry__txt"><strong>Une table au restaurant</strong><small>Tous les jours dès 17h</small></span><span class="entry__go" aria-hidden="true"><span class="arrow"></span></span></a></li>
+        <li><a class="entry" href="reserver.html?type=conference"><img src="assets/img/thumbs/conference.jpg" alt="" width="480" height="360" loading="lazy"><span class="entry__txt"><strong>Un séminaire ou une réunion</strong><small>Podium, bungalows, espaces sous tente</small></span><span class="entry__go" aria-hidden="true"><span class="arrow"></span></span></a></li>
+        <li><a class="entry" href="reserver.html?type=evenement"><img src="assets/img/thumbs/mariage-kente.jpg" alt="" width="480" height="360" loading="lazy"><span class="entry__txt"><strong>Un mariage ou un événement</strong><small>Sur le sable ou au jardin tropical</small></span><span class="entry__go" aria-hidden="true"><span class="arrow"></span></span></a></li>
+        <li><a class="entry" href="reserver.html?type=activite"><img src="assets/img/thumbs/soiree.jpg" alt="" width="480" height="360" loading="lazy"><span class="entry__txt"><strong>Une soirée ou une activité</strong><small>Jeudis et vendredis, événements de l’agenda</small></span><span class="entry__go" aria-hidden="true"><span class="arrow"></span></span></a></li>
+        <li><a class="entry" href="reserver.html?type=residence"><img src="assets/img/thumbs/villa-washington.jpg" alt="" width="480" height="360" loading="lazy"><span class="entry__txt"><strong>Un séjour en résidence</strong><small>Villa Washington, Résidence Ibiza</small></span><span class="entry__go" aria-hidden="true"><span class="arrow"></span></span></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ PIED DE PAGE ============ -->
+<footer class="footer" data-sky="night">
+  <div class="kente" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <img src="assets/logo-ibr-full.png" alt="IBR — Inspiré pour l'Ultime" width="140" height="120" loading="lazy">
+        <p>Une escapade au bord de l’eau&nbsp;: détendez-vous avec style et laissez les sons de la nature vous ressourcer.</p>
+      </div>
+      <nav class="footer__col" aria-label="Pied de page : le resort">
+        <p class="footer__h">Le resort</p>
+        <a href="#chill">Chill &amp; Relax</a>
+        <a href="restaurant.html">Bar &amp; Restaurant</a>
+        <a href="#parc">Parc enfants</a>
+        <a href="#residences">Résidences</a>
+      </nav>
+      <nav class="footer__col" aria-label="Pied de page : événements">
+        <p class="footer__h">Événements</p>
+        <a href="#mariages">Mariages</a>
+        <a href="#conferences">Conférences</a>
+        <a href="soirees.html">Soirées &amp; activités</a>
+        <a href="galerie.html">Galerie</a>
+      </nav>
+      <div class="footer__col">
+        <p class="footer__h">Contact</p>
+        <a href="tel:+22896699191">96 69 91 91</a>
+        <a href="tel:+22870819191">70 81 91 91</a>
+        <a href="mailto:info@ibizablissresort.com">info@ibizablissresort.com</a>
+        <div class="socials">
+          <a href="https://www.instagram.com/ibiza_bliss_resort.tg" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" class="fill"/></svg></a>
+          <a href="https://www.facebook.com/share/1EyBB3HT8B/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z"/></svg></a>
+          <a href="https://www.tiktok.com/@ibiza.bliss.resort" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5M14 3c.5 2.5 2.5 4.5 5 4.8"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 IBR Togo · Ibiza Bliss Resort</p>
+      <a href="#top">Retour en haut <span class="arrow arrow--up" aria-hidden="true"></span></a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js" defer></script>
+</body>
+</html>

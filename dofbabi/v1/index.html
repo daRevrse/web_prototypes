@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Delight of Babi — Cuisine ivoirienne à Lomé | Attiéké, aloko, jollof</title>
+<meta name="description" content="Attiéké, aloko, jollof rice, poulet mayo à partir de 1.500 F. Maquis ivoirien à Tchingua, Lomé. Sur place, à emporter ou livré dès 700 F. Ouvert 10h–23h tous les jours.">
+<meta name="theme-color" content="#F26B0F">
+
+<!-- Partage WhatsApp / Facebook / Instagram
+     À la mise en ligne : remplacer og:image par l'URL absolue
+     (ex. https://delightofbabi.tg/assets/img/og-image.jpg) et ajouter <link rel="canonical">. -->
+<meta property="og:type" content="restaurant.restaurant">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Delight of Babi">
+<meta property="og:title" content="Delight of Babi — Le goût de Babi, servi chaud à Lomé">
+<meta property="og:description" content="Attiéké, aloko, jollof rice, poulet mayo dès 1.500 F. Sur place, à emporter ou livré dès 700 F. Tchingua, Lomé.">
+<meta property="og:image" content="../assets/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Jollof rice au poulet braisé de Delight of Babi">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="../assets/img/plat-jollof.webp">
+<link rel="stylesheet" href="style.css">
+
+<link rel="icon" href="../assets/img/icon-32.png" sizes="32x32">
+<link rel="icon" href="../assets/img/icon-512.png" sizes="512x512">
+<link rel="apple-touch-icon" href="../assets/img/icon-180.png">
+
+<!-- Fiche établissement pour Google (recherche locale, Maps) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Delight of Babi",
+  "description": "Maquis ivoirien à Lomé : attiéké, aloko, jollof rice, poulet mayo.",
+  "servesCuisine": ["Ivoirienne", "Africaine de l'Ouest"],
+  "priceRange": "1500 - 3000 XOF",
+  "currenciesAccepted": "XOF",
+  "telephone": "+22891910302",
+  "image": "../assets/img/og-image.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Tchingua, non loin de l'agence Moov",
+    "addressLocality": "Lomé",
+    "addressCountry": "TG"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "10:00",
+    "closes": "23:00"
+  }],
+  "acceptsReservations": "True",
+  "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [{
+      "@type": "MenuSection",
+      "name": "Nos plats",
+      "hasMenuItem": [
+        { "@type": "MenuItem", "name": "Poulet mayo + attiéké ou aloko",
+          "offers": { "@type": "Offer", "price": "3000", "priceCurrency": "XOF" } },
+        { "@type": "MenuItem", "name": "Attiéké + aloko + poisson ou poulet",
+          "offers": { "@type": "Offer", "price": "2000", "priceCurrency": "XOF" } },
+        { "@type": "MenuItem", "name": "Jollof rice / riz gras",
+          "offers": { "@type": "Offer", "price": "1500", "priceCurrency": "XOF" } },
+        { "@type": "MenuItem", "name": "Attiéké poisson braisé",
+          "offers": { "@type": "Offer", "price": "2000", "priceCurrency": "XOF" } },
+        { "@type": "MenuItem", "name": "Aloko / banane plantain",
+          "offers": { "@type": "Offer", "price": "2000", "priceCurrency": "XOF" } }
+      ]
+    }]
+  }
+}
+</script>
+</head>
+<body>
+
+<a class="skip" href="#menu">Aller au menu</a>
+
+<!-- ============ BANDEAU DEFILANT ============ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <span>Livraison dès 700 F</span><b>◆</b>
+    <span>Formule déjeuner 25.000 F / mois</span><b>◆</b>
+    <span>Ouvert 7j/7, 10h – 23h</span><b>◆</b>
+    <span>Tchingua — non loin de l'agence Moov</span><b>◆</b>
+    <span>Livraison dès 700 F</span><b>◆</b>
+    <span>Formule déjeuner 25.000 F / mois</span><b>◆</b>
+    <span>Ouvert 7j/7, 10h – 23h</span><b>◆</b>
+    <span>Tchingua — non loin de l'agence Moov</span><b>◆</b>
+  </div>
+</div>
+
+<!-- ============ HEADER ============ -->
+<header class="head" id="head">
+  <a class="head__logo" href="#top" aria-label="Delight of Babi — accueil">
+    <img src="../assets/img/logo-noir.png" alt="Delight of Babi">
+  </a>
+
+  <nav class="head__nav" id="nav">
+    <a href="#menu">Le menu</a>
+    <a href="#formule">Formules</a>
+    <a href="#livraison">Livraison</a>
+    <a href="#trouver">Nous trouver</a>
+  </nav>
+
+  <div class="head__right">
+    <a class="btn btn--dark" href="#commander">Commander</a>
+    <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="hero__inner">
+
+    <div class="hero__copy">
+      <p class="eyebrow reveal">Maquis ivoirien · Lomé, Togo</p>
+      <h1 class="reveal" style="--d:.06s">
+        Le goût de <em>Babi</em>,<br>servi chaud<br>à Lomé.
+      </h1>
+      <p class="hero__lede reveal" style="--d:.12s">
+        Attiéké fumant, aloko croustillant, jollof qui sent le feu de bois.
+        La cuisine d'Abidjan préparée le matin même — à emporter, sur place,
+        ou chez toi en moins de 30 minutes.
+      </p>
+      <div class="hero__cta reveal" style="--d:.18s">
+        <a class="btn btn--yellow btn--lg" href="#menu">Voir le menu</a>
+        <a class="btn btn--ghost btn--lg" href="tel:+22891910302">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.2.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.3 2.2Z"/></svg>
+          91 91 03 02
+        </a>
+      </div>
+
+      <ul class="hero__proof reveal" style="--d:.24s">
+        <li><strong>1.500 F</strong><span>le plat le plus doux</span></li>
+        <li><strong>700 F</strong><span>frais de livraison</span></li>
+        <li><strong>10h – 23h</strong><span>tous les jours</span></li>
+      </ul>
+    </div>
+
+    <div class="hero__art reveal" style="--d:.1s">
+      <div class="plate plate--main">
+        <img src="../assets/img/plat-jollof.webp" alt="Jollof rice au poulet braisé" width="326" height="485">
+      </div>
+      <div class="chip chip--a">Jollof<br><b>1.500 F</b></div>
+      <div class="chip chip--b">Poulet mayo<br><b>3.000 F</b></div>
+      <div class="plate plate--sm">
+        <img src="../assets/img/plat-aloko.webp" alt="Aloko, banane plantain frite" width="430" height="360">
+      </div>
+    </div>
+
+  </div>
+  <div class="hero__teeth" aria-hidden="true"></div>
+</section>
+
+<!-- ============ FAMILLES ============ -->
+<section class="fams" aria-label="Nos familles de plats">
+  <a class="fam fam--red reveal" href="#menu">
+    <img src="../assets/img/plat-attieke-poisson.webp" alt="" aria-hidden="true">
+    <h3>Attiéké &amp; Aloko</h3>
+    <p>Le duo qui ne trahit jamais</p>
+  </a>
+  <a class="fam fam--yellow reveal" style="--d:.08s" href="#menu">
+    <img src="../assets/img/plat-rizgras.webp" alt="" aria-hidden="true">
+    <h3>Riz &amp; Jollof</h3>
+    <p>Riz gras, jollof, sauce maison</p>
+  </a>
+  <a class="fam fam--dark reveal" style="--d:.16s" href="#menu">
+    <img src="../assets/img/mini-marmite.webp" alt="" aria-hidden="true">
+    <h3>Poulet &amp; Poisson</h3>
+    <p>Braisé, frit, mayo — au choix</p>
+  </a>
+</section>
+
+<!-- ============ MENU ============ -->
+<section class="section" id="menu">
+  <header class="sec-head">
+    <p class="eyebrow">La carte</p>
+    <h2>Nos différents <em>menus</em></h2>
+    <p class="sec-head__lede">
+      Cinq plats, zéro compromis. Tout est cuisiné le jour même — quand c'est fini, c'est fini.
+    </p>
+  </header>
+
+  <div class="menu-grid">
+
+    <article class="dish reveal">
+      <div class="dish__media">
+        <img src="../assets/img/plat-poulet-mayo.webp" alt="Poulet mayo servi avec attiéké" loading="lazy" width="324" height="485">
+        <span class="tag tag--best">Le plus commandé</span>
+      </div>
+      <div class="dish__body">
+        <h3>Poulet mayo <span>+ attiéké ou aloko</span></h3>
+        <p>Poulet mariné, oignons frais, tomate, mayonnaise maison. Servi avec attiéké ou aloko.</p>
+        <div class="dish__foot">
+          <span class="price">3.000<i>F</i></span>
+          <a class="btn btn--dark btn--sm" href="#commander" data-dish="Poulet mayo + attiéké/aloko">Commander</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="dish reveal" style="--d:.06s">
+      <div class="dish__media">
+        <img src="../assets/img/plat-attieke-poisson.webp" alt="Attiéké, aloko et poisson frit" loading="lazy" width="326" height="485">
+      </div>
+      <div class="dish__body">
+        <h3>Attiéké + aloko <span>+ poisson ou poulet</span></h3>
+        <p>L'assiette complète : attiéké, bananes plantain frites, protéine au choix et salade fraîche.</p>
+        <div class="dish__foot">
+          <span class="price">2.000<i>F</i></span>
+          <a class="btn btn--dark btn--sm" href="#commander" data-dish="Attiéké + aloko + poisson/poulet">Commander</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="dish reveal" style="--d:.12s">
+      <div class="dish__media">
+        <img src="../assets/img/plat-jollof.webp" alt="Jollof rice et riz gras au poulet" loading="lazy" width="326" height="485">
+        <span class="tag tag--deal">Petit prix</span>
+      </div>
+      <div class="dish__body">
+        <h3>Jollof rice <span>/ riz gras</span></h3>
+        <p>Riz mijoté dans la sauce tomate épicée, poulet braisé et légumes croquants.</p>
+        <div class="dish__foot">
+          <span class="price">1.500<i>F</i></span>
+          <a class="btn btn--dark btn--sm" href="#commander" data-dish="Jollof rice / riz gras">Commander</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="dish reveal" style="--d:.06s">
+      <div class="dish__media">
+        <img src="../assets/img/plat-attieke.webp" alt="Attiéké au poisson braisé" loading="lazy" width="412" height="366">
+      </div>
+      <div class="dish__body">
+        <h3>Attiéké <span>poisson &amp; garniture</span></h3>
+        <p>Semoule de manioc, poisson braisé entier, aloko et salade de crudités.</p>
+        <div class="dish__foot">
+          <span class="price">2.000<i>F</i></span>
+          <a class="btn btn--dark btn--sm" href="#commander" data-dish="Attiéké poisson">Commander</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="dish reveal" style="--d:.12s">
+      <div class="dish__media">
+        <img src="../assets/img/plat-aloko.webp" alt="Aloko, banane plantain frite" loading="lazy" width="430" height="360">
+      </div>
+      <div class="dish__body">
+        <h3>Aloko <span>banane plantain</span></h3>
+        <p>Plantain bien mûr, frit minute, doré dehors et fondant dedans. Avec piment maison.</p>
+        <div class="dish__foot">
+          <span class="price">2.000<i>F</i></span>
+          <a class="btn btn--dark btn--sm" href="#commander" data-dish="Aloko / banane plantain">Commander</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="dish dish--note reveal" style="--d:.18s">
+      <h3>Une envie particulière&nbsp;?</h3>
+      <p>
+        Grandes tablées, plateaux pour le bureau, anniversaires : on prépare sur commande.
+        Passe un coup de fil la veille, on s'occupe du reste.
+      </p>
+      <a class="btn btn--yellow" href="tel:+22892539988">Appeler 92 53 99 88</a>
+    </article>
+
+  </div>
+</section>
+
+<!-- ============ FORMULE ============ -->
+<section class="formule" id="formule">
+  <div class="formule__card">
+    <div class="formule__copy">
+      <p class="eyebrow eyebrow--light">Abonnement déjeuner</p>
+      <h2>On te livre ton déjeuner<br><em>tout le mois</em>, dès 25.000 F.</h2>
+      <p>
+        Un plat différent chaque jour ouvré, déposé à ton bureau entre 11h30 et 13h30.
+        Tu choisis tes jours, on gère la cuisine, la route et la ponctualité.
+      </p>
+      <ul class="ticks">
+        <li>20 déjeuners par mois, livrés</li>
+        <li>Menu tournant, jamais deux fois le même plat d'affilée</li>
+        <li>Facture unique en fin de mois</li>
+      </ul>
+      <a class="btn btn--yellow btn--lg" href="#commander">Souscrire la formule</a>
+    </div>
+    <div class="formule__art">
+      <img src="../assets/img/livreur.webp" alt="Livreur Delight of Babi en scooter" loading="lazy" width="550" height="460">
+      <div class="stamp"><span>dès</span><strong>25.000</strong><span>F / mois</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LIVRAISON ============ -->
+<section class="section section--split" id="livraison">
+  <div class="split__media reveal">
+    <img src="../assets/img/bento.webp" alt="Plateau repas prêt à être livré" loading="lazy" width="252" height="356">
+    <img src="../assets/img/mini-poulet.webp" alt="Poulet braisé, frites et sauce verte" loading="lazy" width="423" height="426" class="split__media-2">
+  </div>
+  <div class="split__copy">
+    <p class="eyebrow">Livraison</p>
+    <h2>Chaud chez toi,<br>à partir de <em>700 F</em>.</h2>
+    <p>
+      Nos livreurs couvrent Tchingua, Hédzranawoé, Agoè et les quartiers alentour.
+      Le tarif dépend de la distance — on te l'annonce avant de partir, jamais après.
+    </p>
+    <div class="steps">
+      <div class="step"><b>01</b><h4>Tu appelles</h4><p>Ou tu écris sur WhatsApp, avec ton plat et ton quartier.</p></div>
+      <div class="step"><b>02</b><h4>On cuisine</h4><p>Préparation minute, emballage isotherme.</p></div>
+      <div class="step"><b>03</b><h4>Ça arrive</h4><p>25 à 40 minutes selon la distance. Paiement à la remise.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AMBIANCE ============ -->
+<section class="ambiance">
+  <div class="ambiance__img">
+    <img src="../assets/img/ambiance-salle.webp" alt="Clientes attablées dans la salle de Delight of Babi" loading="lazy" width="1440" height="704">
+  </div>
+  <div class="ambiance__quote">
+    <p>« Nouvel emplacement, nouveau cadre, <em>plus&nbsp;de&nbsp;kiff</em>.&nbsp;»</p>
+    <span>Notre salle à Tchingua, ouverte tous les jours de 10h à 23h</span>
+  </div>
+</section>
+
+<!-- ============ COMMANDER ============ -->
+<section class="section" id="commander">
+  <div class="order">
+    <div class="order__copy">
+      <p class="eyebrow">Commande &amp; réservation</p>
+      <h2>Dis-nous ce qui<br>te ferait <em>plaisir</em>.</h2>
+      <p>
+        Le paiement en ligne arrive bientôt. En attendant, remplis ce formulaire :
+        il prépare ton message WhatsApp, tu n'as plus qu'à l'envoyer.
+      </p>
+      <div class="order__direct">
+        <a href="tel:+22891910302"><b>+228 91 91 03 02</b><span>Commandes &amp; livraisons</span></a>
+        <a href="tel:+22892539988"><b>+228 92 53 99 88</b><span>Réservations &amp; groupes</span></a>
+      </div>
+    </div>
+
+    <form class="order__form" id="orderForm" novalidate>
+      <div class="field">
+        <label for="f-type">Je souhaite</label>
+        <div class="segmented" role="radiogroup" aria-label="Type de demande">
+          <input type="radio" name="type" id="t1" value="Commande à livrer" checked><label for="t1">Me faire livrer</label>
+          <input type="radio" name="type" id="t2" value="Commande à emporter"><label for="t2">Emporter</label>
+          <input type="radio" name="type" id="t3" value="Réservation de table"><label for="t3">Réserver</label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="f-dish">Plat souhaité</label>
+        <select id="f-dish" name="dish">
+          <option>Poulet mayo + attiéké/aloko — 3.000 F</option>
+          <option>Attiéké + aloko + poisson/poulet — 2.000 F</option>
+          <option>Jollof rice / riz gras — 1.500 F</option>
+          <option>Attiéké poisson — 2.000 F</option>
+          <option>Aloko / banane plantain — 2.000 F</option>
+          <option>Formule déjeuner du mois — dès 25.000 F</option>
+          <option>Je préfère en discuter</option>
+        </select>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="f-qty">Quantité</label>
+          <input type="number" id="f-qty" name="qty" min="1" max="50" value="1">
+        </div>
+        <div class="field">
+          <label for="f-when">Pour quand</label>
+          <input type="text" id="f-when" name="when" placeholder="Ce midi, 12h30…">
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="f-where">Quartier / adresse</label>
+        <input type="text" id="f-where" name="where" placeholder="Hédzranawoé, derrière la pharmacie…">
+      </div>
+
+      <div class="field">
+        <label for="f-note">Un mot pour la cuisine</label>
+        <textarea id="f-note" name="note" rows="2" placeholder="Bien pimenté, sans oignon…"></textarea>
+      </div>
+
+      <button class="btn btn--dark btn--lg btn--full" type="submit">
+        Préparer mon message WhatsApp
+      </button>
+      <p class="order__status" id="orderStatus" role="status" aria-live="polite" hidden></p>
+      <p class="order__legal">Aucune donnée n'est enregistrée : le formulaire ouvre simplement WhatsApp avec votre message.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ TROUVER ============ -->
+<section class="find" id="trouver">
+  <div class="find__grid">
+    <div class="find__block">
+      <h3>L'adresse</h3>
+      <p>Tchingua, non loin de l'agence Moov<br>57X3+CC2 — Lomé, Togo</p>
+      <a class="link" href="https://maps.google.com/?q=57X3%2BCC2+Lom%C3%A9+Togo" target="_blank" rel="noopener">Ouvrir dans Maps →</a>
+    </div>
+    <div class="find__block">
+      <h3>Les horaires</h3>
+      <p>Tous les jours<br><strong>10h00 – 23h00</strong></p>
+      <span class="find__note">Cuisine jusqu'à 30 min avant la fermeture</span>
+    </div>
+    <div class="find__block">
+      <h3>Nous joindre</h3>
+      <p><a href="tel:+22891910302">+228 91 91 03 02</a><br><a href="tel:+22892539988">+228 92 53 99 88</a></p>
+      <a class="link" href="https://wa.me/22891910302" target="_blank" rel="noopener">Écrire sur WhatsApp →</a>
+    </div>
+    <div class="find__block find__block--social">
+      <h3>Nous suivre</h3>
+      <p>@delightofbabi</p>
+      <div class="socials">
+        <a href="#" aria-label="Facebook">FB</a>
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="TikTok">TT</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="foot">
+  <img class="foot__logo" src="../assets/img/logo-blanc-hd.png" alt="Delight of Babi">
+  <p class="foot__tag">Le goût de Babi, servi chaud à Lomé.</p>
+  <nav class="foot__nav">
+    <a href="#menu">Menu</a><a href="#formule">Formules</a><a href="#livraison">Livraison</a><a href="#trouver">Nous trouver</a>
+  </nav>
+  <p class="foot__legal">© <span id="year">2026</span> Delight of Babi — Tchingua, Lomé · Tous droits réservés</p>
+</footer>
+
+<a class="fab" href="https://wa.me/22891910302" target="_blank" rel="noopener" aria-label="Commander sur WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.2 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1a11 11 0 0 1-5.9-5.2c-.4-.7-.7-1.5-.7-2.2 0-.8.4-1.4.8-1.8.2-.2.4-.2.6-.2h.4c.2 0 .4 0 .6.4l.8 1.9c0 .2 0 .3-.1.5l-.4.5c-.1.2-.3.3-.1.6a8 8 0 0 0 3.6 3.1c.3.1.4.1.6-.1l.8-1c.2-.2.3-.2.6-.1l1.8.9c.3.1.4.2.4.4v.9Z"/></svg>
+  <span>Commander</span>
+</a>
+
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "ibr",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "5178", "--directory", "C:/Users/Administrateur/web_prototypes/ibr"],
+      "port": 5178
+    }
+  ]
+}

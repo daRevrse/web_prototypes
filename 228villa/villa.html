@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Villa à louer · 228 Villa</title>
+  <meta name="description" content="Fiche villa 228 Villa : photos, loyer, équipements, conditions et prise de rendez-vous de visite sur place ou en appel vidéo.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="villa">
+<script src="assets/js/icons.js"></script>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="228 Villa, accueil"><img src="assets/img/logo-ink.png" alt="228 Villa" width="202" height="99"></a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="villas.html" aria-current="page">Trouver une villa</a>
+      <a href="index.html#proprietaires">Proposer mon bien</a>
+      <a href="index.html#actus">Actualités</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn-soft" href="https://wa.me/22891253956?text=Bonjour%2C%20je%20cherche%20une%20villa%20%C3%A0%20louer%20sur%20228%20Villa." target="_blank" rel="noopener" aria-label="Écrire sur WhatsApp"><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg><span class="btn-label">WhatsApp</span></a>
+      <button class="icon-btn menu-btn" type="button" data-menu-open aria-label="Ouvrir le menu"><svg class="i" aria-hidden="true"><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <nav class="crumbs" aria-label="Fil d'Ariane">
+      <a href="index.html">Accueil</a><svg class="i" aria-hidden="true"><use href="#i-chevron-right"/></svg>
+      <a href="villas.html">Villas à louer</a><svg class="i" aria-hidden="true"><use href="#i-chevron-right"/></svg>
+      <span id="crumb-title" aria-current="page"></span>
+    </nav>
+    <div class="v-head">
+      <div>
+        <h1 id="v-title"></h1>
+        <p class="meta-line" id="v-meta"></p>
+      </div>
+      <div class="v-actions">
+        <button class="btn btn-ghost" type="button" id="v-share"><svg class="i i-sm" aria-hidden="true"><use href="#i-share"/></svg>Partager</button>
+        <button class="btn btn-ghost" type="button" id="v-save" aria-pressed="false"><svg class="i i-sm" aria-hidden="true"><use href="#i-heart"/></svg><span class="lbl">Enregistrer</span></button>
+      </div>
+    </div>
+    <div class="gallery" id="gallery"></div>
+    <div class="gallery-mobile"><div id="gallery-mobile" class="media-wrap"></div></div>
+  </div>
+
+  <div class="container v-layout">
+    <div class="v-main">
+      <section aria-labelledby="facts-t">
+        <h2 class="sr-only" id="facts-t">En bref</h2>
+        <div class="keyfacts" id="keyfacts"></div>
+        <ul class="highlights" id="highlights"></ul>
+      </section>
+      <section aria-labelledby="desc-t">
+        <h2 id="desc-t">Description</h2>
+        <p class="desc" id="desc"></p>
+      </section>
+      <section aria-labelledby="amen-t">
+        <h2 id="amen-t">Équipements et services</h2>
+        <ul class="amen" id="amen"></ul>
+      </section>
+      <section aria-labelledby="terms-t">
+        <h2 id="terms-t">Conditions de location</h2>
+        <dl class="terms" id="terms"></dl>
+      </section>
+      <section id="video-sec" aria-labelledby="video-t" hidden>
+        <h2 id="video-t">La villa en vidéo</h2>
+        <div class="video-wrap"></div>
+      </section>
+      <section aria-labelledby="loc-t">
+        <h2 id="loc-t">Situation</h2>
+        <div id="loc"></div>
+      </section>
+    </div>
+
+    <aside class="v-aside" id="visite" aria-labelledby="book-t">
+      <div class="book">
+        <p class="book-price" id="book-price"></p>
+        <p class="book-sub" id="book-sub"></p>
+        <div id="book-body">
+          <form id="book-form" novalidate>
+            <h2 class="sr-only" id="book-t">Planifier une visite</h2>
+            <div class="book-block">
+              <div class="book-label">Type de visite</div>
+              <div class="seg" id="seg-mode" role="radiogroup" aria-label="Type de visite">
+                <span class="thumb" aria-hidden="true"></span>
+                <input type="radio" name="mode" id="m-place" value="place" checked><label for="m-place"><svg class="i i-sm" aria-hidden="true"><use href="#i-home"/></svg>En personne</label>
+                <input type="radio" name="mode" id="m-video" value="video"><label for="m-video"><svg class="i i-sm" aria-hidden="true"><use href="#i-video"/></svg>Appel vidéo</label>
+              </div>
+            </div>
+            <fieldset class="book-block">
+              <legend class="book-label" style="width:100%">Jour <small>10 prochains jours</small></legend>
+              <div class="days" id="days"></div>
+            </fieldset>
+            <fieldset class="book-block">
+              <legend class="book-label" style="width:100%">Heure</legend>
+              <div class="slots" id="slots"></div>
+            </fieldset>
+            <p class="err slot-err" id="slot-err" role="alert" hidden>Choisissez un jour et une heure de visite.</p>
+            <div class="summary" id="summary" aria-live="polite">
+              <svg class="i" aria-hidden="true"><use href="#i-calendar"/></svg>
+              <span id="summary-text"></span>
+            </div>
+            <div class="book-fields">
+              <div class="input-wrap">
+                <label for="b-nom">Votre nom</label>
+                <input class="input" id="b-nom" name="nom" autocomplete="name" data-req>
+                <p class="err">Indiquez votre nom.</p>
+              </div>
+              <div class="input-wrap">
+                <label for="b-tel">Téléphone ou WhatsApp</label>
+                <input class="input" id="b-tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" placeholder="+33, +1, +228…" data-req="phone">
+                <p class="err">Indiquez un numéro joignable, avec l'indicatif si vous êtes à l'étranger.</p>
+              </div>
+            </div>
+            <div class="book-actions">
+              <button class="btn btn-primary btn-lg btn-block" type="submit">Demander cette visite</button>
+              <a class="btn btn-secondary btn-block" id="book-wa" href="#" target="_blank" rel="noopener"><svg class="i i-sm" aria-hidden="true"><use href="#i-chat"/></svg>Écrire sur WhatsApp</a>
+            </div>
+          </form>
+        </div>
+        <div class="book-agent">
+          <span class="avatar" aria-hidden="true">AA</span>
+          <p><strong>Aurore Assignon</strong>, agent 228 Villa<br><a href="tel:+22891253956">91 25 39 56</a> · <a href="mailto:aassignon@228villa.com">e-mail</a></p>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <section class="section-tight" aria-labelledby="sim-t" style="padding-top: 24px">
+    <div class="container">
+      <div class="section-head" style="border-top: 1px solid var(--line); padding-top: 40px">
+        <h2 class="h2" id="sim-t" style="font-size: clamp(1.5rem, 1.2rem + 1vw, 2rem)">Villas au loyer proche</h2>
+        <a class="link-arrow" href="villas.html">Toutes les villas <svg class="i i-sm" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+      </div>
+      <div class="cards" id="similar"></div>
+    </div>
+  </section>
+</main>
+
+<div class="mobile-bar">
+  <p class="p" id="mb-price"></p>
+  <button class="btn btn-primary" type="button" id="mb-go"><svg class="i i-sm" aria-hidden="true"><use href="#i-calendar"/></svg>Planifier une visite</button>
+</div>
+
+<dialog class="lightbox" id="lightbox" aria-label="Photos de la villa">
+  <div class="lb-top">
+    <p><span class="lb-count"></span> <span class="lb-cap"></span></p>
+    <button class="lb-btn lb-close" type="button" aria-label="Fermer les photos"><svg class="i" aria-hidden="true"><use href="#i-x"/></svg></button>
+  </div>
+  <div class="lb-stage">
+    <img src="data:," alt="">
+    <button class="lb-btn lb-prev" type="button" aria-label="Photo précédente"><svg class="i" aria-hidden="true"><use href="#i-chevron-left"/></svg></button>
+    <button class="lb-btn lb-next" type="button" aria-label="Photo suivante"><svg class="i" aria-hidden="true"><use href="#i-chevron-right"/></svg></button>
+  </div>
+  <div class="lb-thumbs"></div>
+</dialog>
+
+<footer class="site-footer" id="contact">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/img/logo-ink.png" alt="228 Villa" width="202" height="99">
+        <p>Trouvez votre villa, maison ou appartement idéal en quelques clics.</p>
+      </div>
+      <div>
+        <h2>Louer</h2>
+        <ul>
+          <li><a href="villas.html">Trouver une villa</a></li>
+          <li><a href="villas.html?duree=court">Court terme</a></li>
+          <li><a href="villas.html?duree=long">Longue durée</a></li>
+          <li><a href="index.html#visite-a-distance">Visiter à distance</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>228 Villa</h2>
+        <ul>
+          <li><a href="index.html#proprietaires">Proposer mon bien</a></li>
+          <li><a href="index.html#actus">Nouvelles &amp; actus</a></li>
+          <li><a href="https://228villa.com/">Espace connexion</a></li>
+        </ul>
+      </div>
+      <div class="newsletter">
+        <h2>Contact</h2>
+        <ul class="contact-list">
+          <li><svg class="i i-sm" aria-hidden="true"><use href="#i-pin"/></svg>Lomé, Togo</li>
+          <li><svg class="i i-sm" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:+22870163866">+228 70 16 38 66</a></li>
+          <li><svg class="i i-sm" aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:info@228villa.com">info@228villa.com</a></li>
+        </ul>
+        <h2 style="margin-top: 28px">Newsletter</h2>
+        <p>Recevez les dernières offres directement dans votre boîte mail.</p>
+        <form id="newsletter" novalidate style="align-items: flex-start">
+          <div class="input-wrap" style="flex: 1">
+            <label class="sr-only" for="nl">Adresse e-mail</label>
+            <input class="input" id="nl" type="email" placeholder="Votre adresse e-mail" autocomplete="email" data-req="email">
+            <p class="err">Saisissez une adresse e-mail valide.</p>
+          </div>
+          <button class="btn btn-primary" type="submit">S'inscrire</button>
+        </form>
+        <p class="msg" role="status" hidden>Merci&nbsp;! Maquette&nbsp;: l'inscription n'est pas enregistrée.</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 228 Villa. Tous droits réservés.</span>
+      <span>Maquette de refonte · contenus et photos issus de 228villa.com</span>
+    </div>
+  </div>
+</footer>
+
+<dialog class="mobile-menu" id="mobile-menu" aria-label="Menu">
+  <div class="mm-top">
+    <a class="brand" href="index.html"><img src="assets/img/logo-ink.png" alt="228 Villa" width="202" height="99" style="height:34px;width:auto"></a>
+    <button class="icon-btn" type="button" data-menu-close aria-label="Fermer le menu"><svg class="i" aria-hidden="true"><use href="#i-x"/></svg></button>
+  </div>
+  <nav aria-label="Menu mobile">
+    <a href="villas.html">Trouver une villa <svg class="i" aria-hidden="true"><use href="#i-chevron-right"/></svg></a>
+    <a href="index.html#proprietaires">Proposer mon bien <svg class="i" aria-hidden="true"><use href="#i-chevron-right"/></svg></a>
+    <a href="index.html#actus">Actualités <svg class="i" aria-hidden="true"><use href="#i-chevron-right"/></svg></a>
+    <a href="#contact">Contact <svg class="i" aria-hidden="true"><use href="#i-chevron-right"/></svg></a>
+  </nav>
+  <div class="mm-actions">
+    <a class="btn btn-primary btn-lg" href="https://wa.me/22891253956?text=Bonjour%2C%20je%20cherche%20une%20villa%20%C3%A0%20louer%20sur%20228%20Villa." target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg>Écrire sur WhatsApp</a>
+    <a class="btn btn-secondary btn-lg" href="tel:+22870163866"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>+228 70 16 38 66</a>
+  </div>
+</dialog>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
