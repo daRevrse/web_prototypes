@@ -1,0 +1,538 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-30T17:29:14+00:00",
+  "title": "Design System: Digital Dreamers",
+  "extensions": {
+    "colorMeta": {
+      "red": {
+        "role": "primary",
+        "displayName": "BostonSolux Red",
+        "canonical": "#b40000",
+        "oklch": "oklch(48.3% 0.198 29.2)",
+        "tonalRamp": [
+          "#220000",
+          "#4e0000",
+          "#810101",
+          "#b70905",
+          "#e04133",
+          "#fd7665",
+          "#fcb4a9",
+          "#ffe9e5"
+        ]
+      },
+      "red-700": {
+        "role": "primary",
+        "displayName": "Pressed Red",
+        "canonical": "#950000",
+        "oklch": "oklch(42.1% 0.173 29.2)",
+        "tonalRamp": [
+          "#220000",
+          "#4c0301",
+          "#7e0c07",
+          "#ae271d",
+          "#d64f40",
+          "#ff7463",
+          "#feb4a8",
+          "#fee9e6"
+        ]
+      },
+      "red-800": {
+        "role": "primary",
+        "displayName": "Deep Red",
+        "canonical": "#7a0000",
+        "oklch": "oklch(36.4% 0.149 29.2)",
+        "tonalRamp": [
+          "#210000",
+          "#4d0101",
+          "#7f0805",
+          "#a5352a",
+          "#cc594b",
+          "#f47d6d",
+          "#ffb3a7",
+          "#fee9e5"
+        ]
+      },
+      "red-100": {
+        "role": "primary",
+        "displayName": "Rose Line",
+        "canonical": "#f8dad7",
+        "oklch": "oklch(91.2% 0.034 24.6)",
+        "tonalRamp": [
+          "#170505",
+          "#341f1d",
+          "#533b39",
+          "#735a58",
+          "#967b78",
+          "#b99d9b",
+          "#dfc1be",
+          "#ffe9e6"
+        ]
+      },
+      "red-50": {
+        "role": "primary",
+        "displayName": "Red Wash",
+        "canonical": "#fdf0ef",
+        "oklch": "oklch(96.5% 0.014 22.8)",
+        "tonalRamp": [
+          "#110908",
+          "#2c2222",
+          "#493f3e",
+          "#695e5d",
+          "#8b7f7e",
+          "#aea2a1",
+          "#d2c6c5",
+          "#f8ebea"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#1e1818",
+        "oklch": "oklch(21.6% 0.010 17.9)",
+        "tonalRamp": [
+          "#0f0a0a",
+          "#2a2323",
+          "#474040",
+          "#675f5f",
+          "#888080",
+          "#aba3a3",
+          "#cfc7c7",
+          "#f5ecec"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Ink Soft",
+        "canonical": "#423a3a",
+        "oklch": "oklch(35.7% 0.011 17.7)",
+        "tonalRamp": [
+          "#100909",
+          "#2a2323",
+          "#484040",
+          "#675f5f",
+          "#898080",
+          "#aca2a2",
+          "#d0c6c6",
+          "#f6ecec"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted Ash",
+        "canonical": "#665d5d",
+        "oklch": "oklch(48.7% 0.012 17.6)",
+        "tonalRamp": [
+          "#100909",
+          "#2a2323",
+          "#484040",
+          "#685f5f",
+          "#898080",
+          "#aca2a2",
+          "#d1c6c6",
+          "#f6eceb"
+        ]
+      },
+      "faint": {
+        "role": "neutral",
+        "displayName": "Faint Ash",
+        "canonical": "#9a9191",
+        "oklch": "oklch(66.4% 0.011 17.4)",
+        "tonalRamp": [
+          "#0f0909",
+          "#2a2323",
+          "#484040",
+          "#675f5f",
+          "#898080",
+          "#aca2a2",
+          "#d0c6c6",
+          "#f6ecec"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#ebe4e3",
+        "oklch": "oklch(92.4% 0.008 27.2)",
+        "tonalRamp": [
+          "#0e0a09",
+          "#292423",
+          "#464040",
+          "#66605f",
+          "#878180",
+          "#aaa3a2",
+          "#cec7c6",
+          "#f4edec"
+        ]
+      },
+      "line-2": {
+        "role": "neutral",
+        "displayName": "Rule",
+        "canonical": "#d9cfce",
+        "oklch": "oklch(86.2% 0.011 24.3)",
+        "tonalRamp": [
+          "#100909",
+          "#2a2322",
+          "#48403f",
+          "#675f5e",
+          "#89807f",
+          "#aca2a1",
+          "#d0c6c5",
+          "#f6eceb"
+        ]
+      },
+      "band": {
+        "role": "neutral",
+        "displayName": "Warm Band",
+        "canonical": "#f6f3f2",
+        "oklch": "oklch(96.6% 0.003 39.5)",
+        "tonalRamp": [
+          "#0d0b0a",
+          "#272424",
+          "#444141",
+          "#636060",
+          "#848281",
+          "#a7a4a3",
+          "#cbc8c7",
+          "#f1eeed"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "canonical": "#ffffff",
+        "oklch": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#a5a5a5",
+          "#c9c9c9",
+          "#eeeeee"
+        ]
+      },
+      "night": {
+        "role": "neutral",
+        "displayName": "Night",
+        "canonical": "#1e1818",
+        "oklch": "oklch(21.6% 0.010 17.9)",
+        "tonalRamp": [
+          "#0f0a0a",
+          "#2a2323",
+          "#474040",
+          "#675f5f",
+          "#888080",
+          "#aba3a3",
+          "#cfc7c7",
+          "#f5ecec"
+        ]
+      },
+      "night-2": {
+        "role": "neutral",
+        "displayName": "Night Raised",
+        "canonical": "#2a2323",
+        "oklch": "oklch(26.4% 0.011 17.8)",
+        "tonalRamp": [
+          "#0f0909",
+          "#2a2323",
+          "#484040",
+          "#675f5f",
+          "#898080",
+          "#aca2a2",
+          "#d0c6c6",
+          "#f6ecec"
+        ]
+      },
+      "night-line": {
+        "role": "neutral",
+        "displayName": "Night Line",
+        "canonical": "#3e3535",
+        "oklch": "oklch(33.9% 0.013 17.8)",
+        "tonalRamp": [
+          "#100909",
+          "#2b2323",
+          "#493f3f",
+          "#685e5e",
+          "#8a7f7f",
+          "#ada2a2",
+          "#d1c6c6",
+          "#f7ebeb"
+        ]
+      },
+      "night-muted": {
+        "role": "neutral",
+        "displayName": "Night Muted",
+        "canonical": "#b8aeae",
+        "oklch": "oklch(75.9% 0.011 17.4)",
+        "tonalRamp": [
+          "#100909",
+          "#2a2323",
+          "#484040",
+          "#685f5f",
+          "#898080",
+          "#aca2a2",
+          "#d1c6c6",
+          "#f6ecec"
+        ]
+      },
+      "ok": {
+        "role": "status",
+        "displayName": "Success Green",
+        "canonical": "#1d6b3a",
+        "oklch": "oklch(46.8% 0.108 151.7)",
+        "tonalRamp": [
+          "#001102",
+          "#002e12",
+          "#015025",
+          "#267241",
+          "#4b9561",
+          "#6eb983",
+          "#92dea6",
+          "#c9fed5"
+        ]
+      },
+      "danger": {
+        "role": "status",
+        "displayName": "Error Red",
+        "canonical": "#a3161c",
+        "oklch": "oklch(46.0% 0.174 26.0)",
+        "tonalRamp": [
+          "#230000",
+          "#4c0105",
+          "#7e0911",
+          "#ae2526",
+          "#d74d48",
+          "#f9786f",
+          "#feb3ab",
+          "#fee9e6"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The single page h1 (Rubik 800)."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section h2s (Rubik 750)."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Programme stops, legends, partner and aside headings."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Paragraph under a display or section heading, 46 to 62ch."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All reading text in Lexend; 16px under 640px."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Buttons, tabs, 'more' links, FAQ questions (Rubik 600)."
+      }
+    },
+    "shadows": [
+      {
+        "name": "caption-float",
+        "value": "0 2px 10px -2px rgb(30 24 24 / 0.25)",
+        "purpose": "White caption pill sitting on a photograph only."
+      },
+      {
+        "name": "focus-halo",
+        "value": "0 0 0 4px rgb(180 0 0 / 0.14)",
+        "purpose": "Text inputs on focus, paired with a red border."
+      }
+    ],
+    "focus": {
+      "outline": "3px solid #b40000",
+      "offset": "3px",
+      "onDark": "outline-color #ffffff on red, ink and footer surfaces"
+    },
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "purpose": "The only easing for movement."
+      },
+      {
+        "name": "press",
+        "value": "scale(0.97), 160ms ease-out",
+        "purpose": "Buttons and choice pills (menu button 0.94)."
+      },
+      {
+        "name": "color-change",
+        "value": "160ms ease",
+        "purpose": "Hover colour, border and background changes (200ms for header border and tab label)."
+      },
+      {
+        "name": "tab-pill-slide",
+        "value": "transform 240ms ease-out",
+        "purpose": "Active edition tab marker."
+      },
+      {
+        "name": "panel-fade",
+        "value": "opacity 240 to 280ms ease-out",
+        "purpose": "Edition panels and FAQ answers."
+      },
+      {
+        "name": "drawer",
+        "value": "transform 280ms ease-out",
+        "purpose": "Mobile navigation drawer and backdrop."
+      },
+      {
+        "name": "hero-settle",
+        "value": "scale 0.97 to 1 with opacity, 900ms ease-out",
+        "purpose": "The single load moment, on the hero photo; opacity only under reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "narrow-desktop",
+        "value": "1100px"
+      },
+      {
+        "name": "tablet",
+        "value": "960px"
+      },
+      {
+        "name": "mobile",
+        "value": "640px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Red pill for the one main action per view (pre-register).",
+      "html": "<button class=\"ds-btn ds-btn-red\">Pré-inscrire mon enfant <svg viewBox=\"0 0 24 24\" width=\"19\" height=\"19\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border:2px solid transparent;border-radius:999px;font-family:Rubik,sans-serif;font-size:16.5px;font-weight:600;line-height:1;white-space:nowrap;cursor:pointer;transition:transform 160ms cubic-bezier(0.23,1,0.32,1),background-color 160ms ease,border-color 160ms ease,color 160ms ease}.ds-btn:active{transform:scale(0.97)}.ds-btn:focus-visible{outline:3px solid #b40000;outline-offset:3px}.ds-btn-red{background:#b40000;color:#fff}.ds-btn-red:hover{background:#950000}.ds-btn-red:active{background:#7a0000}"
+    },
+    {
+      "name": "Outline Button",
+      "kind": "button",
+      "refersTo": "button-outline",
+      "description": "Secondary pill with a 2px ink border; inverts to ink on hover.",
+      "html": "<button class=\"ds-btn-line\">Voir le programme</button>",
+      "css": ".ds-btn-line{display:inline-flex;align-items:center;min-height:52px;padding:0 26px;border:2px solid #1e1818;border-radius:999px;background:#fff;color:#1e1818;font-family:Rubik,sans-serif;font-size:16.5px;font-weight:600;line-height:1;cursor:pointer;transition:transform 160ms cubic-bezier(0.23,1,0.32,1),background-color 160ms ease,color 160ms ease}.ds-btn-line:hover{background:#1e1818;color:#fff}.ds-btn-line:active{transform:scale(0.97)}.ds-btn-line:focus-visible{outline:3px solid #b40000;outline-offset:3px}"
+    },
+    {
+      "name": "Fact Chip",
+      "kind": "chip",
+      "refersTo": "fact-chip",
+      "description": "Red Wash pill with a red line icon stating one hard fact.",
+      "html": "<span class=\"ds-chip\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"3\" y=\"8\" width=\"18\" height=\"4\" rx=\"1\"/><path d=\"M12 8v13\"/><path d=\"M19 12v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-7\"/></svg>Gratuit</span>",
+      "css": ".ds-chip{display:inline-flex;align-items:center;gap:8px;padding:9px 14px 9px 10px;border-radius:999px;background:#fdf0ef;color:#1e1818;font-family:Lexend,sans-serif;font-size:15px;font-weight:500;line-height:1.2}.ds-chip svg{color:#b40000}"
+    },
+    {
+      "name": "Editions Switcher",
+      "kind": "custom",
+      "refersTo": "tab",
+      "description": "Segmented pill control; a red pill slides under the active label (240ms ease-out).",
+      "html": "<div class=\"ds-tabs\" role=\"tablist\"><span class=\"ds-tab-pill\"></span><button class=\"ds-tab\" role=\"tab\" aria-selected=\"true\">2026</button><button class=\"ds-tab\" role=\"tab\" aria-selected=\"false\">2025</button><button class=\"ds-tab\" role=\"tab\" aria-selected=\"false\">2024</button></div>",
+      "css": ".ds-tabs{position:relative;display:inline-flex;gap:4px;padding:6px;border-radius:999px;background:#fff;border:1px solid #ebe4e3}.ds-tab{position:relative;z-index:1;min-height:46px;padding:0 22px;border:0;border-radius:999px;background:transparent;font-family:Rubik,sans-serif;font-size:16px;font-weight:600;color:#423a3a;cursor:pointer;transition:color 200ms ease}.ds-tab[aria-selected=true]{color:#fff}.ds-tab:focus-visible{outline:3px solid #b40000;outline-offset:3px}.ds-tab-pill{position:absolute;top:6px;left:6px;height:46px;width:78px;border-radius:999px;background:#b40000;transition:transform 240ms cubic-bezier(0.23,1,0.32,1)}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "52px field, 2px Rule border, red border and soft halo on focus.",
+      "html": "<label class=\"ds-field\"><span>Prénom de l'enfant</span><input class=\"ds-input\" placeholder=\"Prénom\"></label>",
+      "css": ".ds-field{display:grid;gap:7px;font-family:Lexend,sans-serif;font-size:15.5px;font-weight:500;color:#1e1818}.ds-input{width:100%;min-height:52px;padding:12px 16px;border:2px solid #d9cfce;border-radius:10px;background:#fff;font:inherit;font-size:16px;font-weight:400;color:#1e1818;transition:border-color 160ms ease,box-shadow 160ms ease}.ds-input::placeholder{color:#6f6666}.ds-input:hover{border-color:#9a9191}.ds-input:focus{outline:none;border-color:#b40000;box-shadow:0 0 0 4px rgb(180 0 0 / 0.14)}"
+    },
+    {
+      "name": "Choice Pill",
+      "kind": "chip",
+      "refersTo": "choice",
+      "description": "Radio option rendered as a pill; selected goes Red Wash with a red border.",
+      "html": "<span class=\"ds-choice\"><input type=\"radio\" name=\"d\" id=\"ds-a\" checked><label for=\"ds-a\">Non, ce sera la première fois</label></span> <span class=\"ds-choice\"><input type=\"radio\" name=\"d\" id=\"ds-b\"><label for=\"ds-b\">Oui</label></span>",
+      "css": ".ds-choice{position:relative;display:inline-block}.ds-choice input{position:absolute;opacity:0;pointer-events:none}.ds-choice label{display:inline-flex;align-items:center;min-height:46px;padding:0 18px;border:2px solid #d9cfce;border-radius:999px;font-family:Lexend,sans-serif;font-weight:500;cursor:pointer;transition:border-color 160ms ease,background-color 160ms ease,transform 160ms cubic-bezier(0.23,1,0.32,1)}.ds-choice label:hover{border-color:#1e1818}.ds-choice label:active{transform:scale(0.97)}.ds-choice input:checked+label{border-color:#b40000;background:#fdf0ef;color:#7a0000}.ds-choice input:focus-visible+label{outline:3px solid #b40000;outline-offset:2px}"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "refersTo": "nav",
+      "description": "Typographic wordmark, Lexend links with Warm Band hover pill, small red CTA.",
+      "html": "<header class=\"ds-nav\"><a class=\"ds-wm\" href=\"#\"><b>Digital <span>Dreamers</span></b></a><nav><a href=\"#\" aria-current=\"page\">Le programme</a><a href=\"#\">Les éditions</a><a href=\"#\">Questions</a></nav><a class=\"ds-nav-cta\" href=\"#\">Pré-inscrire</a></header>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:24px;height:76px;padding:0 24px;background:#fff;border-bottom:1px solid #ebe4e3;font-family:Lexend,sans-serif}.ds-wm{display:grid;gap:1px;line-height:1;text-decoration:none;color:#1e1818}.ds-wm b{font-family:Rubik,sans-serif;font-size:1.45rem;font-weight:800;letter-spacing:-0.02em}.ds-wm b span{color:#b40000}.ds-nav nav{display:flex;gap:2px;margin-left:auto}.ds-nav nav a{padding:10px 13px;border-radius:999px;font-size:15px;font-weight:500;color:#423a3a;text-decoration:none;transition:background-color 160ms ease,color 160ms ease}.ds-nav nav a:hover{background:#f6f3f2;color:#1e1818}.ds-nav nav a[aria-current=page]{color:#b40000}.ds-nav a:focus-visible{outline:3px solid #b40000;outline-offset:3px}.ds-nav-cta{display:inline-flex;align-items:center;min-height:44px;padding:0 18px;border-radius:999px;background:#b40000;color:#fff;font-family:Rubik,sans-serif;font-size:15px;font-weight:600;text-decoration:none;transition:background-color 160ms ease}.ds-nav-cta:hover{background:#950000}"
+    },
+    {
+      "name": "Icon Row",
+      "kind": "card",
+      "refersTo": "icon-disc",
+      "description": "Hairline-divided list row led by a Red Wash icon disc; title and chevron turn red on hover.",
+      "html": "<a class=\"ds-row\" href=\"#\"><span class=\"ds-disc\"><svg viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m18 16 4-4-4-4\"/><path d=\"m6 8-4 4 4 4\"/><path d=\"m14.5 4-5 16\"/></svg></span><span><strong>Initiation à l'algorithmique</strong><em>Raisonner comme un développeur dès le départ.</em></span><svg class=\"ds-go\" viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m9 18 6-6-6-6\"/></svg></a>",
+      "css": ".ds-row{display:grid;grid-template-columns:48px 1fr 22px;gap:16px;align-items:center;padding:20px 0;border-bottom:1px solid #ebe4e3;text-decoration:none;color:#1e1818;font-family:Lexend,sans-serif}.ds-disc{display:grid;place-items:center;width:48px;height:48px;border-radius:50%;background:#fdf0ef;color:#b40000}.ds-row strong{display:block;font-family:Rubik,sans-serif;font-weight:650;font-size:1.1rem;line-height:1.3;transition:color 160ms ease}.ds-row em{display:block;margin-top:4px;font-style:normal;font-size:15px;color:#423a3a}.ds-go{color:#9a9191;transition:transform 200ms cubic-bezier(0.23,1,0.32,1),color 160ms ease}.ds-row:hover strong,.ds-row:hover .ds-go{color:#b40000}.ds-row:hover .ds-go{transform:translateX(3px)}.ds-row:focus-visible{outline:3px solid #b40000;outline-offset:3px}"
+    },
+    {
+      "name": "Quote Panel",
+      "kind": "card",
+      "refersTo": "panel",
+      "description": "Flat 18px white panel with a Hairline border; Rubik quote in red guillemets.",
+      "html": "<figure class=\"ds-quote\"><blockquote><p>Les enfants posent les bonnes questions.</p></blockquote><figcaption><span class=\"ds-ini\">KA</span><span><strong>Formateur</strong><br><small>BostonSolux Academy</small></span></figcaption></figure>",
+      "css": ".ds-quote{display:grid;gap:20px;margin:0;padding:clamp(24px,3vw,36px);border-radius:18px;background:#fff;border:1px solid #ebe4e3;font-family:Lexend,sans-serif;color:#1e1818}.ds-quote blockquote{margin:0}.ds-quote p{margin:0;font-family:Rubik,sans-serif;font-size:clamp(1.25rem,1.1rem + 0.5vw,1.5rem);font-weight:600;line-height:1.35;letter-spacing:-0.01em}.ds-quote p::before{content:'\\00AB\\00A0';color:#b40000}.ds-quote p::after{content:'\\00A0\\00BB';color:#b40000}.ds-quote figcaption{display:flex;align-items:center;gap:12px}.ds-ini{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:#1e1818;color:#fff;font-family:Rubik,sans-serif;font-weight:700;font-size:15px}.ds-quote small{font-size:14.5px;color:#665d5d}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Open Classroom",
+    "overview": "Digital Dreamers is the category standard for a youth coding programme, played straight: real children in real rooms, plain answers for parents, one obvious way to register. The page behaves like a well-run school open day. White ground, ink type, BostonSolux red used for brand, action and emphasis, and nothing on the surface that is there to look clever. Its quality bar is Code.org and Scratch (clear, joyful without being childish) and Code Club and the Raspberry Pi Foundation (serious programme, institutional credibility).\n\nDensity is calm and generous. Sections breathe on a white or warm grey band, content sits in a 1240px container, and the rhythm alternates text with real session photographs. Warmth comes from three sources only: the photographs, Rubik's rounded heavy display cuts, and pill-shaped controls. Depth is flat; surfaces are separated by tone and hairlines, not by shadows.\n\nThe world rejects the AI-template language its predecessor used: sparkle marks, eyebrow pills above headings, radial glows, floating stat cards, stock photography, cards that lift on hover and gradient bands.",
+    "keyCharacteristics": [
+      "White ground, ink #1E1818 text, BostonSolux red #B40000 as the single accent.",
+      "Rubik 700 to 800 for display, Lexend for reading.",
+      "Rounded but not bubbly: 10px fields, 14px photos, 18px panels and hero photos, pill buttons and chips.",
+      "Authored 2px line icons, set in red-on-wash discs.",
+      "Real, captioned photographs of the programme's own sessions; never stock.",
+      "Flat surfaces; tone and 1px hairlines carry structure.",
+      "One motion voice: ease-out, short, press-scale feedback."
+    ],
+    "rules": [
+      {
+        "name": "The One Accent Rule",
+        "body": "Red is the only hue. Status green and error red appear only inside the form; no other accent colour enters the system.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Ink Band Rule",
+        "body": "Full-bleed dark surfaces are reserved for the footer. Inside the page, dark appears only as a bounded panel with radius.",
+        "section": "colors"
+      },
+      {
+        "name": "The Rubik Speaks, Lexend Explains Rule",
+        "body": "Anything you click or scan as a heading is Rubik; anything you read is Lexend. Headings balance (`text-wrap: balance`), paragraphs pretty-wrap.",
+        "section": "typography"
+      },
+      {
+        "name": "The Sentence Case Rule",
+        "body": "No uppercase labels, no tracked-out small caps, no label or kicker above a heading (a breadcrumb trail on inner pages is navigation, not a label). A section starts with its heading.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Ground Rule",
+        "body": "Cards, panels and rows carry no shadow at rest or on hover. Hover changes colour, never altitude.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep BostonSolux red (#b40000) as the only accent and ink (#1e1818) on white as the base.",
+      "Do set display and headings in Rubik 700 to 800 and all reading text in Lexend.",
+      "Do use real, captioned photographs of Digital Dreamers sessions, at 14px or 18px radius.",
+      "Do use authored 2px line icons in red, inside Red Wash discs when they lead an item.",
+      "Do make every action a pill (999px) that scales to 0.97 on press.",
+      "Do separate surfaces with tone (white, Warm Band #f6f3f2, Red Wash #fdf0ef) and hairlines.",
+      "Do give every interactive element the 3px red focus outline at 3px offset (white on red or ink surfaces)."
+    ],
+    "donts": [
+      "Don't put eyebrow pills, kickers or uppercase labels above headings.",
+      "Don't use radial glows, gradient bands or floating stat cards.",
+      "Don't lift cards or panels on hover or give them drop shadows.",
+      "Don't use stock photography or illustrated stand-ins for the children.",
+      "Don't introduce a second accent hue; green and error red stay inside form feedback.",
+      "Don't use Plus Jakarta Sans, system fonts or any third family for display."
+    ]
+  }
+}
