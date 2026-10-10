@@ -1,0 +1,194 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-10T12:00:00Z",
+  "title": "Design System: Caritas Africa (v3)",
+  "extensions": {
+    "colorMeta": {
+      "red": { "role": "primary", "displayName": "Caritas Red", "canonical": "#7c0800", "tonalRamp": ["#2e0300", "#540500", "#7c0800", "#a3241a", "#c94a3e", "#ee7466", "#f7d8d2", "#fbefec"] },
+      "red-hover": { "role": "primary", "displayName": "Red Hover", "canonical": "#650600" },
+      "red-press": { "role": "primary", "displayName": "Red Press", "canonical": "#540500" },
+      "red-wash": { "role": "primary", "displayName": "Red Wash", "canonical": "#fbefec" },
+      "red-on-night": { "role": "primary", "displayName": "Red on Night", "canonical": "#ee7466", "tonalRamp": ["#4a1610", "#7a2a21", "#a83f33", "#cf5749", "#ee7466", "#f39a8f", "#f8c3bc", "#fde9e6"] },
+      "on-red": { "role": "primary", "displayName": "On Red", "canonical": "#ffffff" },
+      "on-red-2": { "role": "primary", "displayName": "Rose on Red", "canonical": "#f7d8d2" },
+      "night": { "role": "neutral", "displayName": "Night", "canonical": "#120f0e", "tonalRamp": ["#120f0e", "#1d1916", "#2a2420", "#3a332e", "#6e655c", "#ada399", "#e6e0d8", "#f3eee8"] },
+      "night-2": { "role": "neutral", "displayName": "Night Raised", "canonical": "#1d1916" },
+      "night-3": { "role": "neutral", "displayName": "Night Active", "canonical": "#2a2420" },
+      "night-line": { "role": "neutral", "displayName": "Night Line", "canonical": "#3a332e" },
+      "on-night": { "role": "neutral", "displayName": "On Night", "canonical": "#f3eee8" },
+      "on-night-2": { "role": "neutral", "displayName": "On Night Muted", "canonical": "#ada399" },
+      "day": { "role": "neutral", "displayName": "Day", "canonical": "#ffffff" },
+      "day-2": { "role": "neutral", "displayName": "Day Soft", "canonical": "#f2f2f0" },
+      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "#18130f", "tonalRamp": ["#18130f", "#2f2822", "#4d453e", "#6e655c", "#968c82", "#cfc6bb", "#e6e0d8", "#f2f2f0"] },
+      "ink-2": { "role": "neutral", "displayName": "Ink Soft", "canonical": "#4d453e" },
+      "muted": { "role": "neutral", "displayName": "Muted", "canonical": "#6e655c" },
+      "line": { "role": "neutral", "displayName": "Line", "canonical": "#e6e0d8" },
+      "line-2": { "role": "neutral", "displayName": "Line Strong", "canonical": "#cfc6bb" },
+      "error-on-night": { "role": "neutral", "displayName": "Error on Night", "canonical": "#ff9e92" },
+      "wa": { "role": "functional", "displayName": "WhatsApp Green", "canonical": "#1fa855" },
+      "wa-hover": { "role": "functional", "displayName": "WhatsApp Green Hover", "canonical": "#188c46" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Opening title, the act chapter's call, inner page titles; words rise in on load." },
+      "headline": { "displayName": "Headline", "purpose": "Chapter heads and inner-page section heads." },
+      "title": { "displayName": "Title", "purpose": "Panel, group, news, value and zone heads." },
+      "numeral": { "displayName": "Numeral", "purpose": "The network's 46, counted by scroll." },
+      "figure": { "displayName": "Figure", "purpose": "APPROCHE figures and timeline years." },
+      "control": { "displayName": "Control", "purpose": "Buttons and link arrows." },
+      "nav": { "displayName": "Nav", "purpose": "Header links, alert link, rail labels." },
+      "label": { "displayName": "Label", "purpose": "dt labels, metadata, captions, credits, sources." },
+      "statement": { "displayName": "Statement", "purpose": "The who-we-are sentence that inks word by word." },
+      "quote": { "displayName": "Quote", "purpose": "Mission and vision scripture, Literata italic." },
+      "citation": { "displayName": "Citation", "purpose": "Sentence-case source line below a scripture quote, Literata italic." },
+      "lead": { "displayName": "Lead", "purpose": "One paragraph under a display or chapter head." },
+      "body": { "displayName": "Body", "purpose": "Running text, max 66ch." }
+    },
+    "shadows": [
+      { "name": "pop", "value": "0 2px 4px rgb(18 15 14 / 0.08), 0 24px 48px -16px rgb(18 15 14 / 0.4)", "purpose": "The toast." },
+      { "name": "cover", "value": "0 1px 2px rgb(18 15 14 / 0.1), 0 26px 44px -24px rgb(18 15 14 / 0.5)", "purpose": "The featured report cover on its Day Soft frame." },
+      { "name": "float", "value": "0 2px 4px rgb(18 15 14 / 0.14), 0 12px 28px -8px rgb(18 15 14 / 0.45)", "purpose": "The fixed WhatsApp button." },
+      { "name": "focus-halo-day", "value": "0 0 0 3px rgb(124 8 0 / 0.14)", "purpose": "Focus halo on day fields with a red border." },
+      { "name": "focus-halo-night", "value": "0 0 0 3px rgb(238 116 102 / 0.2)", "purpose": "Focus halo on the newsletter field with a Red on Night border." }
+    ],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(0.23, 1, 0.32, 1)", "purpose": "All UI transitions, rises, drawer and rail." },
+      { "name": "press", "value": "scale(0.97) 160ms ease-out", "purpose": "Button press (file links 0.96, WhatsApp 0.95, icon button 0.94)." },
+      { "name": "color", "value": "160ms ease", "purpose": "Background, colour and border changes on controls." },
+      { "name": "underline", "value": "220ms ease-out scaleX", "purpose": "Header current/hover underline, TOC bar." },
+      { "name": "drawer", "value": "300ms ease-out translateX", "purpose": "Mobile drawer slide." },
+      { "name": "word-rise", "value": "900ms ease-out, 55ms stagger, translateY(0.35em) + blur(6px)", "purpose": "Display words on load only." },
+      { "name": "scroll-scene", "value": "rAF loop, progress = (scrollY - top) / (height - viewport)", "purpose": "Every home chapter device is mapped to scroll progress; no autoplay. Action track holds for its first 10%." },
+      { "name": "reduced-motion", "value": "html.rm", "purpose": "Scenes unpinned, final states shown, counters at final value, transitions 1ms." }
+    ],
+    "breakpoints": [
+      { "name": "rail", "value": "1240px" },
+      { "name": "drawer", "value": "1040px" },
+      { "name": "mobile", "value": "720px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Caritas Red square block, the donate action everywhere.",
+      "html": "<a class=\"ds-btn ds-btn-red\" href=\"#\">Faire un don<svg class=\"ds-i\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 0 24px; border: 1.5px solid #7c0800; border-radius: 0; background: #7c0800; color: #fff; text-decoration: none; font-family: Epilogue, ui-sans-serif, system-ui, sans-serif; font-weight: 700; font-size: 16px; letter-spacing: -0.005em; transition: background-color 160ms ease, border-color 160ms ease, transform 160ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-i { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; transition: transform 200ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-btn-red:hover { background: #650600; border-color: #650600; } .ds-btn:hover .ds-i { transform: translateX(3px); } .ds-btn:active { transform: scale(0.97); background: #540500; border-color: #540500; } .ds-btn:focus-visible { outline: 2px solid #7c0800; outline-offset: 3px; }"
+    },
+    {
+      "name": "Ghost Button on Night",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Transparent with a translucent On Night border, for night grounds.",
+      "html": "<div style=\"background:#120f0e;padding:24px\"><a class=\"ds-btn-ghost\" href=\"#\">En savoir plus</a></div>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; border: 1.5px solid rgb(243 238 232 / 0.55); border-radius: 0; background: transparent; color: #f3eee8; text-decoration: none; font-family: Epilogue, ui-sans-serif, system-ui, sans-serif; font-weight: 700; font-size: 16px; transition: background-color 160ms ease, color 160ms ease, transform 160ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-btn-ghost:hover { background: #f3eee8; color: #120f0e; border-color: #f3eee8; } .ds-btn-ghost:active { transform: scale(0.97); } .ds-btn-ghost:focus-visible { outline: 2px solid #f3eee8; outline-offset: 3px; }"
+    },
+    {
+      "name": "White Button on Red",
+      "kind": "button",
+      "refersTo": "button-white",
+      "description": "The primary action inside the red act chapter.",
+      "html": "<div style=\"background:#7c0800;padding:24px\"><a class=\"ds-btn-white\" href=\"#\">Faire un don</a></div>",
+      "css": ".ds-btn-white { display: inline-flex; align-items: center; min-height: 52px; padding: 0 24px; border: 1.5px solid #fff; border-radius: 0; background: #fff; color: #7c0800; text-decoration: none; font-family: Epilogue, ui-sans-serif, system-ui, sans-serif; font-weight: 700; font-size: 16px; transition: background-color 160ms ease, transform 160ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-btn-white:hover { background: #fbefec; border-color: #fbefec; } .ds-btn-white:active { transform: scale(0.97); } .ds-btn-white:focus-visible { outline: 2px solid #f3eee8; outline-offset: 3px; }"
+    },
+    {
+      "name": "Link Arrow",
+      "kind": "custom",
+      "refersTo": "control",
+      "description": "Underlined Epilogue link with a trailing arrow; the gap widens on hover.",
+      "html": "<a class=\"ds-go\" href=\"#\">Commencer le récit<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M12 5v14M6 13l6 6 6-6\"/></svg></a>",
+      "css": ".ds-go { display: inline-flex; align-items: center; gap: 8px; padding-bottom: 4px; border-bottom: 1.5px solid currentColor; color: #18130f; text-decoration: none; font-family: Epilogue, ui-sans-serif, system-ui, sans-serif; font-weight: 700; font-size: 16px; transition: gap 200ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-go svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; } .ds-go:hover { gap: 12px; } .ds-go:focus-visible { outline: 2px solid #7c0800; outline-offset: 3px; }"
+    },
+    {
+      "name": "Night Header",
+      "kind": "nav",
+      "refersTo": "header",
+      "description": "Opaque night bar with the white logo directly on night, red-on-night underline and the reading-progress rule.",
+      "html": "<header class=\"ds-head\"><span class=\"ds-logo\">Caritas Africa</span><nav><a href=\"#\" aria-current=\"page\">Qui sommes-nous</a><a href=\"#\">Notre réseau</a><a href=\"#\">Ressources</a></nav><a class=\"ds-don\" href=\"#\">Faire un don</a><span class=\"ds-progress\"></span></header>",
+      "css": ".ds-head { position: relative; display: flex; align-items: center; gap: 24px; height: 72px; padding: 0 24px; background: #120f0e; color: #f3eee8; font-family: Epilogue, ui-sans-serif, system-ui, sans-serif; } .ds-logo { font-weight: 800; font-size: 18px; letter-spacing: -0.02em; } .ds-head nav { display: flex; gap: 2px; } .ds-head nav a { position: relative; display: inline-flex; align-items: center; height: 72px; padding: 0 12px; color: #f3eee8; text-decoration: none; font-weight: 600; font-size: 15px; } .ds-head nav a::after { content: \"\"; position: absolute; left: 12px; right: 12px; bottom: 18px; height: 2px; background: #ee7466; transform: scaleX(0); transform-origin: left; transition: transform 220ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-head nav a:hover::after, .ds-head nav a[aria-current=page]::after { transform: scaleX(1); } .ds-head nav a:focus-visible { outline: 2px solid #f3eee8; outline-offset: -4px; } .ds-don { margin-left: auto; display: inline-flex; align-items: center; min-height: 42px; padding: 0 16px; background: #7c0800; color: #fff; text-decoration: none; font-weight: 700; font-size: 15px; } .ds-don:hover { background: #650600; } .ds-progress { position: absolute; left: 0; right: 0; bottom: 0; height: 3px; background: #ee7466; transform-origin: 0 50%; transform: scaleX(0.35); }"
+    },
+    {
+      "name": "Chapter Rail",
+      "kind": "nav",
+      "refersTo": "nav",
+      "description": "Tick-only chapter index; the current tick grows and turns red; labels only on hover or focus.",
+      "html": "<div style=\"background:#120f0e;padding:24px 24px 24px 160px;display:inline-block\"><ol class=\"ds-rail\"><li><a href=\"#\"><span>Qui nous sommes</span></a></li><li><a href=\"#\" aria-current=\"true\"><span>Le réseau</span></a></li><li><a href=\"#\"><span>APPROCHE</span></a></li></ol></div>",
+      "css": ".ds-rail { display: grid; gap: 4px; margin: 0; padding: 0; list-style: none; color: #f3eee8; } .ds-rail a { position: relative; display: flex; align-items: center; justify-content: flex-end; width: 32px; height: 24px; color: inherit; text-decoration: none; font-family: Epilogue, ui-sans-serif, system-ui, sans-serif; font-weight: 600; font-size: 12.5px; } .ds-rail a::after { content: \"\"; width: 14px; height: 2px; background: currentColor; opacity: 0.35; transition: width 240ms cubic-bezier(0.23, 1, 0.32, 1), opacity 200ms ease; } .ds-rail a[aria-current=true]::after { width: 28px; opacity: 1; background: #ee7466; } .ds-rail a span { position: absolute; right: calc(100% + 8px); top: 50%; padding: 3px 8px; background: #120f0e; color: #f3eee8; white-space: nowrap; opacity: 0; transform: translate(6px, -50%); transition: opacity 200ms ease, transform 240ms cubic-bezier(0.23, 1, 0.32, 1); pointer-events: none; } .ds-rail a:hover span, .ds-rail a:focus-visible span { opacity: 1; transform: translate(0, -50%); } .ds-rail a:hover::after { opacity: 1; } .ds-rail a:focus-visible { outline: 2px solid #f3eee8; outline-offset: 2px; }"
+    },
+    {
+      "name": "Newsletter Field on Night",
+      "kind": "input",
+      "refersTo": "input-on-night",
+      "description": "Square night field with a Red on Night focus border and halo.",
+      "html": "<div style=\"background:#120f0e;padding:24px\"><input class=\"ds-input\" type=\"email\" placeholder=\"Votre adresse e-mail\"></div>",
+      "css": ".ds-input { width: 100%; max-width: 360px; height: 50px; padding: 0 14px; border: 1px solid #3a332e; border-radius: 0; background: #1d1916; color: #f3eee8; font-family: Literata, Georgia, serif; font-size: 16px; caret-color: #7c0800; transition: border-color 160ms ease, box-shadow 160ms ease; } .ds-input::placeholder { color: #968c82; } .ds-input:hover { border-color: #ada399; } .ds-input:focus { outline: none; border-color: #ee7466; box-shadow: 0 0 0 3px rgb(238 116 102 / 0.2); }"
+    },
+    {
+      "name": "File Link",
+      "kind": "chip",
+      "refersTo": "file-link",
+      "description": "Download chip with a red file icon and the language code.",
+      "html": "<a class=\"ds-file\" href=\"#\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M14 3H6v18h12V7z\"/><path d=\"M14 3v4h4\"/></svg>PDF · FR</a>",
+      "css": ".ds-file { display: inline-flex; align-items: center; gap: 7px; height: 38px; padding: 0 12px; border: 1px solid #cfc6bb; border-radius: 0; background: #fff; color: #18130f; text-decoration: none; font-family: Epilogue, ui-sans-serif, system-ui, sans-serif; font-size: 14px; font-weight: 700; transition: border-color 160ms ease, color 160ms ease, transform 160ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-file svg { width: 17px; height: 17px; fill: none; stroke: #7c0800; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; } .ds-file:hover { border-color: #7c0800; color: #7c0800; } .ds-file:active { transform: scale(0.96); } .ds-file:focus-visible { outline: 2px solid #7c0800; outline-offset: 3px; }"
+    },
+    {
+      "name": "Scripture Quote",
+      "kind": "custom",
+      "refersTo": "quote",
+      "description": "Literata italic scripture with its sentence-case citation below, over night.",
+      "html": "<figure class=\"ds-quote\"><blockquote>« Témoigner de l'amour de Dieu »</blockquote><cite>Notre mission · Actes 1:8</cite></figure>",
+      "css": ".ds-quote { margin: 0; padding: 32px; background: #120f0e; color: #f3eee8; } .ds-quote blockquote { margin: 0; font-family: Literata, Georgia, serif; font-style: italic; font-weight: 500; font-size: 2.6rem; line-height: 1.05; letter-spacing: -0.02em; } .ds-quote cite { display: block; margin-top: 16px; font-family: Literata, Georgia, serif; font-style: italic; font-size: 18px; }"
+    },
+    {
+      "name": "WhatsApp Button",
+      "kind": "button",
+      "refersTo": "whatsapp-button",
+      "description": "The one circle: fixed WhatsApp contact with the Float shadow.",
+      "html": "<a class=\"ds-wa\" href=\"#\" aria-label=\"WhatsApp\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M3 21l1.6-4.7A8.5 8.5 0 1 1 8 19.6z\"/></svg></a>",
+      "css": ".ds-wa { display: grid; place-items: center; width: 54px; height: 54px; border-radius: 50%; background: #1fa855; color: #fff; box-shadow: 0 2px 4px rgb(18 15 14 / 0.14), 0 12px 28px -8px rgb(18 15 14 / 0.45); transition: background-color 160ms ease, transform 160ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-wa svg { width: 26px; height: 26px; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linejoin: round; } .ds-wa:hover { background: #188c46; } .ds-wa:active { transform: scale(0.95); } .ds-wa:focus-visible { outline: 2px solid #7c0800; outline-offset: 3px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Long-Form Report, Told in Chapters",
+    "overview": "Caritas Africa speaks here the way the largest NGOs tell their interactive annual stories: the home page is a sequence of chapters the visitor scrolls through, and each chapter owns one device that moves only as fast as the reader scrolls. A photograph opens from an inset window to full-bleed, a sentence inks itself word by word, a giant numeral counts to 46 before the six zones light in turn, four action photographs travel past on a pinned horizontal track, figures step beside a sticky photograph, and scripture reveals line by line over a full-bleed image. The story closes on a red chapter that asks the reader to give, partner or report abuse. Inner pages keep the same world with quieter motion: a photographic page opening with a gentle parallax, then ruled reading.\n\nThe ground alternates by chapter between a warm night (Night) and white (Day); Caritas red is a committed field (the act chapter, every primary button) and, translated lighter, the mark of \"here\" on night. Two families divide the work cleanly: Epilogue, heavy, large and tight in sentence case, for everything that heads, counts or is pressed; Literata, with optical sizes, for everything that is read, including leads, the inked statement and scripture in italic.\n\nGeometry is square without exception except the circular WhatsApp button. Depth is nearly absent: photographs, night fields and rules do the work. Every photograph is real, drawn from Caritas Africa's own reports, and credited on a night tab.",
+    "keyCharacteristics": [
+      "Chapters alternate warm night and white grounds; the act chapter is a full red field.",
+      "Epilogue 800–900 for display, 600–750 for UI, always sentence case and negatively tracked; Literata for all reading text.",
+      "One scroll-mapped device per home chapter, no autoplay; inner pages use only page-open parallax, rises and state transitions.",
+      "Opaque night header with the official white logo set directly on night, a 3px reading-progress rule along its bottom edge, and a tick-only chapter rail on the right.",
+      "Ruled data (2px Ink over a group, 1px Line between rows, vertical hairlines between cells); no cards, no eyebrows.",
+      "Square corners everywhere; the WhatsApp button is the one circle.",
+      "UI motion: ease-out cubic-bezier(0.23, 1, 0.32, 1), 0.97 press on buttons at 160ms, hover only on fine pointers. Reduced motion unpins every scene and shows final states."
+    ],
+    "rules": [
+      { "name": "The Alternating Ground Rule", "body": "Chapters change ground by whole width: Night, Day, or the red field. Day Soft appears only inside a chapter, behind printed objects and quiet blocks, never as a chapter ground.", "section": "colors" },
+      { "name": "The Two Reds Rule", "body": "Caritas Red fills (buttons, the act chapter, meters) and marks on day; Red on Night only marks (rules, ticks, underlines, icons) on night and never fills a surface.", "section": "colors" },
+      { "name": "The Tell-Then-Read Rule", "body": "Epilogue heads, counts and controls; Literata is read. Never set running text, leads or scripture in Epilogue, never set a heading in Literata.", "section": "typography" },
+      { "name": "The Sentence-Case Rule", "body": "No uppercase anywhere in the type system and no small labels above headings: the heading speaks first, and a source line, if any, sits below the quote it sources. Acronyms (zone codes, APPROCHE) keep their own spelling.", "section": "typography" },
+      { "name": "The One Device Per Chapter Rule", "body": "Each home chapter owns one scroll-driven device at most, and its copy must read complete at the device's final state.", "section": "layout" },
+      { "name": "The Sits-Above Rule", "body": "Only the toast, the floating button and the printed cover cast shadows. Chapters, panels, lists and photographs stay flat.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do alternate chapters between Night and Day by whole width, and give the call to act a full Caritas Red field.",
+      "Do set heads, counts and controls in Epilogue (800–900 display, 600–750 UI), sentence case and negatively tracked; set everything read in Literata.",
+      "Do drive chapter devices directly from scroll position, one device per chapter, with copy complete at the final state.",
+      "Do unpin every scene and show final states under reduced motion.",
+      "Do use Red on Night only for marks on night grounds, and Caritas Red for fills and marks on day.",
+      "Do build data as ruled rows and cells: 2px Ink over the group, 1px Line between rows, vertical hairlines between cells.",
+      "Do keep every corner square; the WhatsApp button is the only circle.",
+      "Do credit every photograph, and put scripture citations below their quote in Literata italic.",
+      "Do use the ease-out curve (cubic-bezier(0.23, 1, 0.32, 1)), 0.97 presses on buttons, hover only on fine pointers.",
+      "Do keep \"Faire un don\" and \"Signaler un abus\" in the header of every page."
+    ],
+    "donts": [
+      "Don't put small labels, kickers or eyebrows above headings, or set any text in uppercase.",
+      "Don't put content in shadowed or tinted cards; shadows belong to the toast, the floating button and the printed cover.",
+      "Don't autoplay a chapter device or loop a carousel; motion follows the reader's scroll.",
+      "Don't round photographs, buttons or fields, or use pill shapes.",
+      "Don't fill a surface with Red on Night, or introduce a second accent; WhatsApp green stays on the WhatsApp button.",
+      "Don't use gradients except as night scrims over photographs.",
+      "Don't set the white logo on a plate; it sits directly on night.",
+      "Don't use religious ornament as decoration, or emoji and text glyphs as icons; use the 1.75-stroke line set."
+    ]
+  }
+}
