@@ -47,7 +47,7 @@ const TEAM = [
     { name: "M. KOKOU Barnabé Senam Agbegnigan", role: "Financier, responsable de la trésorerie", country: "Togo" },
     { name: "M. ADOGOU Pacôme", role: "Financier, comptabilité générale, reporting et analyse", country: "Togo" },
     { name: "M. AMOUZOUVI David", role: "Financier, en charge du système d'information", country: "Togo" },
-    { name: "M. ANKOU Yao Marc-Arnaud", role: "Agent d'appui aux opérations", country: "Togo" },
+    { name: "M. BLUCKTOR Romuald", role: "Agent d'appui aux opérations", country: "Togo" },
   ]},
   { group: "Programmes", people: [
     { name: "M. NAMA Bassekoa Innocent", role: "Responsable des programmes", country: "Burkina Faso" },
