@@ -148,6 +148,22 @@ components:
     rounded: "{rounded.none}"
     padding: "0 14px"
     height: "46px"
+  input-form:
+    backgroundColor: "{colors.white}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.none}"
+    padding: "0 14px"
+    height: "52px"
+  textarea:
+    backgroundColor: "{colors.white}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.none}"
+    padding: "12px 14px"
+    height: "168px"
+  form-confirmation:
+    backgroundColor: "{colors.band}"
+    textColor: "{colors.ink}"
+    padding: "14px 16px"
   input-on-dark:
     backgroundColor: "{colors.carbon-2}"
     textColor: "{colors.white}"
@@ -205,20 +221,20 @@ Geometry is square without exception, except for the circular WhatsApp button. D
 Warm carbon, white and one warm grey, committed to a single deep red that is allowed to fill whole bands.
 
 ### Primary
-- **Caritas Red** (red): the confederation's red. Primary buttons ("Faire un don"), the full-bleed mission/vision band and the giving band (the "don" anchor), the 4px marker under the current nav link, sub-nav item and zone tab, the dropdown's top edge, zone names, timeline years, the lead value, icon accents in lists and file links, link-arrow underlines, focus outlines and text selection. Hover deepens to **Red Hover**, press to **Red Press**.
+- **Caritas Red** (red): the confederation's red. Primary buttons ("Faire un don"), the full-bleed mission/vision band and the giving band (the "don" anchor), the 4px marker under the current nav link, sub-nav item and zone tab, the dropdown's top edge, the 4px rule over the news and jobs aside and over the contact form's confirmation, zone names, timeline years, the first and last rungs of the organisation ladder, the type word in a dated item's metadata, the lead value, icon accents in lists and file links, link-arrow underlines, focus outlines and text selection. Hover deepens to **Red Hover**, press to **Red Press**.
 - **Red Wash** (red-50): only the hover fill of the white-on-red button.
 - **Rose on Red** (on-red-2): secondary text on the red bands (band labels, giving copy, the vision/mission paragraphs).
-- **Red on Dark** (red-on-dark): the red translated for carbon: the utility bar's alert icon and the footer input's focus border.
+- **Red on Dark** (red-on-dark): the red translated for carbon: the utility bar's alert icon, the footer input's focus border, and the current region (and region hover) in the Caritas Internationalis grid.
 
 ### Neutral
 - **Carbon** (carbon): the dark frame: utility bar, footer, hero ground and scrims, toast, the segmented-control thumb, ink button. **Carbon Raised** (carbon-2) backs the active language and footer inputs; **Carbon Line** (carbon-line) divides on dark.
-- **On Dark** (on-dark) and **On Dark Muted** (on-dark-2): text and secondary text on carbon.
+- **On Dark** (on-dark) and **On Dark Muted** (on-dark-2): text and secondary text on carbon. On Dark also draws the 4px rule over data groups set on carbon (regions grid, programme steps).
 - **Ink** (ink): headings, body text, the 4px rules over data groups, outline-button stroke. Same value as Carbon on purpose; named separately because one is text and the other a surface.
 - **Ink Soft** (ink-2): leads, prose, descriptions under titles.
 - **Muted** (muted): `dt` labels, metadata, captions, inactive tabs, counts.
 - **Line** (line): default hairline between rows and cells, header and sub-nav bottom borders.
 - **Line Strong** (line-2): control strokes (fields, file links), news-grid hairlines, the zone-tab baseline.
-- **Band** (band): the one alternate section ground; also the segmented-control track, statute block, publication frames, empty state and menu hover.
+- **Band** (band): the one alternate section ground; also the segmented-control track, statute block, publication frames, empty state, the contact form's confirmation and menu hover.
 - **Band Deep** (band-2): placeholder behind photographs while they load.
 - **White** (white): the page.
 - **Error** (error): field error text and border on white.
@@ -242,10 +258,10 @@ Warm carbon, white and one warm grey, committed to a single deep red that is all
 ### Hierarchy
 - **Display** (800, 64% width, uppercase, clamp(2.9rem, 1.5rem + 4.4vw, 5.6rem), 0.9, balanced): page h1 and hero slide headlines (hero copy caps at 5.2rem and 8.2em measure; 2.6–3.4rem under 720px, 2.55rem under 480px).
 - **Headline** (800, 64% width, uppercase, clamp(2.3rem, 1.5rem + 2.6vw, 3.9rem), 0.92): section heads. Feature heads (lead action, featured publication, safeguarding, jobs, figures) use the same face at intermediate sizes (1.8 to 3.1rem).
-- **Title Narrow** (800, 64% width, uppercase, 1.25 to 1.9rem, 1): zone codes, value names, purposes, timeline years, first column of the zone table, big figures, the library count.
+- **Title Narrow** (800, 64% width, uppercase, 1.25 to 1.9rem, 1): zone codes, value names, purposes, timeline years, first column of the zone table, big figures, the library and list counts. The contact form heading uses the same face at clamp(1.9rem, 1.4rem + 1.2vw, 2.6rem), 0.95.
 - **Title** (700, 1.3rem, 1.22, -0.01em, sentence case): card and list heads, publication titles (17px).
 - **Quote** (700 italic, 72% width, clamp(2.1rem, 1.4rem + 2.2vw, 3.5rem), 1): mission and vision statements on the red band.
-- **Control** (750, 72% width, uppercase, 17px, 0.02em): buttons, drawer links (22px), news headlines (sentence case, 1.35–1.7rem), footer heads (16px, 0.04em).
+- **Control** (750, 72% width, uppercase, 17px, 0.02em): buttons, drawer links (22px), news headlines (sentence case, 1.35–1.7rem), footer heads (16px, 0.04em). In sentence case at 1.1 to 1.6rem it also sets dated item titles, ladder rungs, commitments, region names, member names, programme step dates, aside heads and the safeguarding note head.
 - **Lead** (400, clamp(1.1rem, 1rem + 0.4vw, 1.3rem), 1.5, Ink Soft): one paragraph under a display or section head, max 46ch.
 - **Body** (400, 17px, 1.6; 16.5px under 720px): prose at 18px in reading sections, max 68ch.
 - **Citation** (700, 14px, 0.08em, uppercase, white with a 2px white top rule): the source line under a scripture quote ("Notre mission · Actes 1:8"). On light ground the statute citation is 14px Muted, sentence case.
@@ -262,14 +278,14 @@ A 1280px container with a fluid gutter (gutter). Home sections breathe at the se
 
 The hero is a full-bleed carousel that fills the first viewport below the utility bar and header (clamp(540px, 100svh minus utility bar and header, 780px)), with no visible controls. Copy is anchored bottom-left over a left-and-bottom carbon scrim, padded clamp(64px, 9vh, 104px) from the bottom edge; the photograph and its credit tab are the only other things on screen. Under 720px the hero stacks: the photo on top (46svh, 280–420px), the copy on carbon below with 40px bottom padding.
 
-Composition is asymmetric: a 12-column grid for photo-led features of unequal size (one tall 5-column lead, a wide 7-column, then 3 + 4), fractional two-column splits (1fr / 1.05fr intro, 1.65fr / 1fr newsroom, 1.15fr / 1fr featured publication), and edge-bleeding half-and-half bands (programme on carbon, giving on red) whose copy aligns to the container edge. Inner pages open on a photo or split page hero, then a sticky sub-nav, then 0.85fr / 1.15fr splits with a sticky head.
+Composition is asymmetric: a 12-column grid for photo-led features of unequal size (one tall 5-column lead, a wide 7-column, then 3 + 4), fractional two-column splits (1fr / 1.05fr intro, 1.65fr / 1fr newsroom, 1.15fr / 1fr featured publication), and edge-bleeding half-and-half bands (programme on carbon, giving on red) whose copy aligns to the container edge. Inner pages open on a page hero: a credited photograph under the carbon scrim (Qui sommes-nous, Notre réseau, Notre action), a split hero with the photograph on the right half (Ressources, Actualités), or plain carbon without a photograph (Emplois, Contact). Reading pages then run a sticky sub-nav and 0.85fr / 1.15fr splits with a sticky head; Notre action alternates these with the carbon programme band, Band sections of dated items and the red giving band. List pages (Actualités, Emplois) put the sticky filter bar under the hero, then the ruled list beside a 300px aside that sticks below the header. Contact splits 0.85fr / 1.15fr: coordinates and the safeguarding note left, the form right. Notre réseau runs the zone explorer, the organisation split on Band, network news in two ruled columns, and the regions grid on carbon.
 
 Data grids (identity, figures, coordinators, governance, contact, knowledge links, values, timeline, policies) are divided by vertical hairlines between cells rather than gaps; the first cell loses its left padding so text aligns with the container edge.
 
-Breakpoints: 1200px (tighter nav, 3-up rail and library), 1040px (header 68px, drawer navigation, single-column splits, zone tabs scroll), 720px (stacked hero, everything single column, 2-up library), 480px (1-up library, smaller hero display).
+Breakpoints: 1200px (tighter nav, 3-up rail and library), 1040px (header 68px, drawer navigation, single-column splits including the list and contact pages, regions 2-up, zone tabs scroll), 720px (stacked hero, everything single column including dated-item grids, member lists, form rows and the regions grid, 2-up library, segmented options wrap), 480px (1-up library, smaller hero display).
 
 ### Named Rules
-**The Ruled Data Rule.** Lists and data are ruled rows: a 4px Ink rule over the group, 1px Line between rows, vertical hairlines between cells. Never cards.
+**The Ruled Data Rule.** Lists and data are ruled rows: a 4px Ink rule over the group (On Dark on carbon), 1px Line between rows, vertical hairlines between cells. Never cards.
 
 ## Elevation & Depth
 
@@ -299,14 +315,14 @@ Solid, square blocks in condensed uppercase; the press is felt, not decorated.
 - **White:** white with red text, the primary action on a red band; hover Red Wash.
 - **Line:** transparent with an Ink border; hover fills Ink with white text.
 - **Ink:** Carbon fill, the safeguarding "Signaler un abus" action; hover black.
-- **Size:** small 44px / 18px padding / 16px (library empty state).
+- **Size:** small 44px / 18px padding / 16px (the empty state of the library and of the news and jobs lists).
 - **Motion:** scale 0.97 on press in 160ms ease-out; color changes 160ms; hover only on fine pointers.
 
 ### Link arrow
 700 weight text with a 2px red bottom border and a red trailing arrow; on hover the text turns red and the gap widens from 8 to 12px. On carbon and red the border and arrow take the text color.
 
 ### Segmented control
-A Band track with 3px padding holding radio labels (650, 14.5px); a square carbon thumb slides behind the checked label in 240ms ease-out and the label turns white. Used by the library's document-type filter; full-width with equal options under 720px.
+A Band track with 3px padding holding radio labels (650, 14.5px); a square carbon thumb slides behind the checked label in 240ms ease-out and the label turns white. Used by the library's document-type filter and by the news (Tout, Déclarations, Réseau, Communiqués, Programmes, Publications) and jobs (Tout, Offres d'emploi, Consultances, Appels d'offres et avis) filters; full-width with options wrapping and sharing the width under 720px. A `?type=` link preselects an option.
 
 ### Hero carousel (signature)
 Three credited full-bleed slides, no visible controls. Every 7s the next slide crossfades in over 900ms while its photo settles from 1.06 to 1 over 7.4s; copy children rise 14px in 700ms with a 70ms stagger. Autoplay pauses on hover (fine pointers), focus and hidden tab; touch users can swipe between slides. Under reduced motion there is no autoplay and no settle; the first slide stays.
@@ -316,23 +332,51 @@ Three credited full-bleed slides, no visible controls. Every 7s the next slide c
 - **Focus:** border turns red with a 3px red halo at 14–16%.
 - **On carbon (newsletter):** Carbon Raised fill, Carbon Line stroke, 52px; focus border Red on Dark with an 18% halo; errors in a light coral.
 - **Error:** Error border and a 13.5–14px message.
+- **Form fields (contact):** white, Line Strong stroke, 52px; the textarea keeps the style at 168px minimum, resizable vertically. Labels sit above in 650 at 14.5px; an optional field adds "facultatif" at 400 in Muted. Focus is the red border with a 14% halo; errors use Error, not the coral of the carbon footer.
 
 ### File links
 The download chip: 38px (48px large), 1.5px Line Strong stroke, a red file icon and the language abbreviation; hover turns border and text red, press 0.96.
 
 ### Navigation
-- **Utility bar:** Carbon, 38px, 14px: membership line, "Signaler un abus" with a Red on Dark shield, jobs and tenders, contact, and the FR/EN/PT switch with 18x13 flags (active = Carbon Raised).
-- **Header:** sticky white, 80px (68px under 1040px), 1px Line bottom; logo 128px, five links in 650 at 16px, red "Faire un don" button.
+- **Utility bar:** Carbon, 38px, 14px: membership line, "Signaler un abus" with a Red on Dark shield, "Emplois et appels d'offres" (emplois.html), "Contact" (contact.html), and the FR/EN/PT switch with 18x13 flags (active = Carbon Raised). On its own page, the jobs or contact link turns white and underlined.
+- **Header:** sticky white, 80px (68px under 1040px), 1px Line bottom; logo 128px, five links in 650 at 16px (Qui sommes-nous with its dropdown, Notre action, Notre réseau, Ressources, Actualités, each its own page), red "Faire un don" button.
 - **States:** a 4px red rule scales in from the left (220ms) on hover, current page and open dropdown.
 - **Dropdown:** 340px white panel, 4px red top edge, Pop shadow, items with a muted description line, hover Band with red text; opens in 180ms from translateY(-6px) scale(0.98).
-- **Sub-nav (inner pages):** sticky under the header, 650 at 15px, the same 4px red current rule.
-- **Mobile:** below 1040px a right-side drawer (max 420px, 300ms slide) with ruled 72%-width uppercase 22px links, sub-links at full width, and a red donate button kept in the header.
+- **Sub-nav (reading pages):** sticky under the header, 650 at 15px, the same 4px red current rule, following the section in view (Qui sommes-nous, Notre action).
+- **Mobile:** below 1040px a right-side drawer (max 420px, 300ms slide) with ruled 72%-width uppercase 22px links (the five header pages plus Emplois et appels d'offres), sub-links at full width, and a red donate button kept in the header.
 
 ### Zone tabs (signature)
-Six tabs over a 2px Line Strong baseline, each a narrow 800 uppercase code above a 13.5px region; one 4px red rule slides to the selected tab (260ms), the selected code turns red. The panel pairs the zone name (narrow 800, red) with a ruled coordinator grid, fading up 6px on change. Under 1040px the tabs scroll horizontally.
+Six tabs over a 2px Line Strong baseline, each a narrow 800 uppercase code above a 13.5px region; one 4px red rule slides to the selected tab (260ms), the selected code turns red. The panel pairs the zone name (narrow 800, red) with a ruled coordinator grid, fading up 6px on change. Under 1040px the tabs scroll horizontally. The same explorer opens the Notre réseau page, where the panel adds the conference's full official name (15.5px Ink Soft, 34ch) under the region.
 
 ### Publications rail and library
 Report tiles with a 4:3 Band frame (cover contained, 1.03 zoom on hover), a 700 title, red-accented metadata and the file-link row. The rail snaps 4-up (3-up under 1200px, 72% cards under 720px) with square 44px Ink-stroked arrows. The library adds a sticky filter bar (segmented type filter, language select, search, live count in narrow 800) and tiles rising in over 420ms.
+
+### Filterable lists
+Actualités and Emplois reuse the library's sticky filter bar: segmented type filter, a language select (news only), search (120ms debounce, accent-insensitive) and a live count announced politely, its number in narrow 800 at 24px ("Aucun résultat" when empty). The list re-renders in place. With no match, it is replaced by the empty state: a centred Band block (56px 32px) with a narrow 800 uppercase 2rem heading, one line suggesting another type or word, and a small Line button "Tout afficher" that resets every filter and slides the thumb back.
+
+### Dated document items
+The record of statements, news, job notices and consultancies: a ruled row (22px top, 24px bottom, Line Strong between rows) under a 4px Ink rule. A 14px Muted metadata line sits first on screen (it follows the title in the markup): the type in Caritas Red at 700, the date, and the language when it is not French ("En anglais"; for notices, "Avis en français, anglais"), separated by middle dots that never start a wrapped line. Then the title in 72%-width 750, clamp(1.3rem, 1.1rem + 0.5vw, 1.6rem), 1.12, sentence case, turning red on hover; an optional Ink Soft sub-line (16px, 62ch); and, when a PDF exists, one file link. Lists run one column beside an aside, or two columns (column gap clamp(32px, 4vw, 64px)) on full-width white or Band sections.
+
+### News and jobs aside
+A 300px column next to the list, sticky below the header, opened by a 4px red rule: 72%-width 750 heads at 1.3rem, each later head set off by a 1px Line, 15.5px Ink Soft paragraphs and a link arrow each (how to apply, newsletter, the archives, the contact page).
+
+### Organisation ladder
+How the network is governed, top to bottom, on a Band section beside a sticky head, a 19px lead and a Muted source line: an ordered list under a 4px Ink rule, each rung a two-column row (minmax(180px, 0.9fr) / 1.3fr) with the body's name in 72%-width 750 at 1.25rem and its role in Ink Soft, separated by Line Strong. The first and last rungs (the general assembly and the 46 members) are set red. Commitments on Notre action use the same row (minmax(200px, 0.8fr) / 1.4fr, Line separators). Stacks under 720px.
+
+### Caritas Internationalis regions
+Seven regions in a four-column grid on a carbon section, under a 4px On Dark rule, cells divided by Carbon Line hairlines (the first cell of each row flush left). Each cell is the region name in 72%-width 750 at 1.35rem, white, over the regional Caritas in 14.5px On Dark Muted, linking out; on hover the name turns Red on Dark. Africa is not a link: its name is set Red on Dark and its line says "Vous êtes ici". Two columns under 1040px, one under 720px.
+
+### Programme figures and steps
+On Notre action the programme reuses the home's carbon half-and-half band: photograph left, copy right, a 2 x 2 figure grid (narrow 800 numbers, Carbon Line hairlines), then the programme's steps as ruled rows under a 4px On Dark rule: an 8.5rem date column in 72%-width 750 white and the step in 15.5px On Dark Muted, Carbon Line between rows, stacking under 720px.
+
+### Member list
+Participating organisations as a two-column ruled list under a 4px Ink rule: 13px rows, names in 72%-width 750 at 1.15rem, Line between them. One column under 720px.
+
+### Contact list and safeguarding note
+Coordinates are a ruled `dt`/`dd` list under a 4px Ink rule: a 110px (90px under 720px) Muted label column at 14px and the value at 650, 17px. Beneath it, after a map link arrow, the safeguarding note: a 1px Line Strong hairline, a 26px red shield icon in its own column, a 72%-width 750 head at 1.2rem telling the reader not to use the form to report abuse, one Ink Soft sentence and a "Signaler un abus" link arrow.
+
+### Contact form
+An open form under a 4px Ink rule, 18px between rows, headed in narrow 800 uppercase: Nom and Prénom, E-mail and an optional Téléphone in two-column rows (one under 720px); the Destinataire choice as inline native radios (18px, accent Caritas Red, 500 at 16px, 8px / 22px gaps) inside a borderless fieldset whose legend reads like a label; Objet; Message as a textarea. Validation runs on submit only: each failing field takes the Error border and shows its own sentence, focus moves to the first error, and typing clears that field's error. The foot holds the red "Envoyer le message" button and a 14px Muted note. Success reveals a status message on Band with a 4px red top rule, 600 weight, 14px 16px padding.
 
 ### Photo credit
 Every photograph carries a credit tab (12.5px light text on carbon at 66%), top-right in the hero, bottom-right elsewhere; captions under feature photos are 13.5px Muted with the source in bold Ink.
@@ -351,6 +395,7 @@ Fixed bottom-right, 56px circle (52px mobile) in WhatsApp green with the Float s
 - **Do** put the scripture or statute citation under its quote, never a label above a heading.
 - **Do** use the ease-out curve (cubic-bezier(0.23, 1, 0.32, 1)), 0.97 presses at 160ms, hover only on fine pointers, and fall back to plain fades under reduced motion.
 - **Do** keep "Faire un don" and "Signaler un abus" reachable from every page's header or utility bar.
+- **Do** give every dated item its metadata line (type in red, date, language) and attach its PDF as a file link, never as a bare link.
 
 ### Don't:
 - **Don't** put small uppercase eyebrow labels or kickers above headings.

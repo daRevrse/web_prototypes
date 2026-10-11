@@ -2,12 +2,12 @@
 version: 1
 slug: "index-html"
 primary_target: "index.html"
-related_targets: ["qui-sommes-nous.html","ressources.html"]
+related_targets: ["qui-sommes-nous.html","ressources.html","reseau.html","actions.html","actualites.html","emplois.html","contact.html"]
 ---
 
 ## Scope
 
-Redesign proposal for caritas-africa.org as a static prototype: Accueil (index.html), Qui sommes-nous (qui-sommes-nous.html), Ressources (ressources.html). Mode: Persuade for the home, Read for Qui sommes-nous, Operate for Ressources (find and download a document).
+Redesign proposal for caritas-africa.org as a static prototype: Accueil (index.html), Qui sommes-nous (qui-sommes-nous.html), Ressources (ressources.html). Mode: Persuade for the home, Read for Qui sommes-nous, Operate for Ressources (find and download a document). Amended 2026-10-11: the full header menu is now built: Notre réseau (reseau.html), Nos actions (actions.html), Actualités (actualites.html), Emplois et appels d'offres (emplois.html) and Contact (contact.html).
 
 ## Audience and job
 
@@ -32,5 +32,5 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 ## Unresolved
 
 - Member country list per zone is not published on the live site: the explorer shows zones, coordinating Caritas and coordinators only.
-- Donation, news, tender and abuse-report pages are out of scope: they link to the live site.
+- Donation and abuse-report pages are out of scope: they link to the live site.
 - EN/PT versions do not exist in the prototype: the language switch says so.

@@ -8,7 +8,7 @@ web
 
 ## Stack
 
-Static HTML/CSS/JS prototype (user's choice), deployed in the shared `web_prototypes` catalog under `/caritas-v3/`. This is the third proposal (v3); v1 (`/caritas/`, institutional report register) and v2 (`/caritas-v2/`, large-INGO campaign register) stay as they are, each with its own DESIGN.md, and all three share this product truth. The live site is WordPress (OceanWP); a later transposition is possible but not in scope.
+Static HTML/CSS/JS prototype (user's choice), deployed in the shared `web_prototypes` catalog under `/caritas-v3/`. This is the third proposal (rebuilt 2026-10-11): the v1 design (`/caritas/`) with the scroll-driven dynamics of the immersive proposal, which moved to `/caritas-v4/`. v1, v2 and v4 stay as they are. The live site is WordPress (OceanWP); a later transposition is possible but not in scope.
 
 ## Users
 
@@ -52,21 +52,17 @@ The continental coordination body of the Catholic Church's charity in Africa: no
   - "Reflections on the Caritas Leadership Training" (May 2024);
   - "Cartographie des compétences" (2024).
 - Programme APPROCHE / A2P-DIRO phase 3 (2019–2023): €2,500,000 budget; 17 national Caritas and 202 diocesan Caritas in 17 countries; more than 40 million vulnerable people in the target population.
-- Out of scope for this proposal: actualités/tenders pages, donation flow, abuse-report form. They are linked but not designed.
+- Pages: Accueil, Qui sommes-nous, Notre réseau, Nos actions, Ressources, Actualités, Emplois et appels d'offres, Contact (the full header menu and utility bar). The news and jobs lists use verified items from the live site's WordPress API (2021–2026).
+- Out of scope for this proposal: donation flow and abuse-report form. They link to the live site.
 
 ## Brand Commitments
 
 - Keep the Caritas Africa logo (Caritas flame cross + "Caritas AFRICA" wordmark) and the Caritas red of the confederation. Everything else (typography, layout, secondary palette) is free.
-- Standing preference (2026-09-30, confirmed 2026-10-09 for v2): the category standard for an NGO site, played straight, no novelty identity. v1 quality bar = the Caritas family (Caritas Internationalis, CAFOD, Trócaire) and MSF / ICRC.
-- v2 register (2026-10-09): the same canon at the register of large international NGOs. Quality bar = Secours Catholique – Caritas France, Catholic Relief Services, UNICEF and MSF (full-bleed documentary photography, campaign voice, visible donation, newsroom). On 2026-10-10 the user removed the docked donation module and the carousel's visible controls.
-- v3 brief (2026-10-10): a third proposal that stands out from v1 and v2 so the client has the widest possible choice; more animation, ideally an immersive scroll-driven design. Offered bolder directions (Le chemin rouge, Le pagne commémoratif), the user again chose the category standard, so v3 plays the canon in its third register: the immersive scroll story of large NGOs' interactive reports. Quality bar = charity: water, UNHCR Global Trends, WFP Stories, MSF / ICRC long-forms.
-- v2 carries three of the user's additions to v1: a hero photo carousel (real Caritas photos only), a WhatsApp contact button (number to be confirmed by Caritas Africa), and flags on the FR / EN / PT language switch (user's choice, kept despite the flag-for-language caveat).
+- Standing preference (2026-09-30): the category standard for an NGO site, played straight, no novelty identity. Quality bar = the Caritas family (Caritas Internationalis, CAFOD, Trócaire) and MSF / ICRC (institutional credibility, documentary photography, visible donation, rigorous typography).
 
 ## Evidence on Hand
 
 - Logo PNG, report and publication covers, the organigramme, and a few field photos. Few photos are high resolution; the report covers are the richest imagery.
-- v2 adds photos extracted from the official PDFs (Strategic Framework 2024–2030, annual reports 2021, 2022, 2023) downloaded from caritas-africa.org with the user's approval; each is credited to its source document. The Malabo photo shows the AU Extraordinary Summit banner (25–28 May 2022, Malabo, Equatorial Guinea).
-- The live donation page (/donations/donation/) currently redirects to a broken receipt page; the currency of the GiveWP form is unknown, so v2 sends every "Faire un don" to its red support band, whose button links to the live page.
 - Partner logos: Caritas Internationalis, CAFOD, Misereor, Trócaire, Caritas Suisse, Belgique, Japan, Norway, Scotland, Australia, Korea, Conferenza Episcopale Italiana, ASKY.
 - Correct on the live site: "46 Pays d'Afrique", "46 Membres et organisations".
 - Wrong on the live site: "162 Personnel et bénévoles". 162 is the number of Caritas Internationalis members, not staff, so this figure must not be reused as a staff count.

@@ -1,379 +1,422 @@
 ---
 name: Caritas Africa (v3)
-description: The NGO category standard in its immersive register, a home page told as scroll-driven chapters on alternating warm night and white grounds, Epilogue set large and tight, Literata for reading, and Caritas red as a committed field.
+description: The v1 public record, white, ink and the Caritas red of the logo, told as a scroll story where each home chapter has one scroll-mapped device.
 colors:
-  red: "#7c0800"
-  red-hover: "#650600"
-  red-press: "#540500"
-  red-wash: "#fbefec"
-  red-on-night: "#ee7466"
-  on-red: "#ffffff"
-  on-red-2: "#f7d8d2"
-  night: "#120f0e"
-  night-2: "#1d1916"
-  night-3: "#2a2420"
-  night-line: "#3a332e"
-  on-night: "#f3eee8"
-  on-night-2: "#ada399"
-  day: "#ffffff"
-  day-2: "#f2f2f0"
-  ink: "#18130f"
-  ink-2: "#4d453e"
-  muted: "#6e655c"
-  line: "#e6e0d8"
-  line-2: "#cfc6bb"
-  error-on-night: "#ff9e92"
-  wa: "#1fa855"
-  wa-hover: "#188c46"
+  caritas-red: "#7c0800"
+  caritas-red-hover: "#650600"
+  caritas-red-press: "#540500"
+  red-wash: "#f8eeec"
+  red-tint: "#efd6d2"
+  red-on-night: "#f0a59b"
+  ink: "#17181a"
+  ink-soft: "#3a3c40"
+  muted: "#5d6066"
+  faint: "#8b8e93"
+  line: "#e3e2de"
+  line-strong: "#cfcdc8"
+  stone: "#f3f2ef"
+  stone-deep: "#e9e7e2"
+  white: "#ffffff"
+  night: "#17181a"
+  night-raised: "#212226"
+  night-line: "#35373c"
+  night-muted: "#a9abb0"
+  night-text: "#e4e5e7"
+  error: "#b42318"
 typography:
   display:
-    fontFamily: "Epilogue, ui-sans-serif, system-ui, Segoe UI, sans-serif"
-    fontSize: "clamp(2.9rem, 1.4rem + 4.6vw, 6rem)"
-    fontWeight: 900
-    lineHeight: 0.96
-    letterSpacing: "-0.035em"
-  headline:
-    fontFamily: "Epilogue, ui-sans-serif, system-ui, Segoe UI, sans-serif"
-    fontSize: "clamp(2.2rem, 1.3rem + 2.8vw, 4rem)"
+    fontFamily: "Libre Franklin, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif"
+    fontSize: "clamp(2.5rem, 1.2rem + 3.3vw, 4.1rem)"
     fontWeight: 800
-    lineHeight: 1
-    letterSpacing: "-0.03em"
-  title:
-    fontFamily: "Epilogue, ui-sans-serif, system-ui, Segoe UI, sans-serif"
-    fontSize: "clamp(1.25rem, 1.05rem + 0.5vw, 1.55rem)"
-    fontWeight: 750
-    lineHeight: 1.15
-    letterSpacing: "-0.015em"
+    lineHeight: 1.02
+    letterSpacing: "-0.035em"
   numeral:
-    fontFamily: "Epilogue, ui-sans-serif, system-ui, Segoe UI, sans-serif"
-    fontSize: "clamp(9rem, 4rem + 18vw, 22rem)"
-    fontWeight: 900
+    fontFamily: "Libre Franklin, ui-sans-serif, system-ui, sans-serif"
+    fontSize: "clamp(8rem, 3rem + 14vw, 16rem)"
+    fontWeight: 800
     lineHeight: 0.8
-    letterSpacing: "-0.06em"
-    fontFeature: "'tnum'"
+    letterSpacing: "-0.05em"
   figure:
-    fontFamily: "Epilogue, ui-sans-serif, system-ui, Segoe UI, sans-serif"
-    fontSize: "clamp(3.4rem, 2rem + 4.4vw, 6rem)"
-    fontWeight: 900
+    fontFamily: "Libre Franklin, ui-sans-serif, system-ui, sans-serif"
+    fontSize: "clamp(3.4rem, 2rem + 4.2vw, 5.8rem)"
+    fontWeight: 800
     lineHeight: 0.95
     letterSpacing: "-0.04em"
-    fontFeature: "'tnum'"
-  control:
-    fontFamily: "Epilogue, ui-sans-serif, system-ui, Segoe UI, sans-serif"
-    fontSize: "16px"
-    fontWeight: 700
-    lineHeight: 1
-    letterSpacing: "-0.005em"
-  nav:
-    fontFamily: "Epilogue, ui-sans-serif, system-ui, Segoe UI, sans-serif"
-    fontSize: "15px"
-    fontWeight: 600
-  label:
-    fontFamily: "Epilogue, ui-sans-serif, system-ui, Segoe UI, sans-serif"
-    fontSize: "13px"
-    fontWeight: 400
-    lineHeight: 1.45
+  page-title:
+    fontFamily: "Libre Franklin, ui-sans-serif, system-ui, sans-serif"
+    fontSize: "clamp(2.3rem, 1.5rem + 2.8vw, 3.75rem)"
+    fontWeight: 800
+    lineHeight: 1.04
+    letterSpacing: "-0.032em"
   statement:
-    fontFamily: "Literata, Georgia, Times New Roman, serif"
-    fontSize: "clamp(1.6rem, 1.1rem + 1.7vw, 2.75rem)"
-    fontWeight: 450
-    lineHeight: 1.3
+    fontFamily: "Libre Franklin, ui-sans-serif, system-ui, sans-serif"
+    fontSize: "clamp(2rem, 1.2rem + 2.5vw, 3.5rem)"
+    fontWeight: 800
+    lineHeight: 1.04
+    letterSpacing: "-0.032em"
+  headline:
+    fontFamily: "Libre Franklin, ui-sans-serif, system-ui, sans-serif"
+    fontSize: "clamp(1.8rem, 1.25rem + 1.7vw, 2.75rem)"
+    fontWeight: 780
+    lineHeight: 1.08
+    letterSpacing: "-0.026em"
+  ink-sentence:
+    fontFamily: "Libre Franklin, ui-sans-serif, system-ui, sans-serif"
+    fontSize: "clamp(1.45rem, 1.05rem + 1.25vw, 2.15rem)"
+    fontWeight: 650
+    lineHeight: 1.28
+    letterSpacing: "-0.022em"
+  title:
+    fontFamily: "Libre Franklin, ui-sans-serif, system-ui, sans-serif"
+    fontSize: "1.3rem"
+    fontWeight: 760
+    lineHeight: 1.25
     letterSpacing: "-0.012em"
-  quote:
-    fontFamily: "Literata, Georgia, Times New Roman, serif"
-    fontSize: "clamp(2.4rem, 1.4rem + 3.4vw, 4.6rem)"
-    fontWeight: 500
-    lineHeight: 1.05
-    letterSpacing: "-0.02em"
-  citation:
-    fontFamily: "Literata, Georgia, Times New Roman, serif"
-    fontSize: "18px"
-    fontWeight: 400
   lead:
-    fontFamily: "Literata, Georgia, Times New Roman, serif"
-    fontSize: "clamp(1.15rem, 1.02rem + 0.45vw, 1.4rem)"
+    fontFamily: "Libre Franklin, ui-sans-serif, system-ui, sans-serif"
+    fontSize: "clamp(1.08rem, 1rem + 0.35vw, 1.25rem)"
     fontWeight: 400
     lineHeight: 1.55
   body:
-    fontFamily: "Literata, Georgia, Times New Roman, serif"
-    fontSize: "18px"
+    fontFamily: "Libre Franklin, ui-sans-serif, system-ui, sans-serif"
+    fontSize: "17px"
     fontWeight: 400
-    lineHeight: 1.65
+    lineHeight: 1.6
+  quote:
+    fontFamily: "Source Serif 4, Georgia, Times New Roman, serif"
+    fontSize: "clamp(1.8rem, 1.3rem + 1.6vw, 2.6rem)"
+    fontWeight: 500
+    lineHeight: 1.15
+    letterSpacing: "-0.012em"
+  quote-stage:
+    fontFamily: "Source Serif 4, Georgia, Times New Roman, serif"
+    fontSize: "clamp(2.2rem, 1.3rem + 2.7vw, 3.9rem)"
+    fontWeight: 500
+    lineHeight: 1.08
+    letterSpacing: "-0.016em"
+  citation:
+    fontFamily: "Libre Franklin, ui-sans-serif, system-ui, sans-serif"
+    fontSize: "13px"
+    fontWeight: 700
+    letterSpacing: "0.08em"
+  label:
+    fontFamily: "Libre Franklin, ui-sans-serif, system-ui, sans-serif"
+    fontSize: "13.5px"
+    fontWeight: 400
+    lineHeight: 1.45
 rounded:
-  none: "0"
+  sharp: "2px"
   circle: "50%"
 spacing:
-  gutter: "clamp(16px, 4vw, 56px)"
-  container: "1280px"
-  header: "72px"
-  chapter: "clamp(96px, 12vw, 168px)"
-  read: "clamp(72px, 9vw, 128px)"
-  doc-section: "clamp(64px, 8vw, 104px)"
+  gutter: "clamp(16px, 4vw, 48px)"
+  section: "clamp(64px, 8vw, 120px)"
+  section-compact: "clamp(48px, 6vw, 88px)"
+  section-head: "clamp(32px, 4vw, 52px)"
+  row: "20px"
+  action-gap: "12px"
+  stage: "calc(100svh - 84px)"
 components:
   button-primary:
-    backgroundColor: "{colors.red}"
-    textColor: "{colors.on-red}"
-    typography: "{typography.control}"
-    rounded: "{rounded.none}"
+    backgroundColor: "{colors.caritas-red}"
+    textColor: "{colors.white}"
+    rounded: "{rounded.sharp}"
     padding: "0 24px"
-    height: "52px"
+    height: "50px"
   button-primary-hover:
-    backgroundColor: "{colors.red-hover}"
+    backgroundColor: "{colors.caritas-red-hover}"
   button-primary-active:
-    backgroundColor: "{colors.red-press}"
-  button-ghost:
-    backgroundColor: "transparent"
-    textColor: "{colors.on-night}"
-    rounded: "{rounded.none}"
-    padding: "0 24px"
-    height: "52px"
-  button-ghost-hover:
-    backgroundColor: "{colors.on-night}"
-    textColor: "{colors.night}"
-  button-white:
-    backgroundColor: "{colors.day}"
-    textColor: "{colors.red}"
-    rounded: "{rounded.none}"
-    padding: "0 24px"
-    height: "52px"
-  button-white-hover:
-    backgroundColor: "{colors.red-wash}"
-  button-line:
-    backgroundColor: "transparent"
+    backgroundColor: "{colors.caritas-red-press}"
+  button-secondary:
+    backgroundColor: "{colors.white}"
     textColor: "{colors.ink}"
-    rounded: "{rounded.none}"
+    rounded: "{rounded.sharp}"
     padding: "0 24px"
-    height: "52px"
-  button-line-hover:
+    height: "50px"
+  button-secondary-hover:
     backgroundColor: "{colors.ink}"
-    textColor: "{colors.day}"
+    textColor: "{colors.white}"
+  button-ink:
+    backgroundColor: "{colors.ink}"
+    textColor: "{colors.white}"
+    rounded: "{rounded.sharp}"
+    padding: "0 24px"
+    height: "50px"
+  button-on-red:
+    backgroundColor: "{colors.white}"
+    textColor: "{colors.caritas-red}"
+    rounded: "{rounded.sharp}"
+    padding: "0 24px"
+    height: "50px"
+  button-on-red-hover:
+    backgroundColor: "{colors.red-wash}"
   button-small:
+    rounded: "{rounded.sharp}"
     padding: "0 16px"
     height: "42px"
-  input-on-night:
-    backgroundColor: "{colors.night-2}"
-    textColor: "{colors.on-night}"
-    rounded: "{rounded.none}"
-    padding: "0 14px"
-    height: "50px"
   input:
-    backgroundColor: "{colors.day}"
+    backgroundColor: "{colors.white}"
     textColor: "{colors.ink}"
-    rounded: "{rounded.none}"
-    padding: "0 14px"
-    height: "44px"
+    rounded: "{rounded.sharp}"
+    padding: "12px 14px"
+    height: "50px"
   file-link:
-    backgroundColor: "{colors.day}"
+    backgroundColor: "{colors.white}"
     textColor: "{colors.ink}"
-    rounded: "{rounded.none}"
-    padding: "0 12px"
-    height: "38px"
+    rounded: "{rounded.sharp}"
+    padding: "0 11px"
+    height: "34px"
   file-link-hover:
-    textColor: "{colors.red}"
-  header:
-    backgroundColor: "{colors.night}"
-    textColor: "{colors.on-night}"
-    height: "72px"
+    textColor: "{colors.caritas-red}"
+  segmented-filter:
+    backgroundColor: "{colors.white}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.sharp}"
+    padding: "0 15px"
+    height: "40px"
+  segmented-filter-selected:
+    backgroundColor: "{colors.ink}"
+    textColor: "{colors.white}"
   nav-link:
-    textColor: "{colors.on-night}"
-    typography: "{typography.nav}"
-    padding: "0 12px"
-    height: "72px"
+    textColor: "{colors.ink}"
+    padding: "0 14px"
+    height: "84px"
+  utility-bar:
+    backgroundColor: "{colors.night}"
+    textColor: "{colors.night-text}"
+    height: "38px"
+  reading-rule:
+    backgroundColor: "{colors.caritas-red}"
+    height: "2px"
+  chapter-meter:
+    backgroundColor: "{colors.line-strong}"
+    height: "2px"
+  chapter-meter-fill:
+    backgroundColor: "{colors.caritas-red}"
+  photo-credit:
+    textColor: "{colors.night-text}"
+    padding: "6px 12px"
+  night-chapter:
+    backgroundColor: "{colors.night}"
+    textColor: "{colors.night-text}"
   footer:
     backgroundColor: "{colors.night}"
-    textColor: "{colors.on-night}"
-  whatsapp-button:
-    backgroundColor: "{colors.wa}"
-    textColor: "{colors.day}"
-    rounded: "{rounded.circle}"
-    size: "54px"
+    textColor: "{colors.night-text}"
 ---
 
 # Design System: Caritas Africa (v3)
 
 ## Overview
 
-**Creative North Star: "The Long-Form Report, Told in Chapters"**
+**Creative North Star: "The Public Record, Read Aloud"**
 
-Caritas Africa speaks here the way the largest NGOs tell their interactive annual stories: the home page is a sequence of chapters the visitor scrolls through, and each chapter owns one device that moves only as fast as the reader scrolls. A photograph opens from an inset window to full-bleed, a sentence inks itself word by word, a giant numeral counts to 46 before the six zones light in turn, four action photographs travel past on a pinned horizontal track, figures step beside a sticky photograph, and scripture reveals line by line over a full-bleed image. The story closes on a red chapter that asks the reader to give, partner or report abuse. Inner pages keep the same world with quieter motion: a photographic page opening with a gentle parallax, then ruled reading.
+v3 is v1's world, unchanged at rest, and told in order. Everything a visitor sees when the page is still is the v1 proposal: white paper, near-black ink, the single Caritas red of the logo, documentary photographs credited on dark tabs, heavy tight Franklin headings, Source Serif 4 kept for scripture, ruled ledgers instead of cards. What v3 adds is time: the home page's v1 sections become chapters, and each chapter has exactly one device whose state is a direct function of scroll position (the opening photograph widening to full bleed, a sentence inking word by word, mission and vision revealing phrase by phrase, a horizontal track of action photographs, the APPROCHE figures stepping through a focus band, a numeral counting to 46 before the six zones light in turn). The inner pages keep v1's documentary layout with quieter devices: title words rising on load, a page photograph widening from the content column to the viewport edge, timelines and the organisation ladder lighting step by step, values taking the red as they cross the centre.
 
-The ground alternates by chapter between a warm night (Night) and white (Day); Caritas red is a committed field (the act chapter, every primary button) and, translated lighter, the mark of "here" on night. Two families divide the work cleanly: Epilogue, heavy, large and tight in sentence case, for everything that heads, counts or is pressed; Literata, with optical sizes, for everything that is read, including leads, the inked statement and scripture in italic.
+Density stays that of a well-edited annual report. Pinned chapters occupy one stage (the viewport under the 84px header) and hold for 2.3 to 4.2 stage-heights of scroll; reading sections between them are v1 sections with v1 spacing. Nothing autoplays: apart from the single load moment (title words and the white unveil over the opening photograph) and the looping line of the "Faites défiler" cue, which fades as soon as the reader scrolls, every movement waits for the reader's scroll. The page is still framed by ink (utility bar, footer, and now the APPROCHE chapter), and donation and safeguarding stay one click away everywhere.
 
-Geometry is square without exception except the circular WhatsApp button. Depth is nearly absent: photographs, night fields and rules do the work. Every photograph is real, drawn from Caritas Africa's own reports, and credited on a night tab.
+Light theme only. Copy is French and must tolerate the longer strings of the EN and PT publications. With reduced motion requested, the site is v1's static layout: nothing pinned, every device at its final state.
 
 **Key Characteristics:**
-- Chapters alternate warm night and white grounds; the act chapter is a full red field.
-- Epilogue 800–900 for display, 600–750 for UI, always sentence case and negatively tracked; Literata for all reading text.
-- One scroll-mapped device per home chapter, no autoplay; inner pages use only page-open parallax, rises and state transitions.
-- Opaque night header with the official white logo set directly on night, a 3px reading-progress rule along its bottom edge, and a tick-only chapter rail on the right.
-- Ruled data (2px Ink over a group, 1px Line between rows, vertical hairlines between cells); no cards, no eyebrows.
-- Square corners everywhere; the WhatsApp button is the one circle.
-- UI motion: ease-out cubic-bezier(0.23, 1, 0.32, 1), 0.97 press on buttons at 160ms, hover only on fine pointers. Reduced motion unpins every scene and shows final states.
+- At rest, v1 exactly: white ground, ink text, one red for brand, primary action and state.
+- Libre Franklin for all structure at 650 to 800 weight with negative tracking; Source Serif 4 only for scripture, statutes and institutional quotes.
+- Near-square geometry: 2px corners on controls, photographs never rounded.
+- Hairlines and 3px rules instead of cards and shadows; the red rule also measures progress (reading rule, chapter meter, ladder fill).
+- One scroll-mapped device per home chapter, no autoplay, every state reachable by scrolling back.
+- Documentary photographs, always credited on a dark caption tab.
+- Reduced motion returns the static v1 layout with every device in its final state.
 
 ## Colors
 
-A warm night and a plain white, alternating by chapter, committed to one deep red that may fill a whole chapter.
+v1's restrained institutional palette, unchanged: warm-neutral paper and ink, lifted by exactly one saturated voice, the Caritas red.
 
 ### Primary
-- **Caritas Red** (red): the confederation's red. Primary buttons ("Faire un don" in the header and opening), the full-bleed act chapter ("Marchez avec nous"), the action-track progress meter, the current chapter tick on day grounds, the TOC's current bar, timeline years, value names as they are reached, icon accents in lists, file links and news rows, hover text on titles, focus outlines and text selection. Hover deepens to **Red Hover**, press to **Red Press**.
-- **Red on Night** (red-on-night): the red translated for night grounds, used only as a mark: the header's current-link underline, the reading-progress rule, the current chapter tick on night, the network's current zone code, the "Signaler un abus" shield, drawer arrows and the newsletter field's focus border.
-- **Red Wash** (red-wash): only the hover fill of the white button on the red chapter.
-- **Rose on Red** (on-red-2): secondary text on the red chapter (lead, door descriptions).
+- **Caritas Red**: the logo's red. Primary buttons ("Faire un don", "S'abonner"), the full-bleed donation band, the active marker under nav links and tabs, the dropdown's top edge, the active TOC entry, focus outlines, icon accents in lists and file links, scripture citations, the type label in dated document meta, the current region and the ends of the organisation ladder, hover color for links. In v3 it is also the colour of progress: the 2px reading rule under the header, the fill of the chapter meter, the timeline and ladder fill, the current chapter mark on the rail, the zone code that is "now" in the network chapter, the value that crosses the centre. Hover deepens to **Caritas Red Hover**, press to **Caritas Red Press**.
+- **Red Wash** and **Red Tint**: the red at paper strength. Wash backs the safeguarding shield disc, the contact form's success message (with a 3px red top rule) and the hover of white-on-red buttons; Tint is the text selection colour.
+- **Red on Night**: the red translated for dark surfaces: the alert icon in the utility bar, focus on footer inputs, the rail's current mark when it crosses a night chapter (APPROCHE, donation band). The donation band's body text uses a paler rose (#f6dcd8) on red; the APPROCHE "more" link hovers to #f6c9c2.
 
 ### Neutral
-- **Night** (night): the warm near-black ground of the header, the opening, network, APPROCHE and mission chapters, the footer, inner page openings, toasts, tooltips and the segmented-control thumb. **Night Raised** (night-2) backs the footer field and social hover; **Night Active** (night-3) marks the current language; **Night Line** (night-line) divides on night.
-- **On Night** (on-night) and **On Night Muted** (on-night-2): text and secondary text on night; leads on night take the muted value.
-- **Day** (day): the white ground of the who, action, news and reports chapters and of reading pages.
-- **Day Soft** (day-2): the one tinted surface: publication frames, the featured cover's frame, the statute block, the empty state, the segmented track and photo placeholders.
-- **Ink** (ink): headings and text on day, the 2px rules over data groups, line-button stroke.
-- **Ink Soft** (ink-2): descriptions, prose under titles, leads on the action track.
-- **Muted** (muted): `dt` labels, metadata, captions, counts, inactive TOC links.
-- **Line** (line): hairlines between rows and cells. **Line Strong** (line-2): field and file-link strokes, news-list hairlines, and the unlit colour of words in the inked statement.
-- **Error on Night** (error-on-night): the newsletter field's error border and message, the only form on night.
-
-### Functional exception
-- **WhatsApp Green** (wa, hover wa-hover): the floating WhatsApp button only, the platform's own colour.
+- **Ink**: headings, body text, secondary button outline and its hover fill, the ink button ("Signaler un abus"), the segmented filter's outline and thumb, the 3px rule above lists and data groups, the network numeral.
+- **Ink Soft**: lead paragraphs, long prose, descriptions under titles.
+- **Muted**: metadata, `dt` labels, breadcrumbs, counts, inactive tabs, the "Faites défiler" cue.
+- **Faint**: lowest-priority text only; never body copy.
+- **Line**: default hairline between list rows, header bottom border.
+- **Line Strong**: field and file-link borders, the stronger hairline framing purposes, ladder rows, zones and regions; the chapter meter's track; the unread colour of words in the ink-fill sentence before they ink.
+- **Stone**: alternate section band, inner-page title band, the mission/vision stage and the network stage, statute block, empty state, hover fill in menus and tabs.
+- **Stone Deep**: placeholders behind photographs and covers, including the opening window before the image paints.
+- **White**: the page, and the unveil panel that wipes off the opening photograph on load.
+- **Night**, **Night Raised**, **Night Line**, **Night Muted**, **Night Text**: the dark frame (utility bar, footer) and the APPROCHE chapter. Night shares Ink's value on purpose; it is named separately because it is a surface, not text.
+- **Error**: field error text and border on light ground (#ff9e92 on night).
 
 ### Named Rules
-**The Alternating Ground Rule.** Chapters change ground by whole width: Night, Day, or the red field. Day Soft appears only inside a chapter, behind printed objects and quiet blocks, never as a chapter ground.
+**The One Red Rule.** Caritas Red is the only chromatic colour in the interface. It marks brand, the primary action, "you are here" and "how far you have read"; if an element is red it is clickable, current, progress, or the logo's voice. No second accent.
 
-**The Two Reds Rule.** Caritas Red fills (buttons, the act chapter, meters) and marks on day; Red on Night only marks (rules, ticks, underlines, icons) on night and never fills a surface.
+**The Band Rule.** Surfaces change by whole-width bands (white, stone, night, red), never by floating tinted boxes. Pinned chapters are bands too: stone for mission/vision and the network, night for APPROCHE. The red band is reserved for the donation appeal.
 
 ## Typography
 
-**Display Font:** Epilogue (with ui-sans-serif, system-ui, Segoe UI fallback)
-**Body Font:** Literata, optical sizes on (with Georgia, Times New Roman fallback)
+**Display Font:** Libre Franklin (with ui-sans-serif, system-ui, Segoe UI fallback)
+**Body Font:** Libre Franklin
+**Scripture / Quote Font:** Source Serif 4 (with Georgia, Times New Roman fallback)
 
-**Character:** A heavy, tightly tracked grotesque speaks in short sentence-case lines; a warm book serif carries everything meant to be read slowly. The switch of family is the switch between telling and reading.
+**Character:** A sober American grotesque set heavy and tight for headings, reading like a well-set report cover; a transitional serif in italic carries the voice of scripture and the statutes, so faith reads as a quoted source rather than decoration. v3 adds larger steps of the same Franklin for the scroll story's numerals and statements; it adds no family.
 
 ### Hierarchy
-- **Display** (Epilogue 900, clamp(2.9rem, 1.4rem + 4.6vw, 6rem), 0.96, -0.035em, balanced): the opening title and the act chapter's call; inner page titles. On load its words rise in with a 55ms stagger.
-- **Headline** (Epilogue 800, clamp(2.2rem, 1.3rem + 2.8vw, 4rem), 1, -0.03em): chapter heads and inner-page section heads. The opening's over-photo sentence uses the same voice at up to 3.6rem.
-- **Title** (Epilogue 750, clamp(1.25rem, 1.05rem + 0.5vw, 1.55rem), 1.15): panel and group heads; news headlines, purposes, value names, zone codes, door names and the featured report title are the same face at 800/750 between 1.2 and 2.9rem.
-- **Numeral** (Epilogue 900, up to 22rem, 0.8, -0.06em, tabular): the network's 46, the one giant figure.
-- **Figure** (Epilogue 900, clamp(3.4rem, 2rem + 4.4vw, 6rem), 0.95, tabular, unit at 0.45em): APPROCHE figures; timeline years at 2rem in red.
-- **Control** (Epilogue 700, 16px, -0.005em): buttons and link arrows; small buttons 15px.
-- **Nav** (Epilogue 600, 15px): header links, alert link, rail labels at 12.5px.
-- **Label** (Epilogue 400, 13–14px, Muted): `dt` labels, metadata, photo captions, sources, credits (12px); numbers in tabular lining figures.
-- **Statement** (Literata 450, clamp(1.6rem, 1.1rem + 1.7vw, 2.75rem), 1.3, max 30ch): the who-we-are sentence that inks word by word.
-- **Quote** (Literata 500 italic, clamp(2.4rem, 1.4rem + 3.4vw, 4.6rem), 1.05): mission and vision scripture; 2–3.4rem on the inner page.
-- **Citation** (Literata italic, 18px; 17px on day): the sentence-case source line under a scripture quote ("Notre mission · Actes 1:8"). The statute citation is Epilogue 14px Muted, upright.
-- **Lead** (Literata 400, clamp(1.15rem, 1.02rem + 0.45vw, 1.4rem), 1.55, max 58ch): one paragraph under a display or chapter head.
-- **Body** (Literata 400, 18px, 1.65; 17px under 720px): prose at max 66ch, the first paragraph at 1.2em.
+- **Display**: the home h1 in the opening chapter only; 2.2rem at 480px and below (clamp(2.05rem ... 2.6rem) inside the opening under 720px). Split into words that rise on load.
+- **Numeral**: the network chapter's counting "46" only; clamp(6rem ... 9rem) under 1040px. Tabular lining figures.
+- **Figure**: the APPROCHE chapter's stepped counters (2,5 / 17 / 40), with the unit in a `small` at 0.3em, 700.
+- **Page Title**: the h1 of inner pages in the stone title band, split into words that rise on load.
+- **Statement**: the sentence that appears over the full-bleed opening photograph ("Depuis 1995, 46 Caritas nationales…"), white, max 21ch.
+- **Headline**: section heads, including the APPROCHE and actions chapter heads. Document sections and featured publications use clamp(1.6 to 1.7rem ... 2.3rem); the network chapter's h2 under the numeral uses clamp(1.4rem ... 2rem) at 760.
+- **Ink Sentence**: the "who we are" sentence that inks word by word, max 28ch.
+- **Title** (720 to 760, 1.05 to 1.3rem): sub-heads, list heads, mission/vision pane heads, zone and value names, publication and document titles (dated items at 1.15rem 700).
+- **Lead**: one sentence under a display or page title, Ink Soft, max 40 to 62ch.
+- **Body**: prose at 18px in reading sections (19px for the mission/vision phrases, 16.5px in action panels), max 46 to 72ch; 16.5px under 720px.
+- **Quote**: Source Serif 4 italic for mission and vision on the inner pages, max 30ch.
+- **Quote Stage**: the same quote at stage size inside the pinned mission/vision chapter; clamp(1.9rem ... 2.8rem) under 1040px.
+- **Citation**: uppercase, Caritas Red; the scripture reference under a quote ("Actes 1:8"). It is a citation attached to a quote, not a label above a heading.
+- **Label**: `dt` labels, metadata, footnotes, dated meta (14px); numbers set with tabular lining figures.
 
 ### Named Rules
-**The Tell-Then-Read Rule.** Epilogue heads, counts and controls; Literata is read. Never set running text, leads or scripture in Epilogue, never set a heading in Literata.
+**The Serif Is Scripture Rule.** Source Serif 4 appears only for scripture, the statutes, institutional quotes and publication subtitles. Headings, UI, data and the scroll story's numerals are always Franklin.
 
-**The Sentence-Case Rule.** No uppercase anywhere in the type system and no small labels above headings: the heading speaks first, and a source line, if any, sits below the quote it sources. Acronyms (zone codes, APPROCHE) keep their own spelling.
+**The Heavy-and-Tight Rule.** Headings run 700 to 800 with negative tracking (-0.01em to -0.05em, tightest on the largest numerals) and `text-wrap: balance`. The only lighter large text is the ink sentence at 650. Light or wide-tracked headings break the voice.
 
 ## Layout
 
-A 1280px container with a fluid gutter (gutter); the header runs full width. Day chapters breathe at the chapter step; inner reading pages at read, with document sections at doc-section separated by a 1px Line.
+A 1280px container with a fluid gutter (`gutter`); full-bleed pieces align their copy to the container edge (the "edge": the larger of the gutter and the centred container's inner edge). Reading sections breathe at `section` vertically; section heads sit `section-head` above their content, with an optional "more" link right-aligned in the head.
 
-The home page is built from chapters, each a `section` that declares its ground for the rail. Scroll scenes are tall sections with a sticky 100svh stage inside: opening 260vh (220vh under 720px), network 320vh (300vh), mission 260vh, and the action track sized from its own width so that the first 10% of its scroll holds still for the intro. APPROCHE pairs a sticky full-height photograph (left half) with stepped figures of 78–92vh each on the right.
+Composition is asymmetric two-column grids with fractional weights (1.05fr / 1fr intro and mission/vision, 0.9fr / 1.1fr network, 1fr / 1fr APPROCHE, 1.25fr / 1fr featured publication, 1.2fr / 1fr donation band, 0.8fr / 1.2fr organisation, 0.85fr / 1.15fr contact, list plus a 300px sticky aside on news and jobs), collapsing to one column at 1040px. Grids of data (facts, figures, governance, contact, knowledge links, regions) are divided by vertical hairlines between cells rather than gaps; the first cell in each row loses its left padding so text aligns with the container edge.
 
-Composition is asymmetric: fractional splits (1.25fr / 1fr who, 1.6fr / 1fr news and jobs, 1.1fr / 1fr reports and act chapter, 1fr / 1fr network), a six-column report shelf, a five-column library. Inner pages open on a 78svh night photograph with copy anchored bottom-left and breadcrumbs, then a 220px sticky TOC beside the document.
+**Stages.** A pinned chapter is a tall section (the scroll runway) holding a sticky stage exactly one viewport under the header (`stage`, 100svh minus the header). Runways as coded: opening 230vh (210vh at 1040px, 200vh at 720px), mission/vision 250vh (230vh at 1040px), network 300vh (280vh at 720px), actions measured from the track (track overflow divided by 0.9, plus one stage). Pinned stages clip overflow and carry the chapter meter 26px above their bottom edge.
 
-Data groups are ruled rows and cells with vertical hairlines rather than gaps; the first cell loses its left padding so text aligns with the container edge.
+**The opening window.** At rest the opening photograph covers the v1 split window: the right 42.5% of the stage (copy confined to the left 57.5%, max 680px), edge to edge to the viewport. Under 1040px the window is the top 44% of the stage and the copy sits at the bottom.
 
-Breakpoints: 1240px (tighter nav, chapter rail hidden, 4-up shelf and library, 3-column footer), 1040px (64px header, drawer navigation, single-column splits, APPROCHE photo unpinned at 56vh, TOC hidden), 720px (17px body, opening window rises from below, compact network rows, 82vw track panels, 2-up shelf and library, filter bar unstuck).
+Inner pages: a stone title band, then the page photograph window (clamp(220px, 34vw, 480px) tall; 56vw under 720px), then a 250px sticky table of contents beside the document body; the TOC becomes a horizontal tab row under 1040px. Library, news and jobs pages put a sticky filter bar under the header (static under 720px).
+
+Breakpoints: 1200px (tighter nav, 2-up publications), 1040px (drawer navigation, single-column grids, opening window moves to the top, APPROCHE unpinned, chapter rail hidden), 720px (header 68px, everything single column, filters full-width, zone details folded to the current zone), 480px (display at 2.2rem).
 
 ### Named Rules
-**The One Device Per Chapter Rule.** Each home chapter owns one scroll-driven device at most, and its copy must read complete at the device's final state.
+**The Ruled Ledger Rule.** Lists and data are laid out as ruled rows (1px Line between items, 3px Ink over the group), not as cards. The scroll story keeps this: zones, the organisation ladder, figures and dated documents are all ledgers.
+
+**The One Device Rule.** Each home chapter has one scroll-driven device and each pinned stage pins one idea. Reading sections between chapters stay still apart from a translate-only rise.
 
 ## Elevation & Depth
 
-Flat by default. Depth comes from photographs, the night grounds and rules; scrims are night gradients that exist only to keep type legible on photographs (the opening's left-to-right shade, the mission's left scrim, the inner opening's bottom-up scrim).
+Flat by default, as in v1. Depth is conveyed by tonal bands and rules; content never floats. Shadows exist only for things physically on top of the page or physically an object. The scroll story adds no shadow: its depth comes from clipping (photo windows that open) and from the dark scrim that rises over the full-bleed opening photograph so the white statement reads.
 
 ### Shadow Vocabulary
-- **Pop** (`box-shadow: 0 2px 4px rgb(18 15 14 / 0.08), 0 24px 48px -16px rgb(18 15 14 / 0.4)`): the toast.
-- **Cover** (`box-shadow: 0 1px 2px rgb(18 15 14 / 0.1), 0 26px 44px -24px rgb(18 15 14 / 0.5)`): the featured report cover, a printed object on its Day Soft frame.
-- **Float** (`box-shadow: 0 2px 4px rgb(18 15 14 / 0.14), 0 12px 28px -8px rgb(18 15 14 / 0.45)`): the fixed WhatsApp button.
+- **Pop** (`box-shadow: 0 2px 4px rgb(23 24 26 / 0.06), 0 18px 40px -12px rgb(23 24 26 / 0.28)`): overlays only, the nav dropdown and the toast.
+- **Cover** (`box-shadow: 0 1px 2px rgb(23 24 26 / 0.08), 0 20px 40px -20px rgb(23 24 26 / 0.35)`): the featured publication cover, a printed document resting on the page.
 
 ### Named Rules
-**The Sits-Above Rule.** Only the toast, the floating button and the printed cover cast shadows. Chapters, panels, lists and photographs stay flat.
+**The Overlays-Only Rule.** A shadow means "this sits above the page": menus, toasts, a printed cover. Sections, stages, panels, list items and cards stay flat.
+
+**The Scrim-for-Type Rule.** A gradient appears only as a legibility scrim under type set on a photograph (the opening's ink scrim, 0.78 to 0.12 from bottom to top, faded in by scroll) or as the fading tail of the scroll cue's line. Never as a decorative fill.
 
 ## Shapes
 
-Square. Buttons, fields, the segmented control, file links, social links, the drawer, tooltips, the toast, photographs, frames and the inset opening window all have 0 radius. The one circle is the WhatsApp button. Recurring line forms: the 1px hairline, the 2px Ink rule over data groups, 2px marks (nav underline, rail ticks, TOC bar, action meter), the 3px reading-progress rule, 1.5px strokes on buttons and link-arrow underlines, 1px strokes on fields and file links, and a 2px focus outline at 3px offset (red on day, On Night on night and red). Icons are a Lucide-derived line set at 1.75 stroke, 22px default and 18px small.
+Near-square. Buttons, fields, file links, segmented filters, menu items, the toast, rail labels and social links take a 2px corner. Photographs, photo windows, action panels, publication frames, stages and bands are square-cornered; windows open by rectangular clip-path insets, never by masks or rounded reveals. The only circles are functional: the safeguarding shield disc (64px), timeline nodes (12px, 2px red ring on white, filled red once lit) and the third-party WhatsApp button. The recurring line forms are the 1px hairline, the 3px rule (ink over groups; red as the active marker under nav, tabs, dropdown top, TOC, mission/vision panes and the ladder fill), the 2px red line (reading rule, chapter meter, timeline fill, rail mark) and the 2px red focus outline at 3px offset (white on night and red surfaces).
 
 ## Components
 
 ### Buttons
-Solid square blocks in Epilogue; the press is felt, not decorated.
-- **Shape:** 0 radius, 52px tall, 24px padding, 1.5px border in the fill colour, trailing arrow nudges 3px right on hover.
-- **Primary (red):** Caritas Red with white text; hover Red Hover, press Red Press.
-- **Ghost:** transparent with a 55% On Night border on night; hover fills On Night with Night text.
-- **White:** white with red text, the primary action on the red chapter; hover Red Wash.
-- **Line:** transparent with an Ink border; hover fills Ink with white text (On Night stroke inside the drawer).
-- **Small:** 42px, 16px padding, 15px (header donate).
-- **Motion:** scale 0.97 on press with the ease-out curve; colour changes 160ms; hover only on fine pointers.
+Firm, square, and plain; the press is felt, not decorated.
+- **Shape:** squared (2px), 50px tall, 24px horizontal padding, Franklin 680 at 15.5px, 1.5px border.
+- **Primary:** Caritas Red with white text; hover Caritas Red Hover, active Caritas Red Press.
+- **Secondary:** white with a 1.5px Ink border; hover fills Ink with white text.
+- **Ink:** Ink fill with white text, for the safeguarding action.
+- **On red / on night:** white with red text (hover Red Wash), and a transparent variant with a 75% white border.
+- **Small:** 42px tall, 16px padding, 14.5px (empty-state reset, header donate under 720px).
+- **Motion:** every button scales to 0.97 on press over 160ms with the ease-out curve; hover changes only apply on fine pointers.
 
-### Link arrow
-Epilogue 700 at 16px with a 1.5px bottom border in the text colour and a trailing arrow; on hover the gap widens from 8 to 12px.
-
-### Navigation
-- **Header:** fixed, opaque Night, 72px (64px under 1040px); the official white logo at 112px sits directly on night; five links in Epilogue 600 at 15px; "Signaler un abus" with a Red on Night shield; FR/EN/PT with 18x13 flags (current on Night Active); red small "Faire un don".
-- **States:** a 2px Red on Night underline scales in from the left in 220ms on hover and current page.
-- **Reading progress:** a 3px Red on Night rule along the header's bottom edge scales with page progress.
-- **Mobile:** under 1040px a right-side Night drawer (max 420px, 300ms slide) with ruled 21px Epilogue 700 links, the language switch and stacked actions; a short "Don" button stays in the header.
-
-### Chapter rail (signature)
-Fixed at the right edge, vertically centred: one 14px tick per chapter at 35% opacity; the current tick grows to 28px in Red on Night (Caritas Red on day chapters). Labels appear only on hover (fine pointers) or focus, as a Night tooltip that slides 6px in. The rail takes the current chapter's ground colour and fades out over full-bleed scenes (opening, action track, mission). Hidden under 1240px.
-
-### Scroll scenes (signature)
-All driven by one requestAnimationFrame loop reading scroll position; nothing plays on its own.
-- **Opening window:** a tall inset photograph (clip-path inset) opens to full-bleed while the title and lead lift away and fade, a night shade rises, and one sentence settles in over the photo. Under 720px the window rises from below the copy.
-- **Ink fill:** the statement's words turn from Line Strong to Ink as it crosses the viewport.
-- **Network:** the numeral counts 0 to 46 in the first quarter, then the six zones light in turn; the current zone code turns Red on Night and its detail opens.
-- **Action track:** pinned horizontal track of an intro and four photo panels; holds still for the first 10% of its scroll, then translates; photos drift with a small counter-parallax and a 2px red meter tracks progress. Focus inside a panel scrolls the page to bring it on screen.
-- **APPROCHE:** sticky photograph; figures count up once on entering view.
-- **Mission:** full-bleed photograph scales from 1.08 to 1 while the mission then the vision pane show, their lines brightening from 18% to full opacity.
-- **Page open (inner pages):** the opening photograph translates at 0.22 of scroll.
-- **Reduced motion:** with `prefers-reduced-motion`, scenes are unpinned and shown in their final state (window full-bleed, all words inked, 46 and all zones lit, track scrolls natively, both mission panes stacked, figures at final values).
-
-### Network zone rows
-Ruled rows on night: zone code (Epilogue 800, 1.25rem), region (14px On Night Muted), coordinating Caritas and coordinator; unlit rows at 32% opacity.
-
-### Inputs / Fields
-- **On night (newsletter):** Night Raised fill, Night Line stroke, 50px, 0 radius; focus border Red on Night with a 3px 20% halo; errors in Error on Night.
-- **On day (library):** white, 1px Line Strong stroke, 44px; selects carry a muted chevron, search a muted leading icon; focus border red with a 3px 14% halo.
-
-### Segmented control
-A Day Soft track with 3px padding; a square Night thumb slides behind the checked label in 240ms ease-out and the label turns white. Full width with equal options under 720px.
+### Text links ("more")
+Franklin 680 with a 1.5px Line Strong underline at 6px offset and a trailing arrow; on hover the text and underline turn red and the arrow nudges 3px right. On night the link is white with a Night Line underline.
 
 ### File links
-The download chip: 38px (48px large, 32px on shelf tiles), 1px Line Strong stroke, a red file icon and the language abbreviation; hover turns border and text red; press 0.96.
+The document download chip: 34px tall (46px large), 1px Line Strong border, 2px corner, a red download icon, "PDF" and the language abbreviation (FR / EN / PT) with an accessible name stating title and language; hover turns border and text red, press scales to 0.96.
 
-### Publications
-Report tiles with a 3:4 Day Soft frame (cover contained, 1.04 zoom on hover), an Epilogue 700 title, red-accented metadata and a file-link row. The featured report sits on a Day Soft frame with the Cover shadow.
+### Dated document items
+The unit of the news, jobs, statements and consultancies lists: a meta line (14px Muted, tabular figures) leading with the type in red 650 ("Déclaration", "Offre d'emploi", "Appel à manifestation d'intérêt"), then the date ("Publié le 12 mai 2026" for notices) and a language note when not French; a 1.15rem 700 title linked to the source, balanced, max 62ch; an optional Ink Soft subtitle; an optional file-link row. Items are ruled rows under a 3px Ink rule, single or two columns (column gap clamp(32px, 5vw, 72px)); the title turns red and underlines on hover.
+
+### Filterable lists
+Library, news and jobs share one pattern in a sticky white bar: the segmented filter, an optional language select, a search field (120ms debounce) and a live count right-aligned ("**12** publications", "Aucun résultat"). The type filter can be preset by `?type=` in the URL. An empty result shows a Stone empty state with a title, a hint and a small secondary "Tout afficher" reset.
+
+### Segmented filter
+A 1.5px Ink outline holding radio labels (40px, 14.5px 650, hairline separators); an Ink thumb slides (240ms) behind the checked label, which turns white; keyboard focus draws the red outline on the label. Becomes a two-column grid on mobile.
+
+### Inputs / Fields
+- **Style:** white, 1.5px Line Strong border, 2px corner, 50px tall (43px in filter bars), 16px text; labels above at 14.5px 650 with a muted "facultatif" for optional fields; textareas 160px minimum.
+- **Focus:** border turns Caritas Red with a 3px halo at 16% red; on night, the border turns Red on Night.
+- **Error:** on submit, every invalid field gets an Error border, `aria-invalid` and a 13.5px message under it, and focus moves to the first invalid field; typing in a field clears its error. Success replaces nothing: a Red Wash message with a 3px red top rule appears under the form.
+- **Choices:** radio rows use native inputs at 18px with the red accent colour. Selects use the field stroke with a chevron icon; search puts a muted icon at the left.
+
+### Navigation
+- **Utility bar:** Night, 38px, 13.5px; holds "Signaler un abus" (with a Red on Night shield), jobs and tenders, contact and the FR/EN/PT switch.
+- **Header:** sticky white, 84px (68px mobile), 1px Line bottom border; logo left, five links in Franklin 600 at 15.5px, red "Faire un don" right. A 2px Caritas Red reading rule sits on the header's bottom edge on every page, scaled from the left by reading progress.
+- **States:** a 3px red underline scales in from the left (220ms) on hover, current page and open dropdown.
+- **Dropdown:** white panel with a 3px red top edge and the Pop shadow, items with a muted description line, hover Stone; opens in 180ms from its trigger.
+- **Mobile:** below 1040px a right-side drawer (max 420px, 280ms slide) with ruled 19px links, plus a persistent red donate button in the header.
+- **Chapter rail (home, 1041px and up):** fixed at the right edge, one 2px mark per chapter (14px at 40% opacity, the current one 28px in Caritas Red, Red on Night over night chapters); a label tab (Ink, white 13px, 2px corner) slides in on hover or keyboard focus. It hides over the opening and the actions track, and near the page end.
+
+### Organisation ladder and regions
+The network's governance as a ruled ladder: rows of a 740 name beside an Ink Soft description under a 3px Ink rule, its top rule filling red as the rungs light in reading order. The seven Caritas regions as a 4-column hairline grid (2 at 1040px, 1 at 720px), Africa marked in red as "you are here", the others linking out.
+
+### Figures
+Ruled `dt`/`dd` cells under a 3px Ink rule, four across (two at 1040px, one at 720px), numerical values at 1.6rem 800; counters with `data-to` count up once when visible.
+
+### Network explorer (reseau page)
+v1's zone tabs: a single 3px red rule slides to the selected tab (240ms); the panel shows the zone name at clamp(2.2rem ... 3.4rem) 800, its full conference name in Muted Franklin at 15.5px, beside a white coordinator block of `dt`/`dd` pairs, crossfading on change.
+
+### Publication library
+Publication tiles with a 4:3 Stone Deep frame (cover contained, 1.025 zoom on hover), a Franklin title and the file-link row; tiles rise in (380ms) after a filter change.
 
 ### Photo credit
-Every photograph carries a credit: a 12px tab on 70% Night at the bottom-right of full-bleed and sticky photos, or a 13px Muted caption under inline photos.
+Every photograph carries a credit tab: 12.5px light text on 72% Night, at the bottom right; at the top right on the opening photograph, where the statement occupies the bottom.
 
-### WhatsApp button
-Fixed bottom-right, 54px circle (50px under 720px) in WhatsApp green with the Float shadow; a Night tooltip slides in on hover and focus; press 0.95.
+### WhatsApp contact button
+A user-requested third-party mark carried from v1: fixed bottom right, 60px (52px under 720px) circle in WhatsApp green with a soft shadow. It is a sanctioned exception for that brand's mark only, not a pattern for other controls.
+
+### Scroll story (home)
+Every device reads one progress value: 0 when the chapter's top reaches the header, 1 when its stage releases (`p`). One requestAnimationFrame loop updates all scenes on scroll; geometry is re-measured on load, font load and real resizes (mobile toolbar height changes under 160px do not re-measure). Values below are as coded.
+
+- **Opening photo window** (230vh runway). `lift = p / 0.3` lifts the copy (opacity 1 − 1.5·lift, translateY −9vh·lift) and fades the cue (1 − 4·lift). `e = easeInOut((p − 0.04) / 0.5)` opens the clip-path from `inset(0 0 0 57.5%)` to `inset(0)` while the image transform interpolates from covering the v1 window (focal point 58% / 40%) to covering the stage; under 1040px the clip opens from `inset(0 0 56% 0)`. `shade = (p − 0.42) / 0.25` raises the ink scrim; `say = easeOut((p − 0.55) / 0.22)` brings in the statement (opacity, translateY 28px to 0).
+- **Ink fill** (who we are). The sentence is split into words; `k = (0.86·vh − top) / (0.56·vh + 0.6·height)`, and the first `ceil(k·n)` words turn from Line Strong to Ink (260ms colour transition).
+- **Mission and vision** (pinned stone stage, 250vh). The mission pane shows for `p < 0.5`, the vision pane after (panes swap by opacity and translateY 16px, 420/520ms). Each pane's body is split into phrases at commas, semicolons and colons; phrases go from 0.2 to full opacity over `(p − 0.04) / 0.34` for mission and `(p − 0.56) / 0.34` for vision. The first photograph eases from scale 1.07 to 1 across the pin; the second wipes up over it by `clip-path inset(top)` with `wipe = easeInOut((p − 0.42) / 0.16)`. Meter: `scaleX(p)`.
+- **Actions track** (pinned, runway measured). The track holds still for the first 10% (`HOLD`), then translates by `((p − 0.1) / 0.9)·maxX`. Each panel's photograph sits at scale 1.08 and shifts by up to ±4% horizontally with its distance from the viewport centre. Meter: `scaleX(p)`. Keyboard: when focus enters a panel, the stage's native scroll is reset and the window scrolls to the progress that brings that panel to the left edge, so the focused link is always on screen.
+- **APPROCHE** (night, sticky photograph half-left, steps right). Steps are 62vh tall (82vh first and last); a focus band (the middle 24% of the viewport) lights the current step from 0.3 to full opacity (500ms). Figures count up once (1300ms, ease-out, French number format) at 80% visibility. Under 1040px the photograph is a 52vh static band and every step is lit.
+- **Network** (pinned stone stage, 300vh). The numeral counts `round(46·easeOut(t))` from the moment it enters the viewport (0.6 stage before the pin) to the first quarter of the pin. From `p = 0.3` the six zones light in order over the next 0.62 of progress: lit zones go from 0.34 to full opacity (300ms), the current zone's code turns red and its coordinator detail opens (`grid-template-rows` 0fr to 1fr, 360ms); under 720px only the current zone shows its coordinator.
+- **Reading rule** (every page). `scaleX(scrollY / (scrollHeight − vh))` on the header's 2px red rule.
+- **Chapter rail**: current chapter is the last whose top is above mid-viewport; theme follows the chapter's `data-theme`.
+- **Rise** (reading sections): translate only, from 18px, 900ms with a 70ms stagger, once at 10% inside the viewport; opacity is never touched, so content is legible before it moves.
+
+### Scroll story (inner pages)
+- **Title word rise** (load): page-title words from opacity 0 and 0.32em down, 800ms with a 45ms stagger; breadcrumbs and lead rise 700ms (lead delayed 260ms). On home the display words take 900ms with a 50ms stagger, the rest of the opening copy rises at 420ms and 520ms, and a white panel unveils the photograph (scaleX 1 to 0 from the left, 1000ms; scaleY from the top under 1040px).
+- **Page photo window**: from when its top enters the viewport to 40px under the header, `k = 1 − easeInOut(t)` closes the side insets (`clip-path inset(0 edge·k)`) so the photograph widens from the content column to full bleed, while the 116%-tall image drifts up to 13%.
+- **Sequential timelines and ladder**: `k = (0.78·vh − top) / height` fills the line (timeline: a 2px red line `scaleY(k)` over the grey track; ladder: a 3px red rule `scaleX(k)` over the ink rule) and lights the first `ceil(k·n)` rows from 0.36 to full opacity (320ms); timeline nodes fill red.
+- **Values focus band**: the value crossing the middle 24% of the viewport turns its name red (300ms).
+- **Counters** on figures, as on home.
+
+### Reduced motion
+The `rm` class is set on `<html>` in the head, before paint, when `prefers-reduced-motion: reduce` matches; the engine also checks it. With `rm`: no load class (no word rise, no unveil); every runway collapses to its content height and every stage becomes static (the opening is a v1 hero of clamp(520px, viewport minus header and utility bar, 760px) with the photograph in its window; the statement and cue are hidden); mission and vision stack with a 56px gap; meters are hidden; the actions track becomes a native horizontal scroller; all zones are lit with details open; the ink sentence, phrases, steps, values, ladder and timelines are at their final state; page windows are unclipped; counters show their final value. A global media rule also cuts all CSS animation and transition durations to 1ms.
 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** alternate chapters between Night and Day by whole width, and give the call to act a full Caritas Red field.
-- **Do** set heads, counts and controls in Epilogue (800–900 display, 600–750 UI), sentence case and negatively tracked; set everything read in Literata.
-- **Do** drive chapter devices directly from scroll position, one device per chapter, with copy complete at the final state.
-- **Do** unpin every scene and show final states under reduced motion.
-- **Do** use Red on Night only for marks on night grounds, and Caritas Red for fills and marks on day.
-- **Do** build data as ruled rows and cells: 2px Ink over the group, 1px Line between rows, vertical hairlines between cells.
-- **Do** keep every corner square; the WhatsApp button is the only circle.
-- **Do** credit every photograph, and put scripture citations below their quote in Literata italic.
-- **Do** use the ease-out curve (cubic-bezier(0.23, 1, 0.32, 1)), 0.97 presses on buttons, hover only on fine pointers.
-- **Do** keep "Faire un don" and "Signaler un abus" in the header of every page.
+- **Do** keep Caritas Red for brand, primary action, current state and progress, on white or as the one full-width donation band.
+- **Do** set headings in Libre Franklin 700 to 800 with negative tracking, and reserve Source Serif 4 for scripture, statutes and institutional quotes.
+- **Do** build lists and data as ruled rows: 1px Line between rows, a 3px Ink rule over the group, vertical hairlines between grid cells.
+- **Do** use 2px corners on every control and leave photographs square; open photographs with rectangular clip-path insets.
+- **Do** credit every photograph on its dark caption tab.
+- **Do** drive story devices directly from scroll position (one device per chapter), with transforms, opacity and clip-path for anything scroll-mapped and the ease-out curve (cubic-bezier(0.23, 1, 0.32, 1)) for state transitions; 160ms presses at 0.97.
+- **Do** ship every device with a reduced-motion final state: nothing pinned, everything lit, v1's static layout.
+- **Do** keep keyboard focus on screen inside pinned or translated content.
+- **Do** keep "Faire un don" and "Signaler un abus" reachable from every page's header or utility bar.
 
 ### Don't:
-- **Don't** put small labels, kickers or eyebrows above headings, or set any text in uppercase.
-- **Don't** put content in shadowed or tinted cards; shadows belong to the toast, the floating button and the printed cover.
-- **Don't** autoplay a chapter device or loop a carousel; motion follows the reader's scroll.
-- **Don't** round photographs, buttons or fields, or use pill shapes.
-- **Don't** fill a surface with Red on Night, or introduce a second accent; WhatsApp green stays on the WhatsApp button.
-- **Don't** use gradients except as night scrims over photographs.
-- **Don't** set the white logo on a plate; it sits directly on night.
-- **Don't** use religious ornament as decoration, or emoji and text glyphs as icons; use the 1.75-stroke line set.
+- **Don't** introduce a second accent colour, decorative gradients, or tints of red as decorative fills; a gradient is only a scrim under type on a photograph.
+- **Don't** put content in shadowed cards; shadows are for overlays and the printed cover only.
+- **Don't** round photographs or use pill-shaped buttons.
+- **Don't** autoplay: no carousels, no timed slides, no motion that runs without the reader's scroll beyond the single load moment and the opening's scroll cue.
+- **Don't** hide content behind its entrance: reading-section reveals translate only, and dimmed story states always resolve to full ink.
+- **Don't** use religious ornament (crosses, halos, stained-glass textures) as decoration; the logo is the only emblem.
+- **Don't** use emoji or text glyphs as icons; use the 1.75-stroke line set.
+- **Don't** place small uppercase labels above headings; uppercase red is for the scripture citation beneath a quote.

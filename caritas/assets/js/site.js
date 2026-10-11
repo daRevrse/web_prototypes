@@ -89,9 +89,8 @@
     });
   }
 
-  /* ---------- Accueil ---------- */
-  function initHome() {
-    /* Réseau : six zones en onglets */
+  /* ---------- Réseau : six zones en onglets (accueil et page Notre réseau) ---------- */
+  function initZones() {
     const tabs = $("#zone-tabs"), panel = $("#zone-panel"), rule = $(".tab-rule", tabs);
     tabs.insertAdjacentHTML("afterbegin", ZONES.map((z, i) =>
       `<button class="tab" role="tab" id="tab-${z.id}" aria-controls="zone-panel" aria-selected="${i === 0}" tabindex="${i === 0 ? 0 : -1}"><strong>${z.code}</strong><span>${esc(z.region)}</span></button>`).join(""));
@@ -104,7 +103,7 @@
       const z = ZONES[i];
       btns.forEach((b, k) => { b.setAttribute("aria-selected", k === i); b.tabIndex = k === i ? 0 : -1; });
       panel.setAttribute("aria-labelledby", "tab-" + z.id);
-      panel.innerHTML = `<div><p class="zone-name">${z.code}</p><p class="zone-region">${esc(z.region)}</p></div>
+      panel.innerHTML = `<div><p class="zone-name">${z.code}</p><p class="zone-region">${esc(z.region)}</p>${typeof ZONE_FULL !== "undefined" ? `<p class="zone-full"${["amecea", "imbisa"].includes(z.id) ? ' lang="en"' : ""}>${esc(ZONE_FULL[z.id])}</p>` : ""}</div>
         <dl class="zone-coord">
           <dt>Caritas coordinatrice de la zone</dt><dd>${esc(z.caritas)}</dd>
           <dt>Coordination</dt><dd>${esc(z.person)}<small>${esc(z.role)}</small></dd>
@@ -126,6 +125,11 @@
     const re = () => placeRule(btns.find((b) => b.getAttribute("aria-selected") === "true"), false);
     window.addEventListener("resize", re);
     document.fonts && document.fonts.ready.then(re);
+  }
+
+  /* ---------- Accueil ---------- */
+  function initHome() {
+    initZones();
 
     /* Publications */
     const byId = (id) => PUBS.find((p) => p.id === id);
@@ -202,10 +206,148 @@
     document.fonts && document.fonts.ready.then(() => placeThumb(false));
   }
 
+  /* ---------- Nouvelles pages : outils partagés ---------- */
+  const norm = (s) => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+  const LANG_NAME = { FR: "Français", EN: "Anglais", PT: "Portugais" };
+
+  function segThumb(seg) {
+    const thumb = $(".seg-thumb", seg);
+    const place = (animate) => {
+      const lab = $("input:checked + label", seg);
+      if (!lab || !thumb) return;
+      thumb.classList.toggle("anim", !!animate && !reduceMotion);
+      thumb.style.transform = `translate(${lab.offsetLeft}px, ${lab.offsetTop}px) scale(${lab.offsetWidth / 100}, ${lab.offsetHeight / 100})`;
+    };
+    $$("input", seg).forEach((r) => r.addEventListener("change", () => place(true)));
+    requestAnimationFrame(() => place(false));
+    window.addEventListener("resize", () => place(false));
+    document.fonts && document.fonts.ready.then(() => place(false));
+    return place;
+  }
+
+  function initToc() {
+    const links = $$(".toc a");
+    if (!links.length) return;
+    const map = new Map(links.map((a) => [a.getAttribute("href").slice(1), a]));
+    const set = (id) => links.forEach((a) => a.setAttribute("aria-current", a === map.get(id)));
+    const io = new IntersectionObserver((entries) => {
+      const vis = entries.filter((e) => e.isIntersecting).sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+      if (vis[0]) set(vis[0].target.id);
+    }, { rootMargin: "-30% 0px -60% 0px" });
+    map.forEach((_, id) => { const s = document.getElementById(id); s && io.observe(s); });
+    set(links[0].getAttribute("href").slice(1));
+  }
+
+  function docItem(n) {
+    return `<li><article class="doc-item">
+      <p class="meta"><span class="t">${n.type}</span><time datetime="${n.date}">${date(n.date)}</time>${n.lang !== "FR" ? "<span>En anglais</span>" : ""}</p>
+      <h3><a href="${n.url}"${n.lang === "EN" ? ' lang="en"' : ""}>${esc(n.title)}</a></h3>
+      ${n.sub ? `<p class="sub">${esc(n.sub)}</p>` : ""}
+      ${n.pdf ? `<div class="files"><a class="file" href="${n.pdf}" target="_blank" rel="noopener" aria-label="${esc(n.title)}, PDF en ${LANG_NAME[n.lang].toLowerCase()}">${ic("file-down")}<span>PDF</span> <abbr title="${LANG_NAME[n.lang]}">${n.lang}</abbr></a></div>` : ""}
+    </article></li>`;
+  }
+  function jobItem(j) {
+    const onlyEn = j.langs.length === 1 && j.langs[0] === "EN";
+    return `<li><article class="doc-item">
+      <p class="meta"><span class="t">${j.type}</span><time datetime="${j.date}">Publié le ${date(j.date)}</time><span>Avis en ${j.langs.map((l) => LANG_NAME[l].toLowerCase()).join(", ")}</span></p>
+      <h3><a href="${j.url}"${onlyEn ? ' lang="en"' : ""}>${esc(j.title)}</a></h3>
+    </article></li>`;
+  }
+
+  /* Liste filtrable : type (contrôle segmenté), langue facultative, recherche, compteur */
+  function filterable({ seg, radio, all, lang, q, list, count, rows, match, item, noun, nouns, emptyTitle }) {
+    const place = segThumb(seg);
+    const k0 = new URLSearchParams(location.search).get("type");
+    if (k0) { const r = $(`input[value="${k0}"]`, seg); if (r) r.checked = true; }
+    const render = () => {
+      const k = $(`input[name="${radio}"]:checked`, seg).value, l = lang ? lang.value : "", t = norm(q.value.trim());
+      const out = rows.filter((r) => (!k || r.kind === k) && (!l || r.lang === l) && (!t || norm(match(r)).includes(t)));
+      count.innerHTML = out.length ? `<strong>${out.length}</strong> ${out.length > 1 ? nouns : noun}` : `Aucun résultat`;
+      list.innerHTML = out.length ? out.map(item).join("") : `<li class="empty" role="status"><h2>${emptyTitle}</h2><p>Essayez un autre type ou un autre mot.</p><button class="btn btn-line btn-sm" type="button" data-reset>Tout afficher</button></li>`;
+    };
+    $$("input", seg).forEach((r) => r.addEventListener("change", render));
+    lang && lang.addEventListener("change", render);
+    let deb; q.addEventListener("input", () => { clearTimeout(deb); deb = setTimeout(render, 120); });
+    list.addEventListener("click", (e) => {
+      if (!e.target.closest("[data-reset]")) return;
+      all.checked = true; if (lang) lang.value = ""; q.value = "";
+      place(true); render();
+    });
+    render(); place(false);
+  }
+
+  /* ---------- Notre réseau ---------- */
+  function initNetwork() {
+    initZones();
+    $("#network-news").innerHTML = NEWS_ALL.filter((n) => n.kind === "reseau").map(docItem).join("");
+  }
+
+  /* ---------- Nos actions ---------- */
+  function initActions() {
+    initToc();
+    $("#approche-steps").innerHTML = APPROCHE_STEPS.map((s) => `<li><time>${s.date}</time><p>${esc(s.text)}</p></li>`).join("");
+    $("#rechange-members").innerHTML = RECHANGE_MEMBERS.map((m) => `<li>${esc(m)}</li>`).join("");
+    $("#declarations").innerHTML = NEWS_ALL.filter((n) => n.kind === "declaration").map(docItem).join("");
+    $("#chantiers-list").innerHTML = JOBS_ALL.filter((j) => j.kind === "consultance").map(jobItem).join("");
+  }
+
+  /* ---------- Actualités ---------- */
+  function initNews() {
+    filterable({
+      seg: $("#news-kind"), radio: "kind", all: $("#k-all"), lang: $("#news-lang"), q: $("#news-q"),
+      list: $("#news-all"), count: $("#news-count"), rows: NEWS_ALL, item: docItem,
+      match: (n) => `${n.title} ${n.sub} ${n.type}`, noun: "publication", nouns: "publications",
+      emptyTitle: "Aucune publication ne correspond",
+    });
+  }
+
+  /* ---------- Emplois et appels d'offres ---------- */
+  function initJobs() {
+    filterable({
+      seg: $("#job-kind"), radio: "jkind", all: $("#j-all"), lang: null, q: $("#job-q"),
+      list: $("#jobs-all"), count: $("#job-count"), rows: JOBS_ALL, item: jobItem,
+      match: (j) => `${j.title} ${j.type}`, noun: "avis", nouns: "avis",
+      emptyTitle: "Aucun avis ne correspond",
+    });
+  }
+
+  /* ---------- Contact ---------- */
+  function initContact() {
+    const f = $("#contact-form");
+    if (!f) return;
+    const rules = [
+      ["#c-nom", (v) => v.trim().length > 0],
+      ["#c-prenom", (v) => v.trim().length > 0],
+      ["#c-mail", (v) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim())],
+      ["#c-objet", (v) => v.trim().length > 0],
+      ["#c-msg", (v) => v.trim().length > 0],
+    ];
+    rules.forEach(([sel]) => $(sel).addEventListener("input", (e) => {
+      e.target.closest(".field").classList.remove("has-err"); e.target.removeAttribute("aria-invalid");
+    }));
+    f.addEventListener("submit", (e) => {
+      e.preventDefault();
+      let first = null;
+      rules.forEach(([sel, ok]) => {
+        const inp = $(sel), bad = !ok(inp.value);
+        inp.closest(".field").classList.toggle("has-err", bad);
+        inp.setAttribute("aria-invalid", bad);
+        if (bad && !first) first = inp;
+      });
+      if (first) { first.focus(); return; }
+      $("#contact-ok").hidden = false; f.reset();
+    });
+  }
+
   initHeader();
   initNewsletter();
   const page = document.body.dataset.page;
   if (page === "home") initHome();
   if (page === "about") initAbout();
   if (page === "library") initLibrary();
+  if (page === "network") initNetwork();
+  if (page === "actions") initActions();
+  if (page === "news") initNews();
+  if (page === "jobs") initJobs();
+  if (page === "contact") initContact();
 })();

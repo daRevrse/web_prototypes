@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-10T00:19:02Z",
+  "generatedAt": "2026-10-11T00:00:00Z",
   "title": "Design System: Caritas Africa (v2)",
   "extensions": {
     "colorMeta": {
@@ -251,6 +251,11 @@
         "purpose": "Hero copy entrance; library tiles use 420ms."
       },
       {
+        "name": "filter-debounce",
+        "value": "120ms",
+        "purpose": "Search input delay before a filterable list re-renders."
+      },
+      {
         "name": "rule-slide",
         "value": "transform 240-260ms ease-out",
         "purpose": "Segmented thumb in the library filter (240ms) and zone-tab rule (260ms)."
@@ -376,6 +381,30 @@
       "description": "The non-card container: 4px ink rule over dt/dd cells split by hairlines.",
       "html": "<dl class=\"ds-ruled\"><div><dt>Président</dt><dd>Mgr Pierre Cibambo Ntakobajira</dd></div><div><dt>Vice-président</dt><dd>M. Santos Gotine</dd></div><div><dt>Trésorier</dt><dd>M. Philippe Yaovi Ahouanye</dd></div></dl>",
       "css": ".ds-ruled { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 0; border-top: 4px solid #161412; font-family: 'Archivo', system-ui, sans-serif; color: #161412; } .ds-ruled div { padding: 20px 20px 22px 0; border-bottom: 1px solid #e5e1db; } .ds-ruled div + div { padding-left: 20px; border-left: 1px solid #e5e1db; } .ds-ruled dt { font-size: 13.5px; color: #69635c; } .ds-ruled dd { margin: 4px 0 0; font-weight: 750; font-size: 19px; line-height: 1.3; }"
+    },
+    {
+      "name": "Dated Document Item",
+      "kind": "custom",
+      "refersTo": "doc-item",
+      "description": "Statement, news or notice row: red type, date and language over a condensed title, optional sub-line and PDF chip.",
+      "html": "<ul class=\"ds-docs\"><li><article class=\"ds-doc\"><p class=\"ds-meta\"><span>Déclaration</span><time datetime=\"2024-02-17\">17 février 2024</time><span>En anglais</span></p><h3><a href=\"#\" lang=\"en\">Statement of the Caritas Africa Regional Commission</a></h3><p class=\"ds-sub\">Adopted at the regional commission meeting in Lomé.</p><a class=\"ds-file\" href=\"#\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z\"/><path d=\"M14 2v4a2 2 0 0 0 2 2h4\"/><path d=\"M12 18v-6\"/><path d=\"m9 15 3 3 3-3\"/></svg>PDF EN</a></article></li></ul>",
+      "css": ".ds-docs { list-style: none; margin: 0; padding: 0; border-top: 4px solid #161412; font-family: 'Archivo', system-ui, sans-serif; color: #161412; } .ds-docs li { border-bottom: 1px solid #cbc4bb; } .ds-doc { display: grid; gap: 8px; padding: 22px 0 24px; } .ds-meta { margin: 0 0 0 -17px; display: flex; flex-wrap: wrap; align-items: center; font-size: 14px; color: #69635c; clip-path: inset(-4px 0 -4px 17px); } .ds-meta > * { position: relative; margin-left: 17px; } .ds-meta > * + *::before { content: '\\00B7'; position: absolute; left: -11px; } .ds-meta > span:first-child { font-weight: 700; color: #7c0800; } .ds-doc h3 { margin: 0; font-stretch: 72%; font-weight: 750; font-size: clamp(1.3rem, 1.1rem + 0.5vw, 1.6rem); line-height: 1.12; } .ds-doc h3 a { color: inherit; text-decoration: none; transition: color 160ms ease; } .ds-doc h3 a:hover { color: #7c0800; } .ds-doc h3 a:focus-visible { outline: 2px solid #7c0800; outline-offset: 3px; } .ds-sub { margin: 0; color: #45403a; font-size: 16px; max-width: 62ch; } .ds-file { justify-self: start; margin-top: 4px; display: inline-flex; align-items: center; gap: 8px; min-height: 38px; padding: 0 12px; border: 1.5px solid #cbc4bb; color: #161412; font-size: 14px; font-weight: 650; text-decoration: none; } .ds-file svg { color: #7c0800; } .ds-file:hover { border-color: #7c0800; color: #7c0800; }"
+    },
+    {
+      "name": "Contact Form",
+      "kind": "input",
+      "refersTo": "input-form",
+      "description": "Open form under a 4px ink rule: labelled 52px fields, inline radio choice, per-field errors, red-ruled confirmation on Band.",
+      "html": "<form class=\"ds-form\" novalidate><h2>Écrire au secrétariat</h2><div class=\"ds-field ds-has-err\"><label for=\"ds-mail\">E-mail</label><input class=\"ds-in\" id=\"ds-mail\" type=\"email\" value=\"nom@domaine\" aria-invalid=\"true\"><p class=\"ds-err\">Saisissez une adresse e-mail valide, par exemple nom@domaine.org.</p></div><div class=\"ds-field\"><label for=\"ds-tel\">Téléphone <span class=\"ds-opt\">facultatif</span></label><input class=\"ds-in\" id=\"ds-tel\" type=\"tel\"></div><fieldset class=\"ds-choice\"><legend>Destinataire</legend><label><input type=\"radio\" name=\"ds-d\" checked> Secrétaire exécutif</label><label><input type=\"radio\" name=\"ds-d\"> Secrétariat</label><label><input type=\"radio\" name=\"ds-d\"> Communication</label></fieldset><div class=\"ds-field\"><label for=\"ds-msg\">Message</label><textarea class=\"ds-in\" id=\"ds-msg\"></textarea></div><p class=\"ds-ok\" role=\"status\">Merci ! Votre message serait transmis au secrétariat de Lomé.</p></form>",
+      "css": ".ds-form { display: grid; gap: 18px; padding-top: 24px; border-top: 4px solid #161412; font-family: 'Archivo', system-ui, sans-serif; color: #161412; } .ds-form h2 { margin: 0; font-stretch: 64%; font-weight: 800; font-size: clamp(1.9rem, 1.4rem + 1.2vw, 2.6rem); line-height: 0.95; text-transform: uppercase; } .ds-field label, .ds-choice legend { display: block; margin-bottom: 6px; font-size: 14.5px; font-weight: 650; } .ds-opt { font-weight: 400; color: #69635c; } .ds-in { width: 100%; height: 52px; padding: 0 14px; border: 1.5px solid #cbc4bb; border-radius: 0; background: #ffffff; color: #161412; font: inherit; font-size: 16px; transition: border-color 160ms ease, box-shadow 160ms ease; } textarea.ds-in { height: auto; min-height: 168px; padding-block: 12px; line-height: 1.5; resize: vertical; } .ds-in:focus { outline: none; border-color: #7c0800; box-shadow: 0 0 0 3px rgb(124 8 0 / 0.14); } .ds-err { display: none; margin: 8px 0 0; font-size: 13.5px; color: #b42318; } .ds-has-err .ds-err { display: block; } .ds-has-err .ds-in { border-color: #b42318; } .ds-choice { margin: 0; padding: 0; border: 0; display: flex; flex-wrap: wrap; gap: 8px 22px; } .ds-choice legend { width: 100%; padding: 0; } .ds-choice label { display: inline-flex; align-items: center; gap: 8px; font-size: 16px; font-weight: 500; cursor: pointer; } .ds-choice input { width: 18px; height: 18px; margin: 0; accent-color: #7c0800; } .ds-ok { margin: 0; padding: 14px 16px; border-top: 4px solid #7c0800; background: #f2f0ed; font-weight: 600; }"
+    },
+    {
+      "name": "Regions Grid",
+      "kind": "custom",
+      "refersTo": "regions",
+      "description": "The seven Caritas Internationalis regions on carbon, ruled cells, the current region in Red on Dark.",
+      "html": "<ul class=\"ds-regions\"><li class=\"ds-here\"><strong>Afrique</strong><span>Caritas Africa, 46 membres. Vous êtes ici.</span></li><li><a href=\"#\"><strong>Asie</strong><span>Caritas Asia</span></a></li><li><a href=\"#\"><strong>Europe</strong><span>Caritas Europa</span></a></li><li><a href=\"#\"><strong>Océanie</strong><span>Caritas Oceania</span></a></li></ul>",
+      "css": ".ds-regions { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 4px solid #eeebe7; background: #161412; font-family: 'Archivo', system-ui, sans-serif; } .ds-regions > li { border-bottom: 1px solid #3b3733; } .ds-regions > li + li { border-left: 1px solid #3b3733; } .ds-regions a, .ds-here { display: grid; align-content: start; gap: 6px; height: 100%; padding: 22px 20px 26px; text-decoration: none; } .ds-regions > li:first-child { padding-left: 0; } .ds-regions strong { font-stretch: 72%; font-weight: 750; font-size: 1.35rem; line-height: 1.1; color: #ffffff; transition: color 160ms ease; } .ds-regions span { font-size: 14.5px; color: #b4ada5; } .ds-here strong, .ds-regions a:hover strong { color: #f3a69b; } .ds-regions a:focus-visible { outline: 2px solid #ffffff; outline-offset: -3px; }"
     }
   ],
   "narrative": {
@@ -412,7 +441,7 @@
       },
       {
         "name": "The Ruled Data Rule",
-        "body": "Lists and data are ruled rows: a 4px Ink rule over the group, 1px Line between rows, vertical hairlines between cells. Never cards.",
+        "body": "Lists and data are ruled rows: a 4px Ink rule over the group (On Dark on carbon), 1px Line between rows, vertical hairlines between cells. Never cards.",
         "section": "layout"
       },
       {
@@ -429,7 +458,8 @@
       "Do keep every corner square; the WhatsApp button is the only circle.",
       "Do put the scripture or statute citation under its quote, never a label above a heading.",
       "Do use the ease-out curve (cubic-bezier(0.23, 1, 0.32, 1)), 0.97 presses at 160ms, hover only on fine pointers, and fall back to plain fades under reduced motion.",
-      "Do keep \"Faire un don\" and \"Signaler un abus\" reachable from every page's header or utility bar."
+      "Do keep \"Faire un don\" and \"Signaler un abus\" reachable from every page's header or utility bar.",
+      "Do give every dated item its metadata line (type in red, date, language) and attach its PDF as a file link, never as a bare link."
     ],
     "donts": [
       "Don't put small uppercase eyebrow labels or kickers above headings.",

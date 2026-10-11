@@ -2,36 +2,37 @@
 version: 1
 slug: "index-html"
 primary_target: "index.html"
-related_targets: ["qui-sommes-nous.html","ressources.html"]
+related_targets: ["qui-sommes-nous.html","reseau.html","actions.html","ressources.html","actualites.html","emplois.html","contact.html"]
 ---
 
 ## Scope
 
-Third redesign proposal (v3) for caritas-africa.org at `/caritas-v3/`: Accueil (index.html, Persuade, fully immersive), Qui sommes-nous (qui-sommes-nous.html, Read, quieter motion), Ressources (ressources.html, Operate, quieter motion). v1 (`/caritas/`) and v2 (`/caritas-v2/`) stay untouched; v3 must give the client a clearly different third choice.
+Third redesign proposal for caritas-africa.org at `/caritas-v3/`, rebuilt on 2026-10-11 at the user's request: "refaire la v3 en reprenant le design v1 et en appliquant un style dynamique de la v3 actuelle". The previous v3 (night immersive story) moved unchanged to `/caritas-v4/`. Eight pages, the same as v1: Accueil (Persuade, scroll story), Qui sommes-nous, Notre réseau, Nos actions (Read, quieter motion), Ressources, Actualités, Emplois et appels d'offres (Operate), Contact (Operate).
 
 ## Audience and job
 
-Partners and funders (credibility, reports, governance), the 46 national Caritas (resources, network), individual donors (give), candidates and providers (jobs, tenders). "Signaler un abus" one click away everywhere. Proof: real photographs from Caritas Africa's own reports (credited), statutes, mission, vision, values, governance, publications with PDFs, statements and tenders with dates. No invented impact figures. Keeps the user's WhatsApp button (number to be confirmed) and flag language switch.
+Partners and funders, the 46 national Caritas, individual donors, candidates and providers. "Signaler un abus" one click away everywhere. Proof: the same verified content as v1 (statutes, mission, vision, values, governance, publications with PDFs, statements and tenders with dates from the live site's API). No invented impact figures. Keeps the WhatsApp button and flag language switch from v1.
 
 ## Direction contract
 
-THESIS: The NGO category standard in its third canonical register, the immersive scroll story of large NGOs' interactive reports (charity: water, UNHCR Global Trends, WFP Stories, MSF / ICRC long-forms): the home page is told as chapters the visitor scrolls through, each chapter with its own scroll-driven device, ending on a clear call to act. It refuses v1's static report page and v2's campaign homepage with carousel.
+THESIS: The v1 proposal (the institutional NGO standard played straight, at the craft of the Caritas family and MSF / ICRC), told as a scroll story with the devices of the immersive proposal now at v4: the home page's v1 sections become chapters, each with one device driven directly by scroll position; the inner pages keep v1's documentary layout with quieter scroll devices. It refuses a new visual world: everything a visitor sees at rest is v1.
 
-OWN-WORLD: Chapters alternate a warm night ground #120F0E with white text and a white day ground with ink #18130F; Caritas red #7C0800 as full fields (the act chapter, primary buttons) and a lighter red for marks on night. Epilogue 800–900 for display and UI, set large and tight in sentence case; Literata (optical sizes) for reading text, leads and scripture. Full-bleed credited documentary photographs; square geometry; a thin red reading-progress rule and a chapter rail; no cards, no eyebrows.
+OWN-WORLD: v1's world, inherited unchanged: white ground, ink #17181A, Caritas red #7C0800 from the logo for brand, primary actions and rules, stone band #F3F2EF, ink night #17181A for the footer and the APPROCHE chapter. Libre Franklin for everything structural (700 to 800 headings, tight tracking); Source Serif 4 only for scripture and institutional quotes. 2px radius on controls, unrounded photos, thin rules and 3px red or ink top rules as the section device, authored line icons. Added: a 2px red reading-progress rule under the white header, a thin red meter under pinned chapters, a chapter rail on the home page.
 
-STORY: The visitor opens on one woman drawing water under a wide sky, reads "Cheminer ensemble pour une Afrique, Terre d'espérance", then scrolls through who Caritas Africa is, the network of 46 national Caritas in six zones, what it does, the APPROCHE programme, its mission and vision, its news, its reports, and closes on a red chapter that asks them to give, partner or report abuse.
+STORY: The visitor opens on v1's first screen (tagline, lead, donate and network buttons, the children at the water pump), then the photograph opens to fill the screen and says that 46 national Caritas have walked together since 1995. They read who Caritas Africa is, its mission then vision, its actions as a horizontal track of photographs, the APPROCHE programme's figures, the network counting to 46 then lighting its six zones, and finish on v1's reports, news, giving band and safeguarding.
 
-FIRST VIEWPORT: Slim opaque night header (Caritas Africa's official white logo set directly on night, amended from a white plate because the white version is a brand asset and reads cleanly on night; chapters menu, flags FR/EN/PT, "Signaler un abus", red "Faire un don"). Night ground; left, the title "Cheminer ensemble pour une Afrique, Terre d'espérance" in Epilogue 900 up to 6rem, one Literata lead, red "Faire un don" and a "Commencer le récit" link; right, the 2022 report cover photograph in a tall inset window. Scrolling expands the window to full-bleed while the title lifts away and the opening sentence appears over the photo.
+FIRST VIEWPORT: v1's utility bar and white header unchanged; v1's hero split unchanged at rest (title in Franklin 800, lead, red "Faire un don", outlined "Découvrir notre réseau"; the Paul Jeffrey / Caritas Internationalis photograph covering the right 42.5% edge to edge (v1's 1.15fr / 0.85fr split), composed as in v1). A "Faites défiler" cue bottom left, whose short line loops (the one autoplaying detail). The facts strip follows the opening chapter.
 
-SIGNATURE: one device per chapter, all driven directly by scroll position (no autoplay): expanding photo window (opening); word-by-word ink fill of the lead (who we are); pinned giant numeral counting to 46 then the six zones lighting in turn (network); pinned horizontal track of four action photographs (what we do); sticky photo with stepped figures (APPROCHE); line-by-line scripture reveal over a full-bleed photo (mission). Reduced motion: everything static and unpinned, numbers at final value. Motion grammar: scroll-mapped transforms, opacity and clip-path only; UI ease-out cubic-bezier(0.23,1,0.32,1), presses 0.97 at 160ms.
+SIGNATURE: one device per home chapter, all scroll-mapped, no autoplay: the hero photo window widens to full screen while the copy lifts away and a sentence appears (opening); the lead sentence inks word by word (who we are); pinned stone stage where mission then vision reveal phrase by phrase while a second photograph wipes in (mission); pinned horizontal track of five action photographs with a meter (actions); sticky photograph with stepped counters on the ink night (APPROCHE); pinned giant numeral counting to 46 then the six zones lighting in turn with the current coordinator (network). Inner pages: title words rise on load, the page photograph widens from the content column to full bleed, timelines and the organisation ladder light step by step, values take the red as they cross the centre, counters on figures. Motion grammar: movement through transforms, opacity and clip-path; state through colour (ink fill, focus band, current zone) and the zone detail's row reveal; UI ease-out cubic-bezier(0.23,1,0.32,1), presses 0.97 at 160ms. Amended 2026-10-11 after the finish review to match the build. Reduced motion: nothing pinned, every state final, v1's static layout.
 
-FORM: canon (the category standard, user-chosen standing exit, fourth time; v3 register = immersive NGO story), references charity: water, UNHCR Global Trends, WFP Stories, MSF / ICRC long-forms; seed key a76f50aa.
+FORM: canon (user-pinned: v1's design plus v4's dynamics; no new direction rolled), references the v1 and v4 proposals themselves; seed key n/a (pinned).
 
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
 
 ## Unresolved
 
 - WhatsApp number: the link uses the secretariat landline; Caritas Africa must confirm a WhatsApp number.
-- The live donation page is broken; "Faire un don" leads to the red act chapter, whose button links to it.
+- The live donation page is broken; "Faire un don" leads to the giving band, whose button links to it.
 - Member country list per zone is not published: the network chapter shows zones, coordinating Caritas and coordinators only.
 - EN/PT versions do not exist in the prototype: the language switch says so.
+- The user's uncommitted hero carousel experiment in v1 (three slides, one Unsplash stock image) is not carried into v3: the opening chapter replaces the carousel, and stock imagery is not verified Caritas content.

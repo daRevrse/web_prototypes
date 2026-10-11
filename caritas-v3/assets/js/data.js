@@ -114,3 +114,71 @@ const JOBS = [
   { date: "2026-05-12", type: "Appel à manifestation d'intérêt", title: "Recrutement d'une société informatique pour la transition vers Microsoft 365 et les services gérés", url: SITE + "/avis-a-manifestation-dinteret-3/" },
   { date: "2026-05-11", type: "Offre d'emploi", title: "Recrutement d'un consultant spécialiste web", url: SITE + "/recrutement-dun-consultant-specialiste-web/" },
 ];
+
+/* ---------- Actualités, déclarations et publications (relevées sur caritas-africa.org, octobre 2026) ---------- */
+const NEWS_ALL = [
+  { date: "2025-11-18", kind: "publication", type: "Publication", lang: "FR", title: "Caritas Africa en une page", sub: "Présentation de Caritas Africa, aussi disponible en anglais.", url: SITE + "/caritas-africa-one-pager/", pdf: UP + "/2025/11/Caritas-Africa-One-Pager-FR_compressed.pdf" },
+  { date: "2025-11-10", kind: "declaration", type: "Déclaration", lang: "FR", title: "Déclaration de Dakar, version finale", sub: "Aussi disponible en anglais.", url: SITE + "/dakar-declaration-finale-version-fr/", pdf: UP + "/2025/11/Dakar-Declaration-finale-Fr.pdf" },
+  { date: "2025-11-10", kind: "declaration", type: "Déclaration", lang: "FR", title: "Déclaration de Mumemo", sub: "Aussi disponible en anglais.", url: SITE + "/declaration-de-mumemo-fr/", pdf: UP + "/2025/11/Declaration-de-Mumemo-fr-1.pdf" },
+  { date: "2025-11-10", kind: "declaration", type: "Déclaration", lang: "FR", title: "Déclaration de Kinshasa (2012)", sub: "Republiée par Caritas Africa en novembre 2025.", url: SITE + "/declaration-de-kinshasa-2012/", pdf: UP + "/2025/11/Declaration-de-Kinshasa-2012.pdf" },
+  { date: "2025-11-10", kind: "declaration", type: "Déclaration", lang: "EN", title: "AU-EU summit joint statement", sub: "« In this Jubilee Year 2025, a special year of forgiveness and reconciliation… »", url: SITE + "/au-eu-summit-joint-statement/", pdf: UP + "/2025/11/AU-EU-summit-joint-statement-1.pdf" },
+  { date: "2025-10-07", kind: "reseau", type: "Réseau", lang: "EN", title: "Caritas Nigeria, 15th anniversary", sub: "La brochure anniversaire de Caritas Nigeria.", url: SITE + "/caritas-nigeria-15th-anniversary/", pdf: UP + "/2025/10/Caritas-Nigeria-@-15-Anniversary-Brochure.pdf" },
+  { date: "2025-09-18", kind: "declaration", type: "Déclaration", lang: "FR", title: "Déclaration conjointe pour la 111ᵉ Journée mondiale du migrant et du réfugié", sub: "« Les personnes migrantes et réfugiées, missionnaires de paix, bâtisseuses de ponts et porteuses d'espoir. »", url: SITE + "/declaration-conjointe-a-loccasion-de-la-111eme-journee-mondiale-du-migrant-et-du-refugiedans-le-cadre-du-jubile-des-migrants-et-du-monde-missionnaire-4-5-octobre-2025/", pdf: "" },
+  { date: "2025-08-28", kind: "reseau", type: "Partenariat", lang: "FR", title: "Caritas Africa et Caritas Europa, des années de partenariat", sub: "Aussi disponible en anglais.", url: SITE + "/caritas-africa-et-caritas-europa-des-annees-de-partenariat-aout-2025/", pdf: "" },
+  { date: "2025-07-01", kind: "communique", type: "Communiqué", lang: "FR", title: "Caritas Africa répond aux fausses allégations de propriété", sub: "Une affaire juridique en cours d'examen au Kenya.", url: SITE + "/caritas-africa-responds-to-false-ownership-claims/", pdf: "" },
+  { date: "2025-03-10", kind: "declaration", type: "Déclaration", lang: "EN", title: "Journée internationale des femmes, 8 mars 2025", sub: "Déclaration de Caritas Africa, en anglais.", url: SITE + "/commemoration-of-international-womens-day-iwd-8th-march-2025/", pdf: UP + "/2025/03/IWD-2025-Caritas-Africa-Statement.pdf" },
+  { date: "2025-03-06", kind: "publication", type: "Publication", lang: "FR", title: "Note d'orientation du Jubilé de Caritas", sub: "Aussi disponible en anglais et en espagnol.", url: SITE + "/caritas-jubilee-guidance-note/", pdf: UP + "/2025/03/Caritas-Jubilee-Guidance-Note-FR.pdf" },
+  { date: "2025-01-17", kind: "reseau", type: "Réseau", lang: "EN", title: "Décès de Sir Samuel Zan Akologo", sub: "Annonce de Caritas Africa, en anglais.", url: SITE + "/death-announcement-sir-samuel-zan-akologo/", pdf: UP + "/2025/01/Death-Announcement-Sir-Samuel-Zan-Akologo.pdf" },
+  { date: "2024-04-04", kind: "communique", type: "Communiqué", lang: "FR", title: "Fermeture du bureau auxiliaire de Caritas Africa à Nairobi", sub: "Lettre aux partenaires, aussi disponible en portugais.", url: SITE + "/fermeture-du-bureau-auxiliaire-de-caritas-africa-a-nairobi/", pdf: UP + "/2024/04/20240403-Partenaires-Fermeture-du-bureau-auxiliaire-de-Caritas-Africa-a-Nairobi-CIAAS.pdf" },
+  { date: "2023-06-08", kind: "programme", type: "Programme", lang: "FR", title: "Lutte contre la pauvreté : Caritas Africa fait le bilan du programme APPROCHE", sub: "Assemblée des parties prenantes à Lomé, du 29 mai au 1ᵉʳ juin 2023.", url: SITE + "/lutte-contre-la-pauvrete-caritas-africa-fait-le-bilan-du-programme-approche/", pdf: "" },
+  { date: "2022-09-02", kind: "reseau", type: "Réseau", lang: "FR", title: "Caritas Africa accompagne la dynamisation de la zone CEDOI-M", sub: "Réunion des Caritas nationales de la zone au Séminaire Inter-Îles de Beau Bassin, à Maurice.", url: SITE + "/renforcement-des-capacites-du-reseau-caritas-africa-au-sein-des-zones-caritas-africa-accompagne-la-dynamisation-de-la-zone-des-conferences-episcopales-des-iles-de-locean-indien-e/", pdf: "" },
+  { date: "2022-03-16", kind: "programme", type: "Programme", lang: "FR", title: "Assemblée des parties prenantes du programme APPROCHE à Brazzaville", sub: "Mot de Mgr Nicodème Barrigah, archevêque de Lomé, président du Comité de veille stratégique.", url: SITE + "/mot-de-s-e-mgr-nicodeme-barrigah-archeveque-de-lome-togo-president-du-comite-de-veille-strategique-cvs-du-programme-approche-a-la-ceremonie-douverture-de-lapp-du-programme-app/", pdf: "" },
+  { date: "2021-07-09", kind: "programme", type: "Programme", lang: "FR", title: "Pour une culture de la sauvegarde dans le réseau Caritas en Afrique", sub: "", url: SITE + "/pour-une-culture-de-la-sauvegarde-dans-le-reseau-caritas-en-afrique/", pdf: "" },
+  { date: "2021-05-19", kind: "reseau", type: "Réseau", lang: "FR", title: "Caritas Côte d'Ivoire se forme à la sauvegarde", sub: "Formation du 11 au 13 mai 2021 à Yamoussoukro.", url: SITE + "/caritas-cote-divoire-se-forme-a-la-sauvegarde/", pdf: "" },
+  { date: "2021-05-14", kind: "programme", type: "Programme", lang: "FR", title: "Projet RECHANGE : apprentissages pour progresser", sub: "Le livret de capitalisation du projet.", url: SITE + "/projet-rechange-apprentissages-pour-progresser/", pdf: UP + "/2023/02/Livret-de-capitalisation-RECHANGE.pdf" },
+  { date: "2021-04-14", kind: "programme", type: "Programme", lang: "FR", title: "Clôture du projet RECHANGE : les acteurs se sont retrouvés à Lomé", sub: "", url: SITE + "/cloture-du-projet-rechange-les-acteurs-se-sont-retrouves-a-lome/", pdf: "" },
+];
+const NEWS_KINDS = { declaration: "Déclarations", reseau: "Réseau et partenariats", communique: "Communiqués", publication: "Publications", programme: "Programmes" };
+
+/* ---------- Emplois, consultances et appels d'offres (relevés sur caritas-africa.org, octobre 2026) ---------- */
+const JOBS_ALL = [
+  { date: "2026-05-29", kind: "emploi", type: "Offre d'emploi", title: "Termes de référence : recrutement d'un auditeur interne", langs: ["FR"], url: SITE + "/termes-de-reference-recrutement-auditeur-interne/" },
+  { date: "2026-05-29", kind: "emploi", type: "Offre d'emploi", title: "Recrutement d'un consultant auditeur interne", langs: ["FR"], url: SITE + "/recrutement-consultant-auditeur-interne/" },
+  { date: "2026-05-12", kind: "offres", type: "Avis à manifestation d'intérêt", title: "Recrutement d'une société informatique pour la transition vers Microsoft 365 et les services gérés à long terme", langs: ["FR", "EN"], url: SITE + "/avis-a-manifestation-dinteret-3/" },
+  { date: "2026-05-11", kind: "consultance", type: "Consultance", title: "Recrutement d'un consultant spécialiste web", langs: ["FR", "EN"], url: SITE + "/recrutement-dun-consultant-specialiste-web/" },
+  { date: "2026-05-08", kind: "offres", type: "Termes de référence", title: "Formation du personnel de Caritas Africa et acquisition de KoboToolbox et MS Project", langs: ["FR"], url: SITE + "/tdr_formation-du-staff-de-caritas-africa-et-acquistion-de-kobotoolbox_msproject/" },
+  { date: "2025-12-06", kind: "emploi", type: "Offre d'emploi", title: "Recrutement d'un agent d'appui aux opérations", langs: ["FR"], url: SITE + "/recrutement-agent-dappui-aux-operations/" },
+  { date: "2025-09-22", kind: "consultance", type: "Consultance", title: "Note de politique sur le rôle de Caritas Africa et de ses organisations membres dans la promotion du leadership et de l'inclusion des jeunes", langs: ["FR", "EN"], url: SITE + "/consultant-pour-lelaboration-dune-note-de-politique-policy-brief-sur-le-role-de-caritas-afrique-et-de-ses-organisations-membres-dans-la-promotion-du-leadership-et-de-lincl/" },
+  { date: "2025-08-19", kind: "consultance", type: "Consultance", title: "Politique de renforcement des systèmes informatiques de Caritas Africa", langs: ["FR", "EN"], url: SITE + "/consultance-pour-le-developpement-dune-politique-de-renforcement-des-systemes-informatiques-pour-caritas-africa/" },
+  { date: "2025-08-01", kind: "consultance", type: "Consultance", title: "Note de politique : le rôle de Caritas dans l'influence des politiques publiques en Afrique (2023–2025)", langs: ["FR", "EN"], url: SITE + "/consultance-pour-developper-une-note-de-politique-sur-le-role-de-caritas-dans-linfluence-des-politiques-publiques-en-afrique-2023-2025/" },
+  { date: "2025-07-02", kind: "offres", type: "Appel d'offres", title: "Acquisition de logiciels pour Caritas Africa", langs: ["FR", "EN"], url: SITE + "/appel-doffre-pour-lacquisition-de-logiciels-pour-caritas-africa/" },
+  { date: "2025-04-16", kind: "offres", type: "Appel d'offres", title: "Acquisition d'un serveur pour Caritas Africa", langs: ["FR", "EN"], url: SITE + "/appel-doffre-pour-lacquisition-dun-serveur-pour-caritas-africa/" },
+  { date: "2025-03-05", kind: "emploi", type: "Offre d'emploi", title: "Regional Advocacy & Campaign Lead (Africa), campagne du Jubilé « Turn Debt into Hope »", langs: ["EN"], url: SITE + "/regional-advocacy-campaign-lead-africa/" },
+  { date: "2024-08-20", kind: "consultance", type: "Consultance", title: "Note d'orientation sur les initiatives de leadership pour accroître la représentation des femmes dans les espaces de décision du réseau", langs: ["FR", "EN"], url: SITE + "/appel-a-consultation-note-dorientation-sur-les-initiatives-de-leadership-visant-a-accroitre-la-representation-des-femmes-dans-les-espaces-de-prise-de-decision-au-sein-du-reseau-caritas-africa/" },
+  { date: "2024-08-07", kind: "consultance", type: "Consultance", title: "Politique de protection des données (divulgation d'informations) de Caritas Africa", langs: ["FR", "EN"], url: SITE + "/appel-a-candidatures-demande-de-consultance-pour-lelaboration-de-la-politique-de-protection-des-donnees-divulgation-dinformations-de-caritas-africa/" },
+  { date: "2024-07-26", kind: "emploi", type: "Offre d'emploi", title: "Responsable de programmes", langs: ["FR", "EN", "PT"], url: SITE + "/avis-de-vacance-de-poste/" },
+  { date: "2024-04-05", kind: "emploi", type: "Offre d'emploi", title: "Assistant administratif et logistique, à temps partiel", langs: ["FR", "EN"], url: SITE + "/annonce-de-poste-vacant-intitule-du-poste-assistant-administratif-et-logistique/" },
+  { date: "2024-04-05", kind: "emploi", type: "Offre d'emploi", title: "Chargé du développement institutionnel et du renforcement des capacités, à Lomé", langs: ["FR", "EN"], url: SITE + "/avis-de-vacance-de-poste-charge-du-developpement-institutionnel-et-du-renforcement-des-capacites-2/" },
+  { date: "2024-04-04", kind: "consultance", type: "Consultance", title: "Élaboration de la stratégie humanitaire de Caritas Africa", langs: ["FR", "EN"], url: SITE + "/appel-a-consultance-pour-lelaboration-de-la-strategie-humanitaire-de-caritas-africa/" },
+];
+const JOB_KINDS = { emploi: "Offres d'emploi", consultance: "Consultances", offres: "Appels d'offres et avis" };
+
+/* ---------- Le programme APPROCHE et le projet RECHANGE ---------- */
+const APPROCHE_STEPS = [
+  { date: "Mars 2021", text: "Première rencontre du Comité de veille stratégique (CVS) du programme." },
+  { date: "Mars 2021", text: "Signature des contrats avec les 17 Caritas nationales et transfert des fonds." },
+  { date: "Juin 2021", text: "Première Assemblée des parties prenantes (APP), à distance." },
+  { date: "Mars 2022", text: "APP de Brazzaville, ouverte par Mgr Nicodème Barrigah, archevêque de Lomé et président du CVS." },
+  { date: "Mai – juin 2023", text: "APP de clôture à Lomé : « Programme APPROCHE : bilan, leçons, perspectives »." },
+];
+const RECHANGE_MEMBERS = ["Caritas Burundi", "Caritas Congo", "Caritas Congo ASBL (RDC)", "Caritas Rwanda", "Caritas Sénégal", "OCDI Caritas Togo"];
+
+/* Nom complet des conférences épiscopales qui donnent leur nom aux zones (cadre stratégique 2024–2030, organigramme du réseau) */
+const ZONE_FULL = {
+  aceac: "Association des Conférences Épiscopales de l'Afrique Centrale",
+  acerac: "Association des Conférences Épiscopales de la Région de l'Afrique Centrale",
+  amecea: "Association of Member Episcopal Conferences in Eastern Africa",
+  cedoi: "Conférences Épiscopales des Îles de l'Océan Indien et de Madagascar",
+  imbisa: "Inter-Regional Meeting of the Bishops of Southern Africa",
+  recowa: "Conférence Épiscopale Régionale de l'Afrique de l'Ouest",
+};

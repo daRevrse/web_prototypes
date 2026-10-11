@@ -2,12 +2,12 @@
 version: 1
 slug: "index-html"
 primary_target: "index.html"
-related_targets: ["qui-sommes-nous.html","ressources.html"]
+related_targets: ["qui-sommes-nous.html","ressources.html","reseau.html","actions.html","actualites.html","emplois.html","contact.html"]
 ---
 
 ## Scope
 
-Second redesign proposal (v2) for caritas-africa.org as a static prototype at `/caritas-v2/`: Accueil (index.html, Persuade), Qui sommes-nous (qui-sommes-nous.html, Read), Ressources (ressources.html, Operate: find and download a document). v1 at `/caritas/` stays untouched for comparison.
+Second redesign proposal (v2) for caritas-africa.org as a static prototype at `/caritas-v2/`: Accueil (index.html, Persuade), Qui sommes-nous (qui-sommes-nous.html, Read), Ressources (ressources.html, Operate: find and download a document). v1 at `/caritas/` stays untouched for comparison. Amended 2026-10-11: the full header menu is now built: Notre action (actions.html), Notre réseau (reseau.html), Actualités (actualites.html), Emplois et appels d'offres (emplois.html) and Contact (contact.html).
 
 ## Audience and job
 
