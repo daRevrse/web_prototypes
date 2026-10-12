@@ -71,9 +71,11 @@
         <a class="btn btn-line" href="#reseau">Découvrir notre réseau</a>
       </div>
     </div>
-    <figure class="hero-media">
-      <img src="assets/img/hero.jpg" srcset="assets/img/hero-sm.jpg 820w, assets/img/hero.jpg 1430w" sizes="(max-width: 1040px) 100vw, 50vw" width="1430" height="1310" alt="Une fillette actionne une pompe à eau manuelle pendant que d'autres enfants remplissent des bidons." fetchpriority="high">
-      <figcaption class="credit">Photo&nbsp;: Paul Jeffrey / Caritas Internationalis</figcaption>
+    <figure class="hero-media" id="heroCarousel">
+      <img class="slide active" src="assets/img/hero.jpg" srcset="assets/img/hero-sm.jpg 820w, assets/img/hero.jpg 1430w" sizes="(max-width: 1040px) 100vw, 50vw" width="1430" height="1310" alt="Une fillette actionne une pompe à eau manuelle pendant que d'autres enfants remplissent des bidons." data-credit="Photo : Paul Jeffrey / Caritas Internationalis" fetchpriority="high">
+      <img class="slide" src="assets/img/actions.jpg" alt="Actions humanitaires sur le terrain" data-credit="Photo : Caritas Africa / Actions sur le terrain" loading="lazy">
+      <img class="slide" src="https://images.unsplash.com/photo-1593113511110-d021f1484227?q=80&w=2000&auto=format&fit=crop" alt="Communauté africaine" data-credit="Photo : Unsplash / Communauté africaine" loading="lazy">
+      <figcaption class="credit" id="heroCredit">Photo : Paul Jeffrey / Caritas Internationalis</figcaption>
     </figure>
   </section>
 

@@ -1,0 +1,113 @@
+<main id="content">
+
+  <header class="page-header">
+    <div class="container">
+      <h1 class="page-title">Contact</h1>
+      <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a> <span aria-hidden="true">/</span> <span aria-current="page">Contact</span></nav>
+    </div>
+  </header>
+
+  <div class="container contact-area">
+    <div class="columns-2">
+      <div>
+        <h2 class="entry-title">Hôtel de ville</h2>
+        <div class="widget">
+          <ul>
+            <li>Kpalimé, préfecture de Kloto, région des Plateaux <small>Adresse complète à renseigner</small></li>
+            <li>Téléphone&nbsp;: +228 <small>Numéro à renseigner</small></li>
+            <li>E-mail de la mairie <small>Adresse à renseigner</small></li>
+            <li><a href="#">Écrire à la mairie sur WhatsApp</a></li>
+          </ul>
+        </div>
+
+        <table class="data-table hours-table" id="hours">
+          <caption>Horaires d'ouverture</caption>
+          <thead><tr><th scope="col">Jour</th><th scope="col">Matin</th><th scope="col">Après-midi</th></tr></thead>
+          <tbody>
+            <tr data-day="1"><th scope="row">Lundi</th><td>7&nbsp;h&nbsp;00 à 12&nbsp;h&nbsp;00</td><td>14&nbsp;h&nbsp;30 à 17&nbsp;h&nbsp;30</td></tr>
+            <tr data-day="2"><th scope="row">Mardi</th><td>7&nbsp;h&nbsp;00 à 12&nbsp;h&nbsp;00</td><td>14&nbsp;h&nbsp;30 à 17&nbsp;h&nbsp;30</td></tr>
+            <tr data-day="3"><th scope="row">Mercredi</th><td>7&nbsp;h&nbsp;00 à 12&nbsp;h&nbsp;00</td><td>14&nbsp;h&nbsp;30 à 17&nbsp;h&nbsp;30</td></tr>
+            <tr data-day="4"><th scope="row">Jeudi</th><td>7&nbsp;h&nbsp;00 à 12&nbsp;h&nbsp;00</td><td>14&nbsp;h&nbsp;30 à 17&nbsp;h&nbsp;30</td></tr>
+            <tr data-day="5"><th scope="row">Vendredi</th><td>7&nbsp;h&nbsp;00 à 12&nbsp;h&nbsp;00</td><td>14&nbsp;h&nbsp;30 à 17&nbsp;h&nbsp;30</td></tr>
+            <tr data-day="6"><th scope="row">Samedi</th><td colspan="2">Fermée</td></tr>
+            <tr data-day="0"><th scope="row">Dimanche</th><td colspan="2">Fermée</td></tr>
+          </tbody>
+        </table>
+        <p class="note" style="margin-top:10px">Horaires indicatifs, à confirmer par la mairie.</p>
+      </div>
+
+      <div id="contact-card">
+        <h2 class="entry-title">Écrire à la mairie</h2>
+        <form class="wpforms" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="c-nom">Nom et prénom</label>
+              <input id="c-nom" name="nom" type="text" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="c-mail">E-mail</label>
+              <input id="c-mail" name="email" type="email" required autocomplete="email" placeholder="nom@exemple.tg">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="c-tel">Téléphone <small>(facultatif)</small></label>
+              <input id="c-tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" placeholder="+228">
+            </div>
+            <div class="field">
+              <label for="c-service">Service concerné</label>
+              <select id="c-service" name="service">
+                <option value="">Je ne sais pas</option>
+                <option value="etat-civil">État civil</option>
+                <option value="urbanisme">Urbanisme</option>
+                <option value="finances">Taxes et finances</option>
+                <option value="technique">Voirie, éclairage, déchets</option>
+                <option value="secretariat">Secrétariat général</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="c-objet">Objet</label>
+            <input id="c-objet" name="objet" type="text" required>
+          </div>
+          <div class="field">
+            <label for="c-message">Message</label>
+            <textarea id="c-message" name="message" required maxlength="1000"></textarea>
+          </div>
+          <button class="button" type="submit">Envoyer le message</button>
+          <p class="form-error" id="contact-error" role="alert" hidden></p>
+        </form>
+        <div class="notice" id="contact-done" hidden>
+          <h3 tabindex="-1" id="contact-done-title">Message envoyé</h3>
+          <p>La mairie vous répondra à l'adresse indiquée.</p>
+          <p class="note">Démonstration : rien n'a été transmis à la mairie.</p>
+          <button class="button button-outline" type="button" id="contact-again">Écrire un autre message</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="contact-map" aria-labelledby="map-title">
+      <h2 class="entry-title" id="map-title">Nous trouver</h2>
+      <div class="map-frame">
+        <iframe title="Carte de Kpalimé (OpenStreetMap)" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=0.6000%2C6.8800%2C0.6600%2C6.9250&amp;layer=mapnik"></iframe>
+      </div>
+      <p class="note">Carte centrée sur Kpalimé. L'emplacement exact de l'hôtel de ville reste à positionner. <a href="https://www.openstreetmap.org/#map=14/6.9020/0.6300">Agrandir la carte</a></p>
+    </section>
+
+    <section aria-label="Services à contacter">
+      <table class="data-table">
+        <caption>Qui contacter&nbsp;?</caption>
+        <thead><tr><th scope="col">Service</th><th scope="col">Pour quelles demandes</th><th scope="col">Contact</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">État civil</th><td>Actes de naissance, de mariage et de décès, légalisations</td><td>À renseigner</td></tr>
+          <tr><th scope="row">Urbanisme</th><td>Permis de construire, lotissements, occupation du domaine public</td><td>À renseigner</td></tr>
+          <tr><th scope="row">Taxes et finances</th><td>Taxes et redevances communales, marchés publics</td><td>À renseigner</td></tr>
+          <tr><th scope="row">Services techniques</th><td>Voirie, éclairage public, collecte des déchets</td><td>À renseigner</td></tr>
+          <tr><th scope="row">Secrétariat général</th><td>Courriers, rendez-vous avec le maire</td><td>À renseigner</td></tr>
+        </tbody>
+      </table>
+      <p class="note" style="margin-top:10px">Organisation des services à confirmer par la mairie.</p>
+      <p>Un problème sur la voie publique&nbsp;? <a class="more-link" href="index.html#signaler">Signalez-le avec le formulaire «&nbsp;Dans ma rue&nbsp;»</a>.</p>
+    </section>
+  </div>
+</main>

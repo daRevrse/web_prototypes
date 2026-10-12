@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Actualités | Commune de Kloto 1</title>
+<meta name="description" content="Les actualités, annonces et avis de la commune de Kloto 1.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="top" data-page="actualites">
+
+<a class="skip-link" href="#content">Aller au contenu</a>
+<p class="mock-bar">Maquette de démonstration : les contenus sont indicatifs et restent à valider par la mairie.</p>
+
+<div class="top-bar">
+  <div class="container">
+    <p class="hours">Mairie ouverte du lundi au vendredi, de 7&nbsp;h&nbsp;00 à 12&nbsp;h&nbsp;00 et de 14&nbsp;h&nbsp;30 à 17&nbsp;h&nbsp;30. <span id="status"></span></p>
+    <div class="top-links">
+      <ul aria-label="Réseaux sociaux">
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">WhatsApp</a></li>
+        <li><a href="#">YouTube</a></li>
+      </ul>
+      <ul class="lang" aria-label="Langue du site">
+        <li><button type="button" aria-pressed="true">FR</button></li>
+        <li><button type="button" aria-pressed="false">EN</button></li>
+        <li><button type="button" aria-pressed="false" lang="ee">Eʋe</button></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <a class="site-branding" href="index.html">
+      <img src="assets/armoiries-togo.svg" width="61" height="88" alt="Armoiries de la République togolaise">
+      <span>
+        <span class="site-state">République togolaise</span>
+        <span class="site-title">Commune de Kloto&nbsp;1</span>
+        <span class="site-description">Mairie de Kpalimé, région des Plateaux</span>
+      </span>
+    </a>
+    <form class="search-form" role="search" id="header-search" action="index.html#services" method="get">
+      <label class="screen-reader-text" for="s">Rechercher sur le site</label>
+      <input type="search" id="s" name="s" placeholder="Rechercher" autocomplete="off">
+      <button class="button" type="submit">Rechercher</button>
+    </form>
+    <span class="logo-slot" role="img" aria-label="Emplacement du logo officiel de la commune de Kloto 1">Logo de la commune</span>
+  </div>
+</header>
+
+<nav class="main-navigation" id="site-navigation" aria-label="Menu principal">
+  <button class="menu-toggle" type="button" aria-controls="primary-menu" aria-expanded="false">Menu</button>
+  <div class="container">
+    <ul class="menu" id="primary-menu">
+      <li data-nav="index"><a href="index.html">Accueil</a></li>
+      <li data-nav="a-propos" class="menu-item-has-children"><a href="a-propos.html">À propos</a>
+        <ul class="sub-menu">
+          <li><a href="a-propos.html#commune">La commune de Kloto 1</a></li>
+          <li><a href="a-propos.html#decentralisation">La décentralisation au Togo</a></li>
+          <li><a href="a-propos.html#vision">Notre vision</a></li>
+        </ul>
+      </li>
+      <li class="menu-item-has-children">
+        <button type="button" aria-expanded="false">Commune</button>
+        <ul class="sub-menu">
+          <li><a href="#">Organisation de la commune</a></li>
+          <li><a href="index.html#maire">Conseil municipal</a></li>
+          <li><a href="#">Organigramme</a></li>
+          <li><a href="a-propos.html#cantons">Cantons et quartiers</a></li>
+          <li><a href="#">Comités de développement de quartier</a></li>
+          <li><a href="index.html#galerie">À la découverte de la commune</a></li>
+          <li><a href="#">Jumelages</a></li>
+        </ul>
+      </li>
+      <li class="menu-item-has-children">
+        <button type="button" aria-expanded="false">Mairie</button>
+        <ul class="sub-menu sub-menu--wide">
+          <li><a href="index.html#maire">Bureau exécutif</a></li>
+          <li><a href="index.html#services">État civil</a></li>
+          <li><a href="index.html#services">Éducation</a></li>
+          <li><a href="index.html#services">Santé</a></li>
+          <li><a href="index.html#services">Culture</a></li>
+          <li><a href="index.html#services">Urbanisme</a></li>
+          <li><a href="index.html#services">Environnement</a></li>
+          <li><a href="index.html#services">Tourisme</a></li>
+          <li><a href="index.html#services">Sécurité</a></li>
+          <li><a href="index.html#services">Emploi</a></li>
+          <li><a href="index.html#services">Social</a></li>
+          <li><a href="index.html#services">Taxes</a></li>
+          <li><a href="index.html#services">Finances</a></li>
+          <li><a href="index.html#services">Statistiques</a></li>
+          <li><a href="index.html#services">Marchés publics</a></li>
+        </ul>
+      </li>
+      <li class="menu-item-has-children">
+        <button type="button" aria-expanded="false">Projets</button>
+        <ul class="sub-menu">
+          <li><a href="#">Plan de développement communal</a></li>
+          <li><a href="#">Proposer un projet</a></li>
+          <li><a href="#">Devenir partenaire d'un projet</a></li>
+          <li><a href="#">Investisseurs</a></li>
+        </ul>
+      </li>
+      <li data-nav="actualites" class="current-menu-item menu-item-has-children"><a aria-current="page" href="actualites.html">Actualités</a>
+        <ul class="sub-menu">
+          <li><a href="actualites.html">Actualité presse</a></li>
+          <li><a href="actualites.html#videos">Actualité vidéo</a></li>
+          <li><a href="actualites.html#annonces">Annonces</a></li>
+        </ul>
+      </li>
+      <li><a href="index.html#galerie">Galerie</a></li>
+      <li data-nav="contact"><a href="contact.html">Contact</a></li>
+      <li class="menu-highlight"><a href="index.html#signaler">Bureau du citoyen</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="content">
+
+  <header class="page-header">
+    <div class="container">
+      <h1 class="page-title">Actualités</h1>
+      <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a> <span aria-hidden="true">/</span> <span aria-current="page">Actualités</span></nav>
+    </div>
+  </header>
+
+  <div class="container content-area">
+    <div class="site-main">
+
+      <div class="post-list" id="post-list">
+        <article class="post-item" data-cat="vie-municipale">
+          <a class="post-thumbnail" href="#" tabindex="-1" aria-hidden="true"><img src="assets/photos/carrefour-kpalime.jpg" width="960" height="720" alt="" loading="lazy"></a>
+          <div class="post-summary">
+            <h2 class="post-title"><a href="#">Session budgétaire du conseil municipal</a></h2>
+            <p class="post-meta">Publié le <time datetime="2026-10-05">5 octobre 2026</time> dans <a href="?cat=vie-municipale" data-cat-link="vie-municipale">Vie municipale</a></p>
+            <p>La quatrième session de l'année, consacrée au budget de la commune, a été convoquée pour le 5 octobre 2026.</p>
+            <a class="more-link" href="#">Tout lire</a>
+          </div>
+        </article>
+        <article class="post-item" data-cat="environnement">
+          <a class="post-thumbnail" href="#" tabindex="-1" aria-hidden="true"><img src="assets/photos/panorama-kloto.jpg" width="960" height="545" alt="" loading="lazy"></a>
+          <div class="post-summary">
+            <h2 class="post-title"><a href="#">Kloto 1, Kloto 2 et Kloto 3 s'unissent pour le climat</a></h2>
+            <p class="post-meta">Publié en <time datetime="2026-03">mars 2026</time> dans <a href="?cat=environnement" data-cat-link="environnement">Environnement</a></p>
+            <p>Les trois communes de la préfecture ont créé l'intercommunalité «&nbsp;Solidarité Climat Kloto&nbsp;».</p>
+            <a class="more-link" href="#">Tout lire</a>
+          </div>
+        </article>
+        <article class="post-item" data-cat="vie-municipale">
+          <a class="post-thumbnail" href="#" tabindex="-1" aria-hidden="true"><img src="assets/photos/rue-kpalime.jpg" width="960" height="720" alt="" loading="lazy"></a>
+          <div class="post-summary">
+            <h2 class="post-title"><a href="#">Les administrations communales en formation à Kpalimé</a></h2>
+            <p class="post-meta">Publié en <time datetime="2026-01">janvier 2026</time> dans <a href="?cat=vie-municipale" data-cat-link="vie-municipale">Vie municipale</a></p>
+            <p>Une session de formation à la gestion municipale a réuni à Kpalimé les administrations communales de la préfecture de Kloto. Le fonctionnement du conseil municipal était au programme.</p>
+            <a class="more-link" href="#">Tout lire</a>
+          </div>
+        </article>
+        <article class="post-item" data-cat="vie-municipale">
+          <a class="post-thumbnail" href="#" tabindex="-1" aria-hidden="true"><img src="assets/photos/collines-kpalime.jpg" width="960" height="720" alt="" loading="lazy"></a>
+          <div class="post-summary">
+            <h2 class="post-title"><a href="#">Le conseil municipal prépare le budget 2026</a></h2>
+            <p class="post-meta">Publié en <time datetime="2025-11">novembre 2025</time> dans <a href="?cat=vie-municipale" data-cat-link="vie-municipale">Vie municipale</a></p>
+            <p>Une session budgétaire s'est ouverte en novembre 2025 pour préparer le budget 2026 de la commune.</p>
+            <a class="more-link" href="#">Tout lire</a>
+          </div>
+        </article>
+        <article class="post-item" data-cat="vie-municipale">
+          <a class="post-thumbnail" href="#" tabindex="-1" aria-hidden="true"><img src="assets/photos/prefecture-kloto.jpg" width="960" height="720" alt="" loading="lazy"></a>
+          <div class="post-summary">
+            <h2 class="post-title"><a href="#">Le maire Kossi Afélété Atigaku prend ses fonctions</a></h2>
+            <p class="post-meta">Publié le <time datetime="2025-11-12">12 novembre 2025</time> dans <a href="?cat=vie-municipale" data-cat-link="vie-municipale">Vie municipale</a></p>
+            <p>La passation de service s'est tenue le 12 novembre 2025 sous la présidence du préfet de Kloto.</p>
+            <a class="more-link" href="#">Tout lire</a>
+          </div>
+        </article>
+        <article class="post-item" data-cat="vie-municipale">
+          <a class="post-thumbnail" href="#" tabindex="-1" aria-hidden="true"><img src="assets/photos/cathedrale.jpg" width="960" height="640" alt="" loading="lazy"></a>
+          <div class="post-summary">
+            <h2 class="post-title"><a href="#">Kossi Afélété Atigaku élu maire de Kloto 1</a></h2>
+            <p class="post-meta">Publié le <time datetime="2025-10-17">17 octobre 2025</time> dans <a href="?cat=vie-municipale" data-cat-link="vie-municipale">Vie municipale</a></p>
+            <p>Réuni le 17 octobre 2025, le conseil municipal l'a élu par 17 voix sur 19, pour un mandat de six ans.</p>
+            <a class="more-link" href="#">Tout lire</a>
+          </div>
+        </article>
+      </div>
+      <p class="note">Articles d'exemple repris de l'actualité publique de la commune ; les photos sont des photos d'illustration.</p>
+
+      <nav class="pagination" aria-label="Pages d'actualités">
+        <span class="page-numbers current" aria-current="page">1</span>
+        <a class="page-numbers" href="#">2</a>
+        <a class="page-numbers" href="#">Suivant</a>
+      </nav>
+
+      <section class="notices" id="annonces" aria-label="Annonces et avis">
+        <table class="data-table">
+          <caption>Annonces et avis</caption>
+          <thead><tr><th scope="col">Type</th><th scope="col">Intitulé</th><th scope="col">Date</th></tr></thead>
+          <tbody>
+            <tr><td>Appel d'offres</td><td><a href="#">Intitulé de l'avis d'appel d'offres</a></td><td>Date de publication</td></tr>
+            <tr><td>Communiqué</td><td><a href="#">Intitulé du communiqué de la mairie</a></td><td>Date de publication</td></tr>
+            <tr><td>Recrutement</td><td><a href="#">Intitulé du poste à pourvoir</a></td><td>Date de publication</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="notices" id="videos" aria-labelledby="videos-title">
+        <h2 class="entry-title" id="videos-title">Actualité vidéo</h2>
+        <p class="note">Les vidéos de la commune seront publiées ici.</p>
+      </section>
+    </div>
+
+    <aside class="sidebar" aria-label="Compléments">
+      <div class="widget">
+        <h2 class="widget-title">Rechercher</h2>
+        <form class="newsletter-form" role="search" id="news-search">
+          <label class="screen-reader-text" for="news-q">Rechercher dans les actualités</label>
+          <input type="search" id="news-q" name="q" placeholder="Mot-clé" autocomplete="off">
+          <button class="button" type="submit">OK</button>
+        </form>
+      </div>
+      <div class="widget">
+        <h2 class="widget-title">Catégories</h2>
+        <ul>
+          <li><a href="?cat=vie-municipale" data-cat-link="vie-municipale">Vie municipale</a> (5)</li>
+          <li><a href="?cat=environnement" data-cat-link="environnement">Environnement</a> (1)</li>
+          <li><a href="#annonces">Annonces et avis</a> (3)</li>
+        </ul>
+      </div>
+      <div class="widget">
+        <h2 class="widget-title">Archives</h2>
+        <ul>
+          <li><a href="#">Octobre 2026</a> (1)</li>
+          <li><a href="#">Mars 2026</a> (1)</li>
+          <li><a href="#">Janvier 2026</a> (1)</li>
+          <li><a href="#">Novembre 2025</a> (2)</li>
+          <li><a href="#">Octobre 2025</a> (1)</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-widgets">
+    <div>
+      <div class="footer-state">
+        <span class="arms-box"><img src="assets/armoiries-togo.svg" width="60" height="86" alt="Armoiries de la République togolaise" loading="lazy"></span>
+        <span><strong>République togolaise</strong>Travail, Liberté, Patrie</span>
+      </div>
+      <div class="footer-commune">
+        <span class="logo-slot" role="img" aria-label="Emplacement du logo officiel de la commune de Kloto 1">Logo de la commune</span>
+        <span><strong>Commune de Kloto&nbsp;1</strong>Mairie de Kpalimé, région des Plateaux</span>
+      </div>
+    </div>
+    <div class="widget">
+      <h3 class="widget-title">Liens utiles</h3>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html">À propos de la commune</a></li>
+        <li><a href="index.html#services">État civil</a></li>
+        <li><a href="actualites.html">Actualités</a></li>
+        <li><a href="index.html#galerie">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html#signaler">Bureau du citoyen</a></li>
+      </ul>
+    </div>
+    <div class="widget">
+      <h3 class="widget-title">Commune</h3>
+      <ul>
+        <li><a href="a-propos.html#decentralisation">Lois sur la décentralisation</a></li>
+        <li><a href="index.html#maire">Conseil municipal</a></li>
+        <li><a href="#">Commissions permanentes</a></li>
+        <li><a href="#">Organigramme</a></li>
+        <li><a href="a-propos.html#cantons">Cantons et quartiers</a></li>
+        <li><a href="index.html#galerie">À la découverte de la commune</a></li>
+      </ul>
+    </div>
+    <div class="widget">
+      <h3 class="widget-title">Nos réseaux</h3>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">WhatsApp</a></li>
+        <li><a href="#">YouTube</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="site-info">
+    <div class="container">
+      <p>© 2026 Commune de Kloto 1. Tous droits réservés. Maquette de démonstration, contenus à valider par la mairie.</p>
+      <p>Crédits, via <a href="https://commons.wikimedia.org/">Wikimedia Commons</a>. Armoiries du Togo : Edem Fiadjoe, CC BY-SA 4.0. Photos : Etechnopole (collines du bandeau, panorama), CC BY-SA 3.0 ; François Jake Green (rue et collines de Kpalimé), CC BY 3.0 ; Akouete (carrefour, préfecture), CC BY-SA 4.0 ; Visitez Kpalimé (cathédrale, château Viale), CC BY-SA 4.0 ; Ubkoumbogny (cascade de Womé), CC BY-SA 4.0 ; Alfrednadjere (marché), CC BY-SA 4.0 ; Ametovena Kodjo Elom Ezéchiel (cacao), CC BY-SA 4.0. Carte : © contributeurs d'OpenStreetMap.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
