@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact | Commune de Kloto 1</title>
+<meta name="description" content="Coordonnées, horaires et formulaire de contact de la mairie de Kloto 1.">
+<meta name="theme-color" content="#00612F">
+<script>try{if(localStorage.getItem('kloto-theme')==='dark')document.documentElement.dataset.theme='dark'}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="top" data-page="contact">
+
+<a class="skip-link" href="#content">Aller au contenu</a>
+<p class="mock-bar">Maquette de démonstration, version 2 : les contenus sont indicatifs et restent à valider par la mairie.</p>
+
+<div class="top-bar">
+  <div class="container">
+    <p class="hours"><a class="status" id="status" href="contact.html#hours">Horaires de la mairie</a></p>
+    <div class="top-links">
+      <ul aria-label="Réseaux sociaux">
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">WhatsApp</a></li>
+        <li><a href="#">YouTube</a></li>
+      </ul>
+      <ul class="lang" aria-label="Langue du site">
+        <li><button type="button" aria-pressed="true">FR</button></li>
+        <li><button type="button" aria-pressed="false">EN</button></li>
+        <li><button type="button" aria-pressed="false" lang="ee">Eʋe</button></li>
+      </ul>
+      <ul aria-label="Affichage">
+        <li><button type="button" id="theme-toggle" aria-pressed="false">Thème sombre</button></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<header class="site-header" id="masthead">
+  <div class="container">
+    <a class="site-branding" href="index.html">
+      <img src="../assets/armoiries-togo.svg" width="61" height="88" alt="Armoiries de la République togolaise">
+      <span>
+        <span class="site-state">République togolaise</span>
+        <span class="site-title">Commune de Kloto&nbsp;1</span>
+        <span class="site-description">Mairie de Kpalimé, région des Plateaux</span>
+      </span>
+    </a>
+    <button class="search-trigger" type="button" data-search-open aria-haspopup="dialog" aria-keyshortcuts="/">
+      <span>Rechercher une démarche, une page, une actualité</span><kbd>/</kbd>
+    </button>
+    <span class="logo-slot" role="img" aria-label="Emplacement du logo officiel de la commune de Kloto 1">Logo de la commune</span>
+  </div>
+</header>
+
+<nav class="main-navigation" id="site-navigation" aria-label="Menu principal">
+  <div class="container">
+    <button class="menu-toggle" type="button" aria-controls="primary-menu" aria-expanded="false">Menu</button>
+    <ul class="menu" id="primary-menu">
+      <li class="drawer-close"><button type="button" data-drawer-close>Fermer le menu</button></li>
+      <li data-nav="index"><a href="index.html">Accueil</a></li>
+      <li data-nav="a-propos" class="menu-item-has-children"><a href="a-propos.html">À propos</a>
+        <ul class="sub-menu">
+          <li><a href="a-propos.html#commune">La commune de Kloto 1</a></li>
+          <li><a href="a-propos.html#decentralisation">La décentralisation au Togo</a></li>
+          <li><a href="a-propos.html#vision">Notre vision</a></li>
+        </ul>
+      </li>
+      <li class="menu-item-has-children">
+        <button type="button" aria-expanded="false">Commune</button>
+        <ul class="sub-menu">
+          <li><a href="#">Organisation de la commune</a></li>
+          <li><a href="index.html#maire">Conseil municipal</a></li>
+          <li><a href="#">Organigramme</a></li>
+          <li><a href="a-propos.html#cantons">Cantons et quartiers</a></li>
+          <li><a href="#">Comités de développement de quartier</a></li>
+          <li><a href="index.html#galerie">À la découverte de la commune</a></li>
+          <li><a href="#">Jumelages</a></li>
+        </ul>
+      </li>
+      <li class="menu-item-has-children">
+        <button type="button" aria-expanded="false">Mairie</button>
+        <ul class="sub-menu sub-menu--wide">
+          <li><a href="index.html#maire">Bureau exécutif</a></li>
+          <li><a href="index.html?s=%C3%89tat+civil#services">État civil</a></li>
+          <li><a href="index.html?s=%C3%89ducation#services">Éducation</a></li>
+          <li><a href="index.html?s=Sant%C3%A9#services">Santé</a></li>
+          <li><a href="index.html?s=Culture#services">Culture</a></li>
+          <li><a href="index.html?s=Urbanisme#services">Urbanisme</a></li>
+          <li><a href="index.html?s=Environnement#services">Environnement</a></li>
+          <li><a href="index.html?s=Tourisme#services">Tourisme</a></li>
+          <li><a href="index.html?s=S%C3%A9curit%C3%A9#services">Sécurité</a></li>
+          <li><a href="index.html?s=Emploi#services">Emploi</a></li>
+          <li><a href="index.html?s=Social#services">Social</a></li>
+          <li><a href="index.html?s=Taxes#services">Taxes</a></li>
+          <li><a href="index.html?s=Finances#services">Finances</a></li>
+          <li><a href="index.html?s=Statistiques#services">Statistiques</a></li>
+          <li><a href="index.html?s=March%C3%A9s+publics#services">Marchés publics</a></li>
+        </ul>
+      </li>
+      <li class="menu-item-has-children">
+        <button type="button" aria-expanded="false">Projets</button>
+        <ul class="sub-menu">
+          <li><a href="#">Plan de développement communal</a></li>
+          <li><a href="#">Proposer un projet</a></li>
+          <li><a href="#">Devenir partenaire d'un projet</a></li>
+          <li><a href="#">Investisseurs</a></li>
+        </ul>
+      </li>
+      <li data-nav="actualites" class="menu-item-has-children"><a href="actualites.html">Actualités</a>
+        <ul class="sub-menu">
+          <li><a href="actualites.html">Actualité presse</a></li>
+          <li><a href="actualites.html#videos">Actualité vidéo</a></li>
+          <li><a href="actualites.html#annonces">Annonces</a></li>
+        </ul>
+      </li>
+      <li><a href="index.html#galerie">Galerie</a></li>
+      <li data-nav="contact" class="current-menu-item"><a aria-current="page" href="contact.html">Contact</a></li>
+      <li class="menu-highlight"><a href="index.html#signaler">Bureau du citoyen</a></li>
+    </ul>
+    <button class="nav-search" type="button" data-search-open aria-haspopup="dialog">Rechercher</button>
+    <div class="nav-backdrop" data-drawer-close></div>
+  </div>
+</nav>
+
+<dialog class="search-dialog" id="search-dialog" aria-labelledby="search-label">
+  <form class="search-head" method="dialog">
+    <label class="screen-reader-text" id="search-label" for="search-input">Rechercher sur le site</label>
+    <input type="search" id="search-input" autocomplete="off" placeholder="État civil, permis de construire, budget" enterkeyhint="search">
+    <button class="button" value="close">Fermer</button>
+  </form>
+  <p class="search-count" id="search-count" role="status"></p>
+  <div class="search-results" id="search-results"></div>
+</dialog>
+
+<main id="content">
+
+  <header class="page-header">
+    <div class="container">
+      <h1 class="page-title">Contact</h1>
+      <nav class="breadcrumb" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a> <span aria-hidden="true">/</span> <span aria-current="page">Contact</span></nav>
+    </div>
+  </header>
+
+  <div class="container contact-area">
+    <div class="columns-2">
+      <div>
+        <h2 class="entry-title">Hôtel de ville</h2>
+        <div class="widget">
+          <ul>
+            <li>Kpalimé, préfecture de Kloto, région des Plateaux <small>Adresse complète à renseigner</small></li>
+            <li>Téléphone&nbsp;: +228 <small>Numéro à renseigner</small></li>
+            <li>E-mail de la mairie <small>Adresse à renseigner</small></li>
+            <li><a href="#">Écrire à la mairie sur WhatsApp</a></li>
+          </ul>
+        </div>
+
+        <table class="data-table hours-table" id="hours">
+          <caption>Horaires d'ouverture</caption>
+          <thead><tr><th scope="col">Jour</th><th scope="col">Matin</th><th scope="col">Après-midi</th></tr></thead>
+          <tbody>
+            <tr data-day="1"><th scope="row">Lundi</th><td>7&nbsp;h&nbsp;00 à 12&nbsp;h&nbsp;00</td><td>14&nbsp;h&nbsp;30 à 17&nbsp;h&nbsp;30</td></tr>
+            <tr data-day="2"><th scope="row">Mardi</th><td>7&nbsp;h&nbsp;00 à 12&nbsp;h&nbsp;00</td><td>14&nbsp;h&nbsp;30 à 17&nbsp;h&nbsp;30</td></tr>
+            <tr data-day="3"><th scope="row">Mercredi</th><td>7&nbsp;h&nbsp;00 à 12&nbsp;h&nbsp;00</td><td>14&nbsp;h&nbsp;30 à 17&nbsp;h&nbsp;30</td></tr>
+            <tr data-day="4"><th scope="row">Jeudi</th><td>7&nbsp;h&nbsp;00 à 12&nbsp;h&nbsp;00</td><td>14&nbsp;h&nbsp;30 à 17&nbsp;h&nbsp;30</td></tr>
+            <tr data-day="5"><th scope="row">Vendredi</th><td>7&nbsp;h&nbsp;00 à 12&nbsp;h&nbsp;00</td><td>14&nbsp;h&nbsp;30 à 17&nbsp;h&nbsp;30</td></tr>
+            <tr data-day="6"><th scope="row">Samedi</th><td colspan="2">Fermée</td></tr>
+            <tr data-day="0"><th scope="row">Dimanche</th><td colspan="2">Fermée</td></tr>
+          </tbody>
+        </table>
+        <p class="note" style="margin-top:10px">Horaires indicatifs, à confirmer par la mairie.</p>
+      </div>
+
+      <div id="contact-card">
+        <h2 class="entry-title">Écrire à la mairie</h2>
+        <form class="wpforms" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="c-nom">Nom et prénom</label>
+              <input id="c-nom" name="nom" type="text" required autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="c-mail">E-mail</label>
+              <input id="c-mail" name="email" type="email" required autocomplete="email" placeholder="nom@exemple.tg">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="c-tel">Téléphone <small>(facultatif)</small></label>
+              <input id="c-tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" placeholder="+228">
+            </div>
+            <div class="field">
+              <label for="c-service">Service concerné</label>
+              <select id="c-service" name="service">
+                <option value="">Je ne sais pas</option>
+                <option value="etat-civil">État civil</option>
+                <option value="urbanisme">Urbanisme</option>
+                <option value="finances">Taxes et finances</option>
+                <option value="technique">Voirie, éclairage, déchets</option>
+                <option value="secretariat">Secrétariat général</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="c-objet">Objet</label>
+            <input id="c-objet" name="objet" type="text" required>
+          </div>
+          <div class="field">
+            <label for="c-message">Message</label>
+            <textarea id="c-message" name="message" required maxlength="1000"></textarea>
+          </div>
+          <button class="button" type="submit">Envoyer le message</button>
+          <p class="form-error" id="contact-error" role="alert" hidden></p>
+        </form>
+        <div class="notice" id="contact-done" hidden>
+          <h3 tabindex="-1" id="contact-done-title">Message envoyé</h3>
+          <p>La mairie vous répondra à l'adresse indiquée.</p>
+          <p class="note">Démonstration : rien n'a été transmis à la mairie.</p>
+          <button class="button button-outline" type="button" id="contact-again">Écrire un autre message</button>
+        </div>
+      </div>
+    </div>
+
+    <section class="contact-map" aria-labelledby="map-title">
+      <h2 class="entry-title" id="map-title">Nous trouver</h2>
+      <div class="map-frame">
+        <iframe title="Carte de Kpalimé (OpenStreetMap)" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=0.6000%2C6.8800%2C0.6600%2C6.9250&amp;layer=mapnik"></iframe>
+      </div>
+      <p class="note">Carte centrée sur Kpalimé. L'emplacement exact de l'hôtel de ville reste à positionner. <a href="https://www.openstreetmap.org/#map=14/6.9020/0.6300">Agrandir la carte</a></p>
+    </section>
+
+    <section aria-label="Services à contacter">
+      <table class="data-table">
+        <caption>Qui contacter&nbsp;?</caption>
+        <thead><tr><th scope="col">Service</th><th scope="col">Pour quelles demandes</th><th scope="col">Contact</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">État civil</th><td>Actes de naissance, de mariage et de décès, légalisations</td><td>À renseigner</td></tr>
+          <tr><th scope="row">Urbanisme</th><td>Permis de construire, lotissements, occupation du domaine public</td><td>À renseigner</td></tr>
+          <tr><th scope="row">Taxes et finances</th><td>Taxes et redevances communales, marchés publics</td><td>À renseigner</td></tr>
+          <tr><th scope="row">Services techniques</th><td>Voirie, éclairage public, collecte des déchets</td><td>À renseigner</td></tr>
+          <tr><th scope="row">Secrétariat général</th><td>Courriers, rendez-vous avec le maire</td><td>À renseigner</td></tr>
+        </tbody>
+      </table>
+      <p class="note" style="margin-top:10px">Organisation des services à confirmer par la mairie.</p>
+      <p>Un problème sur la voie publique&nbsp;? <a class="more-link" href="index.html#signaler">Signalez-le avec le formulaire «&nbsp;Dans ma rue&nbsp;»</a>.</p>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-widgets">
+    <div>
+      <div class="footer-state">
+        <span class="arms-box"><img src="../assets/armoiries-togo.svg" width="60" height="86" alt="Armoiries de la République togolaise" loading="lazy"></span>
+        <span><strong>République togolaise</strong>Travail, Liberté, Patrie</span>
+      </div>
+      <div class="footer-commune">
+        <span class="logo-slot" role="img" aria-label="Emplacement du logo officiel de la commune de Kloto 1">Logo de la commune</span>
+        <span><strong>Commune de Kloto&nbsp;1</strong>Mairie de Kpalimé, région des Plateaux</span>
+      </div>
+    </div>
+    <div class="widget">
+      <h3 class="widget-title">Liens utiles</h3>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html">À propos de la commune</a></li>
+        <li><a href="index.html#services">État civil</a></li>
+        <li><a href="actualites.html">Actualités</a></li>
+        <li><a href="index.html#galerie">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html#signaler">Bureau du citoyen</a></li>
+      </ul>
+    </div>
+    <div class="widget">
+      <h3 class="widget-title">Commune</h3>
+      <ul>
+        <li><a href="a-propos.html#decentralisation">Lois sur la décentralisation</a></li>
+        <li><a href="index.html#maire">Conseil municipal</a></li>
+        <li><a href="#">Commissions permanentes</a></li>
+        <li><a href="#">Organigramme</a></li>
+        <li><a href="a-propos.html#cantons">Cantons et quartiers</a></li>
+        <li><a href="index.html#galerie">À la découverte de la commune</a></li>
+      </ul>
+    </div>
+    <div class="widget">
+      <h3 class="widget-title">Nos réseaux</h3>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">WhatsApp</a></li>
+        <li><a href="#">YouTube</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="site-info">
+    <div class="container">
+      <p>© 2026 Commune de Kloto 1. Tous droits réservés. Maquette de démonstration, contenus à valider par la mairie.</p>
+      <p>Crédits, via <a href="https://commons.wikimedia.org/">Wikimedia Commons</a>. Armoiries du Togo : Edem Fiadjoe, CC BY-SA 4.0. Photos : Etechnopole (collines du bandeau, panorama), CC BY-SA 3.0 ; François Jake Green (rue et collines de Kpalimé), CC BY 3.0 ; Akouete (carrefour, préfecture), CC BY-SA 4.0 ; Visitez Kpalimé (cathédrale, château Viale), CC BY-SA 4.0 ; Ubkoumbogny (cascade de Womé), CC BY-SA 4.0 ; Alfrednadjere (marché), CC BY-SA 4.0 ; Ametovena Kodjo Elom Ezéchiel (cacao), CC BY-SA 4.0. Carte : © contributeurs d'OpenStreetMap.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

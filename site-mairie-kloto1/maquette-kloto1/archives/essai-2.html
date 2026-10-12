@@ -1,0 +1,1234 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Commune de Kloto 1, maquette du site de la mairie</title>
+<meta name="description" content="Maquette de la page d'accueil du site de la mairie de Kloto 1 (Kpalimé).">
+<meta name="theme-color" content="#0F4A30">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='24' fill='%23DCEAE3'/%3E%3Ccircle cx='33' cy='15' r='6' fill='%23F2B01E'/%3E%3Cpath d='M1 31c6-6 10-9 15-6s8 5 13 1 10-7 18-2a24 24 0 0 1-46 7z' fill='%235C9C7C'/%3E%3Cpath d='M2 34c6-2 11-2 17 1s11 3 16 0 6-2 10-1a24 24 0 0 1-43 0z' fill='%230F4A30'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --forest-900:#0B3A26;
+  --forest-700:#0F4A30;
+  --forest-500:#1B7347;
+  --leaf-400:#5C9C7C;
+  --leaf-200:#BCD6C8;
+  --mist:#EEF4F0;
+  --paper:#FBFCFA;
+  --ink:#14251C;
+  --ink-2:#47584E;
+  --line:#D3DFD8;
+  --cabosse:#F2B01E;
+  --cabosse-300:#FFC849;
+  --laterite:#A8321F;
+  --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  /* Noto Sans: covers the Ewe alphabet (ʋ ɖ ɛ ɔ ŋ ƒ) for the Eʋegbe version */
+  --body:"Noto Sans","Segoe UI",system-ui,sans-serif;
+  --ease-out:cubic-bezier(.23,1,.32,1);
+  --contours:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300' fill='none' stroke='white' stroke-opacity='.2' stroke-width='1.2'%3E%3Cellipse cx='150' cy='170' rx='24' ry='14' transform='rotate(-18 150 170)'/%3E%3Cellipse cx='153' cy='168' rx='52' ry='32' transform='rotate(-18 153 168)'/%3E%3Cellipse cx='158' cy='166' rx='82' ry='52' transform='rotate(-18 158 166)'/%3E%3Cellipse cx='164' cy='163' rx='114' ry='74' transform='rotate(-18 164 163)'/%3E%3Cellipse cx='171' cy='160' rx='148' ry='98' transform='rotate(-18 171 160)'/%3E%3Cellipse cx='179' cy='156' rx='184' ry='124' transform='rotate(-18 179 156)'/%3E%3Cellipse cx='188' cy='152' rx='222' ry='152' transform='rotate(-18 188 152)'/%3E%3Cellipse cx='198' cy='148' rx='262' ry='182' transform='rotate(-18 198 148)'/%3E%3Cellipse cx='209' cy='143' rx='304' ry='214' transform='rotate(-18 209 143)'/%3E%3Cellipse cx='221' cy='138' rx='348' ry='248' transform='rotate(-18 221 138)'/%3E%3C/svg%3E");
+}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:76px;accent-color:var(--forest-500);caret-color:var(--forest-500);scrollbar-color:var(--leaf-400) var(--mist)}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.0625rem/1.6 var(--body);font-variant-numeric:lining-nums}
+::selection{background:var(--cabosse);color:var(--forest-900)}
+img,svg{max-width:100%}
+a,button,label,summary{-webkit-tap-highlight-color:transparent}
+a{color:var(--forest-500);text-underline-offset:3px;text-decoration-thickness:1.5px}
+h1,h2,h3{font-family:var(--display);font-stretch:88%;line-height:1.05;margin:0;letter-spacing:-.015em;text-wrap:balance}
+h2{font-size:clamp(1.9rem,1.3rem + 2.2vw,2.9rem);font-weight:750}
+h3{font-size:1.3rem;font-weight:700;line-height:1.2}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--forest-500);outline-offset:3px;border-radius:4px}
+.on-dark :focus-visible{outline-color:var(--cabosse)}
+[hidden]{display:none!important}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.skip{position:absolute;left:16px;top:-60px;background:var(--cabosse);color:var(--forest-900);padding:10px 16px;border-radius:8px;font-weight:700;z-index:100;text-decoration:none}
+.skip:focus{top:12px}
+.wrap{width:100%;max-width:1200px;margin-inline:auto;padding-inline:clamp(16px,4vw,40px)}
+.ic{width:20px;height:20px;flex:none;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.nums{font-variant-numeric:lining-nums tabular-nums}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 20px;border-radius:10px;border:2px solid transparent;font:700 1rem/1.1 var(--body);text-decoration:none;cursor:pointer;user-select:none;transition:transform .14s var(--ease-out),background-color .16s ease,border-color .16s ease,color .16s ease}
+.btn:active{transform:scale(.97)}
+.btn--primary{background:var(--cabosse);color:var(--forest-900)}
+.btn--line{border-color:var(--forest-700);color:var(--forest-700);background:transparent}
+.textlink{font-weight:700;display:inline-flex;align-items:center;gap:4px}
+.textlink .ic{width:18px;height:18px;transition:transform .16s var(--ease-out)}
+@media (hover:hover) and (pointer:fine){
+  .btn--primary:hover{background:var(--cabosse-300)}
+  .btn--line:hover{background:var(--forest-700);color:#fff}
+  .textlink:hover .ic{transform:translateX(3px)}
+}
+
+/* Mock-up marker and woven band (the rhythm of a kente strip) */
+.mock{background:var(--ink);color:#fff;font-size:.86rem;text-align:center;padding:6px 16px;line-height:1.35}
+.weave{height:8px;background:repeating-linear-gradient(90deg,var(--forest-700) 0 30px,var(--cabosse) 30px 42px,var(--forest-700) 42px 54px,var(--laterite) 54px 60px,var(--forest-700) 60px 72px,var(--cabosse) 72px 84px)}
+
+/* Official identity: State arms on the left, commune logo on the right */
+.masthead{background:#fff}
+.masthead .wrap{display:flex;align-items:center;gap:20px;min-height:100px}
+.brand{display:flex;align-items:center;gap:16px;text-decoration:none;color:var(--ink);margin-right:auto}
+.arms{display:block;height:76px;width:auto;flex:none}
+.brand-text{display:grid;gap:3px}
+.brand .state{font-size:.84rem;line-height:1.2;color:var(--ink-2)}
+.brand b{font:750 1.5rem/1 var(--display);font-stretch:88%;letter-spacing:-.01em;color:var(--forest-900)}
+.brand .town{font-size:.9rem;line-height:1.2;color:var(--ink-2)}
+.logo-slot{display:grid;place-items:center;flex:none;width:68px;height:68px;border-radius:50%;border:2px dashed #9DB5A8;background:repeating-linear-gradient(135deg,transparent 0 5px,rgba(11,58,38,.05) 5px 10px);color:var(--ink-2);font-size:.64rem;font-weight:600;line-height:1.2;text-align:center;padding:6px}
+.logo-slot--lg{width:78px;height:78px;font-size:.68rem;background-color:#fff}
+.on-dark .logo-slot{border-color:rgba(255,255,255,.5);color:#CFE2D8;background:none}
+.tools{display:flex;align-items:center;gap:16px}
+.lang{display:flex;border:1px solid var(--line);border-radius:999px;padding:3px}
+.lang button{border:0;background:none;padding:5px 11px;border-radius:999px;font-size:.9rem;font-weight:600;cursor:pointer;color:var(--ink-2);transition:background-color .16s ease,color .16s ease}
+.lang button[aria-pressed="true"]{background:var(--forest-700);color:#fff}
+.socials{display:flex;gap:6px}
+.socials a{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;color:var(--forest-700);background:var(--mist);transition:background-color .16s ease,color .16s ease,transform .14s var(--ease-out)}
+.socials a:active{transform:scale(.94)}
+@media (hover:hover) and (pointer:fine){.socials a:hover{background:var(--forest-700);color:#fff}}
+.burger{display:none;align-items:center;gap:8px;min-height:44px;padding:0 14px;border-radius:10px;border:2px solid var(--forest-700);background:none;color:var(--forest-700);font-weight:700;cursor:pointer;transition:transform .14s var(--ease-out)}
+.burger:active{transform:scale(.97)}
+
+/* Navigation */
+.navbar{background:var(--forest-700);color:#fff;position:sticky;top:0;z-index:40}
+.navbar .wrap{display:flex;align-items:center}
+.menu{display:flex;flex-wrap:wrap;margin-left:-14px}
+.menu>li{position:relative}
+.menu>li>a,.menu>li>button{display:flex;align-items:center;gap:5px;height:54px;padding:0 14px;color:#fff;font:600 1rem/1 var(--body);background:none;border:0;cursor:pointer;text-decoration:none;white-space:nowrap}
+.menu>li>a[aria-current="page"]{box-shadow:inset 0 -4px 0 var(--cabosse)}
+.menu>li>button .ic{width:16px;height:16px;opacity:.8;transition:transform .16s var(--ease-out)}
+.menu>li.open>button .ic{transform:rotate(180deg)}
+.sub{position:absolute;top:100%;left:0;min-width:270px;padding:8px;background:#fff;color:var(--ink);border-radius:0 0 14px 14px;box-shadow:0 22px 44px -16px rgba(11,58,38,.4),0 0 0 1px rgba(11,58,38,.06);opacity:0;visibility:hidden;transform:translateY(-6px) scale(.98);transform-origin:top left;transition:opacity .16s var(--ease-out),transform .16s var(--ease-out),visibility 0s linear .16s}
+.sub--wide{display:grid;grid-template-columns:repeat(3,minmax(150px,1fr));min-width:540px}
+.sub a{display:block;padding:9px 12px;border-radius:8px;color:var(--ink);text-decoration:none;font-size:.98rem;line-height:1.3}
+.menu>li.open>.sub{opacity:1;visibility:visible;transform:none;transition-delay:0s}
+/* Opened from the keyboard: no animation, the panel is simply there */
+.menu>li.kb>.sub,.menu>li.kb>button .ic{transition:none}
+.menu .cta-mobile{display:none}
+@media (hover:hover) and (pointer:fine){
+  .menu>li>a:hover,.menu>li>button:hover{background:rgba(255,255,255,.1)}
+  .menu>li:hover>.sub{opacity:1;visibility:visible;transform:none;transition-delay:0s}
+  .sub a:hover{background:var(--mist);color:var(--forest-700)}
+}
+
+/* Hero */
+.hero{position:relative;isolation:isolate;overflow:hidden;background:linear-gradient(180deg,#D9E8E0 0%,#ECF4EF 52%,#F6FAF7 100%)}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.55fr) minmax(290px,.8fr);gap:clamp(24px,4vw,64px);align-items:end;padding-block:clamp(36px,5vw,68px) clamp(140px,17vw,230px)}
+.hero h1{font-size:clamp(2.25rem,1rem + 5.2vw,5rem);font-weight:800;font-stretch:80%;line-height:.94;letter-spacing:-.025em;color:var(--forest-900)}
+.hero .lede{font-size:clamp(1.1rem,1rem + .5vw,1.35rem);line-height:1.45;color:var(--ink);max-width:44ch;margin-top:20px;text-wrap:balance}
+.search{display:flex;gap:8px;margin-top:30px;padding:8px;background:#fff;border-radius:16px;box-shadow:0 18px 40px -22px rgba(11,58,38,.55),0 0 0 1px rgba(11,58,38,.08);max-width:620px;transition:box-shadow .16s ease}
+.search label{display:flex;align-items:center;gap:10px;flex:1;padding-left:12px;color:var(--ink-2);min-width:0}
+.search input{flex:1;min-width:0;border:0;background:none;height:46px;outline:none;font-size:1.05rem}
+.search:focus-within{box-shadow:0 18px 40px -22px rgba(11,58,38,.55),0 0 0 3px var(--forest-500)}
+.asked{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:16px 0 0}
+.asked dt{font-size:.95rem;color:var(--ink-2);margin-right:2px}
+.asked dd{margin:0}
+.chip{display:inline-flex;align-items:center;min-height:38px;padding:0 14px;border-radius:999px;background:rgba(255,255,255,.82);border:1px solid rgba(11,58,38,.16);color:var(--forest-900);font-size:.95rem;font-weight:600;text-decoration:none;transition:transform .14s var(--ease-out),background-color .16s ease,border-color .16s ease}
+.chip:active{transform:scale(.97)}
+@media (hover:hover) and (pointer:fine){.chip:hover{background:#fff;border-color:var(--forest-500)}}
+.hero-side{display:grid;gap:16px;justify-items:start}
+.plate{display:flex;align-items:center;gap:14px;padding:8px 26px 8px 8px;background:rgba(255,255,255,.86);border-radius:999px;box-shadow:0 0 0 1px rgba(11,58,38,.08)}
+.plate b{display:block;font:800 1.7rem/1 var(--display);font-stretch:80%;color:var(--forest-900)}
+.plate span span{display:block;font-size:.98rem;line-height:1.2;color:var(--ink-2);margin-top:3px}
+.today{width:100%;background:#fff;border-radius:20px;padding:22px 22px 20px;box-shadow:0 18px 40px -22px rgba(11,58,38,.55),0 0 0 1px rgba(11,58,38,.08)}
+.today h2{font-size:1.25rem;font-stretch:92%;letter-spacing:0}
+.status{display:inline-flex;align-items:center;gap:8px;margin-top:12px;padding:6px 12px 6px 10px;border-radius:999px;font-weight:700;font-size:.98rem;background:#E3F1E8;color:#0F5A34}
+.status::before{content:"";width:10px;height:10px;border-radius:50%;background:#1E9A56}
+.status[data-open="false"]{background:#F6E7E3;color:#8A2A1A}
+.status[data-open="false"]::before{background:var(--laterite)}
+.today ul{margin-top:14px;display:grid;gap:10px}
+.today li{display:flex;gap:10px;align-items:flex-start;font-size:.98rem;line-height:1.4}
+.today li .ic{color:var(--forest-500);margin-top:2px}
+.today small{display:block;color:var(--ink-2);font-size:.86rem}
+.ridges{position:absolute;inset:auto 0 -1px 0;width:100%;height:clamp(200px,27vw,400px);z-index:1;display:block}
+/* The one authored moment: the ridges settle into place once, on load */
+.ridges .r{animation:rise .95s var(--ease-out) both;animation-delay:var(--d,0s)}
+@keyframes rise{from{opacity:0;transform:translateY(34px)}to{opacity:1;transform:none}}
+
+/* Quick access: continues the nearest ridge */
+.quick{background:var(--forest-700);color:#fff}
+.quick ul{display:grid;grid-template-columns:repeat(5,1fr)}
+.quick li+li{border-left:1px solid rgba(255,255,255,.16)}
+.quick a{display:flex;gap:12px;align-items:flex-start;padding:22px 18px 26px;color:#fff;text-decoration:none;height:100%;transition:background-color .16s ease}
+.quick a .ic{width:24px;height:24px;color:var(--cabosse);margin-top:2px}
+.quick b{display:block;font:700 1.08rem/1.2 var(--display);font-stretch:92%}
+.quick small{display:block;font-size:.9rem;line-height:1.35;color:#CFE2D8;margin-top:4px}
+@media (hover:hover) and (pointer:fine){.quick a:hover{background:rgba(255,255,255,.08)}}
+
+/* Sections */
+.band{padding-block:clamp(56px,8vw,108px)}
+.band--mist{background:var(--mist)}
+.band--forest{background:var(--forest-900);color:#fff}
+.head{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:16px 32px;margin-bottom:clamp(28px,4vw,44px)}
+.head p{color:var(--ink-2);max-width:52ch;margin-top:10px}
+.todo{display:inline-block;font-size:.88rem;color:var(--ink-2);background:repeating-linear-gradient(135deg,transparent 0 6px,rgba(11,58,38,.05) 6px 12px);border:1px dashed #A9BDB1;border-radius:8px;padding:5px 10px;line-height:1.35}
+.error{color:#8A2A1A;font-weight:700;font-size:.95rem}
+.on-dark .todo{color:#CFE2D8;border-color:rgba(255,255,255,.35);background:none}
+
+/* About */
+.about{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(28px,5vw,72px);align-items:center}
+.about p{max-width:60ch}
+.about p+p{margin-top:14px}
+.about .actions{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center;margin-top:26px}
+.video{position:relative;margin:0;aspect-ratio:16/9;border-radius:22px;overflow:hidden;background:linear-gradient(180deg,#CFE2D8,#F1F7F3 70%);box-shadow:0 24px 48px -32px rgba(11,58,38,.6)}
+.video>svg{display:block;width:100%;height:100%}
+.video .play{position:absolute;inset:0;margin:auto;width:76px;height:76px;border-radius:50%;border:0;background:var(--cabosse);color:var(--forest-900);display:grid;place-items:center;cursor:pointer;box-shadow:0 10px 24px -8px rgba(11,58,38,.6);transition:transform .16s var(--ease-out),background-color .16s ease}
+.video .play:active{transform:scale(.95)}
+@media (hover:hover) and (pointer:fine){.video .play:hover{background:var(--cabosse-300)}}
+.video .play .ic{width:30px;height:30px;stroke:none;margin-left:4px}
+.video figcaption{position:absolute;left:12px;bottom:12px;font-size:.86rem;background:rgba(11,58,38,.72);color:#fff;padding:5px 10px;border-radius:8px}
+
+/* Mayor */
+.mayor{display:grid;grid-template-columns:minmax(220px,340px) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:start}
+.portrait{position:relative;margin:0;aspect-ratio:4/5;border-radius:22px;overflow:hidden;background:#1B7347 var(--contours) center/cover;color:#fff}
+.portrait .initials{position:absolute;inset:0;display:grid;place-items:center;font:800 clamp(4rem,9vw,7rem)/1 var(--display);font-stretch:80%;color:rgba(255,255,255,.3)}
+.portrait figcaption{position:absolute;left:12px;bottom:12px;display:flex;align-items:center;gap:8px;font-size:.86rem;background:rgba(11,58,38,.62);padding:5px 10px;border-radius:8px}
+.portrait .ic{width:18px;height:18px}
+.nameplate{margin-top:14px}
+.nameplate b{display:block;font:700 1.3rem/1.2 var(--display);font-stretch:90%}
+.nameplate span{color:var(--ink-2);font-size:.98rem}
+.mayor .text>p{max-width:60ch;margin-top:16px}
+.pledges{margin-top:18px;display:grid;max-width:640px;border-top:1px solid #C6D6CC}
+.pledges li{display:flex;gap:14px;align-items:center;padding:14px 0;border-bottom:1px solid #C6D6CC;font:650 1.2rem/1.25 var(--display);font-stretch:92%}
+.pledges li::before{content:"";width:12px;height:12px;border-radius:3px;background:var(--cabosse);flex:none;transform:rotate(45deg)}
+.mayor .actions{display:flex;flex-wrap:wrap;gap:12px 18px;align-items:center;margin-top:22px}
+.bureau{margin-top:clamp(36px,5vw,56px);padding-top:28px;border-top:1px solid #C6D6CC}
+.bureau h3{margin-bottom:18px}
+.bureau ul{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
+.bureau li{display:flex;gap:12px;align-items:center}
+.avatar{width:52px;height:52px;border-radius:50%;background:var(--forest-700);color:#fff;display:grid;place-items:center;font:700 1.05rem/1 var(--display);flex:none}
+.bureau b{display:block;line-height:1.25}
+.bureau .role{display:block;font-size:.9rem;color:var(--ink-2)}
+.bureau .more{margin-top:20px}
+
+/* Services guide: a typographic index rather than seventeen identical cards */
+.filter{display:flex;align-items:center;gap:10px;min-width:min(100%,340px);height:50px;padding:0 14px;border:2px solid var(--line);border-radius:12px;background:#fff;color:var(--ink-2);transition:border-color .16s ease}
+.filter:focus-within{border-color:var(--forest-500)}
+.filter input{flex:1;border:0;outline:none;background:none;min-width:0}
+.guide{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(24px,4vw,56px)}
+.guide h3{padding-bottom:14px;border-bottom:3px solid var(--forest-700);display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.guide h3 small{font:400 .9rem/1 var(--body);color:var(--ink-2);letter-spacing:0}
+.guide li{border-bottom:1px solid var(--line)}
+.guide a{display:grid;grid-template-columns:1fr auto;gap:2px 12px;align-items:center;margin-inline:-10px;padding:14px 10px;border-radius:10px;text-decoration:none;color:var(--ink);transition:background-color .16s ease}
+.guide a b{font-size:1.1rem;color:var(--forest-900)}
+.guide a span{grid-column:1;font-size:.94rem;line-height:1.4;color:var(--ink-2)}
+.guide a .ic{grid-row:1/3;grid-column:2;color:var(--forest-500);transition:transform .16s var(--ease-out)}
+.guide a:active{background:var(--mist)}
+@media (hover:hover) and (pointer:fine){
+  .guide a:hover{background:var(--mist)}
+  .guide a:hover .ic{transform:translateX(3px)}
+}
+.empty{margin-top:8px;padding:20px;border:1px dashed #A9BDB1;border-radius:14px;color:var(--ink-2)}
+
+/* News: text first, so it stays quick to load and never waits for a photo */
+.news{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:start}
+.stories{border-top:3px solid var(--forest-700)}
+.story{display:grid;grid-template-columns:118px minmax(0,1fr);gap:6px 24px;padding:22px 0;border-bottom:1px solid #C6D6CC}
+.story time{font:700 1.08rem/1.2 var(--display);font-stretch:92%;color:var(--forest-700);padding-top:4px}
+.story time small{display:block;font:400 .9rem/1.4 var(--body);color:var(--ink-2)}
+.story h3{font-size:1.3rem}
+.story:first-child h3{font-size:clamp(1.5rem,1.2rem + 1vw,2rem)}
+.story p{margin-top:8px;color:var(--ink-2);max-width:58ch}
+.h3link{color:inherit;text-decoration:none}
+@media (hover:hover) and (pointer:fine){.h3link:hover{text-decoration:underline;text-decoration-thickness:2px}}
+.notices{background:#fff;border-radius:18px;padding:clamp(20px,2.5vw,28px);box-shadow:0 0 0 1px rgba(11,58,38,.08),0 24px 48px -36px rgba(11,58,38,.5)}
+.notices h3{display:flex;align-items:center;gap:10px}
+.notices h3 .ic{color:var(--forest-500);width:24px;height:24px}
+.notices ul{margin-top:10px}
+.notices li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 12px;align-items:baseline;padding:12px 0;border-bottom:1px solid var(--line)}
+.tag{font-size:.82rem;font-weight:700;padding:3px 9px;border-radius:6px;background:var(--mist);color:var(--forest-700);white-space:nowrap}
+.tag--tender{background:#FBEBC2;color:#6B4A00}
+.tag--job{background:#F6E7E3;color:#8A2A1A}
+.notices li a{color:var(--ink);font-weight:600;text-decoration:none}
+@media (hover:hover) and (pointer:fine){.notices li a:hover{text-decoration:underline}}
+.notices .more{margin-top:16px}
+.source-note{margin-top:28px}
+
+/* In brief + map */
+.brief{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:center}
+.map{position:relative;border-radius:22px;overflow:hidden;background:#0F4A30;aspect-ratio:5/4}
+.map svg{display:block;width:100%;height:100%}
+.map .todo{position:absolute;left:14px;bottom:14px;background:rgba(11,58,38,.7)}
+.figures{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 28px;margin:28px 0 0}
+.figures div{display:flex;flex-direction:column;gap:6px;border-top:1px solid rgba(255,255,255,.22);padding-top:12px}
+.figures dt{font-size:.98rem;color:#CFE2D8;order:2}
+.figures dd{margin:0;font:800 clamp(2.2rem,1.6rem + 2vw,3.2rem)/1 var(--display);font-stretch:80%;color:#fff}
+.cantons{margin-top:30px}
+.cantons h3{font-size:1.1rem;margin-bottom:12px}
+.cantons ul{display:flex;flex-wrap:wrap;gap:8px}
+.cantons button{min-height:40px;padding:0 14px;border-radius:999px;border:1px solid rgba(255,255,255,.4);background:none;color:#fff;font-weight:600;cursor:pointer;transition:transform .14s var(--ease-out),background-color .16s ease,color .16s ease,border-color .16s ease}
+.cantons button:active{transform:scale(.97)}
+.cantons button[aria-pressed="true"]{background:var(--cabosse);border-color:var(--cabosse);color:var(--forest-900)}
+@media (hover:hover) and (pointer:fine){.cantons button:not([aria-pressed="true"]):hover{background:rgba(255,255,255,.12)}}
+.canton-note{margin-top:14px;color:#CFE2D8;font-size:.98rem;min-height:3.2em}
+
+/* Report */
+.report{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(28px,5vw,72px);align-items:start}
+.report .intro p{margin-top:16px;max-width:48ch;font-size:1.12rem}
+.steps{margin-top:28px;display:grid;gap:16px;counter-reset:s}
+.steps li{counter-increment:s;display:grid;grid-template-columns:40px 1fr;gap:14px;align-items:start;max-width:46ch}
+.steps li::before{content:counter(s);width:40px;height:40px;border-radius:50%;background:var(--forest-700);color:#fff;display:grid;place-items:center;font:700 1.1rem/1 var(--display)}
+.steps b{display:block}
+.steps span{color:var(--ink-2);font-size:.98rem}
+.card{background:#fff;border-radius:22px;padding:clamp(20px,3vw,32px);box-shadow:0 0 0 1px rgba(11,58,38,.08),0 24px 48px -32px rgba(11,58,38,.5)}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{display:grid;gap:6px}
+.field--full{grid-column:1/-1}
+.field label,.field .label{font-weight:700;font-size:.98rem}
+.field small{color:var(--ink-2);font-size:.88rem;font-weight:400}
+.field input,.field select,.field textarea{width:100%;min-height:48px;padding:10px 12px;border:2px solid var(--line);border-radius:10px;background:#fff;transition:border-color .16s ease}
+.field textarea{min-height:104px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--forest-500)}
+.field ::placeholder,.search ::placeholder,.filter ::placeholder,.newsletter ::placeholder{color:#5F6F66;opacity:1}
+.upload{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.upload input{position:absolute;opacity:0;width:1px;height:1px}
+.upload input:focus-visible+label{outline:3px solid var(--forest-500);outline-offset:3px}
+.upload output{font-size:.92rem;color:var(--ink-2)}
+.form .submit{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;margin-top:4px}
+.done{display:grid;gap:12px;justify-items:start;transition:opacity .25s var(--ease-out),transform .25s var(--ease-out)}
+@starting-style{.done{opacity:0;transform:translateY(8px)}}
+.done .tick{width:54px;height:54px;border-radius:50%;background:#E3F1E8;color:#0F5A34;display:grid;place-items:center}
+.done .tick .ic{width:28px;height:28px;stroke-width:2.4}
+.done dl{display:grid;grid-template-columns:auto 1fr;gap:4px 16px;margin:4px 0}
+.done dt{color:var(--ink-2)}
+.done dd{margin:0;font-weight:700}
+
+/* Discover */
+.rail{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(232px,1fr);gap:18px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x proximity;padding-bottom:14px;scrollbar-width:thin;scrollbar-color:var(--leaf-400) transparent}
+.place{scroll-snap-align:start}
+.vignette{aspect-ratio:4/5;border-radius:22px;overflow:hidden;background:var(--forest-700)}
+.vignette svg{display:block;width:100%;height:100%}
+.place h3{margin-top:14px;font-size:1.2rem}
+.place p{font-size:.96rem;color:var(--ink-2);line-height:1.45;margin-top:4px}
+.rail-note{margin-top:18px}
+
+/* Town hall */
+.hall{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(24px,4vw,48px)}
+.hall h3{margin-bottom:14px}
+.hall ul{display:grid;gap:12px}
+.hall li{display:flex;gap:10px;align-items:flex-start;line-height:1.45}
+.hall li .ic{color:var(--forest-500);margin-top:3px}
+.hall small{display:block;color:var(--ink-2);font-size:.9rem}
+.newsletter p{color:var(--ink-2)}
+.newsletter form{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+.newsletter input{flex:1;min-width:180px;min-height:48px;padding:0 12px;border:2px solid var(--line);border-radius:10px;background:#fff;transition:border-color .16s ease}
+.newsletter input:focus{outline:none;border-color:var(--forest-500)}
+.newsletter output{display:block;margin-top:10px;font-weight:700;color:#0F5A34}
+
+/* Footer */
+.footer{background:var(--forest-900);color:#DCE9E1}
+.footer .wrap{padding-block:clamp(40px,6vw,72px) calc(88px + env(safe-area-inset-bottom,0px))}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:clamp(24px,4vw,56px)}
+.f-state{display:flex;align-items:center;gap:16px}
+.arms-plate{display:block;flex:none;background:#fff;border-radius:14px;padding:8px 12px}
+.arms-plate .arms{height:84px}
+.f-state b{display:block;font:750 1.25rem/1.1 var(--display);font-stretch:88%;color:#fff}
+.f-state i{display:block;font-style:normal;font-size:.95rem;color:#B9D0C3;margin-top:5px}
+.f-commune{display:flex;align-items:center;gap:14px;margin-top:22px;padding-top:22px;border-top:1px solid rgba(255,255,255,.16)}
+.f-commune b{display:block;font:750 1.25rem/1.1 var(--display);font-stretch:88%;color:#fff}
+.f-commune i{display:block;font-style:normal;font-size:.95rem;color:#B9D0C3;margin-top:5px}
+.footer h3{font-size:1.05rem;color:#fff;margin-bottom:12px}
+.footer li+li{margin-top:8px}
+.footer a{color:#DCE9E1;text-decoration:none}
+@media (hover:hover) and (pointer:fine){.footer a:hover{color:#fff;text-decoration:underline}}
+.legal{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,.16);display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;font-size:.88rem;color:#B9D0C3}
+.legal a{text-decoration:underline}
+
+/* Floating WhatsApp */
+.wa{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:50;display:grid;place-items:center;width:56px;height:56px;border-radius:50%;background:#128C4B;color:#fff;text-decoration:none;box-shadow:0 12px 28px -10px rgba(11,58,38,.7);transition:transform .14s var(--ease-out),background-color .16s ease}
+.wa:active{transform:scale(.95)}
+.wa .ic{width:26px;height:26px}
+.wa span{position:absolute;right:calc(100% + 10px);top:50%;translate:0 -50%;white-space:nowrap;background:var(--ink);color:#fff;font-size:.88rem;font-weight:600;padding:6px 10px;border-radius:8px;opacity:0;transform:translateX(4px);transition:opacity .14s var(--ease-out),transform .14s var(--ease-out);pointer-events:none}
+@media (hover:hover) and (pointer:fine){
+  .wa:hover{background:#0F7A41}
+  .wa:hover span,.wa:focus-visible span{opacity:1;transform:none}
+}
+
+/* Responsive */
+@media (max-width:1100px){
+  .tools .socials{display:none}
+  .menu>li>a,.menu>li>button{padding:0 10px;font-size:.95rem}
+  .menu{margin-left:-10px}
+  .bureau ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:900px){
+  html{scroll-padding-top:72px}
+  .masthead{position:sticky;top:0;z-index:41;box-shadow:0 1px 0 var(--line)}
+  .masthead .wrap{min-height:68px;gap:10px}
+  .arms{height:50px}
+  .brand{gap:10px}
+  .brand b{font-size:1.15rem}
+  .brand .state{font-size:.74rem}
+  .brand .town,.tools,.masthead .logo-slot{display:none}
+  .burger{display:inline-flex}
+  .navbar{top:68px;max-height:calc(100dvh - 68px);overflow-y:auto;overscroll-behavior:contain}
+  .navbar .wrap{display:block;padding-inline:0}
+  .menu{display:none;margin:0;padding:8px 0 20px}
+  .navbar.open .menu{display:block}
+  .menu>li>a,.menu>li>button{width:100%;justify-content:space-between;height:52px;padding:0 20px;font-size:1.05rem}
+  .menu>li>a[aria-current="page"]{box-shadow:none;background:rgba(255,255,255,.1)}
+  .sub,.sub--wide{position:static;display:none;min-width:0;opacity:1;visibility:visible;transform:none;transition:none;box-shadow:none;border-radius:0;background:rgba(255,255,255,.07);padding:6px 0}
+  .menu>li.open>.sub{display:block}
+  .sub a{color:#fff;padding:11px 32px;border-radius:0}
+  .menu .cta-mobile{display:block;padding:16px 20px 0}
+  .menu .cta-mobile .btn{width:100%}
+  .hero .wrap{grid-template-columns:1fr;padding-bottom:clamp(120px,34vw,220px)}
+  /* On a phone the task comes first: logo plate, then search, then the status card */
+  .hero .wrap>div:first-child{grid-row:2}
+  .hero-side{display:contents}
+  .plate{grid-row:1;justify-self:start}
+  .today{grid-row:3}
+  .quick ul{grid-template-columns:repeat(2,1fr)}
+  .quick li+li{border-left:0}
+  .quick li{border-bottom:1px solid rgba(255,255,255,.16)}
+  .quick li:nth-child(even){border-left:1px solid rgba(255,255,255,.16)}
+  .quick li:last-child{grid-column:1/-1;border-bottom:0}
+  .quick a{padding:16px 12px 18px}
+  .about,.mayor,.news,.brief,.report,.guide,.hall{grid-template-columns:1fr}
+  .mayor .portrait-col{max-width:300px}
+  .guide{gap:36px}
+}
+@media (max-width:560px){
+  body{font-size:1rem}
+  .search{flex-direction:column;border-radius:14px}
+  .search label{padding:0 8px}
+  .form{grid-template-columns:1fr}
+  .bureau ul{grid-template-columns:1fr}
+  .story{grid-template-columns:1fr;gap:4px}
+  .story time small{display:inline;margin-left:6px}
+  .footer-grid{grid-template-columns:1fr}
+  .figures{gap:18px 20px}
+  .plate b{font-size:1.4rem}
+  .logo-slot--lg{width:64px;height:64px;font-size:.6rem}
+}
+@media (prefers-reduced-motion:reduce){
+  .ridges .r{animation:none}
+  *,*::before,*::after{transition-duration:.01ms!important}
+}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style>
+</head>
+<body id="top">
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.6-3.6"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path d="m9 6 6 6-6 6"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.5"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M7 3h7l5 5v12a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></symbol>
+  <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></symbol>
+  <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6M12 7.4v.2"/></symbol>
+  <symbol id="i-case" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M3 13h18"/></symbol>
+  <symbol id="i-horn" viewBox="0 0 24 24"><path d="M4 10v4l3 .5 9 4.5V5L7 9.5 4 10zM19 9.5a3.5 3.5 0 0 1 0 5M7.5 14.6 8.5 20H11l-1-4.7"/></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path d="M14 8h2.5V4.5H14A3.5 3.5 0 0 0 10.5 8v2.5H8V14h2.5v6H14v-6h2.5l.5-3.5h-3V8.5a.5.5 0 0 1 .5-.5z"/></symbol>
+  <symbol id="i-wa" viewBox="0 0 24 24"><path d="M4 20l1.3-4.2A8 8 0 1 1 8.4 19L4 20z"/><path d="M9.3 9.2c.2 2.800 2.500 5.200 5.400 5.500"/></symbol>
+  <symbol id="i-yt" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="4"/><path d="M10.5 9.5v5l4.5-2.500z" fill="currentColor"/></symbol>
+</svg>
+
+<a class="skip" href="#contenu">Aller au contenu</a>
+<p class="mock">Maquette de démonstration : les contenus sont indicatifs et restent à valider par la mairie.</p>
+<div class="weave" aria-hidden="true"></div>
+
+<header class="masthead">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Commune de Kloto 1, accueil">
+      <img class="arms" src="assets/armoiries-togo.svg" width="53" height="76" alt="Armoiries de la République togolaise" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+      <span class="logo-slot" hidden>Armoiries du Togo</span>
+      <span class="brand-text">
+        <span class="state">République togolaise</span>
+        <b>Commune de Kloto&nbsp;1</b>
+        <span class="town">Mairie de Kpalimé</span>
+      </span>
+    </a>
+    <div class="tools">
+      <div class="lang" role="group" aria-label="Langue du site">
+        <button type="button" aria-pressed="true">FR</button>
+        <button type="button" aria-pressed="false">EN</button>
+        <button type="button" aria-pressed="false" lang="ee">Eʋe</button>
+      </div>
+      <div class="socials">
+        <a href="#" aria-label="Facebook"><svg class="ic"><use href="#i-fb"/></svg></a>
+        <a href="#" aria-label="WhatsApp"><svg class="ic"><use href="#i-wa"/></svg></a>
+        <a href="#" aria-label="YouTube"><svg class="ic"><use href="#i-yt"/></svg></a>
+      </div>
+      <a class="btn btn--primary" href="#signaler">Bureau du citoyen</a>
+    </div>
+    <span class="logo-slot" role="img" aria-label="Emplacement du logo officiel de la commune de Kloto 1">Logo de la commune</span>
+    <button class="burger" type="button" aria-controls="nav" aria-expanded="false"><svg class="ic"><use href="#i-menu"/></svg>Menu</button>
+  </div>
+</header>
+
+<nav class="navbar on-dark" id="nav" aria-label="Navigation principale">
+  <div class="wrap">
+    <ul class="menu">
+      <li><a href="#top" aria-current="page">Accueil</a></li>
+      <li>
+        <button type="button" aria-expanded="false">À propos<svg class="ic"><use href="#i-down"/></svg></button>
+        <ul class="sub">
+          <li><a href="#">La décentralisation au Togo</a></li>
+          <li><a href="#commune">La commune de Kloto 1</a></li>
+          <li><a href="#">Notre vision</a></li>
+        </ul>
+      </li>
+      <li>
+        <button type="button" aria-expanded="false">Commune<svg class="ic"><use href="#i-down"/></svg></button>
+        <ul class="sub">
+          <li><a href="#">Organisation de la commune</a></li>
+          <li><a href="#maire">Conseil municipal</a></li>
+          <li><a href="#">Organigramme</a></li>
+          <li><a href="#en-bref">Cantons et quartiers</a></li>
+          <li><a href="#">Comités de développement de quartier</a></li>
+          <li><a href="#decouvrir">Découvrir la commune</a></li>
+          <li><a href="#">Jumelages</a></li>
+        </ul>
+      </li>
+      <li>
+        <button type="button" aria-expanded="false">Mairie<svg class="ic"><use href="#i-down"/></svg></button>
+        <ul class="sub sub--wide">
+          <li><a href="#maire">Bureau exécutif</a></li>
+          <li><a href="#services">État civil</a></li>
+          <li><a href="#services">Éducation</a></li>
+          <li><a href="#services">Santé</a></li>
+          <li><a href="#services">Culture</a></li>
+          <li><a href="#services">Urbanisme</a></li>
+          <li><a href="#services">Environnement</a></li>
+          <li><a href="#services">Tourisme</a></li>
+          <li><a href="#services">Sécurité</a></li>
+          <li><a href="#services">Emploi</a></li>
+          <li><a href="#services">Social</a></li>
+          <li><a href="#services">Taxes</a></li>
+          <li><a href="#services">Finances</a></li>
+          <li><a href="#services">Statistiques</a></li>
+          <li><a href="#services">Marchés publics</a></li>
+        </ul>
+      </li>
+      <li>
+        <button type="button" aria-expanded="false">Projets<svg class="ic"><use href="#i-down"/></svg></button>
+        <ul class="sub">
+          <li><a href="#">Plan de développement communal</a></li>
+          <li><a href="#">Proposer un projet</a></li>
+          <li><a href="#">Devenir partenaire d'un projet</a></li>
+          <li><a href="#">Investir à Kloto 1</a></li>
+        </ul>
+      </li>
+      <li>
+        <button type="button" aria-expanded="false">Actualités<svg class="ic"><use href="#i-down"/></svg></button>
+        <ul class="sub">
+          <li><a href="#actualites">Articles</a></li>
+          <li><a href="#">Vidéos</a></li>
+          <li><a href="#actualites">Annonces et avis</a></li>
+        </ul>
+      </li>
+      <li><a href="#decouvrir">Galerie</a></li>
+      <li><a href="#mairie">Contact</a></li>
+      <li class="cta-mobile"><a class="btn btn--primary" href="#signaler">Bureau du citoyen</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="contenu">
+
+  <section class="hero" aria-labelledby="h-hero">
+    <div class="wrap">
+      <div>
+        <h1 id="h-hero">Bienvenue à Kloto&nbsp;1,<br>la commune de Kpalimé</h1>
+        <p class="lede">Vos démarches, les actualités et les services de la mairie, au pied des monts Kloto.</p>
+        <form class="search" role="search" id="hero-search">
+          <label><svg class="ic"><use href="#i-search"/></svg><span class="sr-only">Rechercher une démarche ou un service</span>
+            <input type="search" name="q" placeholder="Acte de naissance, permis de construire, taxes" autocomplete="off" enterkeyhint="search"></label>
+          <button class="btn btn--primary" type="submit">Rechercher</button>
+        </form>
+        <dl class="asked">
+          <dt>Les plus demandées</dt>
+          <dd><a class="chip" href="#services" data-q="naissance">Acte de naissance</a></dd>
+          <dd><a class="chip" href="#services" data-q="mariage">Acte de mariage</a></dd>
+          <dd><a class="chip" href="#services" data-q="légalisation">Légalisation</a></dd>
+          <dd><a class="chip" href="#services" data-q="permis">Permis de construire</a></dd>
+          <dd><a class="chip" href="#services" data-q="taxes">Taxes</a></dd>
+        </dl>
+      </div>
+      <div class="hero-side">
+        <p class="plate">
+          <span class="logo-slot logo-slot--lg" role="img" aria-label="Emplacement du logo officiel de la commune de Kloto 1">Logo de la commune</span>
+          <span><b>Kloto&nbsp;1</b><span>ma commune</span></span>
+        </p>
+        <aside class="today" aria-labelledby="h-today">
+          <h2 id="h-today">La mairie aujourd'hui</h2>
+          <p class="status nums" id="status" data-open="true">Horaires d'ouverture</p>
+          <ul>
+            <li><svg class="ic"><use href="#i-clock"/></svg><span class="nums">Du lundi au vendredi<br>7&nbsp;h&nbsp;00 à 12&nbsp;h&nbsp;00<br>14&nbsp;h&nbsp;30 à 17&nbsp;h&nbsp;30<small>Horaires indicatifs, à confirmer</small></span></li>
+            <li><svg class="ic"><use href="#i-pin"/></svg><span>Hôtel de ville, Kpalimé</span></li>
+            <li><svg class="ic"><use href="#i-phone"/></svg><span><a href="#mairie">Appeler ou écrire à la mairie</a></span></li>
+          </ul>
+        </aside>
+      </div>
+    </div>
+    <svg class="ridges" viewBox="0 0 1440 520" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+      <defs>
+        <linearGradient id="r1" x1="0" y1="0" x2="0" y2="1"><stop offset=".35" stop-color="#BCD6C8"/><stop offset="1" stop-color="#E2EEE7"/></linearGradient>
+        <linearGradient id="r2" x1="0" y1="0" x2="0" y2="1"><stop offset=".45" stop-color="#93BCA6"/><stop offset="1" stop-color="#C9DED2"/></linearGradient>
+        <linearGradient id="r3" x1="0" y1="0" x2="0" y2="1"><stop offset=".6" stop-color="#5C9C7C"/><stop offset="1" stop-color="#93BFA7"/></linearGradient>
+        <linearGradient id="r4" x1="0" y1="0" x2="0" y2="1"><stop offset=".72" stop-color="#2C7250"/><stop offset="1" stop-color="#4F9070"/></linearGradient>
+        <filter id="mist" x="-20%" y="-300%" width="140%" height="700%"><feGaussianBlur stdDeviation="16"/></filter>
+      </defs>
+      <g id="ridge-art">
+        <path class="r" fill="url(#r1)" d="M0 300C120 250 220 230 340 262 440 288 520 210 640 200 760 190 820 250 930 256 1040 262 1120 190 1240 196 1330 200 1400 240 1440 250V520H0Z"/>
+        <path class="r" style="--d:.07s" fill="url(#r2)" d="M0 350C100 330 180 280 290 290 400 300 450 350 560 340 690 328 740 262 860 268 970 274 1010 330 1120 326 1240 322 1320 280 1440 300V520H0Z"/>
+        <ellipse cx="420" cy="366" rx="520" ry="14" fill="#fff" opacity=".4" filter="url(#mist)"/>
+        <path class="r" style="--d:.14s" fill="url(#r3)" d="M0 400C140 380 200 330 330 345 450 358 500 400 620 392 760 382 820 330 950 340 1080 350 1130 392 1250 384 1340 378 1400 360 1440 356V520H0Z"/>
+        <ellipse cx="1060" cy="412" rx="460" ry="12" fill="#fff" opacity=".32" filter="url(#mist)"/>
+        <path class="r" style="--d:.21s" fill="url(#r4)" d="M0 440C120 430 240 392 380 404 520 416 580 448 720 440 860 432 940 398 1080 406 1220 414 1320 440 1440 424V520H0Z"/>
+        <!-- Kpalimé at the foot of the hills: the spire, a few roofs, the trees -->
+        <g class="r" style="--d:.26s" fill="#0F4A30">
+          <rect x="1090" y="436" width="44" height="42"/><path d="M1084 437 1112 418 1140 437Z"/>
+          <rect x="1070" y="410" width="17" height="68"/><path d="M1067 411 1078.500 372 1090 411Z"/>
+          <rect x="1077.500" y="360" width="2" height="14"/><rect x="1073.500" y="364" width="10" height="2"/>
+          <rect x="1020" y="452" width="30" height="26"/><path d="M1015 453 1035 440 1055 453Z"/>
+          <rect x="1146" y="450" width="34" height="28"/><path d="M1141 451 1163 437 1185 451Z"/>
+          <rect x="1192" y="456" width="22" height="22"/><path d="M1188 457 1203 447 1218 457Z"/>
+          <circle cx="1002" cy="454" r="14"/><circle cx="1062" cy="458" r="9"/><circle cx="1234" cy="452" r="15"/><circle cx="1254" cy="460" r="10"/><circle cx="978" cy="464" r="9"/>
+        </g>
+        <path class="r" style="--d:.3s" fill="#0F4A30" d="M0 482C180 464 320 454 480 468 660 484 780 494 960 476 1140 458 1300 464 1440 478V520H0Z"/>
+      </g>
+    </svg>
+  </section>
+
+  <nav class="quick on-dark" aria-label="Accès rapides">
+    <div class="wrap">
+      <ul>
+        <li><a href="#decouvrir"><svg class="ic"><use href="#i-compass"/></svg><span><b>Découvrir la commune</b><small>Histoire, cantons, patrimoine</small></span></a></li>
+        <li><a href="#services"><svg class="ic"><use href="#i-doc"/></svg><span><b>Démarches administratives</b><small>État civil, urbanisme, taxes</small></span></a></li>
+        <li><a href="#en-bref"><svg class="ic"><use href="#i-info"/></svg><span><b>Kloto 1 en bref</b><small>Chiffres et repères</small></span></a></li>
+        <li><a href="#"><svg class="ic"><use href="#i-case"/></svg><span><b>Investisseurs</b><small>Projets et partenariats</small></span></a></li>
+        <li><a href="#actualites"><svg class="ic"><use href="#i-horn"/></svg><span><b>Annonces</b><small>Avis, appels d'offres, recrutements</small></span></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="band" id="commune" aria-labelledby="h-commune">
+    <div class="wrap about">
+      <div>
+        <h2 id="h-commune">La commune de Kloto&nbsp;1</h2>
+        <p style="margin-top:20px">Kloto 1 est l'une des trois communes de la préfecture de Kloto, dans la région des Plateaux. Son chef-lieu, Kpalimé, se trouve à environ 120&nbsp;km au nord-ouest de Lomé, près de la frontière du Ghana.</p>
+        <p>Créée par la loi n°&nbsp;2017-008 du 29 juin 2017 portant création des communes au Togo, elle réunit huit cantons&nbsp;: Gbalavé, Hanyigba, Kpadapé, Kpalimé, Tomé, Tové, Womé et Yokélé. Kpalimé est aussi une ville touristique, connue pour ses forêts, ses cascades, son artisanat et ses plantations de café et de cacao.</p>
+        <div class="actions">
+          <a class="btn btn--line" href="#">En savoir plus sur la commune</a>
+          <a class="textlink" href="#en-bref">Voir les cantons<svg class="ic"><use href="#i-right"/></svg></a>
+        </div>
+      </div>
+      <figure class="video">
+        <svg viewBox="520 70 818 450" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><use href="#ridge-art"/></svg>
+        <button class="play" type="button" aria-label="Lire la vidéo de présentation"><svg class="ic"><use href="#i-play"/></svg></button>
+        <figcaption>Vidéo de présentation de la commune, à fournir</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="band band--mist" id="maire" aria-labelledby="h-maire">
+    <div class="wrap">
+      <div class="mayor">
+        <div class="portrait-col">
+          <figure class="portrait">
+            <div class="initials" aria-hidden="true">KA</div>
+            <figcaption><svg class="ic"><use href="#i-camera"/></svg>Portrait officiel, à fournir</figcaption>
+          </figure>
+          <p class="nameplate"><b>Kossi Afélété Atigaku</b><span>Maire de Kloto 1, mandat 2025-2031</span></p>
+        </div>
+        <div class="text">
+          <h2 id="h-maire">Le mot du maire</h2>
+          <p>Élu le 17 octobre 2025 par le conseil municipal, le maire a pris ses fonctions le 12 novembre 2025. Il a placé son mandat sous trois engagements.</p>
+          <ul class="pledges">
+            <li>Une gouvernance participative</li>
+            <li>Une gestion administrative et financière rigoureuse</li>
+            <li>Un meilleur accès aux services sociaux de base</li>
+          </ul>
+          <div class="actions">
+            <a class="btn btn--line" href="#">Lire le mot du maire</a>
+            <span class="todo">Texte intégral à fournir par le cabinet du maire</span>
+          </div>
+        </div>
+      </div>
+      <div class="bureau">
+        <h3>Le bureau exécutif</h3>
+        <ul>
+          <li><span class="avatar" aria-hidden="true">KA</span><span><b>Kossi Afélété Atigaku</b><span class="role">Maire</span></span></li>
+          <li><span class="avatar" aria-hidden="true">KN</span><span><b>Kossi Eugène Nyawuame</b><span class="role">Premier adjoint</span></span></li>
+          <li><span class="avatar" aria-hidden="true">KE</span><span><b>Koudourëme Egoulou</b><span class="role">Deuxième adjointe</span></span></li>
+          <li><span class="avatar" aria-hidden="true">KK</span><span><b>Kwasi Prosper Kwadzo-Akpotsui</b><span class="role">Troisième adjoint</span></span></li>
+        </ul>
+        <p class="more"><a class="textlink" href="#">Voir les 19 membres du conseil municipal<svg class="ic"><use href="#i-right"/></svg></a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="services" aria-labelledby="h-services">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <h2 id="h-services" tabindex="-1">Guide des services</h2>
+          <p>Dix-sept domaines d'action de la mairie, classés selon ce que vous venez y faire.</p>
+        </div>
+        <label class="filter"><svg class="ic"><use href="#i-search"/></svg><span class="sr-only">Filtrer les services</span>
+          <input type="search" id="filter" placeholder="Filtrer les services" autocomplete="off"></label>
+      </div>
+      <div class="guide" id="guide">
+        <div class="group">
+          <h3>Vos démarches <small>5 services</small></h3>
+          <ul>
+            <li data-k="naissance mariage deces acte certificat legalisation copie livret"><a href="#"><b>État civil</b><span>Naissance, mariage, décès, légalisation de documents</span><svg class="ic"><use href="#i-right"/></svg></a></li>
+            <li data-k="permis construire lotissement terrain domaine"><a href="#"><b>Urbanisme</b><span>Permis de construire, lotissement, occupation du domaine public</span><svg class="ic"><use href="#i-right"/></svg></a></li>
+            <li data-k="taxes redevances payer impots marche"><a href="#"><b>Taxes</b><span>Taxes et redevances communales, où et comment payer</span><svg class="ic"><use href="#i-right"/></svg></a></li>
+            <li data-k="appel offres attribution fournisseurs"><a href="#"><b>Marchés publics</b><span>Avis d'appel d'offres et résultats d'attribution</span><svg class="ic"><use href="#i-right"/></svg></a></li>
+            <li data-k="recrutement offres travail stage"><a href="#"><b>Emploi</b><span>Offres de la mairie et opportunités dans la commune</span><svg class="ic"><use href="#i-right"/></svg></a></li>
+          </ul>
+        </div>
+        <div class="group">
+          <h3>Vivre à Kloto 1 <small>7 services</small></h3>
+          <ul>
+            <li data-k="ecoles cantines scolaire"><a href="#"><b>Éducation</b><span>Écoles, cantines et appui aux établissements</span><svg class="ic"><use href="#i-right"/></svg></a></li>
+            <li data-k="centres vaccination hygiene hopital"><a href="#"><b>Santé</b><span>Centres de santé, campagnes de vaccination, hygiène</span><svg class="ic"><use href="#i-right"/></svg></a></li>
+            <li data-k="aide vulnerables jeunesse genre"><a href="#"><b>Social</b><span>Aide aux personnes vulnérables, jeunesse, genre</span><svg class="ic"><use href="#i-right"/></svg></a></li>
+            <li data-k="prevention protection civile urgences numeros"><a href="#"><b>Sécurité</b><span>Prévention, protection civile, numéros utiles</span><svg class="ic"><use href="#i-right"/></svg></a></li>
+            <li data-k="dechets ordures assainissement espaces verts caniveau"><a href="#"><b>Environnement</b><span>Collecte des déchets, assainissement, espaces verts</span><svg class="ic"><use href="#i-right"/></svg></a></li>
+            <li data-k="fetes traditions artisanat batik"><a href="#"><b>Culture</b><span>Fêtes traditionnelles, artisanat, équipements culturels</span><svg class="ic"><use href="#i-right"/></svg></a></li>
+            <li data-k="sites visiter guides hebergement cascade mont"><a href="#"><b>Tourisme</b><span>Sites à visiter, guides et hébergements</span><svg class="ic"><use href="#i-right"/></svg></a></li>
+          </ul>
+        </div>
+        <div class="group">
+          <h3>La vie municipale <small>5 services</small></h3>
+          <ul>
+            <li data-k="elus conseillers sessions deliberations"><a href="#"><b>Conseil municipal</b><span>Les 19 élus, les sessions et les délibérations</span><svg class="ic"><use href="#i-right"/></svg></a></li>
+            <li data-k="maire adjoints"><a href="#"><b>Bureau exécutif</b><span>Le maire et ses trois adjoints</span><svg class="ic"><use href="#i-right"/></svg></a></li>
+            <li data-k="budget comptes redevabilite"><a href="#"><b>Finances</b><span>Budget, comptes administratifs, redevabilité</span><svg class="ic"><use href="#i-right"/></svg></a></li>
+            <li data-k="population chiffres indicateurs"><a href="#"><b>Statistiques</b><span>Population, équipements et indicateurs de la commune</span><svg class="ic"><use href="#i-right"/></svg></a></li>
+            <li data-k="villes partenaires cooperation"><a href="#"><b>Jumelages</b><span>Villes partenaires et coopération décentralisée</span><svg class="ic"><use href="#i-right"/></svg></a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="empty" id="empty" hidden></p>
+    </div>
+  </section>
+
+  <section class="band band--mist" id="actualites" aria-labelledby="h-actus">
+    <div class="wrap">
+      <div class="head">
+        <h2 id="h-actus">Actualités</h2>
+        <a class="btn btn--line" href="#">Toutes les actualités</a>
+      </div>
+      <div class="news">
+        <ol class="stories">
+          <li class="story">
+            <time datetime="2026-10-05">5 octobre<small>2026</small></time>
+            <div>
+              <h3><a class="h3link" href="#">Session budgétaire du conseil municipal</a></h3>
+              <p>La quatrième session de l'année, consacrée au budget de la commune, a été convoquée pour le 5 octobre 2026.</p>
+            </div>
+          </li>
+          <li class="story">
+            <time datetime="2026-03">Mars<small>2026</small></time>
+            <div>
+              <h3><a class="h3link" href="#">Kloto 1, Kloto 2 et Kloto 3 s'unissent pour le climat</a></h3>
+              <p>Les trois communes ont créé l'intercommunalité «&nbsp;Solidarité Climat Kloto&nbsp;».</p>
+            </div>
+          </li>
+          <li class="story">
+            <time datetime="2025-11-12">12 novembre<small>2025</small></time>
+            <div>
+              <h3><a class="h3link" href="#">Le maire Kossi Afélété Atigaku prend ses fonctions</a></h3>
+              <p>La passation de service s'est tenue sous la présidence du préfet de Kloto.</p>
+            </div>
+          </li>
+        </ol>
+        <aside class="notices" aria-labelledby="h-notices">
+          <h3 id="h-notices"><svg class="ic"><use href="#i-horn"/></svg>Annonces et avis</h3>
+          <ul>
+            <li><span class="tag tag--tender">Appel d'offres</span><a href="#">Intitulé de l'avis d'appel d'offres</a></li>
+            <li><span class="tag">Communiqué</span><a href="#">Intitulé du communiqué de la mairie</a></li>
+            <li><span class="tag tag--job">Recrutement</span><a href="#">Intitulé du poste à pourvoir</a></li>
+          </ul>
+          <p class="more"><a class="textlink" href="#">Toutes les annonces<svg class="ic"><use href="#i-right"/></svg></a></p>
+        </aside>
+      </div>
+      <p class="source-note"><span class="todo">Articles d'exemple, repris de l'actualité publique de la commune. Les annonces sont des gabarits.</span></p>
+    </div>
+  </section>
+
+  <section class="band band--forest on-dark" id="en-bref" aria-labelledby="h-bref">
+    <div class="wrap brief">
+      <div class="map">
+        <svg viewBox="0 0 500 400" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Emplacement de la carte interactive des cantons">
+          <g fill="none" stroke="#fff" stroke-opacity=".2" stroke-width="1.3">
+            <ellipse cx="230" cy="210" rx="26" ry="16" transform="rotate(-18 230 210)"/>
+            <ellipse cx="233" cy="208" rx="56" ry="36" transform="rotate(-18 233 208)"/>
+            <ellipse cx="238" cy="205" rx="90" ry="58" transform="rotate(-18 238 205)"/>
+            <ellipse cx="244" cy="201" rx="126" ry="84" transform="rotate(-18 244 201)"/>
+            <ellipse cx="251" cy="197" rx="166" ry="112" transform="rotate(-18 251 197)"/>
+            <ellipse cx="259" cy="192" rx="208" ry="142" transform="rotate(-18 259 192)"/>
+            <ellipse cx="268" cy="187" rx="252" ry="174" transform="rotate(-18 268 187)"/>
+            <ellipse cx="278" cy="181" rx="298" ry="208" transform="rotate(-18 278 181)"/>
+            <ellipse cx="289" cy="175" rx="346" ry="244" transform="rotate(-18 289 175)"/>
+          </g>
+          <g transform="translate(232 196)">
+            <circle r="26" fill="#F2B01E" fill-opacity=".22"/>
+            <circle r="9" fill="#F2B01E"/>
+            <text x="18" y="-14" fill="#fff" font-family="Bricolage Grotesque, Segoe UI, sans-serif" font-weight="700" font-size="20">Kpalimé</text>
+            <text x="18" y="6" fill="#CFE2D8" font-family="Noto Sans, Segoe UI, sans-serif" font-size="13">chef-lieu de la commune</text>
+          </g>
+        </svg>
+        <span class="todo">Carte interactive : fond et limites des cantons à intégrer</span>
+      </div>
+      <div>
+        <h2 id="h-bref">Kloto&nbsp;1 en bref</h2>
+        <dl class="figures">
+          <div><dt>cantons</dt><dd>8</dd></div>
+          <div><dt>conseillers municipaux</dt><dd>19</dd></div>
+          <div><dt>kilomètres de Lomé, environ</dt><dd>120</dd></div>
+          <div><dt>habitants, chiffre à confirmer</dt><dd>75&nbsp;084</dd></div>
+        </dl>
+        <div class="cantons">
+          <h3 id="h-cantons">Les huit cantons</h3>
+          <ul aria-labelledby="h-cantons">
+            <li><button type="button" aria-pressed="false">Gbalavé</button></li>
+            <li><button type="button" aria-pressed="false">Hanyigba</button></li>
+            <li><button type="button" aria-pressed="false">Kpadapé</button></li>
+            <li><button type="button" aria-pressed="true">Kpalimé</button></li>
+            <li><button type="button" aria-pressed="false">Tomé</button></li>
+            <li><button type="button" aria-pressed="false">Tové</button></li>
+            <li><button type="button" aria-pressed="false">Womé</button></li>
+            <li><button type="button" aria-pressed="false">Yokélé</button></li>
+          </ul>
+          <p class="canton-note" id="canton-note" aria-live="polite">Canton de Kpalimé : fiche à venir, avec ses quartiers, sa chefferie et ses équipements.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band band--mist" id="signaler" aria-labelledby="h-rue">
+    <div class="wrap report">
+      <div class="intro">
+        <h2 id="h-rue">Dans ma rue</h2>
+        <p>Un dépôt d'ordures, un caniveau bouché, un lampadaire en panne&nbsp;? Signalez-le à la mairie avec le lieu et une photo.</p>
+        <ol class="steps">
+          <li><div><b>Vous décrivez le problème</b><span>Le type, l'endroit, une photo si possible.</span></div></li>
+          <li><div><b>La mairie le transmet</b><span>Le service technique concerné prend le relais.</span></div></li>
+          <li><div><b>Vous suivez le traitement</b><span>Un numéro de suivi vous est remis.</span></div></li>
+        </ol>
+      </div>
+      <div class="card" id="report-card">
+        <form class="form" id="report" novalidate>
+          <div class="field">
+            <label for="r-type">Type de problème</label>
+            <select id="r-type" required>
+              <option value="">Choisir</option>
+              <option>Dépôt sauvage d'ordures</option>
+              <option>Caniveau bouché</option>
+              <option>Éclairage public en panne</option>
+              <option>Route ou pont dégradé</option>
+              <option>Autre</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="r-canton">Canton</label>
+            <select id="r-canton" required>
+              <option value="">Choisir</option>
+              <option>Gbalavé</option><option>Hanyigba</option><option>Kpadapé</option><option>Kpalimé</option>
+              <option>Tomé</option><option>Tové</option><option>Womé</option><option>Yokélé</option>
+            </select>
+          </div>
+          <div class="field field--full">
+            <label for="r-lieu">Lieu précis</label>
+            <input id="r-lieu" type="text" required placeholder="Quartier, rue, repère connu">
+          </div>
+          <div class="field field--full">
+            <label for="r-desc">Description</label>
+            <textarea id="r-desc" placeholder="Ce que vous constatez, depuis quand"></textarea>
+          </div>
+          <div class="field field--full">
+            <span class="label">Photo</span>
+            <div class="upload">
+              <input id="r-photo" type="file" accept="image/*">
+              <label class="btn btn--line" for="r-photo"><svg class="ic"><use href="#i-camera"/></svg>Ajouter une photo</label>
+              <output id="r-photo-name" for="r-photo">Aucune photo jointe</output>
+            </div>
+          </div>
+          <div class="field field--full">
+            <label for="r-tel">Téléphone <small>facultatif, pour vous tenir informé</small></label>
+            <input id="r-tel" type="tel" inputmode="tel" autocomplete="tel" placeholder="+228">
+          </div>
+          <div class="submit">
+            <button class="btn btn--primary" type="submit">Envoyer le signalement</button>
+            <span class="error" id="report-error" role="alert" hidden></span>
+          </div>
+        </form>
+        <div class="done" id="report-done" hidden>
+          <span class="tick"><svg class="ic"><use href="#i-check"/></svg></span>
+          <h3 tabindex="-1" id="done-title">Signalement envoyé</h3>
+          <dl>
+            <dt>Problème</dt><dd id="done-type"></dd>
+            <dt>Lieu</dt><dd id="done-lieu"></dd>
+            <dt>Suivi</dt><dd class="nums">KL1-2026-0001</dd>
+          </dl>
+          <span class="todo">Démonstration : rien n'a été transmis à la mairie.</span>
+          <button class="btn btn--line" type="button" id="report-again">Faire un autre signalement</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" id="decouvrir" aria-labelledby="h-decouvrir">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <h2 id="h-decouvrir">Découvrir Kpalimé et ses environs</h2>
+          <p>Des monts boisés, des cascades et des ateliers d'artisans à quelques minutes du centre-ville.</p>
+        </div>
+        <a class="btn btn--line" href="#">Ouvrir la galerie</a>
+      </div>
+      <div class="rail" tabindex="0" role="group" aria-label="Lieux à découvrir, liste à faire défiler">
+
+        <article class="place">
+          <div class="vignette"><svg viewBox="0 0 240 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration : les crêtes du mont Kloto au lever du jour">
+            <rect width="240" height="300" fill="#DCEAE3"/>
+            <circle cx="176" cy="80" r="27" fill="#F2B01E"/>
+            <path fill="#A9CCBA" d="M0 150C40 120 80 110 120 132 160 150 200 110 240 124V300H0Z"/>
+            <path fill="#5C9C7C" d="M0 190C50 160 90 170 130 186 170 200 205 168 240 176V300H0Z"/>
+            <rect y="196" width="240" height="22" fill="#fff" opacity=".28"/>
+            <path fill="#1B7347" d="M0 232C60 208 110 214 150 228 190 240 215 226 240 220V300H0Z"/>
+            <path fill="#0F4A30" d="M0 268C60 252 130 256 240 270V300H0Z"/>
+            <path fill="none" stroke="#F3E2B4" stroke-width="3.500" stroke-linecap="round" d="M76 300C92 276 118 268 126 250 132 236 150 232 168 228"/>
+          </svg></div>
+          <h3>Mont Kloto</h3><p>Des sentiers en forêt et, par temps clair, la vue jusqu'au lac Volta.</p>
+        </article>
+
+        <article class="place">
+          <div class="vignette"><svg viewBox="0 0 240 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration : une cascade entre deux parois boisées">
+            <rect width="240" height="300" fill="#0F4A30"/>
+            <path fill="#1B5A3E" d="M0 0H98L104 44 92 122 100 204 82 300H0Z"/>
+            <path fill="#174F36" d="M240 0H150L144 62 156 132 146 212 162 300H240Z"/>
+            <path fill="#EAF4F2" d="M103 0H147L152 222H96Z"/>
+            <rect x="111" width="3" height="222" fill="#C4DEDB"/><rect x="127" width="2" height="222" fill="#C4DEDB"/><rect x="138" width="3" height="222" fill="#C4DEDB"/>
+            <ellipse cx="124" cy="250" rx="96" ry="32" fill="#2E8C95"/>
+            <ellipse cx="124" cy="238" rx="46" ry="12" fill="#D5ECEA"/>
+            <circle cx="20" cy="42" r="36" fill="#2C7250"/><circle cx="224" cy="72" r="32" fill="#2C7250"/>
+            <circle cx="8" cy="188" r="30" fill="#2C7250"/><circle cx="234" cy="198" r="34" fill="#2C7250"/>
+            <circle cx="46" cy="22" r="17" fill="#5C9C7C"/><circle cx="204" cy="38" r="15" fill="#5C9C7C"/>
+            <ellipse cx="48" cy="282" rx="28" ry="13" fill="#0B3A26"/><ellipse cx="192" cy="286" rx="32" ry="13" fill="#0B3A26"/>
+          </svg></div>
+          <h3>Cascade de Womé</h3><p>Une chute en pleine forêt, où l'on peut se baigner.</p>
+        </article>
+
+        <article class="place">
+          <div class="vignette"><svg viewBox="0 0 240 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration : un château de pierre sur une colline">
+            <rect width="240" height="300" fill="#E4EEE6"/>
+            <ellipse cx="62" cy="62" rx="32" ry="10" fill="#fff"/><ellipse cx="88" cy="54" rx="22" ry="9" fill="#fff"/>
+            <path fill="#5C9C7C" d="M0 212C60 172 180 172 240 208V300H0Z"/>
+            <g fill="#C9BFA6">
+              <rect x="84" y="130" width="84" height="68"/><rect x="62" y="104" width="32" height="94"/>
+              <rect x="62" y="95" width="8" height="10"/><rect x="74" y="95" width="8" height="10"/><rect x="86" y="95" width="8" height="10"/>
+              <rect x="98" y="121" width="9" height="10"/><rect x="114" y="121" width="9" height="10"/><rect x="130" y="121" width="9" height="10"/><rect x="146" y="121" width="8" height="10"/>
+            </g>
+            <g fill="#B3A98F"><rect x="154" y="114" width="28" height="84"/><rect x="154" y="105" width="7" height="10"/><rect x="164.500" y="105" width="7" height="10"/><rect x="175" y="105" width="7" height="10"/></g>
+            <g fill="#5B5444"><rect x="73" y="124" width="9" height="18" rx="4.500"/><rect x="164" y="134" width="8" height="16" rx="4"/><rect x="100" y="148" width="10" height="20" rx="5"/><rect x="140" y="148" width="10" height="20" rx="5"/><path d="M117 198V178a9 9 0 0 1 18 0V198Z"/></g>
+            <path fill="#1B7347" d="M0 252C80 228 160 234 240 254V300H0Z"/>
+            <circle cx="38" cy="218" r="24" fill="#0F4A30"/><circle cx="206" cy="220" r="26" fill="#0F4A30"/><circle cx="218" cy="194" r="14" fill="#0F4A30"/>
+          </svg></div>
+          <h3>Château Viale</h3><p>Une demeure de pierre sur les hauteurs, face aux monts.</p>
+        </article>
+
+        <article class="place">
+          <div class="vignette"><svg viewBox="0 0 240 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration : trois étoffes de batik suspendues à un fil">
+            <rect width="240" height="300" fill="#2C7250"/>
+            <rect y="278" width="240" height="22" fill="#0F4A30"/>
+            <path fill="none" stroke="#F3E2B4" stroke-width="2" d="M0 44Q120 60 240 44"/>
+            <rect x="22" y="50" width="64" height="200" rx="2" fill="#A8321F"/>
+            <circle cx="54" cy="92" r="15" fill="#F2B01E"/><circle cx="54" cy="150" r="17" fill="none" stroke="#F2B01E" stroke-width="6"/><circle cx="54" cy="150" r="5" fill="#F2B01E"/><circle cx="54" cy="208" r="15" fill="#F2B01E"/>
+            <rect x="96" y="55" width="54" height="214" rx="2" fill="#1F3A5F"/>
+            <g fill="#EAF4F2"><path d="M123 82 136 100 123 118 110 100Z"/><path d="M123 144 136 162 123 180 110 162Z"/><path d="M123 206 136 224 123 242 110 224Z"/></g>
+            <circle cx="123" cy="131" r="3.500" fill="#F2B01E"/><circle cx="123" cy="193" r="3.500" fill="#F2B01E"/><circle cx="123" cy="255" r="3.500" fill="#F2B01E"/>
+            <rect x="160" y="50" width="60" height="190" rx="2" fill="#F2B01E"/>
+            <g fill="#0F4A30"><rect x="160" y="78" width="60" height="9"/><rect x="160" y="110" width="60" height="9"/><rect x="160" y="142" width="60" height="9"/><rect x="160" y="174" width="60" height="9"/><rect x="160" y="206" width="60" height="9"/></g>
+            <g fill="#A8321F"><circle cx="175" cy="98.500" r="4"/><circle cx="190" cy="98.500" r="4"/><circle cx="205" cy="98.500" r="4"/><circle cx="175" cy="162.500" r="4"/><circle cx="190" cy="162.500" r="4"/><circle cx="205" cy="162.500" r="4"/></g>
+            <g fill="#F3E2B4"><rect x="34" y="44" width="5" height="12" rx="1"/><rect x="68" y="46" width="5" height="12" rx="1"/><rect x="106" y="49" width="5" height="12" rx="1"/><rect x="136" y="49" width="5" height="12" rx="1"/><rect x="170" y="46" width="5" height="12" rx="1"/><rect x="206" y="44" width="5" height="12" rx="1"/></g>
+          </svg></div>
+          <h3>Centre artisanal</h3><p>Batik, sculpture sur bois et poterie, du fabricant au visiteur.</p>
+        </article>
+
+        <article class="place">
+          <div class="vignette"><svg viewBox="0 0 240 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration : des cabosses de cacao sur leur branche">
+            <rect width="240" height="300" fill="#1B7347"/>
+            <ellipse cx="58" cy="70" rx="74" ry="27" fill="#2C7250" transform="rotate(-30 58 70)"/>
+            <ellipse cx="192" cy="58" rx="66" ry="24" fill="#0F4A30" transform="rotate(24 192 58)"/>
+            <ellipse cx="204" cy="246" rx="72" ry="26" fill="#2C7250" transform="rotate(-20 204 246)"/>
+            <ellipse cx="38" cy="254" rx="62" ry="22" fill="#0F4A30" transform="rotate(30 38 254)"/>
+            <path fill="none" stroke="#5C9C7C" stroke-width="2" d="M4 102 112 38M140 34 246 82M138 270 270 222"/>
+            <path fill="none" stroke="#5A3A22" stroke-width="11" stroke-linecap="round" d="M-10 150C60 130 150 160 250 120"/>
+            <path stroke="#5A3A22" stroke-width="4" d="M92 146V158M152 150V172M196 138V150"/>
+            <ellipse cx="92" cy="200" rx="25" ry="45" fill="#F2B01E"/>
+            <path fill="none" stroke="#C98D08" stroke-width="2" d="M92 157V243M80 163C73 190 75 216 84 238M104 163C111 190 109 216 100 238"/>
+            <ellipse cx="152" cy="210" rx="21" ry="40" fill="#C9541F"/>
+            <path fill="none" stroke="#8E3413" stroke-width="2" d="M152 172V248M142 178C136 200 138 224 145 242M162 178C168 200 166 224 159 242"/>
+            <ellipse cx="196" cy="176" rx="14" ry="27" fill="#9DC255"/>
+            <path fill="none" stroke="#5C9C7C" stroke-width="2" d="M196 151V201"/>
+            <g fill="#A8321F"><circle cx="38" cy="124" r="6.500"/><circle cx="51" cy="119" r="6.500"/><circle cx="45" cy="134" r="6.500"/></g><circle cx="58" cy="130" r="6.500" fill="#C9541F"/>
+          </svg></div>
+          <h3>Café et cacao</h3><p>Visites de plantations, de la cabosse à la dégustation.</p>
+        </article>
+
+        <article class="place">
+          <div class="vignette"><svg viewBox="0 0 240 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Illustration : une église à flèche, toit de tuiles rouges">
+            <rect width="240" height="300" fill="#DCEAE3"/>
+            <ellipse cx="184" cy="58" rx="30" ry="9" fill="#fff"/><ellipse cx="160" cy="50" rx="20" ry="8" fill="#fff"/>
+            <rect y="262" width="240" height="38" fill="#1B7347"/>
+            <rect x="96" y="150" width="98" height="112" fill="#EFE7D6"/>
+            <path fill="#A8321F" d="M88 151 145 102 202 151Z"/>
+            <rect x="52" y="92" width="44" height="170" fill="#E3D9C4"/>
+            <path fill="#A8321F" d="M47 93 74 22 101 93Z"/>
+            <g fill="#5B5444"><rect x="72.800" y="4" width="2.400" height="20"/><rect x="67" y="9" width="14" height="2.400"/><rect x="68" y="116" width="12" height="26" rx="6"/><rect x="68" y="164" width="12" height="26" rx="6"/></g>
+            <circle cx="145" cy="178" r="15" fill="#1F3A5F"/><circle cx="145" cy="178" r="6" fill="#F2B01E"/>
+            <g fill="#1F3A5F"><rect x="108" y="206" width="10" height="28" rx="5"/><rect x="172" y="206" width="10" height="28" rx="5"/></g>
+            <path fill="#5A3A22" d="M131 262V226a14 14 0 0 1 28 0V262Z"/>
+            <circle cx="20" cy="248" r="25" fill="#0F4A30"/><circle cx="224" cy="242" r="29" fill="#0F4A30"/><circle cx="204" cy="258" r="16" fill="#0F4A30"/>
+          </svg></div>
+          <h3>Cathédrale du Saint-Esprit</h3><p>Un édifice néogothique bâti en 1913, au cœur de la ville.</p>
+        </article>
+
+      </div>
+      <p class="rail-note"><span class="todo">Illustrations provisoires, à remplacer par les photos de la commune.</span></p>
+    </div>
+  </section>
+
+  <section class="band band--mist" id="mairie" aria-labelledby="h-mairie">
+    <div class="wrap">
+      <div class="head"><h2 id="h-mairie">La mairie et ses annexes</h2></div>
+      <div class="hall">
+        <div>
+          <h3>Hôtel de ville</h3>
+          <ul>
+            <li><svg class="ic"><use href="#i-pin"/></svg><span>Kpalimé, préfecture de Kloto<small>Adresse complète à renseigner</small></span></li>
+            <li><svg class="ic"><use href="#i-clock"/></svg><span class="nums">Du lundi au vendredi, 7&nbsp;h&nbsp;00 à 12&nbsp;h&nbsp;00 et 14&nbsp;h&nbsp;30 à 17&nbsp;h&nbsp;30<small>Horaires indicatifs</small></span></li>
+            <li><svg class="ic"><use href="#i-info"/></svg><span>Annexes et bureaux d'état civil des cantons<small>Liste à fournir par la mairie</small></span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Nous joindre</h3>
+          <ul>
+            <li><svg class="ic"><use href="#i-phone"/></svg><span>Standard&nbsp;: +228 ·· ·· ·· ··<small>Numéro à renseigner</small></span></li>
+            <li><svg class="ic"><use href="#i-mail"/></svg><span>Adresse e-mail de la mairie<small>À renseigner</small></span></li>
+            <li><svg class="ic"><use href="#i-wa"/></svg><span><a href="#">Écrire sur WhatsApp</a></span></li>
+          </ul>
+        </div>
+        <div class="newsletter">
+          <h3>Restez informés</h3>
+          <p>Les nouvelles de la commune, une fois par mois, par e-mail.</p>
+          <form id="newsletter" novalidate>
+            <label class="sr-only" for="n-mail">Votre adresse e-mail</label>
+            <input id="n-mail" type="email" required placeholder="nom@exemple.tg" autocomplete="email">
+            <button class="btn btn--primary" type="submit">S'abonner</button>
+          </form>
+          <output id="n-out" for="n-mail"></output>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer on-dark">
+  <div class="weave" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="f-state">
+          <span class="arms-plate"><img class="arms" src="assets/armoiries-togo.svg" width="58" height="84" alt="Armoiries de la République togolaise" loading="lazy" onerror="this.parentElement.hidden=true"></span>
+          <span><b>République togolaise</b><i>Travail, Liberté, Patrie</i></span>
+        </div>
+        <div class="f-commune">
+          <span class="logo-slot" role="img" aria-label="Emplacement du logo officiel de la commune de Kloto 1">Logo de la commune</span>
+          <span><b>Commune de Kloto&nbsp;1</b><i>Mairie de Kpalimé, région des Plateaux</i></span>
+        </div>
+      </div>
+      <div>
+        <h3>Liens utiles</h3>
+        <ul>
+          <li><a href="#top">Accueil</a></li>
+          <li><a href="#commune">À propos de la commune</a></li>
+          <li><a href="#services">État civil</a></li>
+          <li><a href="#actualites">Actualités</a></li>
+          <li><a href="#decouvrir">Galerie</a></li>
+          <li><a href="#mairie">Contact</a></li>
+          <li><a href="#signaler">Bureau du citoyen</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Commune</h3>
+        <ul>
+          <li><a href="#">Lois sur la décentralisation</a></li>
+          <li><a href="#maire">Conseil municipal</a></li>
+          <li><a href="#">Commissions permanentes</a></li>
+          <li><a href="#">Organigramme</a></li>
+          <li><a href="#en-bref">Cantons et quartiers</a></li>
+          <li><a href="#decouvrir">Découvrir la commune</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Suivre la mairie</h3>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">WhatsApp</a></li>
+          <li><a href="#">YouTube</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2026 Commune de Kloto 1. Maquette de démonstration, contenus à valider par la mairie.</span>
+      <span>Armoiries du Togo : dessin d'Edem Fiadjoe, <a href="https://commons.wikimedia.org/wiki/File:Armoiries_du_Togo.svg">Wikimedia Commons</a>, licence CC BY-SA 4.0.</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa" href="#mairie" aria-label="Écrire à la mairie sur WhatsApp"><svg class="ic"><use href="#i-wa"/></svg><span aria-hidden="true">Écrire sur WhatsApp</span></a>
+
+<script>
+(function(){
+  const $ = (s, r=document) => r.querySelector(s);
+  const $$ = (s, r=document) => [...r.querySelectorAll(s)];
+  const norm = s => s.normalize('NFD').replace(/[̀-ͯ]/g,'').toLowerCase().trim();
+
+  /* Navigation */
+  const nav = $('#nav'), burger = $('.burger');
+  const closeSubs = except => $$('.menu > li.open').forEach(li => {
+    if (li === except) return;
+    li.classList.remove('open','kb');
+    li.querySelector('button').setAttribute('aria-expanded','false');
+  });
+  $$('.menu > li > button').forEach(btn => btn.addEventListener('click', e => {
+    const li = btn.parentElement, open = !li.classList.contains('open');
+    closeSubs(li);
+    /* e.detail is 0 when the click comes from the keyboard */
+    li.classList.toggle('kb', e.detail === 0);
+    li.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', String(open));
+  }));
+  const closeNav = () => { nav.classList.remove('open'); burger.setAttribute('aria-expanded','false'); closeSubs(); };
+  burger.addEventListener('click', () => {
+    const open = !nav.classList.contains('open');
+    nav.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', String(open));
+    if (!open) closeSubs();
+  });
+  document.addEventListener('click', e => { if (!e.target.closest('.menu')) closeSubs(); });
+  document.addEventListener('keydown', e => {
+    if (e.key !== 'Escape') return;
+    const li = document.activeElement.closest('.menu > li.open');
+    closeSubs();
+    if (li) li.querySelector('button').focus();
+  });
+  $$('.menu a').forEach(a => a.addEventListener('click', closeNav));
+
+  /* Language switch (visual only in the mock-up) */
+  $$('.lang button').forEach(b => b.addEventListener('click', () => {
+    $$('.lang button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+  }));
+
+  /* Open or closed: Togo is on UTC all year */
+  (function(){
+    const el = $('#status'), now = new Date();
+    const day = now.getUTCDay(), min = now.getUTCHours()*60 + now.getUTCMinutes();
+    const slots = [[420,720],[870,1050]];
+    const fmt = v => Math.floor(v/60) + ' h ' + String(v%60).padStart(2,'0');
+    let open = false, text = '';
+    if (day >= 1 && day <= 5) {
+      const cur = slots.find(([a,b]) => min >= a && min < b);
+      const next = slots.find(([a]) => min < a);
+      if (cur) { open = true; text = 'Ouverte, ferme à ' + fmt(cur[1]); }
+      else if (next) text = 'Fermée, ouvre à ' + fmt(next[0]);
+      else text = 'Fermée, ouvre ' + (day === 5 ? 'lundi' : 'demain') + ' à ' + fmt(slots[0][0]);
+    } else text = 'Fermée, ouvre lundi à ' + fmt(slots[0][0]);
+    el.dataset.open = String(open);
+    el.textContent = text;
+  })();
+
+  /* Services filter */
+  const filter = $('#filter'), empty = $('#empty'), rows = $$('#guide li');
+  function applyFilter(){
+    const q = norm(filter.value);
+    let shown = 0;
+    rows.forEach(li => {
+      const hay = norm(li.textContent + ' ' + (li.dataset.k || ''));
+      const hit = !q || q.split(/\s+/).every(w => hay.includes(w));
+      li.hidden = !hit; if (hit) shown++;
+    });
+    $$('#guide .group').forEach(g => {
+      const n = $$('li:not([hidden])', g).length;
+      g.hidden = n === 0;
+      $('small', g).textContent = n + (n > 1 ? ' services' : ' service');
+    });
+    empty.hidden = shown > 0;
+    if (!shown) empty.textContent = 'Aucun service ne correspond à « ' + filter.value.trim() + ' ». Essayez « état civil », « taxes » ou « permis ».';
+  }
+  filter.addEventListener('input', applyFilter);
+  function searchFor(q){
+    filter.value = q; applyFilter();
+    /* A search is answered at once: jump to the results, no scroll animation */
+    $('#services').scrollIntoView({behavior:'instant'});
+    $('#h-services').focus({preventScroll:true});
+  }
+  $('#hero-search').addEventListener('submit', e => { e.preventDefault(); searchFor(e.target.q.value); });
+  $$('.chip[data-q]').forEach(c => c.addEventListener('click', e => { e.preventDefault(); searchFor(c.dataset.q); }));
+
+  /* Cantons */
+  const note = $('#canton-note');
+  $$('.cantons button').forEach(b => b.addEventListener('click', () => {
+    $$('.cantons button').forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+    note.textContent = 'Canton de ' + b.textContent + ' : fiche à venir, avec ses quartiers, sa chefferie et ses équipements.';
+  }));
+
+  /* Report form (demo: nothing is sent) */
+  const form = $('#report'), done = $('#report-done'), err = $('#report-error');
+  $('#r-photo').addEventListener('change', e => {
+    $('#r-photo-name').textContent = e.target.files[0] ? e.target.files[0].name : 'Aucune photo jointe';
+  });
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    const missing = $$('[required]', form).filter(f => !f.value.trim());
+    if (missing.length) {
+      err.hidden = false;
+      err.textContent = 'Il manque : ' + missing.map(f => $('label[for="'+f.id+'"]').firstChild.textContent.trim().toLowerCase()).join(', ') + '.';
+      missing[0].focus();
+      return;
+    }
+    err.hidden = true;
+    $('#done-type').textContent = $('#r-type').value;
+    $('#done-lieu').textContent = $('#r-lieu').value.trim() + ', canton de ' + $('#r-canton').value;
+    form.hidden = true; done.hidden = false;
+    $('#done-title').focus();
+  });
+  $('#report-again').addEventListener('click', () => {
+    form.reset(); $('#r-photo-name').textContent = 'Aucune photo jointe';
+    done.hidden = true; form.hidden = false; $('#r-type').focus();
+  });
+
+  /* Newsletter (demo) */
+  $('#newsletter').addEventListener('submit', e => {
+    e.preventDefault();
+    const input = $('#n-mail'), out = $('#n-out');
+    if (!input.value.trim() || !input.checkValidity()) { out.style.color = '#8A2A1A'; out.textContent = 'Saisissez une adresse e-mail valide, par exemple nom@exemple.tg.'; input.focus(); return; }
+    out.style.color = ''; out.textContent = 'Abonnement enregistré (démonstration).'; input.value = '';
+  });
+})();
+</script>
+</body>
+</html>

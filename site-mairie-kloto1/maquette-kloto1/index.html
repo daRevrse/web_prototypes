@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Commune de Kloto 1 | Mairie de Kpalimé (maquette)</title>
+<meta name="description" content="Maquette du site de la mairie de Kloto 1 (Kpalimé) : démarches, actualités, services.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body id="top" data-page="index">
+
+<a class="skip-link" href="#content">Aller au contenu</a>
+<p class="mock-bar">Maquette de démonstration : les contenus sont indicatifs et restent à valider par la mairie.</p>
+
+<div class="top-bar">
+  <div class="container">
+    <p class="hours">Mairie ouverte du lundi au vendredi, de 7&nbsp;h&nbsp;00 à 12&nbsp;h&nbsp;00 et de 14&nbsp;h&nbsp;30 à 17&nbsp;h&nbsp;30. <span id="status"></span></p>
+    <div class="top-links">
+      <ul aria-label="Réseaux sociaux">
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">WhatsApp</a></li>
+        <li><a href="#">YouTube</a></li>
+      </ul>
+      <ul class="lang" aria-label="Langue du site">
+        <li><button type="button" aria-pressed="true">FR</button></li>
+        <li><button type="button" aria-pressed="false">EN</button></li>
+        <li><button type="button" aria-pressed="false" lang="ee">Eʋe</button></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <a class="site-branding" href="index.html">
+      <img src="assets/armoiries-togo.svg" width="61" height="88" alt="Armoiries de la République togolaise">
+      <span>
+        <span class="site-state">République togolaise</span>
+        <span class="site-title">Commune de Kloto&nbsp;1</span>
+        <span class="site-description">Mairie de Kpalimé, région des Plateaux</span>
+      </span>
+    </a>
+    <form class="search-form" role="search" id="header-search" action="index.html#services" method="get">
+      <label class="screen-reader-text" for="s">Rechercher sur le site</label>
+      <input type="search" id="s" name="s" placeholder="Rechercher" autocomplete="off">
+      <button class="button" type="submit">Rechercher</button>
+    </form>
+    <span class="logo-slot" role="img" aria-label="Emplacement du logo officiel de la commune de Kloto 1">Logo de la commune</span>
+  </div>
+</header>
+
+<nav class="main-navigation" id="site-navigation" aria-label="Menu principal">
+  <button class="menu-toggle" type="button" aria-controls="primary-menu" aria-expanded="false">Menu</button>
+  <div class="container">
+    <ul class="menu" id="primary-menu">
+      <li data-nav="index" class="current-menu-item"><a aria-current="page" href="index.html">Accueil</a></li>
+      <li data-nav="a-propos" class="menu-item-has-children"><a href="a-propos.html">À propos</a>
+        <ul class="sub-menu">
+          <li><a href="a-propos.html#commune">La commune de Kloto 1</a></li>
+          <li><a href="a-propos.html#decentralisation">La décentralisation au Togo</a></li>
+          <li><a href="a-propos.html#vision">Notre vision</a></li>
+        </ul>
+      </li>
+      <li class="menu-item-has-children">
+        <button type="button" aria-expanded="false">Commune</button>
+        <ul class="sub-menu">
+          <li><a href="#">Organisation de la commune</a></li>
+          <li><a href="index.html#maire">Conseil municipal</a></li>
+          <li><a href="#">Organigramme</a></li>
+          <li><a href="a-propos.html#cantons">Cantons et quartiers</a></li>
+          <li><a href="#">Comités de développement de quartier</a></li>
+          <li><a href="index.html#galerie">À la découverte de la commune</a></li>
+          <li><a href="#">Jumelages</a></li>
+        </ul>
+      </li>
+      <li class="menu-item-has-children">
+        <button type="button" aria-expanded="false">Mairie</button>
+        <ul class="sub-menu sub-menu--wide">
+          <li><a href="index.html#maire">Bureau exécutif</a></li>
+          <li><a href="index.html#services">État civil</a></li>
+          <li><a href="index.html#services">Éducation</a></li>
+          <li><a href="index.html#services">Santé</a></li>
+          <li><a href="index.html#services">Culture</a></li>
+          <li><a href="index.html#services">Urbanisme</a></li>
+          <li><a href="index.html#services">Environnement</a></li>
+          <li><a href="index.html#services">Tourisme</a></li>
+          <li><a href="index.html#services">Sécurité</a></li>
+          <li><a href="index.html#services">Emploi</a></li>
+          <li><a href="index.html#services">Social</a></li>
+          <li><a href="index.html#services">Taxes</a></li>
+          <li><a href="index.html#services">Finances</a></li>
+          <li><a href="index.html#services">Statistiques</a></li>
+          <li><a href="index.html#services">Marchés publics</a></li>
+        </ul>
+      </li>
+      <li class="menu-item-has-children">
+        <button type="button" aria-expanded="false">Projets</button>
+        <ul class="sub-menu">
+          <li><a href="#">Plan de développement communal</a></li>
+          <li><a href="#">Proposer un projet</a></li>
+          <li><a href="#">Devenir partenaire d'un projet</a></li>
+          <li><a href="#">Investisseurs</a></li>
+        </ul>
+      </li>
+      <li data-nav="actualites" class="menu-item-has-children"><a href="actualites.html">Actualités</a>
+        <ul class="sub-menu">
+          <li><a href="actualites.html">Actualité presse</a></li>
+          <li><a href="actualites.html#videos">Actualité vidéo</a></li>
+          <li><a href="actualites.html#annonces">Annonces</a></li>
+        </ul>
+      </li>
+      <li><a href="index.html#galerie">Galerie</a></li>
+      <li data-nav="contact"><a href="contact.html">Contact</a></li>
+      <li class="menu-highlight"><a href="index.html#signaler">Bureau du citoyen</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main id="content">
+
+  <section class="hero" aria-labelledby="hero-title">
+    <img src="assets/photos/hero-collines.jpg" width="1920" height="1440" alt="Les collines boisées autour de Kpalimé">
+    <div class="container">
+      <div class="hero-box">
+        <h1 id="hero-title">Bienvenue à la commune de Kloto&nbsp;1</h1>
+        <p>Kpalimé, région des Plateaux, République togolaise.</p>
+        <div class="hero-buttons">
+          <a class="button button-primary" href="a-propos.html">Découvrir la commune</a>
+          <a class="button" href="#services">Démarches administratives</a>
+        </div>
+        <div class="hero-buttons">
+          <a class="button" href="#en-bref">Kloto 1 en bref</a>
+          <a class="button" href="#">Investisseurs</a>
+          <a class="button" href="#annonces">Annonces</a>
+        </div>
+      </div>
+    </div>
+    <p class="hero-credit">Les collines de Kpalimé. Photo Etechnopole, CC BY-SA 3.0</p>
+  </section>
+
+  <section class="section" id="commune" aria-labelledby="commune-title">
+    <div class="container columns-2">
+      <figure class="wp-caption">
+        <img src="assets/photos/rue-kpalime.jpg" width="960" height="720" alt="Une route bordée d'arbres à Kpalimé" loading="lazy">
+        <figcaption>Une rue de Kpalimé. Photo François Jake Green, CC BY 3.0</figcaption>
+      </figure>
+      <div class="entry-content">
+        <h2 class="entry-title" id="commune-title">La commune de Kloto&nbsp;1</h2>
+        <p>Kloto 1 est l'une des trois communes de la préfecture de Kloto, dans la région des Plateaux. Son chef-lieu, Kpalimé, se trouve à environ 120&nbsp;km au nord-ouest de Lomé, près de la frontière du Ghana.</p>
+        <p>Créée par la loi n°&nbsp;2017-008 du 29 juin 2017 portant création des communes au Togo, elle réunit huit cantons&nbsp;: Gbalavé, Hanyigba, Kpadapé, Kpalimé, Tomé, Tové, Womé et Yokélé. Kpalimé est aussi une ville touristique, connue pour ses forêts, ses cascades, son artisanat et ses plantations de café et de cacao.</p>
+        <p><a class="button" href="a-propos.html">En savoir plus</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-grey" id="maire" aria-labelledby="maire-title">
+    <div class="container">
+      <div class="mayor">
+        <div class="portrait-col">
+          <div class="portrait-slot">Portrait officiel du maire, à fournir par la mairie</div>
+          <p class="mayor-name">Kossi Afélété Atigaku</p>
+          <p class="mayor-role">Maire de Kloto 1, mandat 2025-2031</p>
+        </div>
+        <div class="entry-content">
+          <h2 class="entry-title" id="maire-title">Mot du maire</h2>
+          <p>Élu le 17 octobre 2025 par le conseil municipal, le maire a pris ses fonctions le 12 novembre 2025. Il a placé son mandat sous trois engagements&nbsp;:</p>
+          <ul>
+            <li>une gouvernance participative&nbsp;;</li>
+            <li>une gestion administrative et financière rigoureuse&nbsp;;</li>
+            <li>un meilleur accès aux services sociaux de base.</li>
+          </ul>
+          <p class="note">Le texte intégral du mot du maire sera fourni par son cabinet.</p>
+          <p><a class="button" href="#">Voir plus</a></p>
+        </div>
+      </div>
+      <div class="bureau">
+        <table class="data-table">
+          <caption>Le bureau exécutif</caption>
+          <thead><tr><th scope="col">Fonction</th><th scope="col">Nom</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Maire</th><td>Kossi Afélété Atigaku</td></tr>
+            <tr><th scope="row">Premier adjoint</th><td>Kossi Eugène Nyawuame</td></tr>
+            <tr><th scope="row">Deuxième adjointe</th><td>Koudourëme Egoulou</td></tr>
+            <tr><th scope="row">Troisième adjoint</th><td>Kwasi Prosper Kwadzo-Akpotsui</td></tr>
+          </tbody>
+        </table>
+        <p><a class="more-link" href="#">Voir les 19 membres du conseil municipal</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services" aria-labelledby="services-title">
+    <div class="container">
+      <h2 class="section-title" id="services-title" tabindex="-1">Les services de la mairie</h2>
+      <p class="section-intro">Dix-sept domaines d'action, classés selon ce que vous venez y faire.</p>
+      <div class="services-search">
+        <label class="screen-reader-text" for="filter">Filtrer les services</label>
+        <input type="search" id="filter" placeholder="Filtrer : état civil, permis, taxes" autocomplete="off">
+      </div>
+      <div class="columns-3" id="guide">
+        <div class="service-group">
+          <h3>Vos démarches</h3>
+          <ul>
+            <li data-k="naissance mariage deces acte certificat legalisation copie livret"><a href="#"><strong>État civil</strong><span>Naissance, mariage, décès, légalisation de documents</span></a></li>
+            <li data-k="permis construire lotissement terrain domaine"><a href="#"><strong>Urbanisme</strong><span>Permis de construire, lotissement, occupation du domaine public</span></a></li>
+            <li data-k="taxes redevances payer impots marche"><a href="#"><strong>Taxes</strong><span>Taxes et redevances communales, où et comment payer</span></a></li>
+            <li data-k="appel offres attribution fournisseurs"><a href="#"><strong>Marchés publics</strong><span>Avis d'appel d'offres et résultats d'attribution</span></a></li>
+            <li data-k="recrutement offres travail stage"><a href="#"><strong>Emploi</strong><span>Offres de la mairie et opportunités dans la commune</span></a></li>
+          </ul>
+        </div>
+        <div class="service-group">
+          <h3>Vivre à Kloto 1</h3>
+          <ul>
+            <li data-k="ecoles cantines scolaire"><a href="#"><strong>Éducation</strong><span>Écoles, cantines et appui aux établissements</span></a></li>
+            <li data-k="centres vaccination hygiene hopital"><a href="#"><strong>Santé</strong><span>Centres de santé, campagnes de vaccination, hygiène</span></a></li>
+            <li data-k="aide vulnerables jeunesse genre"><a href="#"><strong>Social</strong><span>Aide aux personnes vulnérables, jeunesse, genre</span></a></li>
+            <li data-k="prevention protection civile urgences numeros"><a href="#"><strong>Sécurité</strong><span>Prévention, protection civile, numéros utiles</span></a></li>
+            <li data-k="dechets ordures assainissement espaces verts caniveau"><a href="#"><strong>Environnement</strong><span>Collecte des déchets, assainissement, espaces verts</span></a></li>
+            <li data-k="fetes traditions artisanat batik"><a href="#"><strong>Culture</strong><span>Fêtes traditionnelles, artisanat, équipements culturels</span></a></li>
+            <li data-k="sites visiter guides hebergement cascade mont"><a href="#"><strong>Tourisme</strong><span>Sites à visiter, guides et hébergements</span></a></li>
+          </ul>
+        </div>
+        <div class="service-group">
+          <h3>La vie municipale</h3>
+          <ul>
+            <li data-k="elus conseillers sessions deliberations"><a href="#"><strong>Conseil municipal</strong><span>Les 19 élus, les sessions et les délibérations</span></a></li>
+            <li data-k="maire adjoints"><a href="#"><strong>Bureau exécutif</strong><span>Le maire et ses trois adjoints</span></a></li>
+            <li data-k="budget comptes redevabilite"><a href="#"><strong>Finances</strong><span>Budget, comptes administratifs, redevabilité</span></a></li>
+            <li data-k="population chiffres indicateurs"><a href="#"><strong>Statistiques</strong><span>Population, équipements et indicateurs de la commune</span></a></li>
+            <li data-k="villes partenaires cooperation"><a href="#"><strong>Jumelages</strong><span>Villes partenaires et coopération décentralisée</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="no-results" id="empty" hidden></p>
+    </div>
+  </section>
+
+  <section class="section section-grey" id="actualites" aria-labelledby="actus-title">
+    <div class="container">
+      <h2 class="section-title" id="actus-title">Actualités</h2>
+      <div class="columns-3">
+        <article class="post">
+          <img src="assets/photos/carrefour-kpalime.jpg" width="960" height="720" alt="Un carrefour de Kpalimé" loading="lazy">
+          <div class="post-body">
+            <p class="post-meta">Publié le <time datetime="2026-10-05">5 octobre 2026</time></p>
+            <h3><a href="#">Session budgétaire du conseil municipal</a></h3>
+            <p>La quatrième session de l'année, consacrée au budget de la commune, a été convoquée pour le 5 octobre 2026.</p>
+            <a class="more-link" href="#">Tout lire</a>
+          </div>
+        </article>
+        <article class="post">
+          <img src="assets/photos/panorama-kloto.jpg" width="960" height="545" alt="Vue sur les collines de la préfecture de Kloto" loading="lazy">
+          <div class="post-body">
+            <p class="post-meta">Publié en <time datetime="2026-03">mars 2026</time></p>
+            <h3><a href="#">Kloto 1, Kloto 2 et Kloto 3 s'unissent pour le climat</a></h3>
+            <p>Les trois communes ont créé l'intercommunalité «&nbsp;Solidarité Climat Kloto&nbsp;».</p>
+            <a class="more-link" href="#">Tout lire</a>
+          </div>
+        </article>
+        <article class="post">
+          <img src="assets/photos/prefecture-kloto.jpg" width="960" height="720" alt="Le bâtiment de la préfecture de Kloto" loading="lazy">
+          <div class="post-body">
+            <p class="post-meta">Publié le <time datetime="2025-11-12">12 novembre 2025</time></p>
+            <h3><a href="#">Le maire Kossi Afélété Atigaku prend ses fonctions</a></h3>
+            <p>La passation de service s'est tenue sous la présidence du préfet de Kloto.</p>
+            <a class="more-link" href="#">Tout lire</a>
+          </div>
+        </article>
+      </div>
+      <p class="note" style="margin:14px 0 0;text-align:center">Articles d'exemple repris de l'actualité publique de la commune ; les photos sont des photos d'illustration.</p>
+      <p class="section-footer"><a class="button" href="actualites.html">Toutes les actualités</a></p>
+
+      <div class="notices" id="annonces">
+        <table class="data-table">
+          <caption>Annonces et avis</caption>
+          <thead><tr><th scope="col">Type</th><th scope="col">Intitulé</th><th scope="col">Date</th></tr></thead>
+          <tbody>
+            <tr><td>Appel d'offres</td><td><a href="#">Intitulé de l'avis d'appel d'offres</a></td><td>Date de publication</td></tr>
+            <tr><td>Communiqué</td><td><a href="#">Intitulé du communiqué de la mairie</a></td><td>Date de publication</td></tr>
+            <tr><td>Recrutement</td><td><a href="#">Intitulé du poste à pourvoir</a></td><td>Date de publication</td></tr>
+          </tbody>
+        </table>
+        <p style="margin:12px 0 0"><a class="more-link" href="actualites.html#annonces">Toutes les annonces</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-green" id="en-bref" aria-labelledby="bref-title">
+    <div class="container">
+      <h2 class="section-title" id="bref-title">Kloto&nbsp;1 en bref</h2>
+      <dl class="counters">
+        <div><dt>cantons</dt><dd>8</dd></div>
+        <div><dt>conseillers municipaux</dt><dd>19</dd></div>
+        <div><dt>km de Lomé, environ</dt><dd>120</dd></div>
+        <div><dt>habitants (à confirmer)</dt><dd>75&nbsp;084</dd></div>
+      </dl>
+      <div class="cantons">
+        <h3>Les huit cantons</h3>
+        <ul>
+          <li><a href="#">Gbalavé</a></li>
+          <li><a href="#">Hanyigba</a></li>
+          <li><a href="#">Kpadapé</a></li>
+          <li><a href="#">Kpalimé</a></li>
+          <li><a href="#">Tomé</a></li>
+          <li><a href="#">Tové</a></li>
+          <li><a href="#">Womé</a></li>
+          <li><a href="#">Yokélé</a></li>
+        </ul>
+        <p class="note">La carte interactive des cantons sera intégrée ici.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="signaler" aria-labelledby="rue-title">
+    <div class="container columns-2">
+      <div class="entry-content">
+        <h2 class="entry-title" id="rue-title">Dans ma rue</h2>
+        <p>Pour améliorer les espaces publics de la commune, la mairie met à la disposition des habitants un formulaire de signalement. Un dépôt d'ordures, un caniveau bouché, un lampadaire en panne&nbsp;? Décrivez le problème et joignez une photo.</p>
+        <ol class="steps">
+          <li>Vous décrivez le problème, le lieu, et joignez une photo si possible.</li>
+          <li>La mairie transmet au service technique concerné.</li>
+          <li>Vous recevez un numéro de suivi.</li>
+        </ol>
+      </div>
+      <div id="report-card">
+        <form class="wpforms" id="report" novalidate>
+          <div class="form-row">
+            <div class="field">
+              <label for="r-type">Type de problème</label>
+              <select id="r-type" required>
+                <option value="">Choisir</option>
+                <option>Dépôt sauvage d'ordures</option>
+                <option>Caniveau bouché</option>
+                <option>Éclairage public en panne</option>
+                <option>Route ou pont dégradé</option>
+                <option>Autre</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="r-canton">Canton</label>
+              <select id="r-canton" required>
+                <option value="">Choisir</option>
+                <option>Gbalavé</option><option>Hanyigba</option><option>Kpadapé</option><option>Kpalimé</option>
+                <option>Tomé</option><option>Tové</option><option>Womé</option><option>Yokélé</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="r-lieu">Lieu précis</label>
+            <input id="r-lieu" type="text" required placeholder="Quartier, rue, repère connu">
+          </div>
+          <div class="field">
+            <label for="r-desc">Description</label>
+            <textarea id="r-desc" placeholder="Ce que vous constatez, depuis quand"></textarea>
+          </div>
+          <div class="field">
+            <label for="r-photo">Photo</label>
+            <input id="r-photo" type="file" accept="image/*">
+          </div>
+          <div class="field">
+            <label for="r-tel">Téléphone <small>(facultatif, pour vous tenir informé)</small></label>
+            <input id="r-tel" type="tel" inputmode="tel" autocomplete="tel" placeholder="+228">
+          </div>
+          <button class="button" type="submit">Envoyer</button>
+          <p class="form-error" id="report-error" role="alert" hidden></p>
+        </form>
+        <div class="notice" id="report-done" hidden>
+          <h3 tabindex="-1" id="done-title">Signalement envoyé</h3>
+          <dl>
+            <dt>Problème</dt><dd id="done-type"></dd>
+            <dt>Lieu</dt><dd id="done-lieu"></dd>
+            <dt>Numéro de suivi</dt><dd>KL1-2026-0001</dd>
+          </dl>
+          <p class="note">Démonstration : rien n'a été transmis à la mairie.</p>
+          <button class="button button-outline" type="button" id="report-again">Faire un autre signalement</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-grey" id="galerie" aria-labelledby="galerie-title">
+    <div class="container">
+      <h2 class="section-title" id="galerie-title">Galerie</h2>
+      <p class="section-intro">Kpalimé et ses environs en images.</p>
+      <div class="gallery">
+        <figure class="gallery-item">
+          <img src="assets/photos/collines-kpalime.jpg" width="960" height="720" alt="Collines verdoyantes sous les nuages" loading="lazy">
+          <figcaption><strong>Les collines de Kpalimé</strong>Forêts et sentiers à la sortie de la ville</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="assets/photos/cascade-wome.jpg" width="960" height="720" alt="La cascade de Womé au milieu de la forêt" loading="lazy">
+          <figcaption><strong>Cascade de Womé</strong>Une chute en pleine forêt, où l'on peut se baigner</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="assets/photos/chateau-viale.jpg" width="960" height="640" alt="Le château Viale, bâtisse de pierre à tour carrée" loading="lazy">
+          <figcaption><strong>Château Viale</strong>Une demeure de pierre sur les hauteurs</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="assets/photos/cathedrale.jpg" width="960" height="640" alt="La cathédrale du Saint-Esprit de Kpalimé et son toit rouge" loading="lazy">
+          <figcaption><strong>Cathédrale du Saint-Esprit</strong>Édifice néogothique bâti en 1913</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="assets/photos/marche-kpalime.jpg" width="960" height="723" alt="Étal de tomates au marché de Kpalimé" loading="lazy">
+          <figcaption><strong>Marché de Kpalimé</strong>Les étals de produits frais</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="assets/photos/cacao.jpg" width="960" height="720" alt="Une cabosse de cacao rouge sur le tronc d'un cacaoyer" loading="lazy">
+          <figcaption><strong>Cacao de la région</strong>Cabosse dans la forêt classée d'Agou</figcaption>
+        </figure>
+      </div>
+      <p class="section-footer"><a class="button" href="#">Découvrir notre galerie</a></p>
+    </div>
+  </section>
+
+  <section class="section" id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <h2 class="section-title" id="contact-title">Mairie et annexes</h2>
+      <div class="columns-3">
+        <div class="widget">
+          <h3 class="widget-title">Hôtel de ville</h3>
+          <ul>
+            <li>Kpalimé, préfecture de Kloto <small>Adresse complète à renseigner</small></li>
+            <li>Du lundi au vendredi, de 7&nbsp;h&nbsp;00 à 12&nbsp;h&nbsp;00 et de 14&nbsp;h&nbsp;30 à 17&nbsp;h&nbsp;30 <small>Horaires indicatifs</small></li>
+            <li>Annexes et bureaux d'état civil des cantons <small>Liste à fournir par la mairie</small></li>
+          </ul>
+        </div>
+        <div class="widget">
+          <h3 class="widget-title">Nous joindre</h3>
+          <ul>
+            <li>Téléphone&nbsp;: +228 <small>Numéro à renseigner</small></li>
+            <li>E-mail de la mairie <small>Adresse à renseigner</small></li>
+            <li><a href="#">Écrire à la mairie sur WhatsApp</a></li>
+            <li><a href="contact.html">Toutes les coordonnées et le formulaire de contact</a></li>
+          </ul>
+        </div>
+        <div class="widget">
+          <h3 class="widget-title">Restez informés</h3>
+          <p>Inscrivez-vous à la lettre d'information de la commune.</p>
+          <form class="newsletter-form" id="newsletter" novalidate>
+            <label class="screen-reader-text" for="n-mail">Votre adresse e-mail</label>
+            <input id="n-mail" type="email" required placeholder="nom@exemple.tg" autocomplete="email">
+            <button class="button" type="submit">S'inscrire</button>
+          </form>
+          <p class="form-message" id="n-out" role="status"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-widgets">
+    <div>
+      <div class="footer-state">
+        <span class="arms-box"><img src="assets/armoiries-togo.svg" width="60" height="86" alt="Armoiries de la République togolaise" loading="lazy"></span>
+        <span><strong>République togolaise</strong>Travail, Liberté, Patrie</span>
+      </div>
+      <div class="footer-commune">
+        <span class="logo-slot" role="img" aria-label="Emplacement du logo officiel de la commune de Kloto 1">Logo de la commune</span>
+        <span><strong>Commune de Kloto&nbsp;1</strong>Mairie de Kpalimé, région des Plateaux</span>
+      </div>
+    </div>
+    <div class="widget">
+      <h3 class="widget-title">Liens utiles</h3>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="a-propos.html">À propos de la commune</a></li>
+        <li><a href="index.html#services">État civil</a></li>
+        <li><a href="actualites.html">Actualités</a></li>
+        <li><a href="index.html#galerie">Galerie</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html#signaler">Bureau du citoyen</a></li>
+      </ul>
+    </div>
+    <div class="widget">
+      <h3 class="widget-title">Commune</h3>
+      <ul>
+        <li><a href="a-propos.html#decentralisation">Lois sur la décentralisation</a></li>
+        <li><a href="index.html#maire">Conseil municipal</a></li>
+        <li><a href="#">Commissions permanentes</a></li>
+        <li><a href="#">Organigramme</a></li>
+        <li><a href="a-propos.html#cantons">Cantons et quartiers</a></li>
+        <li><a href="index.html#galerie">À la découverte de la commune</a></li>
+      </ul>
+    </div>
+    <div class="widget">
+      <h3 class="widget-title">Nos réseaux</h3>
+      <ul>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">WhatsApp</a></li>
+        <li><a href="#">YouTube</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="site-info">
+    <div class="container">
+      <p>© 2026 Commune de Kloto 1. Tous droits réservés. Maquette de démonstration, contenus à valider par la mairie.</p>
+      <p>Crédits, via <a href="https://commons.wikimedia.org/">Wikimedia Commons</a>. Armoiries du Togo : Edem Fiadjoe, CC BY-SA 4.0. Photos : Etechnopole (collines du bandeau, panorama), CC BY-SA 3.0 ; François Jake Green (rue et collines de Kpalimé), CC BY 3.0 ; Akouete (carrefour, préfecture), CC BY-SA 4.0 ; Visitez Kpalimé (cathédrale, château Viale), CC BY-SA 4.0 ; Ubkoumbogny (cascade de Womé), CC BY-SA 4.0 ; Alfrednadjere (marché), CC BY-SA 4.0 ; Ametovena Kodjo Elom Ezéchiel (cacao), CC BY-SA 4.0. Carte : © contributeurs d'OpenStreetMap.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -139,6 +139,19 @@
     /* Déclarations et appels d'offres */
     $("#news-list").innerHTML = NEWS.map((n) => `<li><a href="${n.url}"><strong${n.lang === "EN" ? ' lang="en"' : ""}>${esc(n.title)}</strong><span class="meta"><span class="t">${n.type}</span><time datetime="${n.date}">${date(n.date)}</time>${n.lang === "EN" ? "<span>En anglais</span>" : ""}</span></a></li>`).join("");
     $("#jobs-list").innerHTML = JOBS.map((n) => `<li><a href="${n.url}"><strong>${esc(n.title)}</strong><span class="meta"><span class="t">${n.type}</span><time datetime="${n.date}">Publié le ${date(n.date)}</time></span></a></li>`).join("");
+
+    /* Carrousel Hero */
+    const slides = $$("#heroCarousel .slide");
+    const creditEl = $("#heroCredit");
+    if (slides.length > 1 && creditEl) {
+      let cur = 0;
+      setInterval(() => {
+        slides[cur].classList.remove("active");
+        cur = (cur + 1) % slides.length;
+        slides[cur].classList.add("active");
+        creditEl.textContent = slides[cur].dataset.credit || "";
+      }, 5000);
+    }
   }
 
   /* ---------- Qui sommes-nous ---------- */

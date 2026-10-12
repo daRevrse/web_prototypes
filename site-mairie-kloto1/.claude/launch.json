@@ -1,0 +1,15 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "maquette-kloto1",
+      "runtimeExecutable": "powershell",
+      "runtimeArgs": [
+        "-NoProfile",
+        "-Command",
+        "$root = (Resolve-Path 'C:/Users/USER/Desktop/site-mairie-kloto1/maquette-kloto1').Path; $l = New-Object System.Net.HttpListener; $l.Prefixes.Add('http://localhost:4174/'); $l.Start(); Write-Host 'listening on 4174'; while ($l.IsListening) { $c = $l.GetContext(); $p = [Uri]::UnescapeDataString($c.Request.Url.AbsolutePath).TrimStart('/'); if (-not $p) { $p = 'index.html' }; $f = Join-Path $root $p; if ((Test-Path -LiteralPath $f -PathType Leaf) -and ((Resolve-Path -LiteralPath $f).Path.StartsWith($root))) { $b = [IO.File]::ReadAllBytes($f); $t = @{'.html'='text/html; charset=utf-8';'.css'='text/css';'.js'='text/javascript';'.svg'='image/svg+xml';'.png'='image/png';'.jpg'='image/jpeg'}[[IO.Path]::GetExtension($f)]; if (-not $t) { $t = 'application/octet-stream' }; $c.Response.ContentType = $t; $c.Response.Headers.Add('Cache-Control','no-store'); $c.Response.OutputStream.Write($b,0,$b.Length) } else { $c.Response.StatusCode = 404 }; $c.Response.Close() }"
+      ],
+      "port": 4174
+    }
+  ]
+}
