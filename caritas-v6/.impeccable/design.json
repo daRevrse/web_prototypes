@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-19T10:10:28Z",
+  "title": "Design System: Caritas Africa (v6)",
+  "extensions": {
+    "colorMeta": {
+      "wine": { "role": "primary", "displayName": "Logo Wine", "canonical": "#7c0800", "tonalRamp": ["#2a0300", "#420400", "#650600", "#7c0800", "#a3372f", "#c9706a", "#e8b5b1", "#f8e4e2"] },
+      "wine-hover": { "role": "primary", "displayName": "Wine Hover", "canonical": "#650600" },
+      "coral": { "role": "secondary", "displayName": "Cover Coral", "canonical": "#f96874", "tonalRamp": ["#4a0d13", "#7a1822", "#c2273a", "#e04a59", "#f96874", "#ff8a93", "#ffd2d6", "#fff0f0"] },
+      "coral-hover": { "role": "secondary", "displayName": "Coral Hover", "canonical": "#ff8a93" },
+      "coral-ink": { "role": "secondary", "displayName": "Coral Ink", "canonical": "#c2273a" },
+      "night": { "role": "tertiary", "displayName": "Night Wine", "canonical": "#3d0507", "tonalRamp": ["#1f0203", "#3d0507", "#5a0d12", "#7a1a20", "#a0474c", "#c98a8d", "#f3cfd1", "#fbeeee"] },
+      "on-night-2": { "role": "tertiary", "displayName": "Rose on Night", "canonical": "#f3cfd1" },
+      "on-coral-2": { "role": "tertiary", "displayName": "Wine on Coral", "canonical": "#5a0d12" },
+      "wash": { "role": "neutral", "displayName": "Coral Wash", "canonical": "#fff0f0" },
+      "wash-2": { "role": "neutral", "displayName": "Blush", "canonical": "#ffe2e4" },
+      "wash-3": { "role": "neutral", "displayName": "Rose", "canonical": "#ffd2d6" },
+      "ink": { "role": "neutral", "displayName": "Ink", "canonical": "#2a2122", "tonalRamp": ["#2a2122", "#3f3536", "#5e5455", "#7d7374", "#a39a9b", "#c8c0c0", "#eedada", "#ffffff"] },
+      "ink-2": { "role": "neutral", "displayName": "Ink Soft", "canonical": "#5e5455" },
+      "line": { "role": "neutral", "displayName": "Line", "canonical": "#eedada" },
+      "line-2": { "role": "neutral", "displayName": "Line Deep", "canonical": "#ecd2d3" },
+      "white": { "role": "neutral", "displayName": "White", "canonical": "#ffffff" },
+      "wa": { "role": "functional", "displayName": "WhatsApp Green", "canonical": "#1fa855" },
+      "wa-hover": { "role": "functional", "displayName": "WhatsApp Green Hover", "canonical": "#188c46" }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "Hero H1 only; Poppins 700 wine, balanced over three to four lines." },
+      "headline": { "displayName": "Headline", "purpose": "Section heads in sentence case; wine on white and wash, night on coral, white on night." },
+      "scripture": { "displayName": "Scripture", "purpose": "Mission and vision verses, Poppins italic 600, reference in a figcaption below." },
+      "tagline": { "displayName": "Tagline", "purpose": "The motto under the H1 and under a publication title, Poppins italic 600 in Coral Ink." },
+      "title-feature": { "displayName": "Title Feature", "purpose": "Lead news story; the publication feature uses the same weight one step larger." },
+      "title": { "displayName": "Title", "purpose": "Action titles, jobs head, zone names, reports rail. The lead action title at clamp(1.5rem, 1.2rem + 0.9vw, 2rem) is a one-off." },
+      "title-list": { "displayName": "Title List", "purpose": "News and job links, programme figures, report years." },
+      "lead": { "displayName": "Lead", "purpose": "Section openers in Source Sans 3." },
+      "body": { "displayName": "Body", "purpose": "Running text; card text 1.0625rem." },
+      "body-sm": { "displayName": "Body Small", "purpose": "Footnotes and secondary text: network footnote, zone meta, safeguarding, newsletter, footer, toast; the Poppins 'more' link at the same size." },
+      "label-button": { "displayName": "Label Button", "purpose": "Every button and the band counter, sentence case." },
+      "label-nav": { "displayName": "Label Nav", "purpose": "Header links and dropdown items, optional 0.875rem Ink Soft sub-line." },
+      "meta": { "displayName": "Meta", "purpose": "Type in Coral Ink 600, date in tabular figures; always after the title. Also utility bar and credits on fields." },
+      "caption": { "displayName": "Caption", "purpose": "Action photo credits, the FR / EN / PT switch (600), the band credit on small screens." },
+      "tag": { "displayName": "Tag", "purpose": "Bordered language tag in news metadata, 600, 0.04em, capitals." }
+    },
+    "shadows": [
+      { "name": "dropdown", "value": "0 22px 44px -18px rgba(0, 0, 0, 0.22)", "purpose": "Header dropdowns, with a 3px coral top rule." },
+      { "name": "overlay", "value": "0 20px 40px -18px rgba(0, 0, 0, 0.5)", "purpose": "Toast, with a 3px coral top rule." },
+      { "name": "float", "value": "0 12px 26px -10px rgba(0, 0, 0, 0.45)", "purpose": "Floating WhatsApp disc." },
+      { "name": "badge-ring", "value": "0 0 0 5px #ffffff", "purpose": "White keyline ring around the coral cross badge; not elevation." }
+    ],
+    "motion": [
+      { "name": "ease-out", "value": "cubic-bezier(0.23, 1, 0.32, 1)", "purpose": "Default curve for transforms, entrances and hovers." },
+      { "name": "ease-drawer", "value": "cubic-bezier(0.32, 0.72, 0, 1) 320ms", "purpose": "Mobile drawer sliding in from the right." },
+      { "name": "button-colour", "value": "@property --bg <color>; transition --bg 180ms ease", "purpose": "Button background colour change through the registered custom property." },
+      { "name": "press", "value": "transform scale(0.97) 160ms ease-out", "purpose": "Buttons (carousel controls 0.94, WhatsApp 0.95)." },
+      { "name": "photo-hover", "value": "scale(1.03) 700ms ease-out, fine pointers only", "purpose": "Action and publication photographs inside their rounded frames; report tiles 1.04 over 600ms." },
+      { "name": "unfold", "value": "clip-path inset(24% 24% 24% 24% round 28px) to inset(0 0 0 0 round var(--k)), 1150ms ease-out, delays 120ms / 300ms; photos settle from scale(1.12) over 1600ms", "purpose": "Signature: hero frames open from a small rounded square to the full rounded frame on load." },
+      { "name": "settle-last", "value": "opacity + scale(0.9) rotate(-12deg) to rest, 640ms ease-out, accent square 900ms, badge 1000ms", "purpose": "Coral accent square and cross badge settle after the frames." },
+      { "name": "outline-fade", "value": "opacity 900ms ease, delay 560ms", "purpose": "Coral outline frame behind the hero frames." },
+      { "name": "rise", "value": "translateY(12px) to 0, 700ms ease-out, stagger 0/80/140/200ms", "purpose": "Hero copy entrance, translate only." },
+      { "name": "crossfade", "value": "opacity 900ms ease every 7000ms", "purpose": "Hero carousel; pauses on hover, hidden tab, pause button or reduced motion." },
+      { "name": "dropdown", "value": "opacity 150ms + translateY(-6px) 180ms ease-out", "purpose": "Header dropdown open and close." },
+      { "name": "reduced-motion", "value": "no unfold, settle, rise or autoplay; transitions 0.01ms", "purpose": "prefers-reduced-motion shows the rest state." }
+    ],
+    "breakpoints": [
+      { "name": "container", "value": "1280px" },
+      { "name": "nav-tight", "value": "1180px" },
+      { "name": "drawer", "value": "1060px" },
+      { "name": "md", "value": "900px" },
+      { "name": "sm", "value": "700px" },
+      { "name": "xs", "value": "440px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Wine Button",
+      "kind": "button",
+      "refersTo": "button-wine",
+      "description": "Primary action: donate, download, subscribe. A 12px rounded rectangle.",
+      "html": "<a class=\"ds-btn ds-btn-wine\" href=\"#\">Faire un don</a>",
+      "css": "@property --bg { syntax: '<color>'; inherits: false; initial-value: #7c0800; } .ds-btn { --bg: #7c0800; display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 0 28px; font: 600 0.9375rem/1.15 'Poppins', 'Segoe UI', system-ui, sans-serif; letter-spacing: 0.01em; text-decoration: none; background: var(--bg); border-radius: 12px; transition: --bg 180ms ease, color 180ms ease, transform 160ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-btn:active { transform: scale(0.97); } .ds-btn:focus-visible { outline: 3px solid #c2273a; outline-offset: 3px; } .ds-btn-wine { --bg: #7c0800; color: #ffffff; } .ds-btn-wine:hover { --bg: #650600; }"
+    },
+    {
+      "name": "Soft Button",
+      "kind": "button",
+      "refersTo": "button-soft",
+      "description": "Secondary action on white.",
+      "html": "<a class=\"ds-btn-soft\" href=\"#\">Découvrir notre réseau</a>",
+      "css": "@property --bg { syntax: '<color>'; inherits: false; initial-value: #ffe2e4; } .ds-btn-soft { --bg: #ffe2e4; display: inline-flex; align-items: center; justify-content: center; min-height: 52px; padding: 0 28px; color: #7c0800; font: 600 0.9375rem/1.15 'Poppins', 'Segoe UI', system-ui, sans-serif; letter-spacing: 0.01em; text-decoration: none; background: var(--bg); border-radius: 12px; transition: --bg 180ms ease, transform 160ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-btn-soft:hover { --bg: #ffd2d6; } .ds-btn-soft:active { transform: scale(0.97); } .ds-btn-soft:focus-visible { outline: 3px solid #c2273a; outline-offset: 3px; }"
+    },
+    {
+      "name": "Coral and White Buttons on Fields",
+      "kind": "button",
+      "refersTo": "button-coral",
+      "description": "Coral on night (safeguarding, programme); white on coral (appeal).",
+      "html": "<div class=\"ds-fields\"><div class=\"ds-night\"><a class=\"ds-b ds-b-coral\" href=\"#\">Signaler un abus</a></div><div class=\"ds-coral\"><a class=\"ds-b ds-b-white\" href=\"#\">Devenir partenaire</a></div></div>",
+      "css": "@property --bg { syntax: '<color>'; inherits: false; initial-value: #f96874; } .ds-fields { display: grid; } .ds-night { padding: 28px; background: #3d0507; } .ds-coral { padding: 28px; background: #f96874; } .ds-b { display: inline-flex; align-items: center; min-height: 52px; padding: 0 28px; font: 600 0.9375rem/1.15 'Poppins', 'Segoe UI', system-ui, sans-serif; letter-spacing: 0.01em; text-decoration: none; background: var(--bg); border-radius: 12px; transition: --bg 180ms ease, transform 160ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-b:active { transform: scale(0.97); } .ds-b-coral { --bg: #f96874; color: #3d0507; } .ds-b-coral:hover { --bg: #ff8a93; } .ds-b-coral:focus-visible { outline: 3px solid #f96874; outline-offset: 3px; } .ds-b-white { --bg: #ffffff; color: #7c0800; } .ds-b-white:hover { --bg: #ffe2e4; } .ds-b-white:focus-visible { outline: 3px solid #3d0507; outline-offset: 3px; }"
+    },
+    {
+      "name": "Header Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Sentence-case links in Ink, wine on hover or open, chevron rotating; dropdown with a coral top rule.",
+      "html": "<nav class=\"ds-nav\"><button aria-expanded=\"true\">Qui sommes-nous<svg width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m6 9 6 6 6-6\"/></svg></button><button aria-expanded=\"false\">Notre action<svg width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m6 9 6 6 6-6\"/></svg></button><a href=\"#\">Notre réseau</a><div class=\"ds-dd\"><a href=\"#\">Notre histoire<small>Constituée en 1995 à Matola</small></a><a href=\"#\">Mission et vision<small>Actes 1:8, Jean 10:10</small></a></div></nav>",
+      "css": ".ds-nav { position: relative; display: flex; align-items: center; gap: 2px; height: 84px; padding: 0 20px 0; background: #ffffff; border-bottom: 1px solid #eedada; margin-bottom: 170px; } .ds-nav > button, .ds-nav > a { display: inline-flex; align-items: center; gap: 6px; padding: 12px 14px; border: 0; background: none; cursor: pointer; font: 600 1.0625rem/1 'Source Sans 3', 'Segoe UI', system-ui, sans-serif; color: #2a2122; text-decoration: none; transition: color 160ms ease; } .ds-nav svg { transition: transform 200ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-nav > button[aria-expanded='true'] { color: #7c0800; } .ds-nav > button[aria-expanded='true'] svg { transform: rotate(180deg); } .ds-nav > button:hover, .ds-nav > a:hover { color: #7c0800; } .ds-nav > button:focus-visible, .ds-nav > a:focus-visible { outline: 3px solid #c2273a; outline-offset: 3px; } .ds-dd { position: absolute; left: 20px; top: calc(100% + 14px); width: 320px; padding: 10px; background: #ffffff; border-top: 3px solid #f96874; box-shadow: 0 22px 44px -18px rgba(0, 0, 0, 0.22); } .ds-dd a { display: block; padding: 11px 14px; font: 600 1.0625rem/1.35 'Source Sans 3', 'Segoe UI', system-ui, sans-serif; color: #2a2122; text-decoration: none; transition: background-color 150ms ease, color 150ms ease; } .ds-dd small { display: block; margin-top: 3px; font-size: 0.875rem; font-weight: 400; color: #5e5455; } .ds-dd a:hover { background: #fff0f0; color: #7c0800; }"
+    },
+    {
+      "name": "Lead Story Card and News List",
+      "kind": "card",
+      "refersTo": "card-lead-story",
+      "description": "White 22px rounded card in a wash section: Poppins 700 wine title, Ink Soft text, metadata after the title; beside it a news list ruled in Line Deep directly on the wash.",
+      "html": "<div class=\"ds-wash\"><article class=\"ds-story\"><h3><a href=\"#\">Déclaration de Dakar, version finale</a></h3><p>Le texte final de la déclaration de Dakar, publié par Caritas Africa en français et en anglais.</p><p class=\"ds-meta\"><span class=\"ds-kind\">Déclaration</span><time>10 novembre 2025</time><span class=\"ds-lang\">EN</span></p></article><ul class=\"ds-news\"><li><a href=\"#\">Assemblée régionale à Lomé</a><p class=\"ds-meta\"><span class=\"ds-kind\">Actualité</span><time>3 octobre 2025</time></p></li><li><a href=\"#\">Appel d'offres : audit 2025</a><p class=\"ds-meta\"><span class=\"ds-kind\">Appel d'offres</span><time>18 septembre 2025</time></p></li></ul></div>",
+      "css": ".ds-wash { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 32px; align-items: start; padding: 32px; background: #fff0f0; } .ds-story { display: grid; gap: 16px; padding: clamp(28px, 3vw, 44px); background: #ffffff; border-radius: 22px; font: 400 1.125rem/1.6 'Source Sans 3', 'Segoe UI', system-ui, sans-serif; color: #5e5455; } .ds-story h3 { margin: 0; font: 700 clamp(1.6rem, 1.3rem + 0.9vw, 2.1rem)/1.15 'Poppins', 'Segoe UI', system-ui, sans-serif; color: #7c0800; } .ds-story h3 a { color: inherit; text-decoration: none; text-underline-offset: 0.22em; } .ds-story h3 a:hover, .ds-news a:hover { text-decoration: underline; color: #7c0800; } .ds-story h3 a:focus-visible, .ds-news a:focus-visible { outline: 3px solid #c2273a; outline-offset: 3px; } .ds-story p { margin: 0; } .ds-news { margin: 0; padding: 0; list-style: none; } .ds-news li { display: grid; gap: 6px; padding: 18px 0; border-bottom: 1px solid #ecd2d3; } .ds-news li:first-child { padding-top: 0; } .ds-news a { font: 600 1.1875rem/1.3 'Poppins', 'Segoe UI', system-ui, sans-serif; color: #2a2122; text-decoration: none; text-underline-offset: 0.22em; } .ds-meta { margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; font: 400 0.875rem/1.6 'Source Sans 3', 'Segoe UI', system-ui, sans-serif; color: #5e5455; } .ds-kind { font-weight: 600; color: #c2273a; } .ds-meta time { font-variant-numeric: tabular-nums; } .ds-lang { padding: 1px 7px; border: 1px solid #eedada; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.04em; }"
+    },
+    {
+      "name": "Newsletter Field on Coral",
+      "kind": "input",
+      "refersTo": "input-newsletter",
+      "description": "Square white field with a night border on the coral band beside a 12px rounded wine button; night focus ring; wine error ring.",
+      "html": "<form class=\"ds-nl\"><label for=\"ds-em\">Recevez la lettre d'information</label><div><input id=\"ds-em\" type=\"email\" placeholder=\"Votre adresse e-mail\"><button type=\"submit\">S'abonner</button></div></form>",
+      "css": "@property --bg { syntax: '<color>'; inherits: false; initial-value: #7c0800; } .ds-nl { padding: 28px; background: #f96874; color: #3d0507; font: 400 1rem/1.6 'Source Sans 3', 'Segoe UI', system-ui, sans-serif; } .ds-nl label { display: block; margin-bottom: 12px; font: 700 1.35rem/1.2 'Poppins', 'Segoe UI', system-ui, sans-serif; } .ds-nl div { display: flex; gap: 10px; } .ds-nl input { flex: 1; min-width: 0; min-height: 52px; padding: 0 16px; border: 1.5px solid #3d0507; border-radius: 0; background: #ffffff; color: #2a2122; font: inherit; caret-color: #7c0800; } .ds-nl input::placeholder { color: #5e5455; opacity: 1; } .ds-nl input:focus-visible { outline: none; box-shadow: 0 0 0 3px #3d0507; } .ds-nl input[aria-invalid='true'] { border-color: #7c0800; box-shadow: 0 0 0 2px #7c0800; } .ds-nl button { --bg: #7c0800; min-height: 52px; padding: 0 28px; border: 0; border-radius: 12px; cursor: pointer; color: #ffffff; font: 600 0.9375rem/1.15 'Poppins', 'Segoe UI', system-ui, sans-serif; background: var(--bg); transition: --bg 180ms ease, transform 160ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-nl button:hover { --bg: #650600; } .ds-nl button:active { transform: scale(0.97); } .ds-nl button:focus-visible { outline: 3px solid #3d0507; outline-offset: 3px; }"
+    },
+    {
+      "name": "Rounded-Square Fact List",
+      "kind": "custom",
+      "refersTo": "facts",
+      "description": "Facts divided by hairlines, each marked by an 18px coral rounded square (5px radius), the lead in wine 600.",
+      "html": "<ul class=\"ds-facts\"><li><span class=\"ds-sq\" aria-hidden=\"true\"></span><span><b>46 Caritas nationales</b>, dans 46 pays d'Afrique.</span></li><li><span class=\"ds-sq\" aria-hidden=\"true\"></span><span><b>Six zones</b>, qui portent le nom des conférences épiscopales régionales.</span></li></ul>",
+      "css": ".ds-facts { margin: 0; padding: 0; list-style: none; max-width: 560px; font: 400 1.125rem/1.6 'Source Sans 3', 'Segoe UI', system-ui, sans-serif; color: #2a2122; } .ds-facts li { display: flex; gap: 16px; align-items: flex-start; padding: 16px 0; border-top: 1px solid #eedada; } .ds-facts li:last-child { border-bottom: 1px solid #eedada; } .ds-sq { width: 18px; height: 18px; flex: none; margin-top: 5px; background: #f96874; border-radius: 5px; } .ds-facts b { color: #7c0800; font-weight: 600; }"
+    },
+    {
+      "name": "Rounded Frame Open",
+      "kind": "custom",
+      "refersTo": "hero-frame",
+      "description": "Signature: a rounded frame with a concentric 2px wine keyline that opens from a small rounded square to its full frame by clip-path inset; the coral accent square settles last; the cross badge wears a 5px white ring.",
+      "html": "<div class=\"ds-stage\"><span class=\"ds-outline\" aria-hidden=\"true\"></span><div class=\"ds-frame\"><div class=\"ds-in\"></div></div><span class=\"ds-square\" aria-hidden=\"true\"></span><span class=\"ds-badge\" aria-hidden=\"true\"><svg viewBox=\"0 0 24 24\" width=\"40\" height=\"40\" aria-hidden=\"true\"><path d=\"M10 3h4v7h7v4h-7v7h-4v-7H3v-4h7z\" fill=\"#ffffff\"/></svg></span></div>",
+      "css": ".ds-stage { position: relative; width: 380px; height: 280px; margin: 16px 0 0 24px; } .ds-outline { position: absolute; left: -20px; top: -10px; width: 46%; height: 50%; border: 2px solid #f96874; border-radius: 28px; animation: ds-fade 900ms ease 560ms both; } .ds-frame { --k: 40px; position: absolute; inset: 0 40px 0 0; overflow: hidden; background: #7c0800; border-radius: var(--k); animation: ds-unfold 1150ms cubic-bezier(0.23, 1, 0.32, 1) 120ms both; } .ds-in { position: absolute; inset: 2px; overflow: hidden; background: linear-gradient(160deg, #ffd2d6, #ffe2e4); border-radius: calc(var(--k) - 2px); } .ds-square { position: absolute; right: 8px; top: -14px; width: 56px; aspect-ratio: 1; background: #f96874; border-radius: 30%; animation: ds-pop 640ms cubic-bezier(0.23, 1, 0.32, 1) 900ms both; } .ds-badge { position: absolute; left: -16px; bottom: 30px; width: 84px; aspect-ratio: 1; display: grid; place-items: center; background: #f96874; border-radius: 28%; box-shadow: 0 0 0 5px #ffffff; animation: ds-pop 640ms cubic-bezier(0.23, 1, 0.32, 1) 1000ms both; } @keyframes ds-unfold { from { clip-path: inset(24% 24% 24% 24% round 28px); } to { clip-path: inset(0 0 0 0 round var(--k)); } } @keyframes ds-pop { from { opacity: 0; transform: scale(0.9) rotate(-12deg); } } @keyframes ds-fade { from { opacity: 0; } } @media (prefers-reduced-motion: reduce) { .ds-frame, .ds-square, .ds-badge, .ds-outline { animation: none; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Strategic Framework Cover",
+    "overview": "The home page opens the way Caritas Africa's own Strategic Framework 2024–2030 cover does: wine-red geometric headings top-left, real photographs from the network in rounded-square frames overlapping on a diagonal, a coral rounded square and the white Caritas cross on a coral badge, and a layered wave (wine ribbon, white gap, coral field) closing the composition. That print identity is worn by a straight, category-standard NGO page at the craft level of CRS, CAFOD / Trócaire, ICRC and MSF: clear sections, visible giving, reports one click away, safeguarding never buried.\n\nThe ground is white. Sections alternate white, coral wash, full-bleed coral and deep night wine, always with straight edges and full bleed; the rounding lives on the objects set into those fields (photographs, frames, cards, buttons, bullets), never on the fields themselves. Poppins carries the voice (700 for headings in sentence case, italic 600 for scripture and taglines); Source Sans 3 carries everything that is read. Depth is tonal: colour fields and overlapping frames, not shadows.\n\nMotion is quiet except for one signature: on load, the hero frames open from a small rounded square to their full rounded frame, staggered, and the coral square and cross badge settle last. Every photograph is Caritas Africa's own, drawn from its reports and strategic framework, and carries a credit. The world deliberately departs from v5's caritas.org rounded section panels and pill buttons, v2's condensed poster, and v1's ruled ledger, and it sets headings in sentence case where the cover itself uses capitals. The user replaced the earlier cut-corner and hexagonal forms with rounded squares (2026-10-19); no chamfer or hexagon remains.",
+    "keyCharacteristics": [
+      "Rounded squares on photographs, frames, cards, buttons and bullets, all four corners alike, the radius growing with the object (12px buttons to 44px hero frame).",
+      "Logo wine (#7c0800) for headings, links and actions; coral (#f96874) for fields, rounded-square accents and the wave; night wine (#3d0507) for dark sections and the footer.",
+      "Poppins 700/600 sentence-case headings, Poppins italic 600 for scripture and taglines, Source Sans 3 for text.",
+      "Coral rounded-square bullets, accent and cross badge.",
+      "The layered wave closes the hero and opens the footer.",
+      "One motion grammar: ease-out cubic-bezier(0.23, 1, 0.32, 1), presses at 0.97, hover only on fine pointers, a reduced-motion path that shows the rest state."
+    ],
+    "rules": [
+      { "name": "The Two Hues Rule", "body": "The palette is wine and coral and their tints. No third hue enters the page except WhatsApp green on its own button and the partner logos at rest in greyscale.", "section": "colors" },
+      { "name": "The Coral Ink Rule", "body": "Coral text never sits on white at its field value; on white, coral-coloured type is Coral Ink. Full coral is a field, a shape or a button.", "section": "colors" },
+      { "name": "The Night On Coral Rule", "body": "Text and focus on coral fields are Night Wine; white type never sits on coral.", "section": "colors" },
+      { "name": "The Sentence-Case Rule", "body": "Headings, buttons and navigation are in sentence case. Capitals appear only in acronyms (zone codes, language tags).", "section": "typography" },
+      { "name": "The Italic Is Faith Rule", "body": "Poppins italic is reserved for scripture and taglines; it never sets a heading or a button.", "section": "typography" },
+      { "name": "The Metadata-After Rule", "body": "Type, date and language follow the title they describe. No label sits above a heading.", "section": "typography" },
+      { "name": "The Fields Not Shadows Rule", "body": "Sections, cards, frames and buttons never carry a drop shadow; only overlays (dropdown, toast, floating disc) do. The cross badge's 5px white ring (`box-shadow: 0 0 0 5px`) is a keyline, not elevation.", "section": "elevation" },
+      { "name": "The Radius Scales Rule", "body": "The radius grows with the object, from 4px markers through 12px buttons to 44px for the large hero frame; a report tile and a hero frame never share a radius.", "section": "shapes" },
+      { "name": "The Concentric Keyline Rule", "body": "A frame drawn inside a frame takes the outer radius minus its inset (the 2px keyline sits at `--k` minus 2px), so the two curves never pinch.", "section": "shapes" }
+    ],
+    "dos": [
+      "Do round photographs, frames, cards and buttons as rounded squares, all four corners alike, scaling the radius with the object (12px buttons to 44px for the large hero frame).",
+      "Do keep an inner keyline concentric: its radius is the outer radius minus the inset.",
+      "Do set headings in Poppins 700 sentence case in Logo Wine on white and wash, night on coral, white on night.",
+      "Do reserve Poppins italic 600 for scripture and taglines, taglines in Coral Ink.",
+      "Do use full-bleed, straight-edged fields (white, wash, coral, night) to separate sections.",
+      "Do use small coral rounded squares for list bullets, the hero accent and the cross badge, and the layered wave to close the hero and open the footer.",
+      "Do draw button colour through the registered `--bg` property so hover transitions, with 0.97 presses and hover only on fine pointers.",
+      "Do credit every photograph in a caption, using only Caritas Africa's own images.",
+      "Do put content type, date and language after the title.",
+      "Do keep \"Faire un don\" in the header and \"Signaler un abus\" in the utility bar."
+    ],
+    "donts": [
+      "Don't cut corners or use hexagons; the user retired chamfers and hexagonal forms in favour of rounded squares.",
+      "Don't round section fields or turn buttons into pills; rounding belongs to objects set into straight-edged fields.",
+      "Don't return to v5's rounded section panels and pill buttons, v2's condensed poster or v1's ruled ledger.",
+      "Don't set coral text on white; use Coral Ink. Don't set white text on coral.",
+      "Don't shadow sections, cards, frames or buttons; shadows belong to dropdowns, the toast and the WhatsApp disc.",
+      "Don't add a third hue to the wine and coral palette.",
+      "Don't put small labels or kickers above headings.",
+      "Don't use emoji or text glyphs as icons; use the inline stroke icon set.",
+      "Don't move copy by anything but translate (copy never fades or clips in), and don't let any entrance run under reduced motion; that path shows the rest state."
+    ]
+  }
+}
