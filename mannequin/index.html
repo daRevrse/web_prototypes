@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Khady Sène, mannequin et modèle photo à Dakar</title>
+  <meta name="description" content="Book, carte composite, parcours et booking de Khady Sène, mannequin et modèle photo basée à Dakar.">
+  <meta name="theme-color" content="#000000">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/sofia-sans-extra-condensed-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/sofia-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/style.css">
+  <script>
+    document.documentElement.classList.add("js");
+    // Écran d'ouverture et entrée de la carte : jamais plus de 6 s si les scripts ne répondent pas.
+    if (matchMedia("(prefers-reduced-motion: no-preference)").matches) {
+      document.documentElement.classList.add("intro");
+      window.introFallback = setTimeout(function () { document.documentElement.classList.remove("intro"); }, 6000);
+    }
+    try { if (sessionStorage.getItem("mannequin-loader") === "1") document.documentElement.classList.add("loader-seen"); } catch (e) {}
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Flip.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Draggable.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/InertiaPlugin.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-flip" viewBox="0 0 24 24"><path d="M3.5 12a8.5 8.5 0 0 1 14.6-5.9L20.5 8.5M20.5 3.5v5h-5M20.5 12a8.5 8.5 0 0 1-14.6 5.9L3.5 15.5M3.5 20.5v-5h5"/></symbol>
+    <symbol id="i-print" viewBox="0 0 24 24"><path d="M6.5 9V3.5h11V9M6.5 17.5h-3v-8h17v8h-3M6.5 13.5h11v7h-11z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3.5 5.5h17v13h-17zM3.5 6.5l8.5 6.5 8.5-6.5"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M4 20l1.3-3.9A8.3 8.3 0 1 1 8 18.8z"/><path d="M9.2 8.2c-.3 2.9 2.6 6.2 5.9 6.3l1.1-1.4-2-1.1-.9.8a4.6 4.6 0 0 1-2.4-2.4l.8-.9-1.1-2z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="3.8"/><path d="M17.2 6.8h.01"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 20.5s6.5-5.6 6.5-10.7a6.5 6.5 0 0 0-13 0c0 5.1 6.5 10.7 6.5 10.7z"/><circle cx="12" cy="9.8" r="2.3"/></symbol>
+    <symbol id="i-agency" viewBox="0 0 24 24"><path d="M3.5 7.5h17v12h-17zM8.5 7.5v-3h7v3M3.5 12.5h17"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+    <symbol id="i-prev" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+    <symbol id="i-next" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7.5h16M4 12h16M4 16.5h16"/></symbol>
+    <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4.5v15M6.5 14l5.5 5.5 5.5-5.5"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <div class="loader" aria-hidden="true">
+    <span class="crop crop--tl"></span><span class="crop crop--tr"></span><span class="crop crop--bl"></span><span class="crop crop--br"></span>
+    <p class="loader__name"><span>Khady</span> <span>Sène</span></p>
+    <div class="loader__foot">
+      <span>Carte composite, édition 2026</span>
+      <span class="loader__count" data-loader-count>0</span>
+    </div>
+    <span class="loader__bar"></span>
+  </div>
+
+  <div class="review-bar" role="note">
+    <div class="wrap review-bar__inner">
+      <p>Maquette de travail&nbsp;: <strong><span data-tbc-count>0</span> éléments surlignés</strong> sont à fournir par la cliente, et les <strong><span data-photo-count>0</span> photos</strong> sont des photos de stock provisoires.</p>
+      <button type="button" data-tbc-toggle aria-pressed="false">Masquer le surlignage</button>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="wordmark" href="#contenu">Khady Sène</a>
+      <nav class="site-nav" id="site-nav" aria-label="Sections">
+        <a href="#carte" data-roll>Carte</a>
+        <a href="#book" data-roll>Book</a>
+        <a href="#parcours" data-roll>Parcours</a>
+        <a href="#booking" data-roll>Booking</a>
+      </nav>
+      <a class="btn btn--ink btn--small site-header__cta" href="#booking" data-magnetic><span class="cta-long">Demander un booking</span><span class="cta-short">Booking</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu">
+        <svg class="icon" aria-hidden="true"><use href="#i-menu"></use></svg>
+      </button>
+    </div>
+    <span class="read-progress" aria-hidden="true"></span>
+  </header>
+
+  <main id="contenu">
+
+    <section class="stage" id="carte" aria-label="Carte composite">
+      <div class="stage__pin">
+        <div class="sheet">
+          <span class="crop crop--tl" aria-hidden="true"></span>
+          <span class="crop crop--tr" aria-hidden="true"></span>
+          <span class="crop crop--bl" aria-hidden="true"></span>
+          <span class="crop crop--br" aria-hidden="true"></span>
+
+          <div class="card">
+            <article class="face face--front" aria-label="Recto de la carte">
+              <figure class="face__photo">
+                <img src="https://images.unsplash.com/photo-1748290880596-2a2c80530bc0?auto=format&amp;fit=max&amp;w=900&amp;q=75"
+                     srcset="https://images.unsplash.com/photo-1748290880596-2a2c80530bc0?auto=format&amp;fit=max&amp;w=600&amp;q=75 600w,
+                             https://images.unsplash.com/photo-1748290880596-2a2c80530bc0?auto=format&amp;fit=max&amp;w=900&amp;q=75 900w,
+                             https://images.unsplash.com/photo-1748290880596-2a2c80530bc0?auto=format&amp;fit=max&amp;w=1300&amp;q=75 1300w,
+                             https://images.unsplash.com/photo-1748290880596-2a2c80530bc0?auto=format&amp;fit=max&amp;w=1800&amp;q=75 1800w"
+                     sizes="(max-width: 640px) 90vw, 52vw" alt="Portrait trois-quarts, veste noire, regard caméra" width="1300" height="1950" fetchpriority="high" data-photo="1748290880596">
+                <span class="tbc tbc-photo">Photo provisoire</span>
+              </figure>
+              <div class="face__body">
+                <div class="card-id">
+                  <h1 class="card-name">Khady <span>Sène</span></h1>
+                  <mark class="tbc tbc-tag">Nom provisoire</mark>
+                </div>
+                <p class="card-role">Mannequin et modèle photo, basée à Dakar</p>
+                <dl class="stats tbc-zone" data-tbc="Mensurations à fournir">
+                  <div><dt>Taille</dt><dd>178<span class="unit">cm</span></dd></div>
+                  <div><dt>Poitrine</dt><dd>84</dd></div>
+                  <div><dt>Tour de taille</dt><dd>61</dd></div>
+                  <div><dt>Hanches</dt><dd>90</dd></div>
+                  <div><dt>Pointure</dt><dd>40</dd></div>
+                </dl>
+                <p class="card-agency">Représentée par <mark class="tbc">agence à confirmer</mark></p>
+                <div class="card-actions">
+                  <a class="btn btn--ink" href="#booking" data-magnetic>Demander un booking</a>
+                  <button class="btn btn--line" type="button" data-flip-to="back">
+                    <svg class="icon" aria-hidden="true"><use href="#i-flip"></use></svg>Voir le verso
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <article class="face face--back" aria-label="Verso de la carte">
+              <div class="back__photos">
+                <figure>
+                  <img src="https://images.unsplash.com/photo-1748290880486-fc82c2afbc24?auto=format&amp;fit=max&amp;w=700&amp;q=72" srcset="https://images.unsplash.com/photo-1748290880486-fc82c2afbc24?auto=format&amp;fit=max&amp;w=400&amp;q=72 400w, https://images.unsplash.com/photo-1748290880486-fc82c2afbc24?auto=format&amp;fit=max&amp;w=700&amp;q=72 700w" sizes="(max-width: 640px) 45vw, 20vw" alt="En pied, tailleur noir, fond blanc" width="700" height="1050" data-photo="1748290880486">
+                  <span class="tbc tbc-photo">Photo provisoire</span>
+                </figure>
+                <figure>
+                  <img src="https://images.unsplash.com/photo-1748290880602-33a0b2b4d390?auto=format&amp;fit=max&amp;w=700&amp;q=72" srcset="https://images.unsplash.com/photo-1748290880602-33a0b2b4d390?auto=format&amp;fit=max&amp;w=400&amp;q=72 400w, https://images.unsplash.com/photo-1748290880602-33a0b2b4d390?auto=format&amp;fit=max&amp;w=700&amp;q=72 700w" sizes="(max-width: 640px) 45vw, 20vw" alt="Assise sur un tabouret, tailleur noir" width="700" height="1050" data-photo="1748290880602">
+                  <span class="tbc tbc-photo">Photo provisoire</span>
+                </figure>
+                <figure>
+                  <img src="https://images.unsplash.com/photo-1748290880601-73c379286f7d?auto=format&amp;fit=max&amp;w=700&amp;q=72" srcset="https://images.unsplash.com/photo-1748290880601-73c379286f7d?auto=format&amp;fit=max&amp;w=400&amp;q=72 400w, https://images.unsplash.com/photo-1748290880601-73c379286f7d?auto=format&amp;fit=max&amp;w=700&amp;q=72 700w" sizes="(max-width: 640px) 45vw, 20vw" alt="En pied, tailleur noir, mains levées" width="700" height="1050" data-photo="1748290880601">
+                  <span class="tbc tbc-photo">Photo provisoire</span>
+                </figure>
+                <figure>
+                  <img src="https://images.unsplash.com/photo-1748290880518-979675a50053?auto=format&amp;fit=max&amp;w=700&amp;q=72" srcset="https://images.unsplash.com/photo-1748290880518-979675a50053?auto=format&amp;fit=max&amp;w=400&amp;q=72 400w, https://images.unsplash.com/photo-1748290880518-979675a50053?auto=format&amp;fit=max&amp;w=700&amp;q=72 700w" sizes="(max-width: 640px) 45vw, 20vw" alt="Appuyée sur un tabouret, tailleur noir" width="700" height="1050" data-photo="1748290880518">
+                  <span class="tbc tbc-photo">Photo provisoire</span>
+                </figure>
+              </div>
+              <div class="back__info">
+                <p class="back__name" aria-hidden="true">Khady Sène</p>
+                <dl class="stats stats--full tbc-zone" data-tbc="Mensurations à fournir">
+                  <div><dt>Taille</dt><dd>178<span class="unit">cm</span></dd></div>
+                  <div><dt>Poitrine</dt><dd>84</dd></div>
+                  <div><dt>Tour de taille</dt><dd>61</dd></div>
+                  <div><dt>Hanches</dt><dd>90</dd></div>
+                  <div><dt>Pointure</dt><dd>40</dd></div>
+                  <div><dt>Cheveux</dt><dd>Noirs</dd></div>
+                  <div><dt>Yeux</dt><dd>Marron</dd></div>
+                </dl>
+                <div class="back__contact">
+                  <p>Agence <mark class="tbc">à confirmer</mark><br>Booking <mark class="tbc">email à fournir</mark></p>
+                  <div class="card-actions">
+                    <button class="btn btn--line btn--small" type="button" data-print>
+                      <svg class="icon" aria-hidden="true"><use href="#i-print"></use></svg>Imprimer
+                    </button>
+                    <button class="btn btn--line btn--small" type="button" data-flip-to="front">
+                      <svg class="icon" aria-hidden="true"><use href="#i-flip"></use></svg>Revoir le recto
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="slug">
+            <span>Carte composite, édition 2026</span>
+            <span class="slug__cue"><svg class="icon" aria-hidden="true"><use href="#i-down"></use></svg>Défilez pour retourner la carte</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>Défilés</span><span>Campagnes</span><span>Éditoriaux</span><span>Beauté</span><span>E-commerce</span><span>Vidéo</span><span>Dakar</span>
+        <span>Défilés</span><span>Campagnes</span><span>Éditoriaux</span><span>Beauté</span><span>E-commerce</span><span>Vidéo</span><span>Dakar</span>
+      </div>
+    </div>
+
+    <section class="book section" id="book" aria-labelledby="book-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="display" id="book-title">Book</h2>
+          <div class="section-head__text">
+            <p>Une sélection de travaux récents. Touchez une photo pour l’agrandir.</p>
+            <p><mark class="tbc">Pour chaque photo&nbsp;: client ou magazine, photographe et année à fournir</mark></p>
+          </div>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filtrer le book">
+          <button type="button" class="filter" aria-pressed="true" data-filter="tout">Tout <span>9</span></button>
+          <button type="button" class="filter" aria-pressed="false" data-filter="editorial">Éditorial <span>4</span></button>
+          <button type="button" class="filter" aria-pressed="false" data-filter="beaute">Beauté <span>4</span></button>
+          <button type="button" class="filter" aria-pressed="false" data-filter="campagnes">Campagnes <span>1</span></button>
+          <button type="button" class="filter" aria-pressed="false" data-filter="defiles">Défilés <span>0</span></button>
+        </div>
+
+        <ul class="book-grid" data-book>
+          <li data-cat="editorial">
+            <button type="button" class="shot" data-full="https://images.unsplash.com/photo-1748290880601-73c379286f7d?auto=format&amp;fit=max&amp;w=1600&amp;q=80" data-caption="Éditorial, série tailleur noir" data-credit="Alexia" data-profile="https://unsplash.com/@alequissia">
+              <img src="https://images.unsplash.com/photo-1748290880601-73c379286f7d?auto=format&amp;fit=max&amp;w=700&amp;q=72" srcset="https://images.unsplash.com/photo-1748290880601-73c379286f7d?auto=format&amp;fit=max&amp;w=400&amp;q=72 400w, https://images.unsplash.com/photo-1748290880601-73c379286f7d?auto=format&amp;fit=max&amp;w=700&amp;q=72 700w, https://images.unsplash.com/photo-1748290880601-73c379286f7d?auto=format&amp;fit=max&amp;w=1000&amp;q=72 1000w" sizes="(max-width: 640px) 48vw, 24vw" alt="En pied, tailleur noir, mains levées" width="1000" height="1500" loading="lazy" data-photo="1748290880601">
+              <span class="tbc tbc-photo">Photo provisoire</span>
+            </button>
+            <p class="shot__cat">Éditorial</p>
+          </li>
+          <li data-cat="beaute">
+            <button type="button" class="shot" data-full="https://images.unsplash.com/photo-1701887714880-973785438426?auto=format&amp;fit=max&amp;w=1600&amp;q=80" data-caption="Beauté, portrait studio" data-credit="Christian Agbede" data-profile="https://unsplash.com/@chriscreations__">
+              <img src="https://images.unsplash.com/photo-1701887714880-973785438426?auto=format&amp;fit=max&amp;w=700&amp;q=72" srcset="https://images.unsplash.com/photo-1701887714880-973785438426?auto=format&amp;fit=max&amp;w=400&amp;q=72 400w, https://images.unsplash.com/photo-1701887714880-973785438426?auto=format&amp;fit=max&amp;w=700&amp;q=72 700w, https://images.unsplash.com/photo-1701887714880-973785438426?auto=format&amp;fit=max&amp;w=1000&amp;q=72 1000w" sizes="(max-width: 640px) 48vw, 24vw" alt="Portrait, main sur la joue, fond gris" width="1000" height="1500" loading="lazy" data-photo="1701887714880">
+              <span class="tbc tbc-photo">Photo provisoire</span>
+            </button>
+            <p class="shot__cat">Beauté</p>
+          </li>
+          <li data-cat="editorial">
+            <button type="button" class="shot" data-full="https://images.unsplash.com/photo-1748290880518-979675a50053?auto=format&amp;fit=max&amp;w=1600&amp;q=80" data-caption="Éditorial, série tailleur noir" data-credit="Alexia" data-profile="https://unsplash.com/@alequissia">
+              <img src="https://images.unsplash.com/photo-1748290880518-979675a50053?auto=format&amp;fit=max&amp;w=700&amp;q=72" srcset="https://images.unsplash.com/photo-1748290880518-979675a50053?auto=format&amp;fit=max&amp;w=400&amp;q=72 400w, https://images.unsplash.com/photo-1748290880518-979675a50053?auto=format&amp;fit=max&amp;w=700&amp;q=72 700w, https://images.unsplash.com/photo-1748290880518-979675a50053?auto=format&amp;fit=max&amp;w=1000&amp;q=72 1000w" sizes="(max-width: 640px) 48vw, 24vw" alt="Appuyée sur un tabouret, tailleur noir" width="1000" height="1500" loading="lazy" data-photo="1748290880518">
+              <span class="tbc tbc-photo">Photo provisoire</span>
+            </button>
+            <p class="shot__cat">Éditorial</p>
+          </li>
+          <li data-cat="campagnes">
+            <button type="button" class="shot" data-full="https://images.unsplash.com/photo-1709810529099-0ce6102692df?auto=format&amp;fit=max&amp;w=1600&amp;q=80" data-caption="Campagne, costume noir sur fond rouge" data-credit="Lola Azizada" data-profile="https://unsplash.com/@kalpa_mahagamage">
+              <img src="https://images.unsplash.com/photo-1709810529099-0ce6102692df?auto=format&amp;fit=max&amp;w=700&amp;q=72" srcset="https://images.unsplash.com/photo-1709810529099-0ce6102692df?auto=format&amp;fit=max&amp;w=400&amp;q=72 400w, https://images.unsplash.com/photo-1709810529099-0ce6102692df?auto=format&amp;fit=max&amp;w=700&amp;q=72 700w, https://images.unsplash.com/photo-1709810529099-0ce6102692df?auto=format&amp;fit=max&amp;w=1000&amp;q=72 1000w" sizes="(max-width: 640px) 48vw, 24vw" alt="Costume noir sur fond rouge" width="1000" height="1500" loading="lazy" data-photo="1709810529099">
+              <span class="tbc tbc-photo">Photo provisoire</span>
+            </button>
+            <p class="shot__cat">Campagne</p>
+          </li>
+          <li data-cat="beaute">
+            <button type="button" class="shot" data-full="https://images.unsplash.com/photo-1632765854612-9b02b6ec2b15?auto=format&amp;fit=max&amp;w=1600&amp;q=80" data-caption="Beauté, portrait" data-credit="Good Faces" data-profile="https://unsplash.com/@goodfacesagency">
+              <img src="https://images.unsplash.com/photo-1632765854612-9b02b6ec2b15?auto=format&amp;fit=max&amp;w=700&amp;q=72" srcset="https://images.unsplash.com/photo-1632765854612-9b02b6ec2b15?auto=format&amp;fit=max&amp;w=400&amp;q=72 400w, https://images.unsplash.com/photo-1632765854612-9b02b6ec2b15?auto=format&amp;fit=max&amp;w=700&amp;q=72 700w, https://images.unsplash.com/photo-1632765854612-9b02b6ec2b15?auto=format&amp;fit=max&amp;w=1000&amp;q=72 1000w" sizes="(max-width: 640px) 48vw, 24vw" alt="Portrait, regard de côté, chemise noire" width="1000" height="1500" loading="lazy" data-photo="1632765854612">
+              <span class="tbc tbc-photo">Photo provisoire</span>
+            </button>
+            <p class="shot__cat">Beauté</p>
+          </li>
+          <li data-cat="editorial">
+            <button type="button" class="shot" data-full="https://images.unsplash.com/photo-1748290880602-33a0b2b4d390?auto=format&amp;fit=max&amp;w=1600&amp;q=80" data-caption="Éditorial, série tailleur noir" data-credit="Alexia" data-profile="https://unsplash.com/@alequissia">
+              <img src="https://images.unsplash.com/photo-1748290880602-33a0b2b4d390?auto=format&amp;fit=max&amp;w=700&amp;q=72" srcset="https://images.unsplash.com/photo-1748290880602-33a0b2b4d390?auto=format&amp;fit=max&amp;w=400&amp;q=72 400w, https://images.unsplash.com/photo-1748290880602-33a0b2b4d390?auto=format&amp;fit=max&amp;w=700&amp;q=72 700w, https://images.unsplash.com/photo-1748290880602-33a0b2b4d390?auto=format&amp;fit=max&amp;w=1000&amp;q=72 1000w" sizes="(max-width: 640px) 48vw, 24vw" alt="Assise sur un tabouret, tailleur noir" width="1000" height="1500" loading="lazy" data-photo="1748290880602">
+              <span class="tbc tbc-photo">Photo provisoire</span>
+            </button>
+            <p class="shot__cat">Éditorial</p>
+          </li>
+          <li data-cat="beaute">
+            <button type="button" class="shot" data-full="https://images.unsplash.com/photo-1701887714717-0321aa2382a5?auto=format&amp;fit=max&amp;w=1600&amp;q=80" data-caption="Beauté, portrait studio" data-credit="Christian Agbede" data-profile="https://unsplash.com/@chriscreations__">
+              <img src="https://images.unsplash.com/photo-1701887714717-0321aa2382a5?auto=format&amp;fit=max&amp;w=700&amp;q=72" srcset="https://images.unsplash.com/photo-1701887714717-0321aa2382a5?auto=format&amp;fit=max&amp;w=400&amp;q=72 400w, https://images.unsplash.com/photo-1701887714717-0321aa2382a5?auto=format&amp;fit=max&amp;w=700&amp;q=72 700w, https://images.unsplash.com/photo-1701887714717-0321aa2382a5?auto=format&amp;fit=max&amp;w=1000&amp;q=72 1000w" sizes="(max-width: 640px) 48vw, 24vw" alt="Portrait beauté, main près du visage, sourire" width="1000" height="1500" loading="lazy" data-photo="1701887714717">
+              <span class="tbc tbc-photo">Photo provisoire</span>
+            </button>
+            <p class="shot__cat">Beauté</p>
+          </li>
+          <li data-cat="beaute">
+            <button type="button" class="shot" data-full="https://images.unsplash.com/photo-1632765866070-3fadf25d3d5b?auto=format&amp;fit=max&amp;w=1600&amp;q=80" data-caption="Beauté, mains levées" data-credit="Good Faces" data-profile="https://unsplash.com/@goodfacesagency">
+              <img src="https://images.unsplash.com/photo-1632765866070-3fadf25d3d5b?auto=format&amp;fit=max&amp;w=700&amp;q=72" srcset="https://images.unsplash.com/photo-1632765866070-3fadf25d3d5b?auto=format&amp;fit=max&amp;w=400&amp;q=72 400w, https://images.unsplash.com/photo-1632765866070-3fadf25d3d5b?auto=format&amp;fit=max&amp;w=700&amp;q=72 700w, https://images.unsplash.com/photo-1632765866070-3fadf25d3d5b?auto=format&amp;fit=max&amp;w=1000&amp;q=72 1000w" sizes="(max-width: 640px) 48vw, 24vw" alt="Portrait, mains levées autour du visage" width="1000" height="1500" loading="lazy" data-photo="1632765866070">
+              <span class="tbc tbc-photo">Photo provisoire</span>
+            </button>
+            <p class="shot__cat">Beauté</p>
+          </li>
+          <li data-cat="editorial">
+            <button type="button" class="shot" data-full="https://images.unsplash.com/photo-1748290880596-2a2c80530bc0?auto=format&amp;fit=max&amp;w=1600&amp;q=80" data-caption="Éditorial, série tailleur noir" data-credit="Alexia" data-profile="https://unsplash.com/@alequissia">
+              <img src="https://images.unsplash.com/photo-1748290880596-2a2c80530bc0?auto=format&amp;fit=max&amp;w=700&amp;q=72" srcset="https://images.unsplash.com/photo-1748290880596-2a2c80530bc0?auto=format&amp;fit=max&amp;w=400&amp;q=72 400w, https://images.unsplash.com/photo-1748290880596-2a2c80530bc0?auto=format&amp;fit=max&amp;w=700&amp;q=72 700w, https://images.unsplash.com/photo-1748290880596-2a2c80530bc0?auto=format&amp;fit=max&amp;w=1000&amp;q=72 1000w" sizes="(max-width: 640px) 48vw, 24vw" alt="Trois-quarts, veste noire, regard caméra" width="1000" height="1500" loading="lazy" data-photo="1748290880596">
+              <span class="tbc tbc-photo">Photo provisoire</span>
+            </button>
+            <p class="shot__cat">Éditorial</p>
+          </li>
+          <li data-cat="defiles" class="book-grid__gap">
+            <div class="tbc-block">Défilés&nbsp;: photos et vidéos à fournir, avec créateur, événement et année</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="polas" aria-labelledby="polas-title">
+      <div class="wrap polas__inner">
+        <div class="polas__text">
+          <h2 class="display display--md" id="polas-title">Polaroïds</h2>
+          <p>Sans maquillage ni retouche. Les agences les demandent pour voir le visage et la silhouette au naturel.</p>
+          <p>Mis à jour le <mark class="tbc">date à fournir</mark></p>
+          <p class="polas__hint">Attrapez un polaroïd et lancez-le.</p>
+        </div>
+        <ul class="polas__row">
+          <li class="pola">
+            <img src="https://images.unsplash.com/photo-1748290880628-580bbf2406ef?auto=format&amp;fit=max&amp;w=600&amp;q=72" srcset="https://images.unsplash.com/photo-1748290880628-580bbf2406ef?auto=format&amp;fit=max&amp;w=400&amp;q=72 400w, https://images.unsplash.com/photo-1748290880628-580bbf2406ef?auto=format&amp;fit=max&amp;w=600&amp;q=72 600w, https://images.unsplash.com/photo-1748290880628-580bbf2406ef?auto=format&amp;fit=max&amp;w=900&amp;q=72 900w" sizes="(max-width: 640px) 44vw, 22vw" alt="Polaroïd, en pied de face" width="900" height="1350" loading="lazy" data-photo="1748290880628">
+            <span class="tbc tbc-photo">Photo provisoire</span>
+            <p>En pied, de face</p>
+          </li>
+          <li class="pola">
+            <img src="https://images.unsplash.com/photo-1748290880592-6ca12f3628e0?auto=format&amp;fit=max&amp;w=600&amp;q=72" srcset="https://images.unsplash.com/photo-1748290880592-6ca12f3628e0?auto=format&amp;fit=max&amp;w=400&amp;q=72 400w, https://images.unsplash.com/photo-1748290880592-6ca12f3628e0?auto=format&amp;fit=max&amp;w=600&amp;q=72 600w, https://images.unsplash.com/photo-1748290880592-6ca12f3628e0?auto=format&amp;fit=max&amp;w=900&amp;q=72 900w" sizes="(max-width: 640px) 44vw, 22vw" alt="Polaroïd, en pied de trois-quarts" width="900" height="1350" loading="lazy" data-photo="1748290880592">
+            <span class="tbc tbc-photo">Photo provisoire</span>
+            <p>En pied, trois-quarts</p>
+          </li>
+          <li class="pola">
+            <img src="https://images.unsplash.com/photo-1748290880605-3d485a3b3740?auto=format&amp;fit=max&amp;w=600&amp;q=72" srcset="https://images.unsplash.com/photo-1748290880605-3d485a3b3740?auto=format&amp;fit=max&amp;w=400&amp;q=72 400w, https://images.unsplash.com/photo-1748290880605-3d485a3b3740?auto=format&amp;fit=max&amp;w=600&amp;q=72 600w, https://images.unsplash.com/photo-1748290880605-3d485a3b3740?auto=format&amp;fit=max&amp;w=900&amp;q=72 900w" sizes="(max-width: 640px) 44vw, 22vw" alt="Polaroïd, en pied, main dans la poche" width="900" height="1350" loading="lazy" data-photo="1748290880605">
+            <span class="tbc tbc-photo">Photo provisoire</span>
+            <p>En mouvement</p>
+          </li>
+          <li class="pola">
+            <img src="https://images.unsplash.com/photo-1748290880599-f7281c301aa8?auto=format&amp;fit=max&amp;w=600&amp;q=72" srcset="https://images.unsplash.com/photo-1748290880599-f7281c301aa8?auto=format&amp;fit=max&amp;w=400&amp;q=72 400w, https://images.unsplash.com/photo-1748290880599-f7281c301aa8?auto=format&amp;fit=max&amp;w=600&amp;q=72 600w, https://images.unsplash.com/photo-1748290880599-f7281c301aa8?auto=format&amp;fit=max&amp;w=900&amp;q=72 900w" sizes="(max-width: 640px) 44vw, 22vw" alt="Polaroïd, assise" width="900" height="1350" loading="lazy" data-photo="1748290880599">
+            <span class="tbc tbc-photo">Photo provisoire</span>
+            <p>Assise</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="parcours section" id="parcours" aria-labelledby="parcours-title">
+      <div class="wrap parcours__grid">
+        <div class="parcours__intro">
+          <h2 class="display" id="parcours-title">Parcours</h2>
+          <p class="lead"><mark class="tbc">Née à Dakar, Khady commence le mannequinat en 2019 après un premier shooting test. Elle défile depuis pour des créateurs sénégalais et pose pour des marques de mode et de beauté.</mark></p>
+          <dl class="facts">
+            <div><dt>Basée à</dt><dd>Dakar, Sénégal</dd></div>
+            <div><dt>Langues</dt><dd><mark class="tbc">français, wolof, anglais</mark></dd></div>
+            <div><dt>Déplacements</dt><dd><mark class="tbc">Afrique de l’Ouest et Europe</mark></dd></div>
+          </dl>
+        </div>
+
+        <div class="parcours__list">
+          <ol class="cv tbc-zone" data-tbc="Parcours provisoire : dates et faits à fournir">
+            <li data-preview="https://images.unsplash.com/photo-1748290880628-580bbf2406ef?auto=format&amp;fit=max&amp;w=600&amp;q=72"><span class="cv__year">2019</span><p><strong>Premiers pas.</strong> Premier shooting test et premiers castings à Dakar.</p></li>
+            <li data-preview="https://images.unsplash.com/photo-1701887714880-973785438426?auto=format&amp;fit=max&amp;w=600&amp;q=72"><span class="cv__year">2020</span><p><strong>Concours.</strong> Finaliste d’un concours de mannequins.</p></li>
+            <li data-preview="https://images.unsplash.com/photo-1748290880605-3d485a3b3740?auto=format&amp;fit=max&amp;w=600&amp;q=72"><span class="cv__year">2021</span><p><strong>Premier défilé.</strong> Ouverture du défilé d’un créateur dakarois.</p></li>
+            <li data-preview="https://images.unsplash.com/photo-1748290880601-73c379286f7d?auto=format&amp;fit=max&amp;w=600&amp;q=72"><span class="cv__year">2022</span><p><strong>Saison des défilés.</strong> Défilés pour plusieurs créateurs sénégalais pendant la semaine de la mode de Dakar.</p></li>
+            <li data-preview="https://images.unsplash.com/photo-1709810529099-0ce6102692df?auto=format&amp;fit=max&amp;w=600&amp;q=72"><span class="cv__year">2023</span><p><strong>Première campagne.</strong> Visage d’une campagne beauté, affichage et réseaux sociaux.</p></li>
+            <li data-preview="https://images.unsplash.com/photo-1748290880596-2a2c80530bc0?auto=format&amp;fit=max&amp;w=600&amp;q=72"><span class="cv__year">2024</span><p><strong>Agence.</strong> Signature avec une agence de mannequins.</p></li>
+            <li data-preview="https://images.unsplash.com/photo-1748290880602-33a0b2b4d390?auto=format&amp;fit=max&amp;w=600&amp;q=72"><span class="cv__year">2025</span><p><strong>Éditorial.</strong> Série mode dans un magazine.</p></li>
+            <li data-preview="https://images.unsplash.com/photo-1748290880486-fc82c2afbc24?auto=format&amp;fit=max&amp;w=600&amp;q=72"><span class="cv__year">2026</span><p><strong>Aujourd’hui.</strong> Disponible pour défilés, campagnes, éditoriaux et e-commerce, à Dakar et en voyage.</p></li>
+          </ol>
+
+          <h3 class="subhead">Marques, créateurs et magazines</h3>
+          <div class="tbc-block tbc-block--line">Liste des clients et publications à fournir, avec leurs logos si possible</div>
+        </div>
+      </div>
+    </section>
+
+    <a class="cta-band" href="#booking" aria-label="Demander un booking">
+      <span class="cta-band__track" aria-hidden="true">
+        <span>Demander un booking</span><span>Demander un booking</span><span>Demander un booking</span><span>Demander un booking</span>
+        <span>Demander un booking</span><span>Demander un booking</span><span>Demander un booking</span><span>Demander un booking</span>
+      </span>
+    </a>
+
+    <section class="booking" id="booking" aria-labelledby="booking-title">
+      <div class="wrap booking__grid">
+        <div class="booking__intro">
+          <h2 class="display" id="booking-title">Booking</h2>
+          <p class="lead">Défilé, campagne, éditorial, e-commerce ou vidéo&nbsp;: décrivez votre projet. Réponse sous <mark class="tbc">délai à confirmer</mark>.</p>
+          <ul class="contacts">
+            <li><svg class="icon" aria-hidden="true"><use href="#i-whatsapp"></use></svg><span><small>WhatsApp</small><mark class="tbc">numéro à fournir</mark></span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-mail"></use></svg><span><small>Email</small><mark class="tbc">email à fournir</mark></span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-instagram"></use></svg><span><small>Instagram</small><mark class="tbc">compte à fournir</mark></span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-agency"></use></svg><span><small>Agence</small><mark class="tbc">agence et contact à fournir</mark></span></li>
+            <li><svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg><span><small>Basée à</small>Dakar, Sénégal</span></li>
+          </ul>
+          <button class="btn btn--paper" type="button" data-print data-magnetic>
+            <svg class="icon" aria-hidden="true"><use href="#i-print"></use></svg>Imprimer la carte composite
+          </button>
+        </div>
+
+        <form class="slip" id="booking-form" novalidate>
+          <fieldset class="field field--choices" aria-describedby="err-type">
+            <legend>Type de projet</legend>
+            <div class="choices">
+              <label><input type="radio" name="type" value="Défilé" required><span>Défilé</span></label>
+              <label><input type="radio" name="type" value="Campagne"><span>Campagne</span></label>
+              <label><input type="radio" name="type" value="Éditorial"><span>Éditorial</span></label>
+              <label><input type="radio" name="type" value="E-commerce"><span>E-commerce</span></label>
+              <label><input type="radio" name="type" value="Vidéo"><span>Vidéo</span></label>
+              <label><input type="radio" name="type" value="Événement"><span>Événement</span></label>
+            </div>
+            <p class="field__error" id="err-type" hidden></p>
+          </fieldset>
+
+          <div class="slip__row">
+            <div class="field">
+              <label for="f-start">Date de début</label>
+              <input id="f-start" name="start" type="date" required aria-describedby="err-start">
+              <p class="field__error" id="err-start" hidden></p>
+            </div>
+            <div class="field">
+              <label for="f-end">Date de fin <span class="optional">facultatif</span></label>
+              <input id="f-end" name="end" type="date" aria-describedby="err-end">
+              <p class="field__error" id="err-end" hidden></p>
+            </div>
+          </div>
+
+          <div class="slip__row">
+            <div class="field">
+              <label for="f-place">Lieu</label>
+              <input id="f-place" name="place" type="text" placeholder="Dakar, Saly, Abidjan…" autocomplete="off" required aria-describedby="err-place">
+              <p class="field__error" id="err-place" hidden></p>
+            </div>
+            <div class="field">
+              <label for="f-usage">Utilisation des images</label>
+              <select id="f-usage" name="usage">
+                <option>À préciser</option>
+                <option>Réseaux sociaux</option>
+                <option>Site web et e-commerce</option>
+                <option>Presse et print</option>
+                <option>Affichage</option>
+                <option>Télévision</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="slip__row">
+            <div class="field">
+              <label for="f-name">Votre nom</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="err-name">
+              <p class="field__error" id="err-name" hidden></p>
+            </div>
+            <div class="field">
+              <label for="f-company">Marque ou société <span class="optional">facultatif</span></label>
+              <input id="f-company" name="company" type="text" autocomplete="organization">
+            </div>
+          </div>
+
+          <div class="slip__row">
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="err-email">
+              <p class="field__error" id="err-email" hidden></p>
+            </div>
+            <div class="field">
+              <label for="f-phone">Téléphone ou WhatsApp <span class="optional">facultatif</span></label>
+              <input id="f-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="f-message">Le projet <span class="optional">facultatif</span></label>
+            <textarea id="f-message" name="message" rows="4" placeholder="Créateur ou marque, nombre de looks, horaires, budget indicatif…"></textarea>
+          </div>
+
+          <div class="slip__submit">
+            <button class="btn btn--ink" type="submit" data-magnetic>Envoyer la demande</button>
+            <p class="slip__note">Maquette&nbsp;: la demande n’est envoyée nulle part.</p>
+          </div>
+          <p class="slip__status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__inner">
+      <p class="wordmark wordmark--footer">Khady Sène</p>
+      <p>Mannequin et modèle photo, Dakar. Carte composite 2026.</p>
+      <p class="credits">Photos provisoires sur Unsplash&nbsp;: <a href="https://unsplash.com/@alequissia">Alexia</a>, <a href="https://unsplash.com/@chriscreations__">Christian Agbede</a>, <a href="https://unsplash.com/@goodfacesagency">Good Faces</a>, <a href="https://unsplash.com/@kalpa_mahagamage">Lola Azizada</a>.</p>
+    </div>
+    <div class="wrap site-footer__end">
+      <p class="footer-name" aria-hidden="true">Khady Sène</p>
+      <a class="back-top" href="#contenu" data-roll>Haut de page</a>
+    </div>
+  </footer>
+
+  <dialog class="viewer" aria-label="Photo agrandie">
+    <figure class="viewer__figure">
+      <figcaption class="viewer__caption"></figcaption>
+    </figure>
+    <button class="viewer__btn viewer__close" type="button" data-viewer="close" aria-label="Fermer"><svg class="icon" aria-hidden="true"><use href="#i-close"></use></svg></button>
+    <button class="viewer__btn viewer__prev" type="button" data-viewer="prev" aria-label="Photo précédente"><svg class="icon" aria-hidden="true"><use href="#i-prev"></use></svg></button>
+    <button class="viewer__btn viewer__next" type="button" data-viewer="next" aria-label="Photo suivante"><svg class="icon" aria-hidden="true"><use href="#i-next"></use></svg></button>
+  </dialog>
+
+  <div class="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
+  <div class="cv-preview" aria-hidden="true"><span class="tbc tbc-photo">Photo provisoire</span></div>
+</body>
+</html>

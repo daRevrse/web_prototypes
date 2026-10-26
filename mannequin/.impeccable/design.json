@@ -1,0 +1,686 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-26T18:00:00Z",
+  "title": "Design System: Khady Sène, carte composite",
+  "extensions": {
+    "colorMeta": {
+      "ink": {
+        "role": "primary",
+        "displayName": "Press Black",
+        "canonical": "#000000",
+        "cssVar": "--ink",
+        "tonalRamp": [
+          "#000000",
+          "#1a1a1a",
+          "#333333",
+          "#474747",
+          "#6b6b6b",
+          "#8a8a8a",
+          "#b5b5b0",
+          "#e4e4e0"
+        ]
+      },
+      "seamless": {
+        "role": "neutral",
+        "displayName": "Studio Seamless",
+        "canonical": "#000000",
+        "cssVar": "--seamless",
+        "tonalRamp": [
+          "#000000",
+          "#111111",
+          "#1f1f1f",
+          "#2b2b2b",
+          "#3d3d3d",
+          "#555555",
+          "#777777",
+          "#999999"
+        ]
+      },
+      "on-seamless": {
+        "role": "neutral",
+        "displayName": "Seamless White",
+        "canonical": "#ffffff",
+        "cssVar": "--on-seamless",
+        "tonalRamp": [
+          "#5c5c5c",
+          "#7a7a7a",
+          "#999999",
+          "#b5b5b5",
+          "#cccccc",
+          "#e0e0e0",
+          "#f2f2f2",
+          "#ffffff"
+        ]
+      },
+      "on-seamless-muted": {
+        "role": "neutral",
+        "displayName": "Seamless Grey",
+        "canonical": "#b5b5b0",
+        "cssVar": "--on-seamless-2",
+        "tonalRamp": [
+          "#2a2a28",
+          "#42423f",
+          "#5c5c58",
+          "#787873",
+          "#959590",
+          "#b5b5b0",
+          "#d2d2ce",
+          "#ececea"
+        ]
+      },
+      "card-stock": {
+        "role": "neutral",
+        "displayName": "Matte Card Stock",
+        "canonical": "#fcfcfa",
+        "cssVar": "--stock",
+        "tonalRamp": [
+          "#2b2b2a",
+          "#4a4a48",
+          "#6c6c69",
+          "#8f8f8b",
+          "#b3b3af",
+          "#d4d4d0",
+          "#e7e6e2",
+          "#fcfcfa"
+        ]
+      },
+      "ink-secondary": {
+        "role": "neutral",
+        "displayName": "Graphite",
+        "canonical": "#474747",
+        "cssVar": "--ink-2",
+        "tonalRamp": [
+          "#1a1a1a",
+          "#2e2e2e",
+          "#474747",
+          "#5f5f5f",
+          "#7a7a7a",
+          "#9a9a9a",
+          "#c2c2c2",
+          "#ececec"
+        ]
+      },
+      "ink-tertiary": {
+        "role": "neutral",
+        "displayName": "Pencil Grey",
+        "canonical": "#6b6b6b",
+        "cssVar": "--ink-3",
+        "tonalRamp": [
+          "#1f1f1f",
+          "#353535",
+          "#4f4f4f",
+          "#6b6b6b",
+          "#878787",
+          "#a5a5a5",
+          "#c8c8c8",
+          "#ededed"
+        ]
+      },
+      "hairline": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "#dcdbd6",
+        "cssVar": "--rule",
+        "tonalRamp": [
+          "#2d2d2b",
+          "#4b4a46",
+          "#6d6c67",
+          "#8f8e89",
+          "#b2b1ac",
+          "#dcdbd6",
+          "#eae9e5",
+          "#f6f6f3"
+        ]
+      },
+      "field-stroke": {
+        "role": "neutral",
+        "displayName": "Field Stroke",
+        "canonical": "#8a8a8a",
+        "cssVar": "--field",
+        "tonalRamp": [
+          "#262626",
+          "#3e3e3e",
+          "#585858",
+          "#717171",
+          "#8a8a8a",
+          "#a8a8a8",
+          "#c9c9c9",
+          "#ebebeb"
+        ]
+      },
+      "error": {
+        "role": "error",
+        "displayName": "Proof Red",
+        "canonical": "#b3261e",
+        "cssVar": "--error",
+        "tonalRamp": [
+          "#3d0c09",
+          "#5e1410",
+          "#851c16",
+          "#b3261e",
+          "#d4483f",
+          "#e8807a",
+          "#f4b8b4",
+          "#fce8e6"
+        ]
+      },
+      "tbc-highlight": {
+        "role": "provisional",
+        "displayName": "Proof Yellow",
+        "canonical": "#ffe680",
+        "cssVar": "--tbc-bg",
+        "tonalRamp": [
+          "#3d3000",
+          "#665000",
+          "#8f7200",
+          "#c29b00",
+          "#e6c95a",
+          "#ffe680",
+          "#fff1b8",
+          "#fff9df"
+        ]
+      },
+      "tbc-ink": {
+        "role": "provisional",
+        "displayName": "Proof Ink",
+        "canonical": "#3d3000",
+        "cssVar": "--tbc-ink",
+        "tonalRamp": [
+          "#1f1800",
+          "#3d3000",
+          "#5c4800",
+          "#7a6000",
+          "#a38000",
+          "#c9a93a",
+          "#e6c95a",
+          "#fff8d6"
+        ]
+      },
+      "tbc-line": {
+        "role": "provisional",
+        "displayName": "Proof Rule",
+        "canonical": "#c29b00",
+        "cssVar": "--tbc-line",
+        "tonalRamp": [
+          "#3d3000",
+          "#5c4800",
+          "#8f7200",
+          "#c29b00",
+          "#c9a93a",
+          "#e6c95a",
+          "#fff1b8",
+          "#fff9df"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "footer-name": {
+        "displayName": "Footer Name",
+        "purpose": "The name across the foot of the page; letters rise on reveal. Decorative."
+      },
+      "loader-name": {
+        "displayName": "Loader Name",
+        "purpose": "The name on the opening screen; 40vw, one word per line under 640px."
+      },
+      "display": {
+        "displayName": "Display",
+        "purpose": "Section titles (Book, Parcours, Booking), uppercase, letters rise from their line on reveal."
+      },
+      "ticker": {
+        "displayName": "Ticker",
+        "purpose": "Services ticker on the seamless, filled and outlined words alternating."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Smaller display step (Polaroïds)."
+      },
+      "loader-count": {
+        "displayName": "Loader Count",
+        "purpose": "The 0-100 count on the opening screen, tabular."
+      },
+      "band": {
+        "displayName": "Band",
+        "purpose": "The reverse 'Demander un booking' marquee band."
+      },
+      "display-card": {
+        "displayName": "Display Card",
+        "purpose": "The name on the card front, in container units; one line at 23.5cqw in portrait."
+      },
+      "display-card-back": {
+        "displayName": "Display Card Back",
+        "purpose": "The name on the card back; hidden in portrait."
+      },
+      "wordmark": {
+        "displayName": "Wordmark",
+        "purpose": "The name in header and footer."
+      },
+      "numeral": {
+        "displayName": "Numeral",
+        "purpose": "Front measurements, tabular lining figures, count up on first view; clamp(18px, 3.8cqh, 26px) in portrait. Units at 0.42em (floor 11px) in Pencil Grey."
+      },
+      "numeral-back": {
+        "displayName": "Numeral Back",
+        "purpose": "Full stats on the card back; 18px in portrait."
+      },
+      "card-role": {
+        "displayName": "Card Role",
+        "purpose": "Descriptor under the card name; clamp(13px, 2.6cqh, 15px) in portrait."
+      },
+      "card-agency": {
+        "displayName": "Card Agency",
+        "purpose": "Agency line on the card; 13px in portrait."
+      },
+      "card-button": {
+        "displayName": "Card Button",
+        "purpose": "Buttons inside the card, min height max(44px, 7.4cqh); 14px in the portrait front row."
+      },
+      "card-button-small": {
+        "displayName": "Card Button Small",
+        "purpose": "Small buttons inside the card, min height max(40px, 6cqh)."
+      },
+      "card-contact": {
+        "displayName": "Card Contact",
+        "purpose": "Contact lines on the card back."
+      },
+      "card-label": {
+        "displayName": "Card Label",
+        "purpose": "Measurement labels on the card front, Pencil Grey; 11px in portrait."
+      },
+      "card-label-back": {
+        "displayName": "Card Label Back",
+        "purpose": "Measurement labels on the card back."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Section introductions, max 34em; rise line by line on reveal."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Sub-headings inside a section."
+      },
+      "body-list": {
+        "displayName": "Body List",
+        "purpose": "Career entries, max 38em, rank by weight; 1.0625rem under 640px."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text and mobile menu links; 1rem under 640px."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Buttons; filters and polaroid captions at 500."
+      },
+      "label-small": {
+        "displayName": "Label Small",
+        "purpose": "Nav links, small header button, field labels (600), book captions, polaroid hint, footer text, viewer caption, booking status, pointer tag."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Field errors (500, Proof Red) and the booking note (Pencil Grey)."
+      },
+      "caption-small": {
+        "displayName": "Caption Small",
+        "purpose": "Contact labels on the seamless; filter counts use the same ratio as 0.8125em."
+      },
+      "meta": {
+        "displayName": "Meta",
+        "purpose": "Opening screen caption; review bar text and button (700) at the same size."
+      },
+      "slug": {
+        "displayName": "Slug",
+        "purpose": "Print slug under the card; 12px under 640px."
+      },
+      "proof-block": {
+        "displayName": "Proof Block",
+        "purpose": "Provisional layer only: missing-content boxes."
+      },
+      "proof-tag": {
+        "displayName": "Proof Tag",
+        "purpose": "Provisional layer only: 'Photo provisoire' tags and zone labels."
+      },
+      "floor": {
+        "displayName": "Floor",
+        "purpose": "Minimum for any scaled text: portrait card labels, units, inline proof tags via max(11px, ...)."
+      }
+    },
+    "shadows": [
+      {
+        "name": "field-ring",
+        "value": "0 0 0 1px var(--ink)",
+        "purpose": "Thickens a field border on focus; a border, not elevation."
+      },
+      {
+        "name": "field-ring-error",
+        "value": "0 0 0 1px var(--error)",
+        "purpose": "Thickens an invalid field border."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.23, 1, 0.32, 1)",
+        "purpose": "CSS state transitions: press scale, nav underline, filter underline, menu panel, viewer."
+      },
+      {
+        "name": "press",
+        "value": "transform: scale(0.97) over 160ms ease-out",
+        "purpose": "Active state of buttons and chips."
+      },
+      {
+        "name": "color-state",
+        "value": "160-180ms ease (300ms on the booking band)",
+        "purpose": "Background, colour and border changes on hover and selection."
+      },
+      {
+        "name": "gate-motion",
+        "value": "gsap.matchMedia('(prefers-reduced-motion: no-preference)')",
+        "purpose": "Both motion layers run only here; otherwise no opening screen, no Lenis, no GSAP, card faces stacked."
+      },
+      {
+        "name": "gate-pointer",
+        "value": "(prefers-reduced-motion: no-preference) and (hover: hover) and (pointer: fine)",
+        "purpose": "Card tilt, pointer square, rolling links, magnetic buttons, parcours preview, polaroid dragging."
+      },
+      {
+        "name": "smooth-scroll",
+        "value": "Lenis lerp 0.11; anchor scrolls 1.3-1.4s, back to top 1.8s",
+        "purpose": "Page scroll and in-page links."
+      },
+      {
+        "name": "opening-screen",
+        "value": "chars yPercent 110 to 0, 1s, stagger 0.04, power4.out; count and bar 0 to 100 over 1.6s power2.inOut; exit chars to -110 (0.6s power3.in) then clipPath inset(0 0 100% 0) over 1s power4.inOut",
+        "purpose": "Once per session (sessionStorage); 6s fallback if scripts fail."
+      },
+      {
+        "name": "develop-reveal",
+        "value": "clipPath inset(100% 0 0 0) to inset(0), 1.25-1.3s power4.out, image scale 1.25-1.3 to 1-1.12 over 1.7-1.8s",
+        "purpose": "Photos develop bottom-up (card front, book shots, card back after 90 degrees, viewer image at 0.85s)."
+      },
+      {
+        "name": "letters-rise",
+        "value": "SplitText chars yPercent 110 to 0, 1.05-1.1s power4.out, stagger 0.03-0.035, line mask",
+        "purpose": "Card name, display titles, footer name."
+      },
+      {
+        "name": "lines-rise",
+        "value": "SplitText lines yPercent 105 to 0, 0.95s power3.out, stagger 0.08, line mask",
+        "purpose": "Section intro paragraphs and leads."
+      },
+      {
+        "name": "text-lift",
+        "value": "y 22 to 0, opacity 0 to 1, 0.9s power3.out, stagger 0.07",
+        "purpose": "Filters, facts, sub-heads, contacts, back-to-top."
+      },
+      {
+        "name": "count-up",
+        "value": "0 to value, 1.3s power3.out",
+        "purpose": "Measurements on each card face when first shown."
+      },
+      {
+        "name": "card-flip",
+        "value": "rotationY 0 to 180, power2.inOut, scrubbed 0.7, scale dip to 0.93",
+        "purpose": "Pinned comp card turning over on scroll."
+      },
+      {
+        "name": "card-tilt",
+        "value": "quickTo rotationY up to 5deg, rotationX up to 4deg (perspective 1400), portrait counter-shift up to 12px x / 8px y, 0.9s power3",
+        "purpose": "Card leans toward the pointer; portrait in counter-parallax."
+      },
+      {
+        "name": "book-depth",
+        "value": "inner image yPercent -5 to 5 scrubbed; skewY clamped to 3deg from scroll velocity, 0.5s power3",
+        "purpose": "Book prints drift and lean with scroll."
+      },
+      {
+        "name": "marquee",
+        "value": "xPercent loop 32s (ticker) / 28s reversed (booking band), timeScale 1-6 from scroll velocity, settles over 0.8s",
+        "purpose": "Ticker and booking band."
+      },
+      {
+        "name": "polaroid-drop",
+        "value": "y -240 to 0 from rotations -14/10/-9/13deg, 1.15s back.out(1.3), stagger 0.12",
+        "purpose": "Polaroids dropped onto the seamless."
+      },
+      {
+        "name": "polaroid-throw",
+        "value": "Draggable x,y bounded to the band, InertiaPlugin; press scale 1.06 rotation 0; release random within 9deg, 0.7s back.out(2)",
+        "purpose": "Prints handled like loose paper."
+      },
+      {
+        "name": "pointer-square",
+        "value": "quickTo x/y 0.35s power3; size 14 / 40 / 84px over 0.35s power3.out",
+        "purpose": "Difference-blend pointer that becomes 'Voir' or 'Lancer'."
+      },
+      {
+        "name": "letter-roll",
+        "value": "chars yPercent 0 to -100, 0.45s power3.inOut, stagger 0.018",
+        "purpose": "Nav links and back-to-top on hover."
+      },
+      {
+        "name": "magnetic",
+        "value": "follow 30% x / 40% y, 0.5s power3.out; press 0.96; leave elastic.out(1, 0.35) over 0.8s",
+        "purpose": "Primary action buttons."
+      },
+      {
+        "name": "cv-preview",
+        "value": "quickTo x/y 0.6s power3; in opacity 1 scale 1 random tilt within 4deg 0.45s; image scale 1.2 to 1 0.7s; out scale 0.85 0.3s",
+        "purpose": "Year photo following the pointer in the parcours."
+      },
+      {
+        "name": "progress-lines",
+        "value": "scaleX / scaleY 0 to 1 scrubbed (0.3 reading, 0.4 parcours)",
+        "purpose": "Reading-progress line and parcours line."
+      },
+      {
+        "name": "header-hide",
+        "value": "yPercent 0 / -100, 0.4s, after 400px",
+        "purpose": "Header hides on scroll down, returns on scroll up."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce disables all GSAP, Lenis and the opening screen; faces stack",
+        "purpose": "Accessibility floor."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "book-3col",
+        "value": "1100px"
+      },
+      {
+        "name": "single-column",
+        "value": "960px"
+      },
+      {
+        "name": "nav-collapse",
+        "value": "860px"
+      },
+      {
+        "name": "portrait-card",
+        "value": "640px"
+      },
+      {
+        "name": "flip-min-height",
+        "value": "520px (landscape) / 700px (portrait)"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Ink Button",
+      "kind": "button",
+      "refersTo": "button-ink",
+      "description": "Primary action, Press Black on stock; magnetic on fine pointers.",
+      "html": "<button class=\"ds-btn ds-btn-ink\">Demander un booking</button>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.55em; min-height: 48px; padding: 0 1.4em; border: 1px solid transparent; border-radius: 0; font: 600 1rem/1 \"Sofia Sans\", \"Segoe UI\", system-ui, sans-serif; letter-spacing: 0.01em; cursor: pointer; transition: background-color 180ms ease, color 180ms ease, border-color 180ms ease, transform 160ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-btn:active { transform: scale(0.97); } .ds-btn:focus-visible { outline: 2px solid #000; outline-offset: 3px; } .ds-btn-ink { background: var(--ink, #000); color: var(--stock, #fcfcfa); } .ds-btn-ink:hover { background: #333; }"
+    },
+    {
+      "name": "Line Button",
+      "kind": "button",
+      "refersTo": "button-line",
+      "description": "Secondary action on stock (flip, print); fills black on hover.",
+      "html": "<button class=\"ds-btn-line\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M3.5 12a8.5 8.5 0 0 1 14.6-5.9L20.5 8.5M20.5 3.5v5h-5M20.5 12a8.5 8.5 0 0 1-14.6 5.9L3.5 15.5M3.5 20.5v-5h5\"/></svg>Voir le verso</button>",
+      "css": ".ds-btn-line { display: inline-flex; align-items: center; gap: 0.55em; min-height: 48px; padding: 0 1.4em; border: 1px solid var(--ink, #000); border-radius: 0; background: transparent; color: var(--ink, #000); font: 600 1rem/1 \"Sofia Sans\", \"Segoe UI\", system-ui, sans-serif; letter-spacing: 0.01em; cursor: pointer; transition: background-color 180ms ease, color 180ms ease, transform 160ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-btn-line:hover { background: var(--ink, #000); color: var(--stock, #fcfcfa); } .ds-btn-line:active { transform: scale(0.97); } .ds-btn-line:focus-visible { outline: 2px solid #000; outline-offset: 3px; }"
+    },
+    {
+      "name": "Paper Button",
+      "kind": "button",
+      "refersTo": "button-paper",
+      "description": "Action placed on the black seamless.",
+      "html": "<div class=\"ds-seamless\"><button class=\"ds-btn-paper\">Imprimer la carte composite</button></div>",
+      "css": ".ds-seamless { background: var(--seamless, #000); padding: 24px; } .ds-btn-paper { min-height: 48px; padding: 0 1.4em; border: 0; border-radius: 0; background: var(--stock, #fcfcfa); color: var(--ink, #000); font: 600 1rem/1 \"Sofia Sans\", \"Segoe UI\", system-ui, sans-serif; letter-spacing: 0.01em; cursor: pointer; transition: background-color 180ms ease, transform 160ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-btn-paper:hover { background: #e4e4e0; } .ds-btn-paper:active { transform: scale(0.97); } .ds-btn-paper:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input-field",
+      "description": "Booking slip field with label above; black ring on focus.",
+      "html": "<label class=\"ds-field\"><span>Lieu</span><input placeholder=\"Dakar, Saly, Abidjan…\"></label>",
+      "css": ".ds-field { display: grid; gap: 8px; font: 600 0.9375rem/1.3 \"Sofia Sans\", system-ui, sans-serif; color: #000; } .ds-field input { min-height: 48px; padding: 10px 14px; border: 1px solid var(--field, #8a8a8a); border-radius: 0; background: #fff; color: #000; font: 400 1rem/1.4 \"Sofia Sans\", system-ui, sans-serif; transition: border-color 160ms ease, box-shadow 160ms ease; } .ds-field input::placeholder { color: #707070; } .ds-field input:focus-visible { outline: 0; border-color: #000; box-shadow: 0 0 0 1px #000; }"
+    },
+    {
+      "name": "Choice Chip",
+      "kind": "chip",
+      "refersTo": "chip-choice",
+      "description": "Project type radio; checked fills black.",
+      "html": "<div class=\"ds-choices\"><label><input type=\"radio\" name=\"t\" checked><span>Défilé</span></label><label><input type=\"radio\" name=\"t\"><span>Campagne</span></label></div>",
+      "css": ".ds-choices { display: flex; gap: 8px; font: 500 1rem/1 \"Sofia Sans\", system-ui, sans-serif; } .ds-choices label { position: relative; } .ds-choices input { position: absolute; opacity: 0; width: 1px; height: 1px; } .ds-choices span { display: inline-flex; align-items: center; min-height: 42px; padding: 0 16px; border: 1px solid #8a8a8a; cursor: pointer; transition: background-color 160ms ease, color 160ms ease, border-color 160ms ease; } .ds-choices span:hover { border-color: #000; } .ds-choices input:checked + span { background: #000; color: #fcfcfa; border-color: #000; } .ds-choices input:focus-visible + span { outline: 2px solid #000; outline-offset: 2px; }"
+    },
+    {
+      "name": "Filter Tabs",
+      "kind": "nav",
+      "refersTo": "filter-tab",
+      "description": "Book category filters on a hairline with a 2px black underline for the active one.",
+      "html": "<div class=\"ds-filters\"><button class=\"ds-filter\" aria-pressed=\"true\">Tout <span>9</span></button><button class=\"ds-filter\" aria-pressed=\"false\">Éditorial <span>4</span></button></div>",
+      "css": ".ds-filters { display: flex; gap: 28px; border-bottom: 1px solid #dcdbd6; } .ds-filter { position: relative; padding: 12px 0 14px; border: 0; background: none; color: #6b6b6b; font: 500 1rem/1 \"Sofia Sans\", system-ui, sans-serif; cursor: pointer; transition: color 160ms ease; } .ds-filter span { font-size: 0.8125em; font-variant-numeric: tabular-nums; } .ds-filter::after { content: \"\"; position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background: #000; transform: scaleX(0); transform-origin: left; transition: transform 220ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-filter:hover, .ds-filter[aria-pressed=\"true\"] { color: #000; } .ds-filter[aria-pressed=\"true\"] { font-weight: 600; } .ds-filter[aria-pressed=\"true\"]::after { transform: scaleX(1); } .ds-filter:focus-visible { outline: 2px solid #000; outline-offset: 3px; }"
+    },
+    {
+      "name": "Header Nav",
+      "kind": "nav",
+      "refersTo": "",
+      "description": "Wordmark, four links with a drawn underline on hover (rolling letters when motion is on), small ink CTA, 2px reading-progress line on the bottom edge.",
+      "html": "<header class=\"ds-header\"><a class=\"ds-wordmark\" href=\"#\">Khady Sène</a><nav class=\"ds-nav\"><a href=\"#\">Carte</a><a href=\"#\">Book</a><a href=\"#\">Parcours</a><a href=\"#\">Booking</a></nav><a class=\"ds-cta\" href=\"#\">Demander un booking</a><span class=\"ds-progress\"></span></header>",
+      "css": ".ds-header { position: relative; display: flex; align-items: center; gap: 28px; height: 60px; padding: 0 24px; background: #fcfcfa; border-bottom: 1px solid #dcdbd6; color: #000; } .ds-wordmark { margin-right: auto; font: 650 1.75rem/1 \"Sofia Sans Extra Condensed\", \"Arial Narrow\", sans-serif; text-transform: uppercase; letter-spacing: 0.015em; color: inherit; text-decoration: none; } .ds-nav { display: flex; gap: 26px; } .ds-nav a { padding-block: 6px; font: 500 0.9375rem/1.2 \"Sofia Sans\", system-ui, sans-serif; color: inherit; text-decoration: none; background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat; transition: background-size 220ms cubic-bezier(0.23, 1, 0.32, 1); } .ds-nav a:hover { background-size: 100% 1px; } .ds-nav a:focus-visible, .ds-cta:focus-visible { outline: 2px solid #000; outline-offset: 3px; } .ds-cta { display: inline-flex; align-items: center; min-height: 40px; padding: 0 1em; background: #000; color: #fcfcfa; font: 600 0.9375rem/1 \"Sofia Sans\", system-ui, sans-serif; text-decoration: none; } .ds-cta:hover { background: #333; } .ds-progress { position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background: #000; transform: scaleX(0.4); transform-origin: 0 50%; }"
+    },
+    {
+      "name": "Comp Card Front",
+      "kind": "card",
+      "refersTo": "card-face",
+      "description": "Signature: white 3:2 card on the seamless with crop marks; photo window left, condensed name and tabular measurements right.",
+      "html": "<div class=\"ds-stage\"><div class=\"ds-sheet\"><i class=\"ds-crop ds-tl\"></i><i class=\"ds-crop ds-tr\"></i><article class=\"ds-face\"><div class=\"ds-photo\"></div><div class=\"ds-body\"><h1 class=\"ds-name\">Khady<br>Sène</h1><p class=\"ds-role\">Mannequin et modèle photo, basée à Dakar</p><dl class=\"ds-stats\"><div><dt>Taille</dt><dd>178<small>cm</small></dd></div><div><dt>Poitrine</dt><dd>84</dd></div><div><dt>Hanches</dt><dd>90</dd></div></dl></div></article></div></div>",
+      "css": ".ds-stage { background: #000; padding: 32px; } .ds-sheet { position: relative; max-width: 560px; margin: auto; } .ds-crop { position: absolute; top: 0; width: 22px; height: 1px; background: #b5b5b0; } .ds-tl { left: -34px; } .ds-tr { right: -34px; } .ds-face { container-type: size; aspect-ratio: 3 / 2; display: grid; grid-template-columns: 44% 1fr; background: #fcfcfa; color: #000; overflow: hidden; } .ds-photo { background: #2b2b2b; } .ds-body { display: flex; flex-direction: column; padding: 6.5cqh 5.5cqh 5.5cqh; } .ds-name { margin: 0; font: 620 22cqh/0.86 \"Sofia Sans Extra Condensed\", \"Arial Narrow\", sans-serif; text-transform: uppercase; letter-spacing: -0.005em; } .ds-role { margin: 3.6cqh 0 0; font: 400 clamp(12px, 3cqh, 24px)/1.3 \"Sofia Sans\", system-ui, sans-serif; color: #474747; } .ds-stats { display: flex; gap: 3.6cqh; margin: auto 0 0; } .ds-stats dt { font: 400 clamp(10px, 2.2cqh, 16px)/1.2 \"Sofia Sans\", system-ui, sans-serif; color: #6b6b6b; } .ds-stats dd { margin: 0; font: 600 clamp(16px, 5.6cqh, 46px)/1 \"Sofia Sans Condensed\", sans-serif; font-variant-numeric: tabular-nums lining-nums; } .ds-stats small { font-size: 0.42em; font-weight: 500; color: #6b6b6b; margin-left: 0.2em; }"
+    },
+    {
+      "name": "Polaroid",
+      "kind": "card",
+      "refersTo": "polaroid",
+      "description": "Loose print on the seamless, slightly rotated, condensed caption; grabbed and thrown on fine pointers.",
+      "html": "<div class=\"ds-seamless-row\"><figure class=\"ds-pola\"><div class=\"ds-pola-img\"></div><figcaption>En pied, de face</figcaption></figure><figure class=\"ds-pola ds-even\"><div class=\"ds-pola-img\"></div><figcaption>Assise</figcaption></figure></div>",
+      "css": ".ds-seamless-row { display: grid; grid-template-columns: repeat(2, 160px); gap: 20px; padding: 32px; background: #000; } .ds-pola { margin: 0; padding: 10px 10px 0; background: #fcfcfa; color: #000; transform: rotate(-0.8deg); } .ds-even { transform: rotate(0.6deg) translateY(10px); } .ds-pola:active { transform: rotate(0) scale(1.06); } .ds-pola-img { aspect-ratio: 3 / 4; background: #e7e6e2; } .ds-pola figcaption { padding: 12px 2px 16px; font: 500 1rem/1.2 \"Sofia Sans Condensed\", sans-serif; }"
+    },
+    {
+      "name": "Opening Screen",
+      "kind": "custom",
+      "refersTo": "loader",
+      "description": "Signature: full-screen seamless with the name, a 0-100 count and a loading bar; lifts away as a curtain once per session.",
+      "html": "<div class=\"ds-loader\"><p class=\"ds-loader-name\">Khady Sène</p><div class=\"ds-loader-foot\"><span>Carte composite, édition 2026</span><span class=\"ds-loader-count\">64</span></div><span class=\"ds-loader-bar\"></span></div>",
+      "css": ".ds-loader { position: relative; display: flex; flex-direction: column; justify-content: flex-end; min-height: 320px; padding: 32px; background: #000; color: #fff; } .ds-loader-name { margin: 0; font: 620 clamp(4.5rem, 16vw, 9rem)/0.84 \"Sofia Sans Extra Condensed\", \"Arial Narrow\", sans-serif; text-transform: uppercase; letter-spacing: -0.005em; } .ds-loader-foot { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; margin-top: 24px; color: #b5b5b0; font: 500 14px/1.3 \"Sofia Sans\", system-ui, sans-serif; } .ds-loader-count { font: 620 clamp(3rem, 7vw, 6rem)/0.9 \"Sofia Sans Extra Condensed\", sans-serif; color: #fff; font-variant-numeric: tabular-nums; } .ds-loader-bar { position: absolute; left: 0; bottom: 0; width: 100%; height: 3px; background: #fff; transform: scaleX(0.64); transform-origin: 0 50%; }"
+    },
+    {
+      "name": "Pointer Square",
+      "kind": "custom",
+      "refersTo": "cursor-tag",
+      "description": "Difference-blend square pointer: 14px at rest, 40px on controls, 84px tag reading 'Voir' or 'Lancer'. Fine pointers only.",
+      "html": "<div class=\"ds-cursor-demo\"><span class=\"ds-cursor\"></span><span class=\"ds-cursor ds-cursor-link\"></span><span class=\"ds-cursor ds-cursor-tag\">Voir</span></div>",
+      "css": ".ds-cursor-demo { display: flex; align-items: center; gap: 24px; padding: 24px; background: linear-gradient(90deg, #fcfcfa 50%, #000 50%); } .ds-cursor { display: grid; place-items: center; width: 14px; height: 14px; background: #fff; color: #000; mix-blend-mode: difference; font: 600 0.9375rem/1 \"Sofia Sans\", system-ui, sans-serif; } .ds-cursor-link { width: 40px; height: 40px; } .ds-cursor-tag { width: 84px; height: 84px; }"
+    },
+    {
+      "name": "Booking Band",
+      "kind": "custom",
+      "refersTo": "cta-band",
+      "description": "Reverse marquee link repeating 'Demander un booking' on stock; inverts to Press Black on hover.",
+      "html": "<a class=\"ds-band\" href=\"#\"><span class=\"ds-band-track\"><span>Demander un booking</span><span>Demander un booking</span><span>Demander un booking</span></span></a>",
+      "css": ".ds-band { display: block; overflow: hidden; padding-block: clamp(14px, 2vw, 26px); background: #fcfcfa; color: #000; border-top: 1px solid #dcdbd6; text-decoration: none; transition: background-color 300ms ease, color 300ms ease; } .ds-band:hover { background: #000; color: #fcfcfa; } .ds-band:focus-visible { outline: 2px solid #000; outline-offset: -4px; } .ds-band-track { display: flex; width: max-content; } .ds-band-track span { display: inline-flex; align-items: center; gap: 0.45em; padding-right: 0.45em; font: 620 clamp(2.5rem, 5.5vw, 4.5rem)/1 \"Sofia Sans Extra Condensed\", \"Arial Narrow\", sans-serif; text-transform: uppercase; white-space: nowrap; } .ds-band-track span::after { content: \"\"; width: 0.42em; height: 3px; background: currentColor; }"
+    },
+    {
+      "name": "Footer End",
+      "kind": "custom",
+      "refersTo": "",
+      "description": "Hairline, the giant footer name and a 'Haut de page' link at top right.",
+      "html": "<div class=\"ds-foot-end\"><p class=\"ds-foot-name\">Khady Sène</p><a class=\"ds-back-top\" href=\"#\">Haut de page</a></div>",
+      "css": ".ds-foot-end { position: relative; padding-top: 56px; border-top: 1px solid #dcdbd6; background: #fcfcfa; color: #000; overflow: hidden; } .ds-foot-name { margin: 0 0 0 -0.04em; font: 620 clamp(4.5rem, 22vw, 10rem)/0.82 \"Sofia Sans Extra Condensed\", \"Arial Narrow\", sans-serif; text-transform: uppercase; letter-spacing: -0.01em; } .ds-back-top { position: absolute; top: 20px; right: 0; color: #000; font: 600 0.9375rem/1 \"Sofia Sans\", system-ui, sans-serif; text-decoration: none; } .ds-back-top:hover { text-decoration: underline; text-underline-offset: 0.2em; } .ds-back-top:focus-visible { outline: 2px solid #000; outline-offset: 3px; }"
+    },
+    {
+      "name": "Provisional Mark (mockup only)",
+      "kind": "custom",
+      "refersTo": "",
+      "description": "Review-layer highlight for content the client must supply; removed with real content, not part of the world.",
+      "html": "<p class=\"ds-p\">Représentée par <mark class=\"ds-tbc\">agence à confirmer</mark></p>",
+      "css": ".ds-p { font: 400 1rem/1.55 \"Sofia Sans\", system-ui, sans-serif; color: #474747; } .ds-tbc { background: #ffe680; color: #3d3000; border-bottom: 1px dashed #c29b00; padding: 0.04em 0.28em; font-weight: 600; box-decoration-break: clone; -webkit-box-decoration-break: clone; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Comp Card on the Seamless",
+    "overview": "The site is a printed working object photographed in a studio: one white matte card, with printer's crop marks at its corners, lying on a black seamless. Everything on the page is either that black ground or a piece of white stock placed on it: the card itself, the polaroids, the booking slip. The palette is achromatic so the photographs carry all the colour. Depth comes from paper on black, never from shadow.\n\nType is a single family, Sofia Sans, in three widths. The name and section titles are set in Extra Condensed capitals at poster scale, the measurements in Condensed tabular numerals, and everything else in the regular width in sentence case. The density is a booker's: facts in one look, hairline rules between lines, no ornament.\n\nMotion is one grammar, the print developing, in two layers. The first layer develops the page: crop marks draw out, photos reveal from the bottom with a slow scale settle, display letters rise from their line, and the card turns over on scroll. The second layer handles the prints: an opening screen where the name rises and a 0 to 100 count runs before a black curtain lifts, the card tilting toward the pointer, measurements counting up, paragraphs rising line by line, polaroids that can be picked up and thrown, and a giant footer name rising letter by letter. All of it is gated on `prefers-reduced-motion: no-preference`, and everything that follows the pointer is also gated on a fine, hovering pointer. Under reduced motion none of it runs: no opening screen, no smooth scroll, and the two card faces stack.",
+    "keyCharacteristics": [
+      "Black seamless (#000) alternating with near-white card stock; no other ground colours.",
+      "One family in three widths; capitals only for the name, section titles, wordmark, ticker and booking band.",
+      "Square corners everywhere (0px), 1px hairline rules, no shadows.",
+      "Photos in plain rectangular windows with thin stock-coloured gutters.",
+      "Print-native devices: crop marks, slug line under the card, polaroids, A5 print stylesheet.",
+      "Motion is the print developing: things rise from a mask, reveal bottom-up, or are handled like loose prints.",
+      "A yellow review layer marks provisional content and disappears once the client supplies facts."
+    ],
+    "rules": [
+      {
+        "name": "The Photographs Carry the Colour Rule",
+        "body": "No chromatic colour enters the system outside the photographs. Red is for errors, yellow for provisional marks; neither is decoration.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Grounds Rule",
+        "body": "A surface is either the black seamless or white stock. Light sections sit on stock; dark sections are seamless and anything placed on them is stock.",
+        "section": "colors"
+      },
+      {
+        "name": "The Capitals Are the Name Rule",
+        "body": "Uppercase is reserved for the Extra Condensed display width: the name (card, loader, footer), section titles, wordmark, ticker and booking band. Every other line is sentence case.",
+        "section": "typography"
+      },
+      {
+        "name": "The Rank by Weight Rule",
+        "body": "Inside a list, rank comes from weight, not size: career entries use one size, with the year at 700 and the lead phrase at 650.",
+        "section": "typography"
+      },
+      {
+        "name": "The Card Scales as One Rule",
+        "body": "Text inside the card is sized in container units with a px floor and ceiling, so the card keeps its proportions as one printed object; nothing inside it is sized in rem or vw.",
+        "section": "typography"
+      },
+      {
+        "name": "The Paper on Black Rule",
+        "body": "Lift is shown by placing white stock on the seamless, never by casting a shadow. Polaroids sit slightly rotated at rest (about -0.8deg / 0.6deg) and may land at up to ±9deg once thrown, because loose prints do.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep every surface either black seamless or white stock, and place paper objects on the seamless rather than inventing a third ground.",
+      "Do set the name and section titles in Sofia Sans Extra Condensed capitals at 620, and everything else in sentence case.",
+      "Do set measurements in Sofia Sans Condensed with tabular lining figures, units smaller and in Pencil Grey.",
+      "Do keep corners square (0px) and separate content with 1px Hairline rules.",
+      "Do size anything inside the card in container units with a px floor and ceiling so it scales as one printed object.",
+      "Do pick text sizes from the documented ramp; functional text never drops below 11px.",
+      "Do keep motion to the print-developing grammar (rising from a mask, bottom-up reveals, the card turn, prints handled like loose paper) and drop it entirely under reduced motion.",
+      "Do gate every pointer-following effect (tilt, pointer square, magnetic buttons, rolling links, parcours preview, dragging) on a fine, hovering pointer.",
+      "Do keep the card printable as an A5 front and back."
+    ],
+    "donts": [
+      "Don't use drop shadows; depth is paper on black.",
+      "Don't round corners on buttons, fields, photos or cards.",
+      "Don't introduce chromatic accent colours; colour belongs to the photographs.",
+      "Don't use Proof Yellow outside the provisional-content layer, and don't ship that layer once real content arrives.",
+      "Don't set body or interface text in capitals.",
+      "Don't add a second type family."
+    ]
+  }
+}
