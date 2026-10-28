@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Caritas Africa – menu et design global (maquette v8)</title>
+<meta name="description" content="Proposition de menu et de design global pour le site v2 de Caritas Africa : mega menu, en-tête, pied de page et composants communs.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#B11D23">
+<link rel="icon" href="assets/img/favicon.png">
+<link rel="preload" href="assets/fonts/heros-bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/heros-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/v8.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7.5"/><path d="m20.5 20.5-4.2-4.2"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16"/><path d="M4 12h16"/><path d="M4 17h16"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="M12 8v4"/><path d="M12 16h.01"/></symbol>
+  <symbol id="i-external" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 15V3"/><path d="m7 10 5 5 5-5"/><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M12 7.5v5.5"/><path d="M12 16.5h.01"/></symbol>
+  <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></symbol>
+  <symbol id="i-youtube" viewBox="0 0 24 24"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></symbol>
+  <symbol id="i-xlogo" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M17.75 3h3.07l-6.7 7.66L22 21h-6.17l-4.83-6.32L5.47 21H2.4l7.17-8.2L2 3h6.33l4.37 5.77zm-1.08 16.18h1.7L7.4 4.73H5.58z"/></symbol>
+</svg>
+
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="site-header" data-header>
+  <div class="util">
+    <div class="wrap">
+      <p class="util-member">Membre de la confédération <a href="https://www.caritas.org/" rel="noopener">Caritas Internationalis</a></p>
+      <nav class="util-nav" aria-label="Liens utiles">
+        <a class="u-jobs" href="https://v2.caritas-africa.org/emplois-et-appels-doffres/">Emplois et appels d'offres</a>
+        <a class="util-alert" href="https://v2.caritas-africa.org/signaler-dabus/"><svg class="i" aria-hidden="true"><use href="#i-shield"/></svg>Signaler un abus</a>
+        <a href="https://v2.caritas-africa.org/contact/">Contact</a>
+        <div class="lang" aria-label="Langue du site">
+          <span aria-current="true"><img src="assets/img/flags/fr.svg" alt="" width="16" height="11">FR</span>
+          <span class="is-soon" title="Version anglaise prévue avec la traduction du site"><img src="assets/img/flags/gb.svg" alt="" width="16" height="11">EN</span>
+          <span class="is-soon" title="Version portugaise prévue avec la traduction du site"><img src="assets/img/flags/pt.svg" alt="" width="16" height="11">PT</span>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <div class="bar">
+    <div class="wrap">
+      <a class="logo" href="https://v2.caritas-africa.org/"><img src="assets/img/logo.png" alt="Caritas Africa, accueil" width="950" height="410"></a>
+
+      <nav class="primary" aria-label="Menu principal">
+        <ul data-menu>
+          <li><button class="nav-btn" type="button" aria-expanded="false" aria-controls="mm-qui" data-panel="qui">Qui sommes-nous<svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg></button></li>
+          <li><button class="nav-btn" type="button" aria-expanded="false" aria-controls="mm-reseau" data-panel="reseau">Notre réseau<svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg></button></li>
+          <li><button class="nav-btn" type="button" aria-expanded="false" aria-controls="mm-action" data-panel="action">Notre action<svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg></button></li>
+          <li><button class="nav-btn" type="button" aria-expanded="false" aria-controls="mm-actus" data-panel="actus">Actualités<svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg></button></li>
+          <li><button class="nav-btn" type="button" aria-expanded="false" aria-controls="mm-ressources" data-panel="ressources">Ressources<svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg></button></li>
+        </ul>
+        <span class="nav-indicator" data-indicator aria-hidden="true"></span>
+      </nav>
+
+      <div class="bar-actions">
+        <button class="icon-btn search-btn" type="button" aria-expanded="false" aria-controls="mm-search" data-panel="search" aria-label="Rechercher sur le site"><svg class="i" aria-hidden="true"><use href="#i-search"/></svg></button>
+        <a class="btn btn-red don" href="https://v2.caritas-africa.org/faire-un-don/">Faire un don</a>
+        <button class="icon-btn burger" type="button" aria-expanded="false" aria-controls="drawer" data-burger aria-label="Ouvrir le menu"><svg class="i" aria-hidden="true"><use href="#i-menu"/></svg></button>
+      </div>
+    </div>
+
+    <div class="mega" data-mega>
+      <div class="mega-inner" data-mega-inner>
+
+        <section class="mm-panel" id="mm-qui" data-name="qui" aria-label="Qui sommes-nous">
+          <div class="wrap mm-grid">
+            <div class="mm-intro">
+              <h2 class="mm-title">Qui sommes-nous</h2>
+              <p class="mm-desc">Le ministère social de l'Église catholique en Afrique. Caritas Africa anime, coordonne, représente et renforce 46 Caritas nationales.</p>
+              <a class="link-arrow" href="https://v2.caritas-africa.org/qui-sommes-nous/">Découvrir Caritas Africa<svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+            <ul class="mm-links">
+              <li><a class="mm-link" href="https://v2.caritas-africa.org/qui-sommes-nous/#mission-et-vision"><span class="mm-link-t">Mission, vision et valeurs</span><span class="mm-link-d">Témoigner de l'amour de Dieu, pour la vie en plénitude de tous.</span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+              <li><a class="mm-link" href="https://v2.caritas-africa.org/qui-sommes-nous/#notre-but"><span class="mm-link-t">Notre but</span><span class="mm-link-d">Ce que les Statuts confient à Caritas Africa.</span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+              <li><a class="mm-link" href="https://v2.caritas-africa.org/histoire/"><span class="mm-link-t">Histoire</span><span class="mm-link-d">De Matola, en 1995, à aujourd'hui.</span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+              <li><a class="mm-link" href="https://v2.caritas-africa.org/gouvernance/"><span class="mm-link-t">Gouvernance et équipe</span><span class="mm-link-d">La Commission régionale et le Secrétariat exécutif.</span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+              <li><a class="mm-link" href="https://v2.caritas-africa.org/sauvegarde/"><span class="mm-link-t">Sauvegarde</span><span class="mm-link-d">Protéger les enfants et les adultes vulnérables.</span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+              <li><a class="mm-link" href="https://v2.caritas-africa.org/contact/"><span class="mm-link-t">Nous contacter</span><span class="mm-link-d">Le Secrétariat exécutif régional, à Lomé.</span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+            </ul>
+            <div class="mm-feature">
+              <figure class="photo mm-photo"><img src="assets/img/photos/assemblee.jpg" alt="Plusieurs dizaines de membres du réseau, évêques, religieuses et laïcs, posent devant un bâtiment portant le logo de Caritas Africa." width="1094" height="465" loading="lazy" style="object-position:50% 40%"><figcaption class="credit">Photo : Caritas Africa</figcaption></figure>
+              <p class="mm-fact"><strong>20 janvier 1995</strong>Caritas Africa est constituée à Matola, au Mozambique, quand ses membres approuvent ses premiers Statuts.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="mm-panel" id="mm-reseau" data-name="reseau" aria-label="Notre réseau">
+          <div class="wrap mm-grid">
+            <div class="mm-intro">
+              <h2 class="mm-title">Notre réseau</h2>
+              <p class="mm-desc">46 Caritas nationales dans 46 pays d'Afrique, îles comprises, réparties en six zones. Caritas Africa est l'une des 7 régions de Caritas Internationalis.</p>
+              <a class="link-arrow" href="https://v2.caritas-africa.org/notre-reseau/">Explorer le réseau<svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+            <ul class="mm-links">
+              <li><a class="mm-link" href="https://v2.caritas-africa.org/notre-reseau/#les-six-zones"><span class="mm-link-t">Les six zones</span><span class="mm-link-d">Les zones du réseau et la Caritas qui coordonne chacune.</span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+              <li><a class="mm-link" href="https://v2.caritas-africa.org/notre-reseau/#les-caritas-nationales-par-pays"><span class="mm-link-t">Les Caritas nationales par pays</span><span class="mm-link-d">Trouver la Caritas de votre pays.</span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+              <li><a class="mm-link" href="https://v2.caritas-africa.org/notre-reseau/#caritas-dans-le-monde"><span class="mm-link-t">Caritas dans le monde</span><span class="mm-link-d">Les six autres régions de Caritas Internationalis.</span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+              <li><a class="mm-link" href="https://k-hub.caritas-africa.org/" rel="noopener"><span class="mm-link-t">Knowledge HUB<svg class="i ext" aria-hidden="true"><use href="#i-external"/></svg></span><span class="mm-link-d">La plateforme où le réseau partage ses savoirs.</span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+            </ul>
+            <div class="mm-feature">
+              <h3>Les six zones</h3>
+              <ul class="zones">
+                <li><b>Afrique de l'Ouest</b><span>RECOWA-CERAO</span></li>
+                <li><b>Grands Lacs</b><span>ACEAC</span></li>
+                <li><b>Afrique centrale</b><span>ACERAC</span></li>
+                <li><b>Afrique de l'Est</b><span>AMECEA</span></li>
+                <li><b>Afrique australe</b><span>IMBISA</span></li>
+                <li><b>Océan Indien</b><span>CEDOI-M</span></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="mm-panel" id="mm-action" data-name="action" aria-label="Notre action">
+          <div class="wrap mm-grid">
+            <div class="mm-intro">
+              <h2 class="mm-title">Notre action</h2>
+              <p class="mm-desc">Servir, accompagner et défendre les plus pauvres : ce que Caritas Africa fait avec et pour les 46 Caritas nationales.</p>
+              <a class="link-arrow" href="https://v2.caritas-africa.org/notre-action/">Voir notre action<svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+            <ul class="mm-links">
+              <li><a class="mm-link" href="https://v2.caritas-africa.org/notre-action/#nos-domaines-daction"><span class="mm-link-t">Nos domaines d'action</span><span class="mm-link-d">Urgences, renforcement des Caritas, service des plus pauvres, plaidoyer.</span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+              <li><a class="mm-link" href="https://v2.caritas-africa.org/notre-action/#programmes-et-projets"><span class="mm-link-t">Programmes et projets</span><span class="mm-link-d">Les programmes conduits avec les Caritas nationales.</span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+              <li><a class="mm-link" href="https://v2.caritas-africa.org/programme-a2p-diro/"><span class="mm-link-t">Programme APPROCHE</span><span class="mm-link-d">Renforcer 17 Caritas nationales et leur organisation.</span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+              <li><a class="mm-link" href="https://v2.caritas-africa.org/notre-action/#plaidoyer"><span class="mm-link-t">Plaidoyer</span><span class="mm-link-d">Porter la voix des plus pauvres, jusqu'à l'Union africaine.</span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+              <li><a class="mm-link" href="https://v2.caritas-africa.org/faire-un-don/"><span class="mm-link-t">Faire un don</span><span class="mm-link-d">Soutenir l'action du réseau.</span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+            </ul>
+            <div class="mm-feature">
+              <figure class="photo mm-photo"><img src="assets/img/photos/approche.jpg" alt="Les participants du programme APPROCHE posent à côté d'une banderole du programme." width="1036" height="654" loading="lazy"><figcaption class="credit">Photo : Caritas Africa</figcaption></figure>
+              <h3>Programme APPROCHE</h3>
+              <p>Phase 3, 2019–2023 : 2,5 millions d'euros pour accompagner 17 Caritas nationales et 202 Caritas diocésaines.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="mm-panel" id="mm-actus" data-name="actus" aria-label="Actualités">
+          <div class="wrap mm-grid">
+            <div class="mm-intro">
+              <h2 class="mm-title">Actualités</h2>
+              <p class="mm-desc">Les prises de position du réseau, la vie des Caritas nationales et les appels d'offres.</p>
+              <a class="link-arrow" href="https://v2.caritas-africa.org/actualites/">Toutes les actualités<svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+            <ul class="mm-links">
+              <li><a class="mm-link" href="https://v2.caritas-africa.org/actualites/"><span class="mm-link-t">Actualités et déclarations</span><span class="mm-link-d">Déclarations, plaidoyer, urgences et vie du réseau.</span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+              <li><a class="mm-link" href="https://v2.caritas-africa.org/emplois-et-appels-doffres/"><span class="mm-link-t">Emplois et appels d'offres</span><span class="mm-link-d">Offres d'emploi, consultations et termes de référence.</span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+              <li><a class="mm-link" href="https://v2.caritas-africa.org/ressources/#publications"><span class="mm-link-t">Rapports et publications</span><span class="mm-link-d">Les rapports annuels et les études du réseau.</span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+            </ul>
+            <div class="mm-feature">
+              <h3>Dernières déclarations</h3>
+              <ul class="latest">
+                <li><a href="https://v2.caritas-africa.org/declaration-de-mumemo-fr/"><b>Déclaration de Mumemo : une nouvelle Pentecôte pour l'Afrique (2010)</b><time datetime="2025-11-10">10 novembre 2025</time></a></li>
+                <li><a href="https://v2.caritas-africa.org/declaration-conjointe-a-loccasion-de-la-111eme-journee-mondiale-du-migrant-et-du-refugiedans-le-cadre-du-jubile-des-migrants-et-du-monde-missionnaire-4-5-octobre-2025/"><b>Déclaration conjointe pour la 111e Journée mondiale du Migrant et du Réfugié</b><time datetime="2025-09-18">18 septembre 2025</time></a></li>
+              </ul>
+              <h3>Appel en cours</h3>
+              <ul class="latest">
+                <li><a href="https://v2.caritas-africa.org/termes-de-reference-recrutement-auditeur-interne/"><b>Termes de référence : recrutement d'un auditeur interne</b><time datetime="2026-05-29">29 mai 2026</time></a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="mm-panel" id="mm-ressources" data-name="ressources" aria-label="Ressources">
+          <div class="wrap mm-grid">
+            <div class="mm-intro">
+              <h2 class="mm-title">Ressources</h2>
+              <p class="mm-desc">Le cadre stratégique, les rapports annuels et les publications du réseau, à lire et à télécharger.</p>
+              <a class="link-arrow" href="https://v2.caritas-africa.org/ressources/">Toute la bibliothèque<svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+            <ul class="mm-links">
+              <li><a class="mm-link" href="https://v2.caritas-africa.org/ressources/#cadre-strategique-2024-2030"><span class="mm-link-t">Cadre stratégique 2024–2030</span><span class="mm-link-d">Les orientations du réseau pour sept ans.</span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+              <li><a class="mm-link" href="https://v2.caritas-africa.org/ressources/#rapports-annuels"><span class="mm-link-t">Rapports annuels</span><span class="mm-link-d">De 2011 à 2023, en français, anglais et portugais.</span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+              <li><a class="mm-link" href="https://v2.caritas-africa.org/ressources/#publications"><span class="mm-link-t">Publications</span><span class="mm-link-d">Études, réflexions et guides du réseau.</span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+              <li><a class="mm-link" href="https://k-hub.caritas-africa.org/" rel="noopener"><span class="mm-link-t">Knowledge HUB<svg class="i ext" aria-hidden="true"><use href="#i-external"/></svg></span><span class="mm-link-d">La plateforme où le réseau partage ses savoirs.</span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></li>
+            </ul>
+            <div class="mm-feature">
+              <a class="cover-row" href="https://v2.caritas-africa.org/ressources/#cadre-strategique-2024-2030"><img src="assets/img/pubs/cadre-strategique-2024-2030.jpg" width="1400" height="990" alt="Couverture du cadre stratégique 2024–2030" loading="lazy"><span><b>Cadre stratégique 2024–2030</b><small>Caritas Africa</small></span></a>
+              <a class="cover-row" href="https://v2.caritas-africa.org/ressources/#rapports-annuels"><img src="assets/img/pubs/rapport-2023.jpg" width="800" height="459" alt="Couverture du rapport annuel 2023" loading="lazy"><span><b>Rapport annuel 2023</b><small>Le plus récent</small></span></a>
+            </div>
+          </div>
+        </section>
+
+        <section class="mm-panel" id="mm-search" data-name="search" aria-label="Rechercher">
+          <div class="wrap mm-search">
+            <div class="mm-intro">
+              <h2 class="mm-title">Rechercher sur le site</h2>
+              <p class="mm-desc">Un rapport, une déclaration, une offre d'emploi : plus de 500 articles et documents depuis 2009.</p>
+            </div>
+            <div>
+              <form class="search-form" action="https://v2.caritas-africa.org/" method="get" role="search">
+                <label class="sr" for="q">Rechercher</label>
+                <input id="q" name="s" type="search" placeholder="Que cherchez-vous ?" autocomplete="off">
+                <button type="submit" aria-label="Lancer la recherche"><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+              </form>
+              <div class="quick" aria-label="Accès rapides">
+                <a href="https://v2.caritas-africa.org/ressources/#rapports-annuels">Rapports annuels</a>
+                <a href="https://v2.caritas-africa.org/ressources/#cadre-strategique-2024-2030">Cadre stratégique</a>
+                <a href="https://v2.caritas-africa.org/emplois-et-appels-doffres/">Emplois et appels d'offres</a>
+                <a href="https://v2.caritas-africa.org/signaler-dabus/">Signaler un abus</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+</header>
+<div class="scrim" data-scrim aria-hidden="true"></div>
+
+<nav class="drawer" id="drawer" aria-label="Menu" data-drawer>
+  <div class="wrap">
+    <div class="acc">
+      <button class="acc-btn" type="button" aria-expanded="false" data-acc="qui">Qui sommes-nous<svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg></button>
+      <div class="acc-body"><div>
+        <p>Le ministère social de l'Église catholique en Afrique : Caritas Africa anime, coordonne, représente et renforce 46 Caritas nationales.</p>
+        <a class="link-arrow" href="https://v2.caritas-africa.org/qui-sommes-nous/">Découvrir Caritas Africa<svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <ul>
+          <li><a href="https://v2.caritas-africa.org/qui-sommes-nous/#mission-et-vision">Mission, vision et valeurs</a></li>
+          <li><a href="https://v2.caritas-africa.org/qui-sommes-nous/#notre-but">Notre but</a></li>
+          <li><a href="https://v2.caritas-africa.org/histoire/">Histoire</a></li>
+          <li><a href="https://v2.caritas-africa.org/gouvernance/">Gouvernance et équipe</a></li>
+          <li><a href="https://v2.caritas-africa.org/sauvegarde/">Sauvegarde</a></li>
+          <li><a href="https://v2.caritas-africa.org/contact/">Nous contacter</a></li>
+        </ul>
+      </div></div>
+    </div>
+    <div class="acc">
+      <button class="acc-btn" type="button" aria-expanded="false" data-acc="reseau">Notre réseau<svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg></button>
+      <div class="acc-body"><div>
+        <p>46 Caritas nationales dans 46 pays d'Afrique, réparties en six zones.</p>
+        <a class="link-arrow" href="https://v2.caritas-africa.org/notre-reseau/">Explorer le réseau<svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <ul>
+          <li><a href="https://v2.caritas-africa.org/notre-reseau/#les-six-zones">Les six zones</a></li>
+          <li><a href="https://v2.caritas-africa.org/notre-reseau/#les-caritas-nationales-par-pays">Les Caritas nationales par pays</a></li>
+          <li><a href="https://v2.caritas-africa.org/notre-reseau/#caritas-dans-le-monde">Caritas dans le monde</a></li>
+          <li><a href="https://k-hub.caritas-africa.org/" rel="noopener">Knowledge HUB</a></li>
+        </ul>
+      </div></div>
+    </div>
+    <div class="acc">
+      <button class="acc-btn" type="button" aria-expanded="false" data-acc="action">Notre action<svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg></button>
+      <div class="acc-body"><div>
+        <p>Servir, accompagner et défendre les plus pauvres, avec et pour les 46 Caritas nationales.</p>
+        <a class="link-arrow" href="https://v2.caritas-africa.org/notre-action/">Voir notre action<svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <ul>
+          <li><a href="https://v2.caritas-africa.org/notre-action/#nos-domaines-daction">Nos domaines d'action</a></li>
+          <li><a href="https://v2.caritas-africa.org/notre-action/#programmes-et-projets">Programmes et projets</a></li>
+          <li><a href="https://v2.caritas-africa.org/programme-a2p-diro/">Programme APPROCHE</a></li>
+          <li><a href="https://v2.caritas-africa.org/notre-action/#plaidoyer">Plaidoyer</a></li>
+        </ul>
+      </div></div>
+    </div>
+    <div class="acc">
+      <button class="acc-btn" type="button" aria-expanded="false" data-acc="actus">Actualités<svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg></button>
+      <div class="acc-body"><div>
+        <p>Les prises de position du réseau, la vie des Caritas nationales et les appels d'offres.</p>
+        <a class="link-arrow" href="https://v2.caritas-africa.org/actualites/">Toutes les actualités<svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <ul>
+          <li><a href="https://v2.caritas-africa.org/actualites/">Actualités et déclarations</a></li>
+          <li><a href="https://v2.caritas-africa.org/emplois-et-appels-doffres/">Emplois et appels d'offres</a></li>
+          <li><a href="https://v2.caritas-africa.org/ressources/#publications">Rapports et publications</a></li>
+        </ul>
+      </div></div>
+    </div>
+    <div class="acc">
+      <button class="acc-btn" type="button" aria-expanded="false" data-acc="ressources">Ressources<svg class="i" aria-hidden="true"><use href="#i-chevron"/></svg></button>
+      <div class="acc-body"><div>
+        <p>Le cadre stratégique, les rapports annuels et les publications du réseau.</p>
+        <a class="link-arrow" href="https://v2.caritas-africa.org/ressources/">Toute la bibliothèque<svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <ul>
+          <li><a href="https://v2.caritas-africa.org/ressources/#cadre-strategique-2024-2030">Cadre stratégique 2024–2030</a></li>
+          <li><a href="https://v2.caritas-africa.org/ressources/#rapports-annuels">Rapports annuels</a></li>
+          <li><a href="https://v2.caritas-africa.org/ressources/#publications">Publications</a></li>
+          <li><a href="https://k-hub.caritas-africa.org/" rel="noopener">Knowledge HUB</a></li>
+        </ul>
+      </div></div>
+    </div>
+    <form class="search-form" action="https://v2.caritas-africa.org/" method="get" role="search" style="margin-top:24px">
+      <label class="sr" for="q2">Rechercher</label>
+      <input id="q2" name="s" type="search" placeholder="Rechercher sur le site" autocomplete="off" style="height:56px;font-size:1.125rem">
+      <button type="submit" aria-label="Lancer la recherche"><svg class="i" aria-hidden="true"><use href="#i-search"/></svg></button>
+    </form>
+    <div class="drawer-util">
+      <a href="https://v2.caritas-africa.org/emplois-et-appels-doffres/">Emplois et appels d'offres</a>
+      <a class="util-alert" href="https://v2.caritas-africa.org/signaler-dabus/"><svg class="i" aria-hidden="true"><use href="#i-shield"/></svg>Signaler un abus</a>
+      <a href="https://v2.caritas-africa.org/contact/">Contact</a>
+    </div>
+    <div class="lang" aria-label="Langue du site">
+      <span aria-current="true"><img src="assets/img/flags/fr.svg" alt="" width="16" height="11">FR</span>
+      <span class="is-soon"><img src="assets/img/flags/gb.svg" alt="" width="16" height="11">EN</span>
+      <span class="is-soon"><img src="assets/img/flags/pt.svg" alt="" width="16" height="11">PT</span>
+    </div>
+  </div>
+</nav>
+
+<main id="contenu">
+  <section class="guide-head">
+    <div class="wrap">
+      <h1>Menu et design global</h1>
+      <p class="lead">Une proposition pour le site v2 de Caritas Africa : un menu qui présente chaque rubrique avant de la détailler, et un seul système de couleurs, de textes et de composants pour toutes les pages, conforme au guide 2025 de la marque Caritas.</p>
+      <div class="try">
+        <p><span class="t-mouse">Survolez le menu ci-dessus, ou ouvrez une rubrique :</span><span class="t-touch">Ouvrez une rubrique du menu :</span></p>
+        <button class="chip" type="button" data-open="qui">Qui sommes-nous</button>
+        <button class="chip" type="button" data-open="reseau">Notre réseau</button>
+        <button class="chip" type="button" data-open="action">Notre action</button>
+        <button class="chip" type="button" data-open="actus">Actualités</button>
+        <button class="chip" type="button" data-open="ressources">Ressources</button>
+      </div>
+      <p class="guide-meta">Maquette v8 · octobre 2026 · contenus réels du site v2.caritas-africa.org</p>
+    </div>
+  </section>
+
+  <div class="wrap guide-body">
+    <nav class="toc" aria-label="Sommaire du guide">
+      <p>Dans ce guide</p>
+      <ol>
+        <li><a href="#menu">Le menu</a></li>
+        <li><a href="#couleurs">Couleurs</a></li>
+        <li><a href="#typographie">Typographie</a></li>
+        <li><a href="#boutons">Boutons et liens</a></li>
+        <li><a href="#cartes">Cartes</a></li>
+        <li><a href="#blocs">Bandeaux et blocs</a></li>
+        <li><a href="#formulaires">Formulaires</a></li>
+        <li><a href="#photos">Photos et crédits</a></li>
+        <li><a href="#mouvement">Mouvement</a></li>
+        <li><a href="#pied">Pied de page</a></li>
+      </ol>
+    </nav>
+
+    <div class="guide-content">
+
+      <section class="g-section" id="menu" aria-labelledby="h-menu">
+        <h2 id="h-menu">Le menu</h2>
+        <p class="g-lead">Cinq rubriques sur une seule ligne. Au survol, un panneau s'ouvre tout de suite sous l'en-tête : il dit ce qu'est la rubrique, liste ses pages avec une ligne d'explication et montre un contenu réel du site.</p>
+        <dl class="behave">
+          <div data-reveal><dt>Ouverture immédiate</dt><dd>Le panneau s'ouvre sans délai au survol, comme sur caritas.org. Il attend 0,2 seconde avant de se fermer, le temps que la souris le rejoigne en diagonale.</dd></div>
+          <div data-reveal><dt>Un seul panneau qui suit la souris</dt><dd>D'une rubrique à l'autre, le panneau reste ouvert : le trait rouge glisse sous la rubrique visée et le contenu arrive du côté où va la souris.</dd></div>
+          <div data-reveal><dt>Chaque rubrique se présente</dt><dd>Le titre et deux lignes qui la décrivent, ses pages avec une phrase chacune, puis un aperçu : photo, six zones, dernières déclarations ou dernières publications.</dd></div>
+          <div data-reveal><dt>Au clavier</dt><dd><kbd>Tab</kbd> parcourt les rubriques, <kbd>Entrée</kbd> ouvre le panneau, <kbd>↓</kbd> entre dans ses liens, <kbd>←</kbd> <kbd>→</kbd> changent de rubrique, <kbd>Échap</kbd> referme.</dd></div>
+          <div data-reveal><dt>En-tête collant</dt><dd>En descendant, la barre du haut s'efface, l'en-tête se resserre et prend une ombre. « Faire un don » et la recherche restent à portée de main.</dd></div>
+          <div data-reveal><dt>Sur téléphone et tablette</dt><dd>Un menu plein écran en accordéon, avec la recherche, « Signaler un abus » et le choix de la langue. Le bouton « Faire un don » reste dans l'en-tête.</dd></div>
+        </dl>
+        <p class="note">Mise en œuvre : widget Mega Menu d'Elementor Pro, déjà actif sur le site v2. Le contenu des panneaux se construit en éléments V4 ; le trait rouge et le glissement tiennent dans le petit script du site.</p>
+      </section>
+
+      <section class="g-section" id="couleurs" aria-labelledby="h-couleurs">
+        <h2 id="h-couleurs">Couleurs</h2>
+        <p class="g-lead">Le rouge Caritas signale ce qu'on peut faire et où l'on se trouve : boutons, liens, trait du menu. Le reste est blanc, noir et sable, comme le demande le guide 2025.</p>
+        <div class="g-block" data-reveal>
+          <div class="swatches">
+            <div class="sw sw-main" style="--c:#B11D23;--fg:#fff"><span class="ratio">Blanc 6,8:1</span><div><b>Rouge Caritas</b></div><div><code>#B11D23</code><small>Boutons, liens, trait du menu, chiffres clés. Jamais en grand aplat derrière un texte long.</small></div></div>
+            <div class="sw" style="--c:#000;--fg:#fff"><div><b>Noir</b></div><div><code>#000000</code><small>Titres, filets épais.</small></div></div>
+            <div class="sw" style="--c:#8B2113;--fg:#fff"><span class="ratio">Blanc 9:1</span><div><b>Baie</b></div><div><code>#8B2113</code><small>Pied de page.</small></div></div>
+            <div class="sw" style="--c:#EBE3D7"><div><b>Sable</b></div><div><code>#EBE3D7</code><small>Bandes et citations.</small></div></div>
+            <div class="sw" style="--c:#F5F1EA"><div><b>Sable clair</b></div><div><code>#F5F1EA</code><small>Fonds de cartes et barre du haut.</small></div></div>
+          </div>
+          <div class="swatches-2">
+            <div class="sw" style="--c:#60B4CD"><b>Bleu</b><code>#60B4CD</code></div>
+            <div class="sw" style="--c:#E68922"><b>Orange</b><code>#E68922</code></div>
+            <div class="sw" style="--c:#57B06D"><b>Vert</b><code>#57B06D</code></div>
+            <div class="sw" style="--c:#CAC5B8"><b>Pierre</b><code>#CAC5B8</code></div>
+          </div>
+          <p class="note">Couleurs secondaires du guide : seulement pour les graphiques, les cartes et les pictogrammes, jamais pour un bouton. Texte courant en encre <b>#161616</b>, texte secondaire en <b>#474747</b>, filets en <b>#DED8CE</b>.</p>
+          <div class="mix" aria-hidden="true"><span style="flex:66;background:#fff;box-shadow:inset 0 0 0 1px #DED8CE"></span><span style="flex:16;background:#EBE3D7"></span><span style="flex:10;background:#000"></span><span style="flex:5;background:#B11D23"></span><span style="flex:3;background:#8B2113"></span></div>
+          <p class="mix-legend"><span><i style="--c:#fff"></i>Blanc, environ deux tiers</span><span><i style="--c:#EBE3D7"></i>Sable</span><span><i style="--c:#000"></i>Noir</span><span><i style="--c:#B11D23"></i>Rouge</span><span><i style="--c:#8B2113"></i>Baie</span></p>
+        </div>
+      </section>
+
+      <section class="g-section" id="typographie" aria-labelledby="h-typo">
+        <h2 id="h-typo">Typographie</h2>
+        <p class="g-lead">Une seule famille, Helvetica, en gras pour les titres et en romain pour le texte. Georgia pour les citations et les témoignages. Les grands titres peuvent passer en capitales, avec un interligne serré.</p>
+        <dl class="spec g-block">
+          <div class="spec-row" data-reveal><dt><b>Titre d'ouverture</b><span>Gras, capitales<br>40 à 72 px, interligne 0,92</span></dt><dd class="t-display">Cheminer ensemble</dd></div>
+          <div class="spec-row" data-reveal><dt><b>Titre de section</b><span>Gras, capitales<br>32 à 52 px</span></dt><dd class="t-h2">Actualités et déclarations</dd></div>
+          <div class="spec-row" data-reveal><dt><b>Sous-titre</b><span>Gras<br>20 à 26 px</span></dt><dd class="t-h3">Programme APPROCHE</dd></div>
+          <div class="spec-row" data-reveal><dt><b>Chapeau</b><span>Romain<br>18 à 22 px</span></dt><dd class="t-lead">Caritas Africa anime, coordonne, représente et renforce 46 Caritas nationales, pour que chacune serve au mieux les plus pauvres de son pays.</dd></div>
+          <div class="spec-row" data-reveal><dt><b>Texte courant</b><span>Romain 17 px<br>65 à 75 signes par ligne</span></dt><dd class="t-body">Toute suspicion d'abus ou d'exploitation d'un enfant ou d'un adulte vulnérable impliquant le personnel ou les collaborateurs de Caritas doit être signalée. L'identité de la personne qui signale n'est divulguée qu'en cas de « besoin d'en connaître ».</dd></div>
+          <div class="spec-row" data-reveal><dt><b>Petit texte</b><span>14 px, gris</span></dt><dd class="t-small">Publié le 10 novembre 2025 · Déclaration</dd></div>
+          <div class="spec-row" data-reveal><dt><b>Crédit photo</b><span>12 px, toujours en bas</span></dt><dd class="t-credit">Photo : Caritas Africa</dd></div>
+          <div class="spec-row" data-reveal><dt><b>Citation</b><span>Georgia<br>22 à 30 px</span></dt><dd><blockquote class="t-quote">« Témoigner de l'amour de Dieu. »<cite>La mission de Caritas Africa, d'après Actes 1, 8</cite></blockquote></dd></div>
+        </dl>
+        <div class="font-note" data-reveal>
+          <div><p class="glyphs">Aa Éé 46</p><b>Helvetica Neue, et TeX Gyre Heros</b><p>Sur Mac et iPhone, le site utilise Helvetica Neue. Sur Windows et Android, où elle n'existe pas, il charge TeX Gyre Heros, un dessin libre d'Helvetica (2 fichiers, 45 Ko), au lieu d'Arial ou de Roboto.</p></div>
+          <div><p class="glyphs serif">Aa Éé 46</p><b>Georgia</b><p>Le guide recommande Athelas pour les récits ; Georgia, installée partout, la remplace sans fichier à charger.</p></div>
+        </div>
+      </section>
+
+      <section class="g-section" id="boutons" aria-labelledby="h-boutons">
+        <h2 id="h-boutons">Boutons et liens</h2>
+        <p class="g-lead">Un bouton rouge par écran pour l'action principale. Les autres actions passent en bouton au trait ou en lien fléché.</p>
+        <div class="g-block" data-reveal>
+          <div class="state-head" aria-hidden="true"><span></span><span>Normal</span><span>Survol</span><span>Clavier</span><span>Indisponible</span></div>
+          <dl class="states">
+            <div class="state-row"><dt><b>Principal</b><span>Rouge, texte blanc</span></dt>
+              <dd><a class="btn btn-red" href="https://v2.caritas-africa.org/faire-un-don/">Faire un don</a></dd>
+              <dd><span class="btn btn-red is-hover">Faire un don</span></dd>
+              <dd><span class="btn btn-red is-focus">Faire un don</span></dd>
+              <dd><span class="btn btn-red" aria-disabled="true">Faire un don</span></dd></div>
+            <div class="state-row"><dt><b>Secondaire</b><span>Au trait noir</span></dt>
+              <dd><a class="btn btn-line" href="https://v2.caritas-africa.org/notre-reseau/">Notre réseau</a></dd>
+              <dd><span class="btn btn-line is-hover">Notre réseau</span></dd>
+              <dd><span class="btn btn-line is-focus">Notre réseau</span></dd>
+              <dd><span class="btn btn-line" aria-disabled="true">Notre réseau</span></dd></div>
+            <div class="state-row"><dt><b>Lien fléché</b><span>Rouge, souligné au survol</span></dt>
+              <dd><a class="link-arrow" href="https://v2.caritas-africa.org/actualites/">Toutes les <span class="nw">actualités<svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></span></a></dd>
+              <dd><span class="link-arrow is-hover">Toutes les <span class="nw">actualités<svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></span></span></dd>
+              <dd><span class="link-arrow" style="outline:3px solid #B11D23;outline-offset:3px">Toutes les <span class="nw">actualités<svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></span></span></dd>
+              <dd><small>Un lien n'est jamais désactivé : on le retire.</small></dd></div>
+            <div class="state-row on-dark"><dt><b>Sur fond sombre</b><span>Pied de page, bandeaux photo</span></dt>
+              <dd><a class="btn btn-white" href="https://v2.caritas-africa.org/faire-un-don/">Faire un don</a></dd>
+              <dd><span class="btn btn-white is-hover">Faire un don</span></dd>
+              <dd><a class="btn btn-ghost" href="https://v2.caritas-africa.org/sauvegarde/">Nos politiques</a></dd>
+              <dd><span class="btn btn-ghost is-hover">Nos politiques</span></dd></div>
+          </dl>
+          <p class="prose note">Dans un texte, un lien est rouge et souligné, comme <a href="https://v2.caritas-africa.org/qui-sommes-nous/">la mission de Caritas Africa</a>. Les boutons gardent une hauteur de 48 px, assez grande pour un doigt.</p>
+        </div>
+      </section>
+
+      <section class="g-section" id="cartes" aria-labelledby="h-cartes">
+        <h2 id="h-cartes">Cartes</h2>
+        <p class="g-lead">Quatre cartes couvrent tout le site. Les actualités restent en texte seul, sans photo répétée ; la photo est réservée à ce qu'elle montre vraiment.</p>
+        <div class="cards g-block">
+          <figure class="c-news" data-reveal>
+            <a class="news" href="https://v2.caritas-africa.org/declaration-de-mumemo-fr/"><h3>Déclaration de Mumemo : une nouvelle Pentecôte pour l'Afrique (2010)</h3><p>En mai 2010 à Mumemo (Mozambique), 134 délégués de 46 pays adoptent une déclaration commune pour une Église au service de la réconciliation, de la justice et de la paix.</p><span class="meta"><b>Déclaration</b><time datetime="2025-11-10">10 novembre 2025</time></span></a>
+            <figcaption>Article : listes d'actualités, page d'accueil, « À lire aussi ».</figcaption>
+          </figure>
+          <figure class="c-action" data-reveal>
+            <a class="action" href="https://v2.caritas-africa.org/notre-action/#nos-domaines-daction"><span class="photo"><img src="assets/img/photos/urgence.jpg" alt="Des femmes en voiles colorés reçoivent des seaux et des nattes lors d'une distribution, dans une zone sablonneuse." width="851" height="1195" loading="lazy" style="object-position:50% 35%"><span class="credit">Photo : Caritas Africa</span></span><div class="txt"><h3>Urgences</h3><p>Coordonner la réponse des Caritas nationales quand une crise frappe.</p></div></a>
+            <figcaption>Action : domaines d'action, programmes.</figcaption>
+          </figure>
+          <figure class="c-doc" data-reveal>
+            <a class="doc" href="https://v2.caritas-africa.org/ressources/#cadre-strategique-2024-2030"><img src="assets/img/pubs/cadre-strategique-2024-2030.jpg" width="1400" height="990" alt="" loading="lazy"><span><h3>Cadre stratégique 2024–2030</h3><span class="meta">PDF · français</span></span><span class="dl"><svg class="i" aria-hidden="true"><use href="#i-download"/></svg>Télécharger</span></a>
+            <figcaption>Document : PDF joints aux articles et aux pages.</figcaption>
+          </figure>
+          <figure class="c-pub" data-reveal>
+            <div class="pub">
+              <a href="https://v2.caritas-africa.org/ressources/#rapports-annuels"><span class="cv"><img src="assets/img/pubs/rapport-2023.jpg" width="800" height="459" alt="Couverture du rapport annuel 2023" loading="lazy"></span><b>Rapport annuel 2023</b><small>PDF</small></a>
+              <a href="https://v2.caritas-africa.org/ressources/#rapports-annuels"><span class="cv"><img src="assets/img/pubs/rapport-2022.jpg" width="800" height="530" alt="Couverture du rapport annuel 2022" loading="lazy"></span><b>Rapport annuel 2022</b><small>PDF</small></a>
+              <a href="https://v2.caritas-africa.org/ressources/#cadre-strategique-2024-2030"><span class="cv"><img src="assets/img/pubs/cadre-strategique-2024-2030.jpg" width="1400" height="990" alt="Couverture du cadre stratégique 2024–2030" loading="lazy"></span><b>Cadre stratégique</b><small>2024–2030</small></a>
+            </div>
+            <figcaption>Publication : la bibliothèque, par couverture.</figcaption>
+          </figure>
+          <figure class="c-contact" data-reveal>
+            <div class="contact">
+              <div><h3>Secrétariat exécutif régional</h3><p class="role">Caritas Africa</p><address>735, boulevard des Armées<br>Tokoin Séminaire, BP 8395<br>Lomé, Togo</address></div>
+              <ul>
+                <li><a href="tel:+22822212937"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>+228 22 21 29 37</a></li>
+                <li><a href="mailto:secaf@caritas-africa.org"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg>secaf@caritas-africa.org</a></li>
+              </ul>
+            </div>
+            <figcaption>Contact : pages Contact, programmes, gouvernance.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="g-section" id="blocs" aria-labelledby="h-blocs">
+        <h2 id="h-blocs">Bandeaux et blocs</h2>
+        <p class="g-lead">Les blocs qui composent les pages. Chacun a une seule place dans la hiérarchie : le bandeau ouvre, les chiffres situent, la citation fait respirer, le don et la sauvegarde ferment.</p>
+
+        <div class="g-block" data-reveal>
+          <h3>Bandeau de page</h3>
+          <div class="banner">
+            <img src="assets/img/photos/atelier.jpg" alt="Des membres de Caritas nationales préparent une salle de formation, autour de tables couvertes de pagnes." width="1400" height="575" loading="lazy">
+            <p class="crumb"><a href="https://v2.caritas-africa.org/notre-action/">Notre action</a> / Programme APPROCHE</p>
+            <div class="in">
+              <h4>Programme APPROCHE</h4>
+              <p>Accompagnement de proximité pour le renforcement organisationnel et le changement des Caritas en Afrique subsaharienne.</p>
+            </div>
+            <span class="credit">Photo : Caritas Africa</span>
+          </div>
+          <p class="note">Le chemin de la page, en haut du bandeau, situe le lecteur et ramène à la rubrique ; le titre reste seul au-dessus de sa phrase d'introduction.</p>
+        </div>
+
+        <div class="g-block" data-reveal>
+          <h3>Chiffres clés</h3>
+          <div class="facts">
+            <div><b data-count="46">46</b><span>Caritas nationales dans 46 pays d'Afrique, îles comprises</span></div>
+            <div><b data-count="1995">1995</b><span>Constituée le 20 janvier, à Matola, au Mozambique</span></div>
+            <div><b>1 sur 7</b><span>des régions de Caritas Internationalis, qui compte 162 membres</span></div>
+            <div><b>Lomé</b><span>Siège du Secrétariat exécutif régional, au Togo</span></div>
+          </div>
+        </div>
+
+        <div class="g-block" data-reveal>
+          <h3>Citation</h3>
+          <div class="quote-block"><blockquote class="t-quote">« La vie en plénitude pour tous. »<cite>La vision de Caritas Africa, d'après Jean 10, 10</cite></blockquote></div>
+        </div>
+
+        <div class="g-block" data-reveal>
+          <h3>Appel au don</h3>
+          <div class="appeal">
+            <div class="txt">
+              <h4>Soutenir le réseau</h4>
+              <p>Votre don aide Caritas Africa à coordonner les réponses aux urgences, à renforcer les Caritas nationales et à porter la voix des plus pauvres, dans 46 pays d'Afrique.</p>
+              <a class="btn btn-white" href="https://v2.caritas-africa.org/faire-un-don/">Faire un don</a>
+            </div>
+            <div class="photo"><img src="assets/img/photos/enfant-pompe.jpg" alt="Un enfant attend près d'une pompe à eau où se remplit un bidon jaune." width="1400" height="988" loading="lazy" style="object-position:12% 45%"><span class="credit">Photo : Caritas Africa</span></div>
+          </div>
+        </div>
+
+        <div class="g-block" data-reveal>
+          <h3>Sauvegarde</h3>
+          <div class="safe on-dark">
+            <div>
+              <h4><svg class="i" aria-hidden="true"><use href="#i-shield"/></svg>Signaler un abus</h4>
+              <p>Toute suspicion d'abus ou d'exploitation d'un enfant ou d'un adulte vulnérable impliquant le personnel ou les collaborateurs de Caritas doit être signalée.</p>
+            </div>
+            <div class="acts">
+              <a class="btn btn-white" href="https://v2.caritas-africa.org/signaler-dabus/">Signaler</a>
+              <a class="btn btn-ghost" href="https://v2.caritas-africa.org/sauvegarde/">Nos politiques</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="g-section" id="formulaires" aria-labelledby="h-form">
+        <h2 id="h-form">Formulaires</h2>
+        <p class="g-lead">Des champs larges sur fond blanc, l'étiquette toujours au-dessus, l'erreur dite en clair sous le champ avec la façon de la corriger.</p>
+        <form class="form g-block" data-demo-form novalidate data-reveal>
+          <div class="field"><label for="f-nom">Nom</label><input id="f-nom" type="text" autocomplete="name" value="Ama Mensah"></div>
+          <div class="field is-error"><label for="f-mail">Adresse électronique</label><input id="f-mail" type="email" autocomplete="email" value="ama.mensah@" aria-invalid="true" aria-describedby="f-mail-err"><p class="err" id="f-mail-err"><svg class="i" aria-hidden="true"><use href="#i-alert"/></svg>Il manque la fin de l'adresse, par exemple ama.mensah@exemple.org.</p></div>
+          <div class="field full"><label for="f-sujet">Sujet</label><select id="f-sujet"><option>Partenariat</option><option>Publications et rapports</option><option>Emplois et appels d'offres</option><option>Presse</option><option>Autre demande</option></select></div>
+          <div class="field full"><label for="f-msg">Message <span>(facultatif)</span></label><textarea id="f-msg" placeholder="Votre message"></textarea></div>
+          <label class="check"><input type="checkbox" checked>J'accepte que Caritas Africa utilise ces informations pour répondre à ma demande.</label>
+          <div class="form-actions"><button class="btn btn-red" type="submit">Envoyer</button><small data-demo-msg>Exemple de présentation : ce formulaire n'envoie rien.</small></div>
+        </form>
+      </section>
+
+      <section class="g-section" id="photos" aria-labelledby="h-photos">
+        <h2 id="h-photos">Photos et crédits</h2>
+        <p class="g-lead">Des personnes réelles, dignes, actrices de leur vie, jamais mises en scène. Chaque photo est accompagnée de mots et d'un crédit discret.</p>
+        <div class="photo-rules g-block" data-reveal>
+          <figure class="photo"><img src="assets/img/photos/marche.jpg" alt="Une femme dispose des produits alimentaires transformés sur un étal, lors d'une foire." width="1200" height="724" loading="lazy"><figcaption class="credit">Photo : Caritas Africa</figcaption></figure>
+          <div>
+            <ul class="rules">
+              <li><b>Le crédit, toujours au même endroit</b>En bas à droite, en 12 px, sur un fond assombri : « Photo : » puis l'auteur ou l'organisation.</li>
+              <li><b>Trois formats</b>Paysage 3:2 pour les cartes, 4:3 pour les panneaux du menu, pleine largeur pour les bandeaux.</li>
+              <li><b>Une photo par idée</b>Pas d'image décorative ni de visuel répété d'un article à l'autre : sans photo juste, la carte reste en texte.</li>
+            </ul>
+            <div class="ratios" aria-hidden="true"><figure><span class="photo" style="width:108px"><img src="assets/img/photos/marche.jpg" alt="" loading="lazy"></span>3:2, cartes</figure><figure><span class="photo" style="width:96px"><img src="assets/img/photos/marche.jpg" alt="" loading="lazy"></span>4:3, menu</figure><figure><span class="photo" style="width:216px"><img src="assets/img/photos/marche.jpg" alt="" loading="lazy" style="object-position:50% 40%"></span>bandeau</figure></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="g-section" id="mouvement" aria-labelledby="h-mouvement">
+        <h2 id="h-mouvement">Mouvement</h2>
+        <p class="g-lead">Des mouvements courts qui montrent d'où vient un contenu, jamais pour décorer. Tous s'arrêtent quand le téléphone ou l'ordinateur demande de réduire les animations.</p>
+        <dl class="motion g-block" data-reveal>
+          <div><dt>Ouverture du menu</dt><dd>0 s / 0,32 s</dd><dd>S'ouvre sans attendre, se déroule depuis l'en-tête.</dd></div>
+          <div><dt>Changement de rubrique</dt><dd>0,42 s</dd><dd>Le trait rouge glisse ; le contenu arrive du côté où va la souris.</dd></div>
+          <div><dt>Fermeture du menu</dt><dd>0,2 s d'attente</dd><dd>Laisse à la souris le temps de rejoindre le panneau.</dd></div>
+          <div><dt>Apparition au défilement</dt><dd>0,7 s, une fois</dd><dd>Les blocs montent de 14 px en apparaissant, une seule fois par visite.</dd></div>
+          <div><dt>Chiffres clés</dt><dd>1,4 s</dd><dd>Les nombres défilent jusqu'à leur valeur quand ils entrent à l'écran.</dd></div>
+          <div><dt>Survol des cartes</dt><dd>0,26 s</dd><dd>La carte se soulève de 3 px, le titre passe au rouge.</dd></div>
+        </dl>
+        <button class="btn btn-line replay" type="button" data-replay>Rejouer les apparitions</button>
+      </section>
+
+      <section class="g-section" id="pied" aria-labelledby="h-pied">
+        <h2 id="h-pied">Pied de page</h2>
+        <p class="g-lead">En Baie, la couleur demandée lors de la revue en écho à caritas.org, avec le logo blanc. Il reprend les coordonnées du Secrétariat, les liens essentiels et le signalement des abus. Il est juste en dessous.</p>
+      </section>
+
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer on-dark">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img src="assets/img/logo-white.png" alt="Caritas Africa" width="950" height="410" loading="lazy">
+        <address><b>Secrétariat exécutif régional</b>735, boulevard des Armées, Tokoin Séminaire<br>BP 8395, Lomé, Togo</address>
+        <div class="foot-contact">
+          <a href="tel:+22822212937"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg>+228 22 21 29 37</a>
+          <a href="mailto:secaf@caritas-africa.org"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg>secaf@caritas-africa.org</a>
+        </div>
+        <div class="social">
+          <a href="https://www.facebook.com/Caritas-Africa-1450605191827459" rel="noopener" aria-label="Facebook"><svg class="i" aria-hidden="true"><use href="#i-facebook"/></svg></a>
+          <a href="https://twitter.com/caritas_africa" rel="noopener" aria-label="X (Twitter)"><svg class="i" aria-hidden="true"><use href="#i-xlogo"/></svg></a>
+          <a href="https://www.youtube.com/@caritasafrica4979" rel="noopener" aria-label="YouTube"><svg class="i" aria-hidden="true"><use href="#i-youtube"/></svg></a>
+          <a href="https://www.instagram.com/caritasafrica/" rel="noopener" aria-label="Instagram"><svg class="i" aria-hidden="true"><use href="#i-instagram"/></svg></a>
+          <a href="https://www.linkedin.com/in/caritas-africa-628986228/" rel="noopener" aria-label="LinkedIn"><svg class="i" aria-hidden="true"><use href="#i-linkedin"/></svg></a>
+        </div>
+      </div>
+      <nav class="foot-col" aria-labelledby="f-qui">
+        <h2 id="f-qui">Qui sommes-nous</h2>
+        <a href="https://v2.caritas-africa.org/histoire/">Histoire</a>
+        <a href="https://v2.caritas-africa.org/qui-sommes-nous/#mission-et-vision">Mission, vision et valeurs</a>
+        <a href="https://v2.caritas-africa.org/gouvernance/">Gouvernance et équipe</a>
+        <a href="https://v2.caritas-africa.org/sauvegarde/">Sauvegarde</a>
+        <a href="https://v2.caritas-africa.org/contact/">Nous contacter</a>
+      </nav>
+      <nav class="foot-col" aria-labelledby="f-res">
+        <h2 id="f-res">Ressources</h2>
+        <a href="https://v2.caritas-africa.org/ressources/#publications">Rapports et publications</a>
+        <a href="https://v2.caritas-africa.org/actualites/">Actualités et déclarations</a>
+        <a href="https://v2.caritas-africa.org/emplois-et-appels-doffres/">Emplois et appels d'offres</a>
+        <a href="https://k-hub.caritas-africa.org/" rel="noopener">Knowledge HUB<svg class="i" aria-hidden="true"><use href="#i-external"/></svg></a>
+      </nav>
+      <nav class="foot-col" aria-labelledby="f-monde">
+        <h2 id="f-monde">Caritas dans le monde</h2>
+        <a href="https://www.caritas.org/" rel="noopener">Caritas Internationalis</a>
+        <a href="https://caritas.asia/" rel="noopener">Caritas Asie</a>
+        <a href="https://www.caritas.eu/" rel="noopener">Caritas Europa</a>
+        <a href="https://caritaslatinoamerica.org/" rel="noopener">Amérique latine et Caraïbes</a>
+        <a href="https://www.caritas.org/where-we-work-region/middle-east-and-north-africa/" rel="noopener">Moyen-Orient et Afrique du Nord</a>
+        <a href="https://v2.caritas-africa.org/caritas-en-amerique-du-nord/">Amérique du Nord</a>
+        <a href="https://v2.caritas-africa.org/caritas-oceanie/">Océanie</a>
+      </nav>
+    </div>
+    <div class="foot-safe">
+      <p><b>Un abus, une exploitation ?</b> Toute suspicion impliquant le personnel ou les collaborateurs de Caritas doit être signalée.</p>
+      <a class="btn btn-white" href="https://v2.caritas-africa.org/signaler-dabus/"><svg class="i" aria-hidden="true"><use href="#i-shield"/></svg>Signaler un abus</a>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <div class="wrap">
+      <p>© 2026 Caritas Africa · Membre de la confédération Caritas Internationalis</p>
+      <nav aria-label="Mentions">
+        <a href="https://v2.caritas-africa.org/politique-de-confidentialite/">Politique de confidentialité</a>
+        <a href="https://v2.caritas-africa.org/conditions-generales/">Conditions générales</a>
+        <a href="https://v2.caritas-africa.org/politique-anti-harcelement/">Politique anti-harcèlement</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/v8.js"></script>
+</body>
+</html>
