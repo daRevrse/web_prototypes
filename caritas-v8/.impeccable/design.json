@@ -1,0 +1,569 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-28T11:55:25Z",
+  "title": "Design System: Caritas Africa v8",
+  "extensions": {
+    "colorMeta": {
+      "red": {
+        "role": "primary",
+        "displayName": "Rouge Caritas",
+        "canonical": "oklch(49.2% 0.182 25.6)",
+        "tonalRamp": [
+          "#310000",
+          "#5A0000",
+          "#840008",
+          "#AF2326",
+          "#D74C48",
+          "#FB776E",
+          "#FFA096",
+          "#FFC9BE"
+        ]
+      },
+      "red-700": {
+        "role": "primary",
+        "displayName": "Rouge Profond",
+        "canonical": "oklch(43.2% 0.156 25.0)",
+        "tonalRamp": [
+          "#2D0000",
+          "#530000",
+          "#7C1117",
+          "#A63332",
+          "#CD5852",
+          "#F07F78",
+          "#FFA79E",
+          "#FFCFC6"
+        ]
+      },
+      "baie": {
+        "role": "secondary",
+        "displayName": "Baie",
+        "canonical": "oklch(42.1% 0.144 31.0)",
+        "tonalRamp": [
+          "#2B0000",
+          "#500000",
+          "#781B0F",
+          "#A13B2C",
+          "#C85E4C",
+          "#EA8472",
+          "#FFAB99",
+          "#FFD3C2"
+        ]
+      },
+      "baie-deep": {
+        "role": "secondary",
+        "displayName": "Baie Profond",
+        "canonical": "oklch(38.5% 0.130 30.9)",
+        "tonalRamp": [
+          "#280000",
+          "#4D0100",
+          "#732217",
+          "#9C4032",
+          "#C26353",
+          "#E48878",
+          "#FFAF9F",
+          "#FFD6C7"
+        ]
+      },
+      "blue": {
+        "role": "tertiary",
+        "displayName": "Bleu",
+        "canonical": "oklch(72.7% 0.089 219.6)",
+        "tonalRamp": [
+          "#000F1E",
+          "#002C3D",
+          "#004B5F",
+          "#0E6C83",
+          "#3C8EA6",
+          "#68B1C7",
+          "#92D5EA",
+          "#BCFAFF"
+        ]
+      },
+      "orange": {
+        "role": "tertiary",
+        "displayName": "Orange",
+        "canonical": "oklch(71.4% 0.155 61.7)",
+        "tonalRamp": [
+          "#280000",
+          "#4C0600",
+          "#722700",
+          "#9A4700",
+          "#C06900",
+          "#E28F3D",
+          "#FFB56D",
+          "#FFDD9B"
+        ]
+      },
+      "green": {
+        "role": "tertiary",
+        "displayName": "Vert",
+        "canonical": "oklch(68.5% 0.131 149.8)",
+        "tonalRamp": [
+          "#001400",
+          "#003200",
+          "#00521B",
+          "#177437",
+          "#419758",
+          "#6CBA7D",
+          "#95DDA4",
+          "#BFFFCB"
+        ]
+      },
+      "stone": {
+        "role": "tertiary",
+        "displayName": "Pierre",
+        "canonical": "oklch(82.4% 0.019 89.4)",
+        "tonalRamp": [
+          "#0D0B05",
+          "#28251D",
+          "#454238",
+          "#656156",
+          "#878276",
+          "#A9A599",
+          "#CDC9BE",
+          "#F2EEE4"
+        ]
+      },
+      "black": {
+        "role": "neutral",
+        "displayName": "Noir",
+        "canonical": "oklch(0.0% 0.000 0.0)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#A5A5A5",
+          "#C9C9C9",
+          "#EEEEEE"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Encre",
+        "canonical": "oklch(20.0% 0.000 89.9)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#A5A5A5",
+          "#C9C9C9",
+          "#EEEEEE"
+        ]
+      },
+      "ink-2": {
+        "role": "neutral",
+        "displayName": "Encre Seconde",
+        "canonical": "oklch(39.8% 0.000 89.9)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#A5A5A5",
+          "#C9C9C9",
+          "#EEEEEE"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Gris Note",
+        "canonical": "oklch(48.2% 0.000 89.9)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#A5A5A5",
+          "#C9C9C9",
+          "#EEEEEE"
+        ]
+      },
+      "stone-ink": {
+        "role": "neutral",
+        "displayName": "Pierre Sombre",
+        "canonical": "oklch(50.9% 0.017 80.6)",
+        "tonalRamp": [
+          "#0E0B06",
+          "#29241D",
+          "#464139",
+          "#666057",
+          "#888177",
+          "#AAA49A",
+          "#CEC8BF",
+          "#F3EEE5"
+        ]
+      },
+      "field-line": {
+        "role": "neutral",
+        "displayName": "Trait de Champ",
+        "canonical": "oklch(75.9% 0.022 74.6)",
+        "tonalRamp": [
+          "#0F0A04",
+          "#2A241B",
+          "#484137",
+          "#686054",
+          "#8A8175",
+          "#ACA498",
+          "#D0C8BD",
+          "#F5EDE3"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Trait",
+        "canonical": "oklch(88.4% 0.015 80.7)",
+        "tonalRamp": [
+          "#0E0B06",
+          "#28241E",
+          "#46413A",
+          "#666058",
+          "#878279",
+          "#A9A49C",
+          "#CDC8C0",
+          "#F2EEE6"
+        ]
+      },
+      "sand": {
+        "role": "neutral",
+        "displayName": "Sable",
+        "canonical": "oklch(91.9% 0.018 78.2)",
+        "tonalRamp": [
+          "#0E0A05",
+          "#29241D",
+          "#474138",
+          "#676056",
+          "#888177",
+          "#ABA49A",
+          "#CFC8BE",
+          "#F4EEE4"
+        ]
+      },
+      "sand-2": {
+        "role": "neutral",
+        "displayName": "Sable Clair",
+        "canonical": "oklch(95.9% 0.010 81.8)",
+        "tonalRamp": [
+          "#0D0B08",
+          "#272520",
+          "#44423D",
+          "#64615B",
+          "#85827C",
+          "#A8A59F",
+          "#CCC9C3",
+          "#F1EEE9"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "Blanc",
+        "canonical": "oklch(100.0% 0.000 89.9)",
+        "tonalRamp": [
+          "#0B0B0B",
+          "#252525",
+          "#424242",
+          "#616161",
+          "#828282",
+          "#A5A5A5",
+          "#C9C9C9",
+          "#EEEEEE"
+        ]
+      },
+      "on-dark": {
+        "role": "neutral",
+        "displayName": "Rose sur Baie",
+        "canonical": "oklch(90.4% 0.028 31.7)",
+        "tonalRamp": [
+          "#130806",
+          "#2F211E",
+          "#4E3D3A",
+          "#705C58",
+          "#927D79",
+          "#B4A09C",
+          "#D8C4C0",
+          "#FCEAE6"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Page and banner titles; bold uppercase, tight leading (.t-display, guide title, banner titles)."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section titles, uppercase (.t-h2)."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Block and card titles (.t-h3); mega panel titles are a larger sentence-case variant (.mm-title)."
+      },
+      "lead": {
+        "displayName": "Lead",
+        "purpose": "Intro paragraph under a page title, max 52ch (.t-lead)."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Reading text, max 65ch (.t-body)."
+      },
+      "small": {
+        "displayName": "Small",
+        "purpose": "Notes and secondary text (.t-small); metadata 13px, credits 12px."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Button labels, bold uppercase with +0.04em tracking (.btn)."
+      },
+      "quote": {
+        "displayName": "Quote",
+        "purpose": "Georgia quotations only (.t-quote), with a bold red sans citation."
+      }
+    },
+    "shadows": [
+      {
+        "name": "shadow-panel",
+        "value": "0 28px 48px -28px rgba(22, 22, 22, .34)",
+        "purpose": "Open mega panel (--shadow-panel)."
+      },
+      {
+        "name": "header-scrolled",
+        "value": "0 10px 28px -18px rgba(22, 22, 22, .35)",
+        "purpose": "Sticky header after scroll."
+      },
+      {
+        "name": "card-lift",
+        "value": "0 22px 36px -26px rgba(22, 22, 22, .45)",
+        "purpose": "News card hover, with translateY(-3px)."
+      },
+      {
+        "name": "printed-cover",
+        "value": "0 12px 24px -14px rgba(0, 0, 0, .45)",
+        "purpose": "Publication covers at rest; lifts on hover."
+      },
+      {
+        "name": "focus-halo",
+        "value": "0 0 0 3px rgba(177, 29, 35, .28)",
+        "purpose": "Form field focus, with a black border."
+      },
+      {
+        "name": "scrim",
+        "value": "rgba(22, 22, 22, .34)",
+        "purpose": "Page dimming behind the open mega menu."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(.16, 1, .3, 1)",
+        "purpose": "All movement: indicator, panel height, slides, reveals, lifts (--ease-out)."
+      },
+      {
+        "name": "ease-in-out",
+        "value": "cubic-bezier(.65, 0, .35, 1)",
+        "purpose": "Defined on :root (--ease-in-out); not used by any rule in the build."
+      },
+      {
+        "name": "hover-colour",
+        "value": "160-180ms ease",
+        "purpose": "Colour, border and background changes on hover."
+      },
+      {
+        "name": "indicator-slide",
+        "value": "320ms ease-out",
+        "purpose": "Red 3px nav indicator travelling between items."
+      },
+      {
+        "name": "panel-morph",
+        "value": "320ms ease-out (height, clip-path)",
+        "purpose": "Mega panel opening and height change between sections."
+      },
+      {
+        "name": "panel-content-slide",
+        "value": "420ms ease-out, 28px in the direction of travel; opacity 260ms",
+        "purpose": "Mega panel content swap."
+      },
+      {
+        "name": "close-grace",
+        "value": "200ms",
+        "purpose": "Delay before the mega menu closes when the pointer leaves."
+      },
+      {
+        "name": "reveal",
+        "value": "opacity 700ms ease, translateY(14px) 900ms ease-out",
+        "purpose": "Scroll reveals ([data-reveal]); key figures count up."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "1ms",
+        "purpose": "All transitions collapse under prefers-reduced-motion; reveals shown at once."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "nav-tight",
+        "value": "1279px"
+      },
+      {
+        "name": "drawer",
+        "value": "1179px"
+      },
+      {
+        "name": "tablet",
+        "value": "1023px"
+      },
+      {
+        "name": "mobile",
+        "value": "767px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Red Button",
+      "kind": "button",
+      "refersTo": "button-red",
+      "description": "Primary action, e.g. Faire un don.",
+      "html": "<a class=\"ds-btn-red\" href=\"#\">Faire un don</a>",
+      "css": ".ds-btn-red{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;font:700 .9375rem/1 var(--sans,\"Helvetica Neue\",Arial,sans-serif);letter-spacing:.04em;text-transform:uppercase;text-decoration:none;border:2px solid transparent;border-radius:0;white-space:nowrap;background:var(--red,#B11D23);color:#fff;transition:background-color 180ms ease,transform 180ms cubic-bezier(.16,1,.3,1)}.ds-btn-red:hover{background:var(--red-700,#931A1F)}.ds-btn-red:active{transform:translateY(1px)}.ds-btn-red:focus-visible{outline:3px solid var(--red,#B11D23);outline-offset:3px}"
+    },
+    {
+      "name": "Line Button",
+      "kind": "button",
+      "refersTo": "button-line",
+      "description": "Secondary action on light grounds.",
+      "html": "<a class=\"ds-btn-line\" href=\"#\">Notre réseau</a>",
+      "css": ".ds-btn-line{display:inline-flex;align-items:center;min-height:48px;padding:0 24px;font:700 .9375rem/1 var(--sans,\"Helvetica Neue\",Arial,sans-serif);letter-spacing:.04em;text-transform:uppercase;text-decoration:none;border:2px solid #000;border-radius:0;color:#000;background:transparent;transition:background-color 180ms ease,color 180ms ease}.ds-btn-line:hover{background:#000;color:#fff}.ds-btn-line:active{transform:translateY(1px)}.ds-btn-line:focus-visible{outline:3px solid var(--red,#B11D23);outline-offset:3px}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Action on photos, Baie and dark blocks.",
+      "html": "<div class=\"ds-dark\"><a class=\"ds-btn-ghost\" href=\"#\">En savoir plus</a></div>",
+      "css": ".ds-dark{background:var(--baie,#8B2113);padding:24px}.ds-btn-ghost{display:inline-flex;align-items:center;min-height:48px;padding:0 24px;font:700 .9375rem/1 var(--sans,\"Helvetica Neue\",Arial,sans-serif);letter-spacing:.04em;text-transform:uppercase;text-decoration:none;border:2px solid rgba(255,255,255,.75);border-radius:0;color:#fff;transition:background-color 180ms ease,color 180ms ease,border-color 180ms ease}.ds-btn-ghost:hover{background:#fff;color:#000;border-color:#fff}.ds-btn-ghost:focus-visible{outline:3px solid #fff;outline-offset:3px}"
+    },
+    {
+      "name": "Arrow Link",
+      "kind": "custom",
+      "refersTo": "link-arrow",
+      "description": "Bold red link whose underline draws in and arrow nudges on hover.",
+      "html": "<a class=\"ds-link-arrow\" href=\"#\">Découvrir Caritas Africa<svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a>",
+      "css": ".ds-link-arrow{font:700 1.0625rem/1.6 var(--sans,\"Helvetica Neue\",Arial,sans-serif);color:var(--red,#B11D23);text-decoration:none;background:linear-gradient(currentColor,currentColor) 0 100%/0 2px no-repeat;padding-bottom:3px;transition:background-size 260ms cubic-bezier(.16,1,.3,1),color 180ms ease}.ds-link-arrow svg{display:inline-block;width:18px;height:18px;margin-left:6px;vertical-align:-4px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;transition:transform 260ms cubic-bezier(.16,1,.3,1)}.ds-link-arrow:hover,.ds-link-arrow:focus-visible{background-size:100% 2px;color:var(--red-700,#931A1F)}.ds-link-arrow:hover svg{transform:translateX(4px)}.ds-link-arrow:focus-visible{outline:3px solid var(--red,#B11D23);outline-offset:3px}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "field-input",
+      "description": "Square white field; black border and red halo on focus.",
+      "html": "<label class=\"ds-field\"><span>Nom</span><input placeholder=\"Votre nom\"></label>",
+      "css": ".ds-field{display:flex;flex-direction:column;gap:8px;max-width:360px;font-family:var(--sans,\"Helvetica Neue\",Arial,sans-serif)}.ds-field span{font-size:.9375rem;font-weight:700;color:#000}.ds-field input{min-height:50px;padding:12px 14px;font:400 1rem/1.4 var(--sans,\"Helvetica Neue\",Arial,sans-serif);color:#161616;background:#fff;border:1px solid #B9AFA2;border-radius:0;transition:border-color 160ms ease,box-shadow 160ms ease}.ds-field input::placeholder{color:#6B655B}.ds-field input:hover{border-color:#474747}.ds-field input:focus{outline:none;border-color:#000;box-shadow:0 0 0 3px rgba(177,29,35,.28)}"
+    },
+    {
+      "name": "Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Square outlined prompt that fills black on hover.",
+      "html": "<button class=\"ds-chip\" type=\"button\">Ouvrir le menu</button>",
+      "css": ".ds-chip{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:1px solid #000;border-radius:0;background:transparent;font:700 .9375rem/1.2 var(--sans,\"Helvetica Neue\",Arial,sans-serif);color:#161616;cursor:pointer;transition:background-color 160ms ease,color 160ms ease}.ds-chip:hover{background:#000;color:#fff}.ds-chip:focus-visible{outline:3px solid var(--red,#B11D23);outline-offset:3px}"
+    },
+    {
+      "name": "News Card",
+      "kind": "card",
+      "refersTo": "card-news",
+      "description": "White bordered card; border turns black and the card lifts on hover.",
+      "html": "<a class=\"ds-news\" href=\"#\"><h3>Déclaration de Mumemo : une nouvelle Pentecôte pour l'Afrique (2010)</h3><p>En mai 2010 à Mumemo (Mozambique), 134 délégués de 46 pays adoptent une déclaration commune.</p><span class=\"ds-meta\"><b>Déclaration</b><time>10 novembre 2025</time></span></a>",
+      "css": ".ds-news{display:flex;flex-direction:column;gap:14px;max-width:380px;padding:26px 26px 22px;background:#fff;border:1px solid #DED8CE;text-decoration:none;font-family:var(--sans,\"Helvetica Neue\",Arial,sans-serif);transition:border-color 200ms ease,box-shadow 260ms cubic-bezier(.16,1,.3,1),transform 260ms cubic-bezier(.16,1,.3,1)}.ds-news h3{margin:0;font-size:1.1875rem;line-height:1.3;font-weight:700;color:#000}.ds-news p{margin:0;font-size:.9375rem;line-height:1.55;color:#474747}.ds-meta{padding-top:14px;border-top:1px solid #DED8CE;display:flex;justify-content:space-between;gap:12px;font-size:.8125rem;color:#5E5E5E}.ds-meta b{color:#B11D23}.ds-news:hover,.ds-news:focus-visible{border-color:#000;box-shadow:0 22px 36px -26px rgba(22,22,22,.45);transform:translateY(-3px)}.ds-news:focus-visible{outline:3px solid #B11D23;outline-offset:3px}"
+    },
+    {
+      "name": "Main Nav Bar",
+      "kind": "nav",
+      "refersTo": "nav-item",
+      "description": "Bold section items; red text and a 3px red bar under the active item.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\">Qui sommes-nous</a><a href=\"#\" aria-current=\"true\">Notre réseau</a><a href=\"#\">Notre action</a><a href=\"#\">Actualités</a><a href=\"#\">Ressources</a></nav>",
+      "css": ".ds-nav{display:flex;height:84px;background:#fff;border-bottom:1px solid #DED8CE;font-family:var(--sans,\"Helvetica Neue\",Arial,sans-serif)}.ds-nav a{position:relative;display:inline-flex;align-items:center;padding:0 16px;font-size:1rem;font-weight:700;color:#161616;text-decoration:none;white-space:nowrap;transition:color 160ms ease}.ds-nav a:hover,.ds-nav a[aria-current]{color:#B11D23}.ds-nav a[aria-current]::after{content:\"\";position:absolute;left:16px;right:16px;bottom:0;height:3px;background:#B11D23}.ds-nav a:focus-visible{outline:3px solid #B11D23;outline-offset:-6px}"
+    },
+    {
+      "name": "Mega Menu Link Row",
+      "kind": "custom",
+      "refersTo": "mega-panel",
+      "description": "Page list under a 2px black rule: bold title, one-line description, red arrow sliding in on hover.",
+      "html": "<ul class=\"ds-mm\"><li><a href=\"#\"><span class=\"t\">Notre histoire</span><span class=\"d\">Constituée le 20 janvier 1995 à Matola, au Mozambique.</span><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a></li><li><a href=\"#\"><span class=\"t\">Gouvernance</span><span class=\"d\">Les instances et le Secrétariat exécutif régional à Lomé.</span><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a></li></ul>",
+      "css": ".ds-mm{list-style:none;margin:0;padding:0;max-width:440px;border-top:2px solid #000;font-family:var(--sans,\"Helvetica Neue\",Arial,sans-serif)}.ds-mm li{border-bottom:1px solid #DED8CE}.ds-mm a{display:grid;grid-template-columns:1fr auto;align-items:center;column-gap:16px;padding:13px 4px 13px 0;text-decoration:none}.ds-mm .t{font-weight:700;font-size:1.0625rem;line-height:1.3;color:#000;transition:color 160ms ease}.ds-mm .d{grid-column:1;font-size:.875rem;line-height:1.45;color:#5E5E5E;margin-top:2px}.ds-mm svg{grid-column:2;grid-row:1/span 2;width:18px;height:18px;fill:none;stroke:#B11D23;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round;opacity:0;transform:translateX(-8px);transition:opacity 180ms ease,transform 260ms cubic-bezier(.16,1,.3,1)}.ds-mm a:hover .t,.ds-mm a:focus-visible .t{color:#B11D23}.ds-mm a:hover svg,.ds-mm a:focus-visible svg{opacity:1;transform:none}.ds-mm a:focus-visible{outline:3px solid #B11D23;outline-offset:3px}"
+    },
+    {
+      "name": "Footer Column",
+      "kind": "custom",
+      "refersTo": "footer",
+      "description": "Baie footer link column under an uppercase spaced heading.",
+      "html": "<div class=\"ds-foot\"><h2>Notre réseau</h2><a href=\"#\">46 Caritas nationales</a><a href=\"#\">Six zones</a><a href=\"#\">Caritas Internationalis</a></div>",
+      "css": ".ds-foot{background:#8B2113;color:#fff;padding:32px;max-width:280px;font-family:var(--sans,\"Helvetica Neue\",Arial,sans-serif)}.ds-foot h2{margin:0 0 8px;padding-bottom:12px;font-size:.8125rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#F1D9D4;border-bottom:1px solid rgba(255,255,255,.25)}.ds-foot a{display:block;padding:6px 0;font-size:.9375rem;color:#fff;text-decoration:none}.ds-foot a:hover{text-decoration:underline;text-underline-offset:3px}.ds-foot a:focus-visible{outline:3px solid #fff;outline-offset:3px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Map of the Institution",
+    "overview": "The system is the Caritas Internationalis brand guide 2025 played straight, at the craft level of caritas.org: a white ground, black bold Helvetica set tight and often in capitals, Caritas red reserved for what you can act on and where you are, sand bands to group, and a Baie burgundy footer that closes every page. Nothing is rounded, nothing floats without reason; structure comes from a heavy 2px black rule over a list and hairline 1px sand-grey rules between its rows.\n\nDensity is editorial rather than dashboard: generous section rhythm (72px between guide sections, 40px between blocks), long readable lines capped by `ch` widths, and components that read as lists, ledgers and frames rather than as floating cards. The header is the signature: one white mega panel stays open as the pointer travels across the five sections, a 3px red indicator slides under the active item, and the panel morphs its height while its content slides in the direction of travel. Each panel says what the section is before listing its pages, then previews something real.\n\nMotion is sober and functional: one long ease-out curve for everything that moves, short colour fades for hover, short reveals on scroll, and everything collapses to near-instant under reduced motion.",
+    "keyCharacteristics": [
+      "White ground, black bold sans titles, red only for action and position.",
+      "Square corners everywhere (0px), including buttons, fields, chips and cards.",
+      "2px black top rule plus 1px `line` row dividers as the default list and table structure.",
+      "Sand (`sand`, `sand-2`) as banding and quiet card ground; Baie as the footer.",
+      "Georgia appears only in quotations.",
+      "Photos fill their frames, with a small credit pinned bottom-right."
+    ],
+    "rules": [
+      {
+        "name": "The Red Means Act Rule",
+        "body": "Rouge Caritas marks something you can click or where you are (button, link, indicator, active item, focus, error). It is not used as decoration or as a large background, except the full-red appeal block that is itself a call to give.",
+        "section": "colors"
+      },
+      {
+        "name": "The White First Rule",
+        "body": "White is the dominant ground; sand bands group, Baie closes. A page never opens on a coloured ground.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Weights Rule",
+        "body": "Only 400 and 700 exist (the self-hosted fallback ships only those two). Emphasis is bold, never an intermediate weight.",
+        "section": "typography"
+      },
+      {
+        "name": "The Caps Are For Titles Rule",
+        "body": "Uppercase belongs to display and headline titles and to button labels. Body, links, nav items and mega panel titles stay in sentence case.",
+        "section": "typography"
+      },
+      {
+        "name": "The Georgia Is A Voice Rule",
+        "body": "The serif is used for quotations only, never for headings or UI.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Until It Floats Rule",
+        "body": "A surface gets a shadow only if it overlays content (mega panel, sticky header) or responds to the pointer (news card, covers). Bands, cards at rest and blocks stay flat.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** keep Rouge Caritas for action and position: buttons, links, the nav indicator, active items, focus and errors.",
+      "**Do** open every list, table and ledger with a 2px black top rule and divide its rows with 1px `line` rules.",
+      "**Do** keep every corner square (0px), including fields and chips.",
+      "**Do** set display and section titles in bold uppercase with tight leading (0.92–0.98) and negative tracking.",
+      "**Do** put a small credit on every photo, bottom right.",
+      "**Do** use the single ease-out curve (`cubic-bezier(.16, 1, .3, 1)`) for movement and plain 160–180ms fades for hover colour; honour reduced motion.",
+      "**Do** show a visible 3px focus outline (red on light, white on Baie and dark blocks).",
+      "**Do** make every mega panel describe its section before listing pages, each page with a one-line description."
+    ],
+    "donts": [
+      "**Don't** round corners or use pill buttons.",
+      "**Don't** use red as a decorative fill or for large backgrounds, apart from the appeal block.",
+      "**Don't** use Georgia outside quotations, or weights other than 400 and 700.",
+      "**Don't** add shadows to surfaces at rest; only overlays and pointer-lifted items get one.",
+      "**Don't** give the secondary blue, orange, green or stone a UI role; they are for data and illustration.",
+      "**Don't** alter the logo: colour on light grounds, white on Baie and dark, at least 100px wide."
+    ]
+  }
+}
